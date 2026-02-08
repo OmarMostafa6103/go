@@ -1,0 +1,167 @@
+{
+    "hero": {
+        "heading": "GoLynk — La seule plateforme qui rend la livraison rentable",
+        "description": "Arrêtez de choisir entre coût et rapidité. Entre couverture et conformité. GoLynk orchestre piétons, cyclistes, transports publics et camionnettes en un seul réseau alimenté par l'IA.",
+        "cta": {
+            "startFreePilot": "Démarrer un essai gratuit",
+            "scheduleCall": "Planifier un appel"
+        },
+        "stats": {
+            "verifiedCarriers": {
+                "number": "+150",
+                "label": "Transporteurs vérifiés actifs"
+            },
+            "onTimeGuarantee": {
+                "number": "95 %",
+                "label": "Garantie de ponctualité (contractuelle)"
+            },
+            "co2Reduction": {
+                "number": "72 %",
+                "label": "Réduction de CO₂ par livraison (auditée)"
+            },
+            "damageRate": {
+                "number": "<0,5 %",
+                "label": "Taux de dommages (vs 5-10 % moyenne du secteur)"
+            }
+        }
+    },
+    "logisticsMyth": {
+        "subheading": "Le mythe de la logistique",
+        "heading": "La solution universelle ne fonctionne jamais",
+        "description": "La logistique traditionnelle fonctionne pour les expéditions en gros volumes depuis les entrepôts. Elle échoue pour tout le reste. Découvrez pourquoi votre secteur en souffre.",
+        "industries": {
+            "ecommerce": {
+                "title": "E-Commerce",
+                "description": "Les commandes coûtent trop cher et la livraison le jour même échoue. Les clients partent vers des concurrents plus rapides."
+            },
+            "freshGoods": {
+                "title": "Produits frais",
+                "description": "Les fleurs et les aliments se détériorent. Les dommages sont élevés et la qualité en pâtit."
+            },
+            "retail": {
+                "title": "Commerce de détail",
+                "description": "La livraison multi-magasins est impossible. Les clients ont besoin d'un service rapide et précis."
+            },
+            "luxury": {
+                "title": "Luxe",
+                "description": "Les articles de grande valeur nécessitent une livraison sécurisée, assurée et de haute qualité."
+            },
+            "furniture": {
+                "title": "Meubles",
+                "description": "Les articles volumineux nécessitent des camionnettes dédiées. Les coûts et les délais d'attente explosent."
+            },
+            "healthcare": {
+                "title": "Santé",
+                "description": "Les médicaments nécessitent conformité, contrôle de température et livraison urgente."
+            }
+        }
+    },
+    "comparison": {
+        "subheading": "Repensez votre livraison",
+        "heading": "Pourquoi la logistique traditionnelle échoue et comment GoLynk gagne",
+        "description": "La livraison traditionnelle fonctionne pour les entrepôts, pas pour les entreprises modernes. Découvrez comment GoLynk transforme la vitesse, le coût et la fiabilité dans tous les secteurs.",
+        "metrics": {
+            "deliverySpeed": {
+                "label": "Vitesse de livraison",
+                "traditional": "24+ heures standard",
+                "golynk": "4-6 heures le jour même (optimisé par IA)"
+            },
+            "costPerDelivery": {
+                "label": "Coût par livraison",
+                "traditional": "Fixe (12 €), inefficace",
+                "golynk": "Dynamique (8-10 €), optimisé par itinéraire et volume"
+            },
+            "tracking": {
+                "label": "Suivi",
+                "traditional": "« En cours de livraison » — aucune visibilité",
+                "golynk": "Suivi GPS événementiel, mises à jour en direct"
+            },
+            "damageRate": {
+                "label": "Taux de dommages",
+                "traditional": "5-10 %",
+                "golynk": "<0,5 % (manutention spécialisée)"
+            },
+            "coverage": {
+                "label": "Couverture",
+                "traditional": "Dépendant des hubs, zones limitées",
+                "golynk": "Réseau dense de microhubs, efficace en ville et en zone rurale"
+            },
+            "peakPricing": {
+                "label": "Tarification haute saison",
+                "traditional": "+40-60 % de surtaxe",
+                "golynk": "Tarification stable, le réseau s'adapte"
+            },
+            "handling": {
+                "label": "Manutention",
+                "traditional": "Solution unique, articles fragiles et de grande valeur à risque",
+                "golynk": "L'IA associe les transporteurs spécialisés au type de produit"
+            },
+            "adaptation": {
+                "label": "Adaptation",
+                "traditional": "Itinéraires fixes, retards dus au trafic",
+                "golynk": "Réacheminement en temps réel toutes les 5 minutes"
+            },
+            "customerExperience": {
+                "label": "Expérience client",
+                "traditional": "Retardée, peu fiable, réclamations",
+                "golynk": "Rapide, fiable, haute satisfaction"
+            },
+            "sustainability": {
+                "label": "Durabilité",
+                "traditional": "Non suivie",
+                "golynk": "Réduction de CO₂ jusqu'à 72 % par livraison"
+            }
+        }
+    },
+    "features": {
+        "subheading": "Fonctionnalités",
+        "heading": "Infrastructure de pointe. Conçue pour la logistique moderne.",
+        "description": "Chaque fonctionnalité est conçue pour optimiser le coût, la vitesse, l'efficacité et la visibilité dans des villes et secteurs entiers.",
+        "list": {
+            "automation": {
+                "title": "Automatisation opérationnelle",
+                "description": "GoLynk rationalise automatiquement l'ensemble du flux de livraison, de la création de commande au paiement, garantissant des opérations plus rapides, plus propres et sans erreur.",
+                "cta": "En savoir plus"
+            },
+            "security": {
+                "title": "Confiance, conformité et sécurité",
+                "description": "Conçue avec une protection de niveau entreprise, GoLynk offre un traitement de données chiffré, des transporteurs vérifiés et une conformité totale à chaque étape.",
+                "cta": "En savoir plus"
+            },
+            "reports": {
+                "title": "Gérez votre équipe avec des rapports",
+                "description": "Des rapports perspicaces en temps réel vous permettent de suivre les performances, comprendre les coûts et optimiser votre équipe en un seul clic.",
+                "cta": "En savoir plus"
+            }
+        }
+    },
+    "businessesAtScale": {
+        "subheading": "Pour les Entreprises",
+        "heading": "Entreprises qui expédient à grande échelle",
+        "description": {
+            "line1": "Arrêtez de surpayer les coursiers.",
+            "line2": "Expédiez des palettes en utilisant la capacité déjà en mouvement, pas des camionnettes dédiées."
+        },
+        "whoItsFor": {
+            "heading": "Pour qui c'est",
+            "list": {
+                "manufacturers": "Fabricants & Grossistes.",
+                "foodBeverage": "Alimentation & Boissons.",
+                "healthcare": "Santé & Pharmacie.",
+                "recommerce": "Recommerce & Retours.",
+                "industrial": "Pièces industrielles & Équipement."
+            }
+        },
+        "whyItWorks": {
+            "heading": "Pourquoi ça marche",
+            "list": {
+                "lowerCost": "Coût de livraison inférieur de 40 à 60%",
+                "delivery": "Livraison le lendemain ou sous 2 à 3 jours",
+                "noMinimums": "Pas de minimums. Pas de contrats",
+                "existingRoutes": "Les envois empruntent des itinéraires existants",
+                "tracking": "Suivi, données CO₂, une seule facture"
+            }
+        },
+        "cta": "Planifier une démo B2B"
+    }
+}

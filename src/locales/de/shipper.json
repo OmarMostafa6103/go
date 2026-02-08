@@ -1,0 +1,167 @@
+{
+    "hero": {
+        "heading": "GoLynk – Die einzige Plattform, die Lieferungen profitabel macht",
+        "description": "Schluss mit der Wahl zwischen Kosten und Geschwindigkeit. Zwischen Abdeckung und Compliance. GoLynk orchestriert Fußgänger, Radfahrer, öffentliche Verkehrsmittel und Transporter zu einem KI-gesteuerten Netzwerk.",
+        "cta": {
+            "startFreePilot": "Kostenlosen Piloten starten",
+            "scheduleCall": "Termin vereinbaren"
+        },
+        "stats": {
+            "verifiedCarriers": {
+                "number": "150+",
+                "label": "Verifizierte Kuriere im aktiven Einsatz"
+            },
+            "onTimeGuarantee": {
+                "number": "95%",
+                "label": "Pünktlichkeitsgarantie (Vertraglich abgesichert)"
+            },
+            "co2Reduction": {
+                "number": "72%",
+                "label": "CO₂-Reduktion pro Lieferung (Geprüft)"
+            },
+            "damageRate": {
+                "number": "<0,5%",
+                "label": "Beschädigungsrate (vs. 5–10% Branchendurchschnitt)"
+            }
+        }
+    },
+    "logisticsMyth": {
+        "subheading": "Der Logistik-Mythos",
+        "heading": "Einheitslösungen funktionieren nie",
+        "description": "Traditionelle Logistik funktioniert für Großlagerlieferungen. Für alles andere versagt sie. Sehen Sie, warum Ihre Branche darunter leidet.",
+        "industries": {
+            "ecommerce": {
+                "title": "E-Commerce",
+                "description": "Bestellungen sind zu teuer und Same-Day-Lieferungen scheitern. Kunden wechseln zu schnelleren Wettbewerbern."
+            },
+            "freshGoods": {
+                "title": "Frischware",
+                "description": "Blumen und Lebensmittel verderben. Beschädigungen sind hoch und die Qualität leidet."
+            },
+            "retail": {
+                "title": "Einzelhandel",
+                "description": "Multi-Filial-Lieferungen sind unmöglich. Kunden brauchen schnellen, präzisen Service."
+            },
+            "luxury": {
+                "title": "Luxusgüter",
+                "description": "Hochwertige Artikel brauchen sichere, versicherte Premium-Lieferung."
+            },
+            "furniture": {
+                "title": "Möbel",
+                "description": "Sperrige Artikel benötigen spezielle Transporter. Kosten und Wartezeiten explodieren."
+            },
+            "healthcare": {
+                "title": "Gesundheitswesen",
+                "description": "Medikamente erfordern Compliance, Temperaturkontrolle und dringende Zustellung."
+            }
+        }
+    },
+    "comparison": {
+        "subheading": "Denken Sie Ihre Zustellung neu",
+        "heading": "Warum traditionelle Logistik versagt & wie GoLynk gewinnt",
+        "description": "Traditionelle Lieferung funktioniert für Lagerhäuser, nicht für moderne Unternehmen. Sehen Sie, wie GoLynk Geschwindigkeit, Kosten und Zuverlässigkeit in jeder Branche transformiert.",
+        "metrics": {
+            "deliverySpeed": {
+                "label": "Liefergeschwindigkeit",
+                "traditional": "24+ Stunden Standard",
+                "golynk": "4–6 Stunden am selben Tag (KI-optimiert)"
+            },
+            "costPerDelivery": {
+                "label": "Kosten pro Lieferung",
+                "traditional": "Fix (12€), ineffizient",
+                "golynk": "Dynamisch (8–10€), routen- & volumenoptimiert"
+            },
+            "tracking": {
+                "label": "Sendungsverfolgung",
+                "traditional": "„Wird zugestellt – keine Transparenz",
+                "golynk": "GPS-Tracking auf Ereignisebene, Live-Updates"
+            },
+            "damageRate": {
+                "label": "Beschädigungsrate",
+                "traditional": "5–10%",
+                "golynk": "<0,5% (Spezialisierte Handhabung)"
+            },
+            "coverage": {
+                "label": "Abdeckung",
+                "traditional": "Hub-abhängig, begrenzte Zonen",
+                "golynk": "Dichtes Microhub-Netzwerk, stadtweite & ländliche Effizienz"
+            },
+            "peakPricing": {
+                "label": "Hochsaison-Preise",
+                "traditional": "+40–60% Aufschlag",
+                "golynk": "Stabile Preise, Netzwerk skaliert mit"
+            },
+            "handling": {
+                "label": "Handhabung",
+                "traditional": "Einheitslösung, zerbrechliche & hochwertige Artikel gefährdet",
+                "golynk": "KI ordnet Spezial-Kuriere dem Produkttyp zu"
+            },
+            "adaptation": {
+                "label": "Anpassungsfähigkeit",
+                "traditional": "Feste Routen, Verkehrsverzögerungen",
+                "golynk": "Echtzeit-Umleitung alle 5 Minuten"
+            },
+            "customerExperience": {
+                "label": "Kundenerlebnis",
+                "traditional": "Verzögert, unzuverlässig, Beschwerden",
+                "golynk": "Schnell, zuverlässig, hohe Zufriedenheit"
+            },
+            "sustainability": {
+                "label": "Nachhaltigkeit",
+                "traditional": "Nicht erfasst",
+                "golynk": "CO₂-Reduktion bis zu 72% pro Lieferung"
+            }
+        }
+    },
+    "features": {
+        "subheading": "Funktionen",
+        "heading": "Modernste Infrastruktur. Gebaut für moderne Logistik.",
+        "description": "Jede Funktion wurde entwickelt, um Kosten, Geschwindigkeit, Effizienz und Transparenz in ganzen Städten und Branchen zu optimieren.",
+        "list": {
+            "automation": {
+                "title": "Operative Automatisierung",
+                "description": "GoLynk optimiert den gesamten Lieferworkflow automatisch – von der Auftragserstellung bis zur Auszahlung – für schnellere, sauberere und fehlerfreie Abläufe.",
+                "cta": "Mehr erfahren"
+            },
+            "security": {
+                "title": "Vertrauen, Compliance & Sicherheit",
+                "description": "Mit Sicherheit auf Unternehmensniveau bietet GoLynk verschlüsselte Datenverarbeitung, verifizierte Kuriere und vollständige Compliance auf jedem Schritt.",
+                "cta": "Mehr erfahren"
+            },
+            "reports": {
+                "title": "Verwalten Sie Ihr Team mit Reports",
+                "description": "Aussagekräftige Echtzeit-Berichte ermöglichen es Ihnen, Leistung zu verfolgen, Kosten zu verstehen und Ihr Team mit einem Klick zu optimieren.",
+                "cta": "Mehr erfahren"
+            }
+        }
+    }
+    ,"businessesAtScale": {
+        "subheading": "Für Unternehmen",
+        "heading": "Unternehmen, die im großen Maßstab versenden",
+        "description": {
+            "line1": "Hören Sie auf, Kuriere zu überbezahlen.",
+            "line2": "Versenden Sie Paletten über bereits genutzte Kapazitäten, nicht über dedizierte Transporter."
+        },
+        "whoItsFor": {
+            "heading": "Für wen es ist",
+            "list": {
+                "manufacturers": "Hersteller & Großhändler.",
+                "foodBeverage": "Lebensmittel & Getränke.",
+                "healthcare": "Gesundheitswesen & Pharma.",
+                "recommerce": "Recommerce & Retouren.",
+                "industrial": "Industrieteile & Ausrüstung."
+            }
+        },
+        "whyItWorks": {
+            "heading": "Warum es funktioniert",
+            "list": {
+                "lowerCost": "40–60% niedrigere Lieferkosten",
+                "delivery": "Lieferung am nächsten Tag oder in 2–3 Tagen",
+                "noMinimums": "Keine Mindestmengen. Keine Verträge",
+                "existingRoutes": "Sendungen bewegen sich auf bestehenden Routen",
+                "tracking": "Tracking, CO₂-Daten, eine Rechnung"
+            }
+        },
+        "cta": "B2B-Demo planen"
+    }
+}
