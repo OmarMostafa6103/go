@@ -1,10 +1,10 @@
 {
   "hero": {
-    "heading": "Le monde est déjà en mouvement. Nous rendons ce mouvement livrable pour tous.",
-    "description": "L'IA de GoLynk transforme les trajets quotidiens – piétons, vélos, voitures, fourgonnettes, camions, trains et transports publics – en un réseau logistique du premier kilomètre à la dernière livraison.",
+    "heading": "Le monde est déjà en mouvement. Nous transformons le mouvement en infrastructure.",
+    "description": "Nous appairons les colis à l'espace disponible déjà en mouvement — et les chaînerons via des transferts vérifiés.",
     "cta": {
-      "shipWithGoLynk": "Expédier avec GoLynk",
-      "deliverAndEarn": "Livrer et gagner"
+      "shipWithGoLynk": "Lancer un pilote",
+      "deliverAndEarn": "Rejoignez en tant que Transporteur"
     }
   },
   "smartLogistics": {
@@ -13,17 +13,14 @@
     "description": "GoLynk transforme les capacités urbaines inutilisées en un réseau de livraison fluide et auto-optimisé. Des expéditions plus rapides, des coûts réduits, des revenus instantanés et une logistique plus verte sans ajouter de véhicules supplémentaires.",
     "roles": {
       "shippers": {
-        "title": "Pour les entreprises qui expédient",
-        "challenge": "Les coûts de livraison écrasent les marges. Les clients attendent à la fois de la vitesse et du soin. La durabilité compte, mais elle est difficile à prouver sur le premier, le milieu et le dernier kilomètre.",
-        "difference": [
-          "Couts de livraison réduits grâce à l'utilisation intel ligente de la capacité existante",
-          "Options le jour même et le lendemain sans majoration",
-          "Manutention flexible pour les envois fraïs, fragiles, de haute valeur, volumineux et lourds",
-          "Suivi automatique du carbone et rapports d'émissions évitées pour chaque envoi",
-          "Intégration avec vos systèmes existants et vos transporteurs"
-        ],
-        "whoThisServes": "E-commerce, Détaillé ants, Recommerce, Articulés spéciaux et fragiles, Expéditeurs B2B",
-        "cta": "Explorez les solutions d’expédition"
+        "title": "Expéditeurs",
+        "description": "Profitez de livraisons rapides, fiables et économiques. L'IA de GoLynk optimise chaque envoi, assurant une intégration fluide, un suivi en temps réel et des efforts opérationnels réduits afin que votre entreprise économise du temps et maximise son efficacité.",
+        "benefits": [
+          "Créez des commandes en deux clics et gagnez du temps",
+          "L'IA associe instantanément les envois aux meilleurs transporteurs",
+          "Suivi en direct avec reporting carbone automatisé",
+          "Intégration simplifiée avec vos systèmes existants"
+        ]
       },
       "carriers": {
         "title": "Transporteurs / Chauffeurs",

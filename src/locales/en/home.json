@@ -1,10 +1,10 @@
 {
   "hero": {
-    "heading": "The World Already Moves. We Make That Movement Deliver for Everyone.",
-    "description": "GoLynk's AI turns everyday routes—walkers, bikes, cars, vans, trucks, trains, and public transport—into one logistics network from first mile pickup to last mile delivery.",
+    "heading": "The World Already Moves. We Turn Movement Into Infrastructure.",
+    "description": "We match shipments to spare space already moving — and chain them through verified handoffs.",
     "cta": {
-      "shipWithGoLynk": "Ship with GoLynk",
-      "deliverAndEarn": "Deliver & Earn"
+      "shipWithGoLynk": "Start a Pilot",
+      "deliverAndEarn": "Join as Carrier"
     }
   },
   "smartLogistics": {
@@ -13,17 +13,14 @@
     "description": "GoLynk turns idle urban capacity into a seamless, self-optimizing delivery network. Faster shipments, lower costs, instant earnings, and greener logistics without adding extra vehicles.",
     "roles": {
       "shippers": {
-        "title": "For Businesses That Ship",
-        "challenge": "Delivery costs squeeze margins. Customers expect both speed and care. Sustainability matters, but it's hard to prove across first, mid, and last mile.",
-        "difference": [
-          "Lower delivery costs through intelligent use of existing capacity",
-          "Same-day and next-day options without premium pricing",
-          "Flexible handling for fresh, fragile, high-value, bulky, and heavy shipments",
-          "Automated carbon tracking and avoided-emissions reporting for every shipment",
-          "Integration with your existing systems and carriers"
-        ],
-        "whoThisServes": "E-commerce, Retailers, Recommerce, Specialty & fragile goods, B2B shippers",
-        "cta": "Explore Shipping Solutions"
+        "title": "Shippers",
+        "description": "Benefit from fast, reliable, and cost-efficient deliveries. GoLynk's AI optimizes every shipment, ensuring seamless integration, real-time tracking, and reduced operational effort so your business saves time and maximizes efficiency.",
+        "benefits": [
+          "Create orders in two clicks and save time",
+          "AI matches shipments to the best carriers instantly",
+          "Live tracking with automated carbon reporting",
+          "Simplified integration with existing systems"
+        ]
       },
       "carriers": {
         "title": "Carriers / Drivers",

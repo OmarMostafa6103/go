@@ -1,129 +1,177 @@
 {
-    "hero": {
-        "heading": "Turn Movement Into Money. Move Smarter. Earn Smarter.",
-        "description": "For Individuals • For Businesses Deliver on your way. Monetize your spare capacity. Reduce carbon emissions.",
-        "cta": {
-            "startEarning": "Start Earning",
-            "bookDemo": "Book Demo"
-        },
-        "stats": {
-            "activeMembers": {
-                "number": "50K+",
-                "label": "Active Members"
-            },
-            "co2Saved": {
-                "number": "245K",
-                "label": "Tons CO₂ Saved"
-            },
-            "appRating": {
-                "number": "4.8/5",
-                "label": "App Rating"
-            },
-            "partnerOrgs": {
-                "number": "1,200+",
-                "label": "Partner Orgs"
-            }
-        }
+  "hero": {
+    "heading": "GoLynk for Carriers: Earn More on Routes You Already Take",
+    "description": "Whether you walk, bike, drive, or run a fleet, GoLynk lets you earn from movement that's already happening—no detours, no extra vehicles, no hidden catches.",
+    "cta": {
+      "startEarning": "Start Earning as a Carrier",
+      "bookDemo": "Book Fleet Demo"
     },
-    "individuals": {
-        "subheading": "For Individuals",
-        "heading": "People Who Move",
-        "description": "Turn Your Commute Into Income Earn money by delivering packages that already fit your daily route no detours, no wasted time.",
-        "howToEarn": {
-            "title": "How You Can Earn",
-            "options": {
-                "walker": "Walker / Cyclist – Your backpack has room. We turn it into earning power.",
-                "carCommuter": "Car Commuter – Your daily commute can cover its own cost and more.",
-                "courier": "Professional Courier – Fill idle moments with revenue not downtime.",
-                "vanOwner": "Private Van Owner – Your capacity. Your schedule. Your revenue.",
-                "ptCommuter": "PT Commuter – Get rewarded for being part of the city's cleanest network."
-            }
-        },
-        "whyItWorks": {
-            "title": "Why It Works",
-            "benefits": [
-                "Fair, dynamic compensation",
-                "Instant payouts",
-                "No detours or time wasted",
-                "Opportunities only on your daily route",
-                "Track your contribution to cleaner cities"
-            ]
-        },
-        "cta": "Download the App"
-    },
-    "businesses": {
-        "subheading": "For Businesses",
-        "heading": "Fleets & Operators",
-        "description": "Your Fleet Works Harder. Your Business Works Smarter. Monetize underused capacity. Improve margins without changing routes or adding vehicles.",
-        "howToEarn": {
-            "title": "How You Can Earn",
-            "options": {
-                "courierServices": "Courier Services (10–50 vehicles) – Your fleet already moves. Now it earns more without extra cost.",
-                "thirdPartyLogistics": "3PL / Logistics Operators – Turn distributed fleet capacity into a real-time revenue engine.",
-                "courierCoop": "Courier Cooperative (5–30 riders) – Move more volume without overworking your riders.",
-                "vanOperators": "Van Operators / Small Fleets – Between-service gaps become revenue automatically.",
-                "lastMile": "Hyperlocal Last-Mile Providers – Your local footprint becomes a high-value microhub."
-            }
-        },
-        "whatYouGain": {
-            "title": "What You Gain",
-            "benefits": [
-                "Real-time fleet utilization",
-                "Better margin per trip",
-                "No added vehicles or manpower",
-                "Zero-route-deviation matching",
-                "ESG-grade carbon reporting"
-            ]
-        },
-        "integrations": {
-            "title": "Integrations Available",
-            "options": [
-                "SaaS Dashboard (2 weeks)",
-                "API Integration (6–8 weeks)",
-                "White-Label Marketplace (10–12 weeks)"
-            ]
-        },
-        "cta": "Book a Demo"
-    },
-    "features": {
-        "subheading": "Features",
-        "heading": "Powered by Intelligence. Designed for Real-World Impact.",
-        "description": "GoLynk isn't just another logistics platform it's a dynamic infrastructure layer built to help individuals and businesses unlock underused capacity, move smarter, and grow faster.",
-        "tabs": {
-            "individuals": "Individuals",
-            "businesses": "Businesses"
-        },
-        "list": {
-            "analytics": {
-                "title": "Smart Analytics Dashboard",
-                "description": "Real-time dashboards that show your routes, performance, earnings, and environmental impact with zero setup.",
-                "benefits": [
-                    "Live earnings & utilization analytics",
-                    "Route efficiency insights",
-                    "Carbon savings tracked automatically",
-                    "Exportable, shareable, audit-ready performance reports"
-                ]
-            },
-            "aiMatching": {
-                "title": "AI Matching Engine",
-                "description": "Next-generation multimodal AI that understands movement patterns and creates perfect matches.",
-                "benefits": [
-                    "Finds shipments in your natural path (±5% deviation)",
-                    "Understands your capacity, timing, and preferences",
-                    "Prioritizes revenue and carbon impact",
-                    "Learns continuously as the network grows"
-                ]
-            },
-            "communication": {
-                "title": "Unified Communication Layer",
-                "description": "Whether you're an individual carrier, fleet, or business, GoLynk keeps everyone aligned.",
-                "benefits": [
-                    "Real-time updates for pickup & drop-off",
-                    "Smart notifications and automated status tracking",
-                    "Shared communication threads",
-                    "Customer and carrier transparency"
-                ]
-            }
-        }
+    "stats": {
+      "activeMembers": {
+        "number": "50K+",
+        "label": "Deliveries completed on-route"
+      },
+      "co2Saved": {
+        "number": "245K",
+        "label": "Kg CO₂ savings tracked"
+      },
+      "appRating": {
+        "number": "4.8/5",
+        "label": "Average app rating"
+      },
+      "partnerOrgs": {
+        "number": "1,200+",
+        "label": "Carriers and fleets onboarded"
+      }
     }
+  },
+  "smartDelivery": {
+    "subheading": "Smart Delivery",
+    "heading": "How GoLynk Works for Carriers",
+    "description": "It's simple: we only show you jobs that fit the routes you already walk, ride, or drive.",
+    "steps": {
+      "step1": {
+        "title": "See Jobs That Match Your Route",
+        "description": "The GoLynk app understands your regular routes, time windows, and vehicle type. It only shows deliveries that fit your natural path—no detours, no random jobs across the city."
+      },
+      "step2": {
+        "title": "Accept What Fits Your Day",
+        "description": "You choose which tasks to accept based on your schedule and capacity. No one forces you to take every job, and you can pause or stop anytime."
+      },
+      "step3": {
+        "title": "Deliver On-Route, Get Paid Fast",
+        "description": "You deliver parcels along your usual route and mark them completed in the app. Payouts are processed automatically, with a clear breakdown of what you earned for each trip."
+      }
+    }
+  },
+  "individuals": {
+    "subheading": "For Individuals",
+    "heading": "For People Who Move",
+    "shortDescription": "Turn your commute, city walks, and rides into extra income—without changing your life.",
+    "description": "GoLynk gives you delivery opportunities that fit the routes you already take—walking to campus, cycling across the city, driving to work, or riding public transport. You decide when to accept and what to carry, and you deliver for verified shippers with in-app support if anything goes wrong.",
+    "benefits": [
+      "Jobs only along your usual routes—no cross-city detours",
+      "No new vehicle required: walk, bike, car, van, or public transport",
+      "Clear earnings per job and instant or same-day payouts",
+      "See your contribution to cleaner, less congested cities"
+    ],
+    "helperText": "Perfect for students, commuters, part-time earners, and city explorers.",
+    "howToEarn": {
+      "title": "How You Can Earn",
+      "options": {
+        "walker": "Walker / Cyclist – Your backpack has room. We turn it into earning power.",
+        "carCommuter": "Car Commuter – Your daily commute can cover its own cost and more.",
+        "courier": "Professional Courier – Fill idle moments with revenue not downtime.",
+        "vanOwner": "Private Van Owner – Your capacity. Your schedule. Your revenue.",
+        "ptCommuter": "PT Commuter – Get rewarded for being part of the city's cleanest network."
+      }
+    },
+    "whyItWorks": {
+      "title": "Why It Works",
+      "benefits": [
+        "Fair, dynamic compensation",
+        "Instant payouts",
+        "No detours or time wasted",
+        "Opportunities only on your daily route",
+        "Track your contribution to cleaner cities"
+      ]
+    },
+    "cta": "Download the App"
+  },
+  "businesses": {
+    "subheading": "For Businesses",
+    "heading": "For Fleets & Operators",
+    "shortDescription": "Make every kilometre count—without changing routes or adding vehicles.",
+    "description": "GoLynk lets 3PLs, regional carriers, courier companies, and mobility operators monetise spare capacity on existing routes. You keep control of your network and contracts; we add demand that fits your plans, so GoLynk becomes incremental revenue, not a replacement.",
+    "whatYouGain": {
+      "title": "What You Gain",
+      "benefits": [
+        "Real-time utilisation across vehicles and lanes",
+        "Better margin per trip by filling spare capacity and backhauls",
+        "No extra vehicles or headcount required",
+        "Zero‑deviation matching that respects your routes and constraints",
+        "ESG-grade carbon and avoided-emissions reporting per fleet"
+      ]
+    },
+    "integrations": {
+      "title": "Integrations Available",
+      "options": [
+        "SaaS dashboard (live in weeks, no code)",
+        "API integration (connect your TMS/telematics when ready)",
+        "White‑label marketplace (your own branded carrier app/portal)"
+      ]
+    },
+    "howToEarn": {
+      "title": "How You Can Earn",
+      "options": {
+        "courierServices": "Courier Services (10–50 vehicles) – Your fleet already moves. Now it earns more without extra cost.",
+        "thirdPartyLogistics": "3PL / Logistics Operators – Turn distributed fleet capacity into a real-time revenue engine.",
+        "courierCoop": "Courier Cooperative (5–30 riders) – Move more volume without overworking your riders.",
+        "vanOperators": "Van Operators / Small Fleets – Between-service gaps become revenue automatically.",
+        "lastMile": "Hyperlocal Last-Mile Providers – Your local footprint becomes a high-value microhub."
+      }
+    },
+    "cta": "Book a Demo"
+  },
+  "features": {
+    "subheading": "Features",
+    "heading": "Tools Built for People and Fleets",
+    "description": "Whether you're delivering on your way to class or managing a fleet across multiple cities, GoLynk gives you a connected set of tools to earn more, stay in control, and prove your impact—without adding friction to your day.",
+    "individuals": {
+      "heading": "For People Who Move",
+      "description": "GoLynk turns the trips you already make into simple, predictable earnings—clearly showing the effort, payout, and environmental impact of every job.",
+      "features": [
+        {
+          "title": "Start in Minutes",
+          "description": "Download the app, verify once, and share your usual routes and timing. GoLynk matches you with deliveries that fit your day, not the other way around."
+        },
+        {
+          "title": "Deliveries That Stay on Your Route",
+          "description": "See nearby jobs aligned with your path. Distance, payout, and effort are visible upfront, so you always know what you're saying yes to."
+        },
+        {
+          "title": "Earnings You Can See and Use",
+          "description": "Track your balance in real time, view earnings per job, and cash out fast with instant or same-day payouts where available."
+        },
+        {
+          "title": "More Than Cash",
+          "description": "Earn rewards and see the CO₂ you help avoid by moving goods through existing journeys—every trip has measurable impact."
+        },
+        {
+          "title": "Built for Trust",
+          "description": "Work with verified businesses, clear instructions, and in-app support that's there from pickup to drop-off."
+        }
+      ]
+    },
+    "fleets": {
+      "heading": "For Fleets & Operators",
+      "description": "GoLynk adds an intelligent layer on top of your existing systems. You keep your contracts and tools—we turn spare capacity into revenue with real-time demand, utilisation insights, and carbon visibility.",
+      "features": [
+        {
+          "title": "Plug In, Don't Replace",
+          "description": "Connect once and keep working as usual. GoLynk integrates with your routes, vehicles, and constraints to surface only the jobs that truly fit your operation."
+        },
+        {
+          "title": "One Dashboard, Full Control",
+          "description": "See utilisation per vehicle and lane, revenue by route, and on-time performance across regions—built for both dispatchers and leadership."
+        },
+        {
+          "title": "Matching That Respects Reality",
+          "description": "Our engine accounts for capacity, SLAs, time windows, detour cost, reliability, and carbon impact—so every surfaced job makes operational sense."
+        },
+        {
+          "title": "Analytics You Can Act On",
+          "description": "Identify underused corridors, empty backhauls, and the jobs that drive the strongest margins. Export reports or feed data directly into your BI stack."
+        },
+        {
+          "title": "API-First by Design",
+          "description": "Plug into your TMS, telematics, or planning tools via modern APIs. Data flows in and out automatically—no extra systems to manage."
+        },
+        {
+          "title": "Built-In Carbon & ESG Reporting",
+          "description": "Track emissions and avoided emissions using real route data. Share audit-ready reports by customer, corridor, or time period with enterprise and ESG teams."
+        }
+      ]
+    }
+  }
 }

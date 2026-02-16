@@ -1,10 +1,10 @@
 {
   "hero": {
-    "heading": "Die Welt bewegt sich bereits. Wir machen diese Bewegung für jeden lieferbar.",
-    "description": "GoLynks KI verwandelt alltägliche Routen – Fußgänger, Fahrräder, Autos, Transporter, Lastkraftwagen, Züge und öffentliche Verkehrsmittel – in ein Logistiknetzwerk von der Erstmeile zur Letztmeile.",
+    "heading": "Die Welt bewegt sich bereits. Wir verwandeln Bewegung in Infrastruktur.",
+    "description": "Wir ordnen Sendungen dem freien Platz bereits fahrende Transporte zu – und verbinden sie durch überprüfte Übergabepunkte.",
     "cta": {
-      "shipWithGoLynk": "Versenden mit GoLynk",
-      "deliverAndEarn": "Liefern & Verdienen"
+      "shipWithGoLynk": "Pilot starten",
+      "deliverAndEarn": "Treten Sie als Fahrer bei"
     }
   },
   "smartLogistics": {
@@ -13,17 +13,14 @@
     "description": "GoLynk verwandelt ungenutzte urbane Kapazitäten in ein nahtloses, sich selbst optimierendes Liefernetzwerk. Schnellere Sendungen, niedrigere Kosten, sofortige Einnahmen und grünere Logistik – ohne zusätzliche Fahrzeuge.",
     "roles": {
       "shippers": {
-        "title": "Für Unternehmen, die Waren versenden",
-        "challenge": "Lieferkosten erdrücken Margen. Kunden erwarten sowohl Geschwindigkeit als auch Verlässlichkeit. Nachhaltigkeit ist wichtig, aber schwer über erste, mittlere und letzte Meile zu beweisen.",
-        "difference": [
-          "Niedrigere Lieferkosten durch intelligente Nutzung vorhandener Kapazät",
-          "Same-Day- und Next-Day-Optionen ohne Aufschlag",
-          "Flexible Handhabung für frische, zerbreile, hochwertige, sperrige und schwere Sendungen",
-          "Automatische Kohlenstoffverfolgung und vermiedene Emissionsberichte für jede Sendung",
-          "Integration mit Ihren bestehenden Systemen und Spediteuren"
-        ],
-        "whoThisServes": "E-Commerce, Händler, Recommerce, Spezial- und Zerbrechlichgüter, B2B-Versender",
-        "cta": "Versandlösungen erkunden"
+        "title": "Versender",
+        "description": "Profitieren Sie von schnellen, zuverlässigen und kosteneffizienten Lieferungen. GoLynks KI optimiert jede Sendung und sorgt für nahtlose Integration, Echtzeit-Tracking und reduzierten operativen Aufwand – damit Ihr Unternehmen Zeit spart und Effizienz maximiert.",
+        "benefits": [
+          "Erstellen Sie Aufträge mit zwei Klicks und sparen Sie Zeit",
+          "KI ordnet Sendungen sofort den besten Kurieren zu",
+          "Live-Tracking mit automatisierter CO₂-Berichterstattung",
+          "Vereinfachte Integration in bestehende Systeme"
+        ]
       },
       "carriers": {
         "title": "Kuriere / Fahrer",

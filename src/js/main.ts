@@ -50,13 +50,16 @@
  * </div>
  */
 
-import { changeLanguage } from "@/js/utils/i18n";
+import { changeLanguage, t } from "@/js/utils/i18n";
 import { initAnimations } from "@/js/animations/fade";
 import { initCounters } from "./animations/counter";
 import { initFAQ } from "./utils/faq";
 import { initGlobe } from "./utils/map";
 import { initTabs } from "./utils/tabs";
 import { initMobileMenu } from "./utils/mobile-menu";
+
+// Expose t function to window for use in carousel and other dynamic contexts
+(window as any).t = t;
 
 /**
  * Main initialization handler
@@ -160,6 +163,165 @@ document.addEventListener("DOMContentLoaded", () => {
     animationType: "fade-up",
     animationDuration: 600,
     staggerDelay: 0,
+  });
+
+  /**
+   * Initialize features carousel
+   * Manual carousel with next/prev buttons and dot navigation
+   */
+  const carousels = document.querySelectorAll<HTMLElement>(
+    "[data-carousel], .features-carousel",
+  );
+  carousels.forEach((carousel) => {
+    const carouselId =
+      carousel.getAttribute("data-carousel") ||
+      carousel.classList.contains("features-carousel")
+        ? "features-carousel"
+        : carousel.className;
+    const inner = carousel.querySelector<HTMLElement>(
+      ".features-carousel-inner",
+    );
+    if (!inner) return;
+
+    // Get parent container that has the heading/description
+    const parentContainer = carousel.parentElement;
+    const headingElement = parentContainer?.querySelector(
+      ".features-carousel-heading",
+    ) as HTMLElement | null;
+    const descriptionElement = parentContainer?.querySelector(
+      ".features-carousel-description",
+    ) as HTMLElement | null;
+
+    const slides = Array.from(
+      inner.querySelectorAll<HTMLElement>(".features-carousel-slide"),
+    );
+    let currentSlide = 0;
+
+    const updateCarousel = async () => {
+      const translateX = -currentSlide * 100;
+      inner.style.transform = `translateX(${translateX}%)`;
+
+      // Update dots
+      const allDots = document.querySelectorAll<HTMLElement>(
+        `.carousel-dot[data-carousel="${carouselId}"]`,
+      );
+      allDots.forEach((dot, index) => {
+        if (index === currentSlide) {
+          dot.classList.add("active");
+          dot.classList.remove("bg-primary-200");
+          dot.classList.add("bg-primary");
+        } else {
+          dot.classList.remove("active");
+          dot.classList.remove("bg-primary");
+          dot.classList.add("bg-primary-200");
+        }
+      });
+
+      // Update toggle buttons
+      const toggleButtons = document.querySelectorAll<HTMLElement>(
+        `.features-toggle-btn[data-carousel="${carouselId}"]`,
+      );
+      toggleButtons.forEach((btn, index) => {
+        if (index === currentSlide) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+      });
+
+      // Update heading and description based on current slide
+      if (headingElement && descriptionElement) {
+        let headingKey = "";
+        let descriptionKey = "";
+
+        if (currentSlide === 0) {
+          headingKey =
+            headingElement.getAttribute("data-heading-individuals") || "";
+          descriptionKey =
+            descriptionElement.getAttribute("data-description-individuals") ||
+            "";
+        } else if (currentSlide === 1) {
+          headingKey = headingElement.getAttribute("data-heading-fleets") || "";
+          descriptionKey =
+            descriptionElement.getAttribute("data-description-fleets") || "";
+        }
+
+        // Use the t function to get translations
+        if (
+          typeof window !== "undefined" &&
+          (window as any).t &&
+          headingKey &&
+          descriptionKey
+        ) {
+          try {
+            const headingText = await (window as any).t(headingKey);
+            const descriptionText = await (window as any).t(descriptionKey);
+
+            if (headingText) {
+              headingElement.textContent = headingText;
+            }
+            if (descriptionText) {
+              descriptionElement.textContent = descriptionText;
+            }
+          } catch (error) {
+            console.error("Error translating carousel text:", error);
+          }
+        }
+      }
+    };
+
+    // Toggle button click handlers
+    const toggleButtons = document.querySelectorAll<HTMLElement>(
+      `.features-toggle-btn[data-carousel="${carouselId}"]`,
+    );
+    toggleButtons.forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const slideIndex = parseInt(
+          btn.getAttribute("data-toggle-slide") || "0",
+        );
+        currentSlide = slideIndex;
+        await updateCarousel();
+      });
+    });
+
+    // Next button
+    const nextButtons = document.querySelectorAll<HTMLElement>(
+      `.carousel-next[data-carousel="${carouselId}"]`,
+    );
+    nextButtons.forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        await updateCarousel();
+      });
+    });
+
+    // Prev button
+    const prevButtons = document.querySelectorAll<HTMLElement>(
+      `.carousel-prev[data-carousel="${carouselId}"]`,
+    );
+    prevButtons.forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        await updateCarousel();
+      });
+    });
+
+    // Dot navigation
+    const dots = document.querySelectorAll<HTMLElement>(
+      `.carousel-dot[data-carousel="${carouselId}"]`,
+    );
+    dots.forEach((dot) => {
+      dot.addEventListener("click", async () => {
+        const slideIndex = parseInt(dot.getAttribute("data-slide") || "0");
+        currentSlide = slideIndex;
+        await updateCarousel();
+      });
+    });
+
+    // Initialize carousel with proper await
+    updateCarousel().catch((error) => {
+      console.error("Error initializing carousel:", error);
+    });
   });
 
   /**

@@ -35,7 +35,9 @@
   <body>
     <main>
       <!-- Hero Section with Navigation -->
-      <div class="relative h-screen md:h-auto md:min-h-[600px] flex flex-col">
+      <div
+        class="relative h-screen md:h-auto md:min-h-[600px] flex flex-col overflow-hidden"
+      >
         <!-- Navigation -->
         <nav class="relative z-10 border-b border-white/90">
           <div
@@ -64,9 +66,17 @@
         <div
           class="relative flex-1 flex items-center justify-center px-6 py-20 md:py-0"
         >
-          <!-- Background Gradient -->
+          <!-- Background Image -->
           <div
-            class="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent"
+            class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./src/assets/images/faq.jpg.jpg&quot;);
+            "
+          ></div>
+
+          <!-- Dark Overlay for Text Readability -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/40"
           ></div>
 
           <!-- Content -->
@@ -75,24 +85,39 @@
             data-animate="fade-up"
             data-duration="600"
           >
-            <h1 class="text-4xl md:text-6xl font-bold text-text-primary mb-6">
+            <p
+              class="text-text-on-dark/80 text-sm md:text-base font-semibold uppercase tracking-wide mb-4"
+            >
+              Get Answers
+            </p>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
               Frequently Asked Questions
             </h1>
-            <p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
+            <p
+              class="text-lg md:text-xl text-text-on-dark/90 max-w-2xl mx-auto mb-6"
+            >
               Find detailed answers about how GoLynk works for shippers,
               carriers, microhubs, and partners—from safety and payouts to
               carbon and ESG reporting.
+            </p>
+            <p
+              class="text-base md:text-lg text-text-on-dark/75 max-w-2xl mx-auto"
+            >
+              Can't find what you're looking for? Explore how our orchestration
+              model transforms logistics for every stakeholder.
             </p>
           </div>
         </div>
       </div>
 
       <!-- FAQ Content -->
-      <section class="py-16">
-        <div class="container mx-auto px-6 max-w-3xl">
+      <section class="py-20 md:py-28">
+        <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
           <!-- For Shippers & Businesses -->
-          <div class="mb-16">
-            <h2 class="text-2xl font-bold text-text-primary mb-8">
+          <div class="mb-20 md:mb-28">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-text-primary mb-10 md:mb-12"
+            >
               Businesses & Shippers
             </h2>
             <div class="space-y-4" id="faq-businesses">
@@ -710,8 +735,10 @@
           </div>
 
           <!-- For Carriers & Travel Participants -->
-          <div class="mb-16">
-            <h2 class="text-2xl font-bold text-text-primary mb-8">
+          <div class="mb-20 md:mb-28">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-text-primary mb-10 md:mb-12"
+            >
               Travel Participants & Carriers
             </h2>
             <div class="space-y-4" id="faq-travel">
@@ -1131,8 +1158,10 @@
           </div>
 
           <!-- Environmental Impact & Science -->
-          <div class="mb-16">
-            <h2 class="text-2xl font-bold text-text-primary mb-8">
+          <div class="mb-20 md:mb-28">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-text-primary mb-10 md:mb-12"
+            >
               Carbon & ESG / Environment
             </h2>
             <div class="space-y-4" id="faq-environmental">
@@ -1233,8 +1262,10 @@
           </div>
 
           <!-- Trust, Security & Compliance -->
-          <div class="mb-16">
-            <h2 class="text-2xl font-bold text-text-primary mb-8">
+          <div class="mb-20 md:mb-28">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-text-primary mb-10 md:mb-12"
+            >
               Trust, Security & Compliance
             </h2>
             <div class="space-y-4" id="faq-security">
@@ -1367,7 +1398,9 @@
 
           <!-- Community & Feedback -->
           <div>
-            <h2 class="text-2xl font-bold text-text-primary mb-8">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-text-primary mb-10 md:mb-12"
+            >
               Community & Feedback
             </h2>
             <div class="space-y-4" id="faq-community">

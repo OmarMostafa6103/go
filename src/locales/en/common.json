@@ -41,24 +41,24 @@
   },
   "coreAdvantages": {
     "subheading": "Core Advantages",
-    "heading": "Deliver Faster, Cheaper, Transparent, and Sustainable",
-    "description": "GoLynk combines cost savings, ultra-fast delivery, real-time tracking, and low-carbon operations giving businesses and customers a modern, efficient, and eco-friendly logistics experience.",
+    "heading": "Faster. Cheaper. Transparent. Sustainable.",
+    "description": "GoLynk delivers ultra-fast, low-cost deliveries with real-time visibility and measurable carbon savings—using capacity already on the road.",
     "advantages": {
       "cost": {
-        "title": "Cost Advantage",
-        "description": "Lower delivery costs with no minimums or hidden fees."
+        "title": "Lower Cost",
+        "description": "No minimums or hidden fees. Turn unused kilometres into revenue without adding vehicles or headcount."
       },
       "speed": {
-        "title": "Speed Advantage",
-        "description": "Ultra-fast delivery in hours, not days."
+        "title": "Faster Delivery",
+        "description": "Deliver in hours, not days. Complete more jobs in the same driving time."
       },
       "realTime": {
-        "title": "Real-Time Experience",
-        "description": "Live tracking, dynamic ETAs, and automated updates."
+        "title": "Real-Time Visibility",
+        "description": "Live tracking, dynamic ETAs, and clear earnings—less coordination, fewer support calls."
       },
       "lowCarbon": {
-        "title": "Low-Carbon",
-        "description": "Smart routing and shared capacity for greener deliveries."
+        "title": "Low-Carbon by Design",
+        "description": "Shared capacity and smart routing reduce emissions, with CO₂ impact visible per route."
       }
     }
   },
@@ -74,7 +74,7 @@
     },
     "aiMatchingDetail": {
       "title": "Orchestration Graph",
-      "description": "We model existing routes from individuals and fleets as one living graph of movements and capacities—across walkers, bikes, cars, vans, trucks, trains, and public transport. This lets us see all the free space already in motion, instead of adding new vehicles."
+      "description": "We model existing routes from individuals and fleets as one living graph of movements and capacities—across walkers, bikes, cars, vans, trucks, trains, and public transport. This lets us see all the free space already in motion, instead of adding new vehicles. For carriers and fleets, this means there is almost always a job that naturally fits the routes you already travel—on foot, by bike, by car, van, or truck."
     },
     "multimodalRoutingDetail": {
       "title": "Matching Engine",

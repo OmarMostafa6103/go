@@ -1,10 +1,10 @@
 {
   "hero": {
-    "heading": "De wereld beweegt al. Wij maken die beweging voor iedereen bezorgbaar.",
-    "description": "GoLynk's AI zet alledaagse routes – voetgangers, fietsen, auto's, busjes, vrachtwagens, treinen en openbaar vervoer – om in een logistiek netwerk van eerste tot laatste kilometer.",
+    "heading": "De wereld beweegt al. Wij zetten beweging om in infrastructuur.",
+    "description": "We matched zendingen aan beschikbare ruimte in voertuigen die al in beweging zijn — en verbinden ze via geverifieerde handoffs.",
     "cta": {
-      "shipWithGoLynk": "Verzend met GoLynk",
-      "deliverAndEarn": "Bezorg & Verdien"
+      "shipWithGoLynk": "Start een pilot",
+      "deliverAndEarn": "Sluit aan als Vervoerder"
     }
   },
   "smartLogistics": {
@@ -13,17 +13,14 @@
     "description": "GoLynk zet onbenutte stedelijke capaciteit om in een naadloos, zelfoptimaliserend bezorgnetwerk. Snellere verzendingen, lagere kosten, directe verdiensten en groenere logistiek zonder extra voertuigen toe te voegen.",
     "roles": {
       "shippers": {
-        "title": "Voor bedrijven die verzenden",
-        "challenge": "Bezorgkosten drukken winsten. Klanten verwachten zowel snelheid als kwaliteit. Duurzaamheid is belangrijk, maar moeilijk te bewijzen over eerste, midden- en laatste kilometer.",
-        "difference": [
-          "Lagere bezorgkosten door intelligent gebruik van bestaande capaciteit",
-          "Same-day en next-day opties zonder premiumtarief",
-          "Flexibele behandeling voor verse, fragiele, waardevol, omvangrijke en zware zendingen",
-          "Automatische koolstofvolgorde en vermeden-emissiesrapportage voor elke zending",
-          "Integratie met uw bestaande systemen en vervoerders"
-        ],
-        "whoThisServes": "E-commerce, Detailhandel, Recommerce, Specialistische en fragiele goederen, B2B-verzenders",
-        "cta": "Verken verzendoplossingen"
+        "title": "Verzenders",
+        "description": "Profiteer van snelle, betrouwbare en kostenefficiënte bezorgingen. GoLynk's AI optimaliseert elke zending, zorgt voor naadloze integratie, real-time tracking en verminderde operationele inspanning, zodat je bedrijf tijd bespaart en efficiëntie maximaliseert.",
+        "benefits": [
+          "Maak bestellingen in twee klikken en bespaar tijd",
+          "AI koppelt zendingen direct aan de beste vervoerders",
+          "Live tracking met geautomatiseerde koolstofrapportage",
+          "Vereenvoudigde integratie met bestaande systemen"
+        ]
       },
       "carriers": {
         "title": "Vervoerders / Chauffeurs",
