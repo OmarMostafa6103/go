@@ -229,8 +229,8 @@
     <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script type="module" crossorigin src="/go/assets/main-B4TLYDN-.js"></script>
-    <link rel="stylesheet" crossorigin href="/go/assets/main-DWCAqCav.css">
+    <script type="module" crossorigin src="/go/assets/main-Duf77MRM.js"></script>
+    <link rel="stylesheet" crossorigin href="/go/assets/main-CR1x8evi.css">
   </head>
   <body>
     <main
@@ -652,110 +652,228 @@
         </div>
       </section>
 
-      <!-- Solution Band Section -->
-      <section class="solution-band" id="solution">
+      <!-- Infrastructure Architecture Section -->
+      <section class="infrastructure-section" id="solution">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto">
-          <h2 class="h2 text-primary text-center mb-12">
-            Coordination at Infrastructure Scale
-          </h2>
-          <div class="solution-content">
-            <div
-              class="solution-text"
-              data-animate="fade-up"
-              data-duration="600"
-            >
-              <h2 class="text-text-primary">
-                Logistics Isn't Broken. Coordination Is.
+          <!-- LAYER 1: WHAT WE DO -->
+          <div class="infra-layer-1" data-animate="fade-up" data-duration="600">
+            <div class="infra-statement">
+              <h2 class="infra-title">
+                We turn existing movement into structured logistics capacity.
               </h2>
-              <p class="text-text-secondary mt-6">
-                GoLynk does not add more vehicles to the road. It connects the
-                ones already moving.
-              </p>
-              <div class="text-text-secondary space-y-2 mt-4">
-                <p>
-                  Existing routes become structured capacity. Fleets integrate
-                  spare space and backhaul. Microhubs enable verified handoffs
-                  at natural intersections. Businesses connect through dashboard
-                  or API.
-                </p>
-                <p>
-                  Movement becomes coordinated. Efficiency becomes structural.
-                </p>
+              <div class="infra-divider"></div>
+              <div class="infra-chips">
+                <span class="infra-chip"
+                  >Spare space → Structured capacity</span
+                >
+                <span class="infra-chip">Overlap → Efficiency</span>
+                <span class="infra-chip">Movement → Infrastructure</span>
               </div>
-              <p class="text-text-secondary mt-6">
-                Instead of adding vehicles, we make existing movement behave
-                like one synchronized system.
-              </p>
             </div>
-            <div
-              class="solution-visual"
-              data-animate="fade-up"
-              data-duration="600"
-              data-delay="100"
-            >
-              <!-- Stack Visual -->
-              <div class="solution-stack">
-                <!-- Top Band: Input Sources -->
-                <div class="stack-band stack-band-top">
-                  <div class="stack-icon-grid">
-                    <div class="stack-icon">
-                      <svg class="w-6 h-6">
-                        <use href="#icon-trolley-outline"></use>
-                      </svg>
-                      <span class="stack-label">Carriers</span>
-                    </div>
-                    <div class="stack-icon">
-                      <svg class="w-6 h-6">
-                        <use href="#icon-delivery"></use>
-                      </svg>
-                      <span class="stack-label">Shippers</span>
-                    </div>
-                    <div class="stack-icon">
-                      <svg class="w-6 h-6">
-                        <use href="#icon-hub"></use>
-                      </svg>
-                      <span class="stack-label">Hubs</span>
-                    </div>
-                  </div>
+          </div>
+
+          <!-- LAYER 2: HOW IT WORKS (System Diagram) -->
+          <div
+            class="infra-layer-2"
+            data-animate="fade-up"
+            data-duration="600"
+            data-delay="150"
+          >
+            <div class="infra-diagram">
+              <!-- Top: Participants -->
+              <div class="diagram-row participants-row">
+                <div class="participant-node">
+                  <svg class="node-icon" viewBox="0 0 24 24">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M12 8v3m0 5v1"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <span class="node-label">Individual</span>
                 </div>
-
-                <!-- Divider -->
-                <div class="stack-divider"></div>
-
-                <!-- Middle: GoLynk Engine -->
-                <div class="stack-band stack-band-center">
-                  <div class="engine-card">
-                    <h3 class="engine-title">GoLynk Engine</h3>
-                    <p class="engine-subtitle">Real-time coordination</p>
-                  </div>
+                <div class="participant-node">
+                  <svg class="node-icon" viewBox="0 0 24 24">
+                    <rect
+                      x="3"
+                      y="6"
+                      width="18"
+                      height="12"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      rx="1"
+                    />
+                    <path
+                      d="M9 10v4m6-4v4"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <span class="node-label">Fleet</span>
                 </div>
-
-                <!-- Divider -->
-                <div class="stack-divider"></div>
-
-                <!-- Bottom Band: Enterprise Outputs -->
-                <div class="stack-band stack-band-bottom">
-                  <div class="stack-icon-grid">
-                    <div class="stack-icon">
-                      <svg class="w-6 h-6">
-                        <use href="#icon-maps-location"></use>
-                      </svg>
-                      <span class="stack-label">Tracking</span>
-                    </div>
-                    <div class="stack-icon">
-                      <svg class="w-6 h-6">
-                        <use href="#icon-leaf-outline"></use>
-                      </svg>
-                      <span class="stack-label">Carbon</span>
-                    </div>
-                    <div class="stack-icon">
-                      <svg class="w-6 h-6">
-                        <use href="#icon-money-saving-jar"></use>
-                      </svg>
-                      <span class="stack-label">Savings</span>
-                    </div>
-                  </div>
+                <div class="participant-node">
+                  <svg class="node-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2l8 5v8c0 5-8 7-8 7s-8-2-8-7v-8l8-5z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <span class="node-label">Microhub</span>
                 </div>
+                <div class="participant-node">
+                  <svg class="node-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <span class="node-label">API</span>
+                </div>
+              </div>
+
+              <!-- Connector lines from participants to engine -->
+              <svg
+                class="diagram-connectors"
+                preserveAspectRatio="none"
+                viewBox="0 0 400 80"
+              >
+                <line
+                  x1="60"
+                  y1="0"
+                  x2="60"
+                  y2="40"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="150"
+                  y1="0"
+                  x2="150"
+                  y2="40"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="250"
+                  y1="0"
+                  x2="250"
+                  y2="40"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="340"
+                  y1="0"
+                  x2="340"
+                  y2="40"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+              </svg>
+
+              <!-- Center: GoLynk Engine -->
+              <div class="diagram-center">
+                <div class="engine-box">
+                  <h3 class="engine-label">GO LYNK ENGINE</h3>
+                </div>
+              </div>
+
+              <!-- Engine outputs -->
+              <div class="engine-outputs">
+                <div class="output-chip">Tracking</div>
+                <div class="output-chip">Routing</div>
+                <div class="output-chip">Trust</div>
+                <div class="output-chip">Carbon</div>
+              </div>
+
+              <!-- Connector lines from engine to network -->
+              <svg
+                class="diagram-connectors"
+                preserveAspectRatio="none"
+                viewBox="0 0 400 80"
+              >
+                <line
+                  x1="200"
+                  y1="0"
+                  x2="200"
+                  y2="40"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="60"
+                  y1="40"
+                  x2="200"
+                  y2="0"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.3"
+                />
+                <line
+                  x1="340"
+                  y1="40"
+                  x2="200"
+                  y2="0"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  opacity="0.3"
+                />
+              </svg>
+
+              <!-- Bottom: Structured Network -->
+              <div class="diagram-row network-row">
+                <div class="network-node"></div>
+                <div class="network-connector"></div>
+                <div class="network-node network-node-highlight"></div>
+                <div class="network-connector"></div>
+                <div class="network-node"></div>
+                <div class="network-connector"></div>
+                <div class="network-node"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAYER 3: WHAT IT PRODUCES (Outcome Cards) -->
+          <div
+            class="infra-layer-3"
+            data-animate="fade-up"
+            data-duration="600"
+            data-delay="300"
+          >
+            <div class="outcome-cards">
+              <div class="outcome-card">
+                <div class="outcome-metric">Empty Backhauls ↓</div>
+                <div class="outcome-result">Capacity Utilization ↑</div>
+              </div>
+              <div class="outcome-card">
+                <div class="outcome-metric">Detours Minimized</div>
+                <div class="outcome-result">Density Increased</div>
+              </div>
+              <div class="outcome-card">
+                <div class="outcome-metric">Cost per Shipment ↓</div>
+                <div class="outcome-result">Predictability ↑</div>
+              </div>
+              <div class="outcome-card">
+                <div class="outcome-metric">Measured CO₂ Reduction</div>
+                <div class="outcome-result">Audit-Ready Reporting</div>
               </div>
             </div>
           </div>
