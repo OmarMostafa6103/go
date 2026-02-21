@@ -14,8 +14,8 @@
     <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script type="module" crossorigin src="/go/assets/main-BFIpkJrP.js"></script>
-    <link rel="stylesheet" crossorigin href="/go/assets/main-D_h-wuix.css">
+    <script type="module" crossorigin src="/go/assets/main-sGJQQKLX.js"></script>
+    <link rel="stylesheet" crossorigin href="/go/assets/main-DpLf-xw4.css">
   </head>
   <body>
     <!-- SVG Icon Sprite -->
@@ -170,7 +170,7 @@
                 </a>
 
                 <a
-                  href="/carrier.html"
+                  href="./carrier.html"
                   class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
                   data-i18n="common.navigation.carriers"
                 >
@@ -202,7 +202,7 @@
                 </a>
 
                 <a
-                  href="#about"
+                  href="./about.html"
                   class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
                   data-i18n="common.navigation.about"
                 >
@@ -285,7 +285,7 @@
               data-animate="fade-up"
               data-duration="800"
             >
-              Turn Existing Movement Into Reliable Shipping Capacity.
+              Stop Booking Vehicles. Start Using Routes Already in Motion.
             </h1>
             <p
               class="text-text-on-dark/90 text-h3 max-9/10 md:max-w-4/5 mx-auto"
@@ -293,10 +293,8 @@
               data-duration="800"
               data-delay="200"
             >
-              GoLynk orchestrates parcels, pallets, LTL, and truckloads on
-              multi-hop routes built from capacity already moving—optimizing
-              overlap, minimizing detours, and reporting cost + CO₂ per
-              shipment.
+              GoLynk orchestrates shipments across existing routes — reducing
+              detours, cost, and empty miles.
             </p>
             <ul
               class="flex flex-nowrap gap-4 mx-auto items-center justify-between max-w-full"
@@ -310,7 +308,7 @@
                 data-duration="800"
                 data-delay="350"
               >
-                Lower cost by filling spare capacity before booking new runs
+                Lower cost
               </li>
               <li
                 class="flex-1 flex items-center justify-center px-4 py-3 rounded-lg border border-white/30 bg-white/5 text-white text-xs lg:text-sm font-semibold tracking-wide"
@@ -318,7 +316,7 @@
                 data-duration="800"
                 data-delay="400"
               >
-                Same‑day / next‑day on dense lanes
+                Faster lanes
               </li>
               <li
                 class="flex-1 flex items-center justify-center px-4 py-3 rounded-lg border border-white/30 bg-white/5 text-white text-xs lg:text-sm font-semibold tracking-wide"
@@ -326,7 +324,7 @@
                 data-duration="800"
                 data-delay="450"
               >
-                Leg‑by‑leg tracking + one invoice
+                Unified tracking
               </li>
               <li
                 class="flex-1 flex items-center justify-center px-4 py-3 rounded-lg border border-white/30 bg-white/5 text-white text-xs lg:text-sm font-semibold tracking-wide"
@@ -334,7 +332,7 @@
                 data-duration="800"
                 data-delay="500"
               >
-                CO₂ per shipment + avoided empty miles
+                CO₂ visibility
               </li>
             </ul>
             <div
@@ -354,7 +352,7 @@
                 href="#how-it-works"
                 class="px-7 py-4 outline-btn inline-flex items-center justify-center w-fit"
               >
-                See How Orchestration Works
+                How It Works
               </a>
             </div>
           </div>
@@ -371,82 +369,431 @@
           />
         </div>
       </div>
-      <!-- Smart Delivery Section -->
-      <section class="py-20 md:py-28">
+
+      <!-- The Hidden Cost of Shipping Section -->
+      <section class="py-16 md:py-20">
         <div
-          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
+          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-10"
         >
-          <!-- Section Header -->
+          <!-- Section Title -->
+          <div class="text-center">
+            <h2 class="h1 text-text-primary">The Hidden Cost of Shipping</h2>
+          </div>
+
+          <!-- Opening Statement -->
+          <div class="text-center space-y-1.5 mb-12">
+            <p
+              class="text-xl md:text-2xl text-text-primary font-semibold leading-tight"
+            >
+              Capacity exists. It moves every day. It isn't coordinated.
+            </p>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <!-- Card 1: Empty Miles -->
+            <div
+              class="rounded-xl border border-border-default bg-gradient-to-br from-bg-secondary to-bg-secondary/50 p-6 flex flex-col justify-start space-y-3 hover:border-primary/30 transition-colors"
+            >
+              <h3 class="text-lg font-semibold text-text-primary">
+                Empty Miles
+              </h3>
+              <p class="text-text-secondary leading-snug text-sm">
+                Trucks return half full. You still pay for the road.
+              </p>
+            </div>
+
+            <!-- Card 2: Fragmented Networks -->
+            <div
+              class="rounded-xl border border-border-default bg-gradient-to-br from-bg-secondary to-bg-secondary/50 p-6 flex flex-col justify-start space-y-3 hover:border-primary/30 transition-colors"
+            >
+              <h3 class="text-lg font-semibold text-text-primary">
+                Fragmented Networks
+              </h3>
+              <p class="text-text-secondary leading-snug text-sm">
+                Parcels and freight move separately. Efficiency breaks in
+                between.
+              </p>
+            </div>
+
+            <!-- Card 3: Surface-Level Visibility -->
+            <div
+              class="rounded-xl border border-border-default bg-gradient-to-br from-bg-secondary to-bg-secondary/50 p-6 flex flex-col justify-start space-y-3 hover:border-primary/30 transition-colors"
+            >
+              <h3 class="text-lg font-semibold text-text-primary">
+                Surface-Level Visibility
+              </h3>
+              <p class="text-text-secondary leading-snug text-sm">
+                "Out for delivery" isn't insight. Structure stays hidden.
+              </p>
+            </div>
+          </div>
+
+          <!-- Closing Statement -->
+          <div class="text-center pt-4">
+            <p class="text-base md:text-lg text-text-primary font-semibold">
+              Most logistics systems add vehicles. We orchestrate routes already
+              in motion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What GoLynk Is (and Isn't) Section -->
+      <section class="py-16 md:py-20">
+        <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
+          <!-- Section Title -->
+          <div class="text-center mb-14">
+            <h2 class="h1 text-text-primary">What GoLynk Is (and Isn't)</h2>
+          </div>
+
+          <!-- Elegant Cards Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <!-- Card 1: Unlike Couriers -->
+            <div
+              class="border border-border-default rounded-xl p-8 bg-gradient-to-br from-white/50 to-bg-secondary hover:shadow-md hover:border-primary/50 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-1.946 3.42 3.42 0 014.438 4.438 3.42 3.42 0 001.946 1.946 3.42 3.42 0 01-4.438 4.438 3.42 3.42 0 001.946 1.946 3.42 3.42 0 01-4.438-4.438 3.42 3.42 0 001.946-1.946 3.42 3.42 0 01-1.946-1.946"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-sm font-semibold text-text-primary mb-2">
+                    Not a Courier
+                  </h3>
+                  <p class="text-sm text-text-secondary leading-relaxed">
+                    We don't add vehicles to meet demand.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Unlike Freight Marketplaces -->
+            <div
+              class="border border-border-default rounded-xl p-8 bg-gradient-to-br from-white/50 to-bg-secondary hover:shadow-md hover:border-primary/50 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-sm font-semibold text-text-primary mb-2">
+                    Not a Marketplace
+                  </h3>
+                  <p class="text-sm text-text-secondary leading-relaxed">
+                    We chain multi-hop routes under detour constraints.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Unlike Crowdshipping -->
+            <div
+              class="border border-border-default rounded-xl p-8 bg-gradient-to-br from-white/50 to-bg-secondary hover:shadow-md hover:border-primary/50 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-sm font-semibold text-text-primary mb-2">
+                    Not Crowdshipping
+                  </h3>
+                  <p class="text-sm text-text-secondary leading-relaxed">
+                    Every handoff is verified and insured.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Definition -->
           <div
-            class="text-center space-y-4"
-            data-animate="fade-up"
-            data-duration="800"
+            class="max-w-2xl mx-auto border border-border-default rounded-xl p-8 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 text-center"
           >
-            <h2 class="h1 text-text-primary">
-              How GoLynk Works for Your Shipments
-            </h2>
+            <p class="text-base text-text-primary font-medium leading-relaxed">
+              GoLynk is an
+              <span class="font-semibold text-primary"
+                >orchestration layer</span
+              >
+              that turns routes already in motion into structured logistics
+              capacity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="py-20 md:py-28">
+        <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <h2 class="h1 text-text-primary mb-4">How It Works</h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+              Three steps from shipment to optimization.
+            </p>
           </div>
 
           <!-- Steps Grid -->
-          <div
-            class="grid md:grid-cols-3 gap-12 mt-16"
-            data-duration="800"
-            data-stagger="200"
-            data-animate="fade-up"
-          >
-            <!-- Step 1 -->
-            <div class="text-center space-y-4">
-              <div class="relative inline-flex flex-col items-center mb-6">
-                <!-- Number Circle -->
-                <div
-                  class="size-20 rounded-md border-12 border-primary-bg bg-primary-lightest flex items-center justify-center"
-                >
-                  <span class="text-h1 font-semibold text-text-primary">1</span>
+          <div class="grid md:grid-cols-3 gap-8 mb-20">
+            <!-- Step 1: Define -->
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 text-primary font-bold text-lg"
+                  >
+                    1
+                  </div>
+                </div>
+                <div>
+                  <h3 class="h3 text-text-primary font-semibold">
+                    Define the Shipment
+                  </h3>
                 </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                Define What Moves
-              </h3>
-              <p class="text-text-secondary text-body">
-                You tell us what needs to move: parcels, boxes, pallets, LTL or
-                FTL. You set origins, destinations, time windows, and service
-                levels (same‑day, next‑day, 2–3 days).
-              </p>
+              <div
+                class="text-text-secondary leading-relaxed space-y-2 text-sm"
+              >
+                <p>Shipment type, size, handling</p>
+                <p>Time window, service level</p>
+                <p class="text-xs text-text-secondary/70">
+                  (Same-day, next-day, 2–3 days)
+                </p>
+              </div>
             </div>
 
-            <!-- Step 2 -->
-            <div class="text-center space-y-4">
-              <div
-                class="size-20 rounded-md border-12 border-primary-bg bg-primary-lightest flex items-center justify-center mx-auto mb-6"
-              >
-                <span class="text-h1 font-semibold text-text-primary">2</span>
+            <!-- Step 2: Orchestrate -->
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 text-primary font-bold text-lg"
+                  >
+                    2
+                  </div>
+                </div>
+                <div>
+                  <h3 class="h3 text-text-primary font-semibold">
+                    Orchestrate the Journey
+                  </h3>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                We Orchestrate the Route
-              </h3>
-              <p class="text-text-secondary text-body">
-                GoLynk's engine builds a multi‑hop, multi‑modal route. For
-                parcels, it combines walkers, bikes, vans, trains, and
-                microhubs. For pallets and LTL, it taps underutilized trucks,
-                regional carriers, and backhauls on your lanes.
-              </p>
+              <div
+                class="text-text-secondary leading-relaxed space-y-2 text-sm"
+              >
+                <p>Engine builds 2–3 hop multi-modal plan</p>
+                <p>
+                  Evaluates: overlap, time, capacity, cost, reliability, CO₂
+                </p>
+                <p class="text-xs text-text-secondary/70">
+                  (Real-time route optimization)
+                </p>
+              </div>
             </div>
 
-            <!-- Step 3 -->
-            <div class="text-center space-y-4">
-              <div
-                class="size-20 rounded-md border-12 border-primary-bg bg-primary-lightest flex items-center justify-center mx-auto mb-6"
-              >
-                <span class="text-h1 font-semibold text-text-primary">3</span>
+            <!-- Step 3: Execute -->
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 text-primary font-bold text-lg"
+                  >
+                    3
+                  </div>
+                </div>
+                <div>
+                  <h3 class="h3 text-text-primary font-semibold">
+                    Execute + Report
+                  </h3>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                You Get Delivery and Data
-              </h3>
-              <p class="text-text-secondary text-body">
-                Shipments arrive within the agreed window, with one view of
-                events, costs, and CO₂ per shipment. You get a single invoice
-                and exportable data for finance and ESG.
-              </p>
+              <div
+                class="text-text-secondary leading-relaxed space-y-2 text-sm"
+              >
+                <p>One tracking view, one invoice</p>
+                <p>Exportable cost + CO₂ per shipment</p>
+                <p class="text-xs text-text-secondary/70">
+                  (Finance & ESG ready)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optimization Priorities Strip -->
+          <div
+            class="mb-16 border-t border-b border-border-default bg-bg-secondary/30 py-6 px-8 rounded-lg"
+          >
+            <p
+              class="text-sm text-text-secondary/70 text-center mb-3 uppercase tracking-wide font-semibold"
+            >
+              Optimization Priorities
+            </p>
+            <div
+              class="flex flex-wrap justify-center items-center gap-3 md:gap-6"
+            >
+              <span class="text-sm font-medium text-text-primary"
+                >Overlap ↑</span
+              >
+              <span class="text-border-default">•</span>
+              <span class="text-sm font-medium text-text-primary"
+                >Detours ↓</span
+              >
+              <span class="text-border-default">•</span>
+              <span class="text-sm font-medium text-text-primary"
+                >Reliability ↑</span
+              >
+              <span class="text-border-default">•</span>
+              <span class="text-sm font-medium text-text-primary">Cost ↓</span>
+              <span class="text-border-default">•</span>
+              <span class="text-sm font-medium text-text-primary"
+                >Emissions ↓</span
+              >
+            </div>
+          </div>
+
+          <!-- Route Scoring Mini Card -->
+          <div class="max-w-2xl mx-auto">
+            <div
+              class="border border-border-default rounded-xl p-8 bg-gradient-to-br from-white/50 to-bg-secondary"
+            >
+              <h4
+                class="text-sm font-semibold text-text-primary mb-6 text-center"
+              >
+                Route Scoring Example
+              </h4>
+
+              <div class="space-y-4">
+                <!-- Candidate Route 1 -->
+                <div
+                  class="border border-border-default/50 rounded-lg p-4 bg-white/30"
+                >
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-text-primary"
+                      >Route A</span
+                    >
+                    <span class="text-xs text-text-secondary"
+                      >Score: 7.2/10</span
+                    >
+                  </div>
+                  <div class="w-full bg-border-default/20 rounded-full h-1.5">
+                    <div
+                      class="bg-yellow-400 h-1.5 rounded-full"
+                      style="width: 72%"
+                    ></div>
+                  </div>
+                  <p class="text-xs text-text-secondary mt-2">
+                    Good overlap, higher detours
+                  </p>
+                </div>
+
+                <!-- Candidate Route 2 -->
+                <div
+                  class="border border-border-default/50 rounded-lg p-4 bg-white/30"
+                >
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-text-primary"
+                      >Route B</span
+                    >
+                    <span class="text-xs text-text-secondary"
+                      >Score: 6.8/10</span
+                    >
+                  </div>
+                  <div class="w-full bg-border-default/20 rounded-full h-1.5">
+                    <div
+                      class="bg-yellow-300 h-1.5 rounded-full"
+                      style="width: 68%"
+                    ></div>
+                  </div>
+                  <p class="text-xs text-text-secondary mt-2">
+                    Lower cost, less reliable
+                  </p>
+                </div>
+
+                <!-- Chosen Route (Winner) -->
+                <div
+                  class="border-2 border-primary rounded-lg p-4 bg-primary/5"
+                >
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <svg
+                        class="h-4 w-4 text-primary"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span class="text-sm font-semibold text-primary"
+                        >Route C (Selected)</span
+                      >
+                    </div>
+                    <span class="text-xs font-semibold text-primary"
+                      >Score: 8.7/10</span
+                    >
+                  </div>
+                  <div class="w-full bg-primary/20 rounded-full h-1.5">
+                    <div
+                      class="bg-primary h-1.5 rounded-full"
+                      style="width: 87%"
+                    ></div>
+                  </div>
+                  <p class="text-xs text-text-primary font-medium mt-2">
+                    Best overlap + detour balance + reliability
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -461,20 +808,13 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <h2 class="h1 text-text-primary">
-              One Network. Two Scales of Movement.
-            </h2>
+            <h2 class="h1 text-text-primary">One Network. Two Scales.</h2>
             <p
               class="text-text-secondary text-lg max-w-3xl mx-auto leading-relaxed"
             >
-              Whether you ship parcels or full truckloads, GoLynk uses the same
-              orchestration graph — optimizing route overlap, detours, and spare
-              capacity across every leg.
+              Whether you ship parcels or full truckloads, the orchestration
+              logic remains the same.
             </p>
-            <div class="space-y-2 text-text-secondary font-semibold">
-              <p>The shipment size changes.</p>
-              <p>The orchestration logic does not.</p>
-            </div>
           </div>
 
           <!-- Block 1: Urban & Parcel (image left, text right) -->
@@ -499,24 +839,21 @@
                 >
                   Urban Scale
                 </p>
-                <h3 class="h2 text-text-primary font-bold">
-                  Urban &amp; Parcel Flows
-                </h3>
+                <h3 class="h2 text-text-primary font-bold">Urban Scale</h3>
               </div>
 
               <p class="text-text-secondary font-semibold text-sm">
-                High-frequency, short-hop density
+                High-frequency. Short-hop. Density-driven.
               </p>
 
               <p class="text-text-secondary leading-relaxed">
-                For e-commerce brands and retailers moving parcels and
-                time-sensitive orders.
+                For e-commerce, recommerce, retail, and time-sensitive flows.
               </p>
 
               <p class="text-text-secondary leading-relaxed">
                 GoLynk chains walkers, bikes, vans, trains, and microhubs into
-                multi-hop urban corridors — prioritizing overlap over new
-                vehicle dispatch.
+                structured urban corridors — prioritizing existing routes over
+                new vehicle dispatch.
               </p>
 
               <ul class="space-y-3">
@@ -527,7 +864,7 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    Same-day and next-day on dense lanes
+                    Same-day / next-day on dense lanes
                   </span>
                 </li>
                 <li class="flex items-start gap-3">
@@ -537,7 +874,7 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    Specialist handling for fresh and high-value goods
+                    White-glove and high-value handling
                   </span>
                 </li>
                 <li class="flex items-start gap-3">
@@ -547,7 +884,7 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    Microhubs to increase reliability and reduce detours
+                    Microhubs that reduce detours
                   </span>
                 </li>
                 <li class="flex items-start gap-3">
@@ -557,14 +894,13 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    CO₂ impact visible per order
+                    CO₂ visibility per order
                   </span>
                 </li>
               </ul>
 
               <p class="text-text-primary font-bold text-sm pt-4">
-                Parcels move through capacity already in motion — not added
-                vans.
+                Parcels move through movement already happening.
               </p>
             </div>
           </div>
@@ -591,23 +927,21 @@
                 >
                   Freight Scale
                 </p>
-                <h3 class="h2 text-text-primary font-bold">
-                  Pallet, LTL &amp; Truckload Flows
-                </h3>
+                <h3 class="h2 text-text-primary font-bold">Freight Scale</h3>
               </div>
 
               <p class="text-text-secondary font-semibold text-sm">
-                Long-haul and backhaul density
+                Long-haul. Backhaul. Lane optimization.
               </p>
 
               <p class="text-text-secondary leading-relaxed">
-                For manufacturers and distributors moving pallets, LTL, and FTL.
+                For manufacturers, distributors, and large-volume flows.
               </p>
 
               <p class="text-text-secondary leading-relaxed">
                 GoLynk surfaces underused truck capacity and return journeys —
-                chaining long-haul with first and last mile only where overlap
-                exists.
+                chaining long-haul with first and last mile only where shared
+                capacity supports it.
               </p>
 
               <ul class="space-y-3">
@@ -618,7 +952,7 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    Use backhauls before booking new runs
+                    Backhauls before dedicated runs
                   </span>
                 </li>
                 <li class="flex items-start gap-3">
@@ -628,8 +962,7 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    Combine long-haul with first/last mile when density supports
-                    it
+                    Density-aware lane structuring
                   </span>
                 </li>
                 <li class="flex items-start gap-3">
@@ -639,7 +972,7 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    One orchestration layer across lanes and loads
+                    One orchestration layer across loads
                   </span>
                 </li>
                 <li class="flex items-start gap-3">
@@ -649,340 +982,356 @@
                     <use href="#icon-check"></use>
                   </svg>
                   <span class="text-text-secondary text-sm">
-                    Visibility into avoided empty miles and CO₂ impact
+                    CO₂ and avoided empty miles per lane
                   </span>
                 </li>
               </ul>
 
               <p class="text-text-primary font-bold text-sm pt-4">
-                Freight moves on structured capacity — increasing density before
-                adding vehicles.
+                Freight moves on routes already in motion — not additional
+                vehicles.
               </p>
             </div>
-          </div>
-
-          <!-- Divider -->
-          <hr class="my-0 border-t border-gray-200 mb-16" />
-
-          <!-- Why This Matters -->
-          <div
-            class="text-center space-y-6 py-8"
-            data-animate="fade-up"
-            data-duration="800"
-          >
-            <h3 class="h2 text-text-primary font-bold">Why This Matters</h3>
-            <div
-              class="space-y-2 text-text-secondary max-w-2xl mx-auto leading-relaxed"
-            >
-              <p>
-                Traditional logistics separates parcel and freight networks.
-              </p>
-              <p>GoLynk models both as movement density within one system.</p>
-            </div>
-          </div>
-
-          <!-- Enterprise Authority Box -->
-          <div
-            class="border border-gray-300 rounded-lg p-6 text-center bg-gradient-to-r from-purple-50 to-transparent"
-            data-animate="fade-up"
-            data-duration="800"
-          >
-            <p class="text-text-primary font-bold text-sm">
-              One graph. One matching engine. Multiple shipment scales.
-            </p>
           </div>
         </div>
       </section>
       <hr style="color: #e9eaeb" class="my-0" />
 
-      <!-- Solutions for How You Ship Section (Two-Tab) -->
+      <!-- How the Network Adapts Section (Premium Design) -->
       <section class="py-20 md:py-28" id="solutions-section">
         <div
-          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
+          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-16"
         >
           <!-- Section Header -->
           <div
-            class="text-center space-y-4"
+            class="text-center space-y-6"
             data-animate="fade-up"
             data-duration="800"
           >
-            <h2 class="h1 text-text-primary">Solutions for How You Ship</h2>
-            <p
-              class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
-            >
-              Pick your lane: consumer &amp; SMB shipments or business &amp;
-              freight flows. GoLynk adapts the same network to both.
-            </p>
+            <h2 class="h1 text-text-primary font-medium">
+              How the Network Adapts
+            </h2>
+            <div class="space-y-3">
+              <p class="text-h3 text-text-primary font-medium">
+                One orchestration system.
+              </p>
+              <p class="text-h3 text-text-primary font-medium">
+                Different shipping realities.
+              </p>
+            </div>
           </div>
 
-          <!-- Tab Buttons -->
+          <!-- Tab Buttons with Clean Underline -->
           <div
-            class="flex justify-center gap-4 flex-wrap"
+            class="flex justify-center gap-8"
             data-animate="fade-up"
             data-duration="800"
             data-delay="100"
           >
             <button
-              class="solutions-tab-btn active px-6 py-3 rounded-lg border-2 border-primary bg-primary text-white font-semibold transition-all"
+              class="solutions-tab-btn active relative pb-3 text-text-primary font-medium transition-all"
               data-tab="consumer"
             >
-              Consumer &amp; SMB
+              <span>Consumer &amp; SMB</span>
+              <div
+                class="absolute bottom-0 left-0 right-0 h-px bg-primary transition-all duration-300"
+              ></div>
             </button>
             <button
-              class="solutions-tab-btn px-6 py-3 rounded-lg border-2 border-border-default bg-transparent text-text-primary font-semibold transition-all hover:border-primary"
+              class="solutions-tab-btn relative pb-3 text-text-secondary font-medium transition-all hover:text-text-primary"
               data-tab="business"
             >
-              Business &amp; Freight
+              <span>Business &amp; Freight</span>
+              <div
+                class="absolute bottom-0 left-0 right-0 h-px bg-transparent transition-all duration-300"
+              ></div>
             </button>
           </div>
 
           <!-- Tab 1: Consumer & SMB -->
           <div
-            class="solutions-panel active grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            class="solutions-panel active space-y-6"
             data-panel="consumer"
             data-animate="fade-up"
             data-duration="800"
             data-delay="200"
           >
             <!-- Card 1: E-Commerce & Marketplaces -->
-            <div
-              class="text-left space-y-4 p-6 rounded-lg border border-border-default bg-bg-secondary"
-            >
+            <div class="grid md:grid-cols-3 gap-6">
               <div
-                class="solution-icon w-full h-48 rounded-md bg-primary-lightest flex items-center justify-center -mx-6 -mt-6 rounded-b-none"
+                class="md:col-span-3 lg:col-span-1 relative overflow-hidden rounded-lg border border-border-default hover:border-primary/20 transition-all duration-300 bg-white dark:bg-bg-secondary group flex flex-col h-full"
               >
-                <img
-                  src="/go/assets/1-B1WPL9mn.jpg"
-                  alt="E-Commerce & Marketplaces"
-                  class="w-full h-full object-cover"
-                />
+                <div
+                  class="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0"
+                >
+                  <img
+                    src="/go/assets/1-B1WPL9mn.jpg"
+                    alt="E-Commerce & Marketplaces"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute top-6 right-6 text-5xl font-bold text-primary/5 group-hover:text-primary/10 transition-all"
+                >
+                  01
+                </div>
+                <div
+                  class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
+                >
+                  <div>
+                    <h3 class="h3 text-text-primary font-medium mb-2">
+                      E‑Commerce &amp; Marketplaces
+                    </h3>
+                    <div class="w-8 h-px bg-primary/40 mb-4"></div>
+                    <p class="text-text-secondary body font-medium">
+                      Delivery speed without premium courier economics.
+                    </p>
+                  </div>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-primary font-bold mt-0.5">—</span>
+                      <span>Same‑day on dense corridors</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-primary font-bold mt-0.5">—</span>
+                      <span>Returns structured into existing routes</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                E‑Commerce &amp; Marketplaces
-              </h3>
-              <p class="text-text-secondary body font-medium">
-                Turn fast delivery and returns into a growth lever, not a cost
-                center.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Same‑day and next‑day options on priority lanes without
-                    premium courier pricing.
-                  </span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Multi‑modal last mile using walkers, bikes, vans, and
-                    microhubs.
-                  </span>
-                </li>
-              </ul>
-            </div>
 
-            <!-- Card 2: Retail & Multi-Store Replenishment -->
-            <div
-              class="text-left space-y-4 p-6 rounded-lg border border-border-default bg-bg-secondary"
-            >
+              <!-- Card 2: Retail & Multi-Location Replenishment -->
               <div
-                class="solution-icon w-full h-48 rounded-md bg-primary-lightest flex items-center justify-center -mx-6 -mt-6 rounded-b-none"
+                class="md:col-span-3 lg:col-span-1 relative overflow-hidden rounded-lg border border-border-default hover:border-primary/20 transition-all duration-300 bg-white dark:bg-bg-secondary group flex flex-col h-full"
               >
-                <img
-                  src="/go/assets/2-DBBMy72o.jpg"
-                  alt="Retail & Multi-Store Replenishment"
-                  class="w-full h-full object-cover"
-                />
+                <div
+                  class="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0"
+                >
+                  <img
+                    src="/go/assets/2-DBBMy72o.jpg"
+                    alt="Retail & Multi-Location Replenishment"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute top-6 right-6 text-5xl font-bold text-primary/5 group-hover:text-primary/10 transition-all"
+                >
+                  02
+                </div>
+                <div
+                  class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
+                >
+                  <div>
+                    <h3 class="h3 text-text-primary font-medium mb-2">
+                      Retail &amp; Multi‑Location Replenishment
+                    </h3>
+                    <div class="w-8 h-px bg-primary/40 mb-4"></div>
+                    <p class="text-text-secondary body font-medium">
+                      Inventory flow without dedicated fleet expansion.
+                    </p>
+                  </div>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-primary font-bold mt-0.5">—</span>
+                      <span>Multi‑stop routing based on shared corridors</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-primary font-bold mt-0.5">—</span>
+                      <span>Shared density across connected store routes</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                Retail &amp; Multi‑Store Replenishment
-              </h3>
-              <p class="text-text-secondary body font-medium">
-                Keep shelves stocked and pick‑up points running without owning a
-                fleet.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Orchestrated multi‑stop routes using capacity already moving
-                    between locations.
-                  </span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Shared trips for replenishment, returns, and local
-                    deliveries.
-                  </span>
-                </li>
-              </ul>
-            </div>
 
-            <!-- Card 3: Fresh, Fragile & High-Value Goods -->
-            <div
-              class="text-left space-y-4 p-6 rounded-lg border border-border-default bg-bg-secondary"
-            >
+              <!-- Card 3: Fresh, Fragile & High-Value -->
               <div
-                class="solution-icon w-full h-48 rounded-md bg-primary-lightest flex items-center justify-center -mx-6 -mt-6 rounded-b-none"
+                class="md:col-span-3 lg:col-span-1 relative overflow-hidden rounded-lg border border-border-default hover:border-primary/20 transition-all duration-300 bg-white dark:bg-bg-secondary group flex flex-col h-full"
               >
-                <img
-                  src="/go/assets/3-CLKwv5np.jpg"
-                  alt="Fresh, Fragile & High-Value Goods"
-                  class="w-full h-full object-cover"
-                />
+                <div
+                  class="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0"
+                >
+                  <img
+                    src="/go/assets/3-CLKwv5np.jpg"
+                    alt="Fresh, Fragile & High-Value"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute top-6 right-6 text-5xl font-bold text-primary/5 group-hover:text-primary/10 transition-all"
+                >
+                  03
+                </div>
+                <div
+                  class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
+                >
+                  <div>
+                    <h3 class="h3 text-text-primary font-medium mb-2">
+                      Fresh, Fragile &amp; High‑Value
+                    </h3>
+                    <div class="w-8 h-px bg-primary/40 mb-4"></div>
+                    <p class="text-text-secondary body font-medium">
+                      Controlled handling within structured multi-hop routing.
+                    </p>
+                  </div>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-primary font-bold mt-0.5">—</span>
+                      <span>Carrier selection by handling profile</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-primary font-bold mt-0.5">—</span>
+                      <span>Short, time‑bound hops via microhubs</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                Fresh, Fragile &amp; High‑Value Goods
-              </h3>
-              <p class="text-text-secondary body font-medium">
-                Protect quality and security while keeping delivery affordable.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Matches shipments to carriers with the right handling
-                    profile.
-                  </span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Shorter, controlled hops via microhubs and time‑windowed
-                    routes.
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
 
           <!-- Tab 2: Business & Freight -->
           <div
-            class="solutions-panel hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            class="solutions-panel hidden space-y-6"
             data-panel="business"
             data-animate="fade-up"
             data-duration="800"
             data-delay="200"
           >
             <!-- Card 4: Industrial, MRO & Spare Parts -->
-            <div
-              class="text-left space-y-4 p-6 rounded-lg border border-border-default bg-bg-secondary"
-            >
+            <div class="grid md:grid-cols-3 gap-6">
               <div
-                class="solution-icon w-full h-48 rounded-md bg-primary-lightest flex items-center justify-center -mx-6 -mt-6 rounded-b-none"
+                class="md:col-span-3 lg:col-span-1 relative overflow-hidden rounded-lg border border-border-default hover:border-emerald-600/20 transition-all duration-300 bg-white dark:bg-bg-secondary group flex flex-col h-full"
               >
-                <img
-                  src="/go/assets/44-DR6QtyaU.webp"
-                  alt="Industrial, MRO & Spare Parts"
-                  class="w-full h-full object-cover"
-                />
+                <div
+                  class="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0"
+                >
+                  <img
+                    src="/go/assets/44-DR6QtyaU.webp"
+                    alt="Industrial, MRO & Spare Parts"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute top-6 right-6 text-5xl font-bold text-emerald-600/5 group-hover:text-emerald-600/10 transition-all"
+                >
+                  04
+                </div>
+                <div
+                  class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
+                >
+                  <div>
+                    <h3 class="h3 text-text-primary font-medium mb-2">
+                      Industrial, MRO &amp; Spare Parts
+                    </h3>
+                    <div class="w-8 h-px bg-emerald-600/40 mb-4"></div>
+                    <p class="text-text-secondary body font-medium">
+                      Urgent parts without half‑empty runs.
+                    </p>
+                  </div>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-emerald-600 font-bold mt-0.5">—</span>
+                      <span>Backhaul‑first matching logic</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-emerald-600 font-bold mt-0.5">—</span>
+                      <span>Mixed parcel and pallet density</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                Industrial, MRO &amp; Spare Parts
-              </h3>
-              <p class="text-text-secondary body font-medium">
-                Move critical parts faster—without half‑empty runs.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Uses spare capacity and backhauls between warehouses,
-                    plants, and field teams.
-                  </span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Mixes urgent parts and planned flows across parcels,
-                    pallets, and LTL.
-                  </span>
-                </li>
-              </ul>
-            </div>
 
-            <!-- Card 5: Pallets, LTL & Regular Lanes -->
-            <div
-              class="text-left space-y-4 p-6 rounded-lg border border-border-default bg-bg-secondary"
-            >
+              <!-- Card 5: Pallets, LTL & Regular Lanes -->
               <div
-                class="solution-icon w-full h-48 rounded-md bg-primary-lightest flex items-center justify-center -mx-6 -mt-6 rounded-b-none"
+                class="md:col-span-3 lg:col-span-1 relative overflow-hidden rounded-lg border border-border-default hover:border-emerald-600/20 transition-all duration-300 bg-white dark:bg-bg-secondary group flex flex-col h-full"
               >
-                <img
-                  src="/go/assets/55-DpC9LWug.png"
-                  alt="Pallets, LTL & Regular Lanes"
-                  class="w-full h-full object-cover"
-                />
+                <div
+                  class="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0"
+                >
+                  <img
+                    src="/go/assets/55-DpC9LWug.png"
+                    alt="Pallets, LTL & Regular Lanes"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute top-6 right-6 text-5xl font-bold text-emerald-600/5 group-hover:text-emerald-600/10 transition-all"
+                >
+                  05
+                </div>
+                <div
+                  class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
+                >
+                  <div>
+                    <h3 class="h3 text-text-primary font-medium mb-2">
+                      Pallets, LTL &amp; Regular Lanes
+                    </h3>
+                    <div class="w-8 h-px bg-emerald-600/40 mb-4"></div>
+                    <p class="text-text-secondary body font-medium">
+                      Lane optimization before fleet expansion.
+                    </p>
+                  </div>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-emerald-600 font-bold mt-0.5">—</span>
+                      <span>Recover underused truck capacity</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-emerald-600 font-bold mt-0.5">—</span>
+                      <span>Structure long‑haul around route density</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                Pallets, LTL &amp; Regular Lanes
-              </h3>
-              <p class="text-text-secondary body font-medium">
-                Fill trucks and lanes before you book another dedicated run.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Surfaces underused trucks and returning journeys on your
-                    lanes.
-                  </span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Combines long‑haul with GoLynk first and last mile where
-                    needed.
-                  </span>
-                </li>
-              </ul>
-            </div>
 
-            <!-- Card 6: Healthcare & Time-Critical Shipments -->
-            <div
-              class="text-left space-y-4 p-6 rounded-lg border border-border-default bg-bg-secondary"
-            >
+              <!-- Card 6: Healthcare & Time-Critical -->
               <div
-                class="solution-icon w-full h-48 rounded-md bg-primary-lightest flex items-center justify-center -mx-6 -mt-6 rounded-b-none"
+                class="md:col-span-3 lg:col-span-1 relative overflow-hidden rounded-lg border border-border-default hover:border-emerald-600/20 transition-all duration-300 bg-white dark:bg-bg-secondary group flex flex-col h-full"
               >
-                <img
-                  src="/go/assets/6-psIW4iOr.jpg"
-                  alt="Healthcare & Time-Critical Shipments"
-                  class="w-full h-full object-cover"
-                />
+                <div
+                  class="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0"
+                >
+                  <img
+                    src="/go/assets/6-psIW4iOr.jpg"
+                    alt="Healthcare & Time-Critical"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute top-6 right-6 text-5xl font-bold text-emerald-600/5 group-hover:text-emerald-600/10 transition-all"
+                >
+                  06
+                </div>
+                <div
+                  class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
+                >
+                  <div>
+                    <h3 class="h3 text-text-primary font-medium mb-2">
+                      Healthcare &amp; Time‑Critical
+                    </h3>
+                    <div class="w-8 h-px bg-emerald-600/40 mb-4"></div>
+                    <p class="text-text-secondary body font-medium">
+                      Compliant speed within controlled routing.
+                    </p>
+                  </div>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-emerald-600 font-bold mt-0.5">—</span>
+                      <span>Handling‑aware route selection</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-text-secondary body">
+                      <span class="text-emerald-600 font-bold mt-0.5">—</span>
+                      <span>Fastest feasible multi‑hop path</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
-                Healthcare &amp; Time‑Critical Shipments
-              </h3>
-              <p class="text-text-secondary body font-medium">
-                Make compliant, time‑critical deliveries part of your normal
-                network.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Matches to routes and carriers meeting handling and
-                    compliance needs.
-                  </span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary font-bold mt-0.5">•</span>
-                  <span class="text-text-secondary body">
-                    Orchestrates the fastest feasible multi‑modal path for
-                    urgent shipments.
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
       <script>
-        // Solutions tab switcher
+        // Solutions tab switcher - Premium Design
         document.addEventListener("DOMContentLoaded", function () {
           const tabButtons = document.querySelectorAll(".solutions-tab-btn");
           const panels = document.querySelectorAll(".solutions-panel");
@@ -992,20 +1341,15 @@
               const tabValue = this.getAttribute("data-tab");
 
               // Remove active from all buttons and panels
-              tabButtons.forEach((b) =>
-                b.classList.remove(
-                  "active",
-                  "bg-primary",
-                  "text-white",
-                  "border-primary",
-                ),
-              );
               tabButtons.forEach((b) => {
-                b.classList.add(
-                  "border-border-default",
-                  "bg-transparent",
-                  "text-text-primary",
-                );
+                b.classList.remove("active");
+                const underline = b.querySelector("div");
+                if (underline) {
+                  underline.classList.remove("bg-primary");
+                  underline.classList.add("bg-transparent");
+                }
+                b.classList.add("text-text-secondary");
+                b.classList.remove("text-text-primary");
               });
               panels.forEach((p) => {
                 p.classList.add("hidden");
@@ -1013,23 +1357,23 @@
               });
 
               // Add active to clicked button and matching panel
-              this.classList.add(
-                "active",
-                "bg-primary",
-                "text-white",
-                "border-primary",
+              this.classList.add("active");
+              this.classList.remove("text-text-secondary");
+              this.classList.add("text-text-primary");
+              const underline = this.querySelector("div");
+              if (underline) {
+                underline.classList.remove("bg-transparent");
+                underline.classList.add("bg-primary");
+              }
+
+              // Show the matching panel with smooth transition
+              const panel = document.querySelector(
+                `.solutions-panel[data-panel="${tabValue}"]`,
               );
-              this.classList.remove(
-                "border-border-default",
-                "bg-transparent",
-                "text-text-primary",
-              );
-              document
-                .querySelector(`.solutions-panel[data-panel="${tabValue}"]`)
-                .classList.remove("hidden");
-              document
-                .querySelector(`.solutions-panel[data-panel="${tabValue}"]`)
-                .classList.add("active");
+              if (panel) {
+                panel.classList.remove("hidden");
+                panel.classList.add("active");
+              }
             });
           });
 
@@ -1112,7 +1456,6 @@
           }
         });
       </script>
-      <hr style="color: #e9eaeb" class="my-0" />
 
       <!-- Rethink Your Delivery - Comparison Section -->
       <section class="py-20 md:py-28">
@@ -1129,14 +1472,14 @@
               class="h1 text-text-primary"
               data-i18n="shipper.comparison.heading"
             >
-              Why GoLynk Beats Traditional Logistics
+              Traditional vs GoLynk
             </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
               data-i18n="shipper.comparison.description"
             >
-              See how the orchestration model changes speed, cost, and
-              experience.
+              Traditional logistics adds vehicles. GoLynk optimizes routes
+              already in motion.
             </p>
           </div>
 
@@ -1499,20 +1842,20 @@
             data-delay="400"
           >
             <p class="text-text-primary h4 font-semibold">
-              Want your deliveries to look like the GoLynk column?
+              Bring your lanes into the GoLynk model.
             </p>
             <a
               href="#contact"
               class="px-8 py-4 primary-btn inline-flex items-center justify-center"
             >
-              Start with a pilot
+              Discuss Lane Evaluation
             </a>
           </div>
         </div>
       </section>
       <hr style="color: #e9eaeb" class="my-0" />
 
-      <!-- Features Section -->
+      <!-- The Orchestration Interface Section -->
       <section class="py-20 md:py-28">
         <div
           class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
@@ -1523,24 +1866,16 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <p
-              class="text-primary text-lg font-semibold mb-0"
-              data-i18n="shipper.features.subheading"
-            >
-              Features
-            </p>
-            <h2
-              class="h1 text-text-primary"
-              data-i18n="shipper.features.heading"
-            >
-              Cutting-Edge Infrastructure. Built for Modern Logistics.
-            </h2>
+            <h2 class="h1 text-text-primary">The Orchestration Interface</h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
-              data-i18n="shipper.features.description"
             >
-              Every feature is designed to optimize cost, speed, efficiency, and
-              visibility across entire cities and industries.
+              GoLynk is not only a routing engine.<br />
+              It includes the control and visibility layer used by shippers and
+              capacity partners.
+            </p>
+            <p class="text-text-secondary text-h3 font-semibold">
+              One system. Shared logic. Full transparency.
             </p>
           </div>
 
@@ -1560,7 +1895,7 @@
             </div>
           </div>
 
-          <!-- Features Grid -->
+          <!-- Orchestration Cards -->
           <div
             class="grid md:grid-cols-3 gap-8 max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto"
             data-duration="800"
@@ -1568,8 +1903,8 @@
             data-delay="400"
             data-animate="fade-up"
           >
-            <!-- Operational Automation -->
-            <div class="text-center space-y-4">
+            <!-- Unified Control Dashboard -->
+            <div class="space-y-6">
               <div class="flex justify-center mb-4">
                 <div
                   class="size-12 rounded-lg bg-primary-lightest flex items-center justify-center"
@@ -1579,36 +1914,36 @@
                   </div>
                 </div>
               </div>
-              <h3
-                class="h3 text-text-primary font-semibold"
-                data-i18n="shipper.features.list.automation.title"
-              >
-                Operational Automation
+              <h3 class="h3 text-text-primary font-semibold">
+                Unified Control Dashboard
               </h3>
-              <p
-                class="text-text-secondary body"
-                data-i18n="shipper.features.list.automation.description"
-              >
-                GoLynk streamlines the entire delivery workflow automatically
-                from order creation to payout ensuring faster, cleaner, and
-                error-free operations.
+              <p class="text-text-secondary body">
+                Shippers and carriers access the same orchestration layer
+                through structured dashboards — across desktop and mobile.
               </p>
-
+              <ul class="space-y-2 text-text-secondary body">
+                <li>— Shipment intake and lane visibility</li>
+                <li>— Leg-by-leg tracking across multi-hop journeys</li>
+                <li>— Cost, SLA, and CO₂ reporting per shipment</li>
+                <li>— Invoice and settlement integration</li>
+              </ul>
+              <p class="text-text-secondary body italic">
+                The interface reflects the orchestration logic — not manual
+                dispatch.
+              </p>
               <a
                 href="#"
                 class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
               >
-                <span data-i18n="shipper.features.list.automation.cta"
-                  >Learn more</span
-                >
+                <span>Learn more</span>
                 <svg class="size-4">
                   <use href="#icon-arrow-right"></use>
                 </svg>
               </a>
             </div>
 
-            <!-- Trust, Compliance & Security -->
-            <div class="text-center space-y-4">
+            <!-- API-First Integration -->
+            <div class="space-y-6">
               <div class="flex justify-center mb-4">
                 <div
                   class="size-12 rounded-lg bg-primary-lightest flex items-center justify-center"
@@ -1618,199 +1953,70 @@
                   </div>
                 </div>
               </div>
-              <h3
-                class="h3 text-text-primary font-semibold"
-                data-i18n="shipper.features.list.security.title"
-              >
-                Trust, Compliance & Security
+              <h3 class="h3 text-text-primary font-semibold">
+                API-First Integration
               </h3>
-              <p
-                class="text-text-secondary body"
-                data-i18n="shipper.features.list.security.description"
-              >
-                Built with enterprise-grade protection, GoLynk delivers
-                encrypted data handling, verified carriers, and full compliance
-                across every step.
+              <p class="text-text-secondary body">
+                GoLynk integrates directly with TMS, WMS, ERP, and e-commerce
+                systems.
               </p>
-
+              <ul class="space-y-2 text-text-secondary body">
+                <li>— Order ingestion via API</li>
+                <li>— Capacity exposure for carriers</li>
+                <li>— Event streaming and webhook updates</li>
+                <li>— Cost and emissions data fed back into your systems</li>
+              </ul>
+              <p class="text-text-secondary body italic">
+                You keep your stack. We add orchestration.
+              </p>
               <a
                 href="#"
                 class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
               >
-                <span data-i18n="shipper.features.list.security.cta"
-                  >Learn more</span
-                >
+                <span>Learn more</span>
                 <svg class="size-4">
                   <use href="#icon-arrow-right"></use>
                 </svg>
               </a>
             </div>
 
-            <!-- Manage your team with reports -->
-            <div class="text-center space-y-4">
+            <!-- Trust & Accountability Layer -->
+            <div class="space-y-6">
               <div class="flex justify-center mb-4">
                 <div
                   class="size-12 rounded-lg bg-primary-lightest flex items-center justify-center"
                 >
                   <div class="size-6 text-primary">
-                    <img href="./src/assets/icons/analytics.png" />
+                    <img src="/go/assets/analytics-D8UZ2N5S.png" />
                   </div>
                 </div>
               </div>
-              <h3
-                class="h3 text-text-primary font-semibold"
-                data-i18n="shipper.features.list.reports.title"
-              >
-                Manage your team with reports
+              <h3 class="h3 text-text-primary font-semibold">
+                Trust & Accountability Layer
               </h3>
-              <p
-                class="text-text-secondary body"
-                data-i18n="shipper.features.list.reports.description"
-              >
-                Insightful, real-time reports let you track performance,
-                understand costs, and optimize your team with a single click.
+              <p class="text-text-secondary body">
+                Every shipment is executed within a verified and rule-based
+                environment.
               </p>
-
+              <ul class="space-y-2 text-text-secondary body">
+                <li>— Screened capacity partners</li>
+                <li>— Logged handoffs and chain-of-custody events</li>
+                <li>— Insurance and compliance built into route eligibility</li>
+                <li>— Structured exception handling</li>
+              </ul>
+              <p class="text-text-secondary body italic">
+                Reliability is embedded in the system — not dependent on manual
+                coordination.
+              </p>
               <a
                 href="#"
                 class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
               >
-                <span data-i18n="shipper.features.list.reports.cta"
-                  >Learn more</span
-                >
+                <span>Learn more</span>
                 <svg class="size-4">
                   <use href="#icon-arrow-right"></use>
                 </svg>
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr style="color: #e9eaeb" class="my-0" />
-
-      <!-- Core Advantages Section -->
-      <section class="py-20 md:py-28">
-        <div
-          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
-        >
-          <!-- Section Header -->
-          <div
-            class="text-center space-y-4"
-            data-animate="fade-up"
-            data-duration="800"
-          >
-            <p
-              class="text-primary text-lg font-semibold mb-0"
-              data-i18n="common.coreAdvantages.subheading"
-            >
-              Core Advantages
-            </p>
-            <h2
-              class="h1 text-text-primary"
-              data-i18n="common.coreAdvantages.heading"
-            >
-              Deliver Faster, Cheaper, Transparent, and Sustainable
-            </h2>
-            <p
-              class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
-              data-i18n="common.coreAdvantages.description"
-            >
-              GoLynk combines cost savings, ultra-fast delivery, real-time
-              tracking, and low-carbon operations giving businesses and
-              customers a modern, efficient, and eco-friendly logistics
-              experience.
-            </p>
-          </div>
-
-          <!-- Advantages Grid -->
-          <div
-            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-            data-duration="800"
-            data-stagger="200"
-            data-animate="fade-up"
-          >
-            <!-- Cost Advantage -->
-            <div class="bg-primary-lightest rounded-lg p-8 space-y-4">
-              <svg
-                class="bg-primary-dark rounded-md p-3 box-content size-7 text-white"
-              >
-                <use href="#icon-money-saving-jar"></use>
-              </svg>
-              <h3
-                class="h3 text-primary-dark font-semibold"
-                data-i18n="common.coreAdvantages.advantages.cost.title"
-              >
-                Cost Advantage
-              </h3>
-              <p
-                class="text-primary body"
-                data-i18n="common.coreAdvantages.advantages.cost.description"
-              >
-                Lower delivery costs with no minimums or hidden fees.
-              </p>
-            </div>
-
-            <!-- Speed Advantage -->
-            <div class="bg-primary-lightest rounded-lg p-8 space-y-4">
-              <svg
-                class="bg-primary-dark rounded-md p-3 box-content size-7 text-white"
-              >
-                <use href="#icon-delivery-2"></use>
-              </svg>
-              <h3
-                class="h3 text-primary-dark font-semibold"
-                data-i18n="common.coreAdvantages.advantages.speed.title"
-              >
-                Speed Advantage
-              </h3>
-              <p
-                class="text-primary body"
-                data-i18n="common.coreAdvantages.advantages.speed.description"
-              >
-                Ultra-fast delivery in hours, not days.
-              </p>
-            </div>
-
-            <!-- Real-Time Experience -->
-            <div class="bg-primary-lightest rounded-lg p-8 space-y-4">
-              <svg
-                class="bg-primary-dark rounded-md p-3 box-content size-7 text-white"
-              >
-                <use href="#icon-maps-location"></use>
-              </svg>
-              <h3
-                class="h3 text-primary-dark font-semibold"
-                data-i18n="common.coreAdvantages.advantages.realTime.title"
-              >
-                Real-Time Experience
-              </h3>
-              <p
-                class="text-primary body"
-                data-i18n="common.coreAdvantages.advantages.realTime.description"
-              >
-                Live tracking, dynamic ETAs, and automated updates.
-              </p>
-            </div>
-
-            <!-- Low-Carbon -->
-            <div class="bg-primary-lightest rounded-lg p-8 space-y-4">
-              <svg
-                class="bg-primary-dark rounded-md p-3 box-content size-7 text-white"
-              >
-                <use href="#icon-plant"></use>
-              </svg>
-              <h3
-                class="h3 text-primary-dark font-semibold"
-                data-i18n="common.coreAdvantages.advantages.lowCarbon.title"
-              >
-                Low-Carbon
-              </h3>
-              <p
-                class="text-primary body"
-                data-i18n="common.coreAdvantages.advantages.lowCarbon.description"
-              >
-                Smart routing and shared capacity for greener deliveries.
-              </p>
             </div>
           </div>
         </div>
@@ -1830,13 +2036,13 @@
               class="text-primary text-lg font-semibold mb-0"
               data-i18n="common.technology.subheading"
             >
-              GoLynk Technology
+              Technology
             </p>
             <h2
               class="h1 text-text-primary"
               data-i18n="common.technology.heading"
             >
-              The orchestration engine behind every route.
+              Technology (Brief)
             </h2>
           </div>
 
@@ -1870,12 +2076,7 @@
                           Orchestration Graph
                         </h3>
                         <p class="text-text-secondary body">
-                          We model routes from individuals, fleets, and freight
-                          partners as one graph of movements and
-                          capacities—across walkers, bikes, cars, vans, trucks,
-                          trains, and public transport. This lets us see the
-                          free space already in motion, instead of always
-                          booking new vehicles.
+                          Routes modeled as one movement graph.
                         </p>
                       </div>
                       <!-- Image -->
@@ -1907,12 +2108,7 @@
                           Matching Engine
                         </h3>
                         <p class="text-text-secondary body">
-                          A rule‑based engine scores each potential leg by route
-                          overlap, time window, capacity, detour cost,
-                          reliability, and carbon impact. It then chains 2–3
-                          hops into one optimal journey per shipment, so parcels
-                          and pallets can flow across several carriers and modes
-                          without extra journeys.
+                          Scores legs and chains 2–3 hops.
                         </p>
                       </div>
                       <!-- Image -->
@@ -1941,14 +2137,10 @@
                           </svg>
                         </div>
                         <h3 class="h3 text-text-primary font-semibold">
-                          API‑First Integration
+                          API-First Integration
                         </h3>
                         <p class="text-text-secondary body">
-                          Your TMS, WMS, e‑commerce and ERP plug into GoLynk via
-                          APIs and dashboards. You expose underused capacity,
-                          integrate tracking, and bring cost and CO₂ data back
-                          into your own systems—all on top of the carriers and
-                          lanes you already use.
+                          Plugs into TMS/WMS/ERP and dashboards.
                         </p>
                       </div>
                       <!-- Image -->
@@ -1962,7 +2154,7 @@
                     </div>
                   </div>
 
-                  <!-- Pillar 4: Data‑Driven Roadmap -->
+                  <!-- Pillar 4: Data‑Driven Improvement -->
                   <div
                     class="bg-bg-secondary rounded-lg overflow-hidden flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(50%-12px)]"
                   >
@@ -1977,21 +2169,17 @@
                           </svg>
                         </div>
                         <h3 class="h3 text-text-primary font-semibold">
-                          Data‑Driven Roadmap
+                          Data-Driven Improvement
                         </h3>
                         <p class="text-text-secondary body">
-                          We start with robust rule‑based matching and real‑time
-                          tracking. As data grows, machine learning quietly
-                          improves match rates, ETAs, and pricing over
-                          time—without adding complexity for your teams or
-                          changing how you book shipments.
+                          Better ETAs and pricing as lanes scale.
                         </p>
                       </div>
                       <!-- Image -->
                       <div class="overflow-hidden">
                         <img
                           src="/go/assets/data-DagEd0_Q.png"
-                          alt="Data-Driven Roadmap"
+                          alt="Data-Driven Improvement"
                           class="w-full h-full object-cover"
                         />
                       </div>
@@ -2021,284 +2209,24 @@
               </button>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Meet Our Team Section -->
-      <section class="py-20 md:py-28">
-        <div
-          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
-        >
-          <!-- Section Header -->
+
+          <!-- CTA Link -->
           <div
-            class="text-center space-y-4"
+            class="text-center pt-8"
             data-animate="fade-up"
             data-duration="800"
+            data-delay="400"
           >
-            <h2 class="h1 text-text-primary" data-i18n="common.team.heading">
-              Meet our team
-            </h2>
-            <p
-              class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
-              data-i18n="common.team.description"
+            <a
+              href="#"
+              class="text-primary font-semibold hover:underline inline-flex items-center gap-2"
+              data-i18n="common.technology.cta"
             >
-              Our philosophy is simple — hire a team of diverse, passionate
-              people and foster a culture that empowers you to do you best work.
-            </p>
-          </div>
-
-          <!-- Team Grid -->
-          <div
-            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"
-            data-animate="fade-up"
-            data-duration="800"
-            data-stagger="200"
-            data-delay="200"
-          >
-            <!-- Team Member 1 -->
-            <div
-              class="bg-bg-secondary rounded-lg p-8 text-center space-y-4 flex flex-col"
-            >
-              <div
-                class="size-20 rounded-full bg-muted-purple mx-auto flex items-center justify-center overflow-hidden"
-              >
-                <img
-                  src="https://api.dicebear.com/9.x/lorelei/svg?seed=Aidan"
-                  alt="Olivia Rhye"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3
-                  class="h3 text-text-primary font-semibold"
-                  data-i18n="common.team.members.0.name"
-                >
-                  Olivia Rhye
-                </h3>
-                <p
-                  class="text-primary body-medium"
-                  data-i18n="common.team.members.0.role"
-                >
-                  Founder & CEO
-                </p>
-              </div>
-              <p
-                class="text-text-secondary body"
-                data-i18n="common.team.members.0.bio"
-              >
-                Former co-founder of Opendoor. Early staff at Spotify and
-                Clearbit.
-              </p>
-              <div class="flex items-center justify-center gap-4 mt-auto">
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-x"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-linkedin"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-dribbble"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Team Member 2 -->
-            <div
-              class="bg-bg-secondary rounded-lg p-8 text-center space-y-4 flex flex-col"
-            >
-              <div
-                class="size-20 rounded-full bg-muted-purple mx-auto flex items-center justify-center overflow-hidden"
-              >
-                <img
-                  src="https://api.dicebear.com/9.x/lorelei/svg?seed=Aidan"
-                  alt="Phoenix Baker"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3
-                  class="h3 text-text-primary font-semibold"
-                  data-i18n="common.team.members.1.name"
-                >
-                  Phoenix Baker
-                </h3>
-                <p
-                  class="text-primary body-medium"
-                  data-i18n="common.team.members.1.role"
-                >
-                  Engineering Manager
-                </p>
-              </div>
-              <p
-                class="text-text-secondary body"
-                data-i18n="common.team.members.1.bio"
-              >
-                Lead engineering teams at Figma, Pitch, and Protocol Labs.
-              </p>
-              <div class="flex items-center justify-center gap-4 mt-auto">
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-x"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-linkedin"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-dribbble"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Team Member 3 -->
-            <div
-              class="bg-bg-secondary rounded-lg p-8 text-center space-y-4 flex flex-col"
-            >
-              <div
-                class="size-20 rounded-full bg-muted-purple mx-auto flex items-center justify-center overflow-hidden"
-              >
-                <img
-                  src="https://api.dicebear.com/9.x/lorelei/svg?seed=Aidan"
-                  alt="Drew Cano"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3
-                  class="h3 text-text-primary font-semibold"
-                  data-i18n="common.team.members.2.name"
-                >
-                  Drew Cano
-                </h3>
-                <p
-                  class="text-primary body-medium"
-                  data-i18n="common.team.members.2.role"
-                >
-                  UX Researcher
-                </p>
-              </div>
-              <p
-                class="text-text-secondary body"
-                data-i18n="common.team.members.2.bio"
-              >
-                Lead user research for Slack. Contractor for Netflix and
-                Udacity.
-              </p>
-              <div class="flex items-center justify-center gap-4 mt-auto">
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-x"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-linkedin"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-dribbble"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Team Member 4 -->
-            <div
-              class="bg-bg-secondary rounded-lg p-8 text-center space-y-4 flex flex-col"
-            >
-              <div
-                class="size-20 rounded-full bg-muted-purple mx-auto flex items-center justify-center overflow-hidden"
-              >
-                <img
-                  src="https://api.dicebear.com/9.x/lorelei/svg?seed=Aidan"
-                  alt="Orlando Diggs"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3
-                  class="h3 text-text-primary font-semibold"
-                  data-i18n="common.team.members.3.name"
-                >
-                  Orlando Diggs
-                </h3>
-                <p
-                  class="text-primary body-medium"
-                  data-i18n="common.team.members.3.role"
-                >
-                  Customer Success
-                </p>
-              </div>
-              <p
-                class="text-text-secondary body"
-                data-i18n="common.team.members.3.bio"
-              >
-                Lead CX at Wealthsimple. Former PagerDuty and Sqreen.
-              </p>
-              <div class="flex items-center justify-center gap-4 mt-auto">
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-x"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-linkedin"></use>
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-text-light hover:text-primary transition-colors"
-                >
-                  <svg class="size-5">
-                    <use href="#icon-dribbble"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
+              Learn more
+              <svg class="size-4">
+                <use href="#icon-arrow-right"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -2554,126 +2482,7 @@
           </div>
         </div>
       </section>
-      <hr style="color: #e9eaeb" class="my-0" />
-
-      <!-- Our Locations Section -->
-      <section class="py-20 md:py-28">
-        <div
-          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
-        >
-          <!-- Section Header -->
-          <div
-            class="text-center space-y-4"
-            data-animate="fade-up"
-            data-duration="800"
-          >
-            <h2 class="h1 text-text-primary" data-i18n="home.locations.heading">
-              Our locations
-            </h2>
-            <p
-              class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
-              data-i18n="home.locations.description"
-            >
-              Say hello to our friendly team at one of these locations.
-            </p>
-          </div>
-
-          <!-- Interactive Globe -->
-          <div
-            class="relative"
-            data-animate="fade-up"
-            data-duration="800"
-            data-delay="200"
-          >
-            <div
-              id="chartdiv"
-              class="w-full mx-auto"
-              style="height: 50dvh; max-width: 70%; margin: 0 auto"
-            ></div>
-          </div>
-
-          <!-- Contact Grid -->
-          <div
-            class="grid md:grid-cols-3 gap-8 max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto"
-            data-animate="fade-up"
-            data-duration="800"
-            data-delay="400"
-          >
-            <!-- Support -->
-            <div class="text-center space-y-4">
-              <h3
-                class="h3 text-text-primary font-semibold"
-                data-i18n="home.locations.contact.support.title"
-              >
-                Support
-              </h3>
-              <p
-                class="text-text-secondary body"
-                data-i18n="home.locations.contact.support.description"
-              >
-                Our friendly team is here to help.
-              </p>
-
-              <a
-                href="mailto:support@golynk.com"
-                class="text-primary body-semibold hover:underline block"
-                data-i18n="home.locations.contact.support.email"
-              >
-                support@GoLynk.com
-              </a>
-            </div>
-
-            <!-- Sales -->
-            <div class="text-center space-y-4">
-              <h3
-                class="h3 text-text-primary font-semibold"
-                data-i18n="home.locations.contact.sales.title"
-              >
-                Sales
-              </h3>
-              <p
-                class="text-text-secondary body"
-                data-i18n="home.locations.contact.sales.description"
-              >
-                Questions or queries? Get in touch!
-              </p>
-
-              <a
-                href="mailto:sales@golynk.com"
-                class="text-primary body-semibold hover:underline block"
-                data-i18n="home.locations.contact.sales.email"
-              >
-                sales@GoLynk.com
-              </a>
-            </div>
-
-            <!-- Phone -->
-            <div class="text-center space-y-4">
-              <h3
-                class="h3 text-text-primary font-semibold"
-                data-i18n="home.locations.contact.phone.title"
-              >
-                Phone
-              </h3>
-              <p
-                class="text-text-secondary body"
-                data-i18n="home.locations.contact.phone.description"
-              >
-                Mon-Fri from 8am to 5pm.
-              </p>
-
-              <a
-                href="tel:+15550000000"
-                class="text-primary body-semibold hover:underline block"
-                data-i18n="home.locations.contact.phone.number"
-              >
-                +1 (555) 000-0000
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Download App Section -->
+      <!-- Early Shipping Partner Program Section -->
       <section class="py-20 md:py-28">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -2684,33 +2493,32 @@
               data-duration="800"
             >
               <div class="space-y-4">
-                <p
-                  class="text-primary text-lg font-semibold mb-0"
-                  data-i18n="common.appPromo.subheading"
-                >
-                  DOWNLOAD APP
-                </p>
-                <h2
-                  class="h1 text-text-primary"
-                  data-i18n="common.appPromo.heading"
-                >
-                  Get Started With GoLynk Today!
+                <h2 class="h1 text-text-primary">
+                  Early Shipping Partner Program
                 </h2>
-                <p
-                  class="text-text-secondary text-h3"
-                  data-i18n="common.appPromo.description"
-                >
-                  Move anything, anywhere — discover faster deliveries and
-                  real-time tracking right at your fingertips.
+                <p class="text-text-secondary text-h3">
+                  We are onboarding selected shippers across priority lanes.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <p class="text-text-secondary body">
+                  Share your routes and expected shipment volume.
+                </p>
+                <p class="text-text-secondary body">
+                  We'll outline where routes already in motion can improve cost
+                  and reliability.
                 </p>
               </div>
               <div>
-                <button
-                  class="px-7 py-4 primary-btn"
-                  data-i18n="common.appPromo.cta"
+                <a
+                  href="#contact"
+                  class="inline-flex items-center gap-2 text-primary body-semibold hover:brightness-150 transition-all"
                 >
-                  Get The App
-                </button>
+                  <span>Express Shipping Interest</span>
+                  <svg class="size-4">
+                    <use href="#icon-arrow-right"></use>
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -2723,7 +2531,7 @@
             >
               <img
                 src="/go/assets/mobile-app-banner-BAWrgbMv.webp"
-                alt="GoLynk Mobile App"
+                alt="GoLynk Early Shipping Partner Program"
                 class="w-full h-auto"
               />
             </div>
@@ -2737,7 +2545,7 @@
           >
             <!-- CTA Buttons -->
             <div
-              class="flex flex-col sm:flex-row gap-4 justify-center"
+              class="flex flex-col sm:flex-row gap-4 justify-center items-center"
               data-animate="fade-up"
               data-duration="800"
             >
@@ -2749,22 +2557,23 @@
                 </svg>
                 <span
                   class="body-semibold text-text-on-dark"
-                  data-i18n="footer.cta.startShipping"
-                  >Start Shipping</span
+                  data-i18n="footer.cta.expressShippingInterest"
+                  >Express Shipping Interest</span
                 >
               </button>
-              <button
-                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-2 text-primary body-semibold hover:brightness-150 transition-all"
               >
-                <svg class="size-6 me-2">
-                  <use href="#icon-delivery"></use>
-                </svg>
                 <span
-                  class="body-semibold text-text-on-dark"
-                  data-i18n="footer.cta.deliverWithUs"
-                  >Deliver with us</span
+                  class="body-semibold"
+                  data-i18n="footer.cta.requestLaneAssessment"
+                  >Request Lane Assessment</span
                 >
-              </button>
+                <svg class="size-4">
+                  <use href="#icon-arrow-right"></use>
+                </svg>
+              </a>
             </div>
             <!-- Newsletter Column -->
             <div class="flex flex-col items-center lg:items-start gap-3">

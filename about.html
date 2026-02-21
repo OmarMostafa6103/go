@@ -1,0 +1,1877 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/go/assets/Logo-Cabx5owX.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — GoLynk</title>
+    <meta
+      name="description"
+      content="GoLynk builds an orchestration layer for global logistics infrastructure. Bootstrapped. Corridor-first deployment. Investor-aligned."
+    />
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8fafc;
+        --bg-tertiary: #f6f7fb;
+        --border-color: #e6eaf2;
+        --text-primary: #0b1220;
+        --text-secondary: #334155;
+        --accent: #3b82f6;
+      }
+
+      body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+      }
+
+      .light-nav {
+        background: rgba(255, 255, 255, 0.95);
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .light-nav a {
+        color: var(--text-secondary);
+        transition: color 180ms ease-out;
+      }
+
+      .light-nav a:hover {
+        color: var(--text-primary);
+      }
+
+      .card-light {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        transition: all 180ms ease-out;
+      }
+
+      .card-light:hover {
+        box-shadow: 0 2px 8px rgba(11, 18, 32, 0.08);
+        transform: translateY(-2px);
+      }
+
+      .chip {
+        display: inline-block;
+        padding: 6px 12px;
+        background: var(--bg-tertiary);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .accent-text {
+        color: var(--accent);
+      }
+
+      h1 {
+        font-size: 52px;
+        line-height: 56px;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      .subheading {
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--text-secondary);
+      }
+
+      .label {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+      }
+
+      .carousel-container {
+        display: flex;
+        gap: 24px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 16px;
+      }
+
+      .carousel-card {
+        flex: 0 0 calc(33.33% - 16px);
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+      }
+
+      @media (max-width: 768px) {
+        .carousel-card {
+          flex: 0 0 calc(100% - 24px);
+        }
+      }
+
+      .carousel-progress {
+        height: 2px;
+        background: var(--border-color);
+        margin-top: 24px;
+        position: relative;
+      }
+
+      .carousel-progress::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: var(--accent);
+        width: 20%;
+        left: 0;
+        animation: carousel-slide 15s ease-in-out infinite;
+      }
+
+      @keyframes carousel-slide {
+        0%,
+        100% {
+          left: 0;
+        }
+        50% {
+          left: 80%;
+        }
+      }
+
+      .flow-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .flow-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .flow-step {
+        position: relative;
+        animation: flow-float 6s ease-in-out infinite;
+      }
+
+      .flow-step .step-id {
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 700;
+        color: #cbd5e1;
+      }
+
+      @keyframes flow-float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-3px);
+        }
+      }
+
+      .svg-icon {
+        width: 24px;
+        height: 24px;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        color: var(--text-secondary);
+      }
+
+      .button-primary-light {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        background: var(--accent);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .button-primary-light:hover {
+        background: #2563eb;
+      }
+
+      .button-secondary-light {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .button-secondary-light:hover {
+        border-color: var(--accent);
+        background: rgba(59, 130, 246, 0.05);
+      }
+
+      .max-w-hero {
+        max-width: 1160px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 36px;
+          line-height: 44px;
+        }
+
+        h2 {
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .flow-row.top {
+          grid-template-columns: 1fr 1fr 1fr;
+          align-items: center;
+        }
+
+        .flow-row.bottom {
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          max-width: 72%;
+          margin: 0 auto;
+        }
+
+        .flow-step.delay-1 {
+          animation-delay: 0.1s;
+        }
+        .flow-step.delay-2 {
+          animation-delay: 0.2s;
+        }
+        .flow-step.delay-3 {
+          animation-delay: 0.3s;
+        }
+        .flow-step.delay-4 {
+          animation-delay: 0.4s;
+        }
+        .flow-step.delay-5 {
+          animation-delay: 0.5s;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/go/assets/main-sGJQQKLX.js"></script>
+    <link rel="stylesheet" crossorigin href="/go/assets/main-DpLf-xw4.css">
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!--hero section + navigation-->
+      <div class="relative">
+        <!-- Navigation -->
+        <nav
+          class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+          style="
+            background: rgba(11, 13, 16, 0.25);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <a href="./">
+                <img src="./Logo.svg" alt="Logo" />
+              </a>
+
+            <!-- Desktop Navigation -->
+            <div
+              class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+            >
+              <a
+                href="./shipper.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="./carrier.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="#partners"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.partners"
+              >
+                Partners
+              </a>
+              <a
+                href="#technology"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="#environment"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="./about.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </div>
+
+            <!-- CTA Buttons & Language Selector (Desktop) -->
+            <div class="hidden lg:flex flex-row items-center gap-2">
+              <button
+                class="px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </button>
+
+              <!-- Language Selector -->
+              <select
+                class="language-selector px-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  DE
+                </option>
+                <option
+                  value="fr"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  FR
+                </option>
+                <option
+                  value="nl"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  NL
+                </option>
+              </select>
+            </div>
+
+            <!-- Mobile: Language Selector + Menu Button -->
+            <div class="lg:hidden flex items-center gap-3">
+              <!-- Language Selector (Mobile) -->
+              <select
+                class="language-selector px-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  DE
+                </option>
+                <option
+                  value="fr"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  FR
+                </option>
+                <option
+                  value="nl"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  NL
+                </option>
+              </select>
+
+              <!-- Mobile Menu Button -->
+              <button id="mobile-menu-button" class="p-2">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+          <!-- Close Button -->
+          <button id="mobile-menu-close" class="mobile-menu-close">
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Navigation Links -->
+          <nav class="mobile-nav-links">
+            <a
+              href="./shipper.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.shippers"
+            >
+              Shippers
+            </a>
+            <a
+              href="./carrier.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.carriers"
+            >
+              Carriers
+            </a>
+            <a
+              href="#partners"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.partners"
+            >
+              Partners
+            </a>
+            <a
+              href="#technology"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.glTech"
+            >
+              GL Tech
+            </a>
+            <a
+              href="#environment"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.environment"
+            >
+              Environment
+            </a>
+            <a
+              href="./about.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.about"
+            >
+              About
+            </a>
+          </nav>
+
+          <!-- Mobile CTA Buttons -->
+          <div class="mobile-cta-buttons">
+            <button
+              class="w-full px-5 py-2.5 primary-btn"
+              data-i18n="common.cta.startNow"
+            >
+              Start Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="relative pt-32 pb-20 px-6 overflow-hidden text-center">
+        <!-- Background -->
+        <div
+          class="absolute inset-0 size-full -z-10 after:absolute after:inset-0 after:size-full after:bg-overlay/70 rounded-lg overflow-hidden"
+        >
+          <img
+            src="/go/assets/about-hero-bg-C_t0Y08D.webp"
+            alt=""
+            class="h-full w-full object-cover"
+            fetchpriority="high"
+          />
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative max-w-5xl mx-auto space-y-8">
+          <h1
+            class="h1-xl text-text-on-dark"
+            data-animate="fade-up"
+            data-duration="800"
+          >
+            Logistics Doesn't Need More Vehicles. It Needs Coordination.
+          </h1>
+          <p
+            class="text-text-on-dark/90 text-h3 mx-auto"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            GoLynk transforms routes already in motion into structured logistics capacity — reducing duplication, lowering carbon intensity, and building a new baseline for efficient European delivery.
+          </p>
+        </div>
+      </section>
+
+      <!-- Main About Content Section -->
+
+      <!-- ========== 3) HOW WE BUILD — OPERATING DISCIPLINE ========== -->
+      <section class="py-24 md:py-32 px-6">
+        <div class="max-w-hero mx-auto space-y-10">
+          <div class="text-center">
+            <h2>HOW WE BUILD — OPERATING DISCIPLINE</h2>
+            <p class="subheading mt-4 mx-auto">
+              Infrastructure compounds only when disciplined.
+            </p>
+          </div>
+
+          <div class="flow-wrap">
+            <div class="flow-row top">
+              <div class="flow-step delay-1">
+                <div class="card-light p-8 space-y-4 h-full">
+                  <span class="step-id">01</span>
+                  <h3 class="font-600 text-lg">Density Before Scale</h3>
+                  <p class="text-sm text-gray-500">
+                    We validate repeating corridors before expanding.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flow-step delay-2">
+                <div class="card-light p-8 space-y-4 h-full">
+                  <span class="step-id">02</span>
+                  <h3 class="font-600 text-lg">Constraints Over Promises</h3>
+                  <p class="text-sm text-gray-500">
+                    Routes, timing, and SLAs define eligibility.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flow-step delay-3">
+                <div class="card-light p-8 space-y-4 h-full">
+                  <span class="step-id">03</span>
+                  <h3 class="font-600 text-lg">Trust is Structural</h3>
+                  <p class="text-sm text-gray-500">
+                    Verification and accountability are embedded at every
+                    handoff.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flow-row bottom">
+              <div class="flow-step delay-4">
+                <div class="card-light p-8 space-y-4 h-full">
+                  <span class="step-id">04</span>
+                  <h3 class="font-600 text-lg">Asset-Light Discipline</h3>
+                  <p class="text-sm text-gray-500">
+                    Coordination scales better than duplication.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flow-step delay-5">
+                <div class="card-light p-8 space-y-4 h-full">
+                  <span class="step-id">05</span>
+                  <h3 class="font-600 text-lg">Measured Impact</h3>
+                  <p class="text-sm text-gray-500">
+                    Cost and carbon are tracked per corridor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4) CORRIDOR-FIRST DEPLOYMENT ========== -->
+      <section class="py-24 md:py-32 px-6 bg-gray-50">
+        <div class="max-w-hero mx-auto">
+          <div class="grid md:grid-cols-12 gap-12 items-start">
+            <!-- Left: Explanation -->
+            <div class="md:col-span-5 space-y-6">
+              <h2>CORRIDOR-FIRST DEPLOYMENT — EXECUTION ENGINE</h2>
+              <div class="space-y-4 subheading max-w-prose">
+                <p>We do not launch everywhere.</p>
+                <p>We deploy on repeat lanes — not geography.</p>
+                <p>Validated corridors expand into adjacent lanes.</p>
+                <p>
+                  Germany serves as the initial network foundation, followed by
+                  structured expansion into the Benelux region and broader
+                  European corridors.
+                </p>
+                <p>
+                  Density precedes expansion. National reliability precedes
+                  cross-border scale.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: Steps Card -->
+            <div class="md:col-span-7">
+              <div class="card-light p-12 space-y-6">
+                <p class="font-600 text-base">
+                  Each corridor must demonstrate:
+                </p>
+                <div class="space-y-4">
+                  <div
+                    class="flex items-start gap-4 pb-4 border-b border-gray-200"
+                  >
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="font-500 text-base">Recurring shipment flow</p>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 pb-4 border-b border-gray-200"
+                  >
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="font-500 text-base">Stable utilisation</p>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 pb-4 border-b border-gray-200"
+                  >
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="font-500 text-base">SLA reliability</p>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <span class="text-sm font-700 text-accent">•</span>
+                    <p class="font-500 text-base">Verified handoffs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 5) CARBON & NETWORK EFFICIENCY ========== -->
+      <section class="py-24 md:py-32 px-6">
+        <div class="max-w-hero mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6" style="max-width: 600px">
+              <p class="label">CARBON &amp; NETWORK EFFICIENCY</p>
+              <h2>A New Baseline for Efficient Logistics</h2>
+              <p class="subheading">
+                Logistics growth no longer requires more vehicles. It requires
+                better coordination.
+              </p>
+
+              <div class="space-y-3">
+                <p class="text-sm font-600 text-[--text-primary]">What we do</p>
+                <div class="space-y-3">
+                  <div class="flex items-start gap-3">
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="text-base text-[--text-secondary]">
+                      Reduces redundant kilometers
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="text-base text-[--text-secondary]">
+                      Increases load efficiency
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-sm font-700 text-accent">•</span>
+                    <p class="text-base text-[--text-secondary]">
+                      Lowers corridor-level carbon intensity
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-3">
+                <p class="text-sm font-600 text-[--text-primary]">
+                  Why it works
+                </p>
+                <div class="space-y-3">
+                  <div class="flex items-start gap-3">
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="text-base text-[--text-secondary]">
+                      Cost per shipment decreases
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-sm font-700 text-gray-400">•</span>
+                    <p class="text-base text-[--text-secondary]">
+                      Emissions per kilometer decrease
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-sm font-700 text-accent">•</span>
+                    <p class="text-base text-[--text-secondary]">
+                      Reliability increases
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-base font-700 text-[--text-primary]">
+                Efficiency becomes climate strategy.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="card-light rounded-lg overflow-hidden p-5 bg-white">
+                <div
+                  class="w-full rounded-md border border-[--border-color] bg-white p-4"
+                >
+                  <svg
+                    viewBox="0 0 560 360"
+                    class="w-full h-auto"
+                    role="img"
+                    aria-label="Corridor density diagram with sparse routes and overlapping corridor cluster"
+                  >
+                    <rect x="0" y="0" width="560" height="360" fill="#FFFFFF" />
+
+                    <line
+                      x1="58"
+                      y1="70"
+                      x2="214"
+                      y2="92"
+                      stroke="#CBD5E1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="56"
+                      y1="138"
+                      x2="222"
+                      y2="154"
+                      stroke="#CBD5E1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="62"
+                      y1="214"
+                      x2="226"
+                      y2="188"
+                      stroke="#CBD5E1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="70"
+                      y1="288"
+                      x2="232"
+                      y2="252"
+                      stroke="#CBD5E1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                    <line
+                      x1="236"
+                      y1="92"
+                      x2="370"
+                      y2="102"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="236"
+                      y1="92"
+                      x2="368"
+                      y2="144"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="232"
+                      y1="154"
+                      x2="374"
+                      y2="148"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="232"
+                      y1="154"
+                      x2="364"
+                      y2="190"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="226"
+                      y1="188"
+                      x2="378"
+                      y2="202"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="232"
+                      y1="252"
+                      x2="382"
+                      y2="258"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="370"
+                      y1="102"
+                      x2="510"
+                      y2="120"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="368"
+                      y1="144"
+                      x2="510"
+                      y2="154"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="364"
+                      y1="190"
+                      x2="506"
+                      y2="198"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="382"
+                      y1="258"
+                      x2="508"
+                      y2="252"
+                      stroke="#3B82F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                    <text
+                      x="94"
+                      y="42"
+                      font-size="11"
+                      font-weight="600"
+                      fill="#64748B"
+                    >
+                      Sparse routes
+                    </text>
+                    <text
+                      x="386"
+                      y="42"
+                      font-size="11"
+                      font-weight="600"
+                      fill="#1D4ED8"
+                    >
+                      Overlapping corridor cluster
+                    </text>
+                  </svg>
+                </div>
+              </div>
+
+              <p
+                class="text-xs tracking-[0.08em] uppercase text-[--text-secondary]"
+              >
+                Density ↑ Cost ↓ Emissions ↓
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 6) INTELLIGENCE AS INFRASTRUCTURE ========== -->
+      <section class="py-24 md:py-32 px-6 bg-gray-50">
+        <div class="max-w-hero mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-4">
+              <div class="card-light rounded-lg overflow-hidden p-6 bg-white">
+                <img
+                  src="./public/seminar-role-artificial-intelligence-predicting-logistics-trends-optimizing-routes-326337755.webp"
+                  alt="Logistics trends and optimization"
+                  class="w-full h-auto rounded"
+                />
+              </div>
+
+              <p class="text-xs tracking-[0.02em] text-[--text-secondary]">
+                Intelligence embedded in the movement layer.
+              </p>
+            </div>
+
+            <div class="space-y-6" style="max-width: 600px">
+              <p class="label">INTELLIGENCE AS INFRASTRUCTURE</p>
+              <h2>Coordination Powered by Embedded Intelligence</h2>
+              <p class="subheading">
+                GoLynk applies intelligence at handoff level to structure
+                movement, not just visualize it.
+              </p>
+
+              <div class="space-y-3">
+                <div class="flex items-start gap-3">
+                  <span class="text-sm font-700 text-gray-400">•</span>
+                  <p class="text-base text-[--text-secondary]">
+                    AI-driven route matching
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-sm font-700 text-gray-400">•</span>
+                  <p class="text-base text-[--text-secondary]">
+                    Reinforcement learning for density optimisation
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-sm font-700 text-gray-400">•</span>
+                  <p class="text-base text-[--text-secondary]">
+                    SLA-aware multi-hop coordination
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-sm font-700 text-accent">•</span>
+                  <p class="text-base text-[--text-secondary]">
+                    Event verification across transitions
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-3">
+                <p class="text-sm font-600 text-[--text-primary]">Outcomes</p>
+                <div class="space-y-2">
+                  <p class="text-base text-[--text-secondary]">
+                    Faster routing decisions
+                  </p>
+                  <p class="text-base text-[--text-secondary]">
+                    Shared movement
+                  </p>
+                  <p class="text-base text-[--text-secondary]">
+                    Reduced detours
+                  </p>
+                  <p class="text-base text-[--text-secondary]">
+                    Measurable Scope 3 impact
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-base font-700 text-[--text-primary]">
+                Technology enables structure.<br />
+                Structure enables efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 7) VISION ========== -->
+      <section class="py-28 md:py-36 px-6">
+        <div class="max-w-hero mx-auto">
+          <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2>Vision</h2>
+            <p
+              class="text-[30px] leading-[36px] font-600 tracking-[-0.01em] text-[--text-primary]"
+            >
+              The Network That Compounds
+            </p>
+            <p class="subheading max-w-3xl mx-auto">
+              GoLynk builds structured density that compounds corridor by
+              corridor into a resilient network layer.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-5 pt-4">
+              <div
+                class="bg-white border border-[--border-color] rounded-lg p-5 text-left"
+              >
+                <p class="text-sm font-600 text-[--text-primary]">
+                  Movement becomes shareable
+                </p>
+              </div>
+              <div
+                class="bg-white border border-[--border-color] rounded-lg p-5 text-left"
+              >
+                <p class="text-sm font-600 text-[--text-primary]">
+                  Delivery becomes faster
+                </p>
+              </div>
+              <div
+                class="bg-white border border-[--border-color] rounded-lg p-5 text-left"
+              >
+                <p class="text-sm font-600 text-[--text-primary]">
+                  Carbon intensity declines
+                </p>
+              </div>
+              <div
+                class="bg-white border border-[--border-color] rounded-lg p-5 text-left"
+              >
+                <p class="text-sm font-600 text-[--text-primary]">
+                  Reporting becomes measurable
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <div class="hidden md:block">
+                <svg
+                  viewBox="0 0 960 90"
+                  class="w-full h-auto"
+                  role="img"
+                  aria-label="Structured expansion progression across four connected nodes"
+                >
+                  <line
+                    x1="110"
+                    y1="32"
+                    x2="850"
+                    y2="32"
+                    stroke="#CBD5E1"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="110" cy="32" r="5" fill="#3B82F6" />
+                  <circle cx="357" cy="32" r="5" fill="#3B82F6" />
+                  <circle cx="603" cy="32" r="5" fill="#3B82F6" />
+                  <circle cx="850" cy="32" r="5" fill="#3B82F6" />
+                  <text
+                    x="110"
+                    y="72"
+                    text-anchor="middle"
+                    font-size="11"
+                    font-weight="600"
+                    fill="#334155"
+                  >
+                    Germany → Validated Corridors
+                  </text>
+                  <text
+                    x="357"
+                    y="72"
+                    text-anchor="middle"
+                    font-size="11"
+                    font-weight="600"
+                    fill="#334155"
+                  >
+                    Corridors → National Density
+                  </text>
+                  <text
+                    x="603"
+                    y="72"
+                    text-anchor="middle"
+                    font-size="11"
+                    font-weight="600"
+                    fill="#334155"
+                  >
+                    National Density → Cross-border Integration
+                  </text>
+                  <text
+                    x="850"
+                    y="72"
+                    text-anchor="middle"
+                    font-size="11"
+                    font-weight="600"
+                    fill="#334155"
+                  >
+                    Integration → European Network Layer
+                  </text>
+                </svg>
+              </div>
+
+              <div class="md:hidden space-y-2 text-left mx-auto max-w-sm">
+                <p class="text-sm text-[--text-secondary]">
+                  Germany → Validated Corridors
+                </p>
+                <p class="text-sm text-[--text-secondary]">
+                  Corridors → National Density
+                </p>
+                <p class="text-sm text-[--text-secondary]">
+                  National Density → Cross-border Integration
+                </p>
+                <p class="text-sm text-[--text-secondary]">
+                  Integration → European Network Layer
+                </p>
+              </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto pt-2">
+              <p class="subheading">
+                The next generation of logistics will not be defined by more
+                assets.
+              </p>
+              <p class="subheading mt-2">
+                It will be defined by structured density.
+              </p>
+              <p class="subheading mt-2">GoLynk is building that layer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 6) FOUNDING TEAM ========== -->
+      <section class="py-24 md:py-32 px-6">
+        <div class="max-w-hero mx-auto space-y-12">
+          <div>
+            <h2>Founding Team</h2>
+            <p class="subheading mt-4">
+              Built by operators combining logistics execution and
+              production-grade systems engineering.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="card-light p-8 space-y-6">
+              <div
+                class="w-32 h-32 mx-auto rounded-full bg-linear-to-br from-slate-100 to-slate-50 flex items-center justify-center overflow-hidden border border-slate-200"
+              >
+                <!-- CEO Icon: Network Hub -->
+                <svg
+                  viewBox="0 0 120 120"
+                  class="w-20 h-20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Center node -->
+                  <circle
+                    cx="60"
+                    cy="60"
+                    r="12"
+                    fill="#3B82F6"
+                    stroke="#1E40AF"
+                    stroke-width="1.5"
+                  />
+
+                  <!-- Orbital nodes -->
+                  <circle
+                    cx="60"
+                    cy="30"
+                    r="8"
+                    fill="#CBD5E1"
+                    stroke="#94A3B8"
+                    stroke-width="1"
+                  />
+                  <circle
+                    cx="85"
+                    cy="60"
+                    r="8"
+                    fill="#CBD5E1"
+                    stroke="#94A3B8"
+                    stroke-width="1"
+                  />
+                  <circle
+                    cx="60"
+                    cy="90"
+                    r="8"
+                    fill="#CBD5E1"
+                    stroke="#94A3B8"
+                    stroke-width="1"
+                  />
+                  <circle
+                    cx="35"
+                    cy="60"
+                    r="8"
+                    fill="#CBD5E1"
+                    stroke="#94A3B8"
+                    stroke-width="1"
+                  />
+
+                  <!-- Connection lines -->
+                  <line
+                    x1="60"
+                    y1="42"
+                    x2="60"
+                    y2="26"
+                    stroke="#CBD5E1"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    x1="72"
+                    y1="68"
+                    x2="81"
+                    y2="65"
+                    stroke="#CBD5E1"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    x1="60"
+                    y1="72"
+                    x2="60"
+                    y2="86"
+                    stroke="#CBD5E1"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    x1="48"
+                    y1="52"
+                    x2="39"
+                    y2="55"
+                    stroke="#CBD5E1"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-center space-y-2">
+                <h3 class="font-600 text-lg">Ibrahim Ismail</h3>
+                <p class="text-xs text-gray-500">RWTH Aachen University</p>
+                <p class="text-sm text-accent font-600">Founder & CEO</p>
+              </div>
+
+              <p class="text-sm text-gray-600 text-center">
+                Focuses on corridor strategy, partnerships, and disciplined
+                expansion.
+              </p>
+              <p class="text-xs text-gray-600 text-center">
+                Previously led multi-partner corridor onboarding and deployment
+                execution from first lane to adjacent expansion.
+              </p>
+
+              <div
+                class="flex flex-wrap gap-2 justify-center pt-4 border-t border-gray-200"
+              >
+                <span class="chip">Market execution</span>
+                <span class="chip">Corridor design</span>
+                <span class="chip">Strategic partnerships</span>
+              </div>
+            </div>
+
+            <div class="card-light p-8 space-y-6">
+              <div
+                class="w-32 h-32 mx-auto rounded-full bg-linear-to-br from-slate-100 to-slate-50 flex items-center justify-center overflow-hidden border border-slate-200"
+              >
+                <!-- CTO Icon: Infrastructure Layers -->
+                <svg
+                  viewBox="0 0 120 120"
+                  class="w-20 h-20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Top layer -->
+                  <rect
+                    x="25"
+                    y="25"
+                    width="70"
+                    height="16"
+                    rx="2"
+                    fill="none"
+                    stroke="#3B82F6"
+                    stroke-width="2"
+                  />
+                  <circle cx="35" cy="33" r="3" fill="#3B82F6" />
+                  <circle cx="60" cy="33" r="3" fill="#3B82F6" />
+                  <circle cx="85" cy="33" r="3" fill="#3B82F6" />
+
+                  <!-- Middle layer -->
+                  <rect
+                    x="25"
+                    y="52"
+                    width="70"
+                    height="16"
+                    rx="2"
+                    fill="none"
+                    stroke="#CBD5E1"
+                    stroke-width="2"
+                  />
+                  <circle cx="35" cy="60" r="3" fill="#CBD5E1" />
+                  <circle cx="60" cy="60" r="3" fill="#CBD5E1" />
+                  <circle cx="85" cy="60" r="3" fill="#CBD5E1" />
+
+                  <!-- Bottom layer -->
+                  <rect
+                    x="25"
+                    y="79"
+                    width="70"
+                    height="16"
+                    rx="2"
+                    fill="none"
+                    stroke="#CBD5E1"
+                    stroke-width="2"
+                  />
+                  <circle cx="35" cy="87" r="3" fill="#CBD5E1" />
+                  <circle cx="60" cy="87" r="3" fill="#CBD5E1" />
+                  <circle cx="85" cy="87" r="3" fill="#CBD5E1" />
+
+                  <!-- Connecting lines -->
+                  <line
+                    x1="35"
+                    y1="41"
+                    x2="35"
+                    y2="52"
+                    stroke="#E2E8F0"
+                    stroke-width="1"
+                  />
+                  <line
+                    x1="60"
+                    y1="41"
+                    x2="60"
+                    y2="52"
+                    stroke="#E2E8F0"
+                    stroke-width="1"
+                  />
+                  <line
+                    x1="85"
+                    y1="41"
+                    x2="85"
+                    y2="52"
+                    stroke="#E2E8F0"
+                    stroke-width="1"
+                  />
+                  <line
+                    x1="35"
+                    y1="68"
+                    x2="35"
+                    y2="79"
+                    stroke="#E2E8F0"
+                    stroke-width="1"
+                  />
+                  <line
+                    x1="60"
+                    y1="68"
+                    x2="60"
+                    y2="79"
+                    stroke="#E2E8F0"
+                    stroke-width="1"
+                  />
+                  <line
+                    x1="85"
+                    y1="68"
+                    x2="85"
+                    y2="79"
+                    stroke="#E2E8F0"
+                    stroke-width="1"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-center space-y-2">
+                <h3 class="font-600 text-lg">Mahmoud Algaml</h3>
+                <p class="text-xs text-gray-500">RWTH Aachen University</p>
+                <p class="text-sm text-accent font-600">Co-Founder & CTO</p>
+              </div>
+
+              <p class="text-sm text-gray-600 text-center">
+                Leads orchestration architecture, integration, and reliability
+                systems.
+              </p>
+              <p class="text-xs text-gray-600 text-center">
+                Built SLA-aware matching and lane-level event tracking systems
+                across live pilot corridors and integration flows.
+              </p>
+
+              <div
+                class="flex flex-wrap gap-2 justify-center pt-4 border-t border-gray-200"
+              >
+                <span class="chip">Matching engine</span>
+                <span class="chip">Infrastructure systems</span>
+                <span class="chip">Platform integrity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 7) INSTITUTIONAL SUPPORT ========== -->
+      <section class="py-16 px-6 border-t border-b border-gray-200">
+        <div class="max-w-hero mx-auto">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-left" data-animate="fade-up" data-duration="700">
+              <p class="text-sm font-500 text-gray-700 max-w-lg">
+                <strong>Institutional Environment</strong><br />
+                Supported by RWTH Aachen University and the RWTH Innovation
+                Center. Built with corridor-based validation and deployment
+                discipline.
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-5 justify-start md:justify-end"
+              data-animate="fade-up"
+              data-duration="700"
+              data-delay="120"
+            >
+              <div
+                class="bg-white border border-gray-200 rounded-md px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
+              >
+                <img
+                  src="/go/assets/rl-BpxSlu79.png"
+                  alt="RWTH Aachen University"
+                  class="h-10 w-auto object-contain"
+                />
+              </div>
+              <div
+                class="bg-white border border-gray-200 rounded-md px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
+              >
+                <img
+                  src="/go/assets/ri-zZHiQTp1.png"
+                  alt="RWTH Innovation Center"
+                  class="h-10 w-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 8) STRATEGIC ALIGNMENT — CAPITAL & PARTNERSHIPS ========== -->
+      <section class="py-30 px-6 bg-[#F8FAFC]">
+        <div class="mx-auto" style="max-width: 880px">
+          <div class="text-center space-y-12">
+            <!-- Label -->
+            <p class="label text-slate-600">STRATEGIC ALIGNMENT</p>
+
+            <!-- Headline -->
+            <h2
+              class="text-[42px] leading-12 font-600 tracking-[-0.01em] text-slate-950"
+            >
+              Capital That Strengthens Structure
+            </h2>
+
+            <!-- Core Paragraph -->
+            <div class="space-y-6" style="max-width: 600px; margin: 0 auto">
+              <p class="text-[16px] leading-7 text-slate-700">
+                GoLynk is entering pilot corridor deployment in Germany —
+                validating density, reliability, and measurable carbon
+                efficiency before structured expansion.
+              </p>
+              <p class="text-[16px] leading-7 text-slate-700">
+                Capital accelerates validated integration and cross-border
+                adjacency — allowing the network to compound corridor by
+                corridor.
+              </p>
+            </div>
+
+            <!-- Visual Centerpiece: Expansion Progression Diagram -->
+            <div class="flex justify-center py-8">
+              <svg
+                viewBox="0 0 940 160"
+                style="
+                  max-width: 100%;
+                  height: auto;
+                  width: 100%;
+                  max-width: 820px;
+                "
+              >
+                <!-- Connection line -->
+                <line
+                  x1="60"
+                  y1="80"
+                  x2="880"
+                  y2="80"
+                  stroke="#CBD5E1"
+                  stroke-width="1.5"
+                />
+
+                <!-- Node 1: Validated Corridor -->
+                <circle
+                  cx="60"
+                  cy="80"
+                  r="10"
+                  fill="none"
+                  stroke="#3B82F6"
+                  stroke-width="2"
+                />
+                <text
+                  x="60"
+                  y="125"
+                  text-anchor="middle"
+                  font-size="12"
+                  font-weight="500"
+                  fill="#334155"
+                >
+                  Validated Corridor
+                </text>
+
+                <!-- Node 2: National Density -->
+                <circle
+                  cx="330"
+                  cy="80"
+                  r="10"
+                  fill="none"
+                  stroke="#CBD5E1"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="330"
+                  y="125"
+                  text-anchor="middle"
+                  font-size="12"
+                  font-weight="500"
+                  fill="#334155"
+                >
+                  National Density
+                </text>
+
+                <!-- Node 3: Cross-Border Integration -->
+                <circle
+                  cx="600"
+                  cy="80"
+                  r="10"
+                  fill="none"
+                  stroke="#CBD5E1"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="600"
+                  y="125"
+                  text-anchor="middle"
+                  font-size="12"
+                  font-weight="500"
+                  fill="#334155"
+                >
+                  Cross-Border Integration
+                </text>
+
+                <!-- Node 4: European Layer -->
+                <circle
+                  cx="880"
+                  cy="80"
+                  r="10"
+                  fill="none"
+                  stroke="#CBD5E1"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="880"
+                  y="125"
+                  text-anchor="middle"
+                  font-size="12"
+                  font-weight="500"
+                  fill="#334155"
+                >
+                  European Layer
+                </text>
+              </svg>
+            </div>
+
+            <!-- Philosophy Block -->
+            <p class="text-[18px] leading-7 font-500 text-slate-900">
+              This is not growth for its own sake.<br />
+              It is disciplined expansion built on verified structure.
+            </p>
+          </div>
+
+          <!-- Strategic Conversations: Visually Separated -->
+          <div class="mt-16 pt-12 border-t border-slate-200">
+            <div class="text-center space-y-8">
+              <h3 class="text-[24px] leading-8 font-600 text-slate-950">
+                Strategic Conversations
+              </h3>
+              <p class="text-[15px] text-slate-600 max-w-2xl mx-auto leading-6">
+                Executive overview, deployment roadmap, and network architecture
+                brief available upon direct engagement.
+              </p>
+              <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a
+                  href="mailto:invest@golynk.com?subject=Request%20Executive%20Overview"
+                  class="button-primary-light"
+                  >Request Executive Overview</a
+                >
+                <a
+                  href="mailto:invest@golynk.com?subject=Schedule%20Strategic%20Discussion"
+                  class="button-secondary-light"
+                  >Schedule Strategic Discussion</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr style="color: #e9eaeb" class="my-section" />
+
+      <!-- ========== FOOTER (from home page) ========== -->
+      <footer class="pt-8 overflow-hidden">
+        <div class="space-y-12">
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+          >
+            <!-- CTA Buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+              data-animate="fade-up"
+              data-duration="800"
+            >
+              <button
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-ship"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="footer.cta.startShipping"
+                  >Start Shipping</span
+                >
+              </button>
+              <button
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-delivery"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="footer.cta.deliverWithUs"
+                  >Deliver with us</span
+                >
+              </button>
+            </div>
+            <!-- Newsletter Column -->
+            <div class="flex flex-col items-center lg:items-start gap-3">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="footer.newsletter.title"
+              >
+                Stay up to date
+              </h3>
+              <form class="flex gap-2" id="footer-newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  data-i18n-placeholder="footer.newsletter.placeholder"
+                  class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                  data-i18n="footer.newsletter.button"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Footer Grid -->
+          <div
+            class="grid md:grid-cols-5 gap-12"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Brand Column -->
+            <div class="space-y-4">
+              <a href="./">
+                <img src="/go/assets/Logo-Cabx5owX.svg" alt="GoLynk" class="h-8" />
+              </a>
+              <p
+                class="text-text-secondary text-small"
+                data-i18n="footer.tagline"
+              >
+                Orchestrating existing journeys into faster, greener logistics.
+              </p>
+            </div>
+
+            <!-- For Shippers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="footer.sections.shippers.title"
+              >
+                For Shippers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="shipper.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.shippers.links.getStarted"
+                  >Get Started</a
+                >
+                <a
+                  href="#pricing"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.shippers.links.pricing"
+                  >Pricing</a
+                >
+                <a
+                  href="#api-docs"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.shippers.links.api"
+                  >Integration & API Docs</a
+                >
+              </nav>
+            </div>
+
+            <!-- For Carriers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="footer.sections.carriers.title"
+              >
+                For Carriers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="carrier.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.carriers.links.logistics"
+                  >Logistics Operators & 3PLs</a
+                >
+                <a
+                  href="#capacity-partner"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.carriers.links.capacity"
+                  >Join as Capacity Partner</a
+                >
+                <a
+                  href="#operator-dashboard"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.carriers.links.dashboard"
+                  >Operator Dashboard</a
+                >
+              </nav>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="footer.sections.resources.title"
+              >
+                Resources
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="#blog"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.resources.links.blog"
+                  >Blog & Insights</a
+                >
+                <a
+                  href="#case-studies"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.resources.links.caseStudies"
+                  >Case Studies</a
+                >
+                <a
+                  href="faq.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.resources.links.faq"
+                  >FAQ</a
+                >
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="footer.sections.legal.title"
+              >
+                Legal
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="#privacy"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.legal.links.privacy"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#terms"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.legal.links.terms"
+                  >Terms of Service</a
+                >
+                <a
+                  href="#cookie"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="footer.sections.legal.links.cookie"
+                  >Cookie Policy</a
+                >
+              </nav>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="border-t border-border-default pt-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="400"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
+              <!-- Logo and Tagline -->
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="./">
+                  <img src="/go/assets/Logo-Cabx5owX.svg" alt="GoLynk" class="h-8" />
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="footer.tagline"
+                >
+                  Orchestrating existing journeys into faster, greener
+                  logistics.
+                </p>
+              </div>
+
+              <!-- Social Links and Copyright -->
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-x"></use>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <p class="text-text-secondary text-small">
+                  © 2025 GoLynk. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+  </body>
+</html>
