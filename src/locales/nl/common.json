@@ -63,30 +63,14 @@
     }
   },
   "technology": {
-    "subheading": "GoLynk Technologie",
-    "heading": "Intelligentie ontmoet Beweging",
-    "description": "Multidimensionale AI orkestreert realtime routing, voorspellende matching, dynamische prijzen en CO₂-boekhouding – en transformeert logistieke chaos in precieze efficiëntie.",
+    "subheading": "Technologie",
+    "heading": "Technologie (Samenvatting)",
+    "cta": "Meer informatie",
     "features": {
-      "aiMatching": "Orchestratie Grafiek",
-      "multimodalRouting": "Matching Engine",
-      "dynamicPricing": "API‑First Integratie",
-      "carbonAccounting": "Data‑Driven Roadmap"
-    },
-    "aiMatchingDetail": {
-      "title": "Orchestratie Grafiek",
-      "description": "We modelleren bestaande routes van individuen en vloten als één levende grafiek van bewegingen en capaciteiten – over voetgangers, fietsen, auto's, bestelwagens, vrachtwagens, treinen en openbaar vervoer. Dit stelt ons in staat om alle vrije ruimte te zien die al in beweging is, in plaats van nieuwe voertuigen toe te voegen."
-    },
-    "multimodalRoutingDetail": {
-      "title": "Matching Engine",
-      "description": "Een op regels gebaseerde engine beoordeelt elk potentieel traject op basis van routeoverlap, tijdvenster, capaciteit, omleidingskosten, betrouwbaarheid en koolstofimpact. Vervolgens ketelt het 2–3 hops aan elkaar tot één optimale reis, zodat zendingen zonder extra ritten over meerdere vervoerders en modi stromen."
-    },
-    "dynamicPricingDetail": {
-      "title": "API‑First Integratie",
-      "description": "Flotteoperators, bedrijven en steden verbinden zich met GoLynk via API's en dashboards om ondergebruikte capaciteit bloot te stellen, tracking te integreren en gegevens terug in hun eigen systemen te ontvangen. We worden de orchestratielaag bovenop de infrastructuur die ze al runnen."
-    },
-    "carbonAccountingDetail": {
-      "title": "Data‑Driven Roadmap",
-      "description": "We beginnen met robuuste op regels gebaseerde matching en realtime tracking. Naarmate gegevens groeien, verbetert machine learning voortdurend overeenkomstpercentages, ETA's en prijsstelling – zonder extra complexiteit voor verzenders, vervoerders of partners."
+      "aiMatching": "Orchestratie-grafiek — routes gemodelleerd als één bewegingsgrafiek.",
+      "multimodalRouting": "Matching Engine — beoordeelt benen en ketent 2-3 hops.",
+      "dynamicPricing": "API-first integratie — sluit aan op TMS/WMS/ERP en dashboards.",
+      "carbonAccounting": "Gegevensgestuurde verbetering — betere ETA's en prijzen naarmate routes schalen."
     }
   },
   "team": {

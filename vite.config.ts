@@ -58,6 +58,8 @@ export default defineConfig({
         main: path.resolve(__dirname, "index.html"),
         shipper: path.resolve(__dirname, "shipper.html"),
         carrier: path.resolve(__dirname, "carrier.html"),
+        about: path.resolve(__dirname, "about.html"),
+        faq: path.resolve(__dirname, "faq.html"),
       },
     },
   },

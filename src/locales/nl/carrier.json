@@ -1,129 +1,145 @@
 {
-    "hero": {
-        "heading": "Zet Beweging Om in Geld. Beweeg Slimmer. Verdien Slimmer.",
-        "description": "Voor Particulieren • Voor Bedrijven Bezorg onderweg. Monetizeer je vrije capaciteit. Verminder CO₂-uitstoot.",
-        "cta": {
-            "startEarning": "Begin Met Verdienen",
-            "bookDemo": "Boek een Demo"
-        },
-        "stats": {
-            "activeMembers": {
-                "number": "50K+",
-                "label": "Actieve Leden"
-            },
-            "co2Saved": {
-                "number": "245K",
-                "label": "Ton CO₂ Bespaard"
-            },
-            "appRating": {
-                "number": "4,8/5",
-                "label": "App Beoordeling"
-            },
-            "partnerOrgs": {
-                "number": "1.200+",
-                "label": "Partnerorganisaties"
-            }
-        }
+  "hero": {
+    "heading": "Zet Beweging Om in Geld. Beweeg Slimmer. Verdien Slimmer.",
+    "description": "Voor Particulieren • Voor Bedrijven Bezorg onderweg. Monetizeer je vrije capaciteit. Verminder CO₂-uitstoot.",
+    "cta": {
+      "startEarning": "Begin Met Verdienen",
+      "bookDemo": "Boek een Demo"
     },
-    "individuals": {
-        "subheading": "Voor Particulieren",
-        "heading": "Mensen Die Bewegen",
-        "description": "Maak Van Je Woon-Werkverkeer Inkomen Verdien geld door pakketten te bezorgen die al op je dagelijkse route passen – geen omwegen, geen verspilde tijd.",
-        "howToEarn": {
-            "title": "Hoe Je Kunt Verdienen",
-            "options": {
-                "walker": "Wandelaar / Fietser – Je rugzak heeft ruimte. Wij maken er verdienvermogen van.",
-                "carCommuter": "Autopendel – Je dagelijkse woon-werkverkeer kan zijn eigen kosten dekken en meer.",
-                "courier": "Professionele Koerier – Vul lege momenten met inkomsten, niet met stilstand.",
-                "vanOwner": "Particuliere Bestelauto-eigenaar – Jouw capaciteit. Jouw schema. Jouw inkomsten.",
-                "ptCommuter": "OV-Pendelaar – Krijg beloningen voor deelname aan het schoonste netwerk van de stad."
-            }
-        },
-        "whyItWorks": {
-            "title": "Waarom Het Werkt",
-            "benefits": [
-                "Eerlijke, dynamische vergoeding",
-                "Directe uitbetalingen",
-                "Geen omwegen of verspilde tijd",
-                "Alleen kansen op je dagelijkse route",
-                "Volg je bijdrage aan schonere steden"
-            ]
-        },
-        "cta": "Download de App"
-    },
-    "businesses": {
-        "subheading": "Voor Bedrijven",
-        "heading": "Wagenparken & Operators",
-        "description": "Je Wagenpark Werkt Harder. Je Bedrijf Werkt Slimmer. Monetizeer onbenutte capaciteit. Verbeter marges zonder routes te wijzigen of voertuigen toe te voegen.",
-        "howToEarn": {
-            "title": "Hoe Je Kunt Verdienen",
-            "options": {
-                "courierServices": "Koeriersdiensten (10–50 voertuigen) – Je wagenpark beweegt al. Nu verdient het meer zonder extra kosten.",
-                "thirdPartyLogistics": "3PL / Logistieke Operators – Maak van verspreidde wagenparkcapaciteit een real-time inkomstengenerator.",
-                "courierCoop": "Koeriers Coöperatie (5–30 bezorgers) – Verhoog volume zonder je bezorgers te overbelasten.",
-                "vanOperators": "Bestelauto Operators / Kleine Wagenparken – Tussen-dienst gaten worden automatisch inkomsten.",
-                "lastMile": "Hyperlokale Last-Mile Aanbieders – Jouw lokale aanwezigheid wordt een hoogwaardige microhub."
-            }
-        },
-        "whatYouGain": {
-            "title": "Wat Je Krijgt",
-            "benefits": [
-                "Real-time wagenpark benutting",
-                "Betere marge per rit",
-                "Geen extra voertuigen of personeel",
-                "Zero-route-afwijking matching",
-                "ESG-kwaliteit koolstofrapportage"
-            ]
-        },
-        "integrations": {
-            "title": "Beschikbare Integraties",
-            "options": [
-                "SaaS Dashboard (2 weken)",
-                "API Integratie (6–8 weken)",
-                "White-Label Marktplaats (10–12 weken)"
-            ]
-        },
-        "cta": "Boek een Demo"
-    },
-    "features": {
-        "subheading": "Functies",
-        "heading": "Aangedreven Door Intelligentie. Ontworpen Voor Echte Impact.",
-        "description": "GoLynk is niet zomaar een logistiek platform – het is een dynamische infrastructuurlaag gebouwd om particulieren en bedrijven te helpen onbenutte capaciteit te ontsluiten, slimmer te bewegen en sneller te groeien.",
-        "tabs": {
-            "individuals": "Particulieren",
-            "businesses": "Bedrijven"
-        },
-        "list": {
-            "analytics": {
-                "title": "Slim Analytics Dashboard",
-                "description": "Real-time dashboards die je routes, prestaties, verdiensten en milieu-impact tonen zonder enige configuratie.",
-                "benefits": [
-                    "Live verdiensten & benuttingsanalyses",
-                    "Route-efficiëntie inzichten",
-                    "CO₂-besparing automatisch bijgehouden",
-                    "Exporteerbare, deelbare, audit-klare prestatierapportages"
-                ]
-            },
-            "aiMatching": {
-                "title": "AI Matching Motor",
-                "description": "Geavanceerde multimodale AI die bewegingspatronen begrijpt en perfecte matches creëert.",
-                "benefits": [
-                    "Vindt zendingen in je natuurlijke pad (±5% afwijking)",
-                    "Begrijpt je capaciteit, timing en voorkeuren",
-                    "Prioriteert inkomsten en CO₂-impact",
-                    "Leert continu naarmate het netwerk groeit"
-                ]
-            },
-            "communication": {
-                "title": "Geïntegreerde Communicatielaag",
-                "description": "Of je nu een individuele vervoerder, wagenpark of bedrijf bent, GoLynk houdt iedereen op één lijn.",
-                "benefits": [
-                    "Real-time updates voor ophalen & afleveren",
-                    "Slimme notificaties en geautomatiseerde statustracking",
-                    "Gedeelde communicatiekanalen",
-                    "Transparantie voor klanten en vervoerders"
-                ]
-            }
-        }
+    "stats": {
+      "activeMembers": {
+        "number": "50K+",
+        "label": "Actieve Leden"
+      },
+      "co2Saved": {
+        "number": "245K",
+        "label": "Ton CO₂ Bespaard"
+      },
+      "appRating": {
+        "number": "4,8/5",
+        "label": "App Beoordeling"
+      },
+      "partnerOrgs": {
+        "number": "1.200+",
+        "label": "Partnerorganisaties"
+      }
     }
+  },
+  "individuals": {
+    "subheading": "Voor Individuele Koeriers",
+    "heading": "Mensen Die Bewegen",
+    "description": "Maak Van Je Woon-Werkverkeer Inkomen Verdien geld door pakketten te bezorgen die al op je dagelijkse route passen – geen omwegen, geen verspilde tijd.",
+    "howToEarn": {
+      "title": "Hoe Je Kunt Verdienen",
+      "options": {
+        "walker": "Wandelaar / Fietser – Je rugzak heeft ruimte. Wij maken er verdienvermogen van.",
+        "carCommuter": "Autopendel – Je dagelijkse woon-werkverkeer kan zijn eigen kosten dekken en meer.",
+        "courier": "Professionele Koerier – Vul lege momenten met inkomsten, niet met stilstand.",
+        "vanOwner": "Particuliere Bestelauto-eigenaar – Jouw capaciteit. Jouw schema. Jouw inkomsten.",
+        "ptCommuter": "OV-Pendelaar – Krijg beloningen voor deelname aan het schoonste netwerk van de stad."
+      }
+    },
+    "whyItWorks": {
+      "title": "Waarom Het Werkt",
+      "benefits": [
+        "Eerlijke, dynamische vergoeding",
+        "Directe uitbetalingen",
+        "Geen omwegen of verspilde tijd",
+        "Alleen kansen op je dagelijkse route",
+        "Volg je bijdrage aan schonere steden"
+      ]
+    },
+    "cta": "Download de App"
+  },
+  "businesses": {
+    "subheading": "Voor Vloten & Operators",
+    "heading": "Wagenparken & Operators",
+    "shortDescription": "Maak elke kilometer winstgevend – zonder routes te wijzigen of voertuigen toe te voegen.",
+    "description": "GoLynk stelt 3PLs, regionale vervoerders, koeriersbedrijven en mobiliteitsbedrijven in staat om onbenutte capaciteit op bestaande routes te monetariseren. U behoudt controle over uw netwerk en contracten; wij voegen vraag toe die bij uw plannen past. GoLynk wordt incrementeel inkomsten, geen vervanging. U behoudt uw klanten, tarieven en dispatch. GoLynk voegt incrementele vraag toe die aan uw beperkingen voldoet.",
+    "howToEarn": {
+      "title": "Hoe Je Kunt Verdienen",
+      "options": {
+        "courierServices": "Koeriersdiensten (10–50 voertuigen) – Je wagenpark beweegt al. Nu verdient het meer zonder extra kosten.",
+        "thirdPartyLogistics": "3PL / Logistieke Operators – Maak van verspreidde wagenparkcapaciteit een real-time inkomstengenerator.",
+        "courierCoop": "Koeriers Coöperatie (5–30 bezorgers) – Verhoog volume zonder je bezorgers te overbelasten.",
+        "vanOperators": "Bestelauto Operators / Kleine Wagenparken – Tussen-dienst gaten worden automatisch inkomsten.",
+        "lastMile": "Hyperlokale Last-Mile Aanbieders – Jouw lokale aanwezigheid wordt een hoogwaardige microhub."
+      }
+    },
+    "whatYouGain": {
+      "title": "Wat Je Krijgt",
+      "benefits": [
+        "Real-time wagenpark benutting",
+        "Betere marge per rit",
+        "Geen extra voertuigen of personeel",
+        "Zero-route-afwijking matching",
+        "ESG-kwaliteit koolstofrapportage"
+      ]
+    },
+    "integrations": {
+      "title": "Integratieniveaus",
+      "options": [
+        "SaaS Dashboard – Real-time zichtbaarheid binnen weken, geen code vereist",
+        "API Integratie – Verbind uw TMS of telemetrie wanneer u klaar bent",
+        "White-Label Marktplaats – Uw eigen merkgebonden koerier-app of portal"
+      ]
+    },
+    "cta": "Boek een Demo"
+  },
+  "features": {
+    "heading": "Eén Controlelaag. Twee Manieren om deel te nemen.",
+    "description": "GoLynk biedt gestructureerde tools voor individuele koeriers en vlootoperators – zonder bestaande routes of systemen te vervangen.",
+    "individuals": {
+      "heading": "Voor Individuele Koeriers",
+      "subheading": "Zet dagelijkse beweging om in gestructureerde verdiensten – zonder uw route te wijzigen.",
+      "capabilities": [
+        {
+          "title": "In minuten starten",
+          "description": "Eenmaal verifiëren. Voeg uw gebruikelijke routes en beschikbaarheid toe."
+        },
+        {
+          "title": "Zero-Deviation Matching",
+          "description": "Zie alleen jobs die aansluiten bij uw natuurlijke pad en timing."
+        },
+        {
+          "title": "Transparante verdiensten",
+          "description": "Afstand, inspanning en uitbetaling zichtbaar vóór acceptatie."
+        },
+        {
+          "title": "Snelle afwikkeling",
+          "description": "Instant of same-day payouts met duidelijke uitsplitsing."
+        },
+        {
+          "title": "Geverifieerde en verzekerde workflows",
+          "description": "Alle handoffs gelogd, geverifieerd en ondersteund in-app."
+        }
+      ]
+    },
+    "fleets": {
+      "heading": "Voor Vloten & Operators",
+      "subheading": "Activeer reservecapaciteit in uw netwerk – zonder operationele verstoring.",
+      "capabilities": [
+        {
+          "title": "Zero-Deviation Vraag",
+          "description": "Jobs worden alleen weergegeven als ze uw routebeperkingen en SLA's respecteren."
+        },
+        {
+          "title": "Benuttingszichtbaarheid",
+          "description": "Opbrengsten per voertuig, rijstrook en corridor – in real-time."
+        },
+        {
+          "title": "Terugrit Recovery",
+          "description": "Vul lege terugritten voordat u nieuwe dedicated ritten boekt."
+        },
+        {
+          "title": "Geïntegreerde controle",
+          "description": "Dashboard-first deployment. API integratie wanneer klaar."
+        },
+        {
+          "title": "Koolstof- en Compliance Rapportage",
+          "description": "Per-rijstrook CO₂ zichtbaarheid en gestructureerde chain-of-custody logs."
+        }
+      ]
+    }
+  }
 }

@@ -1,129 +1,145 @@
 {
-    "hero": {
-        "heading": "Transformez vos déplacements en revenus. Déplacez-vous plus intelligemment. Gagnez plus intelligemment.",
-        "description": "Pour les particuliers • Pour les entreprises. Livrez en chemin. Monétisez vos capacités inutilisées. Réduisez les émissions de carbone.",
-        "cta": {
-            "startEarning": "Commencer à gagner",
-            "bookDemo": "Réserver une démo"
-        },
-        "stats": {
-            "activeMembers": {
-                "number": "+50 k",
-                "label": "Membres actifs"
-            },
-            "co2Saved": {
-                "number": "245 k",
-                "label": "Tonnes de CO₂ économisées"
-            },
-            "appRating": {
-                "number": "4,8/5",
-                "label": "Note de l'app"
-            },
-            "partnerOrgs": {
-                "number": "+1 200",
-                "label": "Organisations partenaires"
-            }
-        }
+  "hero": {
+    "heading": "Transformez vos déplacements en revenus. Déplacez-vous plus intelligemment. Gagnez plus intelligemment.",
+    "description": "Pour les particuliers • Pour les entreprises. Livrez en chemin. Monétisez vos capacités inutilisées. Réduisez les émissions de carbone.",
+    "cta": {
+      "startEarning": "Commencer à gagner",
+      "bookDemo": "Réserver une démo"
     },
-    "individuals": {
-        "subheading": "Pour les particuliers",
-        "heading": "Les personnes en mouvement",
-        "description": "Transformez votre trajet quotidien en revenus. Gagnez de l'argent en livrant des colis qui s'intègrent déjà à votre trajet quotidien, sans détours, sans perte de temps.",
-        "howToEarn": {
-            "title": "Comment vous pouvez gagner",
-            "options": {
-                "walker": "Marcheur / Cycliste — Votre sac à dos a de la place. Nous le transformons en pouvoir d'achat.",
-                "carCommuter": "Automobiliste — Votre trajet quotidien peut couvrir son propre coût et plus encore.",
-                "courier": "Coursier professionnel — Remplissez vos moments d'inactivité avec des revenus, pas du temps perdu.",
-                "vanOwner": "Propriétaire de camionnette — Votre capacité. Votre emploi du temps. Vos revenus.",
-                "ptCommuter": "Usager des transports publics — Soyez récompensé pour faire partie du réseau le plus propre de la ville."
-            }
-        },
-        "whyItWorks": {
-            "title": "Pourquoi ça fonctionne",
-            "benefits": [
-                "Rémunération équitable et dynamique",
-                "Paiements instantanés",
-                "Pas de détours ni de temps perdu",
-                "Opportunités uniquement sur votre trajet quotidien",
-                "Suivez votre contribution à des villes plus propres"
-            ]
-        },
-        "cta": "Télécharger l'app"
-    },
-    "businesses": {
-        "subheading": "Pour les entreprises",
-        "heading": "Flottes et opérateurs",
-        "description": "Votre flotte travaille plus dur. Votre entreprise travaille plus intelligemment. Monétisez les capacités sous-utilisées. Améliorez vos marges sans changer d'itinéraires ni ajouter de véhicules.",
-        "howToEarn": {
-            "title": "Comment vous pouvez gagner",
-            "options": {
-                "courierServices": "Services de coursiers (10-50 véhicules) — Votre flotte est déjà en mouvement. Maintenant elle gagne plus sans coût supplémentaire.",
-                "thirdPartyLogistics": "3PL / Opérateurs logistiques — Transformez la capacité distribuée de votre flotte en moteur de revenus en temps réel.",
-                "courierCoop": "Coopérative de coursiers (5-30 livreurs) — Gérez plus de volume sans surcharger vos livreurs.",
-                "vanOperators": "Opérateurs de camionnettes / Petites flottes — Les intervalles entre services deviennent automatiquement des revenus.",
-                "lastMile": "Fournisseurs hyperlocaux de dernier kilomètre — Votre empreinte locale devient un microhub de grande valeur."
-            }
-        },
-        "whatYouGain": {
-            "title": "Ce que vous gagnez",
-            "benefits": [
-                "Utilisation de la flotte en temps réel",
-                "Meilleure marge par trajet",
-                "Pas de véhicules ni de main-d'œuvre supplémentaires",
-                "Correspondance sans déviation d'itinéraire",
-                "Reporting carbone de niveau ESG"
-            ]
-        },
-        "integrations": {
-            "title": "Intégrations disponibles",
-            "options": [
-                "Tableau de bord SaaS (2 semaines)",
-                "Intégration API (6-8 semaines)",
-                "Marketplace en marque blanche (10-12 semaines)"
-            ]
-        },
-        "cta": "Réserver une démo"
-    },
-    "features": {
-        "subheading": "Fonctionnalités",
-        "heading": "Alimentée par l'intelligence. Conçue pour un impact réel.",
-        "description": "GoLynk n'est pas juste une autre plateforme logistique, c'est une couche d'infrastructure dynamique conçue pour aider les particuliers et les entreprises à exploiter les capacités sous-utilisées, à se déplacer plus intelligemment et à croître plus rapidement.",
-        "tabs": {
-            "individuals": "Particuliers",
-            "businesses": "Entreprises"
-        },
-        "list": {
-            "analytics": {
-                "title": "Tableau de bord analytique intelligent",
-                "description": "Tableaux de bord en temps réel qui affichent vos itinéraires, performances, revenus et impact environnemental sans aucune configuration.",
-                "benefits": [
-                    "Analytiques de revenus et d'utilisation en direct",
-                    "Informations sur l'efficacité des itinéraires",
-                    "Économies de carbone suivies automatiquement",
-                    "Rapports de performance exportables, partageables et vérifiables"
-                ]
-            },
-            "aiMatching": {
-                "title": "Moteur de correspondance IA",
-                "description": "IA multimodale de nouvelle génération qui comprend les modèles de déplacement et crée des correspondances parfaites.",
-                "benefits": [
-                    "Trouve des envois sur votre trajet naturel (±5 % de déviation)",
-                    "Comprend votre capacité, votre timing et vos préférences",
-                    "Priorise les revenus et l'impact carbone",
-                    "Apprend continuellement à mesure que le réseau se développe"
-                ]
-            },
-            "communication": {
-                "title": "Couche de communication unifiée",
-                "description": "Que vous soyez transporteur individuel, flotte ou entreprise, GoLynk maintient tout le monde aligné.",
-                "benefits": [
-                    "Mises à jour en temps réel pour l'enlèvement et la livraison",
-                    "Notifications intelligentes et suivi automatique du statut",
-                    "Fils de communication partagés",
-                    "Transparence client et transporteur"
-                ]
-            }
-        }
+    "stats": {
+      "activeMembers": {
+        "number": "+50 k",
+        "label": "Membres actifs"
+      },
+      "co2Saved": {
+        "number": "245 k",
+        "label": "Tonnes de CO₂ économisées"
+      },
+      "appRating": {
+        "number": "4,8/5",
+        "label": "Note de l'app"
+      },
+      "partnerOrgs": {
+        "number": "+1 200",
+        "label": "Organisations partenaires"
+      }
     }
+  },
+  "individuals": {
+    "subheading": "Pour les Coursiers en Route",
+    "heading": "Les personnes en mouvement",
+    "description": "Transformez votre trajet quotidien en revenus. Gagnez de l'argent en livrant des colis qui s'intègrent déjà à votre trajet quotidien, sans détours, sans perte de temps.",
+    "howToEarn": {
+      "title": "Comment vous pouvez gagner",
+      "options": {
+        "walker": "Marcheur / Cycliste — Votre sac à dos a de la place. Nous le transformons en pouvoir d'achat.",
+        "carCommuter": "Automobiliste — Votre trajet quotidien peut couvrir son propre coût et plus encore.",
+        "courier": "Coursier professionnel — Remplissez vos moments d'inactivité avec des revenus, pas du temps perdu.",
+        "vanOwner": "Propriétaire de camionnette — Votre capacité. Votre emploi du temps. Vos revenus.",
+        "ptCommuter": "Usager des transports publics — Soyez récompensé pour faire partie du réseau le plus propre de la ville."
+      }
+    },
+    "whyItWorks": {
+      "title": "Pourquoi ça fonctionne",
+      "benefits": [
+        "Rémunération équitable et dynamique",
+        "Paiements instantanés",
+        "Pas de détours ni de temps perdu",
+        "Opportunités uniquement sur votre trajet quotidien",
+        "Suivez votre contribution à des villes plus propres"
+      ]
+    },
+    "cta": "Télécharger l'app"
+  },
+  "businesses": {
+    "subheading": "Pour les Flottes et Opérateurs",
+    "heading": "Flottes et opérateurs",
+    "shortDescription": "Rentabilisez chaque kilomètre – sans changer d'itinéraires ni ajouter de véhicules.",
+    "description": "GoLynk permet aux 3PLs, transporteurs régionaux, entreprises de messagerie et opérateurs de mobilité de monétiser les capacités inutilisées sur les itinéraires existants. Vous gardez le contrôle de votre réseau et de vos contrats; nous ajoutons une demande qui correspond à vos plans. GoLynk génère des revenus supplémentaires, pas un remplacement. Vous conservez vos clients, vos tarifs et votre dispatch. GoLynk ajoute une demande supplémentaire qui répond à vos contraintes.",
+    "howToEarn": {
+      "title": "Comment vous pouvez gagner",
+      "options": {
+        "courierServices": "Services de coursiers (10-50 véhicules) — Votre flotte est déjà en mouvement. Maintenant elle gagne plus sans coût supplémentaire.",
+        "thirdPartyLogistics": "3PL / Opérateurs logistiques — Transformez la capacité distribuée de votre flotte en moteur de revenus en temps réel.",
+        "courierCoop": "Coopérative de coursiers (5-30 livreurs) — Gérez plus de volume sans surcharger vos livreurs.",
+        "vanOperators": "Opérateurs de camionnettes / Petites flottes — Les intervalles entre services deviennent automatiquement des revenus.",
+        "lastMile": "Fournisseurs hyperlocaux de dernier kilomètre — Votre empreinte locale devient un microhub de grande valeur."
+      }
+    },
+    "whatYouGain": {
+      "title": "Ce que vous gagnez",
+      "benefits": [
+        "Utilisation de la flotte en temps réel",
+        "Meilleure marge par trajet",
+        "Pas de véhicules ni de main-d'œuvre supplémentaires",
+        "Correspondance sans déviation d'itinéraire",
+        "Reporting carbone de niveau ESG"
+      ]
+    },
+    "integrations": {
+      "title": "Paliers d'Intégration",
+      "options": [
+        "Tableau de bord SaaS – Visibilité en temps réel en quelques semaines, aucun code requis",
+        "Intégration API – Connectez votre TMS ou télématique quand vous êtes prêt",
+        "Marketplace en marque blanche – Votre propre application ou portail de courrier de marque"
+      ]
+    },
+    "cta": "Réserver une démo"
+  },
+  "features": {
+    "heading": "Une couche de contrôle. Deux façons de participer.",
+    "description": "GoLynk fournit des outils structurés pour les coursiers individuels et les opérateurs de flotte – sans remplacer les routes ou systèmes existants.",
+    "individuals": {
+      "heading": "Pour les Coursiers en Route",
+      "subheading": "Transformez le mouvement quotidien en revenus structurés – sans changer votre route.",
+      "capabilities": [
+        {
+          "title": "Commencer en quelques minutes",
+          "description": "Vérifiez une fois. Ajoutez vos routes et disponibilités habituelles."
+        },
+        {
+          "title": "Correspondance à zéro déviation",
+          "description": "Voir uniquement les jobs alignés avec votre trajet naturel et votre timing."
+        },
+        {
+          "title": "Revenus transparents",
+          "description": "Distance, effort et paiement visibles avant acceptation."
+        },
+        {
+          "title": "Règlement rapide",
+          "description": "Paiements instantanés ou le même jour avec ventilation claire."
+        },
+        {
+          "title": "Workflows vérifiés et assurés",
+          "description": "Tous les transferts enregistrés, vérifiés et soutenus dans l'application."
+        }
+      ]
+    },
+    "fleets": {
+      "heading": "Pour les Flottes et Opérateurs",
+      "subheading": "Activez la capacité excédentaire sur votre réseau – sans interruption opérationnelle.",
+      "capabilities": [
+        {
+          "title": "Demande à zéro déviation",
+          "description": "Les jobs ne s'affichent que s'ils respectent vos contraintes d'itinéraire et vos SLA."
+        },
+        {
+          "title": "Visibilité de l'utilisation",
+          "description": "Revenus par véhicule, couloir et corridor – en temps réel."
+        },
+        {
+          "title": "Récupération des retours",
+          "description": "Remplissez les trajets de retour vides avant de réserver de nouvelles courses dédiées."
+        },
+        {
+          "title": "Contrôle intégré",
+          "description": "Déploiement orienté tableau de bord. Intégration API quand prêt."
+        },
+        {
+          "title": "Rapports carbone et conformité",
+          "description": "Visibilité CO₂ par couloir et journaux de chaîne de traçabilité structurés."
+        }
+      ]
+    }
+  }
 }

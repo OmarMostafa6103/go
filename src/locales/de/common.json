@@ -63,30 +63,14 @@
     }
   },
   "technology": {
-    "subheading": "GoLynk Technologie",
-    "heading": "Intelligenz trifft Bewegung",
-    "description": "Mehrdimensionale KI orchestriert Echtzeit-Routing, prädiktives Matching, dynamische Preisgestaltung und CO₂-Bilanzierung – und verwandelt logistisches Chaos in präzise Effizienz.",
+    "subheading": "Technologie",
+    "heading": "Technologie (Kurzform)",
+    "cta": "Mehr erfahren",
     "features": {
-      "aiMatching": "Orchestrierungsgraph",
-      "multimodalRouting": "Matching-Engine",
-      "dynamicPricing": "API-First-Integration",
-      "carbonAccounting": "Datengetriebene Roadmap"
-    },
-    "aiMatchingDetail": {
-      "title": "Orchestrierungsgraph",
-      "description": "Wir modellieren bestehende Routen von Einzelnen und Flotten als einen lebendigen Graphen von Bewegungen und Kapazitäten – über Fußgänger, Fahrräder, Autos, Lieferwagen, Lastwagen, Züge und öffentliche Verkehrsmittel. Dies ermöglicht es uns, all den freien Platz zu sehen, der bereits in Bewegung ist, anstatt neue Fahrzeuge hinzuzufügen."
-    },
-    "multimodalRoutingDetail": {
-      "title": "Matching-Engine",
-      "description": "Eine regelbasierte Engine bewertet jeden möglichen Abschnitt nach Routenüberlappung, Zeitfenster, Kapazität, Umwegkosten, Zuverlässigkeit und CO₂-Auswirkungen. Sie verkettete dann 2–3 Hops zu einer optimalen Reise, sodass Sendungen ohne zusätzliche Fahrten über mehrere Transporteure und Modi fließen."
-    },
-    "dynamicPricingDetail": {
-      "title": "API-First-Integration",
-      "description": "Flottenbetreiber, Unternehmen und Städte verbinden sich mit GoLynk über APIs und Dashboards, um untereingeset Kapazität freizulegen, Tracking zu integrieren und Daten zurück in ihre eigenen Systeme zu erhalten. Wir werden zur Orchestrierungsschicht auf der Infrastruktur, die sie bereits betreiben."
-    },
-    "carbonAccountingDetail": {
-      "title": "Datengetriebene Roadmap",
-      "description": "Wir beginnen mit robustem regelbasiertem Matching und Echtzeit-Tracking. Mit wachsenden Daten verbessert sich maschinelles Lernen kontinuierlich die Übereinstimmungsquoten, ETAs und Preisgestaltung – ohne zusätzliche Komplexität für Versender, Transporteure oder Partner."
+      "aiMatching": "Orchestrierungsgraph — Routen als ein Bewegungsgraph modelliert.",
+      "multimodalRouting": "Matching-Engine — bewertet Beine und verkettet 2–3 Hops.",
+      "dynamicPricing": "API-First-Integration — plug-in zu TMS/WMS/ERP und Dashboards.",
+      "carbonAccounting": "Datengesteuerte Verbesserung — bessere ETAs und Preisgestaltung bei Expansion."
     }
   },
   "team": {

@@ -63,30 +63,14 @@
     }
   },
   "technology": {
-    "subheading": "Technologie GoLynk",
-    "heading": "L'Intelligence rencontre le Mouvement",
-    "description": "L'IA multidimensionnelle orchestre le routage en temps réel, l'appariement prédictif, la tarification dynamique et la comptabilité carbone – transformant le chaos logistique en efficacité précise.",
+    "subheading": "Technologie",
+    "heading": "Technologie (Resume)",
+    "cta": "En savoir plus",
     "features": {
-      "aiMatching": "Graphique d'Orchestration",
-      "multimodalRouting": "Moteur d'Appariement",
-      "dynamicPricing": "Intégration API-First",
-      "carbonAccounting": "Roadmap Basée sur les Données"
-    },
-    "aiMatchingDetail": {
-      "title": "Graphique d'Orchestration",
-      "description": "Nous modélisons les routes existantes des individus et des flottes comme un graphique unique des mouvements et des capacités – à travers les piétons, les vélos, les voitures, les camionnettes, les camions, les trains et les transports en commun. Cela nous permet de voir tout l'espace libre déjà en mouvement, au lieu d'ajouter de nouveaux véhicules."
-    },
-    "multimodalRoutingDetail": {
-      "title": "Moteur d'Appariement",
-      "description": "Un moteur basé sur des règles évalue chaque tronçon potentiel selon le chevauchement des routes, la fenêtre de temps, la capacité, le coût du détour, la fiabilité et l'impact carbone. Il enchaîne ensuite 2–3 tronçons en un voyage optimal, afin que les envois transitent par plusieurs transporteurs et modes sans trajets supplémentaires."
-    },
-    "dynamicPricingDetail": {
-      "title": "Intégration API-First",
-      "description": "Les exploitants de flottes, les entreprises et les villes se connectent à GoLynk via des API et des tableaux de bord pour exposer les capacités sous-utilisées, intégrer le suivi et recevoir les données dans leurs propres systèmes. Nous devenons la couche d'orchestration au-dessus de l'infrastructure qu'ils gèrent déjà."
-    },
-    "carbonAccountingDetail": {
-      "title": "Roadmap Basée sur les Données",
-      "description": "Nous commençons par un appariement robuste basé sur des règles et un suivi en temps réel. À mesure que les données augmentent, l'apprentissage automatique améliore continuellement les taux d'appariement, les ETA et la tarification – sans ajouter de complexité pour les expéditeurs, les transporteurs ou les partenaires."
+      "aiMatching": "Graphique d'orchestration — routes modelisees comme un graphique de mouvement unique.",
+      "multimodalRouting": "Moteur de correspondance — evalue les jambes et enchaine 2-3 sauts.",
+      "dynamicPricing": "Integration API-first — se connecte a TMS/WMS/ERP et tableaux de bord.",
+      "carbonAccounting": "Amelioration pilotee par les donnees — meieurs ETA et tarification a mesure que les couloirs se developpent."
     }
   },
   "team": {

@@ -910,7 +910,19 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+  .solution-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .solution-text {
+    flex: 1;
+    order: 1;
+  }
+
   .solution-visual {
+    flex: 1;
+    order: 2;
     width: 100%;
   }
 

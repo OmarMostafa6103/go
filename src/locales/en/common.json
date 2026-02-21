@@ -63,30 +63,14 @@
     }
   },
   "technology": {
-    "subheading": "GoLynk Technology",
-    "heading": "Intelligence Meets Movement",
-    "description": "Multi-dimensional AI orchestrates real-time routing, predictive matching, dynamic pricing, and carbon accounting turning logistic chaos into precise efficiency.",
+    "subheading": "Technology",
+    "heading": "Technology (Brief)",
+    "cta": "Learn more",
     "features": {
-      "aiMatching": "Orchestration Graph",
-      "multimodalRouting": "Matching Engine",
-      "dynamicPricing": "API‑First Integration",
-      "carbonAccounting": "Data‑Driven Roadmap"
-    },
-    "aiMatchingDetail": {
-      "title": "Orchestration Graph",
-      "description": "We model existing routes from individuals and fleets as one living graph of movements and capacities—across walkers, bikes, cars, vans, trucks, trains, and public transport. This lets us see all the free space already in motion, instead of adding new vehicles. For carriers and fleets, this means there is almost always a job that naturally fits the routes you already travel—on foot, by bike, by car, van, or truck."
-    },
-    "multimodalRoutingDetail": {
-      "title": "Matching Engine",
-      "description": "A rule‑based engine scores each potential leg by route overlap, time window, capacity, detour cost, reliability, and carbon impact. It then chains 2–3 hops into one optimal journey, so shipments flow across several carriers and modes without extra journeys."
-    },
-    "dynamicPricingDetail": {
-      "title": "API‑First Integration",
-      "description": "Fleet operators, enterprises, and cities plug into GoLynk via APIs and dashboards to expose underutilized capacity, integrate tracking, and receive data back into their own systems. We become the orchestration layer on top of the infrastructure they already run."
-    },
-    "carbonAccountingDetail": {
-      "title": "Data‑Driven Roadmap",
-      "description": "We start with robust rule‑based matching and real‑time tracking. As data grows, machine learning improves match rates, ETAs, and pricing over time—without adding complexity for shippers, carriers, or partners."
+      "aiMatching": "Orchestration Graph — routes modeled as one movement graph.",
+      "multimodalRouting": "Matching Engine — scores legs and chains 2–3 hops.",
+      "dynamicPricing": "API-first integration — plugs into TMS/WMS/ERP and dashboards.",
+      "carbonAccounting": "Data-driven improvement — better ETAs and pricing as lanes scale."
     }
   },
   "team": {
