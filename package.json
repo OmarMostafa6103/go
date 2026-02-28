@@ -2,7 +2,7 @@
   "name": "golynk",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://OmarMostafa6103.github.io/go",
+  "homepage": "https://OmarMostafa6103.github.io/golynk-website",
   "type": "module",
   "scripts": {
     "dev": "vite",

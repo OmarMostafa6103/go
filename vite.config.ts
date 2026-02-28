@@ -38,7 +38,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
-  base: "/go/",
+  base: "/golynk-website/",
   plugins: [tailwindcss()],
   resolve: {
     alias: {
