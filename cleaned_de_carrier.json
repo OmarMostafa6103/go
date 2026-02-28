@@ -1,0 +1,51 @@
+{
+  "businesses": {
+    "cta": "Demo buchen",
+    "description": "GoLynk ermöglicht 3PLs, Regionalverteidigern, Kurierdiensten und Mobilitätsbetreibern, freie Kapazitäten auf bestehenden Routen zu monetarisieren. Sie behalten Kontrolle über Ihr Netzwerk und Ihre Verträge; wir fügen Nachfrage hinzu, die zu Ihren Plänen passt. So wird GoLynk inkrementelle Einnahmen, keine Auslagerung. Sie behalten Ihre Kunden, Tarife und Dispatch. GoLynk fügt inkrementelle Nachfrage hinzu, die Ihren Vorgaben entspricht.",
+    "heading": "Flotten & Betreiber",
+    "howToEarn": {
+      "options": {
+        "courierCoop": "Kurier-Kooperative (5–30 Fahrer) – Bewegen Sie mehr Volumen ohne Ihre Fahrer zu überlasten.",
+        "courierServices": "Kurierdienste (10–50 Fahrzeuge) – Ihre Flotte bewegt sich bereits. Jetzt verdient sie mehr ohne Mehrkosten.",
+        "lastMile": "Hyperlokal Last-Mile-Anbieter – Ihre lokale Präsenz wird zum wertvollen Microhub.",
+        "thirdPartyLogistics": "3PL / Logistikbetreiber – Verwandeln Sie verteilte Flottenkapazität in eine Echtzeit-Umsatzmaschine.",
+        "vanOperators": "Transporter-Betreiber / Kleine Flotten – Zwischen-Service-Lücken werden automatisch zu Umsatz."
+      },
+      "title": "So können Sie verdienen"
+    },
+    "subheading": "Für Flotten & Betreiber"
+  },
+  "hero": {
+    "cta": {
+      "bookDemo": "Demo buchen",
+      "startEarning": "Jetzt verdienen"
+    },
+    "description": "Für Einzelpersonen • Für Unternehmen. Liefern Sie nebenbei. Monetarisieren Sie freie Kapazitäten. Reduzieren Sie CO₂-Emissionen.",
+    "heading": "Verwandeln Sie Bewegung in Einkommen. Bewegen Sie sich smarter. Verdienen Sie smarter."
+  },
+  "individuals": {
+    "cta": "App herunterladen",
+    "description": "Verwandeln Sie Ihren Arbeitsweg in Einkommen. Verdienen Sie Geld durch die Zustellung von Paketen, die bereits auf Ihrer täglichen Route liegen – keine Umwege, keine verschwendete Zeit.",
+    "heading": "Menschen, die sich bewegen",
+    "subheading": "Für Einzelkuriere auf Strecken"
+  },
+  "smartDelivery": {
+    "description": "Es ist einfach: wir zeigen Ihnen nur Aufgaben, die auf den Routen passen, die Sie bereits gehen, fahren oder fahren.",
+    "heading": "Wie GoLynk für Kuriere funktioniert",
+    "steps": {
+      "step1": {
+        "description": "Nur Jobs, die zu Ihrer Route, Timing und Ihrem Fahrzeug passen.",
+        "title": "An Ihre Route angepasst"
+      },
+      "step2": {
+        "description": "Akzeptieren, pausieren oder überspringen Sie jederzeit.",
+        "title": "Sie behalten die Kontrolle"
+      },
+      "step3": {
+        "description": "Markieren Sie die Fertigstellung in der App. Automatische Auszahlung mit klarer Aufschlüsselung.",
+        "title": "Liefern + schnell abrechnen"
+      }
+    },
+    "subheading": "Intelligente Zustellung"
+  }
+}

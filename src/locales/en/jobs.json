@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "title": "Open Roles | GoLynk Careers",
+    "description": "Open roles across systems engineering, AI & optimization, integrations, corridor deployment, and logistics research."
+  },
+  "hero": {
+    "backLink": "Back to Careers",
+    "heading": "Open roles",
+    "description": "We hire across engineering, applied AI, corridor deployment, and zero-touch logistics research."
+  },
+  "filters": {
+    "track": {
+      "all": "All tracks",
+      "systems": "Systems Engineering",
+      "ai": "AI & Optimization",
+      "integrations": "Integrations & Operator Tooling",
+      "deployment": "Corridor Deployment & Operations",
+      "research": "Logistics Research (Zero-Touch)"
+    },
+    "location": {
+      "all": "All locations",
+      "aachen": "Aachen",
+      "remote": "Remote"
+    },
+    "type": {
+      "all": "All types",
+      "fullTime": "Full-time",
+      "contract": "Contract"
+    },
+    "searchPlaceholder": "Search roles",
+    "resultsNote": "Showing roles by track. Updated as hiring expands."
+  },
+  "tracks": {
+    "systems": {
+      "title": "Systems Engineering",
+      "subtitle": "Orchestration graph, reliability, observability, event pipelines."
+    },
+    "ai": {
+      "title": "AI & Optimization",
+      "subtitle": "Constraint scoring, density learning, SLA-aware multi-hop routing."
+    },
+    "integrations": {
+      "title": "Integrations & Operator Tooling",
+      "subtitle": "APIs, dashboards, partner tooling, TMS/WMS connectivity."
+    },
+    "deployment": {
+      "title": "Corridor Deployment & Operations",
+      "subtitle": "SLA playbooks, partner onboarding, microhub validation, corridor health."
+    },
+    "research": {
+      "title": "Logistics Research (Zero-Touch)",
+      "subtitle": "Network economics, corridor design theory, incentive alignment, verification systems."
+    }
+  },
+  "roles": {
+    "systems": {
+      "role1": {
+        "title": "Senior Backend Engineer — Orchestration",
+        "summary": "Design and scale the core orchestration engine powering multi-hop corridor routing.",
+        "location": "Aachen",
+        "type": "Full-time"
+      },
+      "role2": {
+        "title": "Distributed Systems Engineer — Event Pipeline",
+        "summary": "Build reliable event-driven infrastructure for real-time corridor state and handoff tracking.",
+        "location": "Remote",
+        "type": "Full-time"
+      },
+      "role3": {
+        "title": "Reliability Engineer — Observability & Integrity",
+        "summary": "Own monitoring, alerting, and integrity guarantees across the orchestration layer.",
+        "location": "Aachen",
+        "type": "Full-time"
+      }
+    },
+    "ai": {
+      "role1": {
+        "title": "Applied ML Engineer — Routing & Optimization",
+        "summary": "Develop constraint-aware routing models for multi-hop shipment matching under time windows.",
+        "location": "Remote",
+        "type": "Full-time"
+      },
+      "role2": {
+        "title": "Optimization Engineer — Time Windows & Constraints",
+        "summary": "Build solvers for deviation-bounded matching and SLA-aware constraint satisfaction.",
+        "location": "Aachen",
+        "type": "Full-time"
+      },
+      "role3": {
+        "title": "Data Scientist — Corridor Density & Pricing Signals",
+        "summary": "Analyze corridor density patterns and develop pricing signals that compound network efficiency.",
+        "location": "Remote",
+        "type": "Full-time"
+      }
+    },
+    "integrations": {
+      "role1": {
+        "title": "Integrations Engineer — APIs & Webhooks",
+        "summary": "Design and maintain partner-facing APIs, webhook contracts, and integration tiers.",
+        "location": "Aachen",
+        "type": "Full-time"
+      },
+      "role2": {
+        "title": "Product Engineer — Operator Dashboard",
+        "summary": "Build the operator console — shipment visibility, corridor health, and exception workflows.",
+        "location": "Remote",
+        "type": "Full-time"
+      },
+      "role3": {
+        "title": "Solutions Engineer — Fleet & TMS Integration",
+        "summary": "Connect fleet operators and TMS/WMS platforms to the GoLynk orchestration layer.",
+        "location": "Aachen",
+        "type": "Full-time"
+      }
+    },
+    "deployment": {
+      "role1": {
+        "title": "Corridor Deployment Lead — Germany",
+        "summary": "Lead corridor launches end-to-end — partner readiness, SLA setup, and density validation.",
+        "location": "Aachen",
+        "type": "Full-time"
+      },
+      "role2": {
+        "title": "Partner Operations — Microhub Network",
+        "summary": "Manage microhub partner relationships, capacity alignment, and operational readiness.",
+        "location": "Aachen",
+        "type": "Full-time"
+      },
+      "role3": {
+        "title": "Carrier Onboarding Lead — Corridor Playbooks",
+        "summary": "Design and execute carrier onboarding playbooks for corridor-level SLA compliance.",
+        "location": "Remote",
+        "type": "Full-time"
+      }
+    },
+    "research": {
+      "role1": {
+        "title": "Logistics Researcher — Corridor Design",
+        "summary": "Model corridor topology, network effects, and structural efficiency at the lane level.",
+        "location": "Remote",
+        "type": "Full-time"
+      },
+      "role2": {
+        "title": "Applied Research — Zero-Touch Operations",
+        "summary": "Research automation-first operational models for corridor logistics without manual intervention.",
+        "location": "Aachen",
+        "type": "Full-time"
+      },
+      "role3": {
+        "title": "Network Economics — Pricing & Incentives",
+        "summary": "Design pricing models and incentive structures that align fairness with network growth.",
+        "location": "Remote",
+        "type": "Contract"
+      },
+      "role4": {
+        "title": "Verification Systems — Chain-of-Custody",
+        "summary": "Design trust and verification frameworks for handoff integrity across multi-hop corridors.",
+        "location": "Remote",
+        "type": "Full-time"
+      }
+    }
+  },
+  "noResults": "No roles match your current filters. Try adjusting your selection.",
+  "lookFor": {
+    "heading": "What we look for",
+    "item1": "Systems thinking under real constraints",
+    "item2": "Calm execution and measurable outcomes",
+    "item3": "Respect for operational integrity (SLAs, verification, accountability)"
+  },
+  "generalApplication": {
+    "heading": "General application",
+    "description": "If you don't see a perfect match, send an introduction. We hire for depth, clarity, and systems thinking.",
+    "ctaPrimary": "Send introduction",
+    "ctaSecondary": "Back to careers",
+    "microcopy": "Include links (LinkedIn/GitHub) and a short note on what you want to build."
+  }
+}

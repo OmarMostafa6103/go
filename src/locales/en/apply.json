@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Apply for a Role at GoLynk",
+    "description": "Submit your application to join the GoLynk team and help us build the future of multi-hop logistics."
+  },
+  "defaultJobTitle": "Submit Your Application",
+  "defaultJobLocation": "Thank you for your interest in GoLynk",
+  "form": {
+    "fullName": {
+      "label": "Full name",
+      "placeholder": "Your full name"
+    },
+    "email": {
+      "label": "Email address",
+      "placeholder": "your@email.com"
+    },
+    "phone": {
+      "label": "Phone number",
+      "placeholder": "+43 XXX XXX"
+    },
+    "locationPreference": {
+      "label": "Location preference",
+      "select": "Select location",
+      "aachen": "Aachen (On-site)",
+      "remote": "Remote"
+    },
+    "resume": {
+      "label": "CV or Resume",
+      "dragDrop": "Drag and drop your file",
+      "format": "PDF, DOC, DOCX or TXT"
+    },
+    "coverLetter": {
+      "label": "Cover letter",
+      "placeholder": "Tell us why you're a great fit for this role..."
+    },
+    "experience": {
+      "label": "Years of experience",
+      "select": "Select experience level",
+      "junior": "0-2 years",
+      "mid": "2-5 years",
+      "senior": "5-10 years",
+      "lead": "10+ years"
+    },
+    "additionalInfo": {
+      "label": "Additional information",
+      "placeholder": "Anything else you'd like us to know?"
+    },
+    "submit": "Submit Application",
+    "legal": "By submitting this application, you consent to GoLynk processing your personal data according to our privacy policy."
+  },
+  "success": {
+    "heading": "Application submitted!",
+    "description": "Thank you for applying. We'll review your application and get back to you within 2-3 business days.",
+    "backToJobs": "Back to job listings"
+  }
+}

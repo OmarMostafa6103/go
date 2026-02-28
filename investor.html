@@ -1,0 +1,1478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="investor.meta.title">Investors — GoLynk</title>
+    <meta
+      name="description"
+      content="GoLynk is building the coordination architecture for European logistics — designed for density, capital efficiency, and structured cross-border expansion."
+      data-i18n-content="investor.meta.description"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- amCharts for corridor map -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/germanyLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/region/world/europeLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8fafc;
+        --bg-tertiary: #f6f7fb;
+        --border-color: #e6eaf2;
+        --text-primary: #0b1220;
+        --text-secondary: #334155;
+        --accent: #3b82f6;
+      }
+
+      body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+      }
+
+      /* Hero */
+      .investor-hero {
+        padding: 140px 24px 80px;
+      }
+
+      .investor-hero h1 {
+        font-size: 48px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 768px) {
+        .investor-hero h1 {
+          font-size: 36px;
+          line-height: 42px;
+        }
+      }
+
+      /* Section headings */
+      .section-title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 650;
+        letter-spacing: -0.015em;
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 26px;
+          line-height: 34px;
+        }
+      }
+
+      .section-body {
+        font-size: 17px;
+        line-height: 28px;
+        color: var(--text-secondary);
+      }
+
+      /* Cards */
+      .investor-card {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 32px;
+        transition:
+          transform 180ms ease-out,
+          box-shadow 180ms ease-out;
+      }
+
+      .investor-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(11, 18, 32, 0.06);
+      }
+
+      .investor-card h3 {
+        font-size: 18px;
+        font-weight: 650;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+      }
+
+      .investor-card .card-subtitle {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--accent);
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      .investor-card li {
+        font-size: 15px;
+        line-height: 26px;
+        color: var(--text-secondary);
+        padding-left: 4px;
+      }
+
+      /* Diagram layers */
+      .diagram-layer {
+        padding: 16px 24px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      /* Step nodes */
+      .step-node {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        position: relative;
+      }
+
+      .step-node .node-circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text-secondary);
+        background: var(--bg-primary);
+        transition:
+          border-color 300ms ease,
+          color 300ms ease;
+      }
+
+      .step-node:last-child .node-circle {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      .step-node .node-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .step-connector {
+        flex: 1;
+        height: 2px;
+        background: var(--border-color);
+        min-width: 24px;
+        align-self: flex-start;
+        margin-top: 23px;
+      }
+
+      /* Highlight columns */
+      .highlight-col {
+        text-align: center;
+        padding: 24px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background: var(--bg-secondary);
+      }
+
+      .highlight-col h4 {
+        font-size: 15px;
+        font-weight: 650;
+        color: var(--text-primary);
+      }
+
+      /* Deployment phase */
+      .phase-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .phase-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--border-color);
+        flex-shrink: 0;
+      }
+
+      .phase-dot.active {
+        background: var(--accent);
+      }
+
+      .phase-label {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-primary);
+      }
+
+      /* Buttons */
+      .btn-investor-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        background: var(--accent);
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .btn-investor-primary:hover {
+        background: #2563eb;
+      }
+
+      .btn-investor-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .btn-investor-secondary:hover {
+        border-color: var(--accent);
+        background: rgba(59, 130, 246, 0.04);
+      }
+
+      /* Map placeholder */
+      .map-abstract {
+        background: var(--bg-tertiary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        min-height: 320px;
+      }
+
+      /* Underline hover link */
+      .link-underline {
+        position: relative;
+        text-decoration: none;
+      }
+
+      .link-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1.5px;
+        background: var(--accent);
+        transition: width 250ms ease;
+      }
+
+      .link-underline:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!-- ========== NAVIGATION ========== -->
+      <div class="relative">
+        <nav
+          class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+          style="
+            background: rgba(11, 13, 16, 0.25);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <a href="./">
+                <img src="./Logo.svg" alt="Logo" />
+              </a>
+
+              <!-- Desktop Navigation -->
+              <div
+                class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+              >
+                <a
+                  href="./shipper.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.shippers"
+                >
+                  Shippers
+                </a>
+                <a
+                  href="./carrier.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.carriers"
+                >
+                  Carriers
+                </a>
+                <a
+                  href="#partners"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.partners"
+                >
+                  Partners
+                </a>
+                <a
+                  href="#technology"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.glTech"
+                >
+                  GL Tech
+                </a>
+                <a
+                  href="#environment"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.environment"
+                >
+                  Environment
+                </a>
+                <a
+                  href="./about.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.about"
+                >
+                  About
+                </a>
+              </div>
+
+              <!-- CTA + Language Selector (Desktop) -->
+              <div class="hidden lg:flex flex-row items-center gap-2">
+                <button
+                  class="px-5 py-2.5 primary-btn"
+                  data-i18n="common.cta.startNow"
+                >
+                  Start Now
+                </button>
+
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      English
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      Deutsch
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-2 top-1/2 -translate-y-1/2 size-4 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Mobile: Language Selector + Menu Button -->
+              <div class="lg:hidden flex items-center gap-3">
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      EN
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      DE
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-1.5 top-1/2 -translate-y-1/2 size-3 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+
+                <button id="mobile-menu-button" class="p-2">
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+          <div class="mobile-menu-content">
+            <button id="mobile-menu-close" class="mobile-menu-close">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <nav class="mobile-nav-links">
+              <a
+                href="./shipper.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="./carrier.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="#partners"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.partners"
+              >
+                Partners
+              </a>
+              <a
+                href="#technology"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="#environment"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="./about.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </nav>
+
+            <div class="mobile-cta-buttons">
+              <button
+                class="w-full px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 1. HERO SECTION ========== -->
+      <section class="investor-hero" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="max-w-[720px]">
+            <h1 class="mb-6" data-i18n="investor.hero.heading">
+              Infrastructure That Compounds
+            </h1>
+
+            <div
+              class="w-12 h-[1.5px] mb-6"
+              style="background: var(--border-color)"
+            ></div>
+
+            <p class="section-body mb-6" data-i18n="investor.hero.description">
+              GoLynk is building the coordination architecture for European
+              logistics — designed for density, capital efficiency, and
+              structured cross-border expansion.
+            </p>
+
+            <p
+              class="text-sm font-semibold tracking-wide uppercase mb-10"
+              style="color: var(--accent); letter-spacing: 0.08em"
+              data-i18n="investor.hero.validated"
+            >
+              Validated. Measured. Expandable.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="./get-started.html#contact"
+                class="btn-investor-primary"
+                data-i18n="investor.hero.ctaPrimary"
+              >
+                Request Executive Overview
+              </a>
+              <a
+                href="./get-started.html#contact"
+                class="btn-investor-secondary"
+                data-i18n="investor.hero.ctaSecondary"
+              >
+                Schedule Strategic Discussion
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 2. CAPITAL EFFICIENCY MODEL ========== -->
+      <section
+        class="py-24"
+        style="background: var(--bg-secondary)"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <!-- Left: Text -->
+            <div>
+              <h2
+                class="section-title mb-6"
+                data-i18n="investor.capitalEfficiency.title"
+              >
+                A Capital-Efficient Infrastructure Model
+              </h2>
+
+              <p
+                class="section-body mb-8"
+                data-i18n="investor.capitalEfficiency.description"
+              >
+                GoLynk scales without fleet ownership. By structuring existing
+                movement into validated corridors, the platform increases
+                density before geographic expansion. Capital compounds through
+                intelligence, not asset accumulation.
+              </p>
+
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                    style="background: var(--accent)"
+                  ></span>
+                  <span
+                    class="text-[15px] leading-relaxed"
+                    style="color: var(--text-secondary)"
+                    data-i18n="investor.capitalEfficiency.bullets.assetLight"
+                  >
+                    Asset-light deployment
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                    style="background: var(--accent)"
+                  ></span>
+                  <span
+                    class="text-[15px] leading-relaxed"
+                    style="color: var(--text-secondary)"
+                    data-i18n="investor.capitalEfficiency.bullets.corridorValidation"
+                  >
+                    Corridor validation before expansion
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                    style="background: var(--accent)"
+                  ></span>
+                  <span
+                    class="text-[15px] leading-relaxed"
+                    style="color: var(--text-secondary)"
+                    data-i18n="investor.capitalEfficiency.bullets.densityDriven"
+                  >
+                    Density-driven economics
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                    style="background: var(--accent)"
+                  ></span>
+                  <span
+                    class="text-[15px] leading-relaxed"
+                    style="color: var(--text-secondary)"
+                    data-i18n="investor.capitalEfficiency.bullets.structuralMargin"
+                  >
+                    Structural margin improvement
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right: Minimal Diagram -->
+            <div class="space-y-5">
+              <div
+                class="diagram-layer"
+                style="
+                  background: #f1f5f9;
+                  color: var(--text-secondary);
+                  border: 1px solid var(--border-color);
+                "
+              >
+                <!-- Thin gray horizontal lines representing fragmented movement -->
+                <div class="space-y-2 mb-3">
+                  <div class="h-[1px] w-full" style="background: #cbd5e1"></div>
+                  <div class="h-[1px] w-4/5" style="background: #cbd5e1"></div>
+                  <div
+                    class="h-[1px] w-11/12"
+                    style="background: #cbd5e1"
+                  ></div>
+                  <div class="h-[1px] w-3/4" style="background: #cbd5e1"></div>
+                  <div class="h-[1px] w-full" style="background: #cbd5e1"></div>
+                </div>
+                <span
+                  class="text-xs font-medium"
+                  data-i18n="investor.capitalEfficiency.diagram.layer1"
+                  >Existing Transport Movement</span
+                >
+              </div>
+
+              <div
+                class="diagram-layer"
+                style="
+                  background: rgba(59, 130, 246, 0.06);
+                  color: var(--accent);
+                  border: 1px solid rgba(59, 130, 246, 0.2);
+                "
+              >
+                <div
+                  class="h-[2px] w-full mb-3 rounded"
+                  style="background: var(--accent)"
+                ></div>
+                <span
+                  class="text-xs font-semibold"
+                  data-i18n="investor.capitalEfficiency.diagram.layer2"
+                  >Coordination Layer</span
+                >
+              </div>
+
+              <div
+                class="diagram-layer"
+                style="
+                  background: #f8fafc;
+                  color: var(--text-primary);
+                  border: 1px solid var(--border-color);
+                "
+              >
+                <div class="space-y-2 mb-3">
+                  <div
+                    class="h-[2px] w-full rounded"
+                    style="background: #94a3b8"
+                  ></div>
+                  <div
+                    class="h-[2px] w-full rounded"
+                    style="background: #94a3b8"
+                  ></div>
+                  <div
+                    class="h-[2px] w-11/12 rounded"
+                    style="background: #94a3b8"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs font-semibold"
+                  data-i18n="investor.capitalEfficiency.diagram.layer3"
+                  >Compounding Density</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 3. NETWORK COMPOUNDING DYNAMICS ========== -->
+      <section class="py-24" data-animate="fade-up" data-duration="800">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="text-center max-w-[640px] mx-auto mb-16">
+            <h2
+              class="section-title mb-5"
+              data-i18n="investor.networkCompounding.title"
+            >
+              Network Compounding Dynamics
+            </h2>
+            <p
+              class="section-body"
+              data-i18n="investor.networkCompounding.description"
+            >
+              Each validated corridor increases routing intelligence, pricing
+              precision, and carbon traceability. Expansion follows density —
+              not speculation.
+            </p>
+          </div>
+
+          <!-- Horizontal progression -->
+          <div
+            class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-0"
+          >
+            <!-- Step 1 -->
+            <div class="step-node flex-1">
+              <div
+                class="node-circle"
+                data-i18n="investor.networkCompounding.steps.step1.number"
+              >
+                01
+              </div>
+              <div
+                class="node-label"
+                data-i18n="investor.networkCompounding.steps.step1.title"
+              >
+                Corridor Validation
+              </div>
+            </div>
+            <div class="step-connector hidden sm:block"></div>
+
+            <!-- Step 2 -->
+            <div class="step-node flex-1">
+              <div
+                class="node-circle"
+                data-i18n="investor.networkCompounding.steps.step2.number"
+              >
+                02
+              </div>
+              <div
+                class="node-label"
+                data-i18n="investor.networkCompounding.steps.step2.title"
+              >
+                Density Consolidation
+              </div>
+            </div>
+            <div class="step-connector hidden sm:block"></div>
+
+            <!-- Step 3 -->
+            <div class="step-node flex-1">
+              <div
+                class="node-circle"
+                data-i18n="investor.networkCompounding.steps.step3.number"
+              >
+                03
+              </div>
+              <div
+                class="node-label"
+                data-i18n="investor.networkCompounding.steps.step3.title"
+              >
+                Adjacency Expansion
+              </div>
+            </div>
+            <div class="step-connector hidden sm:block"></div>
+
+            <!-- Step 4 -->
+            <div class="step-node flex-1">
+              <div
+                class="node-circle"
+                data-i18n="investor.networkCompounding.steps.step4.number"
+              >
+                04
+              </div>
+              <div
+                class="node-label"
+                data-i18n="investor.networkCompounding.steps.step4.title"
+              >
+                Cross-Border Integration
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4. STRATEGIC CAPITAL ALIGNMENT ========== -->
+      <section
+        class="py-24"
+        style="background: var(--bg-secondary)"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2
+            class="section-title text-center mb-14"
+            data-i18n="investor.capitalAlignment.title"
+          >
+            Strategic Capital Alignment
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Applied AI & Systems Capital -->
+            <div class="investor-card">
+              <h3 data-i18n="investor.capitalAlignment.cards.ai.title">
+                Applied AI &amp; Systems Capital
+              </h3>
+              <p
+                class="card-subtitle"
+                data-i18n="investor.capitalAlignment.cards.ai.subtitle"
+              >
+                Opportunity:
+              </p>
+              <ul class="space-y-2">
+                <li data-i18n="investor.capitalAlignment.cards.ai.items.item1">
+                  Real-world constraint optimization
+                </li>
+                <li data-i18n="investor.capitalAlignment.cards.ai.items.item2">
+                  Multi-hop orchestration under time windows
+                </li>
+                <li data-i18n="investor.capitalAlignment.cards.ai.items.item3">
+                  Data network effects through corridor validation
+                </li>
+                <li data-i18n="investor.capitalAlignment.cards.ai.items.item4">
+                  Embedded pricing intelligence
+                </li>
+              </ul>
+            </div>
+
+            <!-- Logistics & Mobility -->
+            <div class="investor-card">
+              <h3 data-i18n="investor.capitalAlignment.cards.logistics.title">
+                Logistics &amp; Mobility Investors
+              </h3>
+              <p
+                class="card-subtitle"
+                data-i18n="investor.capitalAlignment.cards.logistics.subtitle"
+              >
+                Opportunity:
+              </p>
+              <ul class="space-y-2">
+                <li
+                  data-i18n="investor.capitalAlignment.cards.logistics.items.item1"
+                >
+                  Margin expansion without asset growth
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.logistics.items.item2"
+                >
+                  Backhaul monetization
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.logistics.items.item3"
+                >
+                  Fleet integration readiness
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.logistics.items.item4"
+                >
+                  Structured density growth
+                </li>
+              </ul>
+            </div>
+
+            <!-- Climate & ESG -->
+            <div class="investor-card">
+              <h3 data-i18n="investor.capitalAlignment.cards.climate.title">
+                Climate &amp; ESG Capital
+              </h3>
+              <p
+                class="card-subtitle"
+                data-i18n="investor.capitalAlignment.cards.climate.subtitle"
+              >
+                Opportunity:
+              </p>
+              <ul class="space-y-2">
+                <li
+                  data-i18n="investor.capitalAlignment.cards.climate.items.item1"
+                >
+                  Measurable corridor-level carbon reduction
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.climate.items.item2"
+                >
+                  Embedded Scope 3 traceability
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.climate.items.item3"
+                >
+                  Regulatory alignment under EU frameworks
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.climate.items.item4"
+                >
+                  Infrastructure-level decarbonization
+                </li>
+              </ul>
+            </div>
+
+            <!-- Infrastructure & Long-Horizon -->
+            <div class="investor-card">
+              <h3
+                data-i18n="investor.capitalAlignment.cards.infrastructure.title"
+              >
+                Infrastructure &amp; Long-Horizon Capital
+              </h3>
+              <p
+                class="card-subtitle"
+                data-i18n="investor.capitalAlignment.cards.infrastructure.subtitle"
+              >
+                Opportunity:
+              </p>
+              <ul class="space-y-2">
+                <li
+                  data-i18n="investor.capitalAlignment.cards.infrastructure.items.item1"
+                >
+                  Phased regional rollout
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.infrastructure.items.item2"
+                >
+                  Durable network defensibility
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.infrastructure.items.item3"
+                >
+                  Cross-border scalability
+                </li>
+                <li
+                  data-i18n="investor.capitalAlignment.cards.infrastructure.items.item4"
+                >
+                  Compounding operational leverage
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 5. DEPLOYMENT FRAMEWORK ========== -->
+      <section class="py-24" data-animate="fade-up" data-duration="800">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <!-- Left: Text -->
+            <div>
+              <h2
+                class="section-title mb-6"
+                data-i18n="investor.deployment.title"
+              >
+                Deployment Framework
+              </h2>
+
+              <p
+                class="section-body mb-10"
+                data-i18n="investor.deployment.description"
+              >
+                GoLynk expands through disciplined corridor validation.
+                Geographic growth follows structural density and operational
+                proof.
+              </p>
+
+              <div class="space-y-5">
+                <div class="phase-item">
+                  <div class="phase-dot active"></div>
+                  <span
+                    class="phase-label"
+                    data-i18n="investor.deployment.phases.phase1"
+                    >Pilot Corridors</span
+                  >
+                </div>
+                <div class="phase-item">
+                  <div class="phase-dot"></div>
+                  <span
+                    class="phase-label"
+                    data-i18n="investor.deployment.phases.phase2"
+                    >Density Consolidation</span
+                  >
+                </div>
+                <div class="phase-item">
+                  <div class="phase-dot"></div>
+                  <span
+                    class="phase-label"
+                    data-i18n="investor.deployment.phases.phase3"
+                    >Regional Integration</span
+                  >
+                </div>
+                <div class="phase-item">
+                  <div class="phase-dot"></div>
+                  <span
+                    class="phase-label"
+                    data-i18n="investor.deployment.phases.phase4"
+                    >Cross-Border Expansion</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Corridor Map -->
+            <div
+              class="map-container flex items-center justify-center"
+              style="height: 450px"
+            >
+              <div
+                id="investor-deployment-map"
+                class="w-full rounded-xl border border-gray-200 shadow-lg"
+                style="height: 100%; width: 100%; background: #f8fafc"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 6. MARKET CONTEXT ========== -->
+      <section
+        class="py-24"
+        style="background: var(--bg-secondary)"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="text-center max-w-[640px] mx-auto mb-14">
+            <h2 class="section-title mb-5" data-i18n="investor.market.title">
+              A Structural Market Shift
+            </h2>
+            <p class="section-body" data-i18n="investor.market.description">
+              European freight movement remains fragmented across parcel,
+              freight, and regional carriers. Efficiency gains increasingly
+              depend on coordination rather than asset expansion.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="highlight-col">
+              <h4 data-i18n="investor.market.highlights.fragmented">
+                Fragmented Networks
+              </h4>
+            </div>
+            <div class="highlight-col">
+              <h4 data-i18n="investor.market.highlights.regulatory">
+                Regulatory Pressure
+              </h4>
+            </div>
+            <div class="highlight-col">
+              <h4 data-i18n="investor.market.highlights.underutilized">
+                Underutilized Return Capacity
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 7. VISION ========== -->
+      <section class="py-24" data-animate="fade-up" data-duration="800">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="max-w-[720px] mx-auto text-center">
+            <h2 class="section-title mb-6" data-i18n="investor.vision.title">
+              Toward Coordinated European Infrastructure
+            </h2>
+            <p class="section-body" data-i18n="investor.vision.description">
+              GoLynk is positioned to become the structural coordination layer
+              beneath fragmented transport systems — increasing efficiency,
+              lowering systemic emissions, and enabling density without
+              duplication.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 8. FINAL CTA ========== -->
+      <section class="py-20" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div
+            class="border-t pt-16 text-center"
+            style="border-color: var(--border-color)"
+          >
+            <h2 class="section-title mb-10" data-i18n="investor.cta.heading">
+              Executive Briefing Available Upon Request
+            </h2>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <a
+                href="./get-started.html#contact"
+                class="btn-investor-primary"
+                data-i18n="investor.cta.ctaPrimary"
+              >
+                Request Executive Overview
+              </a>
+              <a
+                href="./get-started.html#contact"
+                class="btn-investor-secondary"
+                data-i18n="investor.cta.ctaSecondary"
+              >
+                Engage in Strategic Discussion
+              </a>
+            </div>
+
+            <p
+              class="text-sm"
+              style="color: var(--text-secondary)"
+              data-i18n="investor.cta.note"
+            >
+              Deployment roadmap and capital alignment summary provided directly
+              to institutional partners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="pt-8 overflow-hidden">
+        <div class="space-y-12">
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+          >
+            <!-- CTA Buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+              data-animate="fade-up"
+              data-duration="800"
+            >
+              <a
+                href="./shipper.html#early-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-ship"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.startShipping"
+                  >Start Shipping</span
+                >
+              </a>
+              <a
+                href="./carrier.html#carrier-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-delivery"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.deliverWithUs"
+                  >Deliver with us</span
+                >
+              </a>
+            </div>
+            <!-- Newsletter Column -->
+            <div class="flex flex-col items-center lg:items-start gap-3">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.newsletter.title"
+              >
+                Stay up to date
+              </h3>
+              <form class="flex gap-2" id="footer-newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
+                  class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                  data-i18n="common.footer.newsletter.button"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Footer Grid -->
+          <div
+            class="grid md:grid-cols-5 gap-12"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Company Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.company.title"
+              >
+                Company
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./about.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.about"
+                >
+                  About GoLynk
+                </a>
+                <a
+                  href="./index.html#how-it-works"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.howItWorks"
+                >
+                  How It Works
+                </a>
+                <a
+                  href="./index.html#industries"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.industries"
+                >
+                  Industries We Serve
+                </a>
+                <a
+                  href="./index.html#environment"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.sustainability"
+                >
+                  Sustainability &amp; CO₂ Reporting
+                </a>
+                <a
+                  href="./careers.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.careers"
+                >
+                  Careers
+                </a>
+                <a
+                  href="./get-started.html#contact"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.contact"
+                >
+                  Contact
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Shippers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.shippers.title"
+              >
+                For Shippers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./shipper.html#early-access"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="./pricing.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.pricing"
+                >
+                  Pricing
+                </a>
+                <a
+                  href="./api-docs.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.api"
+                >
+                  Integration &amp; API Docs
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Carriers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.carriers.title"
+              >
+                For Carriers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./carrier.html#individual-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
+                >
+                  Join as Individual Mover
+                </a>
+                <a
+                  href="./carrier.html#fleet-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
+                >
+                  Fleet Operators
+                </a>
+                <a
+                  href="./carrier.html#operator-dashboard"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
+                >
+                  Operator Dashboard
+                </a>
+              </nav>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.resources.title"
+              >
+                Resources
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./faq.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.faq"
+                >
+                  FAQ
+                </a>
+                <a
+                  href="./investor.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.investors"
+                >
+                  Investor Relations
+                </a>
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.legal.title"
+              >
+                Legal
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./privacy.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.privacy"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="./terms.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.terms"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="./cookies.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.cookies"
+                >
+                  Cookie Policy
+                </a>
+                <a
+                  href="./imprint.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.imprint"
+                >
+                  Imprint
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="border-t border-border-default pt-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="400"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
+              <!-- Logo and Tagline -->
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="./">
+                  <img src="./public/Logo.svg" alt="GoLynk" class="h-8" />
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.tagline"
+                >
+                  Orchestrating existing journeys into faster, greener
+                  logistics.
+                </p>
+              </div>
+
+              <!-- Social Links and Copyright -->
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-x"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.copyright"
+                >
+                  © GoLynk 2026. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="./src/js/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum — GoLynk</title>
+    <meta name="description" content="GoLynk Impressum und Rechtliche Hinweise." />
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <style>
+      .legal-doc-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+      .legal-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: #f8fafc;
+        border-radius: 0.75rem;
+        border-left: 4px solid #3b82f6;
+      }
+      .legal-section h3 {
+        color: #0b1220;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        margin-top: 0;
+      }
+      .legal-section p, .legal-section ul, .legal-section li {
+        color: #334155;
+        line-height: 1.8;
+        font-size: 0.95rem;
+      }
+      .legal-section ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .legal-section li {
+        margin-bottom: 0.75rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+      .legal-section li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #3b82f6;
+        font-weight: bold;
+      }
+      .toc {
+        background: white;
+        border: 1px solid #e6eaf2;
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        position: sticky;
+        top: 100px;
+      }
+      .toc h2 {
+        font-size: 1rem;
+        color: #0b1220;
+        margin: 0 0 1rem 0;
+      }
+      .toc a {
+        display: block;
+        padding: 0.5rem 0;
+        color: #3b82f6;
+        text-decoration: none;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #e6eaf2;
+        transition: all 0.2s;
+      }
+      .toc a:last-child {
+        border-bottom: none;
+      }
+      .toc a:hover {
+        padding-left: 0.5rem;
+        color: #2563eb;
+      }
+      .legal-hero {
+        background: linear-gradient(135deg, #0b1220 0%, #1e293b 100%);
+        color: white;
+        padding: 3rem 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+      }
+      .legal-hero h1 {
+        margin: 0 0 0.5rem 0;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+      .legal-hero p {
+        margin: 0;
+        opacity: 0.9;
+      }
+      .last-updated {
+        color: #94a3b8;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+      }
+      .info-box {
+        background: #fef3c7;
+        border-left: 4px solid #f59e0b;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!-- Navigation -->
+      <nav
+        class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+        style="
+          background: rgba(11, 13, 16, 0.25);
+          backdrop-filter: blur(10px);
+        "
+      >
+        <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../">
+              <img src="../public/Logo.svg" alt="Logo" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div
+              class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+            >
+              <a
+                href="../shipper.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="../carrier.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="#technology"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="#environment"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="../about.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </div>
+
+            <!-- CTA Buttons & Language Selector (Desktop) -->
+            <div class="hidden lg:flex flex-row items-center gap-2">
+              <a
+                href="../get-started.html"
+                class="px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </a>
+
+              <!-- Language Selector -->
+              <select
+                class="language-selector px-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                  selected
+                >
+                  DE
+                </option>
+              </select>
+            </div>
+
+            <!-- Mobile: Language Selector + Menu Button -->
+            <div class="lg:hidden flex items-center gap-3">
+              <!-- Language Selector (Mobile) -->
+              <select
+                class="language-selector px-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                  selected
+                >
+                  DE
+                </option>
+              </select>
+
+              <!-- Mobile Menu Button -->
+              <button class="p-2">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+          <!-- Close Button -->
+          <button id="mobile-menu-close" class="mobile-menu-close">
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Navigation Links -->
+          <nav class="mobile-nav-links">
+            <a
+              href="../shipper.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.shippers"
+            >
+              Shippers
+            </a>
+            <a
+              href="../carrier.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.carriers"
+            >
+              Carriers
+            </a>
+            <a
+              href="#technology"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.glTech"
+            >
+              GL Tech
+            </a>
+            <a
+              href="#environment"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.environment"
+            >
+              Environment
+            </a>
+            <a
+              href="../about.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.about"
+            >
+              About
+            </a>
+          </nav>
+
+          <!-- Mobile CTA Buttons -->
+          <div class="mobile-cta-buttons">
+            <a
+              href="../get-started.html"
+              class="w-full px-5 py-2.5 primary-btn block text-center"
+              data-i18n="common.cta.startNow"
+            >
+              Start Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <main>
+      <div class="legal-hero">
+        <h1>Impressum</h1>
+        <p>Unternehmensinformationen und rechtliche Verpflichtungen</p>
+        <p class="last-updated">Zuletzt aktualisiert: Februar 2026</p>
+      </div>
+
+      <div class="legal-doc-container">
+        <div style="display: grid; grid-template-columns: 1fr 250px; gap: 2rem;">
+          <div>
+            <section class="legal-section" id="section1">
+              <h3>Angaben gemäß §5 TMG (Telemediengesetz)</h3>
+              <p><strong>Ibrahim Ismail</strong></p>
+              <p>Kastanienweg 4<br/>52074 Aachen<br/>Deutschland</p>
+              <p><strong>Telefon:</strong> Auf Anfrage per E-Mail</p>
+              <p><strong>E-Mail:</strong> <a href="mailto:contact@golynk.com" style="color: #3b82f6; text-decoration: none;">contact@golynk.com</a></p>
+            </section>
+
+            <section class="legal-section" id="section2">
+              <h3>Verantwortlicher für den Inhalt (gemäß §55 Abs. 2 RStV)</h3>
+              <p>Ibrahim Ismail<br/>Kastanienweg 4<br/>52074 Aachen, Deutschland</p>
+            </section>
+
+            <section class="legal-section" id="section3">
+              <h3>Geschäftsstatus & Unternehmensregistrierung</h3>
+              <p>GoLynk wird derzeit als Einzelunternehmen von Ibrahim Ismail betrieben. Die formale Unternehmensregistrierung (GmbH) ist in Vorbereitung. Nach der Gründung wird diese Seite entsprechend mit der Unternehmensregistrierungsnummer und der Umsatzsteuer-ID aktualisiert.</p>
+              <div class="info-box">
+                <strong>Updatebenachrichtigung:</strong> Sobald die GmbH-Registrierung abgeschlossen ist, werden hier alle relevanten Geschäftsregistrierungsinformationen veröffentlicht.
+              </div>
+            </section>
+
+            <section class="legal-section" id="section4">
+              <h3>Haftung für den Inhalt</h3>
+              <p>Als Diensteanbieter sind wir nach allgemeinen Gesetzen für unsere eigenen Inhalte auf diesen Seiten verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder Umstände zu untersuchen, die auf illegale Aktivitäten hindeuten, sofern wir keine tatsächliche Kenntnis solcher Inhalte haben.</p>
+            </section>
+
+            <section class="legal-section" id="section5">
+              <h3>Haftung für Links</h3>
+              <p>Unsere Website kann Links zu externen Websites enthalten. Wir haben keinen Einfluss auf deren Inhalte und daher keine Haftung für externe Inhalte. Der jeweilige Anbieter ist immer für den Inhalt der verlinkten Seiten verantwortlich.</p>
+            </section>
+
+            <section class="legal-section" id="section6">
+              <h3>Urheberrecht & Geistiges Eigentum</h3>
+              <ul>
+                <li>Alle Inhalte auf dieser Website (Text, Bilder, Logos, Design) sind durch Urheberrechte und Gesetze zum Schutz des geistigen Eigentums geschützt und gehören GoLynk oder seinen Inhaltsanbietern.</li>
+                <li>Die unbefugte Vervielfältigung, Verbreitung oder Nutzung unserer Inhalte ist untersagt.</li>
+                <li>GoLynk® ist eine eingetragene Marke.</li>
+              </ul>
+            </section>
+
+            <section class="legal-section" id="section7">
+              <h3>Streitbeilegung & Verbraucherinformation</h3>
+              <ul>
+                <li>GoLynk nimmt nicht an alternativen Streitbeilegungsverfahren (ADR) teil.</li>
+                <li>Für Verbraucherbeschwerden sind die zuständigen Behörden des Verbraucherschutzes oder die Gerichte von Aachen, Deutschland, kompetent.</li>
+              </ul>
+            </section>
+
+            <section class="legal-section" id="section8">
+              <h3>Datenschutz & Datenschutzbeauftragter</h3>
+              <p>Kontaktieren Sie uns unter <a href="mailto:contact@golynk.com" style="color: #3b82f6; text-decoration: none;">contact@golynk.com</a> für Anfragen zum Datenschutz. Weitere Informationen finden Sie in unserer <a href="../de/privacy.html" style="color: #3b82f6; text-decoration: none;">Datenschutzerklärung</a>.</p>
+            </section>
+
+            <section class="legal-section" id="section9">
+              <h3>Anwendbares Recht & Gerichtsstand</h3>
+              <p>Deutsches Recht gilt. Die ausschließliche Zuständigkeit für alle Streitigkeiten aus oder im Zusammenhang mit dieser Website liegt bei den Gerichten von Aachen, Deutschland, sofern nicht zwingende Verbraucherschutzbestimmungen gelten.</p>
+            </section>
+          </div>
+
+          <!-- Table of Contents -->
+          <aside>
+            <div class="toc">
+              <h2>Inhaltsverzeichnis</h2>
+              <a href="#section1">1. TMG-Angaben</a>
+              <a href="#section2">2. Verantwortlicher</a>
+              <a href="#section3">3. Geschäftsstatus</a>
+              <a href="#section4">4. Haftung Inhalt</a>
+              <a href="#section5">5. Haftung Links</a>
+              <a href="#section6">6. Urheberrecht</a>
+              <a href="#section7">7. Streitbeilegung</a>
+              <a href="#section8">8. Datenschutz</a>
+              <a href="#section9">9. Anwendbares Recht</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="pt-8 overflow-hidden">
+      <div class="space-y-12">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+        >
+          <!-- CTA Buttons -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center"
+            data-animate="fade-up"
+            data-duration="800"
+          >
+            <a
+              href="../shipper.html#early-access"
+              class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+            >
+              <svg class="size-6 me-2">
+                <use href="#icon-ship"></use>
+              </svg>
+              <span
+                class="body-semibold text-text-on-dark"
+                data-i18n="common.footer.cta.startShipping"
+                >Start Shipping</span
+              >
+            </a>
+            <a
+              href="../carrier.html#carrier-access"
+              class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+            >
+              <svg class="size-6 me-2">
+                <use href="#icon-delivery"></use>
+              </svg>
+              <span
+                class="body-semibold text-text-on-dark"
+                data-i18n="common.footer.cta.deliverWithUs"
+                >Deliver with us</span
+              >
+            </a>
+          </div>
+          <!-- Newsletter Column -->
+          <div class="flex flex-col items-center lg:items-start gap-3">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.newsletter.title"
+            >
+              Stay up to date
+            </h3>
+            <form class="flex gap-2" id="footer-newsletter-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
+                class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                required
+              />
+              <button
+                type="submit"
+                class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                data-i18n="common.footer.newsletter.button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Main Footer Content -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+          data-animate="fade-up"
+          data-duration="800"
+          data-delay="200"
+        >
+          <!-- Company Column -->
+          <div class="space-y-4">
+            <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.company.title">Company</h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../about.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.about"
+              >
+                About GoLynk
+              </a>
+              <a
+                href="../index.html#how-it-works"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.howItWorks"
+              >
+                How It Works
+              </a>
+              <a
+                href="../index.html#industries"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.industries"
+              >
+                Industries We Serve
+              </a>
+              <a
+                href="../index.html#environment"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.sustainability"
+              >
+                Sustainability & CO₂ Reporting
+              </a>
+              <a
+                href="../careers.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.careers"
+              >
+                Careers
+              </a>
+              <a
+                href="../get-started.html#contact"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.contact"
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+
+          <!-- For Shippers Column -->
+          <div class="space-y-4">
+            <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.shippers.title">For Shippers</h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../shipper.html#early-access"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.getStarted"
+              >
+                Get Started
+              </a>
+              <a
+                href="../pricing.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.pricing"
+              >
+                Pricing
+              </a>
+              <a
+                href="../api-docs.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.api"
+              >
+                Integration & API Docs
+              </a>
+            </nav>
+          </div>
+
+          <!-- For Carriers Column -->
+          <div class="space-y-4">
+            <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.carriers.title">For Carriers</h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../carrier.html#individual-form"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.carriers.links.joinIndividual"
+              >
+                Join as Individual Mover
+              </a>
+              <a
+                href="../carrier.html#fleet-form"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.carriers.links.fleetOperators"
+              >
+                Fleet Operators
+              </a>
+              <a
+                href="../carrier.html#operator-dashboard"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.carriers.links.dashboard"
+              >
+                Operator Dashboard
+              </a>
+            </nav>
+          </div>
+
+          <!-- Resources Column -->
+          <div class="space-y-4">
+            <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.resources.title">Resources</h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../faq.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.resources.links.faq"
+              >
+                FAQ
+              </a>
+              <a
+                href="../investor.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.resources.links.investors"
+              >
+                Investor Relations
+              </a>
+            </nav>
+          </div>
+
+          <!-- Legal Column -->
+          <div class="space-y-4">
+            <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.legal.title">Legal</h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./privacy.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.privacy"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="./terms.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.terms"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="./cookies.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.cookies"
+              >
+                Cookie Policy
+              </a>
+              <a
+                href="./imprint.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.imprint"
+              >
+                Imprint
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="border-t border-border-default pt-8"
+          data-animate="fade-up"
+          data-duration="800"
+          data-delay="400"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <!-- Logo and Tagline -->
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <a href="../">
+                <img src="../public/Logo.svg" alt="GoLynk" class="h-8" />
+              </a>
+              <p
+                class="text-text-secondary text-small"
+                data-i18n="common.footer.tagline"
+              >
+                Orchestrating existing journeys into faster, greener
+                logistics.
+              </p>
+            </div>
+
+            <!-- Social Links and Copyright -->
+            <div class="flex items-center gap-6">
+              <a
+                href="#"
+                class="text-text-secondary hover:text-primary transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <svg class="size-5">
+                  <use href="#icon-x"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
+                class="text-text-secondary hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="size-5">
+                  <use href="#icon-linkedin"></use>
+                </svg>
+              </a>
+              <p
+                class="text-text-secondary text-small"
+                data-i18n="common.footer.copyright"
+              >
+                © GoLynk 2026. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </main>
+    <script type="module" src="../src/js/main.ts"></script>
+  </body>
+</html>

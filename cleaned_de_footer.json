@@ -1,0 +1,66 @@
+{
+  "copyright": "© 2026 GOLynk. Alle Rechte vorbehalten.",
+  "cta": {
+    "deliverWithUs": "",
+    "expressShippingInterest": "",
+    "requestLaneAssessment": "",
+    "startShipping": ""
+  },
+  "newsletter": {
+    "button": "Abonnieren",
+    "placeholder": "E-Mail-Adresse eingeben",
+    "title": ""
+  },
+  "sections": {
+    "carriers": {
+      "links": {
+        "api": "",
+        "capacity": "",
+        "dashboard": "",
+        "logistics": ""
+      },
+      "title": ""
+    },
+    "golynk": {
+      "links": {
+        "about": "",
+        "careers": "",
+        "contacts": "",
+        "howItWorks": "",
+        "industries": "",
+        "sustainability": ""
+      },
+      "title": ""
+    },
+    "legal": {
+      "links": {
+        "cookie": "",
+        "imprint": "",
+        "privacy": "",
+        "terms": ""
+      },
+      "title": ""
+    },
+    "resources": {
+      "links": {
+        "blog": "",
+        "caseStudies": "",
+        "faq": "",
+        "investors": ""
+      },
+      "title": ""
+    },
+    "shippers": {
+      "links": {
+        "api": "",
+        "b2b": "",
+        "ecommerce": "",
+        "fresh": "",
+        "getStarted": "",
+        "pricing": ""
+      },
+      "title": ""
+    }
+  },
+  "tagline": ""
+}

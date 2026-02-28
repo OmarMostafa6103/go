@@ -3,81 +3,445 @@
     "heading": "The World Already Moves. We Turn Movement Into Infrastructure.",
     "description": "We match shipments to spare space already moving — and chain them through verified handoffs.",
     "cta": {
-      "shipWithGoLynk": "Start a Pilot",
+      "shipWithGoLynk": "Ship with GoLynk",
       "deliverAndEarn": "Join as Carrier"
-    }
+    },
+    "subtitle1": "For shippers: lower cost & predictable routing. For carriers: monetize spare capacity.",
+    "subtitle2": "Built for businesses, fleets, individuals, and cities."
   },
-  "smartLogistics": {
-    "subheading": "Smart Logistics",
-    "heading": "One network, four roles, endless efficiency",
-    "description": "GoLynk turns idle urban capacity into a seamless, self-optimizing delivery network. Faster shipments, lower costs, instant earnings, and greener logistics without adding extra vehicles.",
-    "roles": {
-      "shippers": {
-        "title": "Shippers",
-        "description": "Benefit from fast, reliable, and cost-efficient deliveries. GoLynk's AI optimizes every shipment, ensuring seamless integration, real-time tracking, and reduced operational effort so your business saves time and maximizes efficiency.",
-        "benefits": [
-          "Create orders in two clicks and save time",
-          "AI matches shipments to the best carriers instantly",
-          "Live tracking with automated carbon reporting",
-          "Simplified integration with existing systems"
-        ]
+  "problem": {
+    "label": "The Hidden Cost of Movement",
+    "heading": "Billions of kilometers move every day. Efficiency does not.",
+    "description": "Vehicles return empty. Cars travel with unused space. Ships sail below capacity. Routes overlap inefficiently. Emissions rise without purpose.",
+    "description2": "Unused movement is wasted money. And wasted carbon.",
+    "cards": {
+      "underusedCapacity": {
+        "title": "Underused Capacity",
+        "text": "Two vehicles take the same corridor — both half empty."
       },
-      "carriers": {
-        "title": "Carriers / Drivers",
-        "description": "Benefit from clear, predictable, and optimized earning opportunities. GoLynk's AI matches deliveries to your route, reduces idle trips, and ensures instant payouts so you earn efficiently while staying on your own schedule.",
-        "benefits": [
-          "Deliver along your existing routes, no detours",
-          "Earn same-day payouts for every completed delivery",
-          "Smart AI matching optimizes routes and capacity",
-          "Flexible tasks that fit your schedule and vehicle"
-        ]
+      "fragmentedRoutes": {
+        "title": "Fragmented Routes",
+        "text": "Shipments move as single trips instead of shared, coordinated paths."
       },
-      "hubs": {
-        "title": "Hubs / Microhubs",
-        "description": "Benefit from consistent, revenue-generating operations. GoLynk optimizes parcel flow, leverages your location, and minimizes complexity so your hub maximizes throughput, earns supplemental income, and supports local deliveries.",
-        "benefits": [
-          "Consolidate shipments for more efficient routing",
-          "Low-cost infrastructure with branded lockers provided",
-          "Generate supplemental monthly revenue",
-          "Support local commerce and community deliveries"
-        ]
-      },
-      "partners": {
-        "title": "Partners / Cities / Corporate",
-        "description": "Benefit from optimized, measurable, and sustainable logistics. GoLynk integrates into your systems, reduces emissions, and provides transparent metrics so your organization saves costs, meets ESG goals, and strengthens its green credentials.",
-        "benefits": [
-          "Integrate into public transport or corporate supply chains",
-          "Reduce emissions, congestion, and operational complexity",
-          "Access Scope 3 reporting and monetizable carbon credits",
-          "Boost ESG score and showcase sustainable logistics"
-        ]
+      "invisibleEmissions": {
+        "title": "Invisible Emissions",
+        "text": "Emissions rise when overlap isn't captured and detours become normal."
       }
     }
   },
-  "environmental": {
-    "heading": "Our Environmental Commitment",
-    "description": "Our philosophy is simple—build a system that respects the planet. We design logistics that cut emissions, reduce waste, and create a cleaner future for everyone.",
-    "stats": {
-      "co2Reduction": {
-        "number": "72%+",
-        "title": "CO₂ Reduction",
-        "description": "Our network and smart routing reduce emissions by over 72% per delivery."
+  "solution": {
+    "heading": "Coordination at Infrastructure Scale",
+    "subheading": "Logistics Isn't Broken. Coordination Is.",
+    "text1": "GoLynk does not add more vehicles to the road. It connects the ones already moving.",
+    "text2": "Existing routes become structured capacity. Fleets integrate spare space and backhaul. Microhubs enable verified handoffs at natural intersections. Businesses connect through dashboard or API.",
+    "text3": "Movement becomes coordinated. Efficiency becomes structural.",
+    "text4": "Instead of adding vehicles, we make existing movement behave like one synchronized system.",
+    "stack": {
+      "carriers": "Carriers",
+      "shippers": "Shippers",
+      "hubs": "Hubs",
+      "engine": "GoLynk Engine",
+      "engineSubtitle": "Real-time coordination",
+      "tracking": "Tracking",
+      "carbon": "Carbon",
+      "savings": "Savings"
+    }
+  },
+  "fullStack": {
+    "label": "The Full Stack",
+    "heading": "One Network Across Every Distance.",
+    "description": "GoLynk starts with last-mile and mid-mile coordination—then expands across larger flows as the network grows.",
+    "steps": {
+      "collection": {
+        "title": "Collection",
+        "text": "Pickup from stores and warehouses."
       },
-      "packagingWaste": {
-        "number": "40%",
-        "title": "Less Packaging Waste",
-        "description": "Optimized handling and right-sizing help brands reduce unnecessary packaging."
+      "lastMile": {
+        "title": "Last Mile",
+        "text": "Fast urban delivery for B2C and C2C."
       },
-      "greenDeliveries": {
-        "number": "10k+",
-        "title": "Green Deliveries Daily",
-        "description": "Every day, thousands of orders move through low-emission routes."
+      "midMile": {
+        "title": "Mid-Mile",
+        "text": "Transfers between districts via microhubs."
       },
-      "ecoPartners": {
-        "number": "200+",
-        "title": "Eco-Partners",
-        "description": "Over 200 businesses trust GoLynk to help them reach their sustainability goals."
+      "freightBulk": {
+        "title": "Freight & Bulk",
+        "text": "Larger loads and recurring B2B routes."
+      },
+      "longHaul": {
+        "title": "Long-Haul",
+        "text": "Added gradually as corridor density grows."
+      }
+    },
+    "closing": "Same orchestration layer. More modes over time."
+  },
+  "howItWorks": {
+    "label": "How the Network Operates",
+    "heading": "A Shipment Becomes a Coordinated Journey.",
+    "description": "Every delivery is structured, composed, and verified across existing movement — not isolated vehicles.",
+    "steps": [
+      {
+        "title": "Capacity Is Published",
+        "text": "Walkers, drivers, fleets, and microhubs publish available capacity across routes they are already operating."
+      },
+      {
+        "title": "The Route Is Chained",
+        "text": "Shipments are structured into single or multi-step paths. The system aligns them with overlapping routes while minimizing detours and delays."
+      },
+      {
+        "title": "Handoffs Are Verified",
+        "text": "Every transfer is tracked, verified, and documented — from origin to final recipient."
+      }
+    ],
+    "closing": "Simple on the surface. Structured beneath."
+  },
+  "forEveryone": {
+    "label": "For Everyone",
+    "heading": "Built for Every Role in the Network",
+    "description": "A single orchestration layer across last mile, mid mile, and the microhubs in between.",
+    "whoPowersLabel": "Who powers the network:",
+    "whoPowersList": "Individuals • Fleets • Microhubs • Cities & Enterprises",
+    "verified": "Verified. Insured. Tracked end-to-end.",
+    "tabs": {
+      "shippers": "Shippers",
+      "carriers": "Carriers",
+      "microhubs": "Microhubs",
+      "enterprises": "Cities & Enterprises"
+    },
+    "shippers": {
+      "heading": "For E-Commerce, Retail & B2B Networks",
+      "description": "Lower delivery cost through shared capacity. Scale without adding infrastructure.",
+      "features": [
+        "Multi-step routing",
+        "Dashboard or API integration",
+        "Proof of delivery & real-time tracking",
+        "Carbon reporting",
+        "Audit-ready records"
+      ],
+      "trustLayer": "Trust layer: KYC • Insurance • POD • Audit trail",
+      "cta": "Ship with GoLynk"
+    },
+    "carriers": {
+      "heading": "For Walkers, Drivers & Fleet Operators",
+      "description": "Integrate existing routes into a structured network and monetize spare capacity.",
+      "features": [
+        "Monetize spare capacity",
+        "Fill return trips automatically",
+        "Adaptive pricing",
+        "Transparent payouts",
+        "Carbon incentives"
+      ],
+      "trustLayer": "Trust layer: Verified participation • Insurance pathways • Secure handoffs",
+      "cta": "Join as Carrier"
+    },
+    "microhubs": {
+      "heading": "For Cafés, Shops & Lockers",
+      "description": "Enable handoffs and consolidation at natural route intersections.",
+      "features": [
+        "Structured drop-off and pickup",
+        "Reduced duplicate trips",
+        "Fewer failed deliveries",
+        "Minimal operational overhead"
+      ],
+      "trustLayer": "Trust layer: Scan-based handoffs • Insurance coverage • Audit logs",
+      "cta": "Host a Microhub"
+    },
+    "enterprises": {
+      "heading": "For Urban Planners & Institutional Networks",
+      "description": "Improve logistics flow without increasing vehicles while maintaining compliance.",
+      "features": [
+        "Full-stack visibility",
+        "Compliance-ready carbon reporting",
+        "Secure document logistics",
+        "Planning dashboards & API access"
+      ],
+      "trustLayer": "Trust layer: Chain-of-custody • SLA-backed operations",
+      "cta": "Partner with GoLynk"
+    }
+  },
+  "enterprise": {
+    "heading": "Programmable Logistics",
+    "subheading": "Connect Once. Access a Growing Network.",
+    "text1": "Businesses integrate with GoLynk through a real-time dashboard or direct API.",
+    "text2": "Shipments can be created, tracked, consolidated, and analyzed within a single operational layer.",
+    "text3": "Whether moving individual parcels, recurring retail flows, B2B shipments, or institutional documents — the system adapts.",
+    "features": [
+      "Real-time shipment visibility",
+      "Multi-step journey tracking",
+      "Consolidation and collection tools",
+      "Dynamic pricing options",
+      "Carbon reporting",
+      "Audit-ready records"
+    ],
+    "closing": "One integration. Expanding reach.",
+    "orchestration": {
+      "shipmentLabel": "Shipment",
+      "live": "Orchestrating",
+      "chips": {
+        "serviceLabel": "Service",
+        "serviceValue": "Standard",
+        "slaLabel": "SLA",
+        "slaValue": "On Track",
+        "slaSub": "Estimated arrival: 16:40",
+        "routingLabel": "Routing",
+        "routingValue": "Multi-hop"
+      },
+      "timeline": [
+        {
+          "main": "Origin",
+          "desc": "Warehouse",
+          "badge": "Ready"
+        },
+        {
+          "main": "Bike Carrier",
+          "desc": "First leg",
+          "badge": "Matched"
+        },
+        {
+          "main": "Microhub",
+          "desc": "Transfer point",
+          "badge": "Verified"
+        },
+        {
+          "main": "Van Carrier",
+          "desc": "Active leg",
+          "badge": "In Transit"
+        },
+        {
+          "main": "Destination",
+          "desc": "Scheduled",
+          "badge": "Pending"
+        }
+      ],
+      "events": [
+        "Microhub handoff verified",
+        "Next leg locked — Van carrier assigned"
+      ],
+      "footer": {
+        "carbonLabel": "Carbon Impact",
+        "carbonValue": "−18% CO₂",
+        "carbonSub": "Compared to single-trip delivery",
+        "custodyLabel": "Chain of Custody",
+        "custodyValue": "Active",
+        "podLabel": "POD",
+        "podValue": "Required"
+      }
+    },
+    "pilotReport": "Pilot reports include: cost delta, detour reduction, on-time rate, and CO₂ avoided — per corridor."
+  },
+  "accessNetwork": {
+    "label": "Access the Network",
+    "heading": "Three interfaces. One orchestration layer.",
+    "description": "Choose how you plug in. The engine remains the same.",
+    "slides": {
+      "mobileApp": {
+        "title": "Mobile App",
+        "oneline": "For individuals who move, ship, or host locally.",
+        "bullets": [
+          "Publish your route",
+          "Accept matched deliveries",
+          "Verified handoffs"
+        ],
+        "cta": "Join as Carrier"
+      },
+      "dashboard": {
+        "title": "Operations Dashboard",
+        "oneline": "For teams managing shipments across corridors.",
+        "bullets": [
+          "Multi-hop visibility",
+          "Exception handling",
+          "Carbon reporting"
+        ],
+        "cta": "Ship with GoLynk"
+      },
+      "api": {
+        "title": "API Integration",
+        "oneline": "For platforms embedding GoLynk natively.",
+        "bullets": [
+          "Create shipments",
+          "Subscribe to events",
+          "Pull compliance data"
+        ],
+        "cta": "View API Docs"
       }
     }
+  },
+  "technology": {
+    "label": "GoLynk Technology",
+    "heading": "Intelligence Built Into Movement.",
+    "description": "Real-time matching. Multi-hop routing. Fair pricing. Carbon tracking.",
+    "description2": "Detour-aware multi-hop chaining under time windows — with verified handoffs at every step.",
+    "cards": {
+      "matching": {
+        "title": "Matching",
+        "outcome": "Instantly fit each shipment to available capacity with minimal detour.",
+        "micro": "Considers timing, cost, reliability & sustainability."
+      },
+      "routing": {
+        "title": "Routing",
+        "outcome": "Chain multi-hop journeys through microhubs as efficient handoff points.",
+        "micro": "Seamless flow across carriers and modes—no empty backhauls."
+      },
+      "pricing": {
+        "title": "Pricing",
+        "outcome": "Fair prices emerge from real supply-demand dynamics.",
+        "micro": "Distance, urgency, capacity & service level—all transparent."
+      },
+      "impact": {
+        "title": "Impact",
+        "outcome": "Measure carbon saved per shipment through shared capacity.",
+        "micro": "Audit-ready data feeds directly into ESG reporting."
+      }
+    },
+    "underTheHood": {
+      "label": "Under the Hood →",
+      "text": "Real-time data intake (GPS, shipment specs, availability). Multi-agent reinforcement learning balances supply & demand. Constraint satisfaction handles weight, temp, windows, modes instantly. Economic equilibrium emerges from pricing signals. Every decision is logged and explainable.",
+      "result": "Result: Scale from parcels to institutional supply chains without adding vehicles."
+    }
+  },
+  "economics": {
+    "label": "Adaptive Economics",
+    "heading": "Pricing That Reflects Real Movement",
+    "text1": "Delivery pricing adapts to urgency, distance, route overlap, and available capacity.",
+    "densityLabel": "As density grows:",
+    "list": [
+      "More overlap → fewer detours",
+      "Fewer detours → lower cost + lower emissions",
+      "Lower cost → higher adoption + reliability"
+    ],
+    "closing": "Infrastructure improves with use."
+  },
+  "trust": {
+    "label": "Built on Trust",
+    "heading": "Trust, Built In.",
+    "description": "Verified carriers. Insured shipments. Proof at every handoff.",
+    "cards": {
+      "kyc": {
+        "title": "KYC & Verification",
+        "description": "Every participant verified before network access."
+      },
+      "insurance": {
+        "title": "Insurance Coverage",
+        "description": "Shipments protected by value-based policies."
+      },
+      "pod": {
+        "title": "Proof of Delivery",
+        "description": "Photo or signature at every handoff point."
+      },
+      "audit": {
+        "title": "Audit Trail",
+        "description": "Full chain-of-custody logged and auditable."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Rapid escalation and SLA-backed claims."
+      },
+      "compliance": {
+        "title": "Compliance Ready",
+        "description": "Built for regulatory and ESG requirements."
+      }
+    },
+    "closing": "Every shipment moves through verified networks with complete visibility."
+  },
+  "environment": {
+    "label": "Environment",
+    "heading": "Efficiency Reduces Emissions",
+    "description": "Avoided by coordination — not offset by credit purchases.",
+    "description2": "Because GoLynk coordinates journeys already happening, fewer additional trips are required.",
+    "paragraph1": "Empty kilometers decline. Route density improves. Emissions decrease through coordination.",
+    "paragraph2": "Carbon savings can be measured and reported over time.",
+    "cards": {
+      "assetLight": {
+        "title": "Asset-Light by Design",
+        "description": "We coordinate spare capacity instead of adding new vehicles. Less duplication. More utilization.",
+        "footnote": "Built on existing routes"
+      },
+      "traceable": {
+        "title": "Traceable End-to-End",
+        "description": "Every handoff is tracked with proof of delivery and audit trails.",
+        "description2": "Visibility across every segment.",
+        "footnote": "Chain-of-custody ready"
+      },
+      "carbon": {
+        "title": "Measurable Carbon Impact",
+        "description": "Impact can be calculated per shipment, route, or corridor—built for ESG reporting.",
+        "footnote": "Measured, not assumed"
+      },
+      "density": {
+        "title": "Density Improves Outcomes",
+        "description": "More overlap reduces detours and avoids extra trips.",
+        "footnote": "Better as it grows"
+      }
+    },
+    "closing": "Better coordination. Lower footprint."
+  },
+  "corridors": {
+    "label": "Pilot Corridors",
+    "title": "Where We're Building Density First",
+    "description": "We don't launch everywhere. We build density where routes repeat — then extend the corridor.",
+    "urban": {
+      "title": "Urban Launch Zones",
+      "text": "One city area. High repeat volume. Fast verified handoffs."
+    },
+    "cityToCity": {
+      "title": "City-to-City Corridors",
+      "text": "Repeatable intercity routes that connect dense zones through hubs."
+    },
+    "fleet": {
+      "title": "Fleet Plug-ins",
+      "text": "Backhaul and spare capacity added to strengthen reliability."
+    },
+    "corridorCta": "Want your corridor next?",
+    "cta": "Propose a Pilot Corridor"
+  },
+  "stories": {
+    "heading": "Real Routes. Real Impact.",
+    "description": "Stories from the network.",
+    "florist": {
+      "label": "The Florist",
+      "heading": "From Wilting Margins to Fresh Profits",
+      "text": "Same‑day deliveries via nearby bike carriers cut damage and delays, boosting customer happiness and turning premium bouquets into a greener, higher‑margin service."
+    },
+    "carrier": {
+      "label": "The Regional Carrier",
+      "heading": "Turning Empty Miles Into Revenue",
+      "text": "Empty return trips became paid capacity once backhauls were plugged into GoLynk, adding new revenue without new routes or extra miles."
+    },
+    "cafe": {
+      "label": "The Café Microhub",
+      "heading": "A Corner Space, A New Revenue Stream",
+      "text": "An unused café corner became a GoLynk microhub, generating steady side income, more foot traffic, and local visibility—with almost no operational effort."
+    },
+    "readMore": "Read More Stories"
+  },
+  "roadmap": {
+    "heading": "From Last Mile to the Full Logistics Stack",
+    "description": "Starting with last mile and mid mile via microhubs — expanding over time to long-haul capacity across the logistics ecosystem.",
+    "now": {
+      "title": "Now",
+      "item0": "Last mile & crowdshipping",
+      "item1": "Fleet backhaul matching"
+    },
+    "next": {
+      "title": "Next",
+      "item0": "Microhub density",
+      "item1": "Multimodal mid-mile"
+    },
+    "later": {
+      "title": "Later",
+      "item0": "Long-haul capacity",
+      "item1": "Enterprise API depth"
+    }
+  },
+  "finalCta": {
+    "heading": "Build the Next Layer of Logistics.",
+    "description": "The world already moves. Let's make it work smarter.",
+    "startPilot": "Ship with GoLynk",
+    "joinCarrier": "Join as Carrier"
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "description": "Everything you need to know about the product and billing.",
+    "view_all": "View all questions"
   }
 }

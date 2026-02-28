@@ -1,0 +1,1455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — GoLynk</title>
+    <meta
+      name="description"
+      content="Learn how GoLynk processes personal data for corridor evaluation, pilot onboarding, and platform security under GDPR."
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <style>
+      /* Privacy Policy Layout Styles */
+
+      .privacy-container {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      .privacy-sidebar {
+        position: sticky;
+        top: 120px;
+        height: fit-content;
+        max-height: calc(100vh - 150px);
+        overflow-y: auto;
+      }
+
+      .privacy-sidebar h3 {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #64748b;
+        margin-bottom: 1rem;
+      }
+
+      .privacy-sidebar nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .privacy-sidebar nav a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+        color: #475569;
+        text-decoration: none;
+        border-left: 2px solid transparent;
+        padding-left: 0.75rem;
+        transition: all 0.2s ease;
+        line-height: 1.5;
+      }
+
+      .privacy-sidebar nav a:hover {
+        color: #0b1220;
+        border-left-color: #3b82f6;
+      }
+
+      .privacy-sidebar nav a.active {
+        color: #3b82f6;
+        border-left-color: #3b82f6;
+        font-weight: 600;
+      }
+
+      .privacy-content {
+        padding-top: 2rem;
+      }
+
+      .privacy-header {
+        margin-bottom: 3rem;
+      }
+
+      .privacy-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+      }
+
+      .privacy-updated {
+        font-size: 0.875rem;
+        color: #64748b;
+        margin-bottom: 2rem;
+      }
+
+      .privacy-intro {
+        font-size: 1.0625rem;
+        color: #475569;
+        line-height: 1.8;
+        max-width: 700px;
+        margin-bottom: 3rem;
+      }
+
+      /* Key Points Callout */
+      .key-points-block {
+        background: #f0f4f8;
+        border-left: 4px solid #3b82f6;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        border-radius: 0.375rem;
+      }
+
+      .key-points-block h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-bottom: 1rem;
+        margin-top: 0;
+      }
+
+      .key-points-block ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .key-points-block li {
+        padding: 0.475rem 0 0.475rem 1.5rem;
+        position: relative;
+        color: #334155;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+      }
+
+      .key-points-block li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #3b82f6;
+        font-weight: bold;
+      }
+
+      /* Main Content Sections */
+      .privacy-section {
+        margin-bottom: 4rem;
+        scroll-margin-top: 100px;
+      }
+
+      .privacy-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .privacy-section h3 {
+        font-size: 1.0625rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .privacy-section p {
+        font-size: 0.9375rem;
+        color: #475569;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .privacy-section ul,
+      .privacy-section ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .privacy-section li {
+        color: #475569;
+        font-size: 0.9375rem;
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+      }
+
+      .privacy-section ul > li {
+        list-style-type: disc;
+      }
+
+      .privacy-section ol > li {
+        list-style-type: decimal;
+      }
+
+      .contact-info {
+        background: #fafbfc;
+        padding: 1.5rem;
+        border-radius: 0.375rem;
+        margin: 1.5rem 0;
+        font-size: 0.9375rem;
+        line-height: 1.8;
+        color: #334155;
+      }
+
+      .contact-info p {
+        margin: 0.25rem 0;
+      }
+
+      .contact-info a {
+        color: #3b82f6;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .contact-info a:hover {
+        color: #2563eb;
+        text-decoration: underline;
+      }
+
+      .privacy-strong {
+        font-weight: 600;
+        color: #0b1220;
+      }
+
+      .privacy-italic {
+        font-style: italic;
+      }
+
+      /* Bottom Links */
+      .privacy-bottom-links {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        font-size: 0.875rem;
+      }
+
+      .privacy-bottom-links a {
+        color: #3b82f6;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .privacy-bottom-links a:hover {
+        color: #2563eb;
+        text-decoration: underline;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .privacy-container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .privacy-sidebar {
+          position: static;
+          max-height: none;
+          margin-bottom: 2rem;
+        }
+
+        .privacy-sidebar nav {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.5rem 1rem;
+        }
+
+        .privacy-sidebar nav a {
+          padding: 0.5rem 0;
+          border-left: none;
+          padding-left: 0;
+        }
+
+        .privacy-sidebar nav a.active {
+          border-left: none;
+          color: #3b82f6;
+          font-weight: 600;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .privacy-container {
+          padding: 0 1rem;
+        }
+
+        .privacy-header h1 {
+          font-size: 1.875rem;
+        }
+
+        .privacy-section h2 {
+          font-size: 1.25rem;
+        }
+
+        .privacy-sidebar {
+          margin-bottom: 2rem;
+        }
+
+        .privacy-sidebar nav {
+          grid-template-columns: 1fr;
+        }
+
+        .key-points-block {
+          padding: 1.5rem;
+        }
+      }
+
+      /* Scrollbar styling for sidebar nav */
+      .privacy-sidebar::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .privacy-sidebar::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+
+      .privacy-sidebar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 3px;
+      }
+
+      .privacy-sidebar::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!-- Navigation -->
+      <nav
+        class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+        style="background: rgba(11, 13, 16, 0.25); backdrop-filter: blur(10px)"
+      >
+        <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./">
+              <img src="./public/Logo.svg" alt="Logo" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div
+              class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+            >
+              <a
+                href="./shipper.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="./carrier.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="#technology"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="#environment"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="./about.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </div>
+
+            <!-- CTA Buttons & Language Selector (Desktop) -->
+            <div class="hidden lg:flex flex-row items-center gap-2">
+              <a
+                href="./get-started.html"
+                class="px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </a>
+
+              <!-- Language Selector -->
+              <select
+                class="language-selector px-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  DE
+                </option>
+              </select>
+            </div>
+
+            <!-- Mobile: Language Selector + Menu Button -->
+            <div class="lg:hidden flex items-center gap-3">
+              <!-- Language Selector (Mobile) -->
+              <select
+                class="language-selector px-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  DE
+                </option>
+              </select>
+
+              <!-- Mobile Menu Button -->
+              <button class="p-2">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+          <!-- Close Button -->
+          <button id="mobile-menu-close" class="mobile-menu-close">
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Navigation Links -->
+          <nav class="mobile-nav-links">
+            <a
+              href="./shipper.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.shippers"
+            >
+              Shippers
+            </a>
+            <a
+              href="./carrier.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.carriers"
+            >
+              Carriers
+            </a>
+            <a
+              href="#technology"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.glTech"
+            >
+              GL Tech
+            </a>
+            <a
+              href="#environment"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.environment"
+            >
+              Environment
+            </a>
+            <a
+              href="./about.html"
+              class="mobile-nav-link"
+              data-i18n="common.navigation.about"
+            >
+              About
+            </a>
+          </nav>
+
+          <!-- Mobile CTA Buttons -->
+          <div class="mobile-cta-buttons">
+            <a
+              href="./get-started.html"
+              class="w-full px-5 py-2.5 primary-btn block text-center"
+              data-i18n="common.cta.startNow"
+            >
+              Start Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="privacy-container">
+        <!-- Sidebar Navigation -->
+        <aside class="privacy-sidebar">
+          <h3 data-i18n="privacy.sidebar.title">On This Page</h3>
+          <nav>
+            <a href="#key-points" data-i18n="privacy.sidebar.links.keyPoints"
+              >Key Points</a
+            >
+            <a href="#controller" data-i18n="privacy.sidebar.links.controller"
+              >Controller</a
+            >
+            <a href="#scope" data-i18n="privacy.sidebar.links.scope">Scope</a>
+            <a
+              href="#data-we-process"
+              data-i18n="privacy.sidebar.links.dataProcess"
+              >Data We Process</a
+            >
+            <a href="#how-we-use" data-i18n="privacy.sidebar.links.howWeUse"
+              >How We Use Data</a
+            >
+            <a href="#legal-basis" data-i18n="privacy.sidebar.links.legalBasis"
+              >Legal Basis</a
+            >
+            <a href="#sharing" data-i18n="privacy.sidebar.links.sharing"
+              >Sharing</a
+            >
+            <a href="#transfers" data-i18n="privacy.sidebar.links.transfers"
+              >Transfers</a
+            >
+            <a href="#retention" data-i18n="privacy.sidebar.links.retention"
+              >Retention</a
+            >
+            <a href="#security" data-i18n="privacy.sidebar.links.security"
+              >Security</a
+            >
+            <a href="#cookies" data-i18n="privacy.sidebar.links.cookies"
+              >Cookies</a
+            >
+            <a href="#rights" data-i18n="privacy.sidebar.links.rights"
+              >Your Rights</a
+            >
+            <a href="#children" data-i18n="privacy.sidebar.links.children"
+              >Children</a
+            >
+            <a href="#changes" data-i18n="privacy.sidebar.links.changes"
+              >Changes</a
+            >
+            <a href="#contact" data-i18n="privacy.sidebar.links.contact"
+              >Contact</a
+            >
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="privacy-content">
+          <!-- Header -->
+          <div class="privacy-header">
+            <h1 data-i18n="privacy.title">Privacy Policy</h1>
+            <p class="privacy-updated" data-i18n="privacy.lastUpdated">
+              Last updated:
+              <span id="last-updated-date">February 27, 2026</span>
+            </p>
+            <p class="privacy-intro" data-i18n="privacy.intro">
+              This Privacy Policy explains how GoLynk processes personal data
+              when you visit our website, submit forms, or engage with us about
+              corridor evaluation, pilot participation, or partnership
+              opportunities.
+            </p>
+          </div>
+
+          <!-- Key Points Section -->
+          <section id="key-points" class="privacy-section">
+            <div class="key-points-block">
+              <h3 data-i18n="privacy.keyPoints.title">Key Points</h3>
+              <ul>
+                <li data-i18n="privacy.keyPoints.items[0]">
+                  GoLynk processes data to evaluate corridors, onboard partners,
+                  and operate securely under GDPR.
+                </li>
+                <li data-i18n="privacy.keyPoints.items[1]">
+                  We do not sell personal data.
+                </li>
+                <li data-i18n="privacy.keyPoints.items[2]">
+                  We do not run advertising profiling.
+                </li>
+                <li data-i18n="privacy.keyPoints.items[3]">
+                  We use minimal tracking at this stage (essential logs only).
+                </li>
+                <li data-i18n="privacy.keyPoints.items[4]">
+                  Data used for optimization is aggregated and minimized where
+                  possible.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section 1: Controller -->
+          <section id="controller" class="privacy-section">
+            <h2 data-i18n="privacy.controller.title">Who We Are</h2>
+            <p data-i18n="privacy.controller.text">GoLynk is operated by:</p>
+            <div class="contact-info">
+              <p>
+                <span class="privacy-strong" data-i18n="privacy.controller.name"
+                  >Ibrahim Ismail</span
+                >
+              </p>
+              <p data-i18n="privacy.controller.address">Kastanienweg 4</p>
+              <p data-i18n="privacy.controller.city">52074 Aachen</p>
+              <p data-i18n="privacy.controller.country">Germany</p>
+              <p>
+                Email:
+                <a
+                  href="mailto:contact@golynk.com"
+                  data-i18n="privacy.controller.email"
+                  >contact@golynk.com</a
+                >
+              </p>
+            </div>
+            <p data-i18n="privacy.controller.status">
+              GoLynk is currently operated prior to formal company registration.
+              Incorporation is in preparation. This page will be updated once a
+              legal entity is registered.
+            </p>
+          </section>
+
+          <!-- Section 2: Scope -->
+          <section id="scope" class="privacy-section">
+            <h2 data-i18n="privacy.scope.title">
+              Scope of This Privacy Policy
+            </h2>
+            <p data-i18n="privacy.scope.intro">
+              This Privacy Policy applies when we act as a data controller,
+              including when you:
+            </p>
+            <ul>
+              <li data-i18n="privacy.scope.items[0]">Visit our website</li>
+              <li data-i18n="privacy.scope.items[1]">
+                Submit a shipper, carrier, fleet, microhub, partner, or investor
+                form
+              </li>
+              <li data-i18n="privacy.scope.items[2]">
+                Request corridor evaluation or lane assessment
+              </li>
+              <li data-i18n="privacy.scope.items[3]">
+                Communicate with us via email
+              </li>
+            </ul>
+            <p data-i18n="privacy.scope.disclaimer">
+              This policy does not cover situations where GoLynk acts strictly
+              as a data processor under an enterprise agreement. In those cases,
+              the contracting customer is responsible as controller for the
+              relevant processing and will provide their own privacy notice for
+              end users.
+            </p>
+          </section>
+
+          <!-- Section 3: Data We Process -->
+          <section id="data-we-process" class="privacy-section">
+            <h2 data-i18n="privacy.dataProcessed.title">
+              Personal Data We Process
+            </h2>
+
+            <h3 data-i18n="privacy.dataProcessed.provided.subtitle">
+              3.1 Data you provide (forms and communications)
+            </h3>
+            <p data-i18n="privacy.dataProcessed.provided.intro">
+              We may process information you submit directly, such as:
+            </p>
+            <ul>
+              <li data-i18n="privacy.dataProcessed.provided.items[0]">
+                Name, email address, and contact details
+              </li>
+              <li data-i18n="privacy.dataProcessed.provided.items[1]">
+                Company name and role (where applicable)
+              </li>
+              <li data-i18n="privacy.dataProcessed.provided.items[2]">
+                City, corridor, or lane information
+              </li>
+              <li data-i18n="privacy.dataProcessed.provided.items[3]">
+                Shipment characteristics (type, frequency, time windows,
+                constraints)
+              </li>
+              <li data-i18n="privacy.dataProcessed.provided.items[4]">
+                Route details or capacity details (carrier / fleet / microhub)
+              </li>
+              <li data-i18n="privacy.dataProcessed.provided.items[5]">
+                Operational notes you choose to provide
+              </li>
+              <li data-i18n="privacy.dataProcessed.provided.items[6]">
+                Investor inquiry details (firm name, focus area, optional notes)
+              </li>
+            </ul>
+            <p data-i18n="privacy.dataProcessed.provided.detail">
+              We request only the information required to evaluate corridor
+              feasibility and prepare onboarding.
+            </p>
+
+            <h3 data-i18n="privacy.dataProcessed.technical.subtitle">
+              3.2 Technical and usage data (website access)
+            </h3>
+            <p data-i18n="privacy.dataProcessed.technical.intro">
+              When you access the website, our servers may process:
+            </p>
+            <ul>
+              <li data-i18n="privacy.dataProcessed.technical.items[0]">
+                IP address
+              </li>
+              <li data-i18n="privacy.dataProcessed.technical.items[1]">
+                Date and time of access
+              </li>
+              <li data-i18n="privacy.dataProcessed.technical.items[2]">
+                Requested URL / page
+              </li>
+              <li data-i18n="privacy.dataProcessed.technical.items[3]">
+                Referrer URL
+              </li>
+              <li data-i18n="privacy.dataProcessed.technical.items[4]">
+                Browser and device information
+              </li>
+              <li data-i18n="privacy.dataProcessed.technical.items[5]">
+                Security-related events (e.g., rate limiting triggers)
+              </li>
+            </ul>
+            <p data-i18n="privacy.dataProcessed.technical.detail">
+              This data is used for security, abuse prevention, and operational
+              reliability.
+            </p>
+
+            <h3 data-i18n="privacy.dataProcessed.pilot.subtitle">
+              3.3 Pilot and operational preparation data
+            </h3>
+            <p data-i18n="privacy.dataProcessed.pilot.intro">
+              During pilot preparation, we may process corridor-related
+              information such as:
+            </p>
+            <ul>
+              <li data-i18n="privacy.dataProcessed.pilot.items[0]">
+                Service windows and SLA expectations
+              </li>
+              <li data-i18n="privacy.dataProcessed.pilot.items[1]">
+                Capacity characteristics (vehicle types, lane coverage, microhub
+                availability)
+              </li>
+              <li data-i18n="privacy.dataProcessed.pilot.items[2]">
+                Corridor density indicators and operational constraints
+              </li>
+            </ul>
+            <p data-i18n="privacy.dataProcessed.pilot.detail">
+              Where possible, operational analytics is aggregated and minimized
+              to reduce personal identifiability.
+            </p>
+          </section>
+
+          <!-- Section 4: How We Use Data -->
+          <section id="how-we-use" class="privacy-section">
+            <h2 data-i18n="privacy.howWeUse.title">How We Use Personal Data</h2>
+            <p data-i18n="privacy.howWeUse.intro">
+              We process personal data for:
+            </p>
+            <ul>
+              <li data-i18n="privacy.howWeUse.items[0]">
+                Responding to inquiries and requests
+              </li>
+              <li data-i18n="privacy.howWeUse.items[1]">
+                Corridor evaluation (determining whether a lane can be
+                supported)
+              </li>
+              <li data-i18n="privacy.howWeUse.items[2]">
+                Pilot onboarding and partner coordination
+              </li>
+              <li data-i18n="privacy.howWeUse.items[3]">
+                Preparing commercial deployment (including drafting
+                pre-contractual terms)
+              </li>
+              <li data-i18n="privacy.howWeUse.items[4]">
+                Platform and infrastructure security
+              </li>
+              <li data-i18n="privacy.howWeUse.items[5]">
+                Operational improvement using aggregated indicators (e.g.,
+                corridor density)
+              </li>
+            </ul>
+            <p data-i18n="privacy.howWeUse.note">
+              We do not sell personal data and do not use personal data for
+              third-party advertising profiling.
+            </p>
+          </section>
+
+          <!-- Section 5: Legal Basis -->
+          <section id="legal-basis" class="privacy-section">
+            <h2 data-i18n="privacy.legalBasis.title">Legal Bases (GDPR)</h2>
+            <p data-i18n="privacy.legalBasis.intro">
+              We process personal data under the following legal bases:
+            </p>
+            <ul>
+              <li>
+                <span
+                  class="privacy-strong"
+                  data-i18n="privacy.legalBasis.basis1"
+                  >Article 6(1)(b) GDPR</span
+                >
+                —
+                <span data-i18n="privacy.legalBasis.basis1Desc"
+                  >taking steps at your request prior to entering a contract
+                  (e.g., corridor evaluation, onboarding discussions)</span
+                >
+              </li>
+              <li>
+                <span
+                  class="privacy-strong"
+                  data-i18n="privacy.legalBasis.basis2"
+                  >Article 6(1)(f) GDPR</span
+                >
+                —
+                <span data-i18n="privacy.legalBasis.basis2Desc"
+                  >legitimate interests (secure operations, fraud prevention,
+                  service integrity, and corridor optimization)</span
+                >
+              </li>
+              <li>
+                <span
+                  class="privacy-strong"
+                  data-i18n="privacy.legalBasis.basis3"
+                  >Article 6(1)(a) GDPR</span
+                >
+                —
+                <span data-i18n="privacy.legalBasis.basis3Desc"
+                  >consent, where required (e.g., optional subscriptions)</span
+                >
+              </li>
+            </ul>
+            <p data-i18n="privacy.legalBasis.note">
+              If you object to processing based on legitimate interest, we will
+              assess whether our interests override your rights or whether
+              processing must stop.
+            </p>
+          </section>
+
+          <!-- Section 6: Sharing -->
+          <section id="sharing" class="privacy-section">
+            <h2 data-i18n="privacy.sharing.title">Sharing and Disclosures</h2>
+            <p data-i18n="privacy.sharing.intro">
+              We may share personal data with:
+            </p>
+
+            <h3 data-i18n="privacy.sharing.providers.subtitle">
+              6.1 Service providers (processors)
+            </h3>
+            <p data-i18n="privacy.sharing.providers.text">
+              We use service providers for website hosting, infrastructure
+              operations, and email delivery. Where required, we enter data
+              processing agreements under Article 28 GDPR.
+            </p>
+
+            <h3 data-i18n="privacy.sharing.legal.subtitle">
+              6.2 Legal obligations
+            </h3>
+            <p data-i18n="privacy.sharing.legal.text">
+              We may disclose information where required by law, regulation, or
+              a legally binding request.
+            </p>
+
+            <h3 data-i18n="privacy.sharing.transition.subtitle">
+              6.3 Business transition
+            </h3>
+            <p data-i18n="privacy.sharing.transition.text">
+              If GoLynk undergoes a corporate transaction (e.g., incorporation,
+              financing, asset transfer), personal data may be transferred as
+              part of that process, subject to lawful safeguards.
+            </p>
+
+            <p data-i18n="privacy.sharing.note">
+              We do not disclose personal data to third parties for independent
+              marketing purposes.
+            </p>
+          </section>
+
+          <!-- Section 7: International Transfers -->
+          <section id="transfers" class="privacy-section">
+            <h2 data-i18n="privacy.transfers.title">
+              International Data Transfers
+            </h2>
+            <p data-i18n="privacy.transfers.text">
+              We aim to process data within the European Union. If data is
+              transferred outside the EU/EEA in the future, we will implement
+              appropriate safeguards such as Standard Contractual Clauses and
+              assess transfer risks where required.
+            </p>
+          </section>
+
+          <!-- Section 8: Data Retention -->
+          <section id="retention" class="privacy-section">
+            <h2 data-i18n="privacy.retention.title">Data Retention</h2>
+            <p data-i18n="privacy.retention.intro">
+              We retain personal data only as long as necessary for:
+            </p>
+            <ul>
+              <li data-i18n="privacy.retention.items[0]">
+                Corridor evaluation and onboarding
+              </li>
+              <li data-i18n="privacy.retention.items[1]">
+                Pilot execution and operational coordination
+              </li>
+              <li data-i18n="privacy.retention.items[2]">
+                Pre-contractual and contractual documentation
+              </li>
+              <li data-i18n="privacy.retention.items[3]">
+                Compliance with legal obligations
+              </li>
+            </ul>
+
+            <h3 data-i18n="privacy.retention.logic">
+              Typical retention logic:
+            </h3>
+            <ul>
+              <li data-i18n="privacy.retention.logic1">
+                Inquiry and corridor evaluation data is retained until the
+                evaluation is complete and then periodically reviewed for
+                deletion.
+              </li>
+              <li data-i18n="privacy.retention.logic2">
+                Operational pilot-related data may be retained longer to support
+                corridor performance analysis, using aggregation/minimization
+                where possible.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Section 9: Security -->
+          <section id="security" class="privacy-section">
+            <h2 data-i18n="privacy.security.title">Security</h2>
+            <p data-i18n="privacy.security.detail">
+              We apply appropriate technical and organizational measures
+              designed to protect personal data against unauthorized access,
+              alteration, loss, and misuse. Measures may include access
+              controls, encryption in transit where available, and monitoring
+              for abuse.
+            </p>
+            <p data-i18n="privacy.security.note">
+              No method of transmission or storage is fully secure, but we
+              maintain safeguards proportionate to our risk profile and
+              pilot-stage operations.
+            </p>
+          </section>
+
+          <!-- Section 10: Cookies and Tracking -->
+          <section id="cookies" class="privacy-section">
+            <h2 data-i18n="privacy.cookies.title">Cookies and Tracking</h2>
+            <p data-i18n="privacy.cookies.intro">
+              At this stage, GoLynk uses only essential technical mechanisms
+              required for the website to function and remain secure.
+            </p>
+            <ul>
+              <li data-i18n="privacy.cookies.items[0]">
+                We do not deploy behavioral advertising cookies.
+              </li>
+              <li data-i18n="privacy.cookies.items[1]">
+                If we introduce privacy-friendly analytics later (e.g.,
+                cookie-less measurement), we will update this policy and provide
+                any required controls.
+              </li>
+            </ul>
+            <p>
+              <span data-i18n="privacy.cookies.link"
+                >For more details, see our</span
+              >
+              <a href="./cookies.html" data-i18n="privacy.cookies.linkText"
+                >Cookie Policy</a
+              >.
+            </p>
+          </section>
+
+          <!-- Section 11: Your Rights and Choices -->
+          <section id="rights" class="privacy-section">
+            <h2 data-i18n="privacy.rights.title">Your Rights and Choices</h2>
+            <p data-i18n="privacy.rights.intro">
+              Depending on your location, you may have the right to:
+            </p>
+            <ul>
+              <li data-i18n="privacy.rights.items[0]">
+                Access your personal data
+              </li>
+              <li data-i18n="privacy.rights.items[1]">
+                Rectify inaccurate data
+              </li>
+              <li data-i18n="privacy.rights.items[2]">Request deletion</li>
+              <li data-i18n="privacy.rights.items[3]">Restrict processing</li>
+              <li data-i18n="privacy.rights.items[4]">Object to processing</li>
+              <li data-i18n="privacy.rights.items[5]">Data portability</li>
+              <li data-i18n="privacy.rights.items[6]">
+                Withdraw consent (where processing is based on consent)
+              </li>
+            </ul>
+
+            <p>
+              <span data-i18n="privacy.rights.exercise"
+                >To exercise your rights, email:</span
+              >
+              <a href="mailto:contact@golynk.com">contact@golynk.com</a>
+            </p>
+
+            <h3 data-i18n="privacy.rights.complaints">Complaints</h3>
+            <p data-i18n="privacy.rights.complaintsText">
+              You may lodge a complaint with a supervisory authority. For
+              Germany (NRW), the competent authority is the State Commissioner
+              for Data Protection and Freedom of Information of North
+              Rhine-Westphalia (LDI NRW).
+            </p>
+          </section>
+
+          <!-- Section 12: Children -->
+          <section id="children" class="privacy-section">
+            <h2 data-i18n="privacy.children.title">Children</h2>
+            <p data-i18n="privacy.children.text">
+              GoLynk is not directed to children and does not knowingly collect
+              personal data from individuals under 18.
+            </p>
+          </section>
+
+          <!-- Section 13: Changes to This Policy -->
+          <section id="changes" class="privacy-section">
+            <h2 data-i18n="privacy.changes.title">
+              Changes to This Privacy Policy
+            </h2>
+            <p data-i18n="privacy.changes.text">
+              We may update this Privacy Policy as GoLynk evolves, incorporates
+              formally, or introduces new services. We will update the "Last
+              updated" date at the top of this page.
+            </p>
+          </section>
+
+          <!-- Section 14: Contact -->
+          <section id="contact" class="privacy-section">
+            <h2 data-i18n="privacy.contact.title">Contact</h2>
+            <p data-i18n="privacy.contact.intro">
+              For privacy-related questions or requests:
+            </p>
+            <div class="contact-info">
+              <p>
+                <span data-i18n="privacy.contact.email">Email:</span>
+                <a href="mailto:contact@golynk.com">contact@golynk.com</a>
+              </p>
+              <p>
+                <span data-i18n="privacy.contact.address">Address:</span>
+                <span data-i18n="privacy.contact.addressText"
+                  >Kastanienweg 4, 52074 Aachen, Germany</span
+                >
+              </p>
+            </div>
+
+            <div class="privacy-bottom-links">
+              <a href="./terms.html" data-i18n="privacy.contact.links.terms"
+                >Terms of Service</a
+              >
+              <a href="./cookies.html" data-i18n="privacy.contact.links.cookies"
+                >Cookie Policy</a
+              >
+              <a href="./imprint.html" data-i18n="privacy.contact.links.imprint"
+                >Imprint / Legal Notice</a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="pt-8 px-6 overflow-hidden mt-8">
+        <div class="space-y-12">
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+          >
+            <!-- CTA Buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+              data-animate="fade-up"
+              data-duration="800"
+            >
+              <a
+                href="./shipper.html#early-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-ship"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.startShipping"
+                  >Start Shipping</span
+                >
+              </a>
+              <a
+                href="./carrier.html#carrier-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-delivery"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.deliverWithUs"
+                  >Deliver with us</span
+                >
+              </a>
+            </div>
+            <!-- Newsletter Column -->
+            <div class="flex flex-col items-center lg:items-start gap-3">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.newsletter.title"
+              >
+                Stay up to date
+              </h3>
+              <form class="flex gap-2" id="footer-newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
+                  class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                  data-i18n="common.footer.newsletter.button"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Main Footer Content -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Company Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.company.title"
+              >
+                Company
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./about.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.about"
+                >
+                  About GoLynk
+                </a>
+                <a
+                  href="./index.html#how-it-works"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.howItWorks"
+                >
+                  How It Works
+                </a>
+                <a
+                  href="./index.html#industries"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.industries"
+                >
+                  Industries We Serve
+                </a>
+                <a
+                  href="./index.html#environment"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.sustainability"
+                >
+                  Sustainability & CO₂ Reporting
+                </a>
+                <a
+                  href="./careers.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.careers"
+                >
+                  Careers
+                </a>
+                <a
+                  href="./get-started.html#contact"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.contact"
+                >
+                  Contact
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Shippers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.shippers.title"
+              >
+                For Shippers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./shipper.html#early-access"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="./pricing.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.pricing"
+                >
+                  Pricing
+                </a>
+                <a
+                  href="./api-docs.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.api"
+                >
+                  Integration & API Docs
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Carriers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.carriers.title"
+              >
+                For Carriers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./carrier.html#individual-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
+                >
+                  Join as Individual Mover
+                </a>
+                <a
+                  href="./carrier.html#fleet-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
+                >
+                  Fleet Operators
+                </a>
+                <a
+                  href="./carrier.html#operator-dashboard"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
+                >
+                  Operator Dashboard
+                </a>
+              </nav>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.resources.title"
+              >
+                Resources
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./faq.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.faq"
+                >
+                  FAQ
+                </a>
+                <a
+                  href="./investor.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.investors"
+                >
+                  Investor Relations
+                </a>
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.legal.title"
+              >
+                Legal
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./privacy.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.privacy"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="./terms.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.terms"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="./cookies.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.cookies"
+                >
+                  Cookie Policy
+                </a>
+                <a
+                  href="./imprint.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.imprint"
+                >
+                  Imprint
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="border-t border-border-default pt-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="400"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
+              <!-- Logo and Tagline -->
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="./">
+                  <img src="./public/Logo.svg" alt="GoLynk" class="h-8" />
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.tagline"
+                >
+                  Orchestrating existing journeys into faster, greener
+                  logistics.
+                </p>
+              </div>
+
+              <!-- Social Links and Copyright -->
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-x"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.copyright"
+                >
+                  © GoLynk 2026. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="./src/js/main.ts"></script>
+    <script>
+      // Set last updated date
+      const dateEl = document.getElementById("last-updated-date");
+      if (dateEl) {
+        dateEl.textContent = new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+      }
+
+      // Sticky sidebar nav highlighting
+      const sidebar = document.querySelector(".privacy-sidebar nav");
+      const sections = document.querySelectorAll(".privacy-section");
+
+      if (sidebar) {
+        const links = sidebar.querySelectorAll("a");
+
+        // Update active link based on scroll position
+        const updateActiveLink = () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 150) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          links.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        };
+
+        window.addEventListener("scroll", updateActiveLink);
+        // Initial call
+        updateActiveLink();
+      }
+    </script>
+  </body>
+</html>

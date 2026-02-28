@@ -1,0 +1,1895 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="jobs.meta.title">Open Roles | GoLynk Careers</title>
+    <meta
+      name="description"
+      content="Open roles across systems engineering, AI &amp; optimization, integrations, corridor deployment, and logistics research."
+      data-i18n-content="jobs.meta.description"
+    />
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <!--
+      Optional header visual prompt: minimal faint transport map grid in light gray,
+      one muted blue corridor segment, no labels, no glow, high whitespace, enterprise tone.
+    -->
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8fafc;
+        --bg-tertiary: #f6f7fb;
+        --border-color: #e6eaf2;
+        --text-primary: #0b1220;
+        --text-secondary: #334155;
+        --text-muted: #94a3b8;
+        --accent: #3b82f6;
+      }
+
+      body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+      }
+
+      /* Hero */
+      .jobs-hero {
+        padding: 140px 24px 48px;
+      }
+
+      .jobs-hero h1 {
+        font-size: 44px;
+        line-height: 50px;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 768px) {
+        .jobs-hero h1 {
+          font-size: 32px;
+          line-height: 38px;
+        }
+      }
+
+      /* Section headings */
+      .section-title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 650;
+        letter-spacing: -0.015em;
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 26px;
+          line-height: 34px;
+        }
+      }
+
+      .section-body {
+        font-size: 17px;
+        line-height: 28px;
+        color: var(--text-secondary);
+      }
+
+      /* Back link */
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 180ms ease-out;
+      }
+
+      .back-link:hover {
+        color: var(--accent);
+      }
+
+      .back-link .back-arrow {
+        display: inline-block;
+        transition: transform 180ms ease-out;
+      }
+
+      .back-link:hover .back-arrow {
+        transform: translateX(-4px);
+      }
+
+      /* Filter bar */
+      .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .filter-select {
+        appearance: none;
+        -webkit-appearance: none;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 10px 36px 10px 14px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-primary);
+        cursor: pointer;
+        transition:
+          border-color 180ms ease-out,
+          box-shadow 180ms ease-out;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M2.5 4.5L6 8l3.5-3.5'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        min-width: 160px;
+      }
+
+      .filter-select:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
+      .filter-select:hover {
+        border-color: #cbd5e1;
+      }
+
+      .filter-search {
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 10px 14px;
+        font-size: 14px;
+        color: var(--text-primary);
+        background: var(--bg-primary);
+        transition:
+          border-color 180ms ease-out,
+          box-shadow 180ms ease-out;
+        min-width: 200px;
+        flex: 1;
+        max-width: 280px;
+      }
+
+      .filter-search::placeholder {
+        color: var(--text-muted);
+      }
+
+      .filter-search:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .filter-select,
+        .filter-search {
+          width: 100%;
+          max-width: none;
+          min-width: 0;
+        }
+      }
+
+      /* Track section */
+      .track-section {
+        margin-bottom: 48px;
+      }
+
+      .track-section:last-child {
+        margin-bottom: 0;
+      }
+
+      .track-header {
+        margin-bottom: 8px;
+      }
+
+      .track-title {
+        font-size: 20px;
+        font-weight: 650;
+        color: var(--text-primary);
+        letter-spacing: -0.01em;
+      }
+
+      .track-subtitle {
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+
+      /* Job rows */
+      .job-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 16px;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border-color);
+        text-decoration: none;
+        transition: all 120ms ease-out;
+      }
+
+      .job-row:first-child {
+        border-top: 1px solid var(--border-color);
+      }
+
+      .job-row:hover {
+        background: var(--bg-secondary);
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .job-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text-primary);
+        transition: color 180ms ease-out;
+      }
+
+      .job-row:hover .job-title {
+        color: var(--accent);
+      }
+
+      .job-summary {
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--text-secondary);
+        margin-top: 2px;
+      }
+
+      .job-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 4px;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      .job-meta-sep {
+        color: #cbd5e1;
+      }
+
+      .job-arrow {
+        color: var(--text-muted);
+        font-size: 16px;
+        transition:
+          transform 180ms ease-out,
+          color 180ms ease-out;
+        flex-shrink: 0;
+      }
+
+      .job-row:hover .job-arrow {
+        transform: translateX(4px);
+        color: var(--accent);
+      }
+
+      /* Results count */
+      .results-count {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      /* Buttons */
+      .btn-jobs-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        background: var(--accent);
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .btn-jobs-primary:hover {
+        background: #2563eb;
+      }
+
+      .btn-jobs-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .btn-jobs-secondary:hover {
+        border-color: var(--accent);
+        background: rgba(59, 130, 246, 0.04);
+      }
+
+      /* What we look for */
+      .look-for-item {
+        font-size: 15px;
+        line-height: 26px;
+        color: var(--text-secondary);
+        padding-left: 16px;
+        position: relative;
+      }
+
+      .look-for-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #cbd5e1;
+      }
+
+      /* No results */
+      .no-results {
+        text-align: center;
+        padding: 64px 24px;
+        color: var(--text-muted);
+        font-size: 15px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!-- ========== NAVIGATION ========== -->
+      <div class="relative">
+        <nav
+          class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+          style="
+            background: rgba(11, 13, 16, 0.25);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <a href="../">
+                <img src="../Logo.svg" alt="Logo" />
+              </a>
+
+              <!-- Desktop Navigation -->
+              <div
+                class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+              >
+                <a
+                  href="../shipper.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.shippers"
+                >
+                  Shippers
+                </a>
+                <a
+                  href="../carrier.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.carriers"
+                >
+                  Carriers
+                </a>
+                <a
+                  href="../index.html#partners"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.partners"
+                >
+                  Partners
+                </a>
+                <a
+                  href="../index.html#technology"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.glTech"
+                >
+                  GL Tech
+                </a>
+                <a
+                  href="../index.html#environment"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.environment"
+                >
+                  Environment
+                </a>
+                <a
+                  href="../about.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.about"
+                >
+                  About
+                </a>
+              </div>
+
+              <!-- CTA + Language Selector (Desktop) -->
+              <div class="hidden lg:flex flex-row items-center gap-2">
+                <button
+                  class="px-5 py-2.5 primary-btn"
+                  data-i18n="common.cta.startNow"
+                >
+                  Start Now
+                </button>
+
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      English
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      Deutsch
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-2 top-1/2 -translate-y-1/2 size-4 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Mobile: Language Selector + Menu Button -->
+              <div class="lg:hidden flex items-center gap-3">
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      EN
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      DE
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-1.5 top-1/2 -translate-y-1/2 size-3 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+
+                <button id="mobile-menu-button" class="p-2">
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+          <div class="mobile-menu-content">
+            <button id="mobile-menu-close" class="mobile-menu-close">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <nav class="mobile-nav-links">
+              <a
+                href="../shipper.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="../carrier.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="../index.html#partners"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.partners"
+              >
+                Partners
+              </a>
+              <a
+                href="../index.html#technology"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="../index.html#environment"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="../about.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </nav>
+
+            <div class="mobile-cta-buttons">
+              <button
+                class="w-full px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 1. HERO HEADER ========== -->
+      <section class="jobs-hero">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <a href="../careers.html" class="back-link mb-8 inline-flex">
+            <span class="back-arrow">&larr;</span>
+            <span data-i18n="jobs.hero.backLink">Back to Careers</span>
+          </a>
+
+          <h1 class="mb-4" data-i18n="jobs.hero.heading">Open roles</h1>
+
+          <p
+            class="section-body max-w-[600px]"
+            data-i18n="jobs.hero.description"
+          >
+            We hire across engineering, applied AI, corridor deployment, and
+            zero-touch logistics research.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== 2. FILTER BAR ========== -->
+      <section
+        class="py-8"
+        style="border-bottom: 1px solid var(--border-color)"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="filter-bar" id="filter-bar">
+            <select
+              id="filter-track"
+              class="filter-select"
+              aria-label="Filter by track"
+            >
+              <option value="all" data-i18n="jobs.filters.track.all">
+                All tracks
+              </option>
+              <option value="systems" data-i18n="jobs.filters.track.systems">
+                Systems Engineering
+              </option>
+              <option value="ai" data-i18n="jobs.filters.track.ai">
+                AI &amp; Optimization
+              </option>
+              <option
+                value="integrations"
+                data-i18n="jobs.filters.track.integrations"
+              >
+                Integrations &amp; Operator Tooling
+              </option>
+              <option
+                value="deployment"
+                data-i18n="jobs.filters.track.deployment"
+              >
+                Corridor Deployment &amp; Operations
+              </option>
+              <option value="research" data-i18n="jobs.filters.track.research">
+                Logistics Research (Zero-Touch)
+              </option>
+            </select>
+
+            <select
+              id="filter-location"
+              class="filter-select"
+              aria-label="Filter by location"
+            >
+              <option value="all" data-i18n="jobs.filters.location.all">
+                All locations
+              </option>
+              <option value="aachen" data-i18n="jobs.filters.location.aachen">
+                Aachen
+              </option>
+              <option value="remote" data-i18n="jobs.filters.location.remote">
+                Remote
+              </option>
+            </select>
+
+            <select
+              id="filter-type"
+              class="filter-select"
+              aria-label="Filter by type"
+            >
+              <option value="all" data-i18n="jobs.filters.type.all">
+                All types
+              </option>
+              <option value="full-time" data-i18n="jobs.filters.type.fullTime">
+                Full-time
+              </option>
+              <option value="contract" data-i18n="jobs.filters.type.contract">
+                Contract
+              </option>
+            </select>
+
+            <input
+              type="text"
+              id="filter-search"
+              class="filter-search"
+              placeholder="Search roles"
+              data-i18n-placeholder="jobs.filters.searchPlaceholder"
+              aria-label="Search roles"
+            />
+          </div>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p
+              class="results-count"
+              id="results-count"
+              data-i18n="jobs.filters.resultsNote"
+            >
+              Showing roles by track. Updated as hiring expands.
+            </p>
+            <p class="results-count" id="visible-count"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 3. JOB LISTINGS BY TRACK ========== -->
+      <section class="py-16">
+        <div class="max-w-[1160px] mx-auto px-6" id="job-listings">
+          <!-- ===== Systems Engineering ===== -->
+          <div class="track-section" data-track="systems">
+            <div class="track-header">
+              <h2 class="track-title" data-i18n="jobs.tracks.systems.title">
+                Systems Engineering
+              </h2>
+              <p
+                class="track-subtitle"
+                data-i18n="jobs.tracks.systems.subtitle"
+              >
+                Orchestration graph, reliability, observability, event
+                pipelines.
+              </p>
+            </div>
+
+            <a
+              href="./apply.html?job=senior-backend-engineer-orchestration"
+              class="job-row"
+              data-track="systems"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.systems.role1.title"
+                >
+                  Senior Backend Engineer — Orchestration
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.systems.role1.summary"
+                >
+                  Design and scale the core orchestration engine powering
+                  multi-hop corridor routing.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.systems.title"
+                    >Systems Engineering</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.systems.role1.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.systems.role1.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=distributed-systems-engineer-event-pipeline"
+              class="job-row"
+              data-track="systems"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.systems.role2.title"
+                >
+                  Distributed Systems Engineer — Event Pipeline
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.systems.role2.summary"
+                >
+                  Build reliable event-driven infrastructure for real-time
+                  corridor state and handoff tracking.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.systems.title"
+                    >Systems Engineering</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.systems.role2.location"
+                    >EU (Remote)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.systems.role2.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=reliability-engineer-observability"
+              class="job-row"
+              data-track="systems"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.systems.role3.title"
+                >
+                  Reliability Engineer — Observability &amp; Integrity
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.systems.role3.summary"
+                >
+                  Own monitoring, alerting, and integrity guarantees across the
+                  orchestration layer.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.systems.title"
+                    >Systems Engineering</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.systems.role3.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.systems.role3.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- ===== AI & Optimization ===== -->
+          <div class="track-section" data-track="ai">
+            <div class="track-header">
+              <h2 class="track-title" data-i18n="jobs.tracks.ai.title">
+                AI &amp; Optimization
+              </h2>
+              <p class="track-subtitle" data-i18n="jobs.tracks.ai.subtitle">
+                Constraint scoring, density learning, SLA-aware multi-hop
+                routing.
+              </p>
+            </div>
+
+            <a
+              href="./apply.html?job=applied-ml-engineer-routing"
+              class="job-row"
+              data-track="ai"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div class="job-title" data-i18n="jobs.roles.ai.role1.title">
+                  Applied ML Engineer — Routing &amp; Optimization
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.ai.role1.summary"
+                >
+                  Develop constraint-aware routing models for multi-hop shipment
+                  matching under time windows.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.ai.title"
+                    >AI &amp; Optimization</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.ai.role1.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.ai.role1.type">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=optimization-engineer-time-windows"
+              class="job-row"
+              data-track="ai"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div class="job-title" data-i18n="jobs.roles.ai.role2.title">
+                  Optimization Engineer — Time Windows &amp; Constraints
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.ai.role2.summary"
+                >
+                  Build solvers for deviation-bounded matching and SLA-aware
+                  constraint satisfaction.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.ai.title"
+                    >AI &amp; Optimization</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.ai.role2.location"
+                    >EU (Remote)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.ai.role2.type">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=data-scientist-corridor-density"
+              class="job-row"
+              data-track="ai"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div class="job-title" data-i18n="jobs.roles.ai.role3.title">
+                  Data Scientist — Corridor Density &amp; Pricing Signals
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.ai.role3.summary"
+                >
+                  Analyze corridor density patterns and develop pricing signals
+                  that compound network efficiency.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.ai.title"
+                    >AI &amp; Optimization</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.ai.role3.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.ai.role3.type">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- ===== Integrations & Operator Tooling ===== -->
+          <div class="track-section" data-track="integrations">
+            <div class="track-header">
+              <h2
+                class="track-title"
+                data-i18n="jobs.tracks.integrations.title"
+              >
+                Integrations &amp; Operator Tooling
+              </h2>
+              <p
+                class="track-subtitle"
+                data-i18n="jobs.tracks.integrations.subtitle"
+              >
+                APIs, dashboards, partner tooling, TMS/WMS connectivity.
+              </p>
+            </div>
+
+            <a
+              href="./apply.html?job=integrations-engineer-apis"
+              class="job-row"
+              data-track="integrations"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.integrations.role1.title"
+                >
+                  Integrations Engineer — APIs &amp; Webhooks
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.integrations.role1.summary"
+                >
+                  Design and maintain partner-facing APIs, webhook contracts,
+                  and integration tiers.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.integrations.title"
+                    >Integrations &amp; Operator Tooling</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.integrations.role1.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.integrations.role1.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=product-engineer-operator-dashboard"
+              class="job-row"
+              data-track="integrations"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.integrations.role2.title"
+                >
+                  Product Engineer — Operator Dashboard
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.integrations.role2.summary"
+                >
+                  Build the operator console — shipment visibility, corridor
+                  health, and exception workflows.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.integrations.title"
+                    >Integrations &amp; Operator Tooling</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.integrations.role2.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.integrations.role2.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=solutions-engineer-fleet-tms"
+              class="job-row"
+              data-track="integrations"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.integrations.role3.title"
+                >
+                  Solutions Engineer — Fleet &amp; TMS Integration
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.integrations.role3.summary"
+                >
+                  Connect fleet operators and TMS/WMS platforms to the GoLynk
+                  orchestration layer.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.integrations.title"
+                    >Integrations &amp; Operator Tooling</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.integrations.role3.location"
+                    >EU (Remote)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.integrations.role3.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- ===== Corridor Deployment & Operations ===== -->
+          <div class="track-section" data-track="deployment">
+            <div class="track-header">
+              <h2 class="track-title" data-i18n="jobs.tracks.deployment.title">
+                Corridor Deployment &amp; Operations
+              </h2>
+              <p
+                class="track-subtitle"
+                data-i18n="jobs.tracks.deployment.subtitle"
+              >
+                SLA playbooks, partner onboarding, microhub validation, corridor
+                health.
+              </p>
+            </div>
+
+            <a
+              href="./apply.html?job=corridor-deployment-lead-germany"
+              class="job-row"
+              data-track="deployment"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.deployment.role1.title"
+                >
+                  Corridor Deployment Lead — Germany
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.deployment.role1.summary"
+                >
+                  Lead corridor launches end-to-end — partner readiness, SLA
+                  setup, and density validation.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.deployment.title"
+                    >Corridor Deployment &amp; Operations</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.deployment.role1.location"
+                    >Germany (On-site)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.deployment.role1.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=partner-operations-microhub"
+              class="job-row"
+              data-track="deployment"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.deployment.role2.title"
+                >
+                  Partner Operations — Microhub Network
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.deployment.role2.summary"
+                >
+                  Manage microhub partner relationships, capacity alignment, and
+                  operational readiness.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.deployment.title"
+                    >Corridor Deployment &amp; Operations</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.deployment.role2.location"
+                    >Germany (Hybrid)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.deployment.role2.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=carrier-onboarding-lead-playbooks"
+              class="job-row"
+              data-track="deployment"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.deployment.role3.title"
+                >
+                  Carrier Onboarding Lead — Corridor Playbooks
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.deployment.role3.summary"
+                >
+                  Design and execute carrier onboarding playbooks for
+                  corridor-level SLA compliance.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.deployment.title"
+                    >Corridor Deployment &amp; Operations</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.deployment.role3.location"
+                    >Germany (On-site)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.deployment.role3.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- ===== Logistics Research (Zero-Touch) ===== -->
+          <div class="track-section" data-track="research">
+            <div class="track-header">
+              <h2 class="track-title" data-i18n="jobs.tracks.research.title">
+                Logistics Research (Zero-Touch)
+              </h2>
+              <p
+                class="track-subtitle"
+                data-i18n="jobs.tracks.research.subtitle"
+              >
+                Network economics, corridor design theory, incentive alignment,
+                verification systems.
+              </p>
+            </div>
+
+            <a
+              href="./apply.html?job=logistics-researcher-corridor-design"
+              class="job-row"
+              data-track="research"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.research.role1.title"
+                >
+                  Logistics Researcher — Corridor Design
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.research.role1.summary"
+                >
+                  Model corridor topology, network effects, and structural
+                  efficiency at the lane level.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.research.title"
+                    >Logistics Research (Zero-Touch)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role1.location"
+                    >EU (Remote)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role1.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=applied-research-zero-touch"
+              class="job-row"
+              data-track="research"
+              data-location="aachen"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.research.role2.title"
+                >
+                  Applied Research — Zero-Touch Operations
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.research.role2.summary"
+                >
+                  Research automation-first operational models for corridor
+                  logistics without manual intervention.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.research.title"
+                    >Logistics Research (Zero-Touch)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role2.location"
+                    >EU (Remote)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role2.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=network-economics-pricing"
+              class="job-row"
+              data-track="research"
+              data-location="remote"
+              data-type="contract"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.research.role3.title"
+                >
+                  Network Economics — Pricing &amp; Incentives
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.research.role3.summary"
+                >
+                  Design pricing models and incentive structures that align
+                  fairness with network growth.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.research.title"
+                    >Logistics Research (Zero-Touch)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role3.location"
+                    >Remote</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role3.type"
+                    >Contract</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+
+            <a
+              href="./apply.html?job=verification-systems-chain-of-custody"
+              class="job-row"
+              data-track="research"
+              data-location="remote"
+              data-type="full-time"
+            >
+              <div>
+                <div
+                  class="job-title"
+                  data-i18n="jobs.roles.research.role4.title"
+                >
+                  Verification Systems — Chain-of-Custody
+                </div>
+                <div
+                  class="job-summary"
+                  data-i18n="jobs.roles.research.role4.summary"
+                >
+                  Design trust and verification frameworks for handoff integrity
+                  across multi-hop corridors.
+                </div>
+                <div class="job-meta">
+                  <span data-i18n="jobs.tracks.research.title"
+                    >Logistics Research (Zero-Touch)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role4.location"
+                    >EU (Remote)</span
+                  >
+                  <span class="job-meta-sep">&middot;</span>
+                  <span data-i18n="jobs.roles.research.role4.type"
+                    >Full-time</span
+                  >
+                </div>
+              </div>
+              <span class="job-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- No results message -->
+          <div class="no-results" id="no-results" data-i18n="jobs.noResults">
+            No roles match your current filters. Try adjusting your selection.
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4. WHAT WE LOOK FOR ========== -->
+      <section class="py-16" style="border-top: 1px solid var(--border-color)">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2 class="track-title mb-8" data-i18n="jobs.lookFor.heading">
+            What we look for
+          </h2>
+
+          <div class="space-y-3 max-w-[560px]">
+            <div class="look-for-item" data-i18n="jobs.lookFor.item1">
+              Systems thinking under real constraints
+            </div>
+            <div class="look-for-item" data-i18n="jobs.lookFor.item2">
+              Calm execution and measurable outcomes
+            </div>
+            <div class="look-for-item" data-i18n="jobs.lookFor.item3">
+              Respect for operational integrity (SLAs, verification,
+              accountability)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 5. GENERAL APPLICATION ========== -->
+      <section
+        id="general-application"
+        class="py-20"
+        style="background: var(--bg-secondary)"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="max-w-[560px]">
+            <h2
+              class="section-title mb-6"
+              data-i18n="jobs.generalApplication.heading"
+            >
+              General application
+            </h2>
+
+            <p
+              class="section-body mb-8"
+              data-i18n="jobs.generalApplication.description"
+            >
+              If you don't see a perfect match, send an introduction. We hire
+              for depth, clarity, and systems thinking.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-6">
+              <a
+                href="mailto:careers@golynk.com?subject=GoLynk%20General%20Application"
+                class="btn-jobs-primary"
+                data-i18n="jobs.generalApplication.ctaPrimary"
+              >
+                Send introduction
+              </a>
+              <a
+                href="../careers.html"
+                class="btn-jobs-secondary"
+                data-i18n="jobs.generalApplication.ctaSecondary"
+              >
+                Back to careers
+              </a>
+            </div>
+
+            <p
+              class="text-[13px] leading-relaxed"
+              style="color: var(--text-muted)"
+              data-i18n="jobs.generalApplication.microcopy"
+            >
+              Include links (LinkedIn/GitHub) and a short note on what you want
+              to build.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="pt-8 overflow-hidden">
+        <div class="space-y-12">
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+          >
+            <!-- CTA Buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+              data-animate="fade-up"
+              data-duration="800"
+            >
+              <a
+                href="../shipper.html#early-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-ship"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.startShipping"
+                  >Start Shipping</span
+                >
+              </a>
+              <a
+                href="../carrier.html#carrier-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-delivery"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.deliverWithUs"
+                  >Deliver with us</span
+                >
+              </a>
+            </div>
+            <!-- Newsletter Column -->
+            <div class="flex flex-col items-center lg:items-start gap-3">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.newsletter.title"
+              >
+                Stay up to date
+              </h3>
+              <form class="flex gap-2" id="footer-newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
+                  class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                  data-i18n="common.footer.newsletter.button"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Footer Grid -->
+          <div
+            class="grid md:grid-cols-5 gap-12"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Company Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.company.title"
+              >
+                Company
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="../about.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.about"
+                >
+                  About GoLynk
+                </a>
+                <a
+                  href="../index.html#how-it-works"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.howItWorks"
+                >
+                  How It Works
+                </a>
+                <a
+                  href="../index.html#industries"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.industries"
+                >
+                  Industries We Serve
+                </a>
+                <a
+                  href="../index.html#environment"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.sustainability"
+                >
+                  Sustainability &amp; CO₂ Reporting
+                </a>
+                <a
+                  href="../careers.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.careers"
+                >
+                  Careers
+                </a>
+                <a
+                  href="../get-started.html#contact"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.contact"
+                >
+                  Contact
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Shippers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.shippers.title"
+              >
+                For Shippers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="../shipper.html#early-access"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="../pricing.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.pricing"
+                >
+                  Pricing
+                </a>
+                <a
+                  href="../api-docs.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.api"
+                >
+                  Integration &amp; API Docs
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Carriers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.carriers.title"
+              >
+                For Carriers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="../carrier.html#individual-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
+                >
+                  Join as Individual Mover
+                </a>
+                <a
+                  href="../carrier.html#fleet-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
+                >
+                  Fleet Operators
+                </a>
+                <a
+                  href="../carrier.html#dashboard"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
+                >
+                  Operator Dashboard
+                </a>
+              </nav>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.resources.title"
+              >
+                Resources
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="../faq.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.faq"
+                >
+                  FAQ
+                </a>
+                <a
+                  href="../investor.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.investors"
+                >
+                  Investor Relations
+                </a>
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.legal.title"
+              >
+                Legal
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="../privacy.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.privacy"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="../terms.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.terms"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="../cookies.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.cookies"
+                >
+                  Cookie Policy
+                </a>
+                <a
+                  href="../imprint.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.imprint"
+                >
+                  Imprint
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="border-t border-border-default pt-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="400"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
+              <!-- Logo and Tagline -->
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="../">
+                  <img src="../public/Logo.svg" alt="GoLynk" class="h-8" />
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.tagline"
+                >
+                  Orchestrating existing journeys into faster, greener
+                  logistics.
+                </p>
+              </div>
+
+              <!-- Social Links and Copyright -->
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-x"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.copyright"
+                >
+                  &copy; GoLynk 2026. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="../src/js/main.ts"></script>
+
+    <!-- ========== FILTERING LOGIC ========== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterTrack = document.getElementById("filter-track");
+        const filterLocation = document.getElementById("filter-location");
+        const filterType = document.getElementById("filter-type");
+        const filterSearch = document.getElementById("filter-search");
+        const jobListings = document.getElementById("job-listings");
+        const noResults = document.getElementById("no-results");
+        const visibleCount = document.getElementById("visible-count");
+
+        // Read URL params and set initial filter state
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("track") && filterTrack) {
+          filterTrack.value = params.get("track");
+        }
+        if (params.get("location") && filterLocation) {
+          filterLocation.value = params.get("location");
+        }
+        if (params.get("type") && filterType) {
+          filterType.value = params.get("type");
+        }
+        if (params.get("q") && filterSearch) {
+          filterSearch.value = params.get("q");
+        }
+
+        function applyFilters() {
+          const track = filterTrack ? filterTrack.value : "all";
+          const location = filterLocation ? filterLocation.value : "all";
+          const type = filterType ? filterType.value : "all";
+          const search = filterSearch
+            ? filterSearch.value.toLowerCase().trim()
+            : "";
+
+          const trackSections = jobListings.querySelectorAll(".track-section");
+          let totalVisible = 0;
+
+          trackSections.forEach(function (section) {
+            const sectionTrack = section.getAttribute("data-track");
+
+            // Hide entire section if track filter doesn't match
+            if (track !== "all" && sectionTrack !== track) {
+              section.style.display = "none";
+              return;
+            }
+
+            section.style.display = "";
+            const rows = section.querySelectorAll(".job-row");
+            let sectionVisible = 0;
+
+            rows.forEach(function (row) {
+              const rowTrack = row.getAttribute("data-track");
+              const rowLocation = row.getAttribute("data-location");
+              const rowType = row.getAttribute("data-type");
+              const rowText = row.textContent.toLowerCase();
+
+              let show = true;
+
+              if (track !== "all" && rowTrack !== track) show = false;
+              if (location !== "all" && rowLocation !== location) show = false;
+              if (type !== "all" && rowType !== type) show = false;
+              if (search && !rowText.includes(search)) show = false;
+
+              row.style.display = show ? "" : "none";
+              if (show) {
+                sectionVisible++;
+                totalVisible++;
+              }
+            });
+
+            // Hide section header if no rows visible
+            if (
+              sectionVisible === 0 &&
+              (track === "all" || sectionTrack === track)
+            ) {
+              section.style.display = "none";
+            }
+          });
+
+          // Show/hide no results
+          if (noResults) {
+            noResults.style.display = totalVisible === 0 ? "block" : "none";
+          }
+
+          // Update count
+          if (visibleCount) {
+            visibleCount.textContent =
+              totalVisible + " role" + (totalVisible !== 1 ? "s" : "");
+          }
+
+          // Update URL without reload
+          var url = new URL(window.location);
+          if (track !== "all") url.searchParams.set("track", track);
+          else url.searchParams.delete("track");
+          if (location !== "all") url.searchParams.set("location", location);
+          else url.searchParams.delete("location");
+          if (type !== "all") url.searchParams.set("type", type);
+          else url.searchParams.delete("type");
+          if (search) url.searchParams.set("q", search);
+          else url.searchParams.delete("q");
+          window.history.replaceState({}, "", url);
+        }
+
+        // Bind events
+        if (filterTrack) filterTrack.addEventListener("change", applyFilters);
+        if (filterLocation)
+          filterLocation.addEventListener("change", applyFilters);
+        if (filterType) filterType.addEventListener("change", applyFilters);
+        if (filterSearch) filterSearch.addEventListener("input", applyFilters);
+
+        // Apply on load (handles URL params)
+        applyFilters();
+      });
+    </script>
+  </body>
+</html>

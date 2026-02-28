@@ -1,0 +1,113 @@
+{
+  "title": "Cookie Policy",
+  "lastUpdated": "Last updated:",
+  "intro": "This Cookie Policy explains how GoLynk uses cookies and similar technologies on its website. It complements the Privacy Policy and describes the technical mechanisms used to ensure platform stability and security.",
+  "sidebar": {
+    "title": "On This Page",
+    "links": {
+      "overview": "Overview",
+      "whatAreCookies": "What Are Cookies",
+      "categories": "Categories",
+      "noAdvertising": "No Advertising",
+      "legalBasis": "Legal Basis",
+      "managingCookies": "Managing Cookies",
+      "transfers": "Transfers",
+      "changes": "Changes",
+      "contact": "Contact"
+    }
+  },
+  "overview": {
+    "title": "Key Overview",
+    "items": [
+      "GoLynk currently uses only essential technical cookies.",
+      "No behavioral advertising cookies are deployed.",
+      "No third-party marketing trackers are active.",
+      "Analytics tools may be introduced later in privacy-friendly form.",
+      "Users can control cookies through browser settings."
+    ]
+  },
+  "whatAreCookies": {
+    "title": "What Are Cookies?",
+    "description": "Cookies are small text files stored on your device when visiting a website. They allow systems to recognize sessions, maintain technical state, and support security mechanisms.",
+    "clarification": "Cookies do not inherently identify a person but may be considered personal data when combined with other information."
+  },
+  "categories": {
+    "title": "Categories of Cookies Used",
+    "essentialTitle": "2.1 Essential Technical Cookies",
+    "essentialPurpose": "Purpose",
+    "essentialPurposeText": "Ensure website functionality, session integrity, and security.",
+    "essentialExamples": "Examples",
+    "essentialItems": [
+      "Session identifiers",
+      "Security tokens",
+      "Load balancing mechanisms"
+    ],
+    "essentialLegalBasis": "Legal Basis",
+    "essentialLegalBasisText": "Article 6(1)(f) GDPR — legitimate interest in secure website operation.",
+    "essentialImportant": "Important",
+    "essentialImportantText": "These cookies cannot be disabled without impairing core functionality.",
+    "analyticsTitle": "2.2 Analytics (Future Use)",
+    "analyticsStatus": "Current Status",
+    "analyticsStatusText": "At this stage, GoLynk does not deploy marketing analytics or behavioral advertising cookies.",
+    "analyticsFuture": "Future Implementation",
+    "analyticsFutureIntro": "If privacy-friendly analytics (e.g., aggregated, cookie-less measurement) are introduced in the future:",
+    "analyticsFutureItems": [
+      "They will be designed to minimize personal data.",
+      "This page will be updated accordingly.",
+      "Required consent mechanisms will be implemented if legally necessary."
+    ]
+  },
+  "noAdvertising": {
+    "title": "No Advertising or Profiling",
+    "intro": "GoLynk does not:",
+    "items": [
+      "Use third-party advertising networks",
+      "Deploy cross-site tracking pixels",
+      "Engage in behavioral profiling",
+      "Sell personal data to advertisers"
+    ],
+    "note": "This approach reflects our commitment to user privacy and compliance with data protection regulations."
+  },
+  "legalBasis": {
+    "title": "Legal Basis",
+    "intro": "Essential technical cookies are processed under the following legal basis:",
+    "basis1": "Article 6(1)(f) GDPR",
+    "basis1Desc": "legitimate interest in ensuring secure and stable website operation.",
+    "basis2": "Article 6(1)(a) GDPR",
+    "basis2Desc": "where consent becomes required (e.g., non-essential analytics), processing will rely on explicit consent."
+  },
+  "managingCookies": {
+    "title": "Managing Cookies",
+    "intro": "Users can control and delete cookies via browser settings.",
+    "subIntro": "Most browsers allow users to:",
+    "items": [
+      "View stored cookies",
+      "Delete cookies",
+      "Block cookies",
+      "Set alerts before storing cookies"
+    ],
+    "note": "Consult your browser's help documentation or privacy settings for specific instructions. Disabling essential cookies may impact website functionality."
+  },
+  "transfers": {
+    "title": "International Data Transfers",
+    "text": "Currently, cookie-related data is processed within the European Union. If future tools involve international data transfers, appropriate safeguards (such as Standard Contractual Clauses) will be implemented in accordance with GDPR."
+  },
+  "changes": {
+    "title": "Changes to This Policy",
+    "text": "This Cookie Policy may be updated if GoLynk introduces additional technologies or modifies its tracking practices. The \"Last updated\" date at the top of this page reflects the most recent revision."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "For questions regarding this Cookie Policy:",
+    "name": "Ibrahim Ismail",
+    "address": "Kastanienweg 4",
+    "city": "52074 Aachen",
+    "country": "Germany",
+    "email": "contact@golynk.com",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "imprint": "Imprint / Legal Notice"
+    }
+  }
+}

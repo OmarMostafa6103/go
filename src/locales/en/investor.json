@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Investors — GoLynk",
+    "description": "GoLynk is building the coordination architecture for European logistics — designed for density, capital efficiency, and structured cross-border expansion."
+  },
+  "hero": {
+    "heading": "Infrastructure That Compounds",
+    "description": "GoLynk is building the coordination architecture for European logistics — designed for density, capital efficiency, and structured cross-border expansion.",
+    "validated": "Validated. Measured. Expandable.",
+    "ctaPrimary": "Request Executive Overview",
+    "ctaSecondary": "Schedule Strategic Discussion"
+  },
+  "capitalEfficiency": {
+    "title": "A Capital-Efficient Infrastructure Model",
+    "description": "GoLynk scales without fleet ownership. By structuring existing movement into validated corridors, the platform increases density before geographic expansion. Capital compounds through intelligence, not asset accumulation.",
+    "bullets": {
+      "assetLight": "Asset-light deployment",
+      "corridorValidation": "Corridor validation before expansion",
+      "densityDriven": "Density-driven economics",
+      "structuralMargin": "Structural margin improvement"
+    },
+    "diagram": {
+      "layer1": "Existing Transport Movement",
+      "layer2": "Coordination Layer",
+      "layer3": "Compounding Density"
+    }
+  },
+  "networkCompounding": {
+    "title": "Network Compounding Dynamics",
+    "description": "Each validated corridor increases routing intelligence, pricing precision, and carbon traceability. Expansion follows density — not speculation.",
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Corridor Validation"
+      },
+      "step2": {
+        "number": "02",
+        "title": "Density Consolidation"
+      },
+      "step3": {
+        "number": "03",
+        "title": "Adjacency Expansion"
+      },
+      "step4": {
+        "number": "04",
+        "title": "Cross-Border Integration"
+      }
+    }
+  },
+  "capitalAlignment": {
+    "title": "Strategic Capital Alignment",
+    "cards": {
+      "ai": {
+        "title": "Applied AI & Systems Capital",
+        "subtitle": "Opportunity:",
+        "items": {
+          "item1": "Real-world constraint optimization",
+          "item2": "Multi-hop orchestration under time windows",
+          "item3": "Data network effects through corridor validation",
+          "item4": "Embedded pricing intelligence"
+        }
+      },
+      "logistics": {
+        "title": "Logistics & Mobility Investors",
+        "subtitle": "Opportunity:",
+        "items": {
+          "item1": "Margin expansion without asset growth",
+          "item2": "Backhaul monetization",
+          "item3": "Fleet integration readiness",
+          "item4": "Structured density growth"
+        }
+      },
+      "climate": {
+        "title": "Climate & ESG Capital",
+        "subtitle": "Opportunity:",
+        "items": {
+          "item1": "Measurable corridor-level carbon reduction",
+          "item2": "Embedded Scope 3 traceability",
+          "item3": "Regulatory alignment under EU frameworks",
+          "item4": "Infrastructure-level decarbonization"
+        }
+      },
+      "infrastructure": {
+        "title": "Infrastructure & Long-Horizon Capital",
+        "subtitle": "Opportunity:",
+        "items": {
+          "item1": "Phased regional rollout",
+          "item2": "Durable network defensibility",
+          "item3": "Cross-border scalability",
+          "item4": "Compounding operational leverage"
+        }
+      }
+    }
+  },
+  "deployment": {
+    "title": "Deployment Framework",
+    "description": "GoLynk expands through disciplined corridor validation. Geographic growth follows structural density and operational proof.",
+    "phases": {
+      "phase1": "Pilot Corridors",
+      "phase2": "Density Consolidation",
+      "phase3": "Regional Integration",
+      "phase4": "Cross-Border Expansion"
+    }
+  },
+  "market": {
+    "title": "A Structural Market Shift",
+    "description": "European freight movement remains fragmented across parcel, freight, and regional carriers. Efficiency gains increasingly depend on coordination rather than asset expansion.",
+    "highlights": {
+      "fragmented": "Fragmented Networks",
+      "regulatory": "Regulatory Pressure",
+      "underutilized": "Underutilized Return Capacity"
+    }
+  },
+  "vision": {
+    "title": "Toward Coordinated European Infrastructure",
+    "description": "GoLynk is positioned to become the structural coordination layer beneath fragmented transport systems — increasing efficiency, lowering systemic emissions, and enabling density without duplication."
+  },
+  "cta": {
+    "heading": "Executive Briefing Available Upon Request",
+    "ctaPrimary": "Request Executive Overview",
+    "ctaSecondary": "Engage in Strategic Discussion",
+    "note": "Deployment roadmap and capital alignment summary provided directly to institutional partners."
+  }
+}

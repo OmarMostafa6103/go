@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Investor Pack | GoLynk",
+    "description": "Request GoLynk's investor materials. Executive overview, deployment roadmap, and orchestration architecture for aligned infrastructure funds."
+  },
+  "hero": {
+    "title": "Request Investor Pack",
+    "description": "GoLynk's executive materials for institutional investors and strategic partners. Selective distribution. Designed for aligned infrastructure funds seeking deployment-ready logistics solutions.",
+    "microcopy": "Selective distribution. No mailing lists. No public downloads.",
+    "ctaPrimary": "Request Executive Overview",
+    "ctaSecondary": "Schedule Discussion"
+  },
+  "packContents": {
+    "title": "Included in the pack",
+    "items": [
+      {
+        "name": "Executive Overview",
+        "description": "5-year strategic vision, market opportunity, and deployment timeline for European corridors."
+      },
+      {
+        "name": "Deployment Roadmap",
+        "description": "Phased expansion plan, capital requirements, and operational milestones across priority corridors."
+      },
+      {
+        "name": "Orchestration Architecture",
+        "description": "Technical infrastructure, AI-driven routing logic, and carrier integration protocols."
+      },
+      {
+        "name": "Pricing Logic",
+        "description": "Unit economics, pricing strategy, and margin structure across shipment types and corridors."
+      },
+      {
+        "name": "Carbon & Scope 3 Measurement",
+        "description": "ESG framework, carbon offset calculation, and sustainability impact metrics for investor reporting."
+      },
+      {
+        "name": "Strategic Integration Brief",
+        "description": "Partnership models, technical requirements, and commercial terms for corridor operators."
+      }
+    ]
+  },
+  "focusChips": {
+    "title": "Which areas interest you most?",
+    "options": [
+      {
+        "id": "applied-ai",
+        "label": "Applied AI & Routing"
+      },
+      {
+        "id": "logistics",
+        "label": "Logistics Infrastructure"
+      },
+      {
+        "id": "climate",
+        "label": "Climate & ESG"
+      },
+      {
+        "id": "infrastructure",
+        "label": "European Infrastructure"
+      },
+      {
+        "id": "operator",
+        "label": "Operator Partnerships"
+      },
+      {
+        "id": "other",
+        "label": "Other"
+      }
+    ]
+  },
+  "form": {
+    "title": "Request Materials",
+    "description": "Share a few details. We'll respond within 24–48 hours with your tailored investor pack.",
+    "fields": {
+      "fullName": {
+        "label": "Full Name",
+        "required": true
+      },
+      "organization": {
+        "label": "Organization / Fund",
+        "required": true
+      },
+      "role": {
+        "label": "Role",
+        "placeholder": "e.g. Partner, Investment Director",
+        "required": false
+      },
+      "focusArea": {
+        "label": "Focus Area",
+        "placeholder": "Select from above",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "required": true
+      },
+      "note": {
+        "label": "Additional Notes",
+        "placeholder": "Tell us about your fund or investment thesis...",
+        "required": false
+      }
+    },
+    "submit": "Request Pack",
+    "microcopy": "Response within 24–48 hours. Materials shared selectively. No automated distribution.",
+    "emailFallback": "Prefer email? Send to invest@golynk.com",
+    "successMessage": "Opening your email client. If it doesn't open, please send the form details to invest@golynk.com"
+  },
+  "discussion": {
+    "title": "Schedule a Strategic Discussion",
+    "description": "For aligned partners: corridor deployment, integration depth, and capital deployment priorities.",
+    "note": "Include your focus area and preferred time window in your message.",
+    "scheduleMeeting": "Request Meeting",
+    "sendIntroduction": "Send Introduction"
+  },
+  "footnotes": {
+    "text": "Learn more about GoLynk's strategy and infrastructure:",
+    "links": {
+      "investorNarrative": "Investor Narrative",
+      "about": "About",
+      "glTech": "GL Tech",
+      "contact": "Contact"
+    }
+  }
+}

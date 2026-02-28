@@ -199,15 +199,7 @@
                 </a>
 
                 <a
-                  href="#partners"
-                  class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
-                  data-i18n="common.navigation.partners"
-                >
-                  Partners
-                </a>
-
-                <a
-                  href="#technology"
+                  href="./index.html#technology"
                   class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
                   data-i18n="common.navigation.glTech"
                 >
@@ -215,7 +207,7 @@
                 </a>
 
                 <a
-                  href="#environment"
+                  href="./index.html#environment"
                   class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
                   data-i18n="common.navigation.environment"
                 >
@@ -240,12 +232,13 @@
                   contact
                 </button>
 
-                <button
+                <a
+                  href="./get-started.html"
                   class="hidden md:block px-5 py-2.5 primary-btn"
                   data-i18n="common.cta.startNow"
                 >
                   Start Now
-                </button>
+                </a>
 
                 <!-- Language Selector -->
                 <select
@@ -262,18 +255,6 @@
                     class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
                   >
                     DE
-                  </option>
-                  <option
-                    value="fr"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    FR
-                  </option>
-                  <option
-                    value="nl"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    NL
                   </option>
                 </select>
               </div>
@@ -330,6 +311,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="350"
+                data-i18n="carrier.hero.badges.zeroDeviation"
               >
                 Zero-deviation matching (we respect your route and schedule)
               </li>
@@ -338,6 +320,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="400"
+                data-i18n="carrier.hero.badges.transparentEarnings"
               >
                 Transparent earnings per job / per lane
               </li>
@@ -346,6 +329,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="450"
+                data-i18n="carrier.hero.badges.fastPayout"
               >
                 Fast payout options + clear settlement
               </li>
@@ -354,6 +338,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="500"
+                data-i18n="carrier.hero.badges.verifiedShippers"
               >
                 Verified shippers + insured handoffs
               </li>
@@ -365,22 +350,22 @@
               data-delay="400"
             >
               <a
-                href="./shipper.html"
-                class="px-7 py-4 secondary-btn inline-flex items-center justify-center w-fit"
+                href="#individual-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="400"
                 data-i18n="carrier.hero.cta.startEarning"
               >
-                Join as a Carrier
+                Join as Individual Mover
               </a>
 
               <a
-                href="./carrier.html"
-                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
-                data-i18n="carrier.hero.cta.bookDemo"
+                href="#fleet-access"
+                class="px-7 py-4 secondary-btn inline-flex items-center justify-center w-fit"
+                data-i18n="carrier.hero.cta.fleetAccess"
               >
-                Book Fleet Demon
+                Fleet Operators
               </a>
             </div>
             <div
@@ -533,6 +518,7 @@
               class="h1 text-text-primary"
               data-animate="fade-up"
               data-duration="800"
+              data-i18n="carrier.twoWays.heading"
             >
               Two Ways to Carry With GoLynk
             </h2>
@@ -541,6 +527,7 @@
               data-animate="fade-up"
               data-duration="800"
               data-delay="100"
+              data-i18n="carrier.twoWays.description"
             >
               Individuals turn everyday movement into income. Fleets turn
               underused capacity into margin—on the same intelligent network.
@@ -573,7 +560,7 @@
                   >
                     For People Who Move
                   </h3>
-                  <p class="text-text-secondary body font-semibold mb-2">
+                  <p class="text-text-secondary body font-semibold mb-2" data-i18n="carrier.individuals.intro">
                     Turn your commute, city walks, and rides into extra
                     income—without changing your life.
                   </p>
@@ -598,7 +585,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.individuals.benefits.routeOnly">
                         Jobs only along your usual routes—no cross‑city detours
                       </span>
                     </li>
@@ -608,7 +595,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.individuals.benefits.noVehicle">
                         No new vehicle required: walk, bike, car, van, or public
                         transport
                       </span>
@@ -619,7 +606,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.individuals.benefits.clearEarnings">
                         Clear earnings per job and instant or same‑day payouts
                       </span>
                     </li>
@@ -629,12 +616,12 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.individuals.benefits.cleanerCities">
                         See your contribution to cleaner, less congested cities
                       </span>
                     </li>
                   </ul>
-                  <p class="text-text-secondary text-sm italic pt-2">
+                  <p class="text-text-secondary text-sm italic pt-2" data-i18n="carrier.individuals.note">
                     Perfect for students, commuters, part‑time earners, and city
                     explorers.
                   </p>
@@ -695,7 +682,7 @@
                   >
                     For Fleets & Operators
                   </h3>
-                  <p class="text-text-secondary body font-semibold mb-2">
+                  <p class="text-text-secondary body font-semibold mb-2" data-i18n="carrier.businesses.intro">
                     Make every kilometre count—without changing routes or adding
                     vehicles.
                   </p>
@@ -794,7 +781,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.benefits.realtimeView">
                         Real-time view of utilisation across vehicles and lanes
                       </span>
                     </li>
@@ -804,7 +791,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.benefits.betterMargin">
                         Better margin per trip by filling spare capacity and
                         backhauls
                       </span>
@@ -815,7 +802,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.benefits.noExtra">
                         No extra vehicles or headcount required
                       </span>
                     </li>
@@ -825,7 +812,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.benefits.zeroDeviation">
                         Zero‑deviation matching: we respect your routes and
                         constraints
                       </span>
@@ -836,7 +823,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.benefits.esgReporting">
                         ESG-grade carbon and avoided-emissions reporting per
                         fleet
                       </span>
@@ -846,7 +833,7 @@
 
                 <!-- Integration Tiers -->
                 <div class="space-y-3">
-                  <h4 class="h3 text-text-primary font-semibold">
+                  <h4 class="h3 text-text-primary font-semibold" data-i18n="carrier.businesses.integrationTiers.title">
                     Integration Tiers
                   </h4>
                   <ul class="space-y-2">
@@ -856,7 +843,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.integrationTiers.saas">
                         SaaS Dashboard – Live visibility in weeks, no code
                         required
                       </span>
@@ -867,7 +854,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.integrationTiers.api">
                         API Integration – Connect your TMS or telematics when
                         ready
                       </span>
@@ -878,7 +865,7 @@
                       >
                         <use href="#icon-check"></use>
                       </svg>
-                      <span class="text-text-secondary body">
+                      <span class="text-text-secondary body" data-i18n="carrier.businesses.integrationTiers.whiteLabel">
                         White-Label Marketplace – Your own branded carrier app
                         or portal
                       </span>
@@ -892,7 +879,7 @@
       </section>
       <hr style="color: #e9eaeb" class="my-0" />
       <!-- Features Section -->
-      <section class="py-20 md:py-28">
+      <section id="operator-dashboard" class="py-20 md:py-28">
         <div
           class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-12"
         >
@@ -904,11 +891,13 @@
           >
             <h2
               class="h1 text-text-primary"
+              data-i18n="carrier.features.heading"
             >
               One Control Layer. Two Ways to Participate.
             </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="carrier.features.description"
             >
               GoLynk provides structured tools for both individual couriers and fleet operators — without replacing existing routes or systems.
             </p>
@@ -928,14 +917,14 @@
                 data-toggle-slide="0"
                 data-carousel="features-carousel"
               >
-                <span>For On-Route Couriers</span>
+                <span data-i18n="carrier.features.tabs.couriers">For On-Route Couriers</span>
               </button>
               <button
                 class="features-toggle-btn px-6 py-3 rounded-lg font-semibold transition-all"
                 data-toggle-slide="1"
                 data-carousel="features-carousel"
               >
-                <span>For Fleets & Operators</span>
+                <span data-i18n="carrier.features.tabs.fleets">For Fleets & Operators</span>
               </button>
             </div>
 
@@ -957,10 +946,10 @@
                     <div class="space-y-6">
                       <!-- Intro -->
                       <div class="space-y-3">
-                        <h3 class="h2-sm text-text-primary">
+                        <h3 class="h2-sm text-text-primary" data-i18n="carrier.features.couriers.heading">
                           For On-Route Couriers
                         </h3>
-                        <p class="text-text-secondary text-h3">
+                        <p class="text-text-secondary text-h3" data-i18n="carrier.features.couriers.description">
                           Turn daily movement into structured earnings — without changing your route.
                         </p>
                       </div>
@@ -968,46 +957,46 @@
                       <!-- Capability Blocks -->
                       <div class="space-y-4">
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.couriers.startInMinutes.title">
                             Start in Minutes
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.couriers.startInMinutes.description">
                             Verify once. Add your typical routes and availability.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.couriers.zeroDeviation.title">
                             Zero-Deviation Matching
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.couriers.zeroDeviation.description">
                             Only see jobs aligned with your natural path and timing.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.couriers.transparentEarnings.title">
                             Transparent Earnings
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.couriers.transparentEarnings.description">
                             Distance, effort, and payout visible before acceptance.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.couriers.fastSettlement.title">
                             Fast Settlement
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.couriers.fastSettlement.description">
                             Instant or same-day payouts with clear breakdown.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.couriers.verifiedWorkflows.title">
                             Verified & Insured Workflows
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.couriers.verifiedWorkflows.description">
                             All handoffs logged, verified, and supported in-app.
                           </p>
                         </div>
@@ -1028,10 +1017,10 @@
                     <div class="space-y-6">
                       <!-- Intro -->
                       <div class="space-y-3">
-                        <h3 class="h2-sm text-text-primary">
+                        <h3 class="h2-sm text-text-primary" data-i18n="carrier.features.fleets.heading">
                           For Fleets & Operators
                         </h3>
-                        <p class="text-text-secondary text-h3">
+                        <p class="text-text-secondary text-h3" data-i18n="carrier.features.fleets.description">
                           Activate spare capacity across your network — without operational disruption.
                         </p>
                       </div>
@@ -1039,46 +1028,46 @@
                       <!-- Capability Blocks -->
                       <div class="space-y-4">
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.fleets.zeroDeviation.title">
                             Zero-Deviation Demand
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.fleets.zeroDeviation.description">
                             Jobs surface only when they respect route constraints and SLAs.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.fleets.utilisation.title">
                             Utilisation Visibility
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.fleets.utilisation.description">
                             Revenue per vehicle, lane, and corridor — in real time.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.fleets.backhaul.title">
                             Backhaul Recovery
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.fleets.backhaul.description">
                             Fill empty return legs before booking new dedicated runs.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.fleets.integratedControl.title">
                             Integrated Control
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.fleets.integratedControl.description">
                             Dashboard-first deployment. API integration when ready.
                           </p>
                         </div>
 
                         <div class="space-y-2">
-                          <h4 class="h3-sm text-text-primary font-semibold">
+                          <h4 class="h3-sm text-text-primary font-semibold" data-i18n="carrier.features.fleets.carbonReporting.title">
                             Carbon & Compliance Reporting
                           </h4>
-                          <p class="text-text-secondary body">
+                          <p class="text-text-secondary body" data-i18n="carrier.features.fleets.carbonReporting.description">
                             Per-lane CO₂ visibility and structured chain-of-custody logs.
                           </p>
                         </div>
@@ -1229,16 +1218,19 @@
           >
             <p
               class="text-primary text-lg font-semibold mb-0"
+              data-i18n="carrier.advantages.subheading"
             >
               Carrier Advantages
             </p>
             <h2
               class="h1 text-text-primary"
+              data-i18n="carrier.advantages.heading"
             >
               Activate Capacity. Increase Margin. Stay in Control.
             </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="carrier.advantages.description"
             >
               GoLynk turns spare space on routes already in motion into structured revenue—without detours or operational disruption.
             </p>
@@ -1260,11 +1252,13 @@
               </svg>
               <h3
                 class="h3 text-primary-dark font-semibold"
+                data-i18n="carrier.advantages.higherUtilisation.title"
               >
                 Higher Utilisation
               </h3>
               <p
                 class="text-primary body"
+                data-i18n="carrier.advantages.higherUtilisation.description"
               >
                 Fill spare capacity and backhauls before adding new runs—raise revenue per route.
               </p>
@@ -1278,11 +1272,13 @@
               </svg>
               <h3
                 class="h3 text-primary-dark font-semibold"
+                data-i18n="carrier.advantages.routeIntegrity.title"
               >
                 Route Integrity
               </h3>
               <p
                 class="text-primary body"
+                data-i18n="carrier.advantages.routeIntegrity.description"
               >
                 Zero-deviation matching respects your timing, SLAs, vehicle limits, and constraints.
               </p>
@@ -1297,11 +1293,13 @@
               </svg>
               <h3
                 class="h3 text-primary-dark font-semibold"
+                data-i18n="carrier.advantages.predictableSettlement.title"
               >
                 Predictable Settlement
               </h3>
               <p
                 class="text-primary body"
+                data-i18n="carrier.advantages.predictableSettlement.description"
               >
                 Transparent pricing per job or lane, with fast payout cycles and clear breakdowns.
               </p>
@@ -1315,11 +1313,13 @@
               </svg>
               <h3
                 class="h3 text-primary-dark font-semibold"
+                data-i18n="carrier.advantages.operationalVisibility.title"
               >
                 Operational Visibility
               </h3>
               <p
                 class="text-primary body"
+                data-i18n="carrier.advantages.operationalVisibility.description"
               >
                 Track utilisation, on-time performance, exceptions, and CO₂ impact—per vehicle and lane.
               </p>
@@ -1340,16 +1340,19 @@
           >
             <p
               class="text-primary text-lg font-semibold mb-0"
+              data-i18n="carrier.technology.subheading"
             >
               Technology
             </p>
             <h2
               class="h1 text-text-primary"
+              data-i18n="carrier.technology.heading"
             >
               Orchestration Built Around Carrier Constraints
             </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="carrier.technology.description"
             >
               We sit on top of your routes—only surfacing demand that fits your real-world rules.
             </p>
@@ -1371,7 +1374,7 @@
                 <svg class="size-5 inline-flex mr-2 -mt-1">
                   <use href="#icon-ai-brain"></use>
                 </svg>
-                <span>Orchestration Graph</span>
+                <span data-i18n="carrier.technology.tabs.orchestrationGraph">Orchestration Graph</span>
               </button>
               <button
                 class="tech-tab text-text-secondary body-semibold px-4 py-2 rounded-md hover:bg-primary-bg transition-colors"
@@ -1380,7 +1383,7 @@
                 <svg class="size-5 inline-flex mr-2 -mt-1">
                   <use href="#icon-road-wayside"></use>
                 </svg>
-                <span>Constraint Matching</span>
+                <span data-i18n="carrier.technology.tabs.constraintMatching">Constraint Matching</span>
               </button>
               <button
                 class="tech-tab text-text-secondary body-semibold px-4 py-2 rounded-md hover:bg-primary-bg transition-colors"
@@ -1389,7 +1392,7 @@
                 <svg class="size-5 inline-flex mr-2 -mt-1">
                   <use href="#icon-discount"></use>
                 </svg>
-                <span>Integration Layer</span>
+                <span data-i18n="carrier.technology.tabs.integrationLayer">Integration Layer</span>
               </button>
               <button
                 class="tech-tab text-text-secondary body-semibold px-4 py-2 rounded-md hover:bg-primary-bg transition-colors"
@@ -1398,7 +1401,7 @@
                 <svg class="size-5 inline-flex mr-2 -mt-1">
                   <use href="#icon-chimney"></use>
                 </svg>
-                <span>Performance Learning</span>
+                <span data-i18n="carrier.technology.tabs.performanceLearning">Performance Learning</span>
               </button>
             </div>
 
@@ -1426,19 +1429,20 @@
                       </div>
                       <h3
                         class="h2-sm"
+                        data-i18n="carrier.technology.orchestrationGraph.title"
                       >
                         Orchestration Graph
                       </h3>
                       <div class="space-y-4">
-                        <p class="text-text-secondary body">Your routes become corridors with capacity, timing, and rules.</p>
+                        <p class="text-text-secondary body" data-i18n="carrier.technology.orchestrationGraph.description">Your routes become corridors with capacity, timing, and rules.</p>
                         <ul class="space-y-2 text-text-secondary body">
                           <li class="flex gap-3">
                             <span class="text-primary flex-shrink-0">✓</span>
-                            <span>No new vehicles.</span>
+                            <span data-i18n="carrier.technology.orchestrationGraph.check1">No new vehicles.</span>
                           </li>
                           <li class="flex gap-3">
                             <span class="text-primary flex-shrink-0">✓</span>
-                            <span>No route disruption.</span>
+                            <span data-i18n="carrier.technology.orchestrationGraph.check2">No route disruption.</span>
                           </li>
                         </ul>
                       </div>
@@ -1474,11 +1478,12 @@
                       </div>
                       <h3
                         class="h2-sm"
+                        data-i18n="carrier.technology.constraintMatching.title"
                       >
                         Constraint Matching
                       </h3>
                       <div class="space-y-4">
-                        <p class="text-text-secondary body">Demand appears only when deviation and SLA limits are met.</p>
+                        <p class="text-text-secondary body" data-i18n="carrier.technology.constraintMatching.description">Demand appears only when deviation and SLA limits are met.</p>
                       </div>
                     </div>
                   </div>
@@ -1512,11 +1517,12 @@
                       </div>
                       <h3
                         class="h2-sm"
+                        data-i18n="carrier.technology.integrationLayer.title"
                       >
                         Integration Layer
                       </h3>
                       <div class="space-y-4">
-                        <p class="text-text-secondary body">Connect via dashboard or API to publish available capacity and receive structured demand, tracking events, settlement data, and CO₂ reporting—without replacing your TMS or dispatch process.</p>
+                        <p class="text-text-secondary body" data-i18n="carrier.technology.integrationLayer.description">Connect via dashboard or API to publish available capacity and receive structured demand, tracking events, settlement data, and CO₂ reporting—without replacing your TMS or dispatch process.</p>
                       </div>
                     </div>
                   </div>
@@ -1550,11 +1556,12 @@
                       </div>
                       <h3
                         class="h2-sm"
+                        data-i18n="carrier.technology.performanceLearning.title"
                       >
                         Performance Learning
                       </h3>
                       <div class="space-y-4">
-                        <p class="text-text-secondary body">ETAs, pricing, and match quality improve as lanes scale.</p>
+                        <p class="text-text-secondary body" data-i18n="carrier.technology.performanceLearning.description">ETAs, pricing, and match quality improve as lanes scale.</p>
                       </div>
                     </div>
                   </div>
@@ -1586,8 +1593,8 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <h2 class="h1 text-text-primary">Frequently asked questions</h2>
-            <p class="text-text-secondary text-h3">
+            <h2 class="h1 text-text-primary" data-i18n="carrier.faq.heading">Frequently asked questions</h2>
+            <p class="text-text-secondary text-h3" data-i18n="carrier.faq.description">
               Common questions about GoLynk for carriers and fleets.
             </p>
           </div>
@@ -1606,6 +1613,7 @@
               >
                 <h3
                   class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                  data-i18n="carrier.faq.q1.question"
                 >
                   Do I need to change my routes or schedule to use GoLynk?
                 </h3>
@@ -1618,7 +1626,7 @@
               <div
                 class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
               >
-                <div class="text-text-secondary body pt-2 pb-4">
+                <div class="text-text-secondary body pt-2 pb-4" data-i18n="carrier.faq.q1.answer">
                   No. GoLynk is designed around the routes you already travel.
                   As an individual, you set your typical paths and time windows;
                   as a fleet, we integrate your existing routes. We only offer
@@ -1640,6 +1648,7 @@
               >
                 <h3
                   class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                  data-i18n="carrier.faq.q2.question"
                 >
                   What types of carriers and vehicles can join?
                 </h3>
@@ -1652,7 +1661,7 @@
               <div
                 class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
               >
-                <div class="text-text-secondary body pt-2 pb-4">
+                <div class="text-text-secondary body pt-2 pb-4" data-i18n="carrier.faq.q2.answer">
                   We support walkers, cyclists, private cars, vans, and trucks,
                   as well as fleets and mobility operators in selected areas.
                   The jobs you see depend on your vehicle type, local
@@ -1673,6 +1682,7 @@
               >
                 <h3
                   class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                  data-i18n="carrier.faq.q3.question"
                 >
                   How do payouts work for carriers and fleets?
                 </h3>
@@ -1685,7 +1695,7 @@
               <div
                 class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
               >
-                <div class="text-text-secondary body pt-2 pb-4">
+                <div class="text-text-secondary body pt-2 pb-4" data-i18n="carrier.faq.q3.answer">
                   You see the payout for each job upfront before accepting. Once
                   a delivery is completed and confirmed, it's added to your
                   balance and paid out on a regular schedule, with instant or
@@ -1707,6 +1717,7 @@
               >
                 <h3
                   class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                  data-i18n="carrier.faq.q4.question"
                 >
                   How does GoLynk protect my operations, customers, and SLAs?
                 </h3>
@@ -1719,7 +1730,7 @@
               <div
                 class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
               >
-                <div class="text-text-secondary body pt-2 pb-4">
+                <div class="text-text-secondary body pt-2 pb-4" data-i18n="carrier.faq.q4.answer">
                   Our matching engine respects your time windows, detour limits,
                   vehicle constraints, and compliance rules. We only fill unused
                   capacity on legs you already plan, so your core customers and
@@ -1740,6 +1751,7 @@
               >
                 <h3
                   class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                  data-i18n="carrier.faq.q5.question"
                 >
                   What does integration look like for fleets and operators?
                 </h3>
@@ -1752,7 +1764,7 @@
               <div
                 class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
               >
-                <div class="text-text-secondary body pt-2 pb-4">
+                <div class="text-text-secondary body pt-2 pb-4" data-i18n="carrier.faq.q5.answer">
                   You can start with the GoLynk dashboard and pilot one corridor
                   without changing your TMS. When you're ready, we offer APIs
                   and data feeds so routes, capacities, and events sync
@@ -1773,6 +1785,7 @@
               >
                 <h3
                   class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                  data-i18n="carrier.faq.q6.question"
                 >
                   How are safety, insurance, and liability handled for carriers?
                 </h3>
@@ -1785,7 +1798,7 @@
               <div
                 class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
               >
-                <div class="text-text-secondary body pt-2 pb-4">
+                <div class="text-text-secondary body pt-2 pb-4" data-i18n="carrier.faq.q6.answer">
                   We work with carriers and fleets to ensure appropriate
                   insurance and liability coverage based on country, vehicle
                   type, and shipment categories. Tasks include clear
@@ -1797,61 +1810,384 @@
 
             <!-- Link to Full FAQ -->
             <div class="pt-6 text-center">
-              <a href="/faq" class="text-primary body-semibold hover:underline">
+              <a href="/faq" class="text-primary body-semibold hover:underline" data-i18n="carrier.faq.viewAll">
                 Still curious? Read the full FAQ →
               </a>
             </div>
           </div>
         </div>
       </section>
-      <!-- Download App Section -->
-      <section class="py-20 md:py-28">
+      <!-- Carrier Access Carousel Section -->
+      <section id="carrier-access" class="py-20 md:py-28">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
-          <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <!-- Left: Text Content -->
-            <div
-              class="space-y-8 order-2 lg:order-1"
-              data-animate="fade-right"
-              data-duration="800"
-            >
-              <div class="space-y-4">
-                <h2
-                  class="h1 text-text-primary"
-                >
-                  Early Carrier Access
-                </h2>
-                <p
-                  class="text-text-secondary text-h3"
-                >
-                  We're onboarding carriers for priority corridors. Share your routes and constraints—we'll confirm where demand fits.
-                </p>
-              </div>
-              <div class="flex flex-col sm:flex-row gap-4">
-                <button
-                  class="px-7 py-4 primary-btn"
-                >
-                  Share Routes & Availability
-                </button>
-                <button
-                  class="px-7 py-4 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors rounded-lg font-semibold"
-                >
-                  Request Fleet Overview
-                </button>
-              </div>
-            </div>
+          <!-- Section Header -->
+          <div class="text-center mb-12" data-animate="fade-up" data-duration="800">
+            <h2 class="h1 text-text-primary mb-4" data-i18n="carrier.accessCarousel.heading">
+              Join the GoLynk Network
+            </h2>
+            <p class="text-text-secondary text-h3 max-w-2xl mx-auto" data-i18n="carrier.accessCarousel.description">
+              Whether you're an individual mover or operating a fleet — there's a place for you.
+            </p>
+          </div>
 
-            <!-- Right: Image -->
-            <div
-              class="relative order-1 lg:order-2"
-              data-animate="fade-left"
-              data-duration="800"
-              data-delay="200"
+          <!-- Toggle Buttons -->
+          <div class="flex justify-center gap-4 mb-10" data-animate="fade-up" data-duration="800" data-delay="100">
+            <button
+              type="button"
+              class="carrier-toggle-btn active px-6 py-3 rounded-full text-sm font-semibold transition-all"
+              data-slide="0"
+              id="individual-access"
             >
-              <img
-                src="./src/assets/images/mobile-app-banner.webp"
-                alt="GoLynk Network"
-                class="w-full h-auto"
-              />
+              <svg class="size-5 mr-2 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Individual Movers
+            </button>
+            <button
+              type="button"
+              class="carrier-toggle-btn px-6 py-3 rounded-full text-sm font-semibold transition-all"
+              data-slide="1"
+              id="fleet-access"
+            >
+              <svg class="size-5 mr-2 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="2"></rect>
+                <path d="M16 8h4l3 3v5h-7V8z"></path>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              Fleet Operators
+            </button>
+          </div>
+
+          <!-- Carousel Container -->
+          <div class="carrier-carousel overflow-hidden" data-animate="fade-up" data-duration="800" data-delay="200">
+            <div class="carrier-carousel-inner flex transition-transform duration-500 ease-in-out">
+              
+              <!-- Slide 1: Individual Movers -->
+              <div class="carrier-carousel-slide w-full flex-shrink-0">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                  <!-- Left: Form -->
+                  <div class="space-y-6 order-2 lg:order-1">
+                    <div class="space-y-2">
+                      <h3 class="h2 text-text-primary" data-i18n="carrier.individualAccess.heading">
+                        Individual Movers
+                      </h3>
+                      <p class="text-text-secondary body-large" data-i18n="carrier.individualAccess.description">
+                        Turn the trips you already take into predictable earnings — zero deviation matching.
+                      </p>
+                    </div>
+
+                    <!-- Individual Intake Form -->
+                    <form class="space-y-4 carrier-intake-form" data-role="individual-carrier">
+                      <input type="hidden" name="role" value="individual-carrier" />
+
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <label for="individual-full_name" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Full Name <span class="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            id="individual-full_name"
+                            name="full_name"
+                            required
+                            placeholder="Your full name"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                        <div>
+                          <label for="individual-email" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Email <span class="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="email"
+                            id="individual-email"
+                            name="email"
+                            required
+                            placeholder="you@email.com"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <label for="individual-city" class="block text-sm font-medium text-text-primary mb-1.5">
+                            City <span class="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            id="individual-city"
+                            name="city"
+                            required
+                            placeholder="e.g. Berlin, Munich"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                        <div>
+                          <label for="individual-mover_type" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Mover Type <span class="text-red-500">*</span>
+                          </label>
+                          <select
+                            id="individual-mover_type"
+                            name="mover_type"
+                            required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors appearance-none cursor-pointer"
+                            style="background-image: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23717680' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e&quot;); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem;"
+                          >
+                            <option value="" disabled selected>Select mover type</option>
+                            <option value="walker">Walker</option>
+                            <option value="bike">Bike</option>
+                            <option value="private-car">Private Car</option>
+                            <option value="van">Van</option>
+                            <option value="pt-commuter">PT Commuter</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label for="individual-typical_route" class="block text-sm font-medium text-text-primary mb-1.5">
+                          Typical Route <span class="text-red-500">*</span>
+                        </label>
+                        <textarea
+                          id="individual-typical_route"
+                          name="typical_route"
+                          required
+                          rows="2"
+                          placeholder="Berlin → Potsdam weekdays 8–10am"
+                          class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
+                        ></textarea>
+                      </div>
+
+                      <div>
+                        <label for="individual-phone" class="block text-sm font-medium text-text-primary mb-1.5">
+                          Phone <span class="text-text-secondary/60 font-normal">(optional)</span>
+                        </label>
+                        <input
+                          type="tel"
+                          id="individual-phone"
+                          name="phone"
+                          placeholder="+49 123 456 7890"
+                          class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        />
+                      </div>
+
+                      <div class="pt-2">
+                        <button
+                          type="submit"
+                          class="w-full sm:w-auto px-7 py-4 primary-btn"
+                          data-i18n="carrier.individualAccess.cta.submit"
+                        >
+                          Share Routes & Availability
+                        </button>
+                      </div>
+
+                      <!-- Trust Microcopy -->
+                      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-text-secondary/70 pt-1">
+                        <span>No commitment</span>
+                        <span>•</span>
+                        <span>Response within 24 hours</span>
+                        <span>•</span>
+                        <span>Priority corridor access</span>
+                      </div>
+
+                      <!-- Success Message -->
+                      <div class="form-success hidden p-4 bg-green-50 border border-green-200 rounded-lg">
+                        <p class="text-green-800 font-medium">Thanks — we'll review your routes and respond shortly.</p>
+                      </div>
+
+                      <!-- Error Message -->
+                      <div class="form-error hidden p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <p class="text-red-800 font-medium">Something went wrong. Please try again or email us directly.</p>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- Right: Image -->
+                  <div class="relative order-1 lg:order-2">
+                    <img
+                      src="./src/assets/images/mobile-app-banner.webp"
+                      alt="GoLynk Individual Movers"
+                      class="w-full h-auto rounded-2xl"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Fleet Operators -->
+              <div class="carrier-carousel-slide w-full flex-shrink-0">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                  <!-- Left: Image -->
+                  <div class="relative">
+                    <img
+                      src="./src/assets/images/fleet-integration.webp"
+                      alt="GoLynk Fleet Integration"
+                      class="w-full h-auto rounded-2xl shadow-lg"
+                      onerror="this.src='./src/assets/images/mobile-app-banner.webp'"
+                    />
+                  </div>
+
+                  <!-- Right: Form -->
+                  <div class="space-y-6">
+                    <div class="space-y-2">
+                      <h3 class="h2 text-text-primary" data-i18n="carrier.fleetAccess.heading">
+                        Fleet Operators
+                      </h3>
+                      <p class="text-text-secondary body-large" data-i18n="carrier.fleetAccess.description">
+                        Monetize spare fleet capacity without disrupting routing.
+                      </p>
+                    </div>
+
+                    <!-- Fleet Intake Form -->
+                    <form class="space-y-4 carrier-intake-form" data-role="fleet-operator">
+                      <input type="hidden" name="role" value="fleet-operator" />
+
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <label for="fleet-full_name" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Full Name <span class="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            id="fleet-full_name"
+                            name="full_name"
+                            required
+                            placeholder="Your full name"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                        <div>
+                          <label for="fleet-company_name" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Company Name <span class="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            id="fleet-company_name"
+                            name="company_name"
+                            required
+                            placeholder="Your company"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <label for="fleet-email" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Email <span class="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="email"
+                            id="fleet-email"
+                            name="email"
+                            required
+                            placeholder="you@company.com"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                        <div>
+                          <label for="fleet-fleet_size" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Fleet Size <span class="text-red-500">*</span>
+                          </label>
+                          <select
+                            id="fleet-fleet_size"
+                            name="fleet_size"
+                            required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors appearance-none cursor-pointer"
+                            style="background-image: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23717680' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e&quot;); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem;"
+                          >
+                            <option value="" disabled selected>Select fleet size</option>
+                            <option value="1-10">1–10 vehicles</option>
+                            <option value="11-50">11–50 vehicles</option>
+                            <option value="51-200">51–200 vehicles</option>
+                            <option value="200+">200+ vehicles</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label for="fleet-lanes_regions" class="block text-sm font-medium text-text-primary mb-1.5">
+                          Primary Lanes / Regions <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="fleet-lanes_regions"
+                          name="lanes_regions"
+                          required
+                          placeholder="e.g. Berlin metro, NRW, Hamburg–Frankfurt"
+                          class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        />
+                      </div>
+
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <label for="fleet-phone" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Phone <span class="text-text-secondary/60 font-normal">(optional)</span>
+                          </label>
+                          <input
+                            type="tel"
+                            id="fleet-phone"
+                            name="phone"
+                            placeholder="+49 123 456 7890"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                        <div>
+                          <label for="fleet-current_tools" class="block text-sm font-medium text-text-primary mb-1.5">
+                            Current Tools <span class="text-text-secondary/60 font-normal">(optional)</span>
+                          </label>
+                          <input
+                            type="text"
+                            id="fleet-current_tools"
+                            name="current_tools"
+                            placeholder="e.g. Samsara, Fleetio"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <button
+                          type="submit"
+                          class="px-7 py-4 primary-btn flex-1"
+                          data-i18n="carrier.fleetAccess.cta.submit"
+                        >
+                          Request Integration Review
+                        </button>
+                        <a
+                          href="mailto:carrier@golynk.com?subject=Fleet%20Integration%20Inquiry"
+                          class="px-7 py-4 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors rounded-lg font-semibold text-center"
+                          data-i18n="carrier.fleetAccess.cta.contact"
+                        >
+                          Contact Fleet Team
+                        </a>
+                      </div>
+
+                      <!-- Trust Microcopy -->
+                      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-text-secondary/70 pt-1">
+                        <span>Structured corridor integration</span>
+                        <span>•</span>
+                        <span>API-ready</span>
+                        <span>•</span>
+                        <span>Enterprise onboarding</span>
+                      </div>
+
+                      <!-- Success Message -->
+                      <div class="form-success hidden p-4 bg-green-50 border border-green-200 rounded-lg">
+                        <p class="text-green-800 font-medium">Thanks — our fleet team will be in touch within 24 hours.</p>
+                      </div>
+
+                      <!-- Error Message -->
+                      <div class="form-error hidden p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <p class="text-red-800 font-medium">Something went wrong. Please try again or email carrier@golynk.com.</p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -1867,7 +2203,8 @@
               data-animate="fade-up"
               data-duration="800"
             >
-              <button
+              <a
+                href="./shipper.html#early-access"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
               >
                 <svg class="size-6 me-2">
@@ -1875,11 +2212,12 @@
                 </svg>
                 <span
                   class="body-semibold text-text-on-dark"
-                  data-i18n="footer.cta.startShipping"
+                  data-i18n="common.footer.cta.startShipping"
                   >Start Shipping</span
                 >
-              </button>
-              <button
+              </a>
+              <a
+                href="./carrier.html#carrier-access"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
               >
                 <svg class="size-6 me-2">
@@ -1887,16 +2225,16 @@
                 </svg>
                 <span
                   class="body-semibold text-text-on-dark"
-                  data-i18n="footer.cta.deliverWithUs"
+                  data-i18n="common.footer.cta.deliverWithUs"
                   >Deliver with us</span
                 >
-              </button>
+              </a>
             </div>
             <!-- Newsletter Column -->
             <div class="flex flex-col items-center lg:items-start gap-3">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.newsletter.title"
+                data-i18n="common.footer.newsletter.title"
               >
                 Stay up to date
               </h3>
@@ -1905,14 +2243,14 @@
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  data-i18n-placeholder="footer.newsletter.placeholder"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
                   class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   required
                 />
                 <button
                   type="submit"
                   class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
-                  data-i18n="footer.newsletter.button"
+                  data-i18n="common.footer.newsletter.button"
                 >
                   Subscribe
                 </button>
@@ -1926,189 +2264,174 @@
             data-duration="800"
             data-delay="200"
           >
-            <!-- GoLynk Column -->
+            <!-- Company Column -->
             <div class="space-y-4">
-              <h3
-                class="body-semibold text-text-primary"
-                data-i18n="footer.sections.golynk.title"
-              >
-                GoLynk
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.company.title">
+                Company
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#about"
+                  href="./about.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.about"
-                  >About GoLynk</a
+                  data-i18n="common.footer.sections.company.links.about"
                 >
+                  About GoLynk
+                </a>
                 <a
-                  href="#how-it-works"
+                  href="./index.html#how-it-works"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.howItWorks"
-                  >How It Works</a
+                  data-i18n="common.footer.sections.company.links.howItWorks"
                 >
+                  How It Works
+                </a>
                 <a
-                  href="#industries"
+                  href="./index.html#industries"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.industries"
-                  >Industries We Serve</a
+                  data-i18n="common.footer.sections.company.links.industries"
                 >
+                  Industries We Serve
+                </a>
                 <a
-                  href="#sustainability"
+                  href="./index.html#environment"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.sustainability"
-                  >Sustainability<br />& CO₂ Reporting</a
+                  data-i18n="common.footer.sections.company.links.sustainability"
                 >
+                  Sustainability & CO₂ Reporting
+                </a>
                 <a
-                  href="#careers"
+                  href="./careers.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.careers"
-                  >Careers</a
+                  data-i18n="common.footer.sections.company.links.careers"
                 >
+                  Careers
+                </a>
                 <a
-                  href="#contacts"
+                  href="./get-started.html#contact"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.contacts"
-                  >Contacts</a
+                  data-i18n="common.footer.sections.company.links.contact"
                 >
+                  Contact
+                </a>
               </nav>
             </div>
 
             <!-- For Shippers Column -->
             <div class="space-y-4">
-              <h3
-                class="body-semibold text-text-primary"
-                data-i18n="footer.sections.shippers.title"
-              >
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.shippers.title">
                 For Shippers
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#b2b"
+                  href="./shipper.html#early-access"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.b2b"
-                  >B2B Shippers</a
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
                 >
+                  Get Started
+                </a>
                 <a
-                  href="#ecommerce"
+                  href="./pricing.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.ecommerce"
-                  >E-Commerce & Retail</a
+                  data-i18n="common.footer.sections.shippers.links.pricing"
                 >
+                  Pricing
+                </a>
                 <a
-                  href="#fresh"
+                  href="./api-docs.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.fresh"
-                  >Fresh & Healthcare</a
+                  data-i18n="common.footer.sections.shippers.links.api"
                 >
+                  Integration & API Docs
+                </a>
               </nav>
             </div>
 
             <!-- For Carriers Column -->
             <div class="space-y-4">
-              <h3
-                class="body-semibold text-text-primary"
-                data-i18n="footer.sections.carriers.title"
-              >
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.carriers.title">
                 For Carriers
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#logistics-operators"
+                  href="./carrier.html#individual-form"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.logistics"
-                  >Logistics Operators<br />& 3PLs</a
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
                 >
+                  Join as Individual Mover
+                </a>
                 <a
-                  href="#capacity-partner"
+                  href="./carrier.html#fleet-form"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.capacity"
-                  >Join as Capacity Partner</a
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
                 >
+                  Fleet Operators
+                </a>
                 <a
-                  href="#operator-dashboard"
+                  href="./carrier.html#dashboard"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.dashboard"
-                  >Operator Dashboard</a
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
                 >
-                <a
-                  href="#api-docs"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.api"
-                  >Integration & API Docs</a
-                >
+                  Operator Dashboard
+                </a>
               </nav>
             </div>
 
             <!-- Resources Column -->
             <div class="space-y-4">
-              <h3
-                class="body-semibold text-text-primary"
-                data-i18n="footer.sections.resources.title"
-              >
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.resources.title">
                 Resources
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#blog"
+                  href="./faq.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.blog"
-                  >Blog & Insights</a
+                  data-i18n="common.footer.sections.resources.links.faq"
                 >
+                  FAQ
+                </a>
                 <a
-                  href="#case-studies"
+                  href="./investor.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.caseStudies"
-                  >Case Studies</a
+                  data-i18n="common.footer.sections.resources.links.investors"
                 >
-                <a
-                  href="#faq"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.faq"
-                  >FAQ</a
-                >
-                <a
-                  href="#investors"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.investors"
-                  >Investor Relations</a
-                >
+                  Investor Relations
+                </a>
               </nav>
             </div>
 
             <!-- Legal Column -->
             <div class="space-y-4">
-              <h3
-                class="body-semibold text-text-primary"
-                data-i18n="footer.sections.legal.title"
-              >
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.legal.title">
                 Legal
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#privacy"
+                  href="./privacy.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.privacy"
-                  >Privacy Policy</a
+                  data-i18n="common.footer.sections.legal.links.privacy"
                 >
+                  Privacy Policy
+                </a>
                 <a
-                  href="#terms"
+                  href="./terms.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.terms"
-                  >Terms of Service</a
+                  data-i18n="common.footer.sections.legal.links.terms"
                 >
+                  Terms of Service
+                </a>
                 <a
-                  href="#cookie"
+                  href="./cookies.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.cookie"
-                  >Cookie Policy</a
+                  data-i18n="common.footer.sections.legal.links.cookies"
                 >
+                  Cookie Policy
+                </a>
                 <a
-                  href="#imprint"
+                  href="./imprint.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.imprint"
-                  >Imprint / Legal Notice</a
+                  data-i18n="common.footer.sections.legal.links.imprint"
                 >
+                  Imprint
+                </a>
               </nav>
             </div>
           </div>
@@ -2130,7 +2453,7 @@
                 </a>
                 <p
                   class="text-text-secondary text-small"
-                  data-i18n="footer.tagline"
+                  data-i18n="common.footer.tagline"
                 >
                   Orchestrating existing journeys into faster, greener
                   logistics.
@@ -2149,9 +2472,11 @@
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
                   class="text-text-secondary hover:text-primary transition-colors"
                   aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg class="size-5">
                     <use href="#icon-linkedin"></use>
@@ -2159,7 +2484,7 @@
                 </a>
                 <p
                   class="text-text-secondary text-small"
-                  data-i18n="footer.copyright"
+                  data-i18n="common.footer.copyright"
                 >
                   © GoLynk 2026. All rights reserved.
                 </p>
@@ -2170,5 +2495,125 @@
       </footer>
     </main>
     <script type="module" src="./src/js/main.ts"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Carrier Carousel functionality
+        const carouselInner = document.querySelector(".carrier-carousel-inner");
+        const toggleBtns = document.querySelectorAll(".carrier-toggle-btn");
+        let currentSlide = 0;
+
+        function goToSlide(index) {
+          currentSlide = index;
+          carouselInner.style.transform = `translateX(-${index * 100}%)`;
+          
+          // Update toggle button states
+          toggleBtns.forEach((btn, i) => {
+            if (i === index) {
+              btn.classList.add("active");
+            } else {
+              btn.classList.remove("active");
+            }
+          });
+        }
+
+        // Toggle button click handlers
+        toggleBtns.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            goToSlide(index);
+          });
+        });
+
+        // Handle hash links from hero CTAs
+        function handleHashNavigation() {
+          const hash = window.location.hash;
+          if (hash === "#individual-access") {
+            goToSlide(0);
+            document.querySelector("#carrier-access")?.scrollIntoView({ behavior: "smooth" });
+          } else if (hash === "#fleet-access") {
+            goToSlide(1);
+            document.querySelector("#carrier-access")?.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+
+        // Check hash on page load
+        handleHashNavigation();
+
+        // Listen for hash changes
+        window.addEventListener("hashchange", handleHashNavigation);
+
+        // Carrier intake form submission handling
+        const carrierForms = document.querySelectorAll(".carrier-intake-form");
+
+        carrierForms.forEach((form) => {
+          form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            const successEl = form.querySelector(".form-success");
+            const errorEl = form.querySelector(".form-error");
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const formFields = form.querySelectorAll(
+              "input, select, textarea, button"
+            );
+
+            // Reset states
+            successEl.classList.add("hidden");
+            errorEl.classList.add("hidden");
+
+            // Disable form during submission
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = "Submitting...";
+            formFields.forEach((field) => (field.disabled = true));
+
+            try {
+              const response = await fetch("/api/intake", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              });
+
+              // Hide all form children except success/error messages
+              Array.from(form.children).forEach((child) => {
+                if (
+                  !child.classList.contains("form-success") &&
+                  !child.classList.contains("form-error")
+                ) {
+                  child.classList.add("hidden");
+                }
+              });
+              successEl.classList.remove("hidden");
+            } catch (error) {
+              // Show error state
+              errorEl.classList.remove("hidden");
+              submitBtn.textContent = originalText;
+              formFields.forEach((field) => (field.disabled = false));
+            }
+          });
+        });
+      });
+    </script>
+    <style>
+      /* Carrier Toggle Buttons */
+      .carrier-toggle-btn {
+        background-color: #f9f5ff;
+        color: #535862;
+        border: 2px solid transparent;
+      }
+      .carrier-toggle-btn:hover {
+        background-color: #f4ebff;
+        color: #181d27;
+      }
+      .carrier-toggle-btn.active {
+        background-color: #6941c6;
+        color: #ffffff;
+        border-color: #6941c6;
+      }
+      .carrier-toggle-btn.active:hover {
+        background-color: #5a37a8;
+      }
+    </style>
   </body>
 </html>

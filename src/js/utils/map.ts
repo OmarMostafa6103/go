@@ -175,6 +175,12 @@ const locations: Location[] = [
  * - amCharts 5 libraries loaded via script tags
  */
 export const initGlobe = (): void => {
+  // Check if container exists (only on index.html)
+  const container = document.getElementById("chartdiv");
+  if (!container) {
+    return;
+  }
+
   // Check if amCharts is loaded
   if (typeof am5 === "undefined") {
     console.error("amCharts library not loaded");

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Investorenmappe | GoLynk",
+    "description": "Fordern Sie GoLynk's Investorenmaterialien an. Executive Overview, Einsatzplan und Orchestrierungsarchitektur für strategisch ausgerichtete Infrastrukturfonds."
+  },
+  "hero": {
+    "title": "Investorenmappe anfordern",
+    "description": "GoLynk's Executive-Materialien für institutionelle Investoren und strategische Partner. Selektive Verteilung. Konzipiert für ausgerichtete Infrastrukturfonds, die einsatzbereite Logistiklösungen suchen.",
+    "microcopy": "Selektive Verteilung. Keine Mailinglisten. Keine öffentlichen Downloads.",
+    "ctaPrimary": "Executive Summary anfordern",
+    "ctaSecondary": "Diskussion vereinbaren"
+  },
+  "packContents": {
+    "title": "Inhalte der Mappe",
+    "items": [
+      {
+        "name": "Executive Summary",
+        "description": "5-jährige strategische Vision, Marktchancen und Einsatzplan für europäische Korridore."
+      },
+      {
+        "name": "Einsatzplan",
+        "description": "Phasierter Expansionsplan, Kapitalanforderungen und operative Meilensteine über Prioritätskorridore."
+      },
+      {
+        "name": "Orchestrierungsarchitektur",
+        "description": "Technische Infrastruktur, KI-gesteuerte Routing-Logik und Carrier-Integrätionsprotokolle."
+      },
+      {
+        "name": "Preislogik",
+        "description": "Einheitsökonomie, Preisstrategie und Margenstruktur über Versandtypen und Korridore."
+      },
+      {
+        "name": "Kohlenstoff- und Scope-3-Messung",
+        "description": "ESG-Framework, Berechnung von Kohlenstoffausgleich und Nachhaltigkeitsauswirkungsmetriken für Investorenberichte."
+      },
+      {
+        "name": "Brief zur strategischen Integration",
+        "description": "Partnerschaftsmodelle, technische Anforderungen und kommerzielle Bedingungen für Korridorbetreiber."
+      }
+    ]
+  },
+  "focusChips": {
+    "title": "Welche Bereiche interessieren Sie am meisten?",
+    "options": [
+      {
+        "id": "applied-ai",
+        "label": "Angewandte KI und Routing"
+      },
+      {
+        "id": "logistics",
+        "label": "Logistikinfrastruktur"
+      },
+      {
+        "id": "climate",
+        "label": "Klima und ESG"
+      },
+      {
+        "id": "infrastructure",
+        "label": "Europäische Infrastruktur"
+      },
+      {
+        "id": "operator",
+        "label": "Betreiber-Partnerschaften"
+      },
+      {
+        "id": "other",
+        "label": "Sonstiges"
+      }
+    ]
+  },
+  "form": {
+    "title": "Materialien anfordern",
+    "description": "Teilen Sie einige Details mit. Wir antworten innerhalb von 24–48 Stunden mit Ihrer maßgeschneiderten Investorenmappe.",
+    "fields": {
+      "fullName": {
+        "label": "Vollständiger Name",
+        "required": true
+      },
+      "organization": {
+        "label": "Organisation / Fonds",
+        "required": true
+      },
+      "role": {
+        "label": "Funktion",
+        "placeholder": "z. B. Partner, Investment Director",
+        "required": false
+      },
+      "focusArea": {
+        "label": "Interessensgebiet",
+        "placeholder": "Wählen Sie aus der obigen Liste",
+        "required": true
+      },
+      "email": {
+        "label": "E-Mail",
+        "required": true
+      },
+      "note": {
+        "label": "Weitere Notizen",
+        "placeholder": "Sagen Sie uns mehr über Ihren Fonds oder Ihre Investitionsthese...",
+        "required": false
+      }
+    },
+    "submit": "Mappe anfordern",
+    "microcopy": "Antwort innerhalb von 24–48 Stunden. Materialien werden selektiv verteilt. Keine automatisierte Verteilung.",
+    "emailFallback": "Vorliebe für E-Mail? Schicken Sie an invest@golynk.com",
+    "successMessage": "E-Mail-Client wird geöffnet. Wenn er nicht geöffnet wird, senden Sie bitte die Formulardetails an invest@golynk.com"
+  },
+  "discussion": {
+    "title": "Vereinbaren Sie einen strategischen Diskurs",
+    "description": "Für ausgerichtete Partner: Korridoreinsatz, Integrationstiefe und Kapitaldeployment-Prioritäten.",
+    "note": "Geben Sie in Ihrer Nachricht Ihren Interessensbereich und bevorzugten Zeitrahmen an.",
+    "scheduleMeeting": "Meeting anfordern",
+    "sendIntroduction": "Einführung senden"
+  },
+  "footnotes": {
+    "text": "Erfahren Sie mehr über GoLynk's Strategie und Infrastruktur:",
+    "links": {
+      "investorNarrative": "Investorenerzählung",
+      "about": "Über",
+      "glTech": "GL Tech",
+      "contact": "Kontakt"
+    }
+  }
+}

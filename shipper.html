@@ -137,6 +137,49 @@
           d="M12 6v12m6-6H6"
         />
       </symbol>
+      <symbol id="icon-dashboard" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M4 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5zm10 0a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5zM4 14a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5zm10-2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-7z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24" fill="none">
+        <path
+          d="m16 18 6-6-6-6M8 6l-6 6 6 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none">
+        <path
+          d="m6 9 6 6 6-6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
     </svg>
 
     <main
@@ -177,15 +220,7 @@
                 </a>
 
                 <a
-                  href="#partners"
-                  class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
-                  data-i18n="common.navigation.partners"
-                >
-                  Partners
-                </a>
-
-                <a
-                  href="#technology"
+                  href="./index.html#technology"
                   class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
                   data-i18n="common.navigation.glTech"
                 >
@@ -193,7 +228,7 @@
                 </a>
 
                 <a
-                  href="#environment"
+                  href="./index.html#environment"
                   class="text-sm font-medium hover:text-primary transition-all hover:brightness-200"
                   data-i18n="common.navigation.environment"
                 >
@@ -218,12 +253,13 @@
                   contact
                 </button>
 
-                <button
+                <a
+                  href="./get-started.html"
                   class="hidden md:block px-5 py-2.5 primary-btn"
                   data-i18n="common.cta.startNow"
                 >
                   Start Now
-                </button>
+                </a>
 
                 <!-- Language Selector -->
                 <select
@@ -240,18 +276,6 @@
                     class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
                   >
                     DE
-                  </option>
-                  <option
-                    value="fr"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    FR
-                  </option>
-                  <option
-                    value="nl"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    NL
                   </option>
                 </select>
               </div>
@@ -283,6 +307,7 @@
               class="h1-xl text-text-on-dark"
               data-animate="fade-up"
               data-duration="800"
+              data-i18n="shipper.hero.heading"
             >
               Stop Booking Vehicles. Start Using Routes Already in Motion.
             </h1>
@@ -291,6 +316,7 @@
               data-animate="fade-up"
               data-duration="800"
               data-delay="200"
+              data-i18n="shipper.hero.description"
             >
               GoLynk orchestrates shipments across existing routes — reducing
               detours, cost, and empty miles.
@@ -306,6 +332,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="350"
+                data-i18n="shipper.hero.badges.lowerCost"
               >
                 Lower cost
               </li>
@@ -314,6 +341,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="400"
+                data-i18n="shipper.hero.badges.fasterLanes"
               >
                 Faster lanes
               </li>
@@ -322,6 +350,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="450"
+                data-i18n="shipper.hero.badges.unifiedTracking"
               >
                 Unified tracking
               </li>
@@ -330,6 +359,7 @@
                 data-animate="fade-up"
                 data-duration="800"
                 data-delay="500"
+                data-i18n="shipper.hero.badges.co2Visibility"
               >
                 CO₂ visibility
               </li>
@@ -343,6 +373,7 @@
               <a
                 href="#contact"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+                data-i18n="shipper.hero.cta.laneAnalysis"
               >
                 Request Lane Analysis
               </a>
@@ -350,6 +381,7 @@
               <a
                 href="#how-it-works"
                 class="px-7 py-4 outline-btn inline-flex items-center justify-center w-fit"
+                data-i18n="shipper.hero.cta.howItWorks"
               >
                 How It Works
               </a>
@@ -376,13 +408,19 @@
         >
           <!-- Section Title -->
           <div class="text-center">
-            <h2 class="h1 text-text-primary">The Hidden Cost of Shipping</h2>
+            <h2
+              class="h1 text-text-primary"
+              data-i18n="shipper.hiddenCost.heading"
+            >
+              The Hidden Cost of Shipping
+            </h2>
           </div>
 
           <!-- Opening Statement -->
           <div class="text-center space-y-1.5 mb-12">
             <p
               class="text-xl md:text-2xl text-text-primary font-semibold leading-tight"
+              data-i18n="shipper.hiddenCost.opening"
             >
               Capacity exists. It moves every day. It isn't coordinated.
             </p>
@@ -394,10 +432,16 @@
             <div
               class="rounded-xl border border-border-default bg-gradient-to-br from-bg-secondary to-bg-secondary/50 p-6 flex flex-col justify-start space-y-3 hover:border-primary/30 transition-colors"
             >
-              <h3 class="text-lg font-semibold text-text-primary">
+              <h3
+                class="text-lg font-semibold text-text-primary"
+                data-i18n="shipper.hiddenCost.cards.emptyMiles.title"
+              >
                 Empty Miles
               </h3>
-              <p class="text-text-secondary leading-snug text-sm">
+              <p
+                class="text-text-secondary leading-snug text-sm"
+                data-i18n="shipper.hiddenCost.cards.emptyMiles.text"
+              >
                 Trucks return half full. You still pay for the road.
               </p>
             </div>
@@ -406,10 +450,16 @@
             <div
               class="rounded-xl border border-border-default bg-gradient-to-br from-bg-secondary to-bg-secondary/50 p-6 flex flex-col justify-start space-y-3 hover:border-primary/30 transition-colors"
             >
-              <h3 class="text-lg font-semibold text-text-primary">
+              <h3
+                class="text-lg font-semibold text-text-primary"
+                data-i18n="shipper.hiddenCost.cards.fragmented.title"
+              >
                 Fragmented Networks
               </h3>
-              <p class="text-text-secondary leading-snug text-sm">
+              <p
+                class="text-text-secondary leading-snug text-sm"
+                data-i18n="shipper.hiddenCost.cards.fragmented.text"
+              >
                 Parcels and freight move separately. Efficiency breaks in
                 between.
               </p>
@@ -419,10 +469,16 @@
             <div
               class="rounded-xl border border-border-default bg-gradient-to-br from-bg-secondary to-bg-secondary/50 p-6 flex flex-col justify-start space-y-3 hover:border-primary/30 transition-colors"
             >
-              <h3 class="text-lg font-semibold text-text-primary">
+              <h3
+                class="text-lg font-semibold text-text-primary"
+                data-i18n="shipper.hiddenCost.cards.visibility.title"
+              >
                 Surface-Level Visibility
               </h3>
-              <p class="text-text-secondary leading-snug text-sm">
+              <p
+                class="text-text-secondary leading-snug text-sm"
+                data-i18n="shipper.hiddenCost.cards.visibility.text"
+              >
                 "Out for delivery" isn't insight. Structure stays hidden.
               </p>
             </div>
@@ -430,7 +486,10 @@
 
           <!-- Closing Statement -->
           <div class="text-center pt-4">
-            <p class="text-base md:text-lg text-text-primary font-semibold">
+            <p
+              class="text-base md:text-lg text-text-primary font-semibold"
+              data-i18n="shipper.hiddenCost.closing"
+            >
               Most logistics systems add vehicles. We orchestrate routes already
               in motion.
             </p>
@@ -443,7 +502,9 @@
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
           <!-- Section Title -->
           <div class="text-center mb-14">
-            <h2 class="h1 text-text-primary">What GoLynk Is (and Isn't)</h2>
+            <h2 class="h1 text-text-primary" data-i18n="shipper.whatIs.heading">
+              What GoLynk Is (and Isn't)
+            </h2>
           </div>
 
           <!-- Elegant Cards Grid -->
@@ -473,10 +534,16 @@
                   </div>
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-sm font-semibold text-text-primary mb-2">
+                  <h3
+                    class="text-sm font-semibold text-text-primary mb-2"
+                    data-i18n="shipper.whatIs.cards.courier.title"
+                  >
                     Not a Courier
                   </h3>
-                  <p class="text-sm text-text-secondary leading-relaxed">
+                  <p
+                    class="text-sm text-text-secondary leading-relaxed"
+                    data-i18n="shipper.whatIs.cards.courier.text"
+                  >
                     We don't add vehicles to meet demand.
                   </p>
                 </div>
@@ -508,10 +575,16 @@
                   </div>
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-sm font-semibold text-text-primary mb-2">
+                  <h3
+                    class="text-sm font-semibold text-text-primary mb-2"
+                    data-i18n="shipper.whatIs.cards.marketplace.title"
+                  >
                     Not a Marketplace
                   </h3>
-                  <p class="text-sm text-text-secondary leading-relaxed">
+                  <p
+                    class="text-sm text-text-secondary leading-relaxed"
+                    data-i18n="shipper.whatIs.cards.marketplace.text"
+                  >
                     We chain multi-hop routes under detour constraints.
                   </p>
                 </div>
@@ -543,10 +616,16 @@
                   </div>
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-sm font-semibold text-text-primary mb-2">
+                  <h3
+                    class="text-sm font-semibold text-text-primary mb-2"
+                    data-i18n="shipper.whatIs.cards.crowdshipping.title"
+                  >
                     Not Crowdshipping
                   </h3>
-                  <p class="text-sm text-text-secondary leading-relaxed">
+                  <p
+                    class="text-sm text-text-secondary leading-relaxed"
+                    data-i18n="shipper.whatIs.cards.crowdshipping.text"
+                  >
                     Every handoff is verified and insured.
                   </p>
                 </div>
@@ -558,7 +637,10 @@
           <div
             class="max-w-2xl mx-auto border border-border-default rounded-xl p-8 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 text-center"
           >
-            <p class="text-base text-text-primary font-medium leading-relaxed">
+            <p
+              class="text-base text-text-primary font-medium leading-relaxed"
+              data-i18n="shipper.whatIs.definition"
+            >
               GoLynk is an
               <span class="font-semibold text-primary"
                 >orchestration layer</span
@@ -571,12 +653,20 @@
       </section>
 
       <!-- How It Works Section -->
-      <section class="py-20 md:py-28">
+      <section id="how-it-works" class="py-20 md:py-28">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8">
           <!-- Section Header -->
           <div class="text-center mb-16">
-            <h2 class="h1 text-text-primary mb-4">How It Works</h2>
-            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+            <h2
+              class="h1 text-text-primary mb-4"
+              data-i18n="shipper.howItWorks.heading"
+            >
+              How It Works
+            </h2>
+            <p
+              class="text-text-secondary text-lg max-w-2xl mx-auto"
+              data-i18n="shipper.howItWorks.description"
+            >
               Three steps from shipment to optimization.
             </p>
           </div>
@@ -594,7 +684,10 @@
                   </div>
                 </div>
                 <div>
-                  <h3 class="h3 text-text-primary font-semibold">
+                  <h3
+                    class="h3 text-text-primary font-semibold"
+                    data-i18n="shipper.howItWorks.steps.define.title"
+                  >
                     Define the Shipment
                   </h3>
                 </div>
@@ -602,9 +695,16 @@
               <div
                 class="text-text-secondary leading-relaxed space-y-2 text-sm"
               >
-                <p>Shipment type, size, handling</p>
-                <p>Time window, service level</p>
-                <p class="text-xs text-text-secondary/70">
+                <p data-i18n="shipper.howItWorks.steps.define.line1">
+                  Shipment type, size, handling
+                </p>
+                <p data-i18n="shipper.howItWorks.steps.define.line2">
+                  Time window, service level
+                </p>
+                <p
+                  class="text-xs text-text-secondary/70"
+                  data-i18n="shipper.howItWorks.steps.define.aside"
+                >
                   (Same-day, next-day, 2–3 days)
                 </p>
               </div>
@@ -621,7 +721,10 @@
                   </div>
                 </div>
                 <div>
-                  <h3 class="h3 text-text-primary font-semibold">
+                  <h3
+                    class="h3 text-text-primary font-semibold"
+                    data-i18n="shipper.howItWorks.steps.orchestrate.title"
+                  >
                     Orchestrate the Journey
                   </h3>
                 </div>
@@ -629,11 +732,16 @@
               <div
                 class="text-text-secondary leading-relaxed space-y-2 text-sm"
               >
-                <p>Engine builds 2–3 hop multi-modal plan</p>
-                <p>
+                <p data-i18n="shipper.howItWorks.steps.orchestrate.line1">
+                  Engine builds 2–3 hop multi-modal plan
+                </p>
+                <p data-i18n="shipper.howItWorks.steps.orchestrate.line2">
                   Evaluates: overlap, time, capacity, cost, reliability, CO₂
                 </p>
-                <p class="text-xs text-text-secondary/70">
+                <p
+                  class="text-xs text-text-secondary/70"
+                  data-i18n="shipper.howItWorks.steps.orchestrate.aside"
+                >
                   (Real-time route optimization)
                 </p>
               </div>
@@ -650,7 +758,10 @@
                   </div>
                 </div>
                 <div>
-                  <h3 class="h3 text-text-primary font-semibold">
+                  <h3
+                    class="h3 text-text-primary font-semibold"
+                    data-i18n="shipper.howItWorks.steps.execute.title"
+                  >
                     Execute + Report
                   </h3>
                 </div>
@@ -658,9 +769,16 @@
               <div
                 class="text-text-secondary leading-relaxed space-y-2 text-sm"
               >
-                <p>One tracking view, one invoice</p>
-                <p>Exportable cost + CO₂ per shipment</p>
-                <p class="text-xs text-text-secondary/70">
+                <p data-i18n="shipper.howItWorks.steps.execute.line1">
+                  One tracking view, one invoice
+                </p>
+                <p data-i18n="shipper.howItWorks.steps.execute.line2">
+                  Exportable cost + CO₂ per shipment
+                </p>
+                <p
+                  class="text-xs text-text-secondary/70"
+                  data-i18n="shipper.howItWorks.steps.execute.aside"
+                >
                   (Finance & ESG ready)
                 </p>
               </div>
@@ -673,27 +791,40 @@
           >
             <p
               class="text-sm text-text-secondary/70 text-center mb-3 uppercase tracking-wide font-semibold"
+              data-i18n="shipper.howItWorks.priorities.label"
             >
               Optimization Priorities
             </p>
             <div
               class="flex flex-wrap justify-center items-center gap-3 md:gap-6"
             >
-              <span class="text-sm font-medium text-text-primary"
+              <span
+                class="text-sm font-medium text-text-primary"
+                data-i18n="shipper.howItWorks.priorities.overlap"
                 >Overlap ↑</span
               >
               <span class="text-border-default">•</span>
-              <span class="text-sm font-medium text-text-primary"
+              <span
+                class="text-sm font-medium text-text-primary"
+                data-i18n="shipper.howItWorks.priorities.detours"
                 >Detours ↓</span
               >
               <span class="text-border-default">•</span>
-              <span class="text-sm font-medium text-text-primary"
+              <span
+                class="text-sm font-medium text-text-primary"
+                data-i18n="shipper.howItWorks.priorities.reliability"
                 >Reliability ↑</span
               >
               <span class="text-border-default">•</span>
-              <span class="text-sm font-medium text-text-primary">Cost ↓</span>
+              <span
+                class="text-sm font-medium text-text-primary"
+                data-i18n="shipper.howItWorks.priorities.cost"
+                >Cost ↓</span
+              >
               <span class="text-border-default">•</span>
-              <span class="text-sm font-medium text-text-primary"
+              <span
+                class="text-sm font-medium text-text-primary"
+                data-i18n="shipper.howItWorks.priorities.emissions"
                 >Emissions ↓</span
               >
             </div>
@@ -706,6 +837,7 @@
             >
               <h4
                 class="text-sm font-semibold text-text-primary mb-6 text-center"
+                data-i18n="shipper.howItWorks.routeScoring.heading"
               >
                 Route Scoring Example
               </h4>
@@ -716,10 +848,14 @@
                   class="border border-border-default/50 rounded-lg p-4 bg-white/30"
                 >
                   <div class="flex items-center justify-between mb-2">
-                    <span class="text-sm font-medium text-text-primary"
+                    <span
+                      class="text-sm font-medium text-text-primary"
+                      data-i18n="shipper.howItWorks.routeScoring.routeA.name"
                       >Route A</span
                     >
-                    <span class="text-xs text-text-secondary"
+                    <span
+                      class="text-xs text-text-secondary"
+                      data-i18n="shipper.howItWorks.routeScoring.routeA.score"
                       >Score: 7.2/10</span
                     >
                   </div>
@@ -729,7 +865,10 @@
                       style="width: 72%"
                     ></div>
                   </div>
-                  <p class="text-xs text-text-secondary mt-2">
+                  <p
+                    class="text-xs text-text-secondary mt-2"
+                    data-i18n="shipper.howItWorks.routeScoring.routeA.detail"
+                  >
                     Good overlap, higher detours
                   </p>
                 </div>
@@ -739,10 +878,14 @@
                   class="border border-border-default/50 rounded-lg p-4 bg-white/30"
                 >
                   <div class="flex items-center justify-between mb-2">
-                    <span class="text-sm font-medium text-text-primary"
+                    <span
+                      class="text-sm font-medium text-text-primary"
+                      data-i18n="shipper.howItWorks.routeScoring.routeB.name"
                       >Route B</span
                     >
-                    <span class="text-xs text-text-secondary"
+                    <span
+                      class="text-xs text-text-secondary"
+                      data-i18n="shipper.howItWorks.routeScoring.routeB.score"
                       >Score: 6.8/10</span
                     >
                   </div>
@@ -752,7 +895,10 @@
                       style="width: 68%"
                     ></div>
                   </div>
-                  <p class="text-xs text-text-secondary mt-2">
+                  <p
+                    class="text-xs text-text-secondary mt-2"
+                    data-i18n="shipper.howItWorks.routeScoring.routeB.detail"
+                  >
                     Lower cost, less reliable
                   </p>
                 </div>
@@ -774,11 +920,15 @@
                           clip-rule="evenodd"
                         />
                       </svg>
-                      <span class="text-sm font-semibold text-primary"
+                      <span
+                        class="text-sm font-semibold text-primary"
+                        data-i18n="shipper.howItWorks.routeScoring.routeC.name"
                         >Route C (Selected)</span
                       >
                     </div>
-                    <span class="text-xs font-semibold text-primary"
+                    <span
+                      class="text-xs font-semibold text-primary"
+                      data-i18n="shipper.howItWorks.routeScoring.routeC.score"
                       >Score: 8.7/10</span
                     >
                   </div>
@@ -788,7 +938,10 @@
                       style="width: 87%"
                     ></div>
                   </div>
-                  <p class="text-xs text-text-primary font-medium mt-2">
+                  <p
+                    class="text-xs text-text-primary font-medium mt-2"
+                    data-i18n="shipper.howItWorks.routeScoring.routeC.detail"
+                  >
                     Best overlap + detour balance + reliability
                   </p>
                 </div>
@@ -807,9 +960,15 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <h2 class="h1 text-text-primary">One Network. Two Scales.</h2>
+            <h2
+              class="h1 text-text-primary"
+              data-i18n="shipper.twoScales.heading"
+            >
+              One Network. Two Scales.
+            </h2>
             <p
               class="text-text-secondary text-lg max-w-3xl mx-auto leading-relaxed"
+              data-i18n="shipper.twoScales.description"
             >
               Whether you ship parcels or full truckloads, the orchestration
               logic remains the same.
@@ -835,21 +994,36 @@
               <div class="space-y-2">
                 <p
                   class="text-sm font-semibold uppercase tracking-wider text-primary"
+                  data-i18n="shipper.twoScales.urban.label"
                 >
                   Urban Scale
                 </p>
-                <h3 class="h2 text-text-primary font-bold">Urban Scale</h3>
+                <h3
+                  class="h2 text-text-primary font-bold"
+                  data-i18n="shipper.twoScales.urban.heading"
+                >
+                  Urban Scale
+                </h3>
               </div>
 
-              <p class="text-text-secondary font-semibold text-sm">
+              <p
+                class="text-text-secondary font-semibold text-sm"
+                data-i18n="shipper.twoScales.urban.tagline"
+              >
                 High-frequency. Short-hop. Density-driven.
               </p>
 
-              <p class="text-text-secondary leading-relaxed">
+              <p
+                class="text-text-secondary leading-relaxed"
+                data-i18n="shipper.twoScales.urban.text1"
+              >
                 For e-commerce, recommerce, retail, and time-sensitive flows.
               </p>
 
-              <p class="text-text-secondary leading-relaxed">
+              <p
+                class="text-text-secondary leading-relaxed"
+                data-i18n="shipper.twoScales.urban.text2"
+              >
                 GoLynk chains walkers, bikes, vans, trains, and microhubs into
                 structured urban corridors — prioritizing existing routes over
                 new vehicle dispatch.
@@ -862,7 +1036,10 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.urban.features.0"
+                  >
                     Same-day / next-day on dense lanes
                   </span>
                 </li>
@@ -872,7 +1049,10 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.urban.features.1"
+                  >
                     White-glove and high-value handling
                   </span>
                 </li>
@@ -882,7 +1062,10 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.urban.features.2"
+                  >
                     Microhubs that reduce detours
                   </span>
                 </li>
@@ -892,13 +1075,19 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.urban.features.3"
+                  >
                     CO₂ visibility per order
                   </span>
                 </li>
               </ul>
 
-              <p class="text-text-primary font-bold text-sm pt-4">
+              <p
+                class="text-text-primary font-bold text-sm pt-4"
+                data-i18n="shipper.twoScales.urban.closing"
+              >
                 Parcels move through movement already happening.
               </p>
             </div>
@@ -923,21 +1112,36 @@
               <div class="space-y-2">
                 <p
                   class="text-sm font-semibold uppercase tracking-wider text-primary"
+                  data-i18n="shipper.twoScales.freight.label"
                 >
                   Freight Scale
                 </p>
-                <h3 class="h2 text-text-primary font-bold">Freight Scale</h3>
+                <h3
+                  class="h2 text-text-primary font-bold"
+                  data-i18n="shipper.twoScales.freight.heading"
+                >
+                  Freight Scale
+                </h3>
               </div>
 
-              <p class="text-text-secondary font-semibold text-sm">
+              <p
+                class="text-text-secondary font-semibold text-sm"
+                data-i18n="shipper.twoScales.freight.tagline"
+              >
                 Long-haul. Backhaul. Lane optimization.
               </p>
 
-              <p class="text-text-secondary leading-relaxed">
+              <p
+                class="text-text-secondary leading-relaxed"
+                data-i18n="shipper.twoScales.freight.text1"
+              >
                 For manufacturers, distributors, and large-volume flows.
               </p>
 
-              <p class="text-text-secondary leading-relaxed">
+              <p
+                class="text-text-secondary leading-relaxed"
+                data-i18n="shipper.twoScales.freight.text2"
+              >
                 GoLynk surfaces underused truck capacity and return journeys —
                 chaining long-haul with first and last mile only where shared
                 capacity supports it.
@@ -950,7 +1154,10 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.freight.features.0"
+                  >
                     Backhauls before dedicated runs
                   </span>
                 </li>
@@ -960,7 +1167,10 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.freight.features.1"
+                  >
                     Density-aware lane structuring
                   </span>
                 </li>
@@ -970,7 +1180,10 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.freight.features.2"
+                  >
                     One orchestration layer across loads
                   </span>
                 </li>
@@ -980,13 +1193,19 @@
                   >
                     <use href="#icon-check"></use>
                   </svg>
-                  <span class="text-text-secondary text-sm">
+                  <span
+                    class="text-text-secondary text-sm"
+                    data-i18n="shipper.twoScales.freight.features.3"
+                  >
                     CO₂ and avoided empty miles per lane
                   </span>
                 </li>
               </ul>
 
-              <p class="text-text-primary font-bold text-sm pt-4">
+              <p
+                class="text-text-primary font-bold text-sm pt-4"
+                data-i18n="shipper.twoScales.freight.closing"
+              >
                 Freight moves on routes already in motion — not additional
                 vehicles.
               </p>
@@ -1007,14 +1226,23 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <h2 class="h1 text-text-primary font-medium">
+            <h2
+              class="h1 text-text-primary font-medium"
+              data-i18n="shipper.adapts.heading"
+            >
               How the Network Adapts
             </h2>
             <div class="space-y-3">
-              <p class="text-h3 text-text-primary font-medium">
+              <p
+                class="text-h3 text-text-primary font-medium"
+                data-i18n="shipper.adapts.subtitle1"
+              >
                 One orchestration system.
               </p>
-              <p class="text-h3 text-text-primary font-medium">
+              <p
+                class="text-h3 text-text-primary font-medium"
+                data-i18n="shipper.adapts.subtitle2"
+              >
                 Different shipping realities.
               </p>
             </div>
@@ -1031,7 +1259,9 @@
               class="solutions-tab-btn active relative pb-3 text-text-primary font-medium transition-all"
               data-tab="consumer"
             >
-              <span>Consumer &amp; SMB</span>
+              <span data-i18n="shipper.adapts.tabs.consumer"
+                >Consumer &amp; SMB</span
+              >
               <div
                 class="absolute bottom-0 left-0 right-0 h-px bg-primary transition-all duration-300"
               ></div>
@@ -1040,7 +1270,9 @@
               class="solutions-tab-btn relative pb-3 text-text-secondary font-medium transition-all hover:text-text-primary"
               data-tab="business"
             >
-              <span>Business &amp; Freight</span>
+              <span data-i18n="shipper.adapts.tabs.business"
+                >Business &amp; Freight</span
+              >
               <div
                 class="absolute bottom-0 left-0 right-0 h-px bg-transparent transition-all duration-300"
               ></div>
@@ -1078,22 +1310,34 @@
                   class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
                 >
                   <div>
-                    <h3 class="h3 text-text-primary font-medium mb-2">
+                    <h3
+                      class="h3 text-text-primary font-medium mb-2"
+                      data-i18n="shipper.adapts.consumer.ecommerce.title"
+                    >
                       E‑Commerce &amp; Marketplaces
                     </h3>
                     <div class="w-8 h-px bg-primary/40 mb-4"></div>
-                    <p class="text-text-secondary body font-medium">
+                    <p
+                      class="text-text-secondary body font-medium"
+                      data-i18n="shipper.adapts.consumer.ecommerce.subtitle"
+                    >
                       Delivery speed without premium courier economics.
                     </p>
                   </div>
                   <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-primary font-bold mt-0.5">—</span>
-                      <span>Same‑day on dense corridors</span>
+                      <span
+                        data-i18n="shipper.adapts.consumer.ecommerce.bullets.0"
+                        >Same‑day on dense corridors</span
+                      >
                     </li>
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-primary font-bold mt-0.5">—</span>
-                      <span>Returns structured into existing routes</span>
+                      <span
+                        data-i18n="shipper.adapts.consumer.ecommerce.bullets.1"
+                        >Returns structured into existing routes</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1121,22 +1365,32 @@
                   class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
                 >
                   <div>
-                    <h3 class="h3 text-text-primary font-medium mb-2">
+                    <h3
+                      class="h3 text-text-primary font-medium mb-2"
+                      data-i18n="shipper.adapts.consumer.retail.title"
+                    >
                       Retail &amp; Multi‑Location Replenishment
                     </h3>
                     <div class="w-8 h-px bg-primary/40 mb-4"></div>
-                    <p class="text-text-secondary body font-medium">
+                    <p
+                      class="text-text-secondary body font-medium"
+                      data-i18n="shipper.adapts.consumer.retail.subtitle"
+                    >
                       Inventory flow without dedicated fleet expansion.
                     </p>
                   </div>
                   <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-primary font-bold mt-0.5">—</span>
-                      <span>Multi‑stop routing based on shared corridors</span>
+                      <span data-i18n="shipper.adapts.consumer.retail.bullets.0"
+                        >Multi‑stop routing based on shared corridors</span
+                      >
                     </li>
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-primary font-bold mt-0.5">—</span>
-                      <span>Shared density across connected store routes</span>
+                      <span data-i18n="shipper.adapts.consumer.retail.bullets.1"
+                        >Shared density across connected store routes</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1164,22 +1418,32 @@
                   class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
                 >
                   <div>
-                    <h3 class="h3 text-text-primary font-medium mb-2">
+                    <h3
+                      class="h3 text-text-primary font-medium mb-2"
+                      data-i18n="shipper.adapts.consumer.fresh.title"
+                    >
                       Fresh, Fragile &amp; High‑Value
                     </h3>
                     <div class="w-8 h-px bg-primary/40 mb-4"></div>
-                    <p class="text-text-secondary body font-medium">
+                    <p
+                      class="text-text-secondary body font-medium"
+                      data-i18n="shipper.adapts.consumer.fresh.subtitle"
+                    >
                       Controlled handling within structured multi-hop routing.
                     </p>
                   </div>
                   <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-primary font-bold mt-0.5">—</span>
-                      <span>Carrier selection by handling profile</span>
+                      <span data-i18n="shipper.adapts.consumer.fresh.bullets.0"
+                        >Carrier selection by handling profile</span
+                      >
                     </li>
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-primary font-bold mt-0.5">—</span>
-                      <span>Short, time‑bound hops via microhubs</span>
+                      <span data-i18n="shipper.adapts.consumer.fresh.bullets.1"
+                        >Short, time‑bound hops via microhubs</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1218,22 +1482,34 @@
                   class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
                 >
                   <div>
-                    <h3 class="h3 text-text-primary font-medium mb-2">
+                    <h3
+                      class="h3 text-text-primary font-medium mb-2"
+                      data-i18n="shipper.adapts.business.industrial.title"
+                    >
                       Industrial, MRO &amp; Spare Parts
                     </h3>
                     <div class="w-8 h-px bg-emerald-600/40 mb-4"></div>
-                    <p class="text-text-secondary body font-medium">
+                    <p
+                      class="text-text-secondary body font-medium"
+                      data-i18n="shipper.adapts.business.industrial.subtitle"
+                    >
                       Urgent parts without half‑empty runs.
                     </p>
                   </div>
                   <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-emerald-600 font-bold mt-0.5">—</span>
-                      <span>Backhaul‑first matching logic</span>
+                      <span
+                        data-i18n="shipper.adapts.business.industrial.bullets.0"
+                        >Backhaul‑first matching logic</span
+                      >
                     </li>
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-emerald-600 font-bold mt-0.5">—</span>
-                      <span>Mixed parcel and pallet density</span>
+                      <span
+                        data-i18n="shipper.adapts.business.industrial.bullets.1"
+                        >Mixed parcel and pallet density</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1261,22 +1537,34 @@
                   class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
                 >
                   <div>
-                    <h3 class="h3 text-text-primary font-medium mb-2">
+                    <h3
+                      class="h3 text-text-primary font-medium mb-2"
+                      data-i18n="shipper.adapts.business.pallets.title"
+                    >
                       Pallets, LTL &amp; Regular Lanes
                     </h3>
                     <div class="w-8 h-px bg-emerald-600/40 mb-4"></div>
-                    <p class="text-text-secondary body font-medium">
+                    <p
+                      class="text-text-secondary body font-medium"
+                      data-i18n="shipper.adapts.business.pallets.subtitle"
+                    >
                       Lane optimization before fleet expansion.
                     </p>
                   </div>
                   <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-emerald-600 font-bold mt-0.5">—</span>
-                      <span>Recover underused truck capacity</span>
+                      <span
+                        data-i18n="shipper.adapts.business.pallets.bullets.0"
+                        >Recover underused truck capacity</span
+                      >
                     </li>
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-emerald-600 font-bold mt-0.5">—</span>
-                      <span>Structure long‑haul around route density</span>
+                      <span
+                        data-i18n="shipper.adapts.business.pallets.bullets.1"
+                        >Structure long‑haul around route density</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1304,22 +1592,34 @@
                   class="relative z-10 flex flex-col h-full justify-between gap-6 p-8"
                 >
                   <div>
-                    <h3 class="h3 text-text-primary font-medium mb-2">
+                    <h3
+                      class="h3 text-text-primary font-medium mb-2"
+                      data-i18n="shipper.adapts.business.healthcare.title"
+                    >
                       Healthcare &amp; Time‑Critical
                     </h3>
                     <div class="w-8 h-px bg-emerald-600/40 mb-4"></div>
-                    <p class="text-text-secondary body font-medium">
+                    <p
+                      class="text-text-secondary body font-medium"
+                      data-i18n="shipper.adapts.business.healthcare.subtitle"
+                    >
                       Compliant speed within controlled routing.
                     </p>
                   </div>
                   <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-emerald-600 font-bold mt-0.5">—</span>
-                      <span>Handling‑aware route selection</span>
+                      <span
+                        data-i18n="shipper.adapts.business.healthcare.bullets.0"
+                        >Handling‑aware route selection</span
+                      >
                     </li>
                     <li class="flex items-start gap-3 text-text-secondary body">
                       <span class="text-emerald-600 font-bold mt-0.5">—</span>
-                      <span>Fastest feasible multi‑hop path</span>
+                      <span
+                        data-i18n="shipper.adapts.business.healthcare.bullets.1"
+                        >Fastest feasible multi‑hop path</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1497,7 +1797,10 @@
               <div
                 class="bg-gradient-to-r from-slate-200 to-slate-100 px-8 py-6 border-b border-border-default/20"
               >
-                <h3 class="h3 text-text-primary font-semibold">
+                <h3
+                  class="h3 text-text-primary font-semibold"
+                  data-i18n="shipper.comparison.traditional.heading"
+                >
                   Traditional Model
                 </h3>
               </div>
@@ -1524,9 +1827,16 @@
                         />
                       </svg>
                     </div>
-                    <span class="body-semibold text-text-primary">Speed</span>
+                    <span
+                      class="body-semibold text-text-primary"
+                      data-i18n="shipper.comparison.labels.speed"
+                      >Speed</span
+                    >
                   </div>
-                  <p class="text-text-secondary body ml-11">
+                  <p
+                    class="text-text-secondary body ml-11"
+                    data-i18n="shipper.comparison.traditional.speed"
+                  >
                     Standard next‑day or slower
                   </p>
                 </div>
@@ -1551,9 +1861,16 @@
                         />
                       </svg>
                     </div>
-                    <span class="body-semibold text-text-primary">Cost</span>
+                    <span
+                      class="body-semibold text-text-primary"
+                      data-i18n="shipper.comparison.labels.cost"
+                      >Cost</span
+                    >
                   </div>
-                  <p class="text-text-secondary body ml-11">
+                  <p
+                    class="text-text-secondary body ml-11"
+                    data-i18n="shipper.comparison.traditional.cost"
+                  >
                     Rigid, fixed‑rate stops
                   </p>
                 </div>
@@ -1578,11 +1895,16 @@
                         />
                       </svg>
                     </div>
-                    <span class="body-semibold text-text-primary"
+                    <span
+                      class="body-semibold text-text-primary"
+                      data-i18n="shipper.comparison.labels.shipmentTypes"
                       >Shipment Types</span
                     >
                   </div>
-                  <p class="text-text-secondary body ml-11">
+                  <p
+                    class="text-text-secondary body ml-11"
+                    data-i18n="shipper.comparison.traditional.shipmentTypes"
+                  >
                     Built for either parcels or full trucks, gaps for mixed
                     flows
                   </p>
@@ -1608,11 +1930,16 @@
                         />
                       </svg>
                     </div>
-                    <span class="body-semibold text-text-primary"
+                    <span
+                      class="body-semibold text-text-primary"
+                      data-i18n="shipper.comparison.labels.tracking"
                       >Tracking & Experience</span
                     >
                   </div>
-                  <p class="text-text-secondary body ml-11">
+                  <p
+                    class="text-text-secondary body ml-11"
+                    data-i18n="shipper.comparison.traditional.tracking"
+                  >
                     Generic "out for delivery", hard to follow
                   </p>
                 </div>
@@ -1637,11 +1964,16 @@
                         />
                       </svg>
                     </div>
-                    <span class="body-semibold text-text-primary"
+                    <span
+                      class="body-semibold text-text-primary"
+                      data-i18n="shipper.comparison.labels.sustainability"
                       >Sustainability</span
                     >
                   </div>
-                  <p class="text-text-secondary body ml-11">
+                  <p
+                    class="text-text-secondary body ml-11"
+                    data-i18n="shipper.comparison.traditional.sustainability"
+                  >
                     CO₂ impact rarely measured or managed
                   </p>
                 </div>
@@ -1656,7 +1988,12 @@
               <div
                 class="bg-gradient-to-r from-primary to-primary/90 px-8 py-6 border-b border-primary/20"
               >
-                <h3 class="h3 text-white font-semibold">GoLynk Model</h3>
+                <h3
+                  class="h3 text-white font-semibold"
+                  data-i18n="shipper.comparison.golynk.heading"
+                >
+                  GoLynk Model
+                </h3>
               </div>
 
               <!-- Card Body -->
@@ -1687,7 +2024,10 @@
                     <span class="text-primary font-bold text-lg leading-none"
                       >✓</span
                     >
-                    <p class="text-text-secondary body">
+                    <p
+                      class="text-text-secondary body"
+                      data-i18n="shipper.comparison.golynk.speed"
+                    >
                       Same‑day, on‑route by design
                     </p>
                   </div>
@@ -1719,7 +2059,10 @@
                     <span class="text-primary font-bold text-lg leading-none"
                       >✓</span
                     >
-                    <p class="text-text-secondary body">
+                    <p
+                      class="text-text-secondary body"
+                      data-i18n="shipper.comparison.golynk.cost"
+                    >
                       Dynamic pricing based on real routes and capacity
                     </p>
                   </div>
@@ -1753,7 +2096,10 @@
                     <span class="text-primary font-bold text-lg leading-none"
                       >✓</span
                     >
-                    <p class="text-text-secondary body">
+                    <p
+                      class="text-text-secondary body"
+                      data-i18n="shipper.comparison.golynk.shipmentTypes"
+                    >
                       One layer for parcels, pallets, and mixed flows on
                       existing routes
                     </p>
@@ -1788,7 +2134,10 @@
                     <span class="text-primary font-bold text-lg leading-none"
                       >✓</span
                     >
-                    <p class="text-text-secondary body">
+                    <p
+                      class="text-text-secondary body"
+                      data-i18n="shipper.comparison.golynk.tracking"
+                    >
                       Leg‑by‑leg updates and clear ETAs customers can actually
                       see
                     </p>
@@ -1823,7 +2172,10 @@
                     <span class="text-primary font-bold text-lg leading-none"
                       >✓</span
                     >
-                    <p class="text-text-secondary body">
+                    <p
+                      class="text-text-secondary body"
+                      data-i18n="shipper.comparison.golynk.sustainability"
+                    >
                       Per‑shipment CO₂ impact visible and reduced vs traditional
                       runs
                     </p>
@@ -1840,12 +2192,16 @@
             data-duration="800"
             data-delay="400"
           >
-            <p class="text-text-primary h4 font-semibold">
+            <p
+              class="text-text-primary h4 font-semibold"
+              data-i18n="shipper.comparison.cta.text"
+            >
               Bring your lanes into the GoLynk model.
             </p>
             <a
-              href="#contact"
+              href="./get-started.html#shipper"
               class="px-8 py-4 primary-btn inline-flex items-center justify-center"
+              data-i18n="shipper.comparison.cta.button"
             >
               Discuss Lane Evaluation
             </a>
@@ -1865,15 +2221,24 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <h2 class="h1 text-text-primary">The Orchestration Interface</h2>
+            <h2
+              class="h1 text-text-primary"
+              data-i18n="shipper.interface.heading"
+            >
+              The Orchestration Interface
+            </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="shipper.interface.description"
             >
               GoLynk is not only a routing engine.<br />
               It includes the control and visibility layer used by shippers and
               capacity partners.
             </p>
-            <p class="text-text-secondary text-h3 font-semibold">
+            <p
+              class="text-text-secondary text-h3 font-semibold"
+              data-i18n="shipper.interface.tagline"
+            >
               One system. Shared logic. Full transparency.
             </p>
           </div>
@@ -1913,28 +2278,26 @@
                   </div>
                 </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
+              <h3
+                class="h3 text-text-primary font-semibold"
+                data-i18n="shipper.interface.cards.dashboard.title"
+              >
                 Unified Control Dashboard
               </h3>
-              <p class="text-text-secondary body">
+              <p
+                class="text-text-secondary body"
+                data-i18n="shipper.interface.cards.dashboard.text"
+              >
                 Shippers and carriers access the same orchestration layer
                 through structured dashboards — across desktop and mobile.
               </p>
-              <ul class="space-y-2 text-text-secondary body">
-                <li>— Shipment intake and lane visibility</li>
-                <li>— Leg-by-leg tracking across multi-hop journeys</li>
-                <li>— Cost, SLA, and CO₂ reporting per shipment</li>
-                <li>— Invoice and settlement integration</li>
-              </ul>
-              <p class="text-text-secondary body italic">
-                The interface reflects the orchestration logic — not manual
-                dispatch.
-              </p>
               <a
-                href="#"
-                class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
+                href="#dashboard"
+                class="accordion-link inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
               >
-                <span>Learn more</span>
+                <span data-i18n="shipper.interface.cards.dashboard.cta"
+                  >Learn more</span
+                >
                 <svg class="size-4">
                   <use href="#icon-arrow-right"></use>
                 </svg>
@@ -1952,27 +2315,26 @@
                   </div>
                 </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
+              <h3
+                class="h3 text-text-primary font-semibold"
+                data-i18n="shipper.interface.cards.api.title"
+              >
                 API-First Integration
               </h3>
-              <p class="text-text-secondary body">
+              <p
+                class="text-text-secondary body"
+                data-i18n="shipper.interface.cards.api.text"
+              >
                 GoLynk integrates directly with TMS, WMS, ERP, and e-commerce
                 systems.
               </p>
-              <ul class="space-y-2 text-text-secondary body">
-                <li>— Order ingestion via API</li>
-                <li>— Capacity exposure for carriers</li>
-                <li>— Event streaming and webhook updates</li>
-                <li>— Cost and emissions data fed back into your systems</li>
-              </ul>
-              <p class="text-text-secondary body italic">
-                You keep your stack. We add orchestration.
-              </p>
               <a
-                href="#"
-                class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
+                href="#api"
+                class="accordion-link inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
               >
-                <span>Learn more</span>
+                <span data-i18n="shipper.interface.cards.api.cta"
+                  >Learn more</span
+                >
                 <svg class="size-4">
                   <use href="#icon-arrow-right"></use>
                 </svg>
@@ -1990,28 +2352,26 @@
                   </div>
                 </div>
               </div>
-              <h3 class="h3 text-text-primary font-semibold">
+              <h3
+                class="h3 text-text-primary font-semibold"
+                data-i18n="shipper.interface.cards.trust.title"
+              >
                 Trust & Accountability Layer
               </h3>
-              <p class="text-text-secondary body">
+              <p
+                class="text-text-secondary body"
+                data-i18n="shipper.interface.cards.trust.text"
+              >
                 Every shipment is executed within a verified and rule-based
                 environment.
               </p>
-              <ul class="space-y-2 text-text-secondary body">
-                <li>— Screened capacity partners</li>
-                <li>— Logged handoffs and chain-of-custody events</li>
-                <li>— Insurance and compliance built into route eligibility</li>
-                <li>— Structured exception handling</li>
-              </ul>
-              <p class="text-text-secondary body italic">
-                Reliability is embedded in the system — not dependent on manual
-                coordination.
-              </p>
               <a
-                href="#"
-                class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
+                href="#trust"
+                class="accordion-link inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
               >
-                <span>Learn more</span>
+                <span data-i18n="shipper.interface.cards.trust.cta"
+                  >Learn more</span
+                >
                 <svg class="size-4">
                   <use href="#icon-arrow-right"></use>
                 </svg>
@@ -2020,6 +2380,247 @@
           </div>
         </div>
       </section>
+
+      <!-- Interface Details Accordion Section -->
+      <section class="py-16 md:py-20 bg-bg-secondary">
+        <div
+          class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto px-6 md:px-8 space-y-8"
+        >
+          <!-- Section Header -->
+          <div
+            class="text-center space-y-4"
+            data-animate="fade-up"
+            data-duration="800"
+          >
+            <h2
+              class="h2 text-text-primary"
+              data-i18n="shipper.interfaceDetails.heading"
+            >
+              Deep Dive into the Interface
+            </h2>
+            <p
+              class="text-text-secondary body max-w-3xl mx-auto"
+              data-i18n="shipper.interfaceDetails.description"
+            >
+              Explore the key components that make GoLynk's orchestration
+              interface unique.
+            </p>
+          </div>
+
+          <!-- Accordion Items -->
+          <div
+            class="space-y-4 max-w-3xl mx-auto"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Dashboard Accordion -->
+            <div
+              id="dashboard"
+              class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors accordion-trigger"
+                aria-expanded="false"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-10 rounded-lg bg-primary-lightest flex items-center justify-center shrink-0"
+                  >
+                    <svg class="size-5 text-primary">
+                      <use href="#icon-dashboard"></use>
+                    </svg>
+                  </div>
+                  <span
+                    class="h4 text-text-primary"
+                    data-i18n="shipper.interfaceDetails.dashboard.title"
+                    >Unified Control Dashboard</span
+                  >
+                </div>
+                <svg
+                  class="size-5 text-gray-400 transition-transform accordion-icon"
+                >
+                  <use href="#icon-chevron-down"></use>
+                </svg>
+              </button>
+              <div class="accordion-content hidden">
+                <div class="px-6 pb-6 pt-2 space-y-4 border-t border-gray-100">
+                  <p
+                    class="text-text-secondary body"
+                    data-i18n="shipper.interfaceDetails.dashboard.text1"
+                  >
+                    The Unified Control Dashboard provides complete visibility
+                    into your logistics operations. Monitor shipments in
+                    real-time, track performance metrics, and access detailed
+                    analytics—all from a single interface.
+                  </p>
+                  <ul class="space-y-2 text-text-secondary body">
+                    <li data-i18n="shipper.interfaceDetails.dashboard.feature1">
+                      • Real-time shipment tracking with multi-hop visibility
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.dashboard.feature2">
+                      • Cost breakdown per leg and total journey
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.dashboard.feature3">
+                      • SLA compliance monitoring with proactive alerts
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.dashboard.feature4">
+                      • CO₂ emissions tracking for sustainability reporting
+                    </li>
+                  </ul>
+                  <p
+                    class="text-text-secondary body"
+                    data-i18n="shipper.interfaceDetails.dashboard.text2"
+                  >
+                    Unlike traditional dispatch systems, the dashboard reflects
+                    orchestration intelligence—automatically surfacing
+                    exceptions, optimizations, and actionable insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- API Accordion -->
+            <div
+              id="api"
+              class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors accordion-trigger"
+                aria-expanded="false"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-10 rounded-lg bg-primary-lightest flex items-center justify-center shrink-0"
+                  >
+                    <svg class="size-5 text-primary">
+                      <use href="#icon-code"></use>
+                    </svg>
+                  </div>
+                  <span
+                    class="h4 text-text-primary"
+                    data-i18n="shipper.interfaceDetails.api.title"
+                    >API-First Integration</span
+                  >
+                </div>
+                <svg
+                  class="size-5 text-gray-400 transition-transform accordion-icon"
+                >
+                  <use href="#icon-chevron-down"></use>
+                </svg>
+              </button>
+              <div class="accordion-content hidden">
+                <div class="px-6 pb-6 pt-2 space-y-4 border-t border-gray-100">
+                  <p
+                    class="text-text-secondary body"
+                    data-i18n="shipper.interfaceDetails.api.text1"
+                  >
+                    GoLynk's API-first architecture means you don't need to
+                    replace your existing systems. Our RESTful APIs and webhooks
+                    integrate seamlessly with TMS, WMS, ERP, and e-commerce
+                    platforms.
+                  </p>
+                  <ul class="space-y-2 text-text-secondary body">
+                    <li data-i18n="shipper.interfaceDetails.api.feature1">
+                      • Order ingestion: Push shipments directly from your
+                      systems
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.api.feature2">
+                      • Event streaming: Real-time updates via webhooks
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.api.feature3">
+                      • Capacity exposure: Carriers publish availability
+                      programmatically
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.api.feature4">
+                      • Data sync: Cost and emissions data flow back
+                      automatically
+                    </li>
+                  </ul>
+                  <p
+                    class="text-text-secondary body"
+                    data-i18n="shipper.interfaceDetails.api.text2"
+                  >
+                    Full API documentation, sandbox environments, and dedicated
+                    integration support ensure a smooth implementation process.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust Accordion -->
+            <div
+              id="trust"
+              class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors accordion-trigger"
+                aria-expanded="false"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-10 rounded-lg bg-primary-lightest flex items-center justify-center shrink-0"
+                  >
+                    <svg class="size-5 text-primary">
+                      <use href="#icon-shield"></use>
+                    </svg>
+                  </div>
+                  <span
+                    class="h4 text-text-primary"
+                    data-i18n="shipper.interfaceDetails.trust.title"
+                    >Trust & Accountability Layer</span
+                  >
+                </div>
+                <svg
+                  class="size-5 text-gray-400 transition-transform accordion-icon"
+                >
+                  <use href="#icon-chevron-down"></use>
+                </svg>
+              </button>
+              <div class="accordion-content hidden">
+                <div class="px-6 pb-6 pt-2 space-y-4 border-t border-gray-100">
+                  <p
+                    class="text-text-secondary body"
+                    data-i18n="shipper.interfaceDetails.trust.text1"
+                  >
+                    Every shipment moves through a verified, rule-based
+                    environment. GoLynk embeds accountability into the system
+                    architecture—not as an afterthought, but as a core
+                    principle.
+                  </p>
+                  <ul class="space-y-2 text-text-secondary body">
+                    <li data-i18n="shipper.interfaceDetails.trust.feature1">
+                      • Vetted capacity network: All partners screened for
+                      compliance
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.trust.feature2">
+                      • Chain-of-custody logging: Every handoff recorded
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.trust.feature3">
+                      • Insurance integration: Coverage verified at route
+                      eligibility
+                    </li>
+                    <li data-i18n="shipper.interfaceDetails.trust.feature4">
+                      • Exception handling: Structured escalation protocols
+                    </li>
+                  </ul>
+                  <p
+                    class="text-text-secondary body"
+                    data-i18n="shipper.interfaceDetails.trust.text2"
+                  >
+                    Reliability isn't dependent on manual coordination—it's
+                    built into how GoLynk operates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- GoLynk Technology Section -->
       <section class="py-20 md:py-28 bg-bg-tertiary">
         <div
@@ -2071,10 +2672,16 @@
                             <use href="#icon-ai-brain"></use>
                           </svg>
                         </div>
-                        <h3 class="h3 text-text-primary font-semibold">
+                        <h3
+                          class="h3 text-text-primary font-semibold"
+                          data-i18n="shipper.technology.pillars.graph.title"
+                        >
                           Orchestration Graph
                         </h3>
-                        <p class="text-text-secondary body">
+                        <p
+                          class="text-text-secondary body"
+                          data-i18n="shipper.technology.pillars.graph.text"
+                        >
                           Routes modeled as one movement graph.
                         </p>
                       </div>
@@ -2103,10 +2710,16 @@
                             <use href="#icon-road-wayside"></use>
                           </svg>
                         </div>
-                        <h3 class="h3 text-text-primary font-semibold">
+                        <h3
+                          class="h3 text-text-primary font-semibold"
+                          data-i18n="shipper.technology.pillars.matching.title"
+                        >
                           Matching Engine
                         </h3>
-                        <p class="text-text-secondary body">
+                        <p
+                          class="text-text-secondary body"
+                          data-i18n="shipper.technology.pillars.matching.text"
+                        >
                           Scores legs and chains 2–3 hops.
                         </p>
                       </div>
@@ -2135,10 +2748,16 @@
                             <use href="#icon-discount"></use>
                           </svg>
                         </div>
-                        <h3 class="h3 text-text-primary font-semibold">
+                        <h3
+                          class="h3 text-text-primary font-semibold"
+                          data-i18n="shipper.technology.pillars.api.title"
+                        >
                           API-First Integration
                         </h3>
-                        <p class="text-text-secondary body">
+                        <p
+                          class="text-text-secondary body"
+                          data-i18n="shipper.technology.pillars.api.text"
+                        >
                           Plugs into TMS/WMS/ERP and dashboards.
                         </p>
                       </div>
@@ -2167,10 +2786,16 @@
                             <use href="#icon-chimney"></use>
                           </svg>
                         </div>
-                        <h3 class="h3 text-text-primary font-semibold">
+                        <h3
+                          class="h3 text-text-primary font-semibold"
+                          data-i18n="shipper.technology.pillars.data.title"
+                        >
                           Data-Driven Improvement
                         </h3>
-                        <p class="text-text-secondary body">
+                        <p
+                          class="text-text-secondary body"
+                          data-i18n="shipper.technology.pillars.data.text"
+                        >
                           Better ETAs and pricing as lanes scale.
                         </p>
                       </div>
@@ -2267,6 +2892,7 @@
                 >
                   <h3
                     class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                    data-i18n="shipper.faq.items.0.question"
                   >
                     What kinds of shipments does GoLynk support for shippers?
                   </h3>
@@ -2279,7 +2905,10 @@
                 <div
                   class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
                 >
-                  <div class="text-text-secondary body pt-2 pb-4">
+                  <div
+                    class="text-text-secondary body pt-2 pb-4"
+                    data-i18n="shipper.faq.items.0.answer"
+                  >
                     GoLynk supports everything from single parcels and
                     e‑commerce orders to pallets, LTL, and full truckloads. You
                     can start with last‑mile parcels and later plug in your B2B
@@ -2302,6 +2931,7 @@
                 >
                   <h3
                     class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                    data-i18n="shipper.faq.items.1.question"
                   >
                     Do I need to replace my current carriers or freight
                     partners?
@@ -2315,7 +2945,10 @@
                 <div
                   class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
                 >
-                  <div class="text-text-secondary body pt-2 pb-4">
+                  <div
+                    class="text-text-secondary body pt-2 pb-4"
+                    data-i18n="shipper.faq.items.1.answer"
+                  >
                     No. GoLynk is an orchestration layer on top of your existing
                     carriers and lanes. You can keep trusted partners, expose
                     their spare capacity into GoLynk, and let the engine decide
@@ -2338,6 +2971,7 @@
                 >
                   <h3
                     class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                    data-i18n="shipper.faq.items.2.question"
                   >
                     How does GoLynk keep my shipments safe and compliant?
                   </h3>
@@ -2350,7 +2984,10 @@
                 <div
                   class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
                 >
-                  <div class="text-text-secondary body pt-2 pb-4">
+                  <div
+                    class="text-text-secondary body pt-2 pb-4"
+                    data-i18n="shipper.faq.items.2.answer"
+                  >
                     Shipments are matched to vetted carriers and routes based on
                     handling needs, value, and any sector‑specific requirements.
                     For sensitive flows—like fresh, fragile, or
@@ -2373,6 +3010,7 @@
                 >
                   <h3
                     class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                    data-i18n="shipper.faq.items.3.question"
                   >
                     How do pricing and costs work for shippers?
                   </h3>
@@ -2385,7 +3023,10 @@
                 <div
                   class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
                 >
-                  <div class="text-text-secondary body pt-2 pb-4">
+                  <div
+                    class="text-text-secondary body pt-2 pb-4"
+                    data-i18n="shipper.faq.items.3.answer"
+                  >
                     Pricing reflects how well a shipment fits existing routes
                     and capacity, rather than fixed, one‑size‑fits‑all rates.
                     That means you can unlock lower costs when GoLynk fills
@@ -2408,6 +3049,7 @@
                 >
                   <h3
                     class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                    data-i18n="shipper.faq.items.4.question"
                   >
                     How do we integrate GoLynk with our systems?
                   </h3>
@@ -2420,7 +3062,10 @@
                 <div
                   class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
                 >
-                  <div class="text-text-secondary body pt-2 pb-4">
+                  <div
+                    class="text-text-secondary body pt-2 pb-4"
+                    data-i18n="shipper.faq.items.4.answer"
+                  >
                     You can start via dashboards and then move to API
                     integration with your TMS, WMS, e‑commerce platform, or ERP.
                     Orders, events, and CO₂ data can flow automatically, so your
@@ -2443,6 +3088,7 @@
                 >
                   <h3
                     class="text-body-lg text-text-primary font-semibold group-hover:text-primary transition-colors"
+                    data-i18n="shipper.faq.items.5.question"
                   >
                     How do you calculate CO₂ impact for our shipments?
                   </h3>
@@ -2455,7 +3101,10 @@
                 <div
                   class="faq-answer overflow-hidden transition-all duration-300 max-h-0"
                 >
-                  <div class="text-text-secondary body pt-2 pb-4">
+                  <div
+                    class="text-text-secondary body pt-2 pb-4"
+                    data-i18n="shipper.faq.items.5.answer"
+                  >
                     For each shipment, GoLynk estimates emissions using
                     conservative baseline factors and compares them against what
                     a typical courier or truck move would have emitted. The
@@ -2470,6 +3119,7 @@
                 <a
                   href="./faq.html"
                   class="inline-flex items-center gap-2 text-primary body-semibold hover:gap-3 transition-all"
+                  data-i18n="shipper.faq.viewAll"
                 >
                   View all FAQs
                   <svg class="size-5">
@@ -2492,18 +3142,30 @@
               data-duration="800"
             >
               <div class="space-y-4">
-                <h2 class="h1 text-text-primary">
+                <h2
+                  class="h1 text-text-primary"
+                  data-i18n="shipper.partner.heading"
+                >
                   Early Shipping Partner Program
                 </h2>
-                <p class="text-text-secondary text-h3">
+                <p
+                  class="text-text-secondary text-h3"
+                  data-i18n="shipper.partner.description"
+                >
                   We are onboarding selected shippers across priority lanes.
                 </p>
               </div>
               <div class="space-y-4">
-                <p class="text-text-secondary body">
+                <p
+                  class="text-text-secondary body"
+                  data-i18n="shipper.partner.text1"
+                >
                   Share your routes and expected shipment volume.
                 </p>
-                <p class="text-text-secondary body">
+                <p
+                  class="text-text-secondary body"
+                  data-i18n="shipper.partner.text2"
+                >
                   We'll outline where routes already in motion can improve cost
                   and reliability.
                 </p>
@@ -2513,7 +3175,9 @@
                   href="#contact"
                   class="inline-flex items-center gap-2 text-primary body-semibold hover:brightness-150 transition-all"
                 >
-                  <span>Express Shipping Interest</span>
+                  <span data-i18n="shipper.partner.cta"
+                    >Express Shipping Interest</span
+                  >
                   <svg class="size-4">
                     <use href="#icon-arrow-right"></use>
                   </svg>
@@ -2537,6 +3201,376 @@
           </div>
         </div>
       </section>
+
+      <!-- Early Access Form Section -->
+      <section
+        id="contact"
+        data-anchor="early-access"
+        class="py-16 md:py-24 bg-gray-50"
+      >
+        <div class="max-w-[800px] mx-auto px-4 sm:px-6">
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 sm:p-10"
+          >
+            <!-- Form Header -->
+            <div class="text-center mb-8">
+              <h2
+                class="text-2xl sm:text-3xl font-semibold text-text-primary mb-3"
+                data-i18n="shipper.earlyAccess.heading"
+              >
+                Start Shipping on Existing Routes
+              </h2>
+              <p
+                class="text-text-secondary text-base max-w-lg mx-auto"
+                data-i18n="shipper.earlyAccess.description"
+              >
+                Tell us what you move and where — we'll confirm if your corridor
+                is active.
+              </p>
+            </div>
+
+            <!-- Early Access Form -->
+            <form
+              id="early-access-form"
+              action="/api/early-access"
+              method="POST"
+              class="space-y-5"
+            >
+              <!-- Row 1: Name & Company -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="fullName"
+                    class="block text-sm font-medium text-text-primary mb-1.5"
+                  >
+                    <span data-i18n="shipper.earlyAccess.form.fullName.label"
+                      >Full Name</span
+                    >
+                    <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                    placeholder="Your full name"
+                    data-i18n-placeholder="shipper.earlyAccess.form.fullName.placeholder"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="companyName"
+                    class="block text-sm font-medium text-text-primary mb-1.5"
+                  >
+                    <span data-i18n="shipper.earlyAccess.form.companyName.label"
+                      >Company Name</span
+                    >
+                    <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    required
+                    placeholder="Your company name"
+                    data-i18n-placeholder="shipper.earlyAccess.form.companyName.placeholder"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  />
+                </div>
+              </div>
+
+              <!-- Row 2: Business Type & Volume -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="businessType"
+                    class="block text-sm font-medium text-text-primary mb-1.5"
+                  >
+                    <span
+                      data-i18n="shipper.earlyAccess.form.businessType.label"
+                      >Business Type</span
+                    >
+                    <span class="text-red-500">*</span>
+                  </label>
+                  <select
+                    id="businessType"
+                    name="businessType"
+                    required
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors appearance-none cursor-pointer"
+                    style="
+                      background-image: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23717680%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e&quot;);
+                      background-repeat: no-repeat;
+                      background-position: right 1rem center;
+                      background-size: 1rem;
+                    "
+                  >
+                    <option
+                      value=""
+                      disabled
+                      selected
+                      data-i18n="shipper.earlyAccess.form.businessType.placeholder"
+                    >
+                      Select your business type
+                    </option>
+                    <option
+                      value="florist"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.florist"
+                    >
+                      Florist
+                    </option>
+                    <option
+                      value="bakery"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.bakery"
+                    >
+                      Bakery
+                    </option>
+                    <option
+                      value="ecommerce"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.ecommerce"
+                    >
+                      E-commerce
+                    </option>
+                    <option
+                      value="retail"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.retail"
+                    >
+                      Retail
+                    </option>
+                    <option
+                      value="distributor"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.distributor"
+                    >
+                      Distributor
+                    </option>
+                    <option
+                      value="manufacturer"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.manufacturer"
+                    >
+                      Manufacturer
+                    </option>
+                    <option
+                      value="other"
+                      data-i18n="shipper.earlyAccess.form.businessType.options.other"
+                    >
+                      Other
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    for="monthlyVolume"
+                    class="block text-sm font-medium text-text-primary mb-1.5"
+                  >
+                    <span
+                      data-i18n="shipper.earlyAccess.form.monthlyVolume.label"
+                      >Estimated Shipments / Month</span
+                    >
+                    <span class="text-red-500">*</span>
+                  </label>
+                  <select
+                    id="monthlyVolume"
+                    name="monthlyVolume"
+                    required
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors appearance-none cursor-pointer"
+                    style="
+                      background-image: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23717680%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e&quot;);
+                      background-repeat: no-repeat;
+                      background-position: right 1rem center;
+                      background-size: 1rem;
+                    "
+                  >
+                    <option
+                      value=""
+                      disabled
+                      selected
+                      data-i18n="shipper.earlyAccess.form.monthlyVolume.placeholder"
+                    >
+                      Select volume
+                    </option>
+                    <option value="1-20">1–20</option>
+                    <option value="20-100">20–100</option>
+                    <option value="100-500">100–500</option>
+                    <option value="500+">500+</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row 3: City & Email -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="city"
+                    class="block text-sm font-medium text-text-primary mb-1.5"
+                  >
+                    <span data-i18n="shipper.earlyAccess.form.city.label"
+                      >City / Shipping Area</span
+                    >
+                    <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    required
+                    placeholder="e.g. Munich, Berlin"
+                    data-i18n-placeholder="shipper.earlyAccess.form.city.placeholder"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-text-primary mb-1.5"
+                  >
+                    <span data-i18n="shipper.earlyAccess.form.email.label"
+                      >Email Address</span
+                    >
+                    <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="you@company.com"
+                    data-i18n-placeholder="shipper.earlyAccess.form.email.placeholder"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  />
+                </div>
+              </div>
+
+              <!-- Row 4: Phone (Optional) -->
+              <div class="max-w-[calc(50%-0.5rem)]">
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-text-primary mb-1.5"
+                >
+                  <span data-i18n="shipper.earlyAccess.form.phone.label"
+                    >Phone / WhatsApp</span
+                  >
+                  <span
+                    class="text-text-secondary/60 font-normal"
+                    data-i18n="shipper.earlyAccess.form.phone.optional"
+                    >(optional)</span
+                  >
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+49 123 456 7890"
+                  data-i18n-placeholder="shipper.earlyAccess.form.phone.placeholder"
+                  class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="w-full sm:w-auto sm:min-w-[280px] sm:mx-auto sm:block mt-6 px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold text-base rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                data-i18n="shipper.earlyAccess.cta"
+              >
+                Check Corridor Availability
+              </button>
+
+              <!-- Microcopy -->
+              <div
+                class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-text-secondary/70 pt-2"
+              >
+                <span class="flex items-center gap-1.5">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span data-i18n="shipper.earlyAccess.microcopy.noCommitment"
+                    >No commitment required</span
+                  >
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span data-i18n="shipper.earlyAccess.microcopy.response"
+                    >Response within 24 hours</span
+                  >
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span data-i18n="shipper.earlyAccess.microcopy.priority"
+                    >Priority corridor access</span
+                  >
+                </span>
+              </div>
+            </form>
+
+            <!-- Success State (hidden by default) -->
+            <div id="early-access-success" class="hidden text-center py-8">
+              <div
+                class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 text-green-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-xl font-semibold text-text-primary mb-2"
+                data-i18n="shipper.earlyAccess.success.heading"
+              >
+                Thanks for your interest!
+              </h3>
+              <p
+                class="text-text-secondary"
+                data-i18n="shipper.earlyAccess.success.description"
+              >
+                We'll review your corridor and respond shortly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer class="pt-8 overflow-hidden">
         <div class="space-y-12">
           <div
@@ -2548,7 +3582,8 @@
               data-animate="fade-up"
               data-duration="800"
             >
-              <button
+              <a
+                href="./shipper.html#early-access"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
               >
                 <svg class="size-6 me-2">
@@ -2559,9 +3594,9 @@
                   data-i18n="footer.cta.expressShippingInterest"
                   >Express Shipping Interest</span
                 >
-              </button>
+              </a>
               <a
-                href="#contact"
+                href="./get-started.html#contact"
                 class="inline-flex items-center gap-2 text-primary body-semibold hover:brightness-150 transition-all"
               >
                 <span
@@ -2578,7 +3613,7 @@
             <div class="flex flex-col items-center lg:items-start gap-3">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.newsletter.title"
+                data-i18n="common.footer.newsletter.title"
               >
                 Stay up to date
               </h3>
@@ -2587,14 +3622,14 @@
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  data-i18n-placeholder="footer.newsletter.placeholder"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
                   class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   required
                 />
                 <button
                   type="submit"
                   class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
-                  data-i18n="footer.newsletter.button"
+                  data-i18n="common.footer.newsletter.button"
                 >
                   Subscribe
                 </button>
@@ -2608,51 +3643,57 @@
             data-duration="800"
             data-delay="200"
           >
-            <!-- GoLynk Column -->
+            <!-- Company Column -->
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.golynk.title"
+                data-i18n="common.footer.sections.company.title"
               >
-                GoLynk
+                Company
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#about"
+                  href="./about.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.about"
-                  >About GoLynk</a
+                  data-i18n="common.footer.sections.company.links.about"
                 >
+                  About GoLynk
+                </a>
                 <a
-                  href="#how-it-works"
+                  href="./index.html#how-it-works"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.howItWorks"
-                  >How It Works</a
+                  data-i18n="common.footer.sections.company.links.howItWorks"
                 >
+                  How It Works
+                </a>
                 <a
-                  href="#industries"
+                  href="./index.html#industries"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.industries"
-                  >Industries We Serve</a
+                  data-i18n="common.footer.sections.company.links.industries"
                 >
+                  Industries We Serve
+                </a>
                 <a
-                  href="#sustainability"
+                  href="./index.html#environment"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.sustainability"
-                  >Sustainability<br />& CO₂ Reporting</a
+                  data-i18n="common.footer.sections.company.links.sustainability"
                 >
+                  Sustainability & CO₂ Reporting
+                </a>
                 <a
-                  href="#careers"
+                  href="./careers.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.careers"
-                  >Careers</a
+                  data-i18n="common.footer.sections.company.links.careers"
                 >
+                  Careers
+                </a>
                 <a
-                  href="#contacts"
+                  href="./get-started.html#contact"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.contacts"
-                  >Contacts</a
+                  data-i18n="common.footer.sections.company.links.contact"
                 >
+                  Contact
+                </a>
               </nav>
             </div>
 
@@ -2660,29 +3701,32 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.shippers.title"
+                data-i18n="common.footer.sections.shippers.title"
               >
                 For Shippers
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#b2b"
+                  href="./shipper.html#early-access"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.b2b"
-                  >B2B Shippers</a
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
                 >
+                  Get Started
+                </a>
                 <a
-                  href="#ecommerce"
+                  href="./pricing.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.ecommerce"
-                  >E-Commerce & Retail</a
+                  data-i18n="common.footer.sections.shippers.links.pricing"
                 >
+                  Pricing
+                </a>
                 <a
-                  href="#fresh"
+                  href="./api-docs.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.fresh"
-                  >Fresh & Healthcare</a
+                  data-i18n="common.footer.sections.shippers.links.api"
                 >
+                  Integration & API Docs
+                </a>
               </nav>
             </div>
 
@@ -2690,35 +3734,32 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.carriers.title"
+                data-i18n="common.footer.sections.carriers.title"
               >
                 For Carriers
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#logistics-operators"
+                  href="./carrier.html#individual-form"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.logistics"
-                  >Logistics Operators<br />& 3PLs</a
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
                 >
+                  Join as Individual Mover
+                </a>
                 <a
-                  href="#capacity-partner"
+                  href="./carrier.html#fleet-form"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.capacity"
-                  >Join as Capacity Partner</a
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
                 >
+                  Fleet Operators
+                </a>
                 <a
-                  href="#operator-dashboard"
+                  href="./carrier.html#operator-dashboard"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.dashboard"
-                  >Operator Dashboard</a
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
                 >
-                <a
-                  href="#api-docs"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.api"
-                  >Integration & API Docs</a
-                >
+                  Operator Dashboard
+                </a>
               </nav>
             </div>
 
@@ -2726,35 +3767,25 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.resources.title"
+                data-i18n="common.footer.sections.resources.title"
               >
                 Resources
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#blog"
+                  href="./faq.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.blog"
-                  >Blog & Insights</a
+                  data-i18n="common.footer.sections.resources.links.faq"
                 >
+                  FAQ
+                </a>
                 <a
-                  href="#case-studies"
+                  href="./investor.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.caseStudies"
-                  >Case Studies</a
+                  data-i18n="common.footer.sections.resources.links.investors"
                 >
-                <a
-                  href="#faq"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.faq"
-                  >FAQ</a
-                >
-                <a
-                  href="#investors"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.investors"
-                  >Investor Relations</a
-                >
+                  Investor Relations
+                </a>
               </nav>
             </div>
 
@@ -2762,35 +3793,39 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.legal.title"
+                data-i18n="common.footer.sections.legal.title"
               >
                 Legal
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#privacy"
+                  href="./privacy.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.privacy"
-                  >Privacy Policy</a
+                  data-i18n="common.footer.sections.legal.links.privacy"
                 >
+                  Privacy Policy
+                </a>
                 <a
-                  href="#terms"
+                  href="./terms.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.terms"
-                  >Terms of Service</a
+                  data-i18n="common.footer.sections.legal.links.terms"
                 >
+                  Terms of Service
+                </a>
                 <a
-                  href="#cookie"
+                  href="./cookies.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.cookie"
-                  >Cookie Policy</a
+                  data-i18n="common.footer.sections.legal.links.cookies"
                 >
+                  Cookie Policy
+                </a>
                 <a
-                  href="#imprint"
+                  href="./imprint.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.imprint"
-                  >Imprint / Legal Notice</a
+                  data-i18n="common.footer.sections.legal.links.imprint"
                 >
+                  Imprint
+                </a>
               </nav>
             </div>
           </div>
@@ -2812,7 +3847,7 @@
                 </a>
                 <p
                   class="text-text-secondary text-small"
-                  data-i18n="footer.tagline"
+                  data-i18n="common.footer.tagline"
                 >
                   Orchestrating existing journeys into faster, greener
                   logistics.
@@ -2831,9 +3866,11 @@
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
                   class="text-text-secondary hover:text-primary transition-colors"
                   aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg class="size-5">
                     <use href="#icon-linkedin"></use>
@@ -2841,7 +3878,7 @@
                 </a>
                 <p
                   class="text-text-secondary text-small"
-                  data-i18n="footer.copyright"
+                  data-i18n="common.footer.copyright"
                 >
                   © GoLynk 2026. All rights reserved.
                 </p>
@@ -2852,5 +3889,120 @@
       </footer>
     </main>
     <script type="module" src="./src/js/main.ts"></script>
+    <script>
+      // Interface Details Accordion Handler
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionTriggers =
+          document.querySelectorAll(".accordion-trigger");
+
+        // Function to expand accordion and scroll to it
+        function expandAndScrollTo(targetId) {
+          const targetAccordion = document.querySelector(targetId);
+          if (targetAccordion) {
+            const trigger = targetAccordion.querySelector(".accordion-trigger");
+            const content = targetAccordion.querySelector(".accordion-content");
+            const icon = trigger
+              ? trigger.querySelector(".accordion-icon")
+              : null;
+
+            // Expand if not already expanded
+            if (trigger && content && content.classList.contains("hidden")) {
+              content.classList.remove("hidden");
+              trigger.setAttribute("aria-expanded", "true");
+              if (icon) icon.style.transform = "rotate(180deg)";
+            }
+
+            // Smooth scroll to the accordion
+            setTimeout(function () {
+              targetAccordion.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }, 100);
+          }
+        }
+
+        // Handle "Learn more" link clicks
+        const accordionLinks = document.querySelectorAll(".accordion-link");
+        accordionLinks.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            expandAndScrollTo(targetId);
+          });
+        });
+
+        accordionTriggers.forEach(function (trigger) {
+          trigger.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector(".accordion-icon");
+            const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+            // Toggle current accordion
+            if (isExpanded) {
+              content.classList.add("hidden");
+              this.setAttribute("aria-expanded", "false");
+              if (icon) icon.style.transform = "rotate(0deg)";
+            } else {
+              content.classList.remove("hidden");
+              this.setAttribute("aria-expanded", "true");
+              if (icon) icon.style.transform = "rotate(180deg)";
+            }
+          });
+        });
+
+        // Auto-expand accordion if URL hash matches
+        const hash = window.location.hash;
+        if (
+          hash &&
+          (hash === "#dashboard" || hash === "#api" || hash === "#trust")
+        ) {
+          expandAndScrollTo(hash);
+        }
+      });
+
+      // Early Access Form Handler
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("early-access-form");
+        const successState = document.getElementById("early-access-success");
+
+        if (form && successState) {
+          form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+              const response = await fetch("/api/early-access", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              });
+
+              // Show success state regardless (for demo purposes)
+              form.classList.add("hidden");
+              successState.classList.remove("hidden");
+
+              // Scroll to success message
+              successState.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+            } catch (error) {
+              // Show success state anyway for demo
+              form.classList.add("hidden");
+              successState.classList.remove("hidden");
+              successState.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>

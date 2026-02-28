@@ -1,145 +1,246 @@
 {
   "hero": {
-    "heading": "Verwandeln Sie Bewegung in Einkommen. Bewegen Sie sich smarter. Verdienen Sie smarter.",
-    "description": "Für Einzelpersonen • Für Unternehmen. Liefern Sie nebenbei. Monetarisieren Sie freie Kapazitäten. Reduzieren Sie CO₂-Emissionen.",
-    "cta": {
-      "startEarning": "Jetzt verdienen",
-      "bookDemo": "Demo buchen"
+    "heading": "GoLynk für Frachtführer: Mehr verdienen auf Routen, die Sie bereits fahren",
+    "description": "Aktivieren Sie freie Kapazitäten auf bereits laufenden Routen — mit abweichungsfreiem Matching und transparenten Auszahlungen.",
+    "badges": {
+      "zeroDeviation": "Abweichungsfreies Matching (wir respektieren Ihre Route und Ihren Zeitplan)",
+      "transparentEarnings": "Transparente Einnahmen pro Auftrag / pro Strecke",
+      "fastPayout": "Schnelle Auszahlungsoptionen + klare Abrechnung",
+      "verifiedShippers": "Verifizierte Versender + versicherte Übergaben"
     },
-    "stats": {
-      "activeMembers": {
-        "number": "50.000+",
-        "label": "Aktive Mitglieder"
+    "cta": {
+      "startEarning": "Als Einzelfahrer beitreten",
+      "fleetAccess": "Flottenbetreiber",
+      "bookDemo": "Flotten-Demo buchen"
+    }
+  },
+  "smartDelivery": {
+    "subheading": "Intelligente Zustellung",
+    "heading": "So funktioniert GoLynk für Frachtführer",
+    "description": "Ganz einfach: Wir zeigen Ihnen nur Aufträge, die zu den Routen passen, die Sie bereits zu Fuß, mit dem Rad oder dem Auto zurücklegen.",
+    "steps": {
+      "step1": {
+        "title": "Aufträge sehen, die zu Ihrer Route passen",
+        "description": "Die GoLynk-App versteht Ihre regelmäßigen Routen, Zeitfenster und Fahrzeugtypen. Sie zeigt nur Lieferungen an, die zu Ihrem natürlichen Weg passen—keine Umwege, keine zufälligen Aufträge quer durch die Stadt."
       },
-      "co2Saved": {
-        "number": "245.000",
-        "label": "Tonnen CO₂ eingespart"
+      "step2": {
+        "title": "Akzeptieren Sie, was zu Ihrem Tag passt",
+        "description": "Sie entscheiden, welche Aufgaben Sie basierend auf Ihrem Zeitplan und Ihrer Kapazität annehmen. Niemand zwingt Sie, jeden Auftrag anzunehmen, und Sie können jederzeit pausieren oder aufhören."
       },
-      "appRating": {
-        "number": "4,8/5",
-        "label": "App-Bewertung"
-      },
-      "partnerOrgs": {
-        "number": "1.200+",
-        "label": "Partnerorganisationen"
+      "step3": {
+        "title": "Auf der Route liefern, schnell bezahlt werden",
+        "description": "Sie liefern Pakete entlang Ihrer üblichen Route und markieren sie in der App als erledigt. Auszahlungen werden automatisch verarbeitet, mit einer klaren Aufschlüsselung dessen, was Sie für jede Fahrt verdient haben."
       }
     }
   },
+  "twoWays": {
+    "heading": "Zwei Wege, mit GoLynk zu transportieren",
+    "description": "Einzelpersonen verwandeln alltägliche Bewegung in Einkommen. Flotten verwandeln ungenutzte Kapazität in Marge—im selben intelligenten Netzwerk."
+  },
   "individuals": {
-    "subheading": "Für Einzelkuriere auf Strecken",
-    "heading": "Menschen, die sich bewegen",
-    "description": "Verwandeln Sie Ihren Arbeitsweg in Einkommen. Verdienen Sie Geld durch die Zustellung von Paketen, die bereits auf Ihrer täglichen Route liegen – keine Umwege, keine verschwendete Zeit.",
-    "howToEarn": {
-      "title": "So können Sie verdienen",
-      "options": {
-        "walker": "Fußgänger / Radfahrer – Ihr Rucksack hat Platz. Wir verwandeln ihn in Verdienstmöglichkeiten.",
-        "carCommuter": "Auto-Pendler – Ihr täglicher Arbeitsweg kann seine eigenen Kosten decken und mehr.",
-        "courier": "Professioneller Kurier – Füllen Sie Leerlaufzeiten mit Umsatz statt Wartezeit.",
-        "vanOwner": "Privater Transporter-Besitzer – Ihre Kapazität. Ihr Zeitplan. Ihr Umsatz.",
-        "ptCommuter": "ÖPNV-Pendler – Werden Sie für Ihre Teilnahme am saubersten Netzwerk der Stadt belohnt."
-      }
+    "subheading": "Für Einzelpersonen",
+    "heading": "Für Menschen, die sich bewegen",
+    "intro": "Verwandeln Sie Ihren Arbeitsweg, Stadtspaziergänge und Fahrten in zusätzliches Einkommen—ohne Ihr Leben zu ändern.",
+    "description": "GoLynk bietet Ihnen Liefermöglichkeiten, die zu den Routen passen, die Sie bereits nehmen—zu Fuß zur Uni, mit dem Rad durch die Stadt, mit dem Auto zur Arbeit oder mit öffentlichen Verkehrsmitteln. Sie entscheiden, wann Sie annehmen und was Sie transportieren, und Sie liefern für verifizierte Versender mit In-App-Support, falls etwas schief geht.",
+    "benefits": {
+      "routeOnly": "Aufträge nur entlang Ihrer üblichen Routen—keine Umwege quer durch die Stadt",
+      "noVehicle": "Kein neues Fahrzeug erforderlich: zu Fuß, Fahrrad, Auto, Transporter oder öffentliche Verkehrsmittel",
+      "clearEarnings": "Klare Einnahmen pro Auftrag und sofortige oder taggleiche Auszahlungen",
+      "cleanerCities": "Sehen Sie Ihren Beitrag zu saubereren, weniger verstopften Städten"
     },
-    "whyItWorks": {
-      "title": "Warum es funktioniert",
-      "benefits": [
-        "Faire, dynamische Vergütung",
-        "Sofortauszahlungen",
-        "Keine Umwege oder Zeitverschwendung",
-        "Aufträge nur auf Ihrer täglichen Route",
-        "Verfolgen Sie Ihren Beitrag zu saubereren Städten"
-      ]
-    },
+    "note": "Perfekt für Studenten, Pendler, Teilzeitverdiener und Stadtentdecker.",
     "cta": "App herunterladen"
   },
   "businesses": {
-    "subheading": "Für Flotten & Betreiber",
-    "heading": "Flotten & Betreiber",
-    "shortDescription": "Machen Sie jeden Kilometer profitabel – ohne Routenänderungen oder zusätzliche Fahrzeuge.",
-    "description": "GoLynk ermöglicht 3PLs, Regionalverteidigern, Kurierdiensten und Mobilitätsbetreibern, freie Kapazitäten auf bestehenden Routen zu monetarisieren. Sie behalten Kontrolle über Ihr Netzwerk und Ihre Verträge; wir fügen Nachfrage hinzu, die zu Ihren Plänen passt. So wird GoLynk inkrementelle Einnahmen, keine Auslagerung. Sie behalten Ihre Kunden, Tarife und Dispatch. GoLynk fügt inkrementelle Nachfrage hinzu, die Ihren Vorgaben entspricht.",
+    "subheading": "Für Unternehmen",
+    "heading": "Für Flotten & Betreiber",
+    "intro": "Machen Sie jeden Kilometer wertvoll—ohne Routen zu ändern oder Fahrzeuge hinzuzufügen.",
+    "description": "GoLynk ermöglicht 3PLs, regionalen Frachtführern, Kurierdiensten und Mobilitätsanbietern, freie Kapazitäten auf bestehenden Routen zu monetarisieren. Sie behalten die Kontrolle über Ihr Netzwerk und Ihre Verträge; wir fügen Nachfrage hinzu, die zu Ihren Plänen passt, sodass GoLynk zusätzliche Einnahmen wird, kein Ersatz. Sie behalten Ihre Kunden, Tarife und Disposition. GoLynk fügt inkrementelle Nachfrage hinzu, die Ihren Einschränkungen entspricht.",
+    "benefits": {
+      "realtimeView": "Echtzeit-Überblick über die Auslastung aller Fahrzeuge und Strecken",
+      "betterMargin": "Bessere Marge pro Fahrt durch Nutzung freier Kapazitäten und Rückfahrten",
+      "noExtra": "Keine zusätzlichen Fahrzeuge oder Personal erforderlich",
+      "zeroDeviation": "Abweichungsfreies Matching: wir respektieren Ihre Routen und Einschränkungen",
+      "esgReporting": "ESG-konforme CO₂- und Vermeidungsberichte pro Flotte"
+    },
+    "integrationTiers": {
+      "title": "Integrationsstufen",
+      "saas": "SaaS-Dashboard – Live-Transparenz in Wochen, kein Code erforderlich",
+      "api": "API-Integration – Verbinden Sie Ihr TMS oder Telematik, wenn Sie bereit sind",
+      "whiteLabel": "White-Label-Marktplatz – Ihre eigene gebrandete Frachtführer-App oder Portal"
+    },
     "howToEarn": {
       "title": "So können Sie verdienen",
       "options": {
-        "courierServices": "Kurierdienste (10–50 Fahrzeuge) – Ihre Flotte bewegt sich bereits. Jetzt verdient sie mehr ohne Mehrkosten.",
+        "courierServices": "Kurierdienste (10–50 Fahrzeuge) – Ihre Flotte bewegt sich bereits. Jetzt verdient sie mehr ohne Zusatzkosten.",
         "thirdPartyLogistics": "3PL / Logistikbetreiber – Verwandeln Sie verteilte Flottenkapazität in eine Echtzeit-Umsatzmaschine.",
-        "courierCoop": "Kurier-Kooperative (5–30 Fahrer) – Bewegen Sie mehr Volumen ohne Ihre Fahrer zu überlasten.",
-        "vanOperators": "Transporter-Betreiber / Kleine Flotten – Zwischen-Service-Lücken werden automatisch zu Umsatz.",
-        "lastMile": "Hyperlokal Last-Mile-Anbieter – Ihre lokale Präsenz wird zum wertvollen Microhub."
+        "courierCoop": "Kurier-Kooperative (5–30 Fahrer) – Bewegen Sie mehr Volumen, ohne Ihre Fahrer zu überlasten.",
+        "vanOperators": "Transporter-Betreiber / Kleine Flotten – Lücken zwischen Einsätzen werden automatisch zu Einnahmen.",
+        "lastMile": "Hyperlokale Last-Mile-Anbieter – Ihr lokaler Fußabdruck wird zum hochwertigen Mikro-Hub."
       }
-    },
-    "whatYouGain": {
-      "title": "Was Sie gewinnen",
-      "benefits": [
-        "Echtzeit-Flottenauslastung",
-        "Bessere Marge pro Fahrt",
-        "Keine zusätzlichen Fahrzeuge oder Personal",
-        "Null-Abweichungs-Matching",
-        "ESG-konforme CO₂-Berichterstattung"
-      ]
-    },
-    "integrations": {
-      "title": "Integrationsstufen",
-      "options": [
-        "SaaS-Dashboard – Live-Sichtbarkeit in Wochen, kein Code erforderlich",
-        "API-Integration – Verbinden Sie Ihr TMS oder Telematik, wenn Sie bereit sind",
-        "White-Label-Marktplatz – Ihre eigene markengebundene Kurier-App oder Portal"
-      ]
     },
     "cta": "Demo buchen"
   },
   "features": {
-    "heading": "Eine Kontrollebene. Zwei Wege zur Teilnahme.",
-    "description": "GoLynk bietet strukturierte Tools für Einzelkuriere und Flottenbetreiber – ohne bestehende Routen oder Systeme zu ersetzen.",
-    "individuals": {
-      "heading": "Für Einzelkuriere auf Strecken",
-      "subheading": "Verwandeln Sie tägliche Bewegung in strukturierte Verdienste – ohne Ihre Route zu ändern.",
-      "capabilities": [
-        {
-          "title": "In Minuten starten",
-          "description": "Einmalig verifizieren. Fügen Sie Ihre üblichen Routen und Verfügbarkeit hinzu."
-        },
-        {
-          "title": "Null-Abweichungs-Matching",
-          "description": "Sehen Sie nur Jobs, die mit Ihrem natürlichen Weg und Zeitplan übereinstimmen."
-        },
-        {
-          "title": "Transparente Verdienste",
-          "description": "Entfernung, Aufwand und Auszahlung sichtbar vor Annahme."
-        },
-        {
-          "title": "Schnelle Abrechnung",
-          "description": "Sofortzahlungen oder Auszahlungen am selben Tag mit klarer Aufschlüsselung."
-        },
-        {
-          "title": "Verifizierte und versicherte Workflows",
-          "description": "Alle Übergaben geloggt, verifiziert und in der App unterstützt."
-        }
-      ]
+    "heading": "Eine Steuerungsebene. Zwei Teilnahmemöglichkeiten.",
+    "description": "GoLynk bietet strukturierte Tools für sowohl einzelne Kuriere als auch Flottenbetreiber — ohne bestehende Routen oder Systeme zu ersetzen.",
+    "tabs": {
+      "couriers": "Für Kuriere auf der Route",
+      "fleets": "Für Flotten & Betreiber"
+    },
+    "couriers": {
+      "heading": "Für Kuriere auf der Route",
+      "description": "Verwandeln Sie tägliche Bewegung in strukturierte Einnahmen — ohne Ihre Route zu ändern.",
+      "startInMinutes": {
+        "title": "In Minuten starten",
+        "description": "Einmal verifizieren. Ihre typischen Routen und Verfügbarkeit hinzufügen."
+      },
+      "zeroDeviation": {
+        "title": "Abweichungsfreies Matching",
+        "description": "Nur Aufträge sehen, die zu Ihrem natürlichen Weg und Timing passen."
+      },
+      "transparentEarnings": {
+        "title": "Transparente Einnahmen",
+        "description": "Entfernung, Aufwand und Auszahlung vor der Annahme sichtbar."
+      },
+      "fastSettlement": {
+        "title": "Schnelle Abrechnung",
+        "description": "Sofortige oder taggleiche Auszahlungen mit klarer Aufschlüsselung."
+      },
+      "verifiedWorkflows": {
+        "title": "Verifizierte & versicherte Abläufe",
+        "description": "Alle Übergaben protokolliert, verifiziert und in-App unterstützt."
+      }
     },
     "fleets": {
       "heading": "Für Flotten & Betreiber",
-      "subheading": "Aktivieren Sie freie Kapazität in Ihrem Netzwerk – ohne operative Störungen.",
-      "capabilities": [
-        {
-          "title": "Null-Abweichungs-Nachfrage",
-          "description": "Jobs werden nur angezeigt, wenn sie Ihre Routenvorgaben und SLAs respektieren."
-        },
-        {
-          "title": "Auslastungssichtbarkeit",
-          "description": "Umsatz pro Fahrzeug, Strecke und Korridor – in Echtzeit."
-        },
-        {
-          "title": "Rückfahrten-Wiederherstellung",
-          "description": "Füllen Sie leere Rückfahrten, bevor Sie neue dedizierte Fahrten buchen."
-        },
-        {
-          "title": "Integrierte Steuerung",
-          "description": "Dashboard-First-Bereitstellung. API-Integration wenn bereit."
-        },
-        {
-          "title": "Kohlenstoff- und Compliance-Berichterstattung",
-          "description": "Sichtbares CO₂ pro Strecke und strukturierte Rückverfolgungsprotokolle."
-        }
-      ]
+      "description": "Aktivieren Sie freie Kapazität in Ihrem Netzwerk — ohne betriebliche Störungen.",
+      "zeroDeviation": {
+        "title": "Abweichungsfreie Nachfrage",
+        "description": "Aufträge erscheinen nur, wenn Routenbeschränkungen und SLAs eingehalten werden."
+      },
+      "utilisation": {
+        "title": "Auslastungstransparenz",
+        "description": "Umsatz pro Fahrzeug, Strecke und Korridor — in Echtzeit."
+      },
+      "backhaul": {
+        "title": "Rückfracht-Nutzung",
+        "description": "Leere Rückfahrten füllen, bevor neue dedizierte Fahrten gebucht werden."
+      },
+      "integratedControl": {
+        "title": "Integrierte Steuerung",
+        "description": "Dashboard-first Bereitstellung. API-Integration wenn bereit."
+      },
+      "carbonReporting": {
+        "title": "CO₂- & Compliance-Berichte",
+        "description": "CO₂-Transparenz pro Strecke und strukturierte Chain-of-Custody-Protokolle."
+      }
+    }
+  },
+  "advantages": {
+    "subheading": "Frachtführer-Vorteile",
+    "heading": "Kapazität aktivieren. Marge steigern. Kontrolle behalten.",
+    "description": "GoLynk verwandelt freien Platz auf bereits laufenden Routen in strukturierte Einnahmen—ohne Umwege oder betriebliche Störungen.",
+    "higherUtilisation": {
+      "title": "Höhere Auslastung",
+      "description": "Freie Kapazität und Rückfahrten füllen, bevor neue Fahrten hinzugefügt werden—Umsatz pro Route steigern."
+    },
+    "routeIntegrity": {
+      "title": "Routenintegrität",
+      "description": "Abweichungsfreies Matching respektiert Ihr Timing, SLAs, Fahrzeuggrenzen und Einschränkungen."
+    },
+    "predictableSettlement": {
+      "title": "Planbare Abrechnung",
+      "description": "Transparente Preise pro Auftrag oder Strecke, mit schnellen Auszahlungszyklen und klaren Aufschlüsselungen."
+    },
+    "operationalVisibility": {
+      "title": "Betriebliche Transparenz",
+      "description": "Auslastung, Pünktlichkeit, Ausnahmen und CO₂-Auswirkungen verfolgen—pro Fahrzeug und Strecke."
+    }
+  },
+  "technology": {
+    "subheading": "Technologie",
+    "heading": "Orchestrierung um Frachtführer-Einschränkungen herum gebaut",
+    "description": "Wir setzen auf Ihren Routen auf—und zeigen nur Nachfrage an, die zu Ihren realen Regeln passt.",
+    "tabs": {
+      "orchestrationGraph": "Orchestrierungsgraph",
+      "constraintMatching": "Constraint-Matching",
+      "integrationLayer": "Integrationsschicht",
+      "performanceLearning": "Performance-Lernen"
+    },
+    "orchestrationGraph": {
+      "title": "Orchestrierungsgraph",
+      "description": "Ihre Routen werden zu Korridoren mit Kapazität, Timing und Regeln.",
+      "check1": "Keine neuen Fahrzeuge.",
+      "check2": "Keine Routenstörung."
+    },
+    "constraintMatching": {
+      "title": "Constraint-Matching",
+      "description": "Nachfrage erscheint nur, wenn Abweichungs- und SLA-Grenzen eingehalten werden."
+    },
+    "integrationLayer": {
+      "title": "Integrationsschicht",
+      "description": "Verbinden Sie sich per Dashboard oder API, um verfügbare Kapazität zu veröffentlichen und strukturierte Nachfrage, Tracking-Events, Abrechnungsdaten und CO₂-Berichte zu erhalten—ohne Ihr TMS oder Ihren Dispositionsprozess zu ersetzen."
+    },
+    "performanceLearning": {
+      "title": "Performance-Lernen",
+      "description": "ETAs, Preise und Match-Qualität verbessern sich, wenn Strecken skalieren."
+    }
+  },
+  "faq": {
+    "heading": "Häufig gestellte Fragen",
+    "description": "Häufige Fragen zu GoLynk für Frachtführer und Flotten.",
+    "q1": {
+      "question": "Muss ich meine Routen oder meinen Zeitplan ändern, um GoLynk zu nutzen?",
+      "answer": "Nein. GoLynk ist um die Routen herum konzipiert, die Sie bereits fahren. Als Einzelperson legen Sie Ihre typischen Wege und Zeitfenster fest; als Flotte integrieren wir Ihre bestehenden Routen. Wir bieten nur Aufträge an, die zu diesen Mustern passen, sodass Sie mehr verdienen können, ohne Ihren Tag neu zu gestalten."
+    },
+    "q2": {
+      "question": "Welche Arten von Frachtführern und Fahrzeugen können beitreten?",
+      "answer": "Wir unterstützen Fußgänger, Radfahrer, Privatwagen, Transporter und LKWs sowie Flotten und Mobilitätsanbieter in ausgewählten Gebieten. Die Aufträge, die Sie sehen, hängen von Ihrem Fahrzeugtyp, lokalen Vorschriften und dem ab, was Sie transportieren möchten."
+    },
+    "q3": {
+      "question": "Wie funktionieren Auszahlungen für Frachtführer und Flotten?",
+      "answer": "Sie sehen die Auszahlung für jeden Auftrag im Voraus, bevor Sie annehmen. Sobald eine Lieferung abgeschlossen und bestätigt ist, wird sie Ihrem Guthaben hinzugefügt und nach einem regelmäßigen Zeitplan ausgezahlt, mit sofortigen oder taggleichen Optionen, wo verfügbar. Flotten erhalten konsolidierte Berichte nach Route und Zeitraum."
+    },
+    "q4": {
+      "question": "Wie schützt GoLynk meinen Betrieb, meine Kunden und SLAs?",
+      "answer": "Unsere Matching-Engine respektiert Ihre Zeitfenster, Umweggrenzen, Fahrzeugbeschränkungen und Compliance-Regeln. Wir füllen nur ungenutzte Kapazität auf Strecken, die Sie bereits planen, sodass Ihre Kernkunden und SLAs Ihre erste Priorität bleiben."
+    },
+    "q5": {
+      "question": "Wie sieht die Integration für Flotten und Betreiber aus?",
+      "answer": "Sie können mit dem GoLynk-Dashboard beginnen und einen Korridor pilotieren, ohne Ihr TMS zu ändern. Wenn Sie bereit sind, bieten wir APIs und Datenfeeds an, sodass Routen, Kapazitäten und Events automatisch mit den Systemen synchronisiert werden, die Sie bereits verwenden."
+    },
+    "q6": {
+      "question": "Wie werden Sicherheit, Versicherung und Haftung für Frachtführer gehandhabt?",
+      "answer": "Wir arbeiten mit Frachtführern und Flotten zusammen, um angemessene Versicherungs- und Haftungsdeckung basierend auf Land, Fahrzeugtyp und Sendungskategorien sicherzustellen. Aufgaben beinhalten klare Anweisungen und Zustellnachweisprotokollierung, und In-App-Support hilft, Probleme schnell zu lösen, wenn etwas schief geht."
+    },
+    "viewAll": "Noch Fragen? Vollständige FAQ lesen →"
+  },
+  "earlyAccess": {
+    "heading": "Früher Frachtführer-Zugang",
+    "description": "Wir onboarden Frachtführer für Prioritätskorridore. Teilen Sie Ihre Routen und Einschränkungen—wir bestätigen, wo Nachfrage passt.",
+    "cta": {
+      "shareRoutes": "Routen & Verfügbarkeit teilen",
+      "requestOverview": "Flottenübersicht anfordern"
+    }
+  },
+  "accessCarousel": {
+    "heading": "Dem GoLynk-Netzwerk beitreten",
+    "description": "Ob Sie ein Einzelfahrer sind oder eine Flotte betreiben — es gibt einen Platz für Sie."
+  },
+  "individualAccess": {
+    "heading": "Einzelfahrer",
+    "description": "Verwandeln Sie die Fahrten, die Sie bereits machen, in planbare Einnahmen — abweichungsfreies Matching.",
+    "cta": {
+      "submit": "Routen & Verfügbarkeit teilen"
+    }
+  },
+  "fleetAccess": {
+    "heading": "Flottenbetreiber",
+    "description": "Monetarisieren Sie freie Flottenkapazität ohne Routenänderungen.",
+    "cta": {
+      "submit": "Integrationsüberprüfung anfordern",
+      "contact": "Flottenteam kontaktieren"
     }
   }
 }

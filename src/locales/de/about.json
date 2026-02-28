@@ -1,0 +1,171 @@
+{
+  "hero": {
+    "heading": "Logistik braucht nicht mehr Fahrzeuge. Sie braucht Koordination.",
+    "description": "GoLynk verwandelt bereits aktive Routen in strukturierte Logistikkapazität — reduziert Doppelstrukturen, senkt die CO₂-Intensität und schafft eine neue Basis für effiziente europäische Zustellung."
+  },
+  "howWeBuild": {
+    "heading": "WIE WIR BAUEN — OPERATIVE DISZIPLIN",
+    "subheading": "Infrastruktur skaliert nur mit Disziplin.",
+    "step1": {
+      "title": "Dichte vor Skalierung",
+      "description": "Wir validieren wiederkehrende Korridore, bevor wir expandieren."
+    },
+    "step2": {
+      "title": "Rahmen statt Versprechen",
+      "description": "Routen, Timing und SLAs definieren die Eignung."
+    },
+    "step3": {
+      "title": "Vertrauen ist strukturell",
+      "description": "Verifizierung und Verantwortlichkeit sind an jeder Übergabe verankert."
+    },
+    "step4": {
+      "title": "Asset-light Disziplin",
+      "description": "Koordination skaliert besser als Duplikation."
+    },
+    "step5": {
+      "title": "Messbare Wirkung",
+      "description": "Kosten und CO₂ werden pro Korridor gemessen."
+    }
+  },
+  "corridor": {
+    "heading": "KORRIDOR-FIRST-DEPLOYMENT — AUSFÜHRUNGSMOTOR",
+    "p1": "Wir starten nicht überall.",
+    "p2": "Wir deployen auf wiederkehrenden Relationen — nicht auf Geografie.",
+    "p3": "Validierte Korridore werden auf angrenzende Relationen erweitert.",
+    "p4": "Deutschland dient als erste Netzwerkbasis, gefolgt von strukturierter Expansion in den Benelux-Raum und weitere europäische Korridore.",
+    "p5": "Dichte geht Expansion voraus. Nationale Zuverlässigkeit geht grenzüberschreitender Skalierung voraus.",
+    "cardIntro": "Jeder Korridor muss zeigen:",
+    "bullet1": "Wiederkehrender Sendungsfluss",
+    "bullet2": "Stabile Auslastung",
+    "bullet3": "SLA-Zuverlässigkeit",
+    "bullet4": "Verifizierte Übergaben"
+  },
+  "carbon": {
+    "label": "CO₂- & NETZWERKEFFIZIENZ",
+    "heading": "Eine neue Basis für effiziente Logistik",
+    "subheading": "Logistikwachstum erfordert keine zusätzlichen Fahrzeuge mehr. Es erfordert bessere Koordination.",
+    "whatWeDo": {
+      "label": "Was wir tun",
+      "bullet1": "Reduziert redundante Kilometer",
+      "bullet2": "Erhöht die Ladeeffizienz",
+      "bullet3": "Senkt die CO₂-Intensität auf Korridorebene"
+    },
+    "whyItWorks": {
+      "label": "Warum es funktioniert",
+      "bullet1": "Die Kosten pro Sendung sinken",
+      "bullet2": "Die Emissionen pro Kilometer sinken",
+      "bullet3": "Die Zuverlässigkeit steigt"
+    },
+    "closing": "Effizienz wird zur Klimastrategie.",
+    "caption": "Dichte ↑ Kosten ↓ Emissionen ↓"
+  },
+  "intelligence": {
+    "caption": "Intelligenz ist in der Bewegungsebene eingebettet.",
+    "label": "INTELLIGENZ ALS INFRASTRUKTUR",
+    "heading": "Koordination durch eingebettete Intelligenz",
+    "subheading": "GoLynk setzt Intelligenz auf Übergabeebene ein, um Bewegung zu strukturieren — nicht nur zu visualisieren.",
+    "bullet1": "KI-gestütztes Routen-Matching",
+    "bullet2": "Reinforcement Learning für Dichteoptimierung",
+    "bullet3": "SLA-bewusste Multi-Hop-Koordination",
+    "bullet4": "Ereignisverifizierung über Übergaben hinweg",
+    "outcomes": {
+      "label": "Ergebnisse",
+      "item1": "Schnellere Routing-Entscheidungen",
+      "item2": "Geteilte Bewegung",
+      "item3": "Weniger Umwege",
+      "item4": "Messbarer Scope-3-Effekt"
+    },
+    "closing": "Technologie ermöglicht Struktur.<br />Struktur ermöglicht Effizienz."
+  },
+  "vision": {
+    "heading": "Vision",
+    "subtitle": "Das Netzwerk, das sich aufbaut",
+    "subheading": "GoLynk baut strukturierte Dichte auf, die Korridor für Korridor zu einer resilienten Netzwerkebene wird.",
+    "card1": "Bewegung wird teilbar",
+    "card2": "Zustellung wird schneller",
+    "card3": "CO₂-Intensität sinkt",
+    "card4": "Reporting wird messbar",
+    "step1": "Deutschland → Validierte Korridore",
+    "step2": "Korridore → Nationale Dichte",
+    "step3": "Nationale Dichte → Grenzüberschreitende Integration",
+    "step4": "Integration → Europäische Netzwerkebene",
+    "closing1": "Die nächste Logistikgeneration wird nicht durch mehr Assets definiert.",
+    "closing2": "Sie wird durch strukturierte Dichte definiert.",
+    "closing3": "GoLynk baut genau diese Ebene."
+  },
+  "team": {
+    "heading": "Gründungsteam",
+    "subheading": "Aufgebaut von Operatoren, die Logistik-Execution mit produktionsreifen Systemen verbinden.",
+    "ceo": {
+      "university": "RWTH Aachen University",
+      "title": "Gründer & CEO",
+      "bio": "Fokussiert auf Korridorstrategie, Partnerschaften und disziplinierte Expansion.",
+      "background": "Leitete zuvor Multi-Partner-Korridor-Onboarding und Deployment-Execution von der ersten Relation bis zur angrenzenden Erweiterung.",
+      "chip1": "Marktausführung",
+      "chip2": "Korridordesign",
+      "chip3": "Strategische Partnerschaften"
+    },
+    "cto": {
+      "university": "RWTH Aachen University",
+      "title": "Mitgründer & CTO",
+      "bio": "Leitet Orchestrierungsarchitektur, Integrationen und Zuverlässigkeitssysteme.",
+      "background": "Entwickelte SLA-bewusstes Matching und Event-Tracking auf Relationenebene über aktive Pilotkorridore und Integrationsflüsse hinweg.",
+      "chip1": "Matching-Engine",
+      "chip2": "Infrastruktursysteme",
+      "chip3": "Plattformintegrität"
+    }
+  },
+  "institutional": {
+    "text": "<strong>Institutionelles Umfeld</strong><br />Unterstützt durch die RWTH Aachen University und das RWTH Innovation Center. Entwickelt mit korridorbasierter Validierung und disziplinierter Umsetzung."
+  },
+  "strategy": {
+    "label": "STRATEGISCHE AUSRICHTUNG",
+    "heading": "Kapital, das Struktur stärkt",
+    "p1": "GoLynk startet den Pilotbetrieb in deutschen Korridoren — mit Validierung von Dichte, Zuverlässigkeit und messbarer CO₂-Effizienz vor strukturierter Expansion.",
+    "p2": "Kapital beschleunigt validierte Integration und grenzüberschreitende Anschlusskorridore — damit sich das Netzwerk Korridor für Korridor aufbauen kann.",
+    "node1": "Validierter Korridor",
+    "node2": "Nationale Dichte",
+    "node3": "Grenzüberschreitende Integration",
+    "node4": "Europäische Ebene",
+    "philosophy": "Das ist kein Wachstum um jeden Preis.<br />Es ist disziplinierte Expansion auf verifizierter Struktur.",
+    "conversations": {
+      "heading": "Strategische Gespräche",
+      "description": "Executive-Überblick, Deployment-Roadmap und Überblick zur Netzwerkarchitektur sind bei direkter Kontaktaufnahme verfügbar.",
+      "ctaPrimary": "Executive-Überblick anfragen",
+      "ctaSecondary": "Strategisches Gespräch planen"
+    }
+  },
+  "execution": {
+    "heading": "Execution Orbit",
+    "description": "Koordinationsschicht orchestriert BUILD und DEPLOY Knoten über unsere operationale Infrastruktur.",
+    "center": {
+      "identifier": "GL",
+      "title": "Koordination"
+    },
+    "build": {
+      "title": "BUILD",
+      "subtitle": "Produkt & Technik",
+      "heading": "Produkt & Technik",
+      "bullet1": "Orchestrierungsschicht & SLA-aware Matching",
+      "bullet2": "Zuverlässigkeit & Verifikationsereignisse",
+      "bullet3": "Korridor-Analysen & Dashboards",
+      "bullet4": "Carrier und Shipper Integration",
+      "cta": "GL Tech erkunden →"
+    },
+    "deploy": {
+      "title": "DEPLOY",
+      "subtitle": "Logistik & Partner",
+      "heading": "Logistik & Korridor Partner",
+      "bullet1": "Operator-Rekrutierung in Deutschland",
+      "bullet2": "Micro-Hub Übergabe Validierung",
+      "bullet3": "SLA Playbooks & Korridor Konfiguration",
+      "bullet4": "Verifizierte Tracking-Workflows",
+      "cta": "Pilot-Korridor vorschlagen →"
+    },
+    "workWithUs": {
+      "text": "Wir bauen selektiv Engineering und Korridor-Ausführungskapazität auf.",
+      "ctaPrimary": "Rollen erkunden →",
+      "ctaSecondary": "Einleitung senden →"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "faq": {
+    "description": "Everything you need to know about the product and billing.",
+    "heading": "Frequently asked questions",
+    "view_all": "View all"
+  },
+  "hero": {
+    "cta": {
+      "deliverAndEarn": "Join as Carrier",
+      "shipWithGoLynk": "Start a Pilot"
+    },
+    "description": "We match shipments to spare space already moving — and chain them through verified handoffs.",
+    "heading": "The World Already Moves. We Turn Movement Into Infrastructure."
+  }
+}

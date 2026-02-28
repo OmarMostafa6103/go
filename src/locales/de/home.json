@@ -1,83 +1,447 @@
 {
   "hero": {
-    "heading": "Die Welt bewegt sich bereits. Wir verwandeln Bewegung in Infrastruktur.",
-    "description": "Wir ordnen Sendungen dem freien Platz bereits fahrende Transporte zu – und verbinden sie durch überprüfte Übergabepunkte.",
+    "heading": "Die Welt bewegt sich bereits. Wir wandeln Bewegung in Infrastruktur um.",
+    "description": "Wir ordnen Sendungen dem verfügbaren Platz zu, der bereits unterwegs ist — und verketten sie durch verifizierte Übergaben.",
     "cta": {
-      "shipWithGoLynk": "Pilot starten",
-      "deliverAndEarn": "Treten Sie als Fahrer bei"
-    }
+      "shipWithGoLynk": "Mit GoLynk versenden",
+      "deliverAndEarn": "Als Träger beitreten"
+    },
+    "subtitle1": "Für Versender: niedrigere Kosten und vorhersehbare Routenplanung. Für Träger: Monetarisierung von Zusatzkapazität.",
+    "subtitle2": "Gebaut für Unternehmen, Flotten, Einzelpersonen und Städte."
   },
-  "smartLogistics": {
-    "subheading": "Intelligente Logistik",
-    "heading": "Ein Netzwerk, vier Rollen, endlose Effizienz",
-    "description": "GoLynk verwandelt ungenutzte urbane Kapazitäten in ein nahtloses, sich selbst optimierendes Liefernetzwerk. Schnellere Sendungen, niedrigere Kosten, sofortige Einnahmen und grünere Logistik – ohne zusätzliche Fahrzeuge.",
-    "roles": {
-      "shippers": {
-        "title": "Versender",
-        "description": "Profitieren Sie von schnellen, zuverlässigen und kosteneffizienten Lieferungen. GoLynks KI optimiert jede Sendung und sorgt für nahtlose Integration, Echtzeit-Tracking und reduzierten operativen Aufwand – damit Ihr Unternehmen Zeit spart und Effizienz maximiert.",
-        "benefits": [
-          "Erstellen Sie Aufträge mit zwei Klicks und sparen Sie Zeit",
-          "KI ordnet Sendungen sofort den besten Kurieren zu",
-          "Live-Tracking mit automatisierter CO₂-Berichterstattung",
-          "Vereinfachte Integration in bestehende Systeme"
-        ]
+  "problem": {
+    "label": "Die versteckten Kosten der Bewegung",
+    "heading": "Milliarden von Kilometern werden täglich bewältigt. Effizienz jedoch nicht.",
+    "description": "Fahrzeuge kehren leer zurück. Autos fahren mit ungenutztem Platz. Schiffe fahren unter Kapazität. Routen überlappen sich ineffizient. Emissionen steigen ohne Zweck.",
+    "description2": "Ungenutzte Bewegung ist verschwendetes Geld. Und verschwendeter Kohlenstoff.",
+    "cards": {
+      "underusedCapacity": {
+        "title": "Untergenutzter Kapazität",
+        "text": "Zwei Fahrzeuge nehmen denselben Korridor — beide halb leer."
       },
-      "carriers": {
-        "title": "Kuriere / Fahrer",
-        "description": "Profitieren Sie von klaren, vorhersehbaren und optimierten Verdienstmöglichkeiten. GoLynks KI ordnet Lieferungen Ihrer Route zu, reduziert Leerfahrten und sorgt für Sofortauszahlungen – damit Sie effizient verdienen und gleichzeitig Ihren eigenen Zeitplan behalten.",
-        "benefits": [
-          "Liefern Sie auf Ihren bestehenden Routen, keine Umwege",
-          "Verdienen Sie Auszahlungen am selben Tag für jede abgeschlossene Lieferung",
-          "Intelligentes KI-Matching optimiert Routen und Kapazitäten",
-          "Flexible Aufträge, die zu Ihrem Zeitplan und Fahrzeug passen"
-        ]
+      "fragmentedRoutes": {
+        "title": "Fragmentierte Routen",
+        "text": "Sendungen bewegen sich als einzelne Fahrten statt als gemeinsame, koordinierte Pfade."
       },
-      "hubs": {
-        "title": "Hubs / Microhubs",
-        "description": "Profitieren Sie von konstanten, umsatzgenerierenden Abläufen. GoLynk optimiert den Paketfluss, nutzt Ihren Standort und minimiert Komplexität – damit Ihr Hub den Durchsatz maximiert, zusätzliche Einnahmen erzielt und lokale Lieferungen unterstützt.",
-        "benefits": [
-          "Konsolidieren Sie Sendungen für effizientere Routenplanung",
-          "Kostengünstige Infrastruktur mit bereitgestellten Marken-Schließfächern",
-          "Generieren Sie zusätzliche monatliche Einnahmen",
-          "Unterstützen Sie lokalen Handel und Community-Lieferungen"
-        ]
-      },
-      "partners": {
-        "title": "Partner / Städte / Konzerne",
-        "description": "Profitieren Sie von optimierter, messbarer und nachhaltiger Logistik. GoLynk integriert sich in Ihre Systeme, reduziert Emissionen und liefert transparente Kennzahlen – damit Ihre Organisation Kosten spart, ESG-Ziele erreicht und ihre grüne Bilanz stärkt.",
-        "benefits": [
-          "Integration in öffentliche Verkehrsmittel oder Unternehmens-Lieferketten",
-          "Reduzieren Sie Emissionen, Staus und operative Komplexität",
-          "Zugang zu Scope-3-Berichterstattung und monetarisierbaren CO₂-Zertifikaten",
-          "Verbessern Sie Ihren ESG-Score und zeigen Sie nachhaltige Logistik"
-        ]
+      "invisibleEmissions": {
+        "title": "Unsichtbare Emissionen",
+        "text": "Emissionen steigen, wenn Überschneidungen nicht erfasst werden und Umwege zur Normalität werden."
       }
     }
   },
-  "environmental": {
-    "heading": "Unser Umwelt-Engagement",
-    "description": "Unsere Philosophie ist einfach – bauen Sie ein System, das den Planeten respektiert. Wir entwickeln Logistik, die Emissionen senkt, Abfall reduziert und eine sauberere Zukunft für alle schafft.",
-    "stats": {
-      "co2Reduction": {
-        "number": "72%+",
-        "title": "CO₂-Reduktion",
-        "description": "Unser Netzwerk und intelligentes Routing reduzieren Emissionen um über 72% pro Lieferung."
+  "solution": {
+    "heading": "Koordination in Infrastruktur-Maßstab",
+    "subheading": "Logistik ist nicht kaputt. Koordination ist es.",
+    "text1": "GoLynk fügt nicht mehr Fahrzeuge auf der Straße hinzu. Es verbindet die bereits unterwegs befindlichen.",
+    "text2": "Bestehende Routen werden strukturierte Kapazität. Flotten integrieren Zusatzplatz und Rücktransporte. Mikrohubs ermöglichen verifizierte Übergaben an natürlichen Schnittpunkten. Unternehmen verbinden sich über Dashboard oder API.",
+    "text3": "Bewegung wird koordiniert. Effizienz wird strukturell.",
+    "text4": "Anstatt Fahrzeuge hinzuzufügen, lassen wir die bestehende Bewegung wie ein synchronisiertes System agieren.",
+    "stack": {
+      "carriers": "Träger",
+      "shippers": "Versender",
+      "hubs": "Drehscheiben",
+      "engine": "GoLynk-Motor",
+      "engineSubtitle": "Echtzeit-Koordination",
+      "tracking": "Verfolgung",
+      "carbon": "Kohlenstoff",
+      "savings": "Ersparnisse"
+    }
+  },
+  "fullStack": {
+    "label": "Der vollständige Stapel",
+    "heading": "Ein Netzwerk über jede Distanz.",
+    "description": "GoLynk beginnt mit Last-Mile- und Mid-Mile-Koordination — dann erweitert es sich auf größere Flüsse, wenn das Netzwerk wächst.",
+    "steps": {
+      "collection": {
+        "title": "Sammlung",
+        "text": "Abholung von Geschäften und Lagerhäusern."
       },
-      "packagingWaste": {
-        "number": "40%",
-        "title": "Weniger Verpackungsmüll",
-        "description": "Optimierte Handhabung und richtige Dimensionierung helfen Marken, unnötige Verpackungen zu reduzieren."
+      "lastMile": {
+        "title": "Letzte Meile",
+        "text": "Schnelle urbane Lieferung für B2C und C2C."
       },
-      "greenDeliveries": {
-        "number": "10.000+",
-        "title": "Grüne Lieferungen täglich",
-        "description": "Jeden Tag bewegen sich Tausende Bestellungen über emissionsarme Routen."
+      "midMile": {
+        "title": "Mittlere Meile",
+        "text": "Transfers zwischen Distrikten über Mikrohubs."
       },
-      "ecoPartners": {
-        "number": "200+",
-        "title": "Öko-Partner",
-        "description": "Über 200 Unternehmen vertrauen GoLynk, um ihre Nachhaltigkeitsziele zu erreichen."
+      "freightBulk": {
+        "title": "Fracht & Massengüter",
+        "text": "Größere Lasten und wiederkehrende B2B-Routen."
+      },
+      "longHaul": {
+        "title": "Langstrecke",
+        "text": "Wird schrittweise hinzugefügt, wenn die Korridor-Dichte wächst."
+      }
+    },
+    "closing": "Gleiche Orchestrierungsebene. Im Laufe der Zeit mehr Modi."
+  },
+  "howItWorks": {
+    "label": "Wie das Netzwerk funktioniert",
+    "heading": "Eine Sendung wird eine koordinierte Reise.",
+    "description": "Jede Lieferung ist strukturiert, zusammengesetzt und verifiziert über bestehende Bewegung — nicht isolierte Fahrzeuge.",
+    "steps": [
+      {
+        "title": "Kapazität wird veröffentlicht",
+        "text": "Fußgänger, Fahrer, Flotten und Mikrohubs veröffentlichen verfügbare Kapazität auf Routen, die sie bereits betreiben."
+      },
+      {
+        "title": "Die Route wird verkettet",
+        "text": "Sendungen werden in einzel- oder mehrstufige Pfade strukturiert. Das System ordnet sie Overlapping-Routen zu, während Umwege und Verzögerungen minimiert werden."
+      },
+      {
+        "title": "Übergaben sind verifiziert",
+        "text": "Jede Übertragung wird nachverfolgt, verifiziert und dokumentiert — vom Ursprung zum endgültigen Empfänger."
+      }
+    ],
+    "closing": "Einfach an der Oberfläche. Darunter strukturiert."
+  },
+  "forEveryone": {
+    "label": "Für jeden",
+    "heading": "Für jede Rolle im Netzwerk gebaut",
+    "description": "Eine einzelne Orchestrierungsebene über Last Mile, Mid Mile und die Mikrohubs dazwischen.",
+    "whoPowersLabel": "Wer treibt das Netzwerk an:",
+    "whoPowersList": "Einzelpersonen • Flotten • Mikrohubs • Städte & Unternehmen",
+    "verified": "Verifiziert. Versichert. End-to-End verfolgbar.",
+    "tabs": {
+      "shippers": "Versender",
+      "carriers": "Träger",
+      "microhubs": "Mikrohubs",
+      "enterprises": "Städte & Unternehmen"
+    },
+    "shippers": {
+      "heading": "Für E-Commerce, Einzelhandel und B2B-Netzwerke",
+      "description": "Niedrigere Lieferkosten durch gemeinsame Kapazität. Skalieren ohne Infrastruktur hinzuzufügen.",
+      "features": [
+        "Multi-Schritt-Routing",
+        "Dashboard- oder API-Integration",
+        "Lieferbeweis und Echtzeit-Verfolgung",
+        "Kohlenstoffberichterstattung",
+        "Prüfbereite Unterlagen"
+      ],
+      "trustLayer": "Vertrauensebene: KYC • Versicherung • POD • Audit Trail",
+      "cta": "Mit GoLynk versenden"
+    },
+    "carriers": {
+      "heading": "Für Fußgänger, Fahrer und Flottenbetreiber",
+      "description": "Integrieren Sie bestehende Routen in ein strukturiertes Netzwerk und monetarisieren Sie Zusatzkapazität.",
+      "features": [
+        "Monetarisieren Sie Zusatzkapazität",
+        "Rückreisen automatisch ausfüllen",
+        "Adaptive Preisgestaltung",
+        "Transparente Auszahlungen",
+        "Kohlenstoffanreize"
+      ],
+      "trustLayer": "Vertrauensebene: Verifizierte Teilnahme • Versicherungswege • Sichere Übergaben",
+      "cta": "Als Träger beitreten"
+    },
+    "microhubs": {
+      "heading": "Für Cafés, Shops und Schließfächer",
+      "description": "Ermöglichen Sie Übergaben und Konsolidierung an natürlichen Routenschnittpunkten.",
+      "features": [
+        "Strukturierte Abgabe und Abholung",
+        "Reduzierte doppelte Fahrten",
+        "Weniger fehlgeschlagene Lieferungen",
+        "Minimaler Betriebsaufwand"
+      ],
+      "trustLayer": "Vertrauensebene: Scan-basierte Übergaben • Versicherungsschutz • Audit-Protokolle",
+      "cta": "Hosting eines Mikrohubs"
+    },
+    "enterprises": {
+      "heading": "Für Stadtplaner und institutionelle Netzwerke",
+      "description": "Verbessern Sie den Logistikfluss, ohne Fahrzeuge zu erhöhen und dabei Compliance zu betreiben.",
+      "features": [
+        "Vollständige Sichtbarkeit",
+        "Compliance-bereite Kohlenstoffberichterstattung",
+        "Sichere Dokumentenlogistik",
+        "Planungs-Dashboards und API-Zugriff"
+      ],
+      "trustLayer": "Vertrauensebene: Gewährleistungskette • SLA-gestützte Operationen",
+      "cta": "Partnerschaft mit GoLynk"
+    }
+  },
+  "enterprise": {
+    "heading": "Programmierbare Logistik",
+    "subheading": "Verbinden Sie sich einmal. Greifen Sie auf ein wachsendes Netzwerk zu.",
+    "text1": "Unternehmen integrieren sich mit GoLynk über ein Echtzeit-Dashboard oder direkte API.",
+    "text2": "Sendungen können innerhalb einer einzigen Betriebsebene erstellt, verfolgt, konsolidiert und analysiert werden.",
+    "text3": "Ob einzelne Pakete, wiederkehrende Handelsflüsse, B2B-Sendungen oder institutionelle Dokumente bewegt werden — das System passt sich an.",
+    "features": [
+      "Echtzeit-Sendungssichtbarkeit",
+      "Multi-Schritt-Reisenverfolgung",
+      "Konsolidierungs- und Sammlungstools",
+      "Dynamische Preisoptionen",
+      "Kohlenstoffberichterstattung",
+      "Prüfbereite Unterlagen"
+    ],
+    "closing": "Eine Integration. Wachsende Reichweite.",
+    "orchestration": {
+      "shipmentLabel": "Sendung",
+      "live": "Orchestrierung",
+      "chips": {
+        "serviceLabel": "Service",
+        "serviceValue": "Standard",
+        "slaLabel": "SLA",
+        "slaValue": "Auf Kurs",
+        "slaSub": "Voraussichtliche Ankunft: 16:40",
+        "routingLabel": "Routing",
+        "routingValue": "Multi-Hop"
+      },
+      "timeline": [
+        {
+          "main": "Ursprung",
+          "desc": "Lagerhaus",
+          "badge": "Bereit"
+        },
+        {
+          "main": "Fahrradträger",
+          "desc": "Erste Etappe",
+          "badge": "Übereinstimmend"
+        },
+        {
+          "main": "Mikrohub",
+          "desc": "Übergabepunkt",
+          "badge": "Verifiziert"
+        },
+        {
+          "main": "Lieferwagen",
+          "desc": "Aktive Etappe",
+          "badge": "Unterwegs"
+        },
+        {
+          "main": "Ziel",
+          "desc": "Geplant",
+          "badge": "Ausstehend"
+        }
+      ],
+      "events": [
+        "Mikrohub-Handoff verifiziert",
+        "Nächste Etappe gesperrt — Lieferwagen zugewiesen"
+      ],
+      "footer": {
+        "carbonLabel": "Kohlenstoffauswirkung",
+        "carbonValue": "−18% CO₂",
+        "carbonSub": "Im Vergleich zu einer einzelnen Fahrtlieferung",
+        "custodyLabel": "Gewährleistungskette",
+        "custodyValue": "Aktiv",
+        "podLabel": "POD",
+        "podValue": "Erforderlich"
+      }
+    },
+    "pilotReport": "Pilotberichte umfassen: Kostendifferenz, Umwegreduzierung, pünktliche Quote und vermiedenes CO₂ — pro Korridor."
+  },
+  "accessNetwork": {
+    "label": "Zugriff auf das Netzwerk",
+    "heading": "Drei Schnittstellen. Eine Orchestrierungsebene.",
+    "description": "Wählen Sie, wie Sie sich verbinden. Die Engine bleibt gleich.",
+    "slides": {
+      "mobileApp": {
+        "title": "Mobile App",
+        "oneline": "Für Personen, die lokal bewegen, versenden oder hosten.",
+        "bullets": [
+          "Veröffentlichen Sie Ihre Route",
+          "Akzeptieren Sie zugeordnete Lieferungen",
+          "Verifizierte Übergaben"
+        ],
+        "cta": "Als Träger beitreten"
+      },
+      "dashboard": {
+        "title": "Betriebsdashboard",
+        "oneline": "Für Teams, die Sendungen über Korridore verwalten.",
+        "bullets": [
+          "Multi-Hop-Sichtbarkeit",
+          "Ausnahmeverarbeitung",
+          "Kohlenstoffberichterstattung"
+        ],
+        "cta": "Mit GoLynk versenden"
+      },
+      "api": {
+        "title": "API-Integration",
+        "oneline": "Für Plattformen, die GoLynk nativ einbetten.",
+        "bullets": [
+          "Erstellen Sie Sendungen",
+          "Abonnieren Sie Events",
+          "Ziehen Sie Compliance-Daten ein"
+        ],
+        "cta": "API-Docs anzeigen"
       }
     }
+  },
+  "technology": {
+    "label": "GoLynk-Technologie",
+    "heading": "Intelligenz in die Bewegung eingebaut.",
+    "description": "Echtzeit-Matching. Multi-Hop-Routing. Faire Preise. Kohlenstoffverfolgung.",
+    "description2": "Umwegs-bewusste Multi-Hop-Verkettung unter Zeitfenstern — mit verifizierten Übergaben bei jedem Schritt.",
+    "cards": {
+      "matching": {
+        "title": "Matching",
+        "outcome": "Passen Sie jede Sendung sofort an die verfügbare Kapazität mit minimalem Umweg an.",
+        "micro": "Berücksichtigt Timing, Kosten, Zuverlässigkeit und Nachhaltigkeit."
+      },
+      "routing": {
+        "title": "Routing",
+        "outcome": "Verketten Sie Multi-Hop-Reisen durch Mikrohubs als effiziente Übergabepunkte.",
+        "micro": "Nahtloser Fluss über Träger und Modi — keine leeren Rücktransporte."
+      },
+      "pricing": {
+        "title": "Preisgestaltung",
+        "outcome": "Faire Preise entstehen aus realen Angebots-/Nachfrage-Dynamiken.",
+        "micro": "Entfernung, Dringlichkeit, Kapazität und Servicelevel — all transparent."
+      },
+      "impact": {
+        "title": "Auswirkung",
+        "outcome": "Messen Sie den pro Sendung durch geteilte Kapazität ersparten Kohlenstoff.",
+        "micro": "Prüfbereite Datenfeeds fließen direkt in ESG-Berichterstattung ein."
+      }
+    },
+    "underTheHood": {
+      "label": "Unter der Haube →",
+      "text": "Echtzeit-Datenaufnahme (GPS, Sendungsspezifikationen, Verfügbarkeit). Multi-Agent-Reinforcement-Learning balanciert Angebot und Nachfrage. Constraint-Satisfaction verarbeitet Gewicht, Temperatur, Fenster, Modi sofort. Wirtschaftliches Gleichgewicht entsteht aus Preissignalen. Jede Entscheidung wird protokolliert und ist erklärbar.",
+      "result": "Ergebnis: Skalieren Sie von Paketen zu institutionellen Lieferketten ohne Fahrzeugzugabe."
+    }
+  },
+  "economics": {
+    "label": "Adaptive Ökonomie",
+    "heading": "Preisgestaltung, die echte Bewegung widerspiegelt",
+    "text1": "Das Lieferpreis passt sich an Dringlichkeit, Entfernung, Routenüberschneidung und verfügbare Kapazität an.",
+    "densityLabel": "Mit wachsender Dichte:",
+    "list": [
+      "Mehr Überschneidung → weniger Umwege",
+      "Weniger Umwege → niedrigere Kosten + niedrigere Emissionen",
+      "Niedrigere Kosten → höhere Adoption + Zuverlässigkeit"
+    ],
+    "closing": "Infrastruktur verbessert sich mit der Nutzung."
+  },
+  "trust": {
+    "label": "Auf Vertrauen aufgebaut",
+    "heading": "Vertrauen, eingebaut.",
+    "description": "Verifizierte Träger. Versicherte Sendungen. Beweis bei jeder Übergabe.",
+    "cards": {
+      "kyc": {
+        "title": "KYC & Verifizierung",
+        "description": "Jeder Teilnehmer vor Netzwerkzugriff verifiziert."
+      },
+      "insurance": {
+        "title": "Versicherungsschutz",
+        "description": "Sendungen durch wertbasierte Richtlinien geschützt."
+      },
+      "pod": {
+        "title": "Lieferbeweis",
+        "description": "Foto oder Unterschrift bei jeder Übergabepunkt."
+      },
+      "audit": {
+        "title": "Audit-Trail",
+        "description": "Vollständige Gewährleistungskette protokolliert und prüfbar."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Schnelle Eskalation und SLA-gestützte Ansprüche."
+      },
+      "compliance": {
+        "title": "Compliance-bereit",
+        "description": "Für behördliche und ESG-Anforderungen gebaut."
+      }
+    },
+    "closing": "Jede Sendung bewegt sich durch verifizierte Netzwerke mit vollständiger Sichtbarkeit."
+  },
+  "environment": {
+    "label": "Umwelt",
+    "heading": "Effizienz reduziert Emissionen",
+    "description": "Vermieden durch Koordination — nicht durch Kreditkäufe ausgeglichen.",
+    "description2": "Da GoLynk bereits stattfindende Reisen koordiniert, sind weniger zusätzliche Fahrten erforderlich.",
+    "paragraph1": "Leere Kilometer nehmen ab. Routendichte verbessert sich. Emissionen nehmen durch Koordination ab.",
+    "paragraph2": "Kohlenstoffeinsparungen können im Laufe der Zeit gemessen und gemeldet werden.",
+    "cards": {
+      "assetLight": {
+        "title": "Asset-Light nach Design",
+        "description": "Wir koordinieren Zusatzkapazität statt neue Fahrzeuge hinzuzufügen. Weniger Duplikation. Mehr Auslastung.",
+        "footnote": "Auf bestehenden Routen gebaut"
+      },
+      "traceable": {
+        "title": "End-to-End-Nachverfolgbar",
+        "description": "Jede Übergabe wird mit Lieferbeweis und Audit-Spuren nachverfolgt.",
+        "description2": "Sichtbarkeit über jedes Segment.",
+        "footnote": "Gewährleistungskette bereit"
+      },
+      "carbon": {
+        "title": "Messbare Kohlenstoffauswirkung",
+        "description": "Auswirkung kann pro Sendung, Route oder Korridor berechnet werden — für ESG-Berichterstattung gebaut.",
+        "footnote": "Gemessen, nicht angenommen"
+      },
+      "density": {
+        "title": "Dichte verbessert Ergebnisse",
+        "description": "Mehr Überschneidung reduziert Umwege und vermeidet zusätzliche Fahrten.",
+        "footnote": "Better je mehr es wächst"
+      }
+    },
+    "closing": "Bessere Koordination. Kleinerer Fußabdruck."
+  },
+  "corridors": {
+    "label": "Pilot-Korridore",
+    "title": "Wo wir zuerst Dichte aufbauen",
+    "description": "Wir starten nicht überall. Wir bauen Dichte dort auf, wo sich Routen wiederholen — dann erweitern wir den Korridor.",
+    "urban": {
+      "title": "Städtische Startzonen",
+      "text": "Ein Stadtgebiet. Hohes Wiederholungsvolumen. Schnelle verifizierte Übergaben."
+    },
+    "cityToCity": {
+      "title": "Stadt-zu-Stadt-Korridore",
+      "text": "Wiederholbare interkommunale Routen, die dichte Zonen durch Drehscheiben verbinden."
+    },
+    "fleet": {
+      "title": "Fleet Plug-ins",
+      "text": "Rücktransport und Zusatzkapazität hinzugefügt, um Zuverlässigkeit zu stärken."
+    },
+    "corridorCta": "Möchten Sie Ihren Korridor als nächstes?",
+    "cta": "Schlagen Sie einen Pilot-Korridor vor"
+  },
+  "stories": {
+    "heading": "Echte Routen. Echte Auswirkung.",
+    "description": "Geschichten aus dem Netzwerk.",
+    "florist": {
+      "label": "Der Florist",
+      "heading": "Von welkenden Margen zu frischen Gewinnen",
+      "text": "Same-Day-Lieferungen über nahegelegene Fahrradträger reduzieren Schäden und Verzögerungen, steigern die Kundenzufriedenheit und verwandeln Premium-Blumensträuße in einen grüneren, höherwertigen Service."
+    },
+    "carrier": {
+      "label": "Der regionale Träger",
+      "heading": "Umwandlung leerer Meilen in Umsatz",
+      "text": "Leere Rückreisen wurden zu bezahlter Kapazität, sobald Rücktransporte in GoLynk eingebunden wurden, was neuen Umsatz hinzufügte ohne neue Routen oder zusätzliche Meilen."
+    },
+    "cafe": {
+      "label": "Das Café-Mikrohub",
+      "heading": "Ein Eckplatz, ein neuer Umsatzstrom",
+      "text": "Eine ungenutzte Café-Ecke wurde zu einem GoLynk-Mikrohub, das ein stetiges Nebeneinkommen, mehr Fußverkehr und lokale Sichtbarkeit mit fast keinem Betriebsaufwand erzeugte."
+    },
+    "readMore": "Weitere Geschichten lesen"
+  },
+  "roadmap": {
+    "heading": "Von der letzten Meile zur vollständigen Logistik-Stack",
+    "description": "Beginnend mit Last Mile und Mid Mile über Mikrohubs — Erweiterung im Laufe der Zeit zu Langstreckenkapazität über das Logistik-Ökosystem.",
+    "now": {
+      "title": "Jetzt",
+      "item0": "Last Mile & Crowdshipping",
+      "item1": "Fleet-Rücktransport-Matching"
+    },
+    "next": {
+      "title": "Nächstes",
+      "item0": "Mikrohub-Dichte",
+      "item1": "Multimodale Mid-Mile"
+    },
+    "later": {
+      "title": "Später",
+      "item0": "Langstreckenkapazität",
+      "item1": "Enterprise API-Tiefe"
+    }
+  },
+  "finalCta": {
+    "heading": "Bauen Sie die nächste Schicht der Logistik.",
+    "description": "Die Welt bewegt sich bereits. Lassen Sie es uns intelligenter arbeiten.",
+    "startPilot": "Mit GoLynk versenden",
+    "joinCarrier": "Als Träger beitreten"
+  },
+  "faq": {
+    "heading": "Häufig gestellte Fragen",
+    "description": "Alles, was Sie über das Produkt und die Abrechnung wissen müssen.",
+    "view_all": "Alle Fragen anzeigen"
   }
 }

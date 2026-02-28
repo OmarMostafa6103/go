@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "title": "Offene Stellen | GoLynk Karriere",
+    "description": "Offene Stellen in Systems Engineering, KI & Optimierung, Integrationen, Korridor-Deployment und Logistikforschung."
+  },
+  "hero": {
+    "backLink": "Zurück zu Karriere",
+    "heading": "Offene Stellen",
+    "description": "Wir stellen ein in den Bereichen Engineering, angewandte KI, Korridor-Deployment und Zero-Touch-Logistikforschung."
+  },
+  "filters": {
+    "track": {
+      "all": "Alle Bereiche",
+      "systems": "Systems Engineering",
+      "ai": "KI & Optimierung",
+      "integrations": "Integrationen & Operator-Tooling",
+      "deployment": "Korridor-Deployment & Operations",
+      "research": "Logistikforschung (Zero-Touch)"
+    },
+    "location": {
+      "all": "Alle Standorte",
+      "aachen": "Aachen",
+      "remote": "Remote"
+    },
+    "type": {
+      "all": "Alle Arten",
+      "fullTime": "Vollzeit",
+      "contract": "Vertragsbasis"
+    },
+    "searchPlaceholder": "Stellen durchsuchen",
+    "resultsNote": "Stellen nach Bereich sortiert. Wird bei neuen Ausschreibungen aktualisiert."
+  },
+  "tracks": {
+    "systems": {
+      "title": "Systems Engineering",
+      "subtitle": "Orchestrierungsgraph, Zuverlässigkeit, Observability, Event-Pipelines."
+    },
+    "ai": {
+      "title": "KI & Optimierung",
+      "subtitle": "Constraint-Scoring, Density Learning, SLA-bewusstes Multi-Hop-Routing."
+    },
+    "integrations": {
+      "title": "Integrationen & Operator-Tooling",
+      "subtitle": "APIs, Dashboards, Partner-Tooling, TMS/WMS-Konnektivität."
+    },
+    "deployment": {
+      "title": "Korridor-Deployment & Operations",
+      "subtitle": "SLA-Playbooks, Partner-Onboarding, Microhub-Validierung, Korridor-Zustand."
+    },
+    "research": {
+      "title": "Logistikforschung (Zero-Touch)",
+      "subtitle": "Netzwerkökonomie, Korridor-Designtheorie, Anreizausrichtung, Verifikationssysteme."
+    }
+  },
+  "roles": {
+    "systems": {
+      "role1": {
+        "title": "Senior Backend Engineer — Orchestrierung",
+        "summary": "Entwurf und Skalierung der zentralen Orchestrierungs-Engine für Multi-Hop-Korridorrouting.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      },
+      "role2": {
+        "title": "Distributed Systems Engineer — Event-Pipeline",
+        "summary": "Aufbau zuverlässiger eventgesteuerter Infrastruktur für Echtzeit-Korridorstatus und Übergabe-Tracking.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      },
+      "role3": {
+        "title": "Reliability Engineer — Observability & Integrität",
+        "summary": "Überwachung, Alerting und Integritätsgarantien über die gesamte Orchestrierungsschicht.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      }
+    },
+    "ai": {
+      "role1": {
+        "title": "Applied ML Engineer — Routing & Optimierung",
+        "summary": "Entwicklung constraint-bewusster Routing-Modelle für Multi-Hop-Sendungsmatching unter Zeitfenstern.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      },
+      "role2": {
+        "title": "Optimization Engineer — Zeitfenster & Constraints",
+        "summary": "Solver für abweichungsbegrenztes Matching und SLA-bewusste Constraint-Erfüllung.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      },
+      "role3": {
+        "title": "Data Scientist — Korridordichte & Preissignale",
+        "summary": "Analyse von Korridordichtemustern und Entwicklung von Preissignalen zur Netzwerkeffizienz.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      }
+    },
+    "integrations": {
+      "role1": {
+        "title": "Integrations Engineer — APIs & Webhooks",
+        "summary": "Entwurf und Pflege partnerseitiger APIs, Webhook-Verträge und Integrationsstufen.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      },
+      "role2": {
+        "title": "Product Engineer — Operator-Dashboard",
+        "summary": "Entwicklung der Operator-Konsole — Sendungssichtbarkeit, Korridorzustand und Ausnahme-Workflows.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      },
+      "role3": {
+        "title": "Solutions Engineer — Flotten- & TMS-Integration",
+        "summary": "Anbindung von Flottenbetreibern und TMS/WMS-Plattformen an die GoLynk-Orchestrierungsschicht.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      }
+    },
+    "deployment": {
+      "role1": {
+        "title": "Corridor Deployment Lead — Deutschland",
+        "summary": "End-to-End-Leitung von Korridor-Launches — Partnerbereitschaft, SLA-Setup und Dichtevalidierung.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      },
+      "role2": {
+        "title": "Partner Operations — Microhub-Netzwerk",
+        "summary": "Pflege der Microhub-Partnerbeziehungen, Kapazitätsabstimmung und operative Bereitschaft.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      },
+      "role3": {
+        "title": "Carrier Onboarding Lead — Korridor-Playbooks",
+        "summary": "Gestaltung und Durchführung von Carrier-Onboarding-Playbooks für Korridor-SLA-Compliance.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      }
+    },
+    "research": {
+      "role1": {
+        "title": "Logistikforscher — Korridor-Design",
+        "summary": "Modellierung von Korridortopologie, Netzwerkeffekten und struktureller Effizienz auf Lane-Ebene.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      },
+      "role2": {
+        "title": "Applied Research — Zero-Touch Operations",
+        "summary": "Forschung zu automatisierungsorientierten Betriebsmodellen für Korridorlogistik ohne manuellen Eingriff.",
+        "location": "Aachen",
+        "type": "Vollzeit"
+      },
+      "role3": {
+        "title": "Netzwerkökonomie — Preisgestaltung & Anreize",
+        "summary": "Entwurf von Preismodellen und Anreizstrukturen für Fairness und Netzwerkwachstum.",
+        "location": "Remote",
+        "type": "Vertragsbasis"
+      },
+      "role4": {
+        "title": "Verifikationssysteme — Chain-of-Custody",
+        "summary": "Entwurf von Vertrauens- und Verifikationsframeworks für Übergabeintegrität bei Multi-Hop-Korridoren.",
+        "location": "Remote",
+        "type": "Vollzeit"
+      }
+    }
+  },
+  "noResults": "Keine Stellen entsprechen Ihren aktuellen Filtern. Versuchen Sie, Ihre Auswahl anzupassen.",
+  "lookFor": {
+    "heading": "Was wir suchen",
+    "item1": "Systemdenken unter realen Einschränkungen",
+    "item2": "Ruhige Umsetzung und messbare Ergebnisse",
+    "item3": "Respekt für operative Integrität (SLAs, Verifikation, Verantwortlichkeit)"
+  },
+  "generalApplication": {
+    "heading": "Initiativbewerbung",
+    "description": "Wenn Sie keine passende Stelle finden, senden Sie eine Vorstellung. Wir stellen nach Tiefe, Klarheit und Systemdenken ein.",
+    "ctaPrimary": "Vorstellung senden",
+    "ctaSecondary": "Zurück zu Karriere",
+    "microcopy": "Fügen Sie Links (LinkedIn/GitHub) und eine kurze Notiz bei, was Sie aufbauen möchten."
+  }
+}

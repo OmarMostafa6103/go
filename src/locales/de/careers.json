@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Karriere — GoLynk",
+    "description": "Werde Teil von GoLynk — baue die Koordinationsschicht für europäische Logistik. Rollen in Engineering, KI, Operations und Forschung."
+  },
+  "hero": {
+    "heading": "Baue die Koordinationsschicht für europäische Logistik",
+    "description": "GoLynk verwandelt bereits in Bewegung befindliche Routen in strukturierte Logistikkapazität — Korridor für Korridor — unter realen Bedingungen: Timing, SLAs, Verifizierung und CO₂-Intensität.",
+    "ctaPrimary": "Offene Stellen ansehen",
+    "ctaSecondary": "Initiativbewerbung",
+    "status": "Deutschland zuerst. Europa als Nächstes. Piloteinsatz läuft."
+  },
+  "building": {
+    "heading": "Was wir bauen",
+    "description": "GoLynk ist eine Orchestrierungsplattform, die Sendungen mit bereits in Bewegung befindlichen Routen abgleicht — Kuriere, Flotten, Crowd-Kapazität und Microhubs — mit Multi-Hop-Routing, SLA-bewusstem Constraint-Matching, verifizierten Übergaben und messbarem CO₂-Impact pro Korridor.",
+    "pillars": {
+      "orchestration": {
+        "title": "Orchestrierung",
+        "description": "Multi-Hop-Routing über Kuriere, Flotten und Microhubs."
+      },
+      "verification": {
+        "title": "Verifizierung",
+        "description": "Übergaben, Chain-of-Custody-Events, Ausnahme-Workflows."
+      },
+      "density": {
+        "title": "Verdichtungseffekte",
+        "description": "Korridore werden günstiger, schneller und sauberer mit wachsender Überlappung."
+      }
+    }
+  },
+  "tracks": {
+    "heading": "Bereiche, für die wir einstellen",
+    "seeRoles": "Stellen ansehen →",
+    "systems": {
+      "title": "Systems Engineering",
+      "description": "Verteilte Orchestrierung, Zuverlässigkeit, Observability, Event-Pipelines.",
+      "examples": "Beispiele: Orchestrierungsgraph, Ausführungsstatus, Monitoring, Audit-Logs."
+    },
+    "ai": {
+      "title": "KI & Optimierung",
+      "description": "Constraint-Scoring, Dichtelernen, SLA-bewusstes Multi-Hop-Chaining.",
+      "examples": "Beispiele: Zeitfenster, Abweichungsgrenzen, ETA-Unsicherheit, Routenranking."
+    },
+    "integrations": {
+      "title": "Integrationen & Operator-Tooling",
+      "description": "APIs, Dashboards, Partner-Tooling, TMS/WMS-Konnektivität.",
+      "examples": "Beispiele: Webhooks, Datenverträge, Operator-Konsolen, Integrationsstufen."
+    },
+    "deployment": {
+      "title": "Korridor-Deployment & Operations",
+      "description": "SLAs, Playbooks, Onboarding, Microhub-Validierung, Korridorgesundheit.",
+      "examples": "Beispiele: Korridor-Launch, Ausnahme-Workflows, Partner-Readiness."
+    },
+    "research": {
+      "title": "Logistikforschung (Zero-Touch)",
+      "description": "Netzwerkökonomie, Korridordesign-Theorie, Anreize, Verifizierungssysteme.",
+      "examples": "Beispiele: Preisfairness, Vertrauensmodelle, Korridortopologie, Automation-First-Ops."
+    }
+  },
+  "problems": {
+    "heading": "Probleme, an denen wir arbeiten",
+    "items": {
+      "routing": "Multi-Hop-Routing unter Zeitfenstern",
+      "matching": "Abweichungsbegrenztes Matching (Zero-Touch, On-Route)",
+      "handoffs": "Verifizierte Übergaben und Chain-of-Custody",
+      "density": "Korridordichte als Verdichtungssystem",
+      "co2": "CO₂-Messung und -Reporting auf Streckenebene",
+      "pricing": "Preisgestaltung, die Anreize im Netzwerk ausrichtet",
+      "exceptions": "Ausnahmebehandlung ohne operatives Chaos",
+      "integrations": "Integrationen, die zu bestehenden Flotten und Tools passen"
+    }
+  },
+  "howWeWork": {
+    "heading": "Wie wir arbeiten",
+    "principles": {
+      "density": "Dichte vor Skalierung",
+      "constraints": "Constraints vor Versprechen",
+      "trust": "Vertrauen ist strukturell",
+      "assetLight": "Asset-Light-Disziplin",
+      "impact": "Gemessener Impact"
+    },
+    "subline": "Wir optimieren auf langfristige Netzwerkintegrität statt kurzfristiger Expansion."
+  },
+  "featured": {
+    "heading": "Ausgewählte Stellen",
+    "viewAll": "Alle offenen Stellen ansehen →",
+    "roles": {
+      "role1": {
+        "title": "Senior Backend Engineer — Orchestrierung",
+        "track": "Systems Engineering",
+        "location": "Berlin / Remote",
+        "type": "Vollzeit"
+      },
+      "role2": {
+        "title": "Applied ML Engineer — Routing & Optimierung",
+        "track": "KI & Optimierung",
+        "location": "Berlin / Remote",
+        "type": "Vollzeit"
+      },
+      "role3": {
+        "title": "Integrations Engineer — APIs & Partner-Tooling",
+        "track": "Integrationen",
+        "location": "Berlin / Remote",
+        "type": "Vollzeit"
+      },
+      "role4": {
+        "title": "Corridor Deployment Lead — Deutschland",
+        "track": "Deployment & Operations",
+        "location": "Berlin",
+        "type": "Vollzeit"
+      },
+      "role5": {
+        "title": "Logistics Researcher — Zero-Touch Operations",
+        "track": "Logistikforschung",
+        "location": "Berlin / Remote",
+        "type": "Vollzeit"
+      },
+      "role6": {
+        "title": "Product Engineer — Operator Dashboard",
+        "track": "Integrationen",
+        "location": "Berlin / Remote",
+        "type": "Vollzeit"
+      }
+    }
+  },
+  "generalApplication": {
+    "heading": "Initiativbewerbung",
+    "description": "Wenn keine Stelle perfekt passt, sende eine Vorstellung.",
+    "ctaPrimary": "Vorstellung einreichen",
+    "ctaSecondary": "Offene Stellen ansehen",
+    "microcopy": "Füge Links (LinkedIn/GitHub) und eine kurze Notiz bei, was du bauen möchtest."
+  },
+  "related": {
+    "label": "Verwandt",
+    "openRoles": "Offene Stellen",
+    "about": "Über uns",
+    "glTech": "GL Tech",
+    "contact": "Kontakt"
+  }
+}

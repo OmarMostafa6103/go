@@ -1,0 +1,53 @@
+{
+  "cta": {
+    "startNow": "Jetzt starten"
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "Was ist GoLynk?",
+        "answer": "GoLynk ist eine KI-gestützte Logistikplattform, die Sendungen intelligent durch ein Netzwerk bestehender Fahrzeuge, Züge, Microhubs und Schließfächer leitet – schneller, günstiger und mit deutlich geringeren Emissionen als traditionelle Kurierdienste. Wir orchestrieren ungenutzte Kapazitäten, um ein vernetztes, effizientes Logistiknetz zu schaffen."
+      },
+      {
+        "question": "Welches Problem löst GoLynk?",
+        "answer": "Die heutige Logistik ist fragmentiert und verschwenderisch: LKWs fahren zu 20–35% leer, Autos werden nur zu 30% ausgelastet, und Versender zahlen Premiumpreise für ineffiziente Routen. GoLynk bringt Sendungen in Echtzeit mit verfügbarer Kapazität zusammen, eliminiert Verschwendung und senkt die Kosten für alle."
+      },
+      {
+        "question": "Wie unterscheidet sich GoLynk von traditionellen Kurieren?",
+        "answer": "Traditionelle Kuriere besitzen Fahrzeuge und berechnen feste Tarife. GoLynk besitzt keine Fahrzeuge; stattdessen koordinieren wir Sendungen über bestehende Kapazitäten (LKWs, Züge, Transporter, Fahrräder) und Microhubs, was niedrigere Kosten, mehr Flexibilität und keine neue Infrastruktur ermöglicht – nur intelligentere Koordination."
+      },
+      {
+        "question": "Ist GoLynk ein Kurier, ein Marktplatz oder etwas anderes?",
+        "answer": "GoLynk ist Logistikinfrastruktur: kein fahrzeugbesitzender Kurier, kein manuelles Load Board und kein reiner Marktplatz. Wir sind die Orchestrierungsebene, die Kapazitäten intelligent zum gegenseitigen Netzwerkvorteil verbindet."
+      },
+      {
+        "question": "Wen bedient GoLynk?",
+        "answer": "Versender (E-Commerce, Einzelhändler, B2B und Privatpersonen), Logistikbetreiber & 3PLs (Flotten mit ungenutzter Kapazität) und Microhub & Einzelhandelspartner (Geschäfte, Kioske, Schließfächer). Alle drei profitieren von derselben intelligenten Orchestrierungs-Engine."
+      },
+      {
+        "question": "Wie lange ist GoLynk schon tätig?",
+        "answer": "GoLynk befindet sich in der Pilotphase mit frühen Betreiber- und Versenderpartnern in Deutschland; wir validieren das Modell mit echten Sendungen und Daten vor der breiteren Skalierung – Early Adopters gestalten das Produkt mit und genießen vorteilhafte Konditionen."
+      },
+      {
+        "question": "Wie fange ich als Versender an?",
+        "answer": "Drei einfache Schritte: 1) Registrieren Sie sich per App oder Web (2 Minuten), 2) Geben Sie die Details Ihrer ersten Sendung ein (Abholung, Zustellung, Paketgröße, Timing), 3) Buchen und verfolgen. Keine Mindestmengen, keine Verträge, keine Einrichtungsgebühren – die meisten Versender testen mit einer Lieferung und integrieren dann."
+      }
+    ]
+  },
+  "navigation": {
+    "about": "Über uns",
+    "carriers": "Kuriere",
+    "contact": "Kontakt",
+    "environment": "Umwelt",
+    "glTech": "GL Tech",
+    "shippers": "Versender"
+  },
+  "socialProof": {
+    "companiesGrowing": "Werden Sie Teil von 4.000+ wachsenden Unternehmen"
+  },
+  "technology": {
+    "cta": "Mehr erfahren",
+    "heading": "Technologie (Kurzform)",
+    "subheading": "Technologie"
+  }
+}

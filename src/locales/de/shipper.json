@@ -1,167 +1,392 @@
 {
   "hero": {
-    "heading": "GoLynk – Die einzige Plattform, die Lieferungen profitabel macht",
-    "description": "Schluss mit der Wahl zwischen Kosten und Geschwindigkeit. Zwischen Abdeckung und Compliance. GoLynk orchestriert Fußgänger, Radfahrer, öffentliche Verkehrsmittel und Transporter zu einem KI-gesteuerten Netzwerk.",
-    "cta": {
-      "startFreePilot": "Kostenlosen Piloten starten",
-      "scheduleCall": "Termin vereinbaren"
+    "heading": "Verwandle bereits fahrende Routen in schnellere, günstigere Lieferungen",
+    "description": "GoLynk orchestriert Ihre Sendungen über Kuriere, Flotten und Crowd-Kapazitäten — für Same‑Day-Geschwindigkeit, niedrigere Kosten und transparente CO₂-Bilanz.",
+    "badges": {
+      "lowerCost": "Niedrigere Kosten",
+      "fasterLanes": "Schnellere Routen",
+      "unifiedTracking": "Einheitliches Tracking",
+      "co2Visibility": "CO₂-Transparenz"
     },
-    "stats": {
-      "verifiedCarriers": {
-        "number": "150+",
-        "label": "Verifizierte Kuriere im aktiven Einsatz"
-      },
-      "onTimeGuarantee": {
-        "number": "95%",
-        "label": "Pünktlichkeitsgarantie (Vertraglich abgesichert)"
-      },
-      "co2Reduction": {
-        "number": "72%",
-        "label": "CO₂-Reduktion pro Lieferung (Geprüft)"
-      },
-      "damageRate": {
-        "number": "<0,5%",
-        "label": "Beschädigungsrate (vs. 5–10% Branchendurchschnitt)"
-      }
+    "cta": {
+      "laneAnalysis": "Routenanalyse anfordern",
+      "howItWorks": "So funktioniert's"
     }
   },
-  "logisticsMyth": {
-    "subheading": "Der Logistik-Mythos",
-    "heading": "Einheitslösungen funktionieren nie",
-    "description": "Traditionelle Logistik funktioniert für Großlagerlieferungen. Für alles andere versagt sie. Sehen Sie, warum Ihre Branche darunter leidet.",
-    "industries": {
-      "ecommerce": {
-        "title": "E-Commerce",
-        "description": "Bestellungen sind zu teuer und Same-Day-Lieferungen scheitern. Kunden wechseln zu schnelleren Wettbewerbern."
+  "hiddenCost": {
+    "heading": "Die versteckten Kosten fragmentierter Logistik",
+    "opening": "Mehr Nachfrage, mehr Fahrzeuge, mehr Emissionen. Jede Ebene traditioneller Logistik verursacht Kosten ohne Koordination.",
+    "cards": {
+      "emptyMiles": {
+        "title": "Leerfahrten bleiben unsichtbar",
+        "text": "LKWs fahren leer zurück. Kuriere kreuzen dieselben Zonen. Niemand erfasst die Verschwendung — sie wird einfach akzeptiert."
       },
-      "freshGoods": {
-        "title": "Frischware",
-        "description": "Blumen und Lebensmittel verderben. Beschädigungen sind hoch und die Qualität leidet."
+      "fragmented": {
+        "title": "Fragmentiert = Dupliziert",
+        "text": "Paketdienstleister, Frachtflotten, Same‑Day-Kuriere — alle fahren parallel, teilen sich selten eine Route."
+      },
+      "visibility": {
+        "title": "Keine Sichtbarkeit, kein Hebel",
+        "text": "Ohne Einblick in fahrende Routen gibt es keine Möglichkeit, neue Nachfrage mit bestehender Kapazität zu verbinden."
+      }
+    },
+    "closing": "GoLynk verbindet, was bereits fährt, mit dem, was Sie versenden möchten."
+  },
+  "whatIs": {
+    "heading": "Was ist GoLynk?",
+    "cards": {
+      "courier": {
+        "title": "Kein Kuriernetzwerk",
+        "text": "Wir besitzen keine Transporter."
+      },
+      "marketplace": {
+        "title": "Kein Frachtmarktplatz",
+        "text": "Wir listen keine Ladungen."
+      },
+      "crowdshipping": {
+        "title": "Nicht nur Crowdshipping",
+        "text": "Wir verlassen uns nicht nur auf spontane Fahrten."
+      }
+    },
+    "definition": "GoLynk ist eine <strong>Orchestrierungsebene</strong> — sie routet Ihre Sendungen über Kuriere, Flotten, Crowd und kombinierte Etappen basierend auf Echtzeit-Kapazität, Geschwindigkeitsprioritäten und CO₂-Abwägungen."
+  },
+  "howItWorks": {
+    "heading": "So funktioniert GoLynk",
+    "description": "GoLynk versendet nicht einfach. Es orchestriert.",
+    "steps": {
+      "define": {
+        "title": "Schritt 1: Definieren Sie Ihren Versandfluss",
+        "text": "Geben Sie Sendungsdetails ein: Ursprung, Ziel, Zeitfenster, Volumen, Einschränkungen. Einmalig oder wiederkehrend — beides wird unterstützt."
+      },
+      "orchestrate": {
+        "title": "Schritt 2: Route orchestrieren",
+        "text": "GoLynks Engine bewertet alle verfügbaren Kapazitäten und kombiniert Etappen — Kuriere, Flotten, Crowd, Relais — zum optimalen Pfad basierend auf Ihren Prioritäten."
+      },
+      "execute": {
+        "title": "Schritt 3: Ausführen und Verfolgen",
+        "text": "Ihre Sendung tritt in eine Live-Orchestrierung ein. Verfolgen Sie jede Etappe, erhalten Sie Übergabe-Benachrichtigungen und sehen Sie CO₂-Daten während die Route abgeschlossen wird."
+      }
+    },
+    "priorities": {
+      "title": "Flexible Prioritäten",
+      "description": "Optimieren Sie nach:",
+      "options": {
+        "cost": "Kosten",
+        "speed": "Geschwindigkeit",
+        "impact": "Umweltauswirkung"
+      }
+    },
+    "routeScoring": {
+      "title": "Transparente Bewertung",
+      "description": "Sehen Sie, warum Routen gewählt wurden — mit Routenmetriken und CO₂-Vergleichen."
+    }
+  },
+  "twoScales": {
+    "heading": "Dieselbe Logik auf zwei Ebenen",
+    "description": "Ob Ihre Herausforderung urbane Pakete oder Überlandfracht ist — GoLynk wendet dieselbe Orchestrierungslogik an: Nachfrage mit bereits fahrenden Routen verbinden.",
+    "urban": {
+      "label": "Urban & Regional",
+      "heading": "Same‑Day Urban & Regional",
+      "tagline": "Pakete auf Routen, die bereits existieren.",
+      "text1": "Die meisten Same‑Day-Lieferungen scheitern, weil Kuriere und Flotten parallel fahren, ohne Sichtbarkeit. GoLynk verbindet Ihre Bestellung mit der nächsten machbaren Etappe — ob ein Crowd-Fahrer seinen Arbeitsweg beendet, ein Kurier nahegelegene Stopps konsolidiert oder ein Micro‑Hub-Relay.",
+      "text2": "Das Ergebnis: schnellere Zeitfenster und geteilte Kapazität, nicht mehr Fahrzeuge.",
+      "features": [
+        "Crowd + Kurier + Flotte in einer Engine",
+        "Micro‑Hub-Übergaben für Mehretappen-Routen",
+        "On‑Route-Einspeisung für schnellere Lieferfenster",
+        "CO₂-Delta sichtbar pro Sendung"
+      ],
+      "closing": "Same‑Day ist erreichbar, wenn Orchestrierung den Versand ersetzt."
+    },
+    "freight": {
+      "label": "Fracht & Fernverkehr",
+      "heading": "Teilladung, Routenfracht & Rückfrachten",
+      "tagline": "Laden Sie in bereits geplante Routen ein.",
+      "text1": "Sie suchen nicht immer neue LKWs. Manchmal brauchen Sie den LKW, der bereits in Ihre Richtung fährt. GoLynk zeigt leere Etappen, untergenutzte Paletten und Rückfahrten von Logistikbetreibern, damit Sie füllen statt anfragen.",
+      "text2": "Das Ergebnis: niedrigere Kosten, kürzere Vorlaufzeit, intelligentere Routendichte.",
+      "features": [
+        "Leeren Raum auf bestehenden Fahrten füllen",
+        "Rückfracht-Matching über eigene und Drittanbieter-Flotten",
+        "Mehretappen-Fracht mit Relay-Übergaben",
+        "CO₂-Benchmarks pro Route mit Verbesserungstracking"
+      ],
+      "closing": "Frachteffizienz beginnt mit dem, was bereits fährt."
+    }
+  },
+  "adapts": {
+    "heading": "GoLynk passt sich Ihren Sendungen an",
+    "subtitle1": "Ob Sie Pakete an Verbraucher oder Paletten an Fabriken versenden,",
+    "subtitle2": "GoLynk verbindet Ihren Versandfluss mit bereits fahrenden Routen.",
+    "tabs": {
+      "consumer": "Verbraucher-Flows",
+      "business": "Geschäfts-Flows"
+    },
+    "consumer": {
+      "ecommerce": {
+        "title": "E-Commerce & Marktplätze",
+        "subtitle": "Nachfragespitzen in Same‑Day-Lieferung verwandeln.",
+        "bullets": [
+          "Crowd + Kurier-Matching für Last‑Mile-Geschwindigkeit",
+          "Micro‑Fulfillment-Routing mit Hub-Relay"
+        ]
       },
       "retail": {
-        "title": "Einzelhandel",
-        "description": "Multi-Filial-Lieferungen sind unmöglich. Kunden brauchen schnellen, präzisen Service."
+        "title": "Einzelhandel & Omnichannel",
+        "subtitle": "Inventar in Filialen, Bestellungen von überall.",
+        "bullets": [
+          "Filiale-zu-Tür-Matching mit lokalen Kurieren",
+          "Click‑and‑Collect-Übergabe-Orchestrierung"
+        ]
       },
-      "luxury": {
-        "title": "Luxusgüter",
-        "description": "Hochwertige Artikel brauchen sichere, versicherte Premium-Lieferung."
+      "fresh": {
+        "title": "Frische, Lebensmittel & Q‑Commerce",
+        "subtitle": "Kurze Zeitfenster, keine Kompromisse bei der Frische.",
+        "bullets": [
+          "Crowd-Reichweite für Same‑Hour-Fenster",
+          "Temperaturgesteuertes Routing mit kürzesten Etappen"
+        ]
+      }
+    },
+    "business": {
+      "industrial": {
+        "title": "Industrieteile & Zubehör",
+        "subtitle": "Regelmäßige Routen mit Überlauf-Flexibilität.",
+        "bullets": [
+          "Geplante + Spot-Füllungen via Flotten-Matching",
+          "Lieferanten-Konsolidierung für geteilte Ladungen"
+        ]
       },
-      "furniture": {
-        "title": "Möbel",
-        "description": "Sperrige Artikel benötigen spezielle Transporter. Kosten und Wartezeiten explodieren."
+      "pallets": {
+        "title": "Paletten, Teilladung & Stammrouten",
+        "subtitle": "Routenoptimierung vor Flottenerweiterung.",
+        "bullets": [
+          "Untergenutzte LKW-Kapazität zurückgewinnen",
+          "Fernverkehr um Routendichte strukturieren"
+        ]
       },
       "healthcare": {
-        "title": "Gesundheitswesen",
-        "description": "Medikamente erfordern Compliance, Temperaturkontrolle und dringende Zustellung."
+        "title": "Gesundheitswesen & Zeitkritisch",
+        "subtitle": "Konforme Geschwindigkeit innerhalb kontrollierter Routenführung.",
+        "bullets": [
+          "Handhabungsbewusste Routenauswahl",
+          "Schnellster machbarer Mehretappen-Pfad"
+        ]
       }
     }
   },
   "comparison": {
-    "subheading": "Denken Sie Ihre Zustellung neu",
-    "heading": "Traditional vs GoLynk",
-    "description": "Traditionelle Logistik optimiert Versand. GoLynk optimiert Überschneidungen.",
-    "metrics": {
-      "deliverySpeed": {
-        "label": "Liefergeschwindigkeit",
-        "traditional": "24+ Stunden Standard",
-        "golynk": "4–6 Stunden am selben Tag (KI-optimiert)"
-      },
-      "costPerDelivery": {
-        "label": "Kosten pro Lieferung",
-        "traditional": "Fix (12€), ineffizient",
-        "golynk": "Dynamisch (8–10€), routen- & volumenoptimiert"
-      },
-      "tracking": {
-        "label": "Sendungsverfolgung",
-        "traditional": "„Wird zugestellt – keine Transparenz",
-        "golynk": "GPS-Tracking auf Ereignisebene, Live-Updates"
-      },
-      "damageRate": {
-        "label": "Beschädigungsrate",
-        "traditional": "5–10%",
-        "golynk": "<0,5% (Spezialisierte Handhabung)"
-      },
-      "coverage": {
-        "label": "Abdeckung",
-        "traditional": "Hub-abhängig, begrenzte Zonen",
-        "golynk": "Dichtes Microhub-Netzwerk, stadtweite & ländliche Effizienz"
-      },
-      "peakPricing": {
-        "label": "Hochsaison-Preise",
-        "traditional": "+40–60% Aufschlag",
-        "golynk": "Stabile Preise, Netzwerk skaliert mit"
-      },
-      "handling": {
-        "label": "Handhabung",
-        "traditional": "Einheitslösung, zerbrechliche & hochwertige Artikel gefährdet",
-        "golynk": "KI ordnet Spezial-Kuriere dem Produkttyp zu"
-      },
-      "adaptation": {
-        "label": "Anpassungsfähigkeit",
-        "traditional": "Feste Routen, Verkehrsverzögerungen",
-        "golynk": "Echtzeit-Umleitung alle 5 Minuten"
-      },
-      "customerExperience": {
-        "label": "Kundenerlebnis",
-        "traditional": "Verzögert, unzuverlässig, Beschwerden",
-        "golynk": "Schnell, zuverlässig, hohe Zufriedenheit"
-      },
-      "sustainability": {
-        "label": "Nachhaltigkeit",
-        "traditional": "Nicht erfasst",
-        "golynk": "CO₂-Reduktion bis zu 72% pro Lieferung"
-      }
+    "heading": "Traditionell vs GoLynk",
+    "description": "Traditionelle Logistik fügt Fahrzeuge hinzu. GoLynk optimiert bereits fahrende Routen.",
+    "labels": {
+      "speed": "Geschwindigkeit",
+      "cost": "Kosten",
+      "shipmentTypes": "Sendungsarten",
+      "tracking": "Tracking & Erlebnis",
+      "sustainability": "Nachhaltigkeit"
+    },
+    "traditional": {
+      "heading": "Traditionelles Modell",
+      "speed": "Standard nächster Tag oder langsamer",
+      "cost": "Starre Festpreis-Stopps",
+      "shipmentTypes": "Gebaut für entweder Pakete oder komplette LKWs, Lücken bei gemischten Flows",
+      "tracking": "Generisches \"wird zugestellt\", schwer nachvollziehbar",
+      "sustainability": "CO₂-Auswirkung selten gemessen oder verwaltet"
+    },
+    "golynk": {
+      "heading": "GoLynk Modell",
+      "speed": "Same‑Day, routenoptimiert by design",
+      "cost": "Dynamische Preisgestaltung basierend auf realen Routen und Kapazität",
+      "shipmentTypes": "Eine Ebene für Pakete, Paletten und gemischte Flows auf bestehenden Routen",
+      "tracking": "Etappe-für-Etappe-Updates und klare ETAs, die Kunden wirklich sehen können",
+      "sustainability": "CO₂-Auswirkung pro Sendung sichtbar und reduziert vs. traditionelle Fahrten"
+    },
+    "cta": {
+      "text": "Bringen Sie Ihre Routen ins GoLynk-Modell.",
+      "button": "Routenbewertung besprechen"
     }
   },
-  "features": {
-    "subheading": "Funktionen",
-    "heading": "Modernste Infrastruktur. Gebaut für moderne Logistik.",
-    "description": "Jede Funktion wurde entwickelt, um Kosten, Geschwindigkeit, Effizienz und Transparenz in ganzen Städten und Branchen zu optimieren.",
-    "list": {
-      "automation": {
-        "title": "Operative Automatisierung",
-        "description": "GoLynk optimiert den gesamten Lieferworkflow automatisch – von der Auftragserstellung bis zur Auszahlung – für schnellere, sauberere und fehlerfreie Abläufe.",
+  "interface": {
+    "heading": "Die Orchestrierungs-Oberfläche",
+    "description": "GoLynk ist nicht nur eine Routing-Engine.<br/>Es umfasst die Steuerungs- und Sichtbarkeitsebene für Versender und Kapazitätspartner.",
+    "tagline": "Ein System. Gemeinsame Logik. Volle Transparenz.",
+    "cards": {
+      "dashboard": {
+        "title": "Einheitliches Kontroll-Dashboard",
+        "text": "Versender und Carrier greifen über strukturierte Dashboards auf dieselbe Orchestrierungsebene zu — auf Desktop und Mobilgeräten.",
+        "features": [
+          "— Sendungsaufnahme und Routensichtbarkeit",
+          "— Etappe-für-Etappe-Tracking über Mehretappen-Fahrten",
+          "— Kosten-, SLA- und CO₂-Reporting pro Sendung",
+          "— Rechnungs- und Abrechnungsintegration"
+        ],
+        "footnote": "Die Oberfläche spiegelt die Orchestrierungslogik wider — nicht manuellen Versand.",
         "cta": "Mehr erfahren"
       },
-      "security": {
-        "title": "Vertrauen, Compliance & Sicherheit",
-        "description": "Mit Sicherheit auf Unternehmensniveau bietet GoLynk verschlüsselte Datenverarbeitung, verifizierte Kuriere und vollständige Compliance auf jedem Schritt.",
+      "api": {
+        "title": "API-First-Integration",
+        "text": "GoLynk integriert sich direkt mit TMS, WMS, ERP und E-Commerce-Systemen.",
+        "features": [
+          "— Auftragsaufnahme via API",
+          "— Kapazitätsexposition für Carrier",
+          "— Event-Streaming und Webhook-Updates",
+          "— Kosten- und Emissionsdaten zurück in Ihre Systeme"
+        ],
+        "footnote": "Sie behalten Ihren Stack. Wir fügen Orchestrierung hinzu.",
         "cta": "Mehr erfahren"
       },
-      "reports": {
-        "title": "Verwalten Sie Ihr Team mit Reports",
-        "description": "Aussagekräftige Echtzeit-Berichte ermöglichen es Ihnen, Leistung zu verfolgen, Kosten zu verstehen und Ihr Team mit einem Klick zu optimieren.",
+      "trust": {
+        "title": "Vertrauens- & Verantwortungsebene",
+        "text": "Jede Sendung wird in einer verifizierten und regelbasierten Umgebung ausgeführt.",
+        "features": [
+          "— Geprüfte Kapazitätspartner",
+          "— Protokollierte Übergaben und Chain-of-Custody-Events",
+          "— Versicherung und Compliance in Routeneignung integriert",
+          "— Strukturierte Ausnahmebehandlung"
+        ],
+        "footnote": "Zuverlässigkeit ist im System eingebettet — nicht abhängig von manueller Koordination.",
         "cta": "Mehr erfahren"
       }
     }
   },
-  "businessesAtScale": {
-    "subheading": "Für Unternehmen",
-    "heading": "Unternehmen, die im großen Maßstab versenden",
-    "description": {
-      "line1": "Hören Sie auf, Kuriere zu überbezahlen.",
-      "line2": "Versenden Sie Paletten über bereits genutzte Kapazitäten, nicht über dedizierte Transporter."
+  "interfaceDetails": {
+    "heading": "Detaillierter Einblick in die Oberfläche",
+    "description": "Entdecken Sie die Schlüsselkomponenten, die GoLynks Orchestrierungs-Oberfläche einzigartig machen.",
+    "dashboard": {
+      "title": "Einheitliches Kontroll-Dashboard",
+      "text1": "Das einheitliche Kontroll-Dashboard bietet vollständige Transparenz über Ihre Logistikabläufe. Verfolgen Sie Sendungen in Echtzeit, überwachen Sie Leistungskennzahlen und greifen Sie auf detaillierte Analysen zu — alles über eine einzige Oberfläche.",
+      "feature1": "• Echtzeit-Sendungsverfolgung mit Multi-Hop-Sichtbarkeit",
+      "feature2": "• Kostenaufschlüsselung pro Etappe und Gesamtstrecke",
+      "feature3": "• SLA-Compliance-Monitoring mit proaktiven Warnungen",
+      "feature4": "• CO₂-Emissionsverfolgung für Nachhaltigkeitsberichte",
+      "text2": "Anders als traditionelle Versandsysteme reflektiert das Dashboard die Orchestrierungs-Intelligenz — Ausnahmen, Optimierungen und umsetzbare Erkenntnisse werden automatisch aufgezeigt."
     },
-    "whoItsFor": {
-      "heading": "Für wen es ist",
-      "list": {
-        "manufacturers": "Hersteller & Großhändler.",
-        "foodBeverage": "Lebensmittel & Getränke.",
-        "healthcare": "Gesundheitswesen & Pharma.",
-        "recommerce": "Recommerce & Retouren.",
-        "industrial": "Industrieteile & Ausrüstung."
+    "api": {
+      "title": "API-First-Integration",
+      "text1": "GoLynks API-First-Architektur bedeutet, dass Sie Ihre bestehenden Systeme nicht ersetzen müssen. Unsere RESTful-APIs und Webhooks integrieren sich nahtlos mit TMS, WMS, ERP und E-Commerce-Plattformen.",
+      "feature1": "• Auftragsaufnahme: Sendungen direkt aus Ihren Systemen übermitteln",
+      "feature2": "• Event-Streaming: Echtzeit-Updates via Webhooks",
+      "feature3": "• Kapazitätsexposition: Carrier veröffentlichen Verfügbarkeit programmatisch",
+      "feature4": "• Datensynchronisation: Kosten- und Emissionsdaten fließen automatisch zurück",
+      "text2": "Vollständige API-Dokumentation, Sandbox-Umgebungen und dedizierter Integrationssupport gewährleisten einen reibungslosen Implementierungsprozess."
+    },
+    "trust": {
+      "title": "Vertrauens- & Verantwortungsebene",
+      "text1": "Jede Sendung bewegt sich durch eine verifizierte, regelbasierte Umgebung. GoLynk integriert Verantwortlichkeit in die Systemarchitektur — nicht als Nebensache, sondern als Kernprinzip.",
+      "feature1": "• Geprüftes Kapazitätsnetzwerk: Alle Partner auf Compliance geprüft",
+      "feature2": "• Chain-of-Custody-Protokollierung: Jede Übergabe dokumentiert",
+      "feature3": "• Versicherungsintegration: Deckung bei Routeneignung verifiziert",
+      "feature4": "• Ausnahmebehandlung: Strukturierte Eskalationsprotokolle",
+      "text2": "Zuverlässigkeit hängt nicht von manueller Koordination ab — sie ist in die GoLynk-Funktionsweise eingebaut."
+    }
+  },
+  "technology": {
+    "pillars": {
+      "graph": {
+        "title": "Orchestrierungs-Graph",
+        "text": "Routen als ein Bewegungsgraph modelliert."
+      },
+      "matching": {
+        "title": "Matching-Engine",
+        "text": "Bewertet Etappen und verkettet 2–3 Hops."
+      },
+      "api": {
+        "title": "API-First-Integration",
+        "text": "Anbindung an TMS/WMS/ERP und Dashboards."
+      },
+      "data": {
+        "title": "Datengesteuerte Verbesserung",
+        "text": "Bessere ETAs und Preise mit wachsenden Routen."
+      }
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "Welche Sendungsarten unterstützt GoLynk für Versender?",
+        "answer": "GoLynk unterstützt alles von einzelnen Paketen und E‑Commerce-Bestellungen bis hin zu Paletten, Teilladungen und kompletten LKW-Ladungen. Sie können mit Last‑Mile-Paketen beginnen und später Ihre B2B-Flows, Stammrouten und Rückfrachten auf derselben Orchestrierungsebene einbinden."
+      },
+      {
+        "question": "Muss ich meine aktuellen Carrier oder Frachtpartner ersetzen?",
+        "answer": "Nein. GoLynk ist eine Orchestrierungsebene über Ihren bestehenden Carriern und Routen. Sie können vertrauenswürdige Partner behalten, deren freie Kapazität in GoLynk einbringen und die Engine entscheiden lassen, wann Ihr eigenes Netzwerk, GoLynks Crowd- und Flottenkapazität oder eine Mischung aus beidem genutzt wird."
+      },
+      {
+        "question": "Wie hält GoLynk meine Sendungen sicher und compliant?",
+        "answer": "Sendungen werden basierend auf Handhabungsanforderungen, Wert und branchenspezifischen Anforderungen mit geprüften Carriern und Routen abgeglichen. Für sensible Flows — wie Frische, Zerbrechliches oder Gesundheitswesen — nutzt GoLynk Spezial-Carrier, kürzere Etappen und klare Event-Trails zur Unterstützung von Versicherung und Compliance."
+      },
+      {
+        "question": "Wie funktionieren Preise und Kosten für Versender?",
+        "answer": "Die Preisgestaltung reflektiert, wie gut eine Sendung zu bestehenden Routen und Kapazitäten passt, anstatt fixe Einheitspreise. Das bedeutet, Sie können niedrigere Kosten erschließen, wenn GoLynk leeren Raum, Rückfrachten und Rückfahrten füllt — ohne Einbußen beim Servicelevel."
+      },
+      {
+        "question": "Wie integrieren wir GoLynk mit unseren Systemen?",
+        "answer": "Sie können über Dashboards starten und dann zur API-Integration mit Ihrem TMS, WMS, E‑Commerce-Plattform oder ERP übergehen. Aufträge, Events und CO₂-Daten können automatisch fließen, sodass Ihre Teams kein separates Tool pflegen müssen, um GoLynk zu nutzen."
+      },
+      {
+        "question": "Wie berechnen Sie die CO₂-Auswirkung für unsere Sendungen?",
+        "answer": "Für jede Sendung schätzt GoLynk Emissionen mit konservativen Baseline-Faktoren und vergleicht sie mit dem, was eine typische Kurier- oder LKW-Fahrt emittiert hätte. Das Ergebnis sind vermiedene Emissionsdaten pro Sendung und pro Route, die Sie in ESG- und Nachhaltigkeitsberichte exportieren können."
+      }
+    ],
+    "viewAll": "Alle FAQs anzeigen"
+  },
+  "partner": {
+    "heading": "Early Shipping Partner Programm",
+    "description": "Wir onboarden ausgewählte Versender auf priorisierten Routen.",
+    "text1": "Teilen Sie Ihre Routen und erwartetes Sendungsvolumen.",
+    "text2": "Wir zeigen auf, wo bereits fahrende Routen Kosten und Zuverlässigkeit verbessern können.",
+    "cta": "Versandinteresse bekunden"
+  },
+  "earlyAccess": {
+    "heading": "Versand auf bestehenden Routen starten",
+    "description": "Sagen Sie uns was Sie versenden und wohin — wir bestätigen, ob Ihr Korridor aktiv ist.",
+    "form": {
+      "fullName": {
+        "label": "Vollständiger Name",
+        "placeholder": "Ihr vollständiger Name"
+      },
+      "companyName": {
+        "label": "Firmenname",
+        "placeholder": "Ihr Firmenname"
+      },
+      "businessType": {
+        "label": "Branche",
+        "placeholder": "Wählen Sie Ihre Branche",
+        "options": {
+          "florist": "Florist",
+          "bakery": "Bäckerei",
+          "ecommerce": "E-Commerce",
+          "retail": "Einzelhandel",
+          "distributor": "Großhändler",
+          "manufacturer": "Hersteller",
+          "other": "Sonstiges"
+        }
+      },
+      "monthlyVolume": {
+        "label": "Geschätzte Sendungen / Monat",
+        "placeholder": "Volumen auswählen"
+      },
+      "city": {
+        "label": "Stadt / Versandgebiet",
+        "placeholder": "z.B. München, Berlin"
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "placeholder": "sie@firma.de"
+      },
+      "phone": {
+        "label": "Telefon / WhatsApp",
+        "optional": "(optional)",
+        "placeholder": "+49 123 456 7890"
       }
     },
-    "whyItWorks": {
-      "heading": "Warum es funktioniert",
-      "list": {
-        "lowerCost": "40–60% niedrigere Lieferkosten",
-        "delivery": "Lieferung am nächsten Tag oder in 2–3 Tagen",
-        "noMinimums": "Keine Mindestmengen. Keine Verträge",
-        "existingRoutes": "Sendungen bewegen sich auf bestehenden Routen",
-        "tracking": "Tracking, CO₂-Daten, eine Rechnung"
-      }
+    "cta": "Korridor-Verfügbarkeit prüfen",
+    "microcopy": {
+      "noCommitment": "Keine Verpflichtung erforderlich",
+      "response": "Antwort innerhalb von 24 Stunden",
+      "priority": "Priorisierter Korridor-Zugang"
     },
-    "cta": "B2B-Demo planen"
+    "success": {
+      "heading": "Vielen Dank für Ihr Interesse!",
+      "description": "Wir prüfen Ihren Korridor und melden uns in Kürze."
+    }
   }
 }

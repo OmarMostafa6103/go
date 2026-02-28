@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/Logo.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title data-i18n="apply.meta.title">Apply for a Role at GoLynk</title>
+    <meta
+      name="description"
+      data-i18n-content="apply.meta.description"
+      content="Submit your application to join the GoLynk team and help us build the future of multi-hop logistics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <script type="module" src="../src/js/main.ts"></script>
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <nav
+      class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+      style="background: rgba(11, 13, 16, 0.25); backdrop-filter: blur(10px)"
+    >
+      <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="../index.html">
+            <img src="../public/Logo.svg" alt="Logo" />
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-8 text-text-on-dark">
+            <a
+              href="../shipper.html"
+              class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+              data-i18n="common.navigation.shippers"
+            >
+              Shippers
+            </a>
+            <a
+              href="../carrier.html"
+              class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+              data-i18n="common.navigation.carriers"
+            >
+              Carriers
+            </a>
+            <a
+              href="../about.html"
+              class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+              data-i18n="common.navigation.about"
+            >
+              About
+            </a>
+            <a
+              href="../careers.html"
+              class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+              data-i18n="common.navigation.careers"
+            >
+              Careers
+            </a>
+          </div>
+
+          <!-- CTA Buttons & Language Selector (Desktop) -->
+          <div class="hidden lg:flex flex-row items-center gap-2">
+            <a
+              href="../get-started.html"
+              class="px-5 py-2.5 primary-btn"
+              data-i18n="common.cta.startNow"
+            >
+              Start Now
+            </a>
+
+            <!-- Language Selector -->
+            <select
+              class="language-selector px-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+            >
+              <option
+                value="en"
+                class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+              >
+                EN
+              </option>
+              <option
+                value="de"
+                class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+              >
+                DE
+              </option>
+            </select>
+          </div>
+
+          <!-- Mobile: Language Selector + Menu Button -->
+          <div class="lg:hidden flex items-center gap-3">
+            <!-- Language Selector (Mobile) -->
+            <select
+              class="language-selector px-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+            >
+              <option
+                value="en"
+                class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+              >
+                EN
+              </option>
+              <option
+                value="de"
+                class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+              >
+                DE
+              </option>
+            </select>
+
+            <!-- Mobile Menu Button -->
+            <button class="p-2">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="flex-1 py-16">
+      <div class="max-w-[560px] mx-auto px-6">
+        <!-- Job Heading -->
+        <div id="job-info" class="mb-12">
+          <h1
+            class="text-4xl font-bold mb-2 text-text-primary"
+            id="job-title"
+            data-i18n="apply.defaultJobTitle"
+          >
+            Submit Your Application
+          </h1>
+          <p
+            class="text-text-secondary"
+            id="job-location"
+            data-i18n="apply.defaultJobLocation"
+          >
+            Thank you for your interest in GoLynk
+          </p>
+        </div>
+
+        <!-- Application Form -->
+        <form id="application-form" class="space-y-6">
+          <!-- Job ID (hidden) -->
+          <input type="hidden" name="job-id" id="job-id" value="" />
+
+          <!-- Full Name -->
+          <div>
+            <label
+              for="full-name"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.fullName.label"
+            >
+              Full name
+            </label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Your full name"
+              data-i18n-placeholder="apply.form.fullName.placeholder"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label
+              for="email"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.email.label"
+            >
+              Email address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              data-i18n-placeholder="apply.form.email.placeholder"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              required
+            />
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label
+              for="phone"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.phone.label"
+            >
+              Phone number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+43 XXX XXX"
+              data-i18n-placeholder="apply.form.phone.placeholder"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              required
+            />
+          </div>
+
+          <!-- Location Preference -->
+          <div>
+            <label
+              for="location-preference"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.locationPreference.label"
+            >
+              Location preference
+            </label>
+            <select
+              id="location-preference"
+              name="location-preference"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              required
+            >
+              <option value="" data-i18n="apply.form.locationPreference.select">
+                Select location
+              </option>
+              <option
+                value="aachen"
+                data-i18n="apply.form.locationPreference.aachen"
+              >
+                Aachen (On-site)
+              </option>
+              <option
+                value="remote"
+                data-i18n="apply.form.locationPreference.remote"
+              >
+                Remote
+              </option>
+            </select>
+          </div>
+
+          <!-- CV/Resume Upload -->
+          <div>
+            <label
+              for="resume"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.resume.label"
+            >
+              CV or Resume
+            </label>
+            <div
+              class="relative border-2 border-dashed border-border-default rounded-md p-6 text-center cursor-pointer hover:border-primary transition-colors"
+              id="resume-upload-area"
+            >
+              <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.doc,.docx,.txt"
+                class="absolute inset-0 opacity-0 cursor-pointer"
+                required
+              />
+              <svg
+                class="w-8 h-8 mx-auto mb-2 text-text-muted"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                ></path>
+              </svg>
+              <p
+                class="text-small font-semibold text-text-primary"
+                data-i18n="apply.form.resume.dragDrop"
+              >
+                Drag and drop your file
+              </p>
+              <p
+                class="text-xs text-text-muted mt-1"
+                data-i18n="apply.form.resume.format"
+              >
+                PDF, DOC, DOCX or TXT
+              </p>
+              <p class="text-xs text-text-muted mt-2" id="file-name"></p>
+            </div>
+          </div>
+
+          <!-- Cover Letter -->
+          <div>
+            <label
+              for="cover-letter"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.coverLetter.label"
+            >
+              Cover letter
+            </label>
+            <textarea
+              id="cover-letter"
+              name="cover-letter"
+              rows="5"
+              placeholder="Tell us why you're a great fit for this role..."
+              data-i18n-placeholder="apply.form.coverLetter.placeholder"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Experience Level -->
+          <div>
+            <label
+              for="experience"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.experience.label"
+            >
+              Years of experience
+            </label>
+            <select
+              id="experience"
+              name="experience"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              required
+            >
+              <option value="" data-i18n="apply.form.experience.select">
+                Select experience level
+              </option>
+              <option value="0-2" data-i18n="apply.form.experience.junior">
+                0-2 years
+              </option>
+              <option value="2-5" data-i18n="apply.form.experience.mid">
+                2-5 years
+              </option>
+              <option value="5-10" data-i18n="apply.form.experience.senior">
+                5-10 years
+              </option>
+              <option value="10+" data-i18n="apply.form.experience.lead">
+                10+ years
+              </option>
+            </select>
+          </div>
+
+          <!-- Additional Info -->
+          <div>
+            <label
+              for="additional-info"
+              class="block text-small font-semibold text-text-primary mb-2"
+              data-i18n="apply.form.additionalInfo.label"
+            >
+              Additional information
+            </label>
+            <textarea
+              id="additional-info"
+              name="additional-info"
+              rows="3"
+              placeholder="Anything else you'd like us to know?"
+              data-i18n-placeholder="apply.form.additionalInfo.placeholder"
+              class="w-full px-4 py-3 rounded-md border border-border-default bg-white text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-4">
+            <button
+              type="submit"
+              class="w-full px-7 py-4 primary-btn text-center font-semibold text-text-on-dark hover:opacity-90 transition-opacity"
+              data-i18n="apply.form.submit"
+            >
+              Submit Application
+            </button>
+          </div>
+
+          <!-- Legal Text -->
+          <p
+            class="text-xs text-text-muted text-center"
+            data-i18n="apply.form.legal"
+          >
+            By submitting this application, you consent to GoLynk processing
+            your personal data according to our privacy policy.
+          </p>
+        </form>
+
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="hidden text-center py-12">
+          <div class="mb-6">
+            <svg
+              class="w-16 h-16 mx-auto text-green-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <h2
+            class="text-3xl font-bold text-text-primary mb-4"
+            data-i18n="apply.success.heading"
+          >
+            Application submitted!
+          </h2>
+          <p
+            class="text-text-secondary mb-8"
+            data-i18n="apply.success.description"
+          >
+            Thank you for applying. We'll review your application and get back
+            to you within 2-3 business days.
+          </p>
+          <a
+            href="./jobs.html"
+            class="text-primary hover:text-primary-dark transition-colors font-semibold"
+            data-i18n="apply.success.backToJobs"
+          >
+            Back to job listings
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer
+      class="pt-8 overflow-hidden"
+      style="border-top: 1px solid var(--border-color)"
+    >
+      <div class="space-y-12">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5 px-6"
+        >
+          <!-- CTA Buttons -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center"
+            data-animate="fade-up"
+            data-duration="800"
+          >
+            <a
+              href="../shipper.html#early-access"
+              class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+            >
+              <svg class="size-6 me-2">
+                <use href="#icon-ship"></use>
+              </svg>
+              <span
+                class="body-semibold text-text-on-dark"
+                data-i18n="common.footer.cta.startShipping"
+                >Start Shipping</span
+              >
+            </a>
+            <a
+              href="../carrier.html#carrier-access"
+              class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+            >
+              <svg class="size-6 me-2">
+                <use href="#icon-delivery"></use>
+              </svg>
+              <span
+                class="body-semibold text-text-on-dark"
+                data-i18n="common.footer.cta.deliverWithUs"
+                >Deliver with us</span
+              >
+            </a>
+          </div>
+          <!-- Newsletter Column -->
+          <div class="flex flex-col items-center lg:items-start gap-3">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.newsletter.title"
+            >
+              Stay up to date
+            </h3>
+            <form class="flex gap-2" id="footer-newsletter-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                data-i18n-placeholder="common.footer.newsletter.placeholder"
+                class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                required
+              />
+              <button
+                type="submit"
+                class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                data-i18n="common.footer.newsletter.button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Grid -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-6"
+          data-animate="fade-up"
+          data-duration="800"
+          data-delay="200"
+        >
+          <!-- Company Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.company.title"
+            >
+              Company
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../about.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.about"
+              >
+                About GoLynk
+              </a>
+              <a
+                href="../index.html#how-it-works"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.howItWorks"
+              >
+                How It Works
+              </a>
+              <a
+                href="../index.html#industries"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.industries"
+              >
+                Industries We Serve
+              </a>
+              <a
+                href="../index.html#environment"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.sustainability"
+              >
+                Sustainability &amp; CO₂ Reporting
+              </a>
+              <a
+                href="../careers.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.careers"
+              >
+                Careers
+              </a>
+              <a
+                href="../get-started.html#contact"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.company.links.contact"
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+
+          <!-- For Shippers Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.shippers.title"
+            >
+              For Shippers
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../shipper.html#early-access"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.getStarted"
+              >
+                Get Started
+              </a>
+              <a
+                href="../pricing.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.pricing"
+              >
+                Pricing
+              </a>
+              <a
+                href="../index.html#how-it-works"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.howItWorks"
+              >
+                How it works
+              </a>
+              <a
+                href="../faq.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.shippers.links.faq"
+              >
+                FAQ
+              </a>
+            </nav>
+          </div>
+
+          <!-- For Carriers Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.carriers.title"
+            >
+              For Carriers
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../carrier.html#carrier-access"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.carriers.links.getStarted"
+              >
+                Get Started
+              </a>
+              <a
+                href="../corridor.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.carriers.links.corridors"
+              >
+                Corridors
+              </a>
+              <a
+                href="../carrier.html#operator-dashboard"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.carriers.links.dashboard"
+              >
+                Operator Dashboard
+              </a>
+            </nav>
+          </div>
+
+          <!-- Developers Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.developers.title"
+            >
+              Developers
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="https://api.golynk.com/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.developers.links.apiDocs"
+              >
+                API Docs
+              </a>
+              <a
+                href="https://github.com/golynk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.developers.links.github"
+              >
+                GitHub
+              </a>
+            </nav>
+          </div>
+
+          <!-- Legal Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.legal.title"
+            >
+              Legal
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="../privacy.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.privacy"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="../cookies.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.cookies"
+              >
+                Cookie Policy
+              </a>
+              <a
+                href="../terms.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.terms"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="../imprint.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+                data-i18n="common.footer.sections.legal.links.imprint"
+              >
+                Imprint
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div
+          style="
+            border-top: 1px solid var(--border-color);
+            padding-top: 8px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+          "
+        >
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <!-- Logo and Tagline -->
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <a href="../index.html">
+                <img src="../public/Logo.svg" alt="GoLynk" class="h-8" />
+              </a>
+              <p
+                class="text-text-secondary text-small"
+                data-i18n="common.footer.tagline"
+              >
+                Orchestrating existing journeys into faster, greener logistics.
+              </p>
+            </div>
+            <!-- Copyright -->
+            <p
+              class="text-text-secondary text-small"
+              data-i18n="common.footer.copyright"
+            >
+              © GoLynk 2026. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SVG Icons -->
+    <svg
+      style="display: none"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <symbol id="icon-ship">
+        <rect width="24" height="24" fill="none" />
+        <path
+          d="M12 2L3 7V10C3 13.866 6.582 17 11 17.9V21H13V17.9C17.418 17 21 13.866 21 10V7L12 2Z"
+          stroke="currentColor"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-delivery">
+        <rect width="24" height="24" fill="none" />
+        <path
+          d="M9 11H1V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H9M8 11V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H21C21.5304 2 22.0391 2.21071 22.4142 2.58579C22.7893 2.96086 23 3.46957 23 4V13C23 13.5304 22.7893 14.0391 22.4142 14.4142C22.0391 14.7893 21.5304 15 21 15H9M4 17C4 17.5304 3.78929 18.0391 3.41421 18.4142C3.03914 18.7893 2.53043 19 2 19C1.46957 19 0.960859 18.7893 0.585786 18.4142C0.210714 18.0391 0 17.5304 0 17C0 16.4696 0.210714 15.9609 0.585786 15.5858C0.960859 15.2107 1.46957 15 2 15C2.53043 15 3.03914 15.2107 3.41421 15.5858C3.78929 15.9609 4 16.4696 4 17ZM20 17C20 17.5304 19.7893 18.0391 19.4142 18.4142C19.0391 18.7893 18.5304 19 18 19C17.4696 19 16.9609 18.7893 16.5858 18.4142C16.2107 18.0391 16 17.5304 16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17Z"
+          stroke="currentColor"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+
+    <!-- Application Script -->
+    <script>
+      // Get job info from URL params
+      const urlParams = new URLSearchParams(window.location.search);
+      const jobId = urlParams.get("job");
+      const jobTitleElement = document.getElementById("job-title");
+      const jobLocationElement = document.getElementById("job-location");
+      const jobIdInput = document.getElementById("job-id");
+      const applicationForm = document.getElementById("application-form");
+      const successMessage = document.getElementById("success-message");
+      const resumeInput = document.getElementById("resume");
+      const fileNameDisplay = document.getElementById("file-name");
+      const resumeUploadArea = document.getElementById("resume-upload-area");
+
+      // Set job ID in hidden field
+      if (jobId) {
+        jobIdInput.value = jobId;
+      }
+
+      // File upload handling
+      resumeInput.addEventListener("change", function (e) {
+        if (this.files.length > 0) {
+          fileNameDisplay.textContent = this.files[0].name;
+        }
+      });
+
+      // Drag and drop
+      resumeUploadArea.addEventListener("dragover", function (e) {
+        e.preventDefault();
+        this.classList.add("border-primary");
+      });
+
+      resumeUploadArea.addEventListener("dragleave", function (e) {
+        e.preventDefault();
+        this.classList.remove("border-primary");
+      });
+
+      resumeUploadArea.addEventListener("drop", function (e) {
+        e.preventDefault();
+        this.classList.remove("border-primary");
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+          resumeInput.files = files;
+          fileNameDisplay.textContent = files[0].name;
+        }
+      });
+
+      // Form submission
+      applicationForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Create FormData to include file upload
+        const formData = new FormData(this);
+
+        try {
+          // For now, simulate successful submission
+          // In production, this would send to your backend API
+          const response = await new Promise((resolve) => {
+            setTimeout(() => resolve({ ok: true }), 1000);
+          });
+
+          if (response.ok) {
+            // Hide form and show success message
+            applicationForm.classList.add("hidden");
+            successMessage.classList.remove("hidden");
+
+            // Optional: scroll to success message
+            successMessage.scrollIntoView({ behavior: "smooth" });
+          }
+        } catch (error) {
+          console.error("Error submitting form:", error);
+          alert(
+            "There was an error submitting your application. Please try again.",
+          );
+        }
+      });
+
+      // Optional: Load job details from i18n if available
+      // This would be enhanced when i18n is fully integrated
+      if (jobId && window.i18n) {
+        // Try to load job title from i18n data
+        const jobTitle = window.i18n?.t?.(
+          `jobs.roles.${jobId.split("-").slice(0, -1).join(".")}.title`,
+        );
+        if (jobTitle) {
+          jobTitleElement.textContent = jobTitle;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 /**
  * @file i18n.ts
  * @description Internationalization (i18n) system with dynamic locale file loading
- * @version 2.4.0
+ * @version 2.6.0
  *
  * === FEATURES ===
  * - Automatic language detection from multiple sources (URL, localStorage, HTML, browser)
@@ -22,100 +22,48 @@
  * === SUPPORTED LANGUAGES ===
  * - en: English
  * - de: Deutsch
- * - fr: Français
- * - nl: Nederlands
- *
- * === HTML USAGE ===
- *
- * Mark elements for translation:
- * ```html
- * <h1 data-i18n="home.hero.heading"></h1>
- * <p data-i18n="home.hero.description"></p>
- * ```
- *
- * With variable replacement:
- * ```html
- * <p data-i18n="welcome" data-name="John"></p>
- * <!-- Translation: "Hello, {name}!" -->
- * <!-- Result: "Hello, John!" -->
- * ```
- *
- * Language selector:
- * ```html
- * <select id="language-selector">
- *   <option value="en">English</option>
- *   <option value="de">Deutsch</option>
- * </select>
- * ```
- *
- * === TYPESCRIPT USAGE ===
- *
- * Basic translation:
- * ```typescript
- * import { changeLanguage, pageLanguage } from '@/utils/i18n';
- *
- * // Get current language
- * console.log(pageLanguage); // 'en'
- *
- * // Change language
- * changeLanguage('de');
- * ```
- *
- * Load specific locale:
- * ```typescript
- * import { loadLocaleFile } from '@/utils/i18n';
- *
- * const translations = await loadLocaleFile('fr');
- * console.log(translations.home.hero.heading);
- * ```
- *
- * Get translation programmatically:
- * ```typescript
- * import { t } from '@/utils/i18n';
- *
- * const greeting = await t('welcome', { name: 'Alice' });
- * console.log(greeting); // "Hello, Alice!"
- * ```
  *
  * === FOLDER STRUCTURE ===
  *
- * Translations organized by namespace:
- * ```
  * src/locales/
  * ├── en/
- * │   ├── common.json   (header, footer, shared terms)
- * │   ├── home.json     (home page)
- * │   ├── shipper.json  (shipper page)
- * │   └── carrier.json  (carrier page)
- * ├── de/
- * ├── fr/
- * └── nl/
- * ```
- *
- * === EXAMPLE TRANSLATION FILE ===
- *
- * en/home.json:
- * ```json
- * {
- *   "hero": {
- *     "heading": "Welcome to GoLynk",
- *     "description": "Ship smarter, earn more"
- *   },
- *   "features": [
- *     "Real-time tracking",
- *     "AI-powered matching",
- *     "Secure payments"
- *   ]
- * }
- * ```
- *
- * Language Detection Priority (highest to lowest):
- * 1. URL parameter (?lang=de)
- * 2. localStorage
- * 3. HTML lang attribute (<html lang="de">)
- * 4. Browser language (navigator.language)
- * 5. Default language (en)
- *
+ * │   ├── common.json
+ * │   ├── home.json
+ * │   ├── shipper.json
+ * │   ├── carrier.json
+ * │   ├── faq.json
+ * │   ├── about.json
+ * │   ├── footer.json
+ * │   ├── get-started.json
+ * │   ├── corridor.json
+ * │   ├── privacy.json
+ * │   ├── cookies.json
+ * │   ├── terms.json
+ * │   ├── imprint.json
+ * │   ├── investor.json
+ * │   ├── careers.json
+ * │   ├── jobs.json
+ * │   ├── apply.json
+ * │   └── capital.json
+ * └── de/
+ *     ├── common.json
+ *     ├── home.json
+ *     ├── shipper.json
+ *     ├── carrier.json
+ *     ├── faq.json
+ *     ├── about.json
+ *     ├── footer.json
+ *     ├── get-started.json
+ *     ├── corridor.json
+ *     ├── privacy.json
+ *     ├── cookies.json
+ *     ├── terms.json
+ *     ├── imprint.json
+ *     ├── investor.json
+ *     ├── careers.json
+ *     ├── jobs.json
+ *     ├── apply.json
+ *     └── capital.json
  */
 
 // ============================================================================
@@ -124,19 +72,34 @@
 
 /**
  * Supported locale codes
- * @type {LocaleCode}
  */
-type LocaleCode = "en" | "de" | "fr" | "nl";
+type LocaleCode = "en" | "de";
 
 /**
  * Translation namespaces
- * @type {Namespace}
  */
-type Namespace = "common" | "home" | "shipper" | "carrier";
+type Namespace =
+  | "common"
+  | "home"
+  | "shipper"
+  | "carrier"
+  | "faq"
+  | "about"
+  | "footer"
+  | "get-started"
+  | "corridor"
+  | "privacy"
+  | "cookies"
+  | "terms"
+  | "imprint"
+  | "investor"
+  | "careers"
+  | "jobs"
+  | "capital"
+  | "apply";
 
 /**
  * Source of language detection
- * @type {LanguageSource}
  */
 type LanguageSource =
   | "url"
@@ -148,7 +111,6 @@ type LanguageSource =
 
 /**
  * Translation object structure (can be nested)
- * @interface TranslationObject
  */
 interface TranslationObject {
   [key: string]: string | string[] | TranslationObject;
@@ -156,7 +118,6 @@ interface TranslationObject {
 
 /**
  * Collection of translations organized by namespace
- * @interface NamespacedTranslations
  */
 interface NamespacedTranslations {
   [namespace: string]: TranslationObject;
@@ -166,21 +127,38 @@ interface NamespacedTranslations {
 // Configuration
 // ============================================================================
 
-const availableLocales: LocaleCode[] = ["en", "de", "fr", "nl"];
+const availableLocales: LocaleCode[] = ["en", "de"];
+
 const localeNames: Record<LocaleCode, string> = {
   en: "English",
   de: "Deutsch",
-  fr: "Français",
-  nl: "Nederlands",
 };
+
 const translationNamespaces: Namespace[] = [
   "common",
   "home",
   "shipper",
   "carrier",
+  "faq",
+  "about",
+  "footer",
+  "get-started",
+  "corridor",
+  "privacy",
+  "cookies",
+  "terms",
+  "imprint",
+  "investor",
+  "careers",
+  "jobs",
+  "apply",
+  "capital",
 ];
+
 const defaultLanguage: LocaleCode = "en";
+
 const translationCache: Map<LocaleCode, NamespacedTranslations> = new Map();
+
 const STORAGE_KEY = "preferred_language";
 
 // ============================================================================
@@ -189,9 +167,6 @@ const STORAGE_KEY = "preferred_language";
 
 /**
  * Detects the appropriate language based on multiple sources
- * @returns {Object} Detected language and detection source
- * @returns {LocaleCode} returns.language - The detected language code
- * @returns {LanguageSource} returns.source - Where the language was detected from
  */
 function detectLanguage(): { language: LocaleCode; source: LanguageSource } {
   // Priority 1: URL parameter
@@ -228,6 +203,7 @@ function detectLanguage(): { language: LocaleCode; source: LanguageSource } {
   )
     .substring(0, 2)
     .toLowerCase() as LocaleCode;
+
   if (availableLocales.includes(browserLang)) {
     return { language: browserLang, source: "browser" };
   }
@@ -247,32 +223,22 @@ let languageSource: LanguageSource = detectedLanguage.source;
 /**
  * Updates the URL with the current language without page reload
  */
-/**
- * Updates the URL with the current language without page reload
- * @param {LocaleCode} language - Language code to set in URL
- * @returns {void}
- */
 function updateUrlLanguage(language: LocaleCode): void {
   const url = new URL(window.location.href);
   url.searchParams.set("lang", language);
   window.history.replaceState({}, "", url.toString());
-  console.log("✅ URL updated with lang:", language);
 }
 
 /**
  * Saves language preference to localStorage for persistence
- * @param {LocaleCode} language - Language code to save
- * @returns {void}
  */
 function saveLanguagePreference(language: LocaleCode): void {
   localStorage.setItem(STORAGE_KEY, language);
-  console.log("✅ Language saved to localStorage:", language);
 }
 
 /**
  * Removes language from URL and localStorage
  * Reverts to automatic language detection
- * @returns {void}
  */
 function clearLanguagePreference(): void {
   localStorage.removeItem(STORAGE_KEY);
@@ -294,24 +260,40 @@ const localeImportMap: Record<
     home: () => import("@locales/en/home.json"),
     shipper: () => import("@locales/en/shipper.json"),
     carrier: () => import("@locales/en/carrier.json"),
+    faq: () => import("@locales/en/faq.json"),
+    about: () => import("@locales/en/about.json"),
+    footer: () => import("@locales/en/footer.json"),
+    "get-started": () => import("@locales/en/get-started.json"),
+    corridor: () => import("@locales/en/corridor.json"),
+    privacy: () => import("@locales/en/privacy.json"),
+    cookies: () => import("@locales/en/cookies.json"),
+    terms: () => import("@locales/en/terms.json"),
+    imprint: () => import("@locales/en/imprint.json"),
+    investor: () => import("@locales/en/investor.json"),
+    careers: () => import("@locales/en/careers.json"),
+    jobs: () => import("@locales/en/jobs.json"),
+    apply: () => import("@locales/en/apply.json"),
+    capital: () => import("@locales/en/capital.json"),
   },
   de: {
     common: () => import("@locales/de/common.json"),
     home: () => import("@locales/de/home.json"),
     shipper: () => import("@locales/de/shipper.json"),
     carrier: () => import("@locales/de/carrier.json"),
-  },
-  fr: {
-    common: () => import("@locales/fr/common.json"),
-    home: () => import("@locales/fr/home.json"),
-    shipper: () => import("@locales/fr/shipper.json"),
-    carrier: () => import("@locales/fr/carrier.json"),
-  },
-  nl: {
-    common: () => import("@locales/nl/common.json"),
-    home: () => import("@locales/nl/home.json"),
-    shipper: () => import("@locales/nl/shipper.json"),
-    carrier: () => import("@locales/nl/carrier.json"),
+    faq: () => import("@locales/de/faq.json"),
+    about: () => import("@locales/de/about.json"),
+    footer: () => import("@locales/de/footer.json"),
+    "get-started": () => import("@locales/de/get-started.json"),
+    corridor: () => import("@locales/de/corridor.json"),
+    privacy: () => import("@locales/de/privacy.json"),
+    cookies: () => import("@locales/de/cookies.json"),
+    terms: () => import("@locales/de/terms.json"),
+    imprint: () => import("@locales/de/imprint.json"),
+    investor: () => import("@locales/de/investor.json"),
+    careers: () => import("@locales/de/careers.json"),
+    jobs: () => import("@locales/de/jobs.json"),
+    apply: () => import("@locales/de/apply.json"),
+    capital: () => import("@locales/de/capital.json"),
   },
 };
 
@@ -324,11 +306,16 @@ async function loadNamespace(
   namespace: Namespace,
 ): Promise<TranslationObject> {
   try {
+    console.log(`Loading namespace: ${locale}/${namespace}`);
     const importFn = localeImportMap[locale]?.[namespace];
     if (!importFn) {
       throw new Error(`No import function for ${locale}/${namespace}`);
     }
     const module = await importFn();
+    console.log(
+      `Loaded ${namespace}:`,
+      module.default ? "has default" : "no default",
+    );
     return (module.default || module) as TranslationObject;
   } catch (err) {
     console.warn(
@@ -404,10 +391,29 @@ function getNestedTranslation(
   const keys = key.split(".");
 
   for (const k of keys) {
-    if (result && typeof result === "object" && k in result) {
-      result = (result as Record<string, unknown>)[k];
+    // Handle array bracket notation: essentialItems[0] -> essentialItems, [0]
+    const match = k.match(/^(.+?)\[(\d+)\]$/);
+
+    if (match) {
+      const propName = match[1];
+      const index = parseInt(match[2], 10);
+
+      if (result && typeof result === "object" && propName in result) {
+        result = (result as Record<string, unknown>)[propName];
+        if (Array.isArray(result) && index < result.length) {
+          result = result[index];
+        } else {
+          return null;
+        }
+      } else {
+        return null;
+      }
     } else {
-      return null;
+      if (result && typeof result === "object" && k in result) {
+        result = (result as Record<string, unknown>)[k];
+      } else {
+        return null;
+      }
     }
   }
 
@@ -443,6 +449,7 @@ function processVariables(text: string, element: HTMLElement): string {
 async function translatePage(): Promise<void> {
   try {
     const json = await loadLocaleFile(pageLanguage);
+    console.log("Loaded translations, namespaces:", Object.keys(json));
     const elements = document.querySelectorAll<HTMLElement>("[data-i18n]");
 
     elements.forEach((element) => {
@@ -451,7 +458,11 @@ async function translatePage(): Promise<void> {
 
       let text = getNestedTranslation(key, json);
       if (!text) {
-        console.warn(`Translation key not found: ${key}`);
+        console.warn(
+          `Translation key not found: ${key}`,
+          "Available:",
+          Object.keys(json),
+        );
         return;
       }
 
@@ -459,14 +470,40 @@ async function translatePage(): Promise<void> {
       element.innerHTML = text;
     });
 
+    // Handle data-i18n-placeholder attributes (for input/textarea elements)
+    const placeholderElements = document.querySelectorAll<HTMLElement>(
+      "[data-i18n-placeholder]",
+    );
+    placeholderElements.forEach((element) => {
+      const key = element.getAttribute("data-i18n-placeholder");
+      if (!key) return;
+      const text = getNestedTranslation(key, json);
+      if (
+        text &&
+        (element instanceof HTMLInputElement ||
+          element instanceof HTMLTextAreaElement)
+      ) {
+        element.placeholder = text;
+      }
+    });
+
+    // Handle data-i18n-content attributes (for meta tags)
+    const contentElements = document.querySelectorAll<HTMLElement>(
+      "[data-i18n-content]",
+    );
+    contentElements.forEach((element) => {
+      const key = element.getAttribute("data-i18n-content");
+      if (!key) return;
+      const text = getNestedTranslation(key, json);
+      if (text) {
+        element.setAttribute("content", text);
+      }
+    });
+
     document.documentElement.setAttribute("lang", pageLanguage);
     updateLanguageSelectors();
-
-    console.log(
-      `✅ Page translated to: ${pageLanguage} (source: ${languageSource})`,
-    );
   } catch (error) {
-    console.error("❌ Translation error:", error);
+    console.error("Translation error:", error);
   }
 }
 
@@ -479,8 +516,6 @@ async function changeLanguage(
     console.error(`Language ${newLanguage} is not supported`);
     return;
   }
-
-  console.log(`🔄 Changing language to: ${newLanguage}`);
 
   pageLanguage = newLanguage;
   languageSource = "manual";
@@ -583,8 +618,6 @@ function updateLanguageSelectors(): void {
     ".language-selector, [data-language-selector]",
   );
 
-  console.log(`🔄 Updating ${selectors.length} language selector(s)`);
-
   selectors.forEach((selector) => {
     if (selector.value !== pageLanguage) {
       selector.value = pageLanguage;
@@ -599,21 +632,15 @@ function attachLanguageSelectorListeners(): void {
   const selectors =
     document.querySelectorAll<HTMLSelectElement>(".language-selector");
 
-  console.log(`🔗 Attaching listeners to ${selectors.length} selector(s)`);
-
   selectors.forEach((selector) => {
-    // Remove existing listener if any
     const newSelector = selector.cloneNode(true) as HTMLSelectElement;
     selector.parentNode?.replaceChild(newSelector, selector);
 
-    // Add fresh listener
     newSelector.addEventListener("change", (e) => {
       const target = e.target as HTMLSelectElement;
-      console.log(`📍 Selector changed to: ${target.value}`);
       changeLanguage(target.value as LocaleCode);
     });
 
-    // Set current value
     newSelector.value = pageLanguage;
   });
 }
@@ -631,7 +658,6 @@ function initLanguageSelectors(): void {
     }
   });
 
-  // Attach listeners to all selectors (including manually created ones)
   attachLanguageSelectorListeners();
 }
 

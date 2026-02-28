@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "backToHome": "← Back to Home"
+  },
+  "hero": {
+    "heading": "Corridor Activation Proposal",
+    "description": "We activate corridors where routes repeat. Submit a corridor proposal for evaluation.",
+    "step1": "We review density potential",
+    "step2": "We confirm handoff feasibility",
+    "step3": "We schedule a 20-minute corridor call"
+  },
+  "criteria": {
+    "heading": "Evaluation Criteria",
+    "item1": "Repeatable demand (weekly volume)",
+    "item2": "Geographic density potential",
+    "item3": "Time-window feasibility",
+    "item4": "Handoff points / microhub suitability",
+    "item5": "Fleet / carrier availability",
+    "item6": "Data readiness (basic shipment metadata)",
+    "note": "Not every corridor is activated immediately — we prioritize compounding density."
+  },
+  "map": {
+    "heading": "Network Expansion from Aachen",
+    "description": "Watch our logistics network spread: Aachen → NRW → Germany → Benelux",
+    "live": "Live Network",
+    "hint": "Scroll to zoom • Drag to pan • Click cities for details",
+    "legend": {
+      "title": "Network Layers",
+      "hub": "Main Hub",
+      "major": "Major Corridor",
+      "regional": "Regional Route",
+      "micro": "Local Network",
+      "package": "Package Flow"
+    }
+  },
+  "form": {
+    "heading": "Submit your corridor",
+    "subheading": "Takes ~2 minutes.",
+    "section": {
+      "corridorDefinition": "Corridor Definition",
+      "yourRole": "Your Role",
+      "operations": "Operational Constraints",
+      "contact": "Contact",
+      "notes": "Notes"
+    },
+    "labels": {
+      "originCity": "Origin City",
+      "destinationCity": "Destination City",
+      "corridorType": "Corridor Type",
+      "serviceRadius": "Service Radius / Distance Range",
+      "weeklyVolume": "Expected Weekly Volume",
+      "shipmentTypes": "Shipment Types",
+      "pickupWindows": "Typical Pickup Time Windows",
+      "deliveryWindows": "Typical Delivery Time Windows",
+      "zeroDetour": "Zero-detour requirement",
+      "zeroDetourHint": "Prefer on-route, minimal deviation matching",
+      "companyName": "Company / Organization Name",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "website": "Website",
+      "notes": "Anything we should know?",
+      "optional": "(optional)"
+    },
+    "options": {
+      "urbanZone": "Urban zone",
+      "cityToCity": "City-to-city"
+    },
+    "submit": "Submit for Evaluation",
+    "emailAlternative": "Prefer email instead?",
+    "disclaimer": "We'll respond after review."
+  },
+  "trust": {
+    "heading": "What you get if accepted",
+    "item1": "Priority corridor activation planning",
+    "item2": "Verification & handoff workflow",
+    "item3": "Shared capacity onboarding (fleets + individuals)"
+  },
+  "success": {
+    "heading": "Proposal Submitted",
+    "message": "Thanks — we'll review your corridor proposal and respond within 2 business days.",
+    "backHome": "Back to Home"
+  },
+  "footer": {
+    "tagline": "Smarter Logistics for Everyone",
+    "copyright": "© GoLynk 2026. All rights reserved.",
+    "forShippers": {
+      "title": "For Shippers",
+      "solutions": "Solutions",
+      "benefits": "Benefits",
+      "getStarted": "Get Started"
+    },
+    "forCarriers": {
+      "title": "For Carriers",
+      "solutions": "Solutions",
+      "benefits": "Benefits",
+      "joinNetwork": "Join Network"
+    },
+    "resources": {
+      "title": "Resources",
+      "aboutUs": "About Us",
+      "faq": "FAQ",
+      "technology": "Technology"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "imprint": "Imprint"
+    }
+  }
+}

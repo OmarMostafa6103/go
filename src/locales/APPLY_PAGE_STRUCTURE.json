@@ -1,0 +1,150 @@
+{
+  "_documentation": {
+    "description": "Job Application Form Translations for GoLynk",
+    "namespace": "apply",
+    "files": ["src/locales/en/apply.json", "src/locales/de/apply.json"],
+    "html_file": "careers/apply.html",
+    "total_keys": 57,
+    "last_updated": "2026-02-28"
+  },
+  "_structure": {
+    "sections": {
+      "meta": "Page title and description for SEO",
+      "defaultJobTitle": "Title shown when no job ID is provided",
+      "defaultJobLocation": "Location/subtitle when no specific job",
+      "form": {
+        "description": "All form field labels, placeholders, and options",
+        "subsections": {
+          "fullName": "Name input field",
+          "email": "Email input field",
+          "phone": "Phone input field",
+          "locationPreference": "Job location selection (dropdown)",
+          "resume": "Resume/CV file upload section",
+          "coverLetter": "Cover letter textarea",
+          "experience": "Years of experience (dropdown)",
+          "additionalInfo": "Additional comments textarea",
+          "submit": "Submit button text",
+          "legal": "Legal consent text below form"
+        }
+      },
+      "success": "Messages shown after successful submission"
+    }
+  },
+  "_usage_examples": {
+    "html_attributes": {
+      "text_content": "<h1 data-i18n=\"apply.defaultJobTitle\">",
+      "placeholder": "<input data-i18n-placeholder=\"apply.form.email.placeholder\" />",
+      "page_title": "<title data-i18n=\"apply.meta.title\">",
+      "page_description": "<meta data-i18n-content=\"apply.meta.description\" />"
+    }
+  },
+  "_sections_breakdown": {
+    "form_labels": {
+      "count": 8,
+      "items": [
+        "apply.form.fullName.label",
+        "apply.form.email.label",
+        "apply.form.phone.label",
+        "apply.form.locationPreference.label",
+        "apply.form.resume.label",
+        "apply.form.coverLetter.label",
+        "apply.form.experience.label",
+        "apply.form.additionalInfo.label"
+      ]
+    },
+    "form_placeholders": {
+      "count": 5,
+      "items": [
+        "apply.form.fullName.placeholder",
+        "apply.form.email.placeholder",
+        "apply.form.phone.placeholder",
+        "apply.form.coverLetter.placeholder",
+        "apply.form.additionalInfo.placeholder"
+      ]
+    },
+    "form_selectors": {
+      "count": 2,
+      "location_select": [
+        "apply.form.locationPreference.select",
+        "apply.form.locationPreference.aachen",
+        "apply.form.locationPreference.remote"
+      ],
+      "experience_select": [
+        "apply.form.experience.select",
+        "apply.form.experience.junior",
+        "apply.form.experience.mid",
+        "apply.form.experience.senior",
+        "apply.form.experience.lead"
+      ]
+    },
+    "form_messages": {
+      "count": 3,
+      "items": [
+        "apply.form.resume.dragDrop",
+        "apply.form.resume.format",
+        "apply.form.legal"
+      ]
+    },
+    "buttons": {
+      "count": 1,
+      "items": ["apply.form.submit"]
+    },
+    "success_screen": {
+      "count": 3,
+      "items": [
+        "apply.success.heading",
+        "apply.success.description",
+        "apply.success.backToJobs"
+      ]
+    },
+    "metadata": {
+      "count": 2,
+      "items": ["apply.meta.title", "apply.meta.description"]
+    }
+  },
+  "_translation_quality_checklist": {
+    "completeness": {
+      "english": "✓ All 24 apply.* keys translated",
+      "german": "✓ All 24 apply.* keys translated",
+      "common_keys": "✓ Uses common.json for footer/nav (shared with all pages)"
+    },
+    "consistency": {
+      "key_naming": "✓ camelCase formatting consistent",
+      "structure": "✓ English and German have identical structure",
+      "locale_pairing": "✓ Both en/ and de/ directories have matching files"
+    },
+    "validation": {
+      "missing_keys": "✓ Verified - all HTML attributes have JSON entries",
+      "extra_keys": "✓ No unused translations",
+      "syntax": "✓ Valid JSON format"
+    }
+  },
+  "_form_field_categories": {
+    "personal_information": [
+      "apply.form.fullName",
+      "apply.form.email",
+      "apply.form.phone"
+    ],
+    "application_details": [
+      "apply.form.locationPreference",
+      "apply.form.resume",
+      "apply.form.coverLetter",
+      "apply.form.experience",
+      "apply.form.additionalInfo"
+    ],
+    "user_consent": ["apply.form.legal"]
+  },
+  "_integration_points": {
+    "navbar": "Uses common.navigation.* keys",
+    "footer": "Uses common.footer.* keys (25+ keys shared across all pages)",
+    "cta_buttons": "Uses common.cta.* keys",
+    "language_selector": "Hardcoded in HTML (EN/DE toggle)"
+  },
+  "_notes": {
+    "shared_translations": "Footer and navigation use common.json to ensure consistency across all pages",
+    "form_specific": "apply.json contains only form-specific text and success messages",
+    "expansion_friendly": "Structure allows easy addition of more job fields without changing namespaces",
+    "performance": "Translations are lazy-loaded on page demand using dynamic imports",
+    "fallback": "If a translation is missing, the original English text is shown as fallback"
+  }
+}

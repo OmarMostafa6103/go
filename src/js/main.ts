@@ -31,8 +31,6 @@
  * <select id="language-selector">
  *   <option value="en">English</option>
  *   <option value="de">Deutsch</option>
- *   <option value="fr">Français</option>
- *   <option value="nl">Nederlands</option>
  * </select>
  *
  * <!-- Animations -->
@@ -55,6 +53,7 @@ import { initAnimations } from "@/js/animations/fade";
 import { initCounters } from "./animations/counter";
 import { initFAQ } from "./utils/faq";
 import { initGlobe } from "./utils/map";
+import { initCorridorMap } from "./utils/corridorMap";
 import { initTabs } from "./utils/tabs";
 import { initMobileMenu } from "./utils/mobile-menu";
 
@@ -81,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (languageSelector) {
     languageSelector.addEventListener("change", (e) => {
       const target = e.target as HTMLSelectElement;
-      changeLanguage(target.value as "en" | "de" | "fr" | "nl");
+      changeLanguage(target.value as "en" | "de");
     });
   }
 
@@ -328,4 +327,12 @@ document.addEventListener("DOMContentLoaded", () => {
    * Initialize interactive globe map
    */
   initGlobe();
+
+  /**
+   * Initialize Germany corridor map (corridor.html and investor.html)
+   * Longer delay ensures amCharts scripts are fully loaded and parsed
+   */
+  setTimeout(() => {
+    initCorridorMap();
+  }, 500);
 });

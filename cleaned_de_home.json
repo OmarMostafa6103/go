@@ -1,0 +1,15 @@
+{
+  "faq": {
+    "description": "Alles, was Sie über das Produkt und die Abrechnung wissen müssen.",
+    "heading": "Häufig gestellte Fragen",
+    "view_all": "Alle anzeigen"
+  },
+  "hero": {
+    "cta": {
+      "deliverAndEarn": "Treten Sie als Fahrer bei",
+      "shipWithGoLynk": "Pilot starten"
+    },
+    "description": "Wir ordnen Sendungen dem freien Platz bereits fahrende Transporte zu – und verbinden sie durch überprüfte Übergabepunkte.",
+    "heading": "Die Welt bewegt sich bereits. Wir verwandeln Bewegung in Infrastruktur."
+  }
+}

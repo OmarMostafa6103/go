@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Imprint | GoLynk",
+    "description": "Legal notice and provider information for GoLynk under German law."
+  },
+  "title": "Imprint / Legal Notice",
+  "lastUpdated": "Last updated:",
+  "intro": "Information in accordance with §5 TMG (German Telemedia Act) and §55 Abs. 2 RStV (German Interstate Broadcasting Treaty).",
+  "tmg": {
+    "title": "Information according to §5 TMG",
+    "nameLabel": "Name:",
+    "nameValue": "Ibrahim Ismail",
+    "addressLabel": "Address:",
+    "addressValue": "Kastanienweg 4, 52074 Aachen, Germany",
+    "phoneLabel": "Phone:",
+    "phoneValue": "Available on request via email",
+    "emailLabel": "Email:"
+  },
+  "rstv": {
+    "title": "Responsible for Content (§55 Abs. 2 RStV)",
+    "content": "Ibrahim Ismail\nKastanienweg 4\n52074 Aachen, Germany"
+  },
+  "commercialStatus": {
+    "title": "Commercial Status",
+    "content": "GoLynk is currently operated as a sole proprietorship (Einzelunternehmen) by Ibrahim Ismail. Formal company registration as a GmbH is in preparation. Upon incorporation, this page will be updated with the company registration number (HRB) and all applicable statutory details.",
+    "notice": "Update Notice: Once GmbH registration is completed, all relevant commercial register information will be published here in accordance with §5 TMG."
+  },
+  "vat": {
+    "title": "VAT Identification Number",
+    "content": "A VAT identification number (USt-IdNr.) according to §27a Umsatzsteuergesetz has not yet been assigned. This section will be updated as soon as one is issued."
+  },
+  "liabilityContent": {
+    "title": "Liability for Content",
+    "text": "As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to §7 Abs. 1 TMG. According to §§8–10 TMG, however, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this regard is only possible from the point in time at which we become aware of a specific infringement. Upon notification of such violations, we will remove the content immediately."
+  },
+  "liabilityLinks": {
+    "title": "Liability for Links",
+    "text": "Our website may contain links to external third-party websites over whose content we have no influence. We therefore cannot accept any liability for this external content. The respective provider or operator of the linked pages is always responsible for the content of those pages. The linked pages were checked for possible legal violations at the time of linking. No illegal content was identifiable at the time. Permanent monitoring of the linked pages is unreasonable without concrete indication of a legal violation. Upon notification of infringements, we will remove such links immediately."
+  },
+  "copyright": {
+    "title": "Copyright",
+    "text": "The content and works on these pages created by the site operator are subject to German copyright law. Duplication, processing, distribution, and any form of commercialization beyond the scope of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. Third-party content is identified as such. Should you become aware of a copyright infringement, please notify us accordingly. Upon notification of violations, we will remove such content immediately."
+  },
+  "dispute": {
+    "title": "Dispute Resolution",
+    "text1": "The European Commission provides a platform for online dispute resolution (OS):",
+    "text2": "We are neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board."
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "For questions regarding this legal notice or the content of this website:",
+    "emailLabel": "Email:",
+    "addressLabel": "Address:",
+    "addressValue": "Kastanienweg 4, 52074 Aachen, Germany",
+    "links": {
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}

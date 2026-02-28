@@ -1,0 +1,66 @@
+{
+  "footer": {
+    "cta": {
+    "startShipping": "Versand starten",
+    "deliverWithUs": "Mit uns liefern",
+    "expressShippingInterest": "Interesse an Expressversand",
+    "requestLaneAssessment": "Streckenanalyse anfordern"
+  },
+  "newsletter": {
+    "title": "Bleiben Sie auf dem Laufenden",
+    "placeholder": "E-Mail-Adresse eingeben",
+    "button": "Abonnieren"
+  },
+  "sections": {
+    "golynk": {
+      "title": "GoLynk",
+      "links": {
+        "about": "Über GoLynk",
+        "howItWorks": "So funktioniert's",
+        "industries": "Branchen, die wir bedienen",
+        "sustainability": "Nachhaltigkeit<br />& CO₂-Reporting",
+        "careers": "Karriere",
+        "contacts": "Kontakt",
+        "investors": "Für Investoren"
+      }
+    },
+    "shippers": {
+      "title": "Für Versender",
+      "links": {
+        "b2b": "B2B-Versender",
+        "ecommerce": "E-Commerce & Einzelhandel",
+        "fresh": "Frische & Gesundheit"
+      }
+    },
+    "carriers": {
+      "title": "Für Carrier",
+      "links": {
+        "logistics": "Logistikbetreiber<br />& 3PLs",
+        "capacity": "Als Kapazitätspartner beitreten",
+        "dashboard": "Betreiber-Dashboard",
+        "api": "Integration & API-Dokumentation"
+      }
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "links": {
+        "blog": "Blog & Insights",
+        "caseStudies": "Fallstudien",
+        "faq": "FAQ",
+        "investors": "Investor Relations"
+      }
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "links": {
+        "privacy": "Datenschutzrichtlinie",
+        "terms": "Nutzungsbedingungen",
+        "cookie": "Cookie-Richtlinie",
+        "imprint": "Impressum"
+      }
+    }
+  },
+  "tagline": "Bestehende Reisen in schnellere, grünere Logistik orchestrieren.",
+  "copyright": "© GoLynk 2026. Alle Rechte vorbehalten."
+  }
+}

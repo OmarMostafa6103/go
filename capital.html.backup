@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="capital.meta.title">Investor Pack | GoLynk</title>
+    <meta
+      name="description"
+      data-i18n="capital.meta.description"
+      content="Request GoLynk's investor materials. Executive overview, deployment roadmap, and orchestration architecture for aligned infrastructure funds."
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!-- ========== NAVIGATION ========== -->
+      <div class="relative">
+        <nav
+          class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+          style="
+            background: rgba(11, 13, 16, 0.25);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <a href="./">
+                <img src="./Logo.svg" alt="Logo" />
+              </a>
+
+              <!-- Desktop Navigation -->
+              <div
+                class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+              >
+                <a
+                  href="./shipper.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.shippers"
+                >
+                  Shippers
+                </a>
+                <a
+                  href="./carrier.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.carriers"
+                >
+                  Carriers
+                </a>
+                <a
+                  href="./about.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.about"
+                >
+                  About
+                </a>
+                <a
+                  href="./investor.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.investor"
+                >
+                  Investor
+                </a>
+              </div>
+
+              <!-- CTA + Language Selector (Desktop) -->
+              <div class="hidden lg:flex flex-row items-center gap-2">
+                <button
+                  class="px-5 py-2.5 primary-btn"
+                  data-i18n="common.cta.startNow"
+                >
+                  Start Now
+                </button>
+
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      English
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      Deutsch
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-2 top-1/2 -translate-y-1/2 size-4 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Mobile: Language Selector + Menu Button -->
+              <div class="lg:hidden flex items-center gap-3">
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      EN
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      DE
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-1.5 top-1/2 -translate-y-1/2 size-3 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+
+                <button id="mobile-menu-button" class="p-2">
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+          <div class="mobile-menu-content">
+            <button id="mobile-menu-close" class="mobile-menu-close">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <nav class="mobile-nav-links">
+              <a
+                href="./shipper.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="./carrier.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="./about.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+              <a
+                href="./investor.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.investor"
+              >
+                Investor
+              </a>
+            </nav>
+
+            <div class="mobile-cta-buttons">
+              <button
+                class="w-full px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 1. HERO SECTION ========== -->
+      <section class="pt-16 md:pt-24" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[720px] mx-auto px-6">
+          <h1
+            class="mb-6 text-5xl md:text-6xl font-bold leading-tight"
+            style="color: var(--color-text-primary); letter-spacing: -0.025em"
+            data-i18n="capital.hero.title"
+          >
+            Request Investor Pack
+          </h1>
+
+          <div
+            class="w-12 h-[1.5px] mb-6"
+            style="background: var(--color-border-default)"
+          ></div>
+
+          <p
+            class="section-body mb-8"
+            data-i18n="capital.hero.description"
+            style="color: var(--color-text-secondary); line-height: 1.75"
+          >
+            We share executive materials directly with aligned funds and strategic partners building infrastructure-scale logistics efficiency.
+          </p>
+
+          <!-- CTA Row -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-6">
+            <a
+              href="#overview-request"
+              class="px-6 py-3 primary-btn inline-flex items-center justify-center"
+            >
+              <span class="body-semibold">Request Pack</span>
+            </a>
+            <a
+              href="#discussion"
+              class="px-6 py-3 border border-border-default hover:border-primary text-text-primary hover:text-primary transition-all inline-flex items-center justify-center rounded-md"
+              style="background: transparent"
+            >
+              <span class="body-semibold">Schedule Discussion</span>
+            </a>
+          </div>
+
+          <!-- Microcopy -->
+          <p
+            class="text-sm"
+            style="
+              color: var(--color-text-secondary);
+              font-size: 0.875rem;
+              line-height: 1.5em
+            data-i18n="capital.hero.microcopy"
+            "
+          >
+            Selective distribution. No mailing lists. No public downloads.
+          </p>
+        </div>
+      </section>
+
+      <!-- Thin Divider -->
+      <div
+        class="my-16 md:my-24"
+        style="height: 1px; background: var(--color-border-default)"
+      ></div>
+
+      <!-- ========== 2. PACK CONTENTS SECTION ========== -->
+      <section class="py-8" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[720px] mx-auto px-6">
+          <h2
+            data-i18n="capital.packContents.title"
+            class="text-4xl md:text-5xl font-bold mb-12 leading-tight"
+            style="color: var(--color-text-primary); letter-spacing: -0.015em"
+          >
+            Included in the pack
+          </h2>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8"
+            style="color: var(--color-text-secondary)"
+          > data-i18n="capital.packContents.items.0.name">Executive Overview</h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+                data-i18n="capital.packContents.items.0.description
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+              >
+                Market validation, competitive positioning, and capital
+                deployment thesis.
+              </p>
+            </div>
+ data-i18n="capital.packContents.items.1.name">
+                Deployment Roadmap
+              </h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+                data-i18n="capital.packContents.items.1.description
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+              >
+                Corridor expansion sequence, pilot metrics, and growth
+                infrastructure.
+              </p>
+            </div> data-i18n="capital.packContents.items.2.name">
+                Orchestration Architecture
+              </h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+                data-i18n="capital.packContents.items.2.description
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+              >
+                System design, API integration depth, logistics validation
+                protocol.
+              </p>
+            </div> data-i18n="capital.packContents.items.3.name">Pricing Logic</h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+                data-i18n="capital.packContents.items.3.description
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+              >
+                Unit economics, margin structure, and capital efficiency
+                metrics.
+              </p> data-i18n="capital.packContents.items.4.name">
+                Carbon & Scope 3 Measurement
+              </h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+                data-i18n="capital.packContents.items.4.description
+              </h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+              >
+                Methodology, verification process, and ESG reporting
+                framework.
+              </p> data-i18n="capital.packContents.items.5.name">
+                Strategic Integration Brief
+              </h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+                data-i18n="capital.packContents.items.5.description
+              </h3>
+              <p
+                class="text-sm"
+                style="line-height: 1.6em; color: var(--color-text-secondary)"
+              >
+                Partnership opportunities, corridor density, and operator
+                validation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thin Divider -->
+      <div
+        class="my-16 md:my-24"
+        style="height: 1px; background: var(--color-border-default)"
+      ></div>
+
+      <!-- ========== 3. FOCUS CHIPS SECTION ========== -->
+      <section class="py-8" data-animate="fade-up" data-duration="600">
+        <d  data-i18n="capital.focusChips.title"
+          iv class="max-w-[720px] mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-10 leading-tight"
+            style="color: var(--color-text-primary); letter-spacing: -0.015em"
+          >
+            Your focus area
+          </h2>
+
+          <!-- Chips Container -->
+          <div class="flex flex-wrap gap-3">
+            <button
+              class="chip-button"
+              data-focus="applied-ai"
+              style="
+                padding: 12px 20px;
+                border: 1px solid var(--color-border-default);
+                border-radius: 6px;
+                background: transparent;
+                color: var(--color-text-primary);
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 180ms;
+              "
+            >
+              Applied AI & Systems
+            </button>
+            <button
+              class="chip-button"
+              data-focus="logistics"
+              style="
+                padding: 12px 20px;
+                border: 1px solid var(--color-border-default);
+                border-radius: 6px;
+                background: transparent;
+                color: var(--color-text-primary);
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 180ms;
+              "
+            >
+              Logistics & Mobility
+            </button>
+            <button
+              class="chip-button"
+              data-focus="climate"
+              style="
+                padding: 12px 20px;
+                border: 1px solid var(--color-border-default);
+                border-radius: 6px;
+                background: transparent;
+                color: var(--color-text-primary);
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 180ms;
+              "
+            >
+              Climate & ESG
+            </button>
+            <button
+              class="chip-button"
+              data-focus="infrastructure"
+              style="
+                padding: 12px 20px;
+                border: 1px solid var(--color-border-default);
+                border-radius: 6px;
+                background: transparent;
+                color: var(--color-text-primary);
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 180ms;
+              "
+            >
+              Infrastructure / Long-horizon
+            </button>
+            <button
+              class="chip-button"
+              data-focus="operator"
+              style="
+                padding: 12px 20px;
+                border: 1px solid var(--color-border-default);
+                border-radius: 6px;
+                background: transparent;
+                color: var(--color-text-primary);
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 180ms;
+              "
+            >
+              Strategic Operator
+            </button>
+            <button
+              class="chip-button"
+              data-focus="other"
+              style="
+                padding: 12px 20px;
+                border: 1px solid var(--color-border-default);
+                border-radius: 6px;
+                background: transparent;
+                color: var(--color-text-primary);
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 180ms;
+              "
+            >
+              Other
+            </button>
+          </div>
+
+          <!-- Hidden input for form -->
+          <input
+            type="hidden"
+            id="selected-focus"
+            name="selected-focus"
+            value=""
+          />
+        </div>
+      </section>
+
+      <!-- Thin Divider -->
+      <div
+        class="my-16 md:my-24"
+        style="height: 1px; background: var(--color-border-default)"
+      ></div>
+
+      <!-- ========== 4. REQUEST FORM SECTION ========== -->
+      <section id="overview-request" class="py-8" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[720px] mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-6 leading-tight"
+            style="color: var(--color-text-primary); letter-spacing: -0.015em"
+          >
+            Request the Investor Pack
+          </h2>
+
+          <p
+            class="section-body mb-10"
+            style="color: var(--color-text-secondary); line-height: 1.7em"
+            data-i18n="capital.form.description"
+          >
+            We respond directly during the pilot period.
+          </p>
+
+          <!-- Form -->
+          <form id="capital-request-form" class="space-y-6">
+            <!-- Full Name -->
+            <div>
+              <label
+                for="full-name"
+                class="block text-sm font-medium text-text-primary mb-2"
+                data-i18n="capital.form.fields.fullName.label"
+              >
+                Full Name *
+              </label>
+              <input
+                id="full-name"
+                type="text"
+                name="full_name"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 16px;
+                  border: 1px solid var(--color-border-default);
+                  border-radius: 6px;
+                  background: var(--color-bg-secondary);
+                  color: var(--color-text-primary);
+                  font-size: 1rem;
+                  transition: border-color 180ms;
+                "
+                class="focus:outline-none"
+              />
+            </div>
+
+            <!-- Organization/Fund -->
+            <div>
+              <label
+                for="organization"
+                data-i18n="capital.form.fields.organization.label"
+                class="block text-sm font-medium text-text-primary mb-2"
+              >
+                Organization / Fund *
+              </label>
+              <input
+                id="organization"
+                type="text"
+                name="organization"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 16px;
+                  border: 1px solid var(--color-border-default);
+                  border-radius: 6px;
+                  background: var(--color-bg-secondary);
+                  color: var(--color-text-primary);
+                  font-size: 1rem;
+                  transition: border-color 180ms;
+                "
+                class="focus:outline-none"
+              />
+            </div>
+
+            <!-- Role (Optional) -->
+            <div>
+              <label
+                for="role"
+                data-i18n="capital.form.fields.role.label"
+              >
+                Role
+              </label>
+              <input
+                id="role"
+                type="text"
+                name="role"
+                data-i18n-placeholder="capital.form.fields.role.placeholder"
+                name="role"
+                placeholder="e.g. Partner, Investment Director"
+                style="
+                  width: 100%;
+                  padding: 12px 16px;
+                  border: 1px solid var(--color-border-default);
+                  border-radius: 6px;
+                  background: var(--color-bg-secondary);
+                  color: var(--color-text-primary);
+                  font-size: 1rem;
+                  transition: border-color 180ms;
+                "
+                class="focus:outline-none"
+              />
+            </div>
+
+            <!-- Focus Area (Dropdown) -->
+            <div>
+                data-i18n="capital.form.fields.focusArea.label"
+              <label
+                for="focus-dropdown"
+                class="block text-sm font-medium text-text-primary mb-2"
+              >
+                Focus Area *
+              </label>
+              <select
+                id="focus-dropdown"
+                name="focus_area"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 16px;
+                  border: 1px solid var(--color-border-default);
+                  border-radius: 6px;
+                  background: var(--color-bg-secondary);
+                  color: var(--color-text-primary);
+                  font-size: 1rem;
+                  transition: border-color 180ms;
+                "
+                class="focus:outline-none"
+              >
+                <option value="">Select a focus area</option>
+                <option value="applied-ai">Applied AI & Systems</option>
+                <option value="logistics">Logistics & Mobility</option>
+                <option value="climate">Climate & ESG</option>
+                <option value="infrastructure">
+                  Infrastructure / Long-horizon
+                </option>
+                <option value="operator">Strategic Operator</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Email -->
+            <div>
+                data-i18n="capital.form.fields.email.label"
+              <label
+                for="email"
+                class="block text-sm font-medium text-text-primary mb-2"
+              >
+                Email *
+              </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 16px;
+                  border: 1px solid var(--color-border-default);
+                  border-radius: 6px;
+                  background: var(--color-bg-secondary);
+                  color: var(--color-text-primary);
+                  font-size: 1rem;
+                  transition: border-color 180ms;
+                "
+                class="focus:outline-none"
+              />
+            </div>
+
+            <!-- Note (Textarea) -->
+            <div>
+              <label
+                for="note"
+                class="block text-sm font-medium text-text-primary mb-2"
+                data-i18n="capital.form.fields.note.label"
+              >
+                Additional Notes
+              </label>
+              <textarea
+                id="note"
+                name="note"
+                rows="4"
+                data-i18n-placeholder="capital.form.fields.note.placeholder"
+                placeholder="Tell us about your fund or investment thesis..."
+                style="
+                  width: 100%;
+                  padding: 12px 16px;
+                  border: 1px solid var(--color-border-default);
+                  border-radius: 6px;
+                  background: var(--color-bg-secondary);
+                  color: var(--color-text-primary);
+                  font-size: 1rem;
+                  transition: border-color 180ms;
+                  font-family: inherit;
+                "
+                class="focus:outline-none"
+              ></textarea>
+            </div>
+
+            <!-- Primary Button -->
+            <div class="pt-4">
+              <button
+                type="submit"
+                class="w-full px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all"
+                data-i18n="capital.form.submit"
+              >
+                Request Pack
+              </button>
+            </div>
+
+            <!-- Microcopy -->
+            <p
+              class="text-xs text-center"
+              style="
+                color: var(--color-text-secondary);
+              data-i18n="capital.form.microcopy"
+            >
+              Response within 24–48 hours. Materials shared selectively. No
+              automated distribution.<br />
+              <a
+                href="mailto:invest@golynk.com"
+                class="hover:text-primary transition-colors"
+                style="color: var(--color-primary)"
+                data-i18n="capital.form.emailFallback
+                href="mailto:invest@golynk.com"
+                class="hover:text-primary transition-colors"
+                style="color: var(--color-primary)"
+              >
+                Prefer email? Send to invest@golynk.com
+              </a>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Thin Divider -->
+      <div
+        class="my-16 md:my-24"
+        style="height: 1px; background: var(--color-border-default)"
+      ></div>
+
+      <!-- ========== 5. DISCUSSION SECTION ========== -->
+      <section id="discussion" class="py-8" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[720px] mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-6 leading-tight"
+            style="color: var(--color-text-primary); letter-spacing: -0.015em"
+            data-i18n="capital.discussion.title"
+          >
+            Schedule a Strategic Discussion
+          </h2>
+
+          <p
+            class="section-body mb-4"
+            style="color: var(--color-text-secondary); line-height: 1.7em"
+            data-i18n="capital.discussion.description"
+          >
+            For aligned partners: corridor deployment, integration depth, and
+            capital deployment priorities.
+          </p>
+
+          <p
+            class="text-sm mb-8"
+            style="
+              color: var(--color-text-secondary);
+              line-height: 1.6em
+            data-i18n="capital.discussion.note"
+          >
+            Include your focus area and preferred time window in your message.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="mailto:invest@golynk.com?subject=Request%20Meeting&body=I%20would%20like%20to%20request%20a%20meeting%20to%20discuss%20strategic%20partnership%20opportunities."
+              class="px-6 py-3 bg-primary text-white font-semibold transition-all inline-flex items-center justify-center rounded-md hover:opacity-90"
+              data-i18n="capital.discussion.scheduleMeeting"
+            >
+              Request Meeting
+            </a>
+            <a
+              href="mailto:invest@golynk.com?subject=Introduction%20-%20GoLynk%20Strategic%20Partnership"
+              class="px-6 py-3 border text-text-primary hover:text-primary transition-all inline-flex items-center justify-center rounded-md"
+              style="border-color: var(--color-border-default); background: transparent"
+              data-i18n="capital.discussion.sendIntroduction"
+            >
+              Send Introduction
+              <span class="body-semibold">Send Introduction</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thin Divider -->
+      <div
+        class="my-16 md:my-24"
+        style="height: 1px; background: var(--color-border-default)"
+      ></div>
+
+      <!-- ========== 6. FOOTNOTES SECTION ========== -->
+      <section class="py-8 mb-12" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[720px] mx-auto px-6">
+          <p
+            class="text-sm"
+            style="
+              color: var(--color-text-secondary);
+              line-height: 1.7em;
+              margin-bottom: 16px
+            "
+            data-i18n="capital.footnotes.text"
+          >
+            Learn more about GoLynk's strategy and infrastructure:
+          </p>
+          <nav class="flex flex-wrap gap-6">
+            <a
+              href="./investor.html"
+              class="text-sm font-medium hover:text-primary transition-colors"
+              style="color: var(--color-primary)"
+              data-i18n="capital.footnotes.links.investorNarrative"
+            >
+              Investor Narrative
+            </a>
+            <a
+              href="./about.html"
+              class="text-sm font-medium hover:text-primary transition-colors"
+              style="color: var(--color-primary)"
+              data-i18n="capital.footnotes.links.about"
+            >
+              About
+            </a>
+            <a
+              href="./index.html#technology"
+              class="text-sm font-medium hover:text-primary transition-colors"
+              style="color: var(--color-primary)"
+              data-i18n="capital.footnotes.links.glTech"
+            >
+              GL Tech
+            </a>
+            <a
+              href="mailto:invest@golynk.com"
+              class="text-sm font-medium hover:text-primary transition-colors"
+              style="color: var(--color-primary)"
+              data-i18n="capital.footnotes.links.contact"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-8 overflow-hidden">
+      <div class="space-y-12">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+        >
+          <!-- CTA Buttons -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center"
+            data-animate="fade-up"
+            data-duration="800"
+          >
+            <a
+              href="./shipper.html#early-access"
+              class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+            >
+              <svg class="size-6 me-2">
+                <use href="#icon-ship"></use>
+              </svg>
+              <span class="body-semibold text-text-on-dark">Start Shipping</span>
+            </a>
+            <a
+              href="./carrier.html#carrier-access"
+              class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+            >
+              <svg class="size-6 me-2">
+                <use href="#icon-delivery"></use>
+              </svg>
+              <span class="body-semibold text-text-on-dark">Deliver with us</span>
+            </a>
+          </div>
+          <!-- Newsletter Column -->
+          <div class="flex flex-col items-center lg:items-start gap-3">
+            <h3 class="body-semibold text-text-primary">Newsletter</h3>
+            <p
+              class="text-text-secondary text-small"
+              style="text-align: center; lg:text-align: left"
+            >
+              Get the latest on European logistics and the Logistics Graph.
+            </p>
+            <div class="flex gap-2 w-full lg:w-auto">
+              <input
+                type="email"
+                placeholder="Email"
+                class="px-4 py-2 bg-bg-secondary border border-border-default rounded-md text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all flex-1 lg:w-auto"
+              />
+              <button
+                class="px-4 py-2 primary-btn text-text-on-dark whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-6">
+          <!-- Company Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.company.title"
+            >
+              Company
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./index.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Home
+              </a>
+              <a
+                href="./index.html#how-it-works"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                How It Works
+              </a>
+              <a
+                href="./about.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                About
+              </a>
+            </nav>
+          </div>
+
+          <!-- Shippers Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.shippers.title"
+            >
+              For Shippers
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./shipper.html#early-access"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Get Started
+              </a>
+              <a
+                href="./pricing.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Pricing
+              </a>
+            </nav>
+          </div>
+
+          <!-- Carriers Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.carriers.title"
+            >
+              For Carriers
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./carrier.html#individual-form"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Join
+              </a>
+              <a
+                href="./carrier.html#fleet-form"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Fleet Operators
+              </a>
+            </nav>
+          </div>
+
+          <!-- Resources Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.resources.title"
+            >
+              Resources
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./faq.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                FAQ
+              </a>
+              <a
+                href="./investor.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Investor Relations
+              </a>
+            </nav>
+          </div>
+
+          <!-- Legal Column -->
+          <div class="space-y-4">
+            <h3
+              class="body-semibold text-text-primary"
+              data-i18n="common.footer.sections.legal.title"
+            >
+              Legal
+            </h3>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./privacy.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="./terms.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="./cookies.html"
+                class="text-text-secondary text-small hover:text-primary transition-colors"
+              >
+                Cookie Policy
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="border-t border-border-default pt-8 px-6"
+          data-animate="fade-up"
+          data-duration="800"
+          data-delay="400"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <!-- Logo and Tagline -->
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <a href="./">
+                <img src="./public/Logo.svg" alt="GoLynk" class="h-8" />
+              </a>
+              <p class="text-text-secondary text-small">
+                Orchestrating existing journeys into faster, greener logistics.
+              </p>
+            </div>
+
+            <!-- Social Links and Copyright -->
+            <div class="flex items-center gap-6">
+              <a
+                href="#"
+                class="text-text-secondary hover:text-primary transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <svg class="size-5">
+                  <use href="#icon-x"></use>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-text-secondary hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <svg class="size-5">
+                  <use href="#icon-linkedin"></use>
+                </svg>
+              </a>
+              <p class="text-text-secondary text-small">
+                © GoLynk 2026. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-x" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12.8631 18.3333L8.23857 11.7418L2.44925 18.3333H0L7.15193 10.1926L0 0H6.28829L10.6468 6.21252L16.1079 0H18.5572L11.7371 7.76373L19.1514 18.3333H12.8631ZM15.5906 16.475H13.9417L3.50696 1.85833H5.15612L9.33529 7.71097L10.058 8.72655L15.5906 16.475Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="icon-linkedin" viewBox="0 0 20 20">
+        <path
+          d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="icon-ship" viewBox="0 0 22 22">
+        <path
+          d="M13.9297 0C15.2296 0 16.1397 0.000436981 16.9297 0.400391C17.7197 0.800391 18.2698 1.52031 19.0498 2.57031C19.0798 2.61029 19.1204 2.66001 19.1504 2.70996C19.1703 2.73982 19.1998 2.76994 19.2197 2.7998C19.7497 3.5098 20.1196 3.99031 20.3096 4.57031C20.4995 5.15019 20.5 5.75992 20.5 6.63965V11.8096C20.5 13.6496 20.4996 15.1002 20.3496 16.2402C20.1896 17.4101 19.8603 18.3604 19.1104 19.1104C18.3604 19.8603 17.4101 20.1896 16.2402 20.3496C15.1002 20.4996 13.6496 20.5 11.8096 20.5H8.7002C6.8602 20.5 5.40953 20.4996 4.26953 20.3496C3.09996 20.1896 2.15022 19.86 1.40039 19.1104C0.650444 18.3604 0.320169 17.4101 0.160156 16.2402C0.000156254 15.1002 0 13.6396 0 11.8096V6.63965C3.36635e-09 5.75992 0.00050574 5.15019 0.19043 4.57031C0.38043 3.99031 0.750273 3.4998 1.28027 2.7998C1.30024 2.76994 1.32967 2.73982 1.34961 2.70996C1.37958 2.66001 1.4202 2.62025 1.4502 2.57031C2.2402 1.52031 2.78031 0.790391 3.57031 0.400391C4.37029 0.000437528 5.27013 0 6.58008 0H13.9297ZM1.53027 5.5C1.50027 5.77 1.5 6.14 1.5 6.75V11.75C1.5 13.66 1.49965 15.01 1.63965 16.04C1.76965 17.05 2.0302 17.6298 2.4502 18.0498C2.8702 18.4698 3.44996 18.7204 4.45996 18.8604C5.48996 19.0004 6.84001 19 8.75 19H11.75C13.66 19 15.01 19.0004 16.04 18.8604C17.05 18.7304 17.6298 18.4698 18.0498 18.0498C18.4698 17.6298 18.7204 17.05 18.8604 16.04C19.0004 15.01 19 13.66 19 11.75V6.75C19 6.14 18.9897 5.77 18.9697 5.5H13.4902V6.7998C13.4902 7.2298 13.4902 7.6302 13.4502 7.9502C13.4002 8.3101 13.2903 8.68031 12.9805 8.99023C12.6706 9.30011 12.3003 9.40993 11.9404 9.45996C11.6204 9.49996 11.22 9.5 10.79 9.5H9.7002C9.2702 9.5 8.8698 9.49996 8.5498 9.45996C8.18987 9.40995 7.81971 9.30018 7.50977 8.99023C7.19982 8.68029 7.09005 8.31013 7.04004 7.9502C7.00004 7.6302 7 7.2298 7 6.7998V5.5H1.53027ZM8.7998 12C9.2298 12 9.6302 12 9.9502 12.04C10.3101 12.0901 10.6803 12.1998 10.9902 12.5098C11.3002 12.8197 11.4099 13.1899 11.46 13.5498C11.5 13.8698 11.5 14.2702 11.5 14.7002V14.79C11.5 15.22 11.5 15.6204 11.46 15.9404C11.4099 16.3003 11.3001 16.6706 10.9902 16.9805C10.6803 17.2903 10.3101 17.4002 9.9502 17.4502C9.6302 17.4902 9.2298 17.4902 8.7998 17.4902H5.70996C5.27998 17.4902 4.87956 17.4902 4.55957 17.4502C4.19969 17.4002 3.82942 17.2904 3.51953 16.9805C3.20964 16.6706 3.09983 16.3003 3.0498 15.9404C3.00981 15.6204 3.00977 15.22 3.00977 14.79V14.7002C3.00977 14.2702 3.0098 13.8698 3.0498 13.5498C3.09981 13.1899 3.20967 12.8197 3.51953 12.5098C3.82941 12.1999 4.1997 12.0901 4.55957 12.04C4.87956 12 5.27998 12 5.70996 12H8.7998ZM5.75977 13.5C5.2699 13.5 4.96973 13.5003 4.75977 13.5303C4.65996 13.5403 4.61982 13.5603 4.58984 13.5703H4.58008V13.5801C4.58003 13.6001 4.56001 13.6501 4.54004 13.75C4.51004 13.96 4.50977 14.25 4.50977 14.75C4.50977 15.25 4.51004 15.54 4.54004 15.75C4.55003 15.8499 4.57007 15.8999 4.58008 15.9199C4.58008 15.9199 4.58008 15.92 4.58008 15.9297H4.58984C4.60983 15.9297 4.65995 15.9497 4.75977 15.9697C4.96973 15.9997 5.25991 16 5.75977 16H8.75977C9.24962 16 9.54978 15.9997 9.75977 15.9697C9.85956 15.9597 9.89971 15.9397 9.92969 15.9297H9.94043V15.9199C9.94048 15.8999 9.96049 15.8499 9.98047 15.75C10.0105 15.54 10.0098 15.2399 10.0098 14.75C10.0098 14.2601 10.0105 13.96 9.98047 13.75C9.97051 13.6504 9.95047 13.6002 9.94043 13.5801C9.94043 13.5801 9.94043 13.58 9.94043 13.5703C9.94043 13.5703 9.93969 13.5703 9.92969 13.5703C9.90948 13.5701 9.85925 13.5502 9.75977 13.5303C9.54978 13.5003 9.25961 13.5 8.75977 13.5H5.75977ZM8.5 5.5V6.75C8.5 7.24 8.50027 7.54 8.53027 7.75C8.55024 7.84984 8.57026 7.89987 8.57031 7.91992V7.92969H8.58008C8.61007 7.93969 8.65002 7.95973 8.75 7.96973C8.96 7.99973 9.26 8 9.75 8H10.75C11.25 8 11.54 7.99973 11.75 7.96973C11.8498 7.94976 11.8999 7.92974 11.9199 7.92969H11.9297V7.91992C11.9397 7.88992 11.9597 7.84998 11.9697 7.75C11.9997 7.54 12 7.24 12 6.75V5.5H8.5ZM6.74023 1.5C5.19056 1.5 4.67041 1.52037 4.23047 1.74023C3.7905 1.96022 3.45989 2.35982 2.54004 3.59961C2.43007 3.74956 2.33021 3.88003 2.24023 4H7.16016L7.78027 1.5H6.74023ZM13.3301 4H18.25C18.16 3.88 18.0602 3.74961 17.9502 3.59961C17.0203 2.35973 16.6897 1.96023 16.2598 1.74023C15.8198 1.52028 15.2999 1.5 13.75 1.5H12.71L13.3301 4ZM8.71973 4H11.79L11.1699 1.5H9.33984L8.71973 4Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="icon-delivery" viewBox="0 0 36 30">
+        <path
+          d="M17.999 0C19.1071 -6.21875e-05 20.0626 -0.000255403 20.8271 0.102539C21.6462 0.212713 22.4315 0.460936 23.0684 1.09766C23.7054 1.73471 23.9543 2.52048 24.0645 3.33984C24.0987 3.59455 24.1215 3.87046 24.1367 4.16602L26.8066 4.16602C27.4519 4.16598 28.0226 4.1664 28.501 4.21289C29.0195 4.2633 29.524 4.37498 30.0156 4.65332C30.5073 4.9317 30.8628 5.30684 31.1729 5.72559C31.4588 6.11177 31.7521 6.60109 32.084 7.1543L34.9434 11.9189C34.9634 11.9523 34.9832 11.9857 35.0029 12.0186C35.2986 12.5102 35.56 12.9458 35.6973 13.4414C35.8345 13.937 35.8346 14.4448 35.834 15.0186V19.6367C35.834 20.3695 35.8341 21.0017 35.7871 21.5205C35.7374 22.0691 35.6267 22.613 35.3311 23.125C35.002 23.6948 34.5288 24.168 33.959 24.4971C33.447 24.7927 32.9031 24.9034 32.3545 24.9531C32.103 24.9759 31.8248 24.9871 31.5215 24.9932C30.9594 27.3851 28.8135 29.166 26.25 29.166C23.689 29.1659 21.544 27.3886 20.9795 25H14.8545C14.29 27.3886 12.145 29.1659 9.58398 29.166C7.02043 29.166 4.87355 27.3852 4.31152 24.9932C4.00856 24.9871 3.73072 24.9759 3.47949 24.9531C2.93085 24.9034 2.38702 24.7927 1.875 24.4971C1.30519 24.168 0.831987 23.6948 0.50293 23.125C0.207314 22.613 0.0965998 22.0691 0.046875 21.5205C-0.000120971 21.0017 -2.76116e-05 20.3696 0 19.6367L0 6.16699C-6.21765e-05 5.05905 -0.000243047 4.10433 0.102539 3.33984C0.212706 2.52046 0.461564 1.73472 1.09863 1.09766C1.73568 0.460699 2.52149 0.212695 3.34082 0.102539C4.10534 -0.00022641 5.05999 -6.21803e-05 6.16797 0L17.999 0ZM9.58398 20.833C7.97315 20.833 6.66699 22.1392 6.66699 23.75C6.66717 25.3607 7.97326 26.666 9.58398 26.666C11.1946 26.6658 12.4998 25.3606 12.5 23.75C12.5 22.1393 11.1947 20.8332 9.58398 20.833ZM26.25 20.833C24.6393 20.8332 23.334 22.1393 23.334 23.75C23.3342 25.3606 24.6394 26.6658 26.25 26.666C27.8607 26.666 29.1668 25.3607 29.167 23.75C29.167 22.1392 27.8608 20.833 26.25 20.833ZM6.25 2.5C5.03642 2.5 4.2519 2.50237 3.67383 2.58008C3.13165 2.65297 2.96137 2.77106 2.86621 2.86621C2.77113 2.96141 2.65387 3.13149 2.58105 3.67285C2.50333 4.25098 2.5 5.03615 2.5 6.25L2.5 19.583C2.5 20.3847 2.50156 20.9025 2.53711 21.2949C2.57112 21.6702 2.62865 21.8069 2.66797 21.875C2.77761 22.0648 2.93523 22.2224 3.125 22.332C3.19311 22.3714 3.32984 22.4289 3.70508 22.4629C3.87922 22.4787 4.07805 22.487 4.31543 22.4922C4.88258 20.1072 7.02548 18.333 9.58398 18.333C12.1452 18.3332 14.2903 20.1111 14.8545 22.5H20.9795C21.1264 21.8781 21.38 21.2978 21.7207 20.7793C21.6859 20.6644 21.667 20.5423 21.667 20.416L21.667 6.25C21.667 5.03615 21.6646 4.25098 21.5869 3.67285C21.5141 3.1311 21.3959 2.96139 21.3008 2.86621C21.2056 2.77106 21.0353 2.65297 20.4932 2.58008C19.9151 2.50241 19.1305 2.5 17.917 2.5L6.25 2.5ZM24.167 18.748C24.8082 18.4806 25.5119 18.3331 26.25 18.333C28.8084 18.333 30.9503 20.1074 31.5176 22.4922C31.7554 22.487 31.9545 22.4787 32.1289 22.4629C32.5041 22.4289 32.6409 22.3714 32.709 22.332C32.8988 22.2224 33.0564 22.0648 33.166 21.875C33.2053 21.8069 33.2629 21.6702 33.2969 21.2949C33.3324 20.9025 33.334 20.3847 33.334 19.583V15.1348C33.334 14.3802 33.323 14.2346 33.2881 14.1084C33.2531 13.9823 33.1869 13.8519 32.7988 13.2051L29.9687 8.4873C29.6007 7.87396 29.3691 7.48987 29.1641 7.21289C28.9751 6.95767 28.8656 6.87424 28.7842 6.82813C28.7027 6.78203 28.5747 6.73188 28.2588 6.70117C27.9158 6.66785 27.468 6.66602 26.7529 6.66602L24.167 6.66602L24.167 18.748ZM12.4805 5.47461C12.9084 4.93312 13.6947 4.84073 14.2363 5.26855L16.7139 7.22559C16.7346 7.24199 16.7547 7.25909 16.7754 7.27539C17.381 7.75366 17.9324 8.18823 18.3213 8.59082C18.7332 9.01729 19.1669 9.60903 19.167 10.416C19.167 11.2232 18.7333 11.8157 18.3213 12.2422C17.9324 12.6447 17.381 13.0794 16.7754 13.5576C16.7548 13.5739 16.7346 13.591 16.7139 13.6074L14.2363 15.5645C13.6946 15.9923 12.9084 15.8992 12.4805 15.3574C12.0528 14.8157 12.145 14.0304 12.6865 13.6025L15.1367 11.666L6.25 11.666C5.55979 11.6658 5 11.1063 5 10.416C5.0002 9.72594 5.55992 9.16619 6.25 9.16602L15.1367 9.16602L12.6865 7.23047C12.1448 6.80256 12.0526 6.01635 12.4805 5.47461Z"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
+
+    <script type="module" src="./src/js/main.ts"></script>
+    <script>
+      // Chip selection functionality
+      document.querySelectorAll('.chip-buttcolor-border-default)';
+            btn.style.backgroundColor = 'transparent';
+            btn.style.color = 'var(--color-text-primary)';
+          });
+
+          // Add active state to clicked chip
+          this.style.borderColor = 'var(--color-primary)';
+          this.style.backgroundColor = 'var(--color-primary
+
+          // Add active state to clicked chip
+          this.style.borderColor = 'var(--accent)';
+          this.style.backgroundColor = 'var(--accent)';
+          this.style.color = '#ffffff';
+
+          // Update hidden input
+          document.getElementById('selected-focus').value = this.dataset.focus;
+
+          // Update dropdown
+          document.getElementById('focus-dropdown').value = this.dataset.focus;
+        });
+      });
+
+      // Form submission handler
+      document.getElementById('capital-request-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = this;
+        const fullName = document.getElementById('full-name').value;
+        const organization = document.getElementById('organization').value;
+        const role = document.getElementById('role').value;
+        const focusArea = document.getElementById('focus-dropdown').value;
+        const email = document.getElementById('email').value;
+        const note = document.getElementById('note').value;
+
+        // Build mailto body
+        const body = `Full Name: ${fullName}
+Organization/Fund: ${organization}
+Role: ${role || 'Not provided'}
+Focus Area: ${focusArea}
+Email: ${email}
+Additional Notes: ${note || 'None'}`;
+
+        const mailtoLink = `mailto:invest@golynk.com?subject=Investor%20Pack%20Request%20-%20${encodeURIComponent(fullName)}&body=${encodeURIComponent(body)}`;
+
+        // Open mail client
+        window.location.href = mailtoLink;
+
+        // Show success message (optional)
+        alert('Opening your email client. If it doesn\'t open, please send the form details to invest@golynk.com');
+      });
+
+      // Update dropdown when chip is selected
+      document.getElementById('focus-dropdown').addEventListener('change', function() {
+        if (this.value) {
+          const chip = document.querySelector(`[data-focus="${this.value}"]`);
+          if (chip) {
+            chip.click();
+          }
+        }
+      });
+    </script>
+
+    <!-- Main Script -->
+    <script type="module" src="./src/js/main.ts"></script>
+  </body>
+</html>

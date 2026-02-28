@@ -1,0 +1,51 @@
+{
+  "businesses": {
+    "cta": "Book a Demo",
+    "description": "GoLynk lets 3PLs, regional carriers, courier companies, and mobility operators monetise spare capacity on existing routes. You keep control of your network and contracts; we add demand that fits your plans, so GoLynk becomes incremental revenue, not a replacement. You keep your clients, rates, and dispatch. GoLynk adds incremental demand that matches your constraints.",
+    "heading": "For Fleets & Operators",
+    "howToEarn": {
+      "options": {
+        "courierCoop": "Courier Cooperative (5–30 riders) – Move more volume without overworking your riders.",
+        "courierServices": "Courier Services (10–50 vehicles) – Your fleet already moves. Now it earns more without extra cost.",
+        "lastMile": "Hyperlocal Last-Mile Providers – Your local footprint becomes a high-value microhub.",
+        "thirdPartyLogistics": "3PL / Logistics Operators – Turn distributed fleet capacity into a real-time revenue engine.",
+        "vanOperators": "Van Operators / Small Fleets – Between-service gaps become revenue automatically."
+      },
+      "title": "How You Can Earn"
+    },
+    "subheading": "For Fleets & Operators"
+  },
+  "hero": {
+    "cta": {
+      "bookDemo": "Book Fleet Demo",
+      "startEarning": "Start Earning as a Carrier"
+    },
+    "description": "Activate spare capacity on routes already in motion — with zero-deviation matching and clear payouts.",
+    "heading": "GoLynk for Carriers: Earn More on Routes You Already Take"
+  },
+  "individuals": {
+    "cta": "Download the App",
+    "description": "GoLynk gives you delivery opportunities that fit the routes you already take—walking to campus, cycling across the city, driving to work, or riding public transport. You decide when to accept and what to carry, and you deliver for verified shippers with in-app support if anything goes wrong.",
+    "heading": "For People Who Move",
+    "subheading": "For On-Route Couriers"
+  },
+  "smartDelivery": {
+    "description": "It's simple: we only show you jobs that fit the routes you already walk, ride, or drive.",
+    "heading": "How GoLynk Works for Carriers",
+    "steps": {
+      "step1": {
+        "description": "Only jobs that fit your route, timing, and vehicle.",
+        "title": "Matched to your route"
+      },
+      "step2": {
+        "description": "Accept, pause, or skip anytime.",
+        "title": "You stay in control"
+      },
+      "step3": {
+        "description": "Mark completion in-app. Automatic payout with clear breakdown.",
+        "title": "Deliver + settle fast"
+      }
+    },
+    "subheading": "Smart Delivery"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "backToHome": "← Zurück zur Startseite"
+  },
+  "hero": {
+    "heading": "Korridor-Aktivierungsvorschlag",
+    "description": "Wir aktivieren Korridore, in denen sich Routen wiederholen. Reichen Sie einen Korridorvorschlag zur Bewertung ein.",
+    "step1": "Wir prüfen das Dichtepotenzial",
+    "step2": "Wir bestätigen die Übergabe-Machbarkeit",
+    "step3": "Wir vereinbaren ein 20-minütiges Korridorgespräch"
+  },
+  "criteria": {
+    "heading": "Bewertungskriterien",
+    "item1": "Wiederholbare Nachfrage (wöchentliches Volumen)",
+    "item2": "Geografisches Dichtepotenzial",
+    "item3": "Zeitfenster-Machbarkeit",
+    "item4": "Übergabepunkte / Microhub-Eignung",
+    "item5": "Flotten- / Transporteurverfügbarkeit",
+    "item6": "Datenbereitschaft (grundlegende Sendungsmetadaten)",
+    "note": "Nicht jeder Korridor wird sofort aktiviert — wir priorisieren sich verstärkende Dichte."
+  },
+  "map": {
+    "heading": "Netzwerk-Expansion von Aachen",
+    "description": "Beobachten Sie unser Logistiknetzwerk: Aachen → NRW → Deutschland → Benelux",
+    "live": "Live-Netzwerk",
+    "hint": "Scrollen zum Zoomen • Ziehen zum Schwenken • Städte anklicken für Details",
+    "legend": {
+      "title": "Netzwerkebenen",
+      "hub": "Haupt-Hub",
+      "major": "Hauptkorridor",
+      "regional": "Regionale Route",
+      "micro": "Lokales Netzwerk",
+      "package": "Paketfluss"
+    }
+  },
+  "form": {
+    "heading": "Ihren Korridor einreichen",
+    "subheading": "Dauert ca. 2 Minuten.",
+    "section": {
+      "corridorDefinition": "Korridor-Definition",
+      "yourRole": "Ihre Rolle",
+      "operations": "Betriebliche Einschränkungen",
+      "contact": "Kontakt",
+      "notes": "Anmerkungen"
+    },
+    "labels": {
+      "originCity": "Ursprungsstadt",
+      "destinationCity": "Zielstadt",
+      "corridorType": "Korridortyp",
+      "serviceRadius": "Serviceradius / Entfernungsbereich",
+      "weeklyVolume": "Erwartetes wöchentliches Volumen",
+      "shipmentTypes": "Sendungsarten",
+      "pickupWindows": "Typische Abholzeitfenster",
+      "deliveryWindows": "Typische Lieferzeitfenster",
+      "zeroDetour": "Null-Umweg-Anforderung",
+      "zeroDetourHint": "Bevorzugt routenbasiertes Matching mit minimaler Abweichung",
+      "companyName": "Unternehmen / Organisation",
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "website": "Webseite",
+      "notes": "Sollten wir noch etwas wissen?",
+      "optional": "(optional)"
+    },
+    "options": {
+      "urbanZone": "Stadtzone",
+      "cityToCity": "Stadt-zu-Stadt"
+    },
+    "submit": "Zur Bewertung einreichen",
+    "emailAlternative": "Lieber per E-Mail?",
+    "disclaimer": "Wir antworten nach Prüfung."
+  },
+  "trust": {
+    "heading": "Was Sie bei Annahme erhalten",
+    "item1": "Prioritäre Korridor-Aktivierungsplanung",
+    "item2": "Verifizierungs- & Übergabe-Workflow",
+    "item3": "Gemeinsame Kapazitäts-Einführung (Flotten + Einzelpersonen)"
+  },
+  "success": {
+    "heading": "Vorschlag eingereicht",
+    "message": "Danke — wir werden Ihren Korridorvorschlag prüfen und innerhalb von 2 Werktagen antworten.",
+    "backHome": "Zurück zur Startseite"
+  },
+  "footer": {
+    "tagline": "Intelligentere Logistik für alle",
+    "copyright": "© GoLynk 2026. Alle Rechte vorbehalten.",
+    "forShippers": {
+      "title": "Für Versender",
+      "solutions": "Lösungen",
+      "benefits": "Vorteile",
+      "getStarted": "Loslegen"
+    },
+    "forCarriers": {
+      "title": "Für Transporteure",
+      "solutions": "Lösungen",
+      "benefits": "Vorteile",
+      "joinNetwork": "Netzwerk beitreten"
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "aboutUs": "Über uns",
+      "faq": "FAQ",
+      "technology": "Technologie"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen",
+      "imprint": "Impressum"
+    }
+  }
+}

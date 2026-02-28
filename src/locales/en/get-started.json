@@ -1,0 +1,175 @@
+{
+  "hero": {
+    "heading": "Start with GoLynk",
+    "description": "Choose your role — we'll route you to the right onboarding flow."
+  },
+  "nav": {
+    "backToHome": "← Back to Home"
+  },
+  "roles": {
+    "shipper": {
+      "title": "I'm a Shipper",
+      "description": "Ship on existing routes with predictable handoffs.",
+      "cta": "Check corridor availability →"
+    },
+    "carrier": {
+      "title": "I'm a Carrier",
+      "description": "Earn on routes you already take — zero deviation matching.",
+      "cta": "Share routes & availability →"
+    },
+    "fleet": {
+      "title": "I Run a Fleet",
+      "description": "Monetize spare capacity without disrupting your routing.",
+      "cta": "Request integration call →"
+    },
+    "microhub": {
+      "title": "I Have Storage Space",
+      "description": "Turn idle space into verified microhub handoff income.",
+      "cta": "Register a microhub location →"
+    },
+    "institutional": {
+      "title": "Urban Planners & Institutional Networks",
+      "description": "Improve logistics flow without increasing vehicles while maintaining compliance.",
+      "cta": "Partner with GoLynk →"
+    }
+  },
+  "form": {
+    "labels": {
+      "fullName": "Full Name",
+      "companyName": "Company Name",
+      "city": "City",
+      "volumePerMonth": "Volume / Month",
+      "email": "Email",
+      "phone": "Phone",
+      "vehicleType": "Vehicle Type",
+      "typicalRoute": "Typical Route",
+      "fleetSize": "Fleet Size",
+      "lanesRegions": "Lanes / Regions",
+      "currentTools": "Current Tools",
+      "location": "Location",
+      "spaceType": "Space Type",
+      "sizeSqm": "Size (sqm)",
+      "accessHours": "Access Hours",
+      "organization": "Organization",
+      "roleTitle": "Role / Title",
+      "cityRegion": "City / Region",
+      "interestArea": "Interest Area",
+      "notes": "Notes",
+      "required": "*",
+      "optional": "(optional)"
+    },
+    "placeholders": {
+      "fullName": "Your full name",
+      "companyName": "Your company name",
+      "city": "e.g. Munich, Berlin",
+      "email": "you@company.com",
+      "emailPersonal": "you@email.com",
+      "phone": "+49 123 456 7890",
+      "typicalRoute": "Cairo → Giza daily 8–10am",
+      "lanesRegions": "Berlin–Hamburg, Munich region",
+      "currentTools": "TMS / routing tool you use",
+      "location": "Address or area"
+    },
+    "selects": {
+      "selectVolume": "Select volume",
+      "selectVehicleType": "Select vehicle type",
+      "selectFleetSize": "Select fleet size",
+      "selectSpaceType": "Select space type",
+      "selectSize": "Select size",
+      "selectAccessHours": "Select access hours"
+    },
+    "volumeOptions": {
+      "1-20": "1–20",
+      "20-100": "20–100",
+      "100-500": "100–500",
+      "500+": "500+"
+    },
+    "vehicleOptions": {
+      "walker": "Walker",
+      "bike": "Bike",
+      "car": "Car",
+      "van": "Van",
+      "truck": "Truck",
+      "other": "Other"
+    },
+    "fleetSizeOptions": {
+      "1-10": "1–10 vehicles",
+      "11-50": "11–50 vehicles",
+      "51-200": "51–200 vehicles",
+      "200+": "200+ vehicles"
+    },
+    "spaceTypeOptions": {
+      "retailBackroom": "Retail backroom",
+      "warehouse": "Warehouse",
+      "garage": "Garage",
+      "office": "Office",
+      "other": "Other"
+    },
+    "sizeOptions": {
+      "<20": "<20 sqm",
+      "20-50": "20–50 sqm",
+      "50-150": "50–150 sqm",
+      "150+": "150+ sqm"
+    },
+    "accessHoursOptions": {
+      "businessHours": "Business hours",
+      "24-7": "24/7",
+      "evenings": "Evenings",
+      "weekends": "Weekends"
+    },
+    "submit": "Submit",
+    "submitShipper": "Request Corridor Match",
+    "submitCarrier": "Share My Route",
+    "submitFleet": "Request Integration Review",
+    "submitMicrohub": "Register Microhub Location",
+    "submitInstitutional": "Request Partnership Call",
+    "privacyNote": "Your data stays private — we never share your information."
+  },
+  "trust": {
+    "noCommitment": "No commitment",
+    "response24h": "Response within 24 hours",
+    "priorityAccess": "Priority access for early partners",
+    "chainOfCustody": "Chain-of-custody",
+    "slaBacked": "SLA-backed operations",
+    "complianceReady": "Compliance-ready reporting"
+  },
+  "messages": {
+    "success": "Thanks — we'll review and respond shortly.",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "tagline": "Smarter Logistics for Everyone",
+    "copyright": "© GoLynk 2026. All rights reserved.",
+    "forShippers": {
+      "title": "For Shippers",
+      "solutions": "Solutions",
+      "benefits": "Benefits",
+      "getStarted": "Get Started"
+    },
+    "forCarriers": {
+      "title": "For Carriers",
+      "solutions": "Solutions",
+      "benefits": "Benefits",
+      "joinNetwork": "Join Network"
+    },
+    "resources": {
+      "title": "Resources",
+      "aboutUs": "About Us",
+      "faq": "FAQ",
+      "technology": "Technology"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "imprint": "Imprint"
+    }
+  },
+  "partnership": {
+    "text": "Interested in strategic or capital partnership?",
+    "link": "partners@golynk.com →"
+  },
+  "fleet": {
+    "scheduleCallLink": "Schedule Integration Call →"
+  }
+}
