@@ -1,0 +1,1686 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/golynk-website/assets/Logo-Cabx5owX.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="careers.meta.title">Careers — GoLynk</title>
+    <meta
+      name="description"
+      content="Join GoLynk — build the coordination layer for European logistics. Engineering, AI, operations, and research roles."
+      data-i18n-content="careers.meta.description"
+    />
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8fafc;
+        --bg-tertiary: #f6f7fb;
+        --border-color: #e6eaf2;
+        --text-primary: #0b1220;
+        --text-secondary: #334155;
+        --accent: #3b82f6;
+      }
+
+      body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+      }
+
+      /* Hero */
+      .careers-hero {
+        padding: 140px 24px 80px;
+      }
+
+      .careers-hero h1 {
+        font-size: 48px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 768px) {
+        .careers-hero h1 {
+          font-size: 34px;
+          line-height: 40px;
+        }
+      }
+
+      /* Section headings */
+      .section-title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 650;
+        letter-spacing: -0.015em;
+        color: var(--text-primary);
+      }
+
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 26px;
+          line-height: 34px;
+        }
+      }
+
+      .section-body {
+        font-size: 17px;
+        line-height: 28px;
+        color: var(--text-secondary);
+      }
+
+      /* Buttons */
+      .btn-careers-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        background: var(--accent);
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .btn-careers-primary:hover {
+        background: #2563eb;
+      }
+
+      .btn-careers-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 180ms ease-out;
+        text-decoration: none;
+      }
+
+      .btn-careers-secondary:hover {
+        border-color: var(--accent);
+        background: rgba(59, 130, 246, 0.04);
+      }
+
+      /* Track rows */
+      .track-row {
+        display: grid;
+        grid-template-columns: 200px 1fr auto;
+        align-items: baseline;
+        gap: 24px;
+        padding: 28px 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .track-row:first-child {
+        border-top: 1px solid var(--border-color);
+      }
+
+      @media (max-width: 768px) {
+        .track-row {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          padding: 20px 0;
+        }
+      }
+
+      .track-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .track-desc {
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--text-secondary);
+      }
+
+      .track-examples {
+        font-size: 13px;
+        line-height: 20px;
+        color: #94a3b8;
+        margin-top: 4px;
+      }
+
+      .track-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--accent);
+        text-decoration: none;
+        white-space: nowrap;
+        transition: all 180ms ease-out;
+      }
+
+      .track-link:hover {
+        opacity: 0.8;
+      }
+
+      .track-link .arrow {
+        display: inline-block;
+        transition: transform 180ms ease-out;
+      }
+
+      .track-link:hover .arrow {
+        transform: translateX(4px);
+      }
+
+      /* Role rows */
+      .role-row {
+        display: grid;
+        grid-template-columns: 1fr auto auto auto auto;
+        align-items: center;
+        gap: 24px;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border-color);
+        text-decoration: none;
+        transition: background 120ms ease-out;
+      }
+
+      .role-row:first-child {
+        border-top: 1px solid var(--border-color);
+      }
+
+      .role-row:hover {
+        background: var(--bg-secondary);
+      }
+
+      @media (max-width: 768px) {
+        .role-row {
+          grid-template-columns: 1fr auto;
+          gap: 8px;
+          padding: 16px 0;
+        }
+
+        .role-row .role-meta {
+          display: none;
+        }
+      }
+
+      .role-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .role-meta {
+        font-size: 13px;
+        color: #94a3b8;
+        white-space: nowrap;
+      }
+
+      .role-arrow {
+        color: var(--accent);
+        font-size: 14px;
+        transition: transform 180ms ease-out;
+      }
+
+      .role-row:hover .role-arrow {
+        transform: translateX(4px);
+      }
+
+      /* Underline hover link */
+      .link-underline {
+        position: relative;
+        text-decoration: none;
+      }
+
+      .link-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1.5px;
+        background: var(--accent);
+        transition: width 250ms ease;
+      }
+
+      .link-underline:hover::after {
+        width: 100%;
+      }
+
+      /* Pillar grid */
+      .pillar-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+      }
+
+      @media (max-width: 768px) {
+        .pillar-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+      }
+
+      .pillar h3 {
+        font-size: 17px;
+        font-weight: 650;
+        color: var(--text-primary);
+        margin-bottom: 8px;
+      }
+
+      .pillar p {
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--text-secondary);
+      }
+
+      /* Principles grid */
+      .principles-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 32px;
+      }
+
+      @media (max-width: 1024px) {
+        .principles-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 640px) {
+        .principles-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 24px;
+        }
+      }
+
+      .principle {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text-primary);
+        padding-top: 16px;
+        border-top: 1.5px solid var(--border-color);
+      }
+
+      /* Problems list */
+      .problems-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 48px;
+      }
+
+      @media (max-width: 640px) {
+        .problems-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .problem-item {
+        font-size: 15px;
+        line-height: 26px;
+        color: var(--text-secondary);
+        padding-left: 16px;
+        position: relative;
+      }
+
+      .problem-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #cbd5e1;
+      }
+
+      /* Hero diagram */
+      .hero-diagram {
+        position: relative;
+        width: 100%;
+        max-width: 480px;
+        height: 200px;
+      }
+
+      .corridor-line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #e2e8f0;
+      }
+
+      .coordination-line {
+        position: absolute;
+        left: 8%;
+        right: 12%;
+        height: 1.5px;
+        background: var(--accent);
+        opacity: 0.55;
+      }
+
+      .handoff-dot {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--accent);
+        opacity: 0.6;
+      }
+
+      .diagram-label {
+        position: absolute;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: #94a3b8;
+      }
+
+      /* Related links */
+      .related-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+
+      .related-links a {
+        font-size: 14px;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 180ms ease-out;
+      }
+
+      .related-links a:hover {
+        color: var(--accent);
+      }
+
+      /* Fade-in on scroll (optional, minimal) */
+      [data-animate] {
+        opacity: 0;
+        transform: translateY(12px);
+        transition:
+          opacity 600ms ease-out,
+          transform 600ms ease-out;
+      }
+
+      [data-animate].is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    <script type="module" crossorigin src="/golynk-website/assets/main-BNmtawfm.js"></script>
+    <link rel="stylesheet" crossorigin href="/golynk-website/assets/main-Dqf_vGYg.css">
+  </head>
+  <body>
+    <main
+      id="app"
+      class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden"
+    >
+      <!-- ========== NAVIGATION ========== -->
+      <div class="relative">
+        <nav
+          class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+          style="
+            background: rgba(11, 13, 16, 0.25);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <a href="./">
+                <img src="./Logo.svg" alt="Logo" />
+              </a>
+
+              <!-- Desktop Navigation -->
+              <div
+                class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+              >
+                <a
+                  href="./shipper.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.shippers"
+                >
+                  Shippers
+                </a>
+                <a
+                  href="./carrier.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.carriers"
+                >
+                  Carriers
+                </a>
+                <a
+                  href="#partners"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.partners"
+                >
+                  Partners
+                </a>
+                <a
+                  href="#technology"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.glTech"
+                >
+                  GL Tech
+                </a>
+                <a
+                  href="#environment"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.environment"
+                >
+                  Environment
+                </a>
+                <a
+                  href="./about.html"
+                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                  data-i18n="common.navigation.about"
+                >
+                  About
+                </a>
+              </div>
+
+              <!-- CTA + Language Selector (Desktop) -->
+              <div class="hidden lg:flex flex-row items-center gap-2">
+                <button
+                  class="px-5 py-2.5 primary-btn"
+                  data-i18n="common.cta.startNow"
+                >
+                  Start Now
+                </button>
+
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      English
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      Deutsch
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-2 top-1/2 -translate-y-1/2 size-4 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Mobile: Language Selector + Menu Button -->
+              <div class="lg:hidden flex items-center gap-3">
+                <div class="relative inline-block">
+                  <select
+                    class="language-selector pl-8 pr-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all appearance-none"
+                  >
+                    <option
+                      value="en"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      EN
+                    </option>
+                    <option
+                      value="de"
+                      class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                    >
+                      DE
+                    </option>
+                  </select>
+                  <svg
+                    class="absolute left-1.5 top-1/2 -translate-y-1/2 size-3 text-white pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    ></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+
+                <button id="mobile-menu-button" class="p-2">
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+          <div class="mobile-menu-content">
+            <button id="mobile-menu-close" class="mobile-menu-close">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <nav class="mobile-nav-links">
+              <a
+                href="./shipper.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="./carrier.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="#partners"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.partners"
+              >
+                Partners
+              </a>
+              <a
+                href="#technology"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="#environment"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="./about.html"
+                class="mobile-nav-link"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </nav>
+
+            <div class="mobile-cta-buttons">
+              <button
+                class="w-full px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 1. HERO ========== -->
+      <section class="careers-hero" data-animate="fade-up" data-duration="600">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <!-- Left: Text -->
+            <div class="max-w-[560px]">
+              <h1 class="mb-6" data-i18n="careers.hero.heading">
+                Build the Coordination Layer for European Logistics
+              </h1>
+
+              <div
+                class="w-12 h-[1.5px] mb-6"
+                style="background: var(--border-color)"
+              ></div>
+
+              <p class="section-body mb-6" data-i18n="careers.hero.description">
+                GoLynk turns routes already in motion into structured logistics
+                capacity — corridor by corridor — under real constraints:
+                timing, SLAs, verification, and carbon intensity.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                <a
+                  href="./careers/jobs.html"
+                  class="btn-careers-primary"
+                  data-i18n="careers.hero.ctaPrimary"
+                >
+                  View open roles
+                </a>
+                <a
+                  href="./careers/jobs.html#general-application"
+                  class="btn-careers-secondary"
+                  data-i18n="careers.hero.ctaSecondary"
+                >
+                  General application
+                </a>
+              </div>
+
+              <p
+                class="text-sm"
+                style="color: #94a3b8"
+                data-i18n="careers.hero.status"
+              >
+                Germany-first. Europe next. Pilot deployment underway.
+              </p>
+            </div>
+
+            <!-- Right: Hero Diagram -->
+            <!--
+              HERO IMAGE / VISUAL PROMPT
+              "Minimal institutional systems diagram on white background. Thin gray corridor lines flowing left-to-right. A single muted blue coordination layer aligns selected corridors. Tiny dot markers at handoff points. Labels in small refined typography: 'Corridor', 'Orchestration', 'Verified handoff'. No gradients, no glow, high whitespace, enterprise tone."
+            -->
+            <div class="hidden md:flex items-center justify-center">
+              <div class="hero-diagram">
+                <!-- Corridor lines -->
+                <div class="corridor-line" style="top: 28px"></div>
+                <div
+                  class="corridor-line"
+                  style="top: 60px; left: 5%; right: 8%"
+                ></div>
+                <div class="corridor-line" style="top: 92px"></div>
+                <div
+                  class="corridor-line"
+                  style="top: 124px; left: 3%; right: 6%"
+                ></div>
+                <div class="corridor-line" style="top: 156px"></div>
+
+                <!-- Coordination layer (aligns corridors 2, 3, 4) -->
+                <div class="coordination-line" style="top: 59px"></div>
+                <div
+                  class="coordination-line"
+                  style="top: 91px; left: 12%; right: 8%"
+                ></div>
+                <div
+                  class="coordination-line"
+                  style="top: 123px; left: 6%; right: 15%"
+                ></div>
+
+                <!-- Handoff dots -->
+                <div class="handoff-dot" style="top: 57px; left: 22%"></div>
+                <div class="handoff-dot" style="top: 57px; left: 48%"></div>
+                <div class="handoff-dot" style="top: 57px; left: 74%"></div>
+                <div class="handoff-dot" style="top: 89px; left: 30%"></div>
+                <div class="handoff-dot" style="top: 89px; left: 58%"></div>
+                <div class="handoff-dot" style="top: 121px; left: 18%"></div>
+                <div class="handoff-dot" style="top: 121px; left: 44%"></div>
+                <div class="handoff-dot" style="top: 121px; left: 68%"></div>
+
+                <!-- Labels -->
+                <span class="diagram-label" style="top: 6px; left: 0"
+                  >Corridor</span
+                >
+                <span class="diagram-label" style="top: 170px; left: 10%"
+                  >Orchestration</span
+                >
+                <span class="diagram-label" style="top: 170px; right: 8%"
+                  >Verified handoff</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 2. WHAT WE'RE BUILDING ========== -->
+      <section
+        class="py-24"
+        style="background: var(--bg-secondary)"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2 class="section-title mb-6" data-i18n="careers.building.heading">
+            What we're building
+          </h2>
+
+          <p
+            class="section-body max-w-[680px] mb-16"
+            data-i18n="careers.building.description"
+          >
+            GoLynk is an orchestration platform that matches shipments to routes
+            already in motion — couriers, fleets, crowd capacity, and microhubs
+            — with multi-hop routing, SLA-aware constraint matching, verified
+            handoffs, and measurable CO₂ impact per corridor.
+          </p>
+
+          <div class="pillar-grid">
+            <div class="pillar">
+              <h3 data-i18n="careers.building.pillars.orchestration.title">
+                Orchestration
+              </h3>
+              <p data-i18n="careers.building.pillars.orchestration.description">
+                Multi-hop routing across couriers, fleets, and microhubs.
+              </p>
+            </div>
+
+            <div class="pillar">
+              <h3 data-i18n="careers.building.pillars.verification.title">
+                Verification
+              </h3>
+              <p data-i18n="careers.building.pillars.verification.description">
+                Handoffs, chain-of-custody events, exception workflows.
+              </p>
+            </div>
+
+            <div class="pillar">
+              <h3 data-i18n="careers.building.pillars.density.title">
+                Compounding density
+              </h3>
+              <p data-i18n="careers.building.pillars.density.description">
+                Corridors get cheaper, faster, and cleaner as overlap grows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 3. TRACKS WE HIRE FOR ========== -->
+      <section class="py-24" data-animate="fade-up" data-duration="800">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2 class="section-title mb-12" data-i18n="careers.tracks.heading">
+            Tracks we hire for
+          </h2>
+
+          <div>
+            <!-- Track 1: Systems Engineering -->
+            <div class="track-row">
+              <div class="track-name" data-i18n="careers.tracks.systems.title">
+                Systems Engineering
+              </div>
+              <div>
+                <div
+                  class="track-desc"
+                  data-i18n="careers.tracks.systems.description"
+                >
+                  Distributed orchestration, reliability, observability, event
+                  pipelines.
+                </div>
+                <div
+                  class="track-examples"
+                  data-i18n="careers.tracks.systems.examples"
+                >
+                  Examples: orchestration graph, execution state, monitoring,
+                  audit logs.
+                </div>
+              </div>
+              <a
+                href="./careers/jobs.html?track=systems"
+                class="track-link"
+                data-i18n="careers.tracks.seeRoles"
+              >
+                See roles <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Track 2: AI & Optimization -->
+            <div class="track-row">
+              <div class="track-name" data-i18n="careers.tracks.ai.title">
+                AI &amp; Optimization
+              </div>
+              <div>
+                <div
+                  class="track-desc"
+                  data-i18n="careers.tracks.ai.description"
+                >
+                  Constraint scoring, density learning, SLA-aware multi-hop
+                  chaining.
+                </div>
+                <div
+                  class="track-examples"
+                  data-i18n="careers.tracks.ai.examples"
+                >
+                  Examples: time windows, deviation bounds, ETA uncertainty,
+                  route ranking.
+                </div>
+              </div>
+              <a
+                href="./careers/jobs.html?track=ai"
+                class="track-link"
+                data-i18n="careers.tracks.seeRoles"
+              >
+                See roles <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Track 3: Integrations & Operator Tooling -->
+            <div class="track-row">
+              <div
+                class="track-name"
+                data-i18n="careers.tracks.integrations.title"
+              >
+                Integrations &amp; Operator Tooling
+              </div>
+              <div>
+                <div
+                  class="track-desc"
+                  data-i18n="careers.tracks.integrations.description"
+                >
+                  APIs, dashboards, partner tooling, TMS/WMS connectivity.
+                </div>
+                <div
+                  class="track-examples"
+                  data-i18n="careers.tracks.integrations.examples"
+                >
+                  Examples: webhooks, data contracts, operator consoles,
+                  integration tiers.
+                </div>
+              </div>
+              <a
+                href="./careers/jobs.html?track=integrations"
+                class="track-link"
+                data-i18n="careers.tracks.seeRoles"
+              >
+                See roles <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Track 4: Corridor Deployment & Operations -->
+            <div class="track-row">
+              <div
+                class="track-name"
+                data-i18n="careers.tracks.deployment.title"
+              >
+                Corridor Deployment &amp; Operations
+              </div>
+              <div>
+                <div
+                  class="track-desc"
+                  data-i18n="careers.tracks.deployment.description"
+                >
+                  SLAs, playbooks, onboarding, microhub validation, corridor
+                  health.
+                </div>
+                <div
+                  class="track-examples"
+                  data-i18n="careers.tracks.deployment.examples"
+                >
+                  Examples: corridor launch, exception workflows, partner
+                  readiness.
+                </div>
+              </div>
+              <a
+                href="./careers/jobs.html?track=deployment"
+                class="track-link"
+                data-i18n="careers.tracks.seeRoles"
+              >
+                See roles <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Track 5: Logistics Research (Zero-Touch) -->
+            <div class="track-row">
+              <div class="track-name" data-i18n="careers.tracks.research.title">
+                Logistics Research (Zero-Touch)
+              </div>
+              <div>
+                <div
+                  class="track-desc"
+                  data-i18n="careers.tracks.research.description"
+                >
+                  Network economics, corridor design theory, incentives,
+                  verification systems.
+                </div>
+                <div
+                  class="track-examples"
+                  data-i18n="careers.tracks.research.examples"
+                >
+                  Examples: pricing fairness, trust models, corridor topology,
+                  automation-first ops.
+                </div>
+              </div>
+              <a
+                href="./careers/jobs.html?track=research"
+                class="track-link"
+                data-i18n="careers.tracks.seeRoles"
+              >
+                See roles <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4. PROBLEMS WE WORK ON ========== -->
+      <section
+        class="py-24"
+        style="background: var(--bg-secondary)"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2 class="section-title mb-12" data-i18n="careers.problems.heading">
+            Problems we work on
+          </h2>
+
+          <div class="problems-grid">
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.routing"
+            >
+              Multi-hop routing under time windows
+            </div>
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.matching"
+            >
+              Deviation-bounded matching (zero-touch, on-route)
+            </div>
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.handoffs"
+            >
+              Verified handoffs and chain-of-custody
+            </div>
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.density"
+            >
+              Corridor density as a compounding system
+            </div>
+            <div class="problem-item" data-i18n="careers.problems.items.co2">
+              Lane-level CO₂ measurement and reporting
+            </div>
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.pricing"
+            >
+              Pricing that aligns incentives across the network
+            </div>
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.exceptions"
+            >
+              Exception handling without operational chaos
+            </div>
+            <div
+              class="problem-item"
+              data-i18n="careers.problems.items.integrations"
+            >
+              Integrations that fit existing fleets and tools
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 5. HOW WE WORK ========== -->
+      <section class="py-24" data-animate="fade-up" data-duration="800">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2 class="section-title mb-12" data-i18n="careers.howWeWork.heading">
+            How we work
+          </h2>
+
+          <div class="principles-grid mb-10">
+            <div
+              class="principle"
+              data-i18n="careers.howWeWork.principles.density"
+            >
+              Density before scale
+            </div>
+            <div
+              class="principle"
+              data-i18n="careers.howWeWork.principles.constraints"
+            >
+              Constraints over promises
+            </div>
+            <div
+              class="principle"
+              data-i18n="careers.howWeWork.principles.trust"
+            >
+              Trust is structural
+            </div>
+            <div
+              class="principle"
+              data-i18n="careers.howWeWork.principles.assetLight"
+            >
+              Asset-light discipline
+            </div>
+            <div
+              class="principle"
+              data-i18n="careers.howWeWork.principles.impact"
+            >
+              Measured impact
+            </div>
+          </div>
+
+          <p
+            class="text-[15px] leading-relaxed"
+            style="color: var(--text-secondary)"
+            data-i18n="careers.howWeWork.subline"
+          >
+            We optimize for long-term network integrity over short-term
+            expansion.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== 6. FEATURED ROLES ========== -->
+      <section
+        class="py-24"
+        style="background: var(--bg-secondary)"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <h2 class="section-title mb-12" data-i18n="careers.featured.heading">
+            Featured roles
+          </h2>
+
+          <div>
+            <!-- Role 1 -->
+            <a
+              href="./careers/jobs.html?role=senior-backend-orchestration"
+              class="role-row"
+            >
+              <span
+                class="role-title"
+                data-i18n="careers.featured.roles.role1.title"
+                >Senior Backend Engineer — Orchestration</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role1.track"
+                >Systems Engineering</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role1.location"
+                >Berlin / Remote</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role1.type"
+                >Full-time</span
+              >
+              <span class="role-arrow">&rarr;</span>
+            </a>
+
+            <!-- Role 2 -->
+            <a
+              href="./careers/jobs.html?role=applied-ml-routing"
+              class="role-row"
+            >
+              <span
+                class="role-title"
+                data-i18n="careers.featured.roles.role2.title"
+                >Applied ML Engineer — Routing &amp; Optimization</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role2.track"
+                >AI &amp; Optimization</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role2.location"
+                >Berlin / Remote</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role2.type"
+                >Full-time</span
+              >
+              <span class="role-arrow">&rarr;</span>
+            </a>
+
+            <!-- Role 3 -->
+            <a
+              href="./careers/jobs.html?role=integrations-engineer"
+              class="role-row"
+            >
+              <span
+                class="role-title"
+                data-i18n="careers.featured.roles.role3.title"
+                >Integrations Engineer — APIs &amp; Partner Tooling</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role3.track"
+                >Integrations</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role3.location"
+                >Berlin / Remote</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role3.type"
+                >Full-time</span
+              >
+              <span class="role-arrow">&rarr;</span>
+            </a>
+
+            <!-- Role 4 -->
+            <a
+              href="./careers/jobs.html?role=corridor-deployment-lead"
+              class="role-row"
+            >
+              <span
+                class="role-title"
+                data-i18n="careers.featured.roles.role4.title"
+                >Corridor Deployment Lead — Germany</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role4.track"
+                >Deployment &amp; Operations</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role4.location"
+                >Berlin</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role4.type"
+                >Full-time</span
+              >
+              <span class="role-arrow">&rarr;</span>
+            </a>
+
+            <!-- Role 5 -->
+            <a
+              href="./careers/jobs.html?role=logistics-researcher"
+              class="role-row"
+            >
+              <span
+                class="role-title"
+                data-i18n="careers.featured.roles.role5.title"
+                >Logistics Researcher — Zero-Touch Operations</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role5.track"
+                >Logistics Research</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role5.location"
+                >Berlin / Remote</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role5.type"
+                >Full-time</span
+              >
+              <span class="role-arrow">&rarr;</span>
+            </a>
+
+            <!-- Role 6 -->
+            <a
+              href="./careers/jobs.html?role=product-engineer-dashboard"
+              class="role-row"
+            >
+              <span
+                class="role-title"
+                data-i18n="careers.featured.roles.role6.title"
+                >Product Engineer — Operator Dashboard</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role6.track"
+                >Integrations</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role6.location"
+                >Berlin / Remote</span
+              >
+              <span
+                class="role-meta"
+                data-i18n="careers.featured.roles.role6.type"
+                >Full-time</span
+              >
+              <span class="role-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="mt-10">
+            <a
+              href="./careers/jobs.html"
+              class="track-link"
+              data-i18n="careers.featured.viewAll"
+            >
+              View all open roles <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 7. GENERAL APPLICATION ========== -->
+      <section
+        id="general-application"
+        class="py-24"
+        data-animate="fade-up"
+        data-duration="800"
+      >
+        <div class="max-w-[1160px] mx-auto px-6">
+          <div class="max-w-[560px]">
+            <h2
+              class="section-title mb-6"
+              data-i18n="careers.generalApplication.heading"
+            >
+              General application
+            </h2>
+
+            <p
+              class="section-body mb-8"
+              data-i18n="careers.generalApplication.description"
+            >
+              If you don't see a perfect match, send an introduction.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-6">
+              <a
+                href="mailto:careers@golynk.com?subject=GoLynk%20General%20Application"
+                class="btn-careers-primary"
+                data-i18n="careers.generalApplication.ctaPrimary"
+              >
+                Submit an introduction
+              </a>
+              <a
+                href="./careers/jobs.html"
+                class="btn-careers-secondary"
+                data-i18n="careers.generalApplication.ctaSecondary"
+              >
+                View open roles
+              </a>
+            </div>
+
+            <p
+              class="text-[13px] leading-relaxed"
+              style="color: #94a3b8"
+              data-i18n="careers.generalApplication.microcopy"
+            >
+              Include links (LinkedIn/GitHub) and a short note on what you want
+              to build.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 8. RELATED LINKS ========== -->
+      <section class="py-12" style="border-top: 1px solid var(--border-color)">
+        <div class="max-w-[1160px] mx-auto px-6">
+          <p
+            class="text-xs font-medium uppercase tracking-wider mb-4"
+            style="color: #94a3b8; letter-spacing: 0.08em"
+            data-i18n="careers.related.label"
+          >
+            Related
+          </p>
+          <div class="related-links">
+            <a href="./careers/jobs.html" data-i18n="careers.related.openRoles"
+              >Open roles</a
+            >
+            <a href="./about.html" data-i18n="careers.related.about">About</a>
+            <a href="./index.html#technology" data-i18n="careers.related.glTech"
+              >GL Tech</a
+            >
+            <a
+              href="mailto:contact@golynk.com"
+              data-i18n="careers.related.contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="pt-8 overflow-hidden">
+        <div class="space-y-12">
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+          >
+            <!-- CTA Buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+              data-animate="fade-up"
+              data-duration="800"
+            >
+              <a
+                href="./shipper.html#early-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-ship"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.startShipping"
+                  >Start Shipping</span
+                >
+              </a>
+              <a
+                href="./carrier.html#carrier-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-delivery"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.deliverWithUs"
+                  >Deliver with us</span
+                >
+              </a>
+            </div>
+            <!-- Newsletter Column -->
+            <div class="flex flex-col items-center lg:items-start gap-3">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.newsletter.title"
+              >
+                Stay up to date
+              </h3>
+              <form class="flex gap-2" id="footer-newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
+                  class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                  data-i18n="common.footer.newsletter.button"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Footer Grid -->
+          <div
+            class="grid md:grid-cols-5 gap-12"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Company Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.company.title"
+              >
+                Company
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./about.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.about"
+                >
+                  About GoLynk
+                </a>
+                <a
+                  href="./index.html#how-it-works"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.howItWorks"
+                >
+                  How It Works
+                </a>
+                <a
+                  href="./index.html#industries"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.industries"
+                >
+                  Industries We Serve
+                </a>
+                <a
+                  href="./index.html#environment"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.sustainability"
+                >
+                  Sustainability &amp; CO₂ Reporting
+                </a>
+                <a
+                  href="./careers.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.careers"
+                >
+                  Careers
+                </a>
+                <a
+                  href="./get-started.html#contact"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.contact"
+                >
+                  Contact
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Shippers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.shippers.title"
+              >
+                For Shippers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./shipper.html#early-access"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="./pricing.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.pricing"
+                >
+                  Pricing
+                </a>
+                <a
+                  href="./api-docs.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.api"
+                >
+                  Integration &amp; API Docs
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Carriers Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.carriers.title"
+              >
+                For Carriers
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./carrier.html#individual-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
+                >
+                  Join as Individual Mover
+                </a>
+                <a
+                  href="./carrier.html#fleet-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
+                >
+                  Fleet Operators
+                </a>
+                <a
+                  href="./carrier.html#operator-dashboard"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
+                >
+                  Operator Dashboard
+                </a>
+              </nav>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.resources.title"
+              >
+                Resources
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./faq.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.faq"
+                >
+                  FAQ
+                </a>
+                <a
+                  href="./investor.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.investors"
+                >
+                  Investor Relations
+                </a>
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="space-y-4">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.sections.legal.title"
+              >
+                Legal
+              </h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./privacy.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.privacy"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="./terms.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.terms"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="./cookies.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.cookies"
+                >
+                  Cookie Policy
+                </a>
+                <a
+                  href="./imprint.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.imprint"
+                >
+                  Imprint
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="border-t border-border-default pt-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="400"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
+              <!-- Logo and Tagline -->
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="./">
+                  <img src="/golynk-website/assets/Logo-Cabx5owX.svg" alt="GoLynk" class="h-8" />
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.tagline"
+                >
+                  Orchestrating existing journeys into faster, greener
+                  logistics.
+                </p>
+              </div>
+
+              <!-- Social Links and Copyright -->
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-x"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.copyright"
+                >
+                  &copy; GoLynk 2026. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+  </body>
+</html>

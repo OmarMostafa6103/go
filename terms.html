@@ -1,0 +1,1262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/golynk-website/assets/Logo-Cabx5owX.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n-attr="title">Commercial Terms of Service | GoLynk</title>
+    <meta
+      name="description"
+      data-i18n="meta.description"
+      content="Terms governing use of the GoLynk logistics orchestration platform and corridor-based deployment services." />
+    <style>
+      /* Terms of Service Layout Styles */
+
+      body {
+        background: #ffffff;
+        color: #0b1220;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .navbar {
+        background: rgba(255, 255, 255, 0.95);
+        border-bottom: 1px solid #e5e7eb;
+        padding: 1rem 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      .navbar-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .navbar-logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        color: #6941c6;
+      }
+
+      .navbar-links {
+        display: flex;
+        gap: 2rem;
+        flex: 1;
+        margin-left: 3rem;
+      }
+
+      .navbar-links a {
+        color: #475569;
+        text-decoration: none;
+        font-size: 0.9375rem;
+        transition: color 0.2s ease;
+      }
+
+      .navbar-links a:hover {
+        color: #0b1220;
+      }
+
+      .navbar-cta {
+        margin-left: auto;
+      }
+
+      .language-selector {
+        background: transparent;
+        border: 1px solid #e5e7eb;
+        color: #475569;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .language-selector:hover {
+        border-color: #6941c6;
+        color: #6941c6;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      .legal-document {
+        margin-top: 2rem;
+      }
+
+      .legal-header {
+        margin-bottom: 3rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .legal-header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      .legal-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+      }
+
+      .legal-header .last-updated {
+        font-size: 0.875rem;
+        color: #64748b;
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      .legal-header .intro {
+        font-size: 1.0625rem;
+        color: #475569;
+        line-height: 1.8;
+        max-width: 700px;
+        margin-bottom: 0;
+      }
+
+      .legal-container {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      .legal-sidebar {
+        position: sticky;
+        top: 120px;
+        height: fit-content;
+        max-height: calc(100vh - 150px);
+        overflow-y: auto;
+      }
+
+      .legal-sidebar h3 {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #64748b;
+        margin-bottom: 1rem;
+        margin-top: 0;
+      }
+
+      .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar-nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar-nav a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+        color: #475569;
+        text-decoration: none;
+        border-left: 2px solid transparent;
+        padding-left: 0.75rem;
+        transition: all 0.2s ease;
+        line-height: 1.5;
+      }
+
+      .sidebar-nav a:hover {
+        color: #0b1220;
+        border-left-color: #6941c6;
+      }
+
+      .sidebar-nav a.active {
+        color: #6941c6;
+        border-left-color: #6941c6;
+        font-weight: 600;
+      }
+
+      .legal-content {
+        padding-top: 2rem;
+      }
+
+      .terms-section {
+        margin-bottom: 4rem;
+        scroll-margin-top: 100px;
+      }
+
+      .terms-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .terms-section h3 {
+        font-size: 1.0625rem;
+        font-weight: 700;
+        color: #0b1220;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .terms-section p {
+        font-size: 0.9375rem;
+        color: #475569;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .terms-section ul,
+      .terms-section ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .terms-section li {
+        color: #475569;
+        font-size: 0.9375rem;
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+      }
+
+      .terms-section ul > li {
+        list-style-type: disc;
+      }
+
+      .terms-section ol > li {
+        list-style-type: decimal;
+      }
+
+      .definition {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .definition dt {
+        font-weight: 700;
+        color: #0b1220;
+        margin-bottom: 0.25rem;
+      }
+
+      .definition dd {
+        font-size: 0.9375rem;
+        color: #475569;
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      .contact-info {
+        background: #fafbfc;
+        padding: 1.5rem;
+        border-radius: 0.375rem;
+        margin: 1.5rem 0;
+        font-size: 0.9375rem;
+        line-height: 1.8;
+        color: #334155;
+      }
+
+      .contact-info p {
+        margin: 0.25rem 0;
+      }
+
+      .contact-info a {
+        color: #6941c6;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .contact-info a:hover {
+        color: #42307d;
+        text-decoration: underline;
+      }
+
+      .footer-links {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e2e8f0;
+        text-align: center;
+      }
+
+      .footer-links p {
+        font-size: 0.875rem;
+        color: #64748b;
+        margin: 0;
+      }
+
+      .footer-links a {
+        color: #6941c6;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .footer-links a:hover {
+        color: #42307d;
+        text-decoration: underline;
+      }
+
+      .separator {
+        color: #cbd5e1;
+        margin: 0 0.5rem;
+      }
+
+      .footer {
+        background: #f8fafc;
+        border-top: 1px solid #e2e8f0;
+        padding: 2rem 1.5rem;
+        margin-top: 4rem;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .footer-content p {
+        font-size: 0.9375rem;
+        color: #475569;
+        margin: 0.5rem 0;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .legal-container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .legal-sidebar {
+          position: static;
+          max-height: none;
+          margin-bottom: 2rem;
+        }
+
+        .sidebar-nav {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.5rem 1rem;
+        }
+
+        .sidebar-nav a {
+          padding: 0.5rem 0;
+          border-left: none;
+          padding-left: 0;
+        }
+
+        .sidebar-nav a.active {
+          border-left: none;
+          color: #6941c6;
+          font-weight: 600;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .legal-container {
+          padding: 0 1rem;
+        }
+
+        .legal-header-content {
+          padding: 0 1rem;
+        }
+
+        .legal-header h1 {
+          font-size: 1.875rem;
+        }
+
+        .legal-header .intro {
+          font-size: 0.9375rem;
+        }
+
+        .terms-section h2 {
+          font-size: 1.25rem;
+        }
+
+        .legal-sidebar {
+          margin-bottom: 2rem;
+        }
+
+        .sidebar-nav {
+          grid-template-columns: 1fr;
+        }
+
+        .navbar-links {
+          display: none;
+        }
+      }
+
+      /* Scrollbar styling for sidebar nav */
+      .legal-sidebar::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .legal-sidebar::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+
+      .legal-sidebar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 3px;
+      }
+
+      .legal-sidebar::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+    <script type="module" crossorigin src="/golynk-website/assets/main-BNmtawfm.js"></script>
+    <link rel="stylesheet" crossorigin href="/golynk-website/assets/main-Dqf_vGYg.css">
+  </head>
+  <body>
+    <!-- SVG Icon Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-ship" viewBox="0 0 22 22">
+        <path
+          d="M13.9297 0C15.2296 0 16.1397 0.000436981 16.9297 0.400391C17.7197 0.800391 18.2698 1.52031 19.0498 2.57031C19.0798 2.61029 19.1204 2.66001 19.1504 2.70996C19.1703 2.73982 19.1998 2.76994 19.2197 2.7998C19.7497 3.5098 20.1196 3.99031 20.3096 4.57031C20.4995 5.15019 20.5 5.75992 20.5 6.63965V11.8096C20.5 13.6496 20.4996 15.1002 20.3496 16.2402C20.1896 17.4101 19.8603 18.3604 19.1104 19.1104C18.3604 19.8603 17.4101 20.1896 16.2402 20.3496C15.1002 20.4996 13.6496 20.5 11.8096 20.5H8.7002C6.8602 20.5 5.40953 20.4996 4.26953 20.3496C3.09996 20.1896 2.15022 19.86 1.40039 19.1104C0.650444 18.3604 0.320169 17.4101 0.160156 16.2402C0.000156254 15.1002 0 13.6396 0 11.8096V6.63965C3.36635e-09 5.75992 0.00050574 5.15019 0.19043 4.57031C0.38043 3.99031 0.750273 3.4998 1.28027 2.7998C1.30024 2.76994 1.32967 2.73982 1.34961 2.70996C1.37958 2.66001 1.4202 2.62025 1.4502 2.57031C2.2402 1.52031 2.78031 0.790391 3.57031 0.400391C4.37029 0.000437528 5.27013 0 6.58008 0H13.9297ZM1.53027 5.5C1.50027 5.77 1.5 6.14 1.5 6.75V11.75C1.5 13.66 1.49965 15.01 1.63965 16.04C1.76965 17.05 2.0302 17.6298 2.4502 18.0498C2.8702 18.4698 3.44996 18.7204 4.45996 18.8604C5.48996 19.0004 6.84001 19 8.75 19H11.75C13.66 19 15.01 19.0004 16.04 18.8604C17.05 18.7304 17.6298 18.4698 18.0498 18.0498C18.4698 17.6298 18.7204 17.05 18.8604 16.04C19.0004 15.01 19 13.66 19 11.75V6.75C19 6.14 18.9897 5.77 18.9697 5.5H13.4902V6.7998C13.4902 7.2298 13.4902 7.6302 13.4502 7.9502C13.4002 8.3101 13.2903 8.68031 12.9805 8.99023C12.6706 9.30011 12.3003 9.40993 11.9404 9.45996C11.6204 9.49996 11.22 9.5 10.79 9.5H9.7002C9.2702 9.5 8.8698 9.49996 8.5498 9.45996C8.18987 9.40995 7.81971 9.30018 7.50977 8.99023C7.19982 8.68029 7.09005 8.31013 7.04004 7.9502C7.00004 7.6302 7 7.2298 7 6.7998V5.5H1.53027ZM8.7998 12C9.2298 12 9.6302 12 9.9502 12.04C10.3101 12.0901 10.6803 12.1998 10.9902 12.5098C11.3002 12.8197 11.4099 13.1899 11.46 13.5498C11.5 13.8698 11.5 14.2702 11.5 14.7002V14.79C11.5 15.22 11.5 15.6204 11.46 15.9404C11.4099 16.3003 11.3001 16.6706 10.9902 16.9805C10.6803 17.2903 10.3101 17.4002 9.9502 17.4502C9.6302 17.4902 9.2298 17.4902 8.7998 17.4902H5.70996C5.27998 17.4902 4.87956 17.4902 4.55957 17.4502C4.19969 17.4002 3.82942 17.2904 3.51953 16.9805C3.20964 16.6706 3.09983 16.3003 3.0498 15.9404C3.00981 15.6204 3.00977 15.22 3.00977 14.79V14.7002C3.00977 14.2702 3.0098 13.8698 3.0498 13.5498C3.09981 13.1899 3.20967 12.8197 3.51953 12.5098C3.82941 12.1999 4.1997 12.0901 4.55957 12.04C4.87956 12 5.27998 12 5.70996 12H8.7998ZM5.75977 13.5C5.2699 13.5 4.96973 13.5003 4.75977 13.5303C4.65996 13.5403 4.61982 13.5603 4.58984 13.5703H4.58008V13.5801C4.58003 13.6001 4.56001 13.6501 4.54004 13.75C4.51004 13.96 4.50977 14.25 4.50977 14.75C4.50977 15.25 4.51004 15.54 4.54004 15.75C4.55003 15.8499 4.57007 15.8999 4.58008 15.9199C4.58008 15.9199 4.58008 15.92 4.58008 15.9297H4.58984C4.60983 15.9297 4.65995 15.9497 4.75977 15.9697C4.96973 15.9997 5.25991 16 5.75977 16H8.75977C9.24962 16 9.54978 15.9997 9.75977 15.9697C9.85956 15.9597 9.89971 15.9397 9.92969 15.9297H9.94043V15.9199C9.94048 15.8999 9.96049 15.8499 9.98047 15.75C10.0105 15.54 10.0098 15.2399 10.0098 14.75C10.0098 14.2601 10.0105 13.96 9.98047 13.75C9.97051 13.6504 9.95047 13.6002 9.94043 13.5801C9.94043 13.5801 9.94043 13.58 9.94043 13.5703C9.94043 13.5703 9.93969 13.5703 9.92969 13.5703C9.90948 13.5701 9.85925 13.5502 9.75977 13.5303C9.54978 13.5003 9.25961 13.5 8.75977 13.5H5.75977ZM8.5 5.5V6.75C8.5 7.24 8.50027 7.54 8.53027 7.75C8.55024 7.84984 8.57026 7.89987 8.57031 7.91992V7.92969H8.58008C8.61007 7.93969 8.65002 7.95973 8.75 7.96973C8.96 7.99973 9.26 8 9.75 8H10.75C11.25 8 11.54 7.99973 11.75 7.96973C11.8498 7.94976 11.8999 7.92974 11.9199 7.92969H11.9297V7.91992C11.9397 7.88992 11.9597 7.84998 11.9697 7.75C11.9997 7.54 12 7.24 12 6.75V5.5H8.5ZM6.74023 1.5C5.19056 1.5 4.67041 1.52037 4.23047 1.74023C3.7905 1.96022 3.45989 2.35982 2.54004 3.59961C2.43007 3.74956 2.33021 3.88003 2.24023 4H7.16016L7.78027 1.5H6.74023ZM13.3301 4H18.25C18.16 3.88 18.0602 3.74961 17.9502 3.59961C17.0203 2.35973 16.6897 1.96023 16.2598 1.74023C15.8198 1.52028 15.2999 1.5 13.75 1.5H12.71L13.3301 4ZM8.71973 4H11.79L11.1699 1.5H9.33984L8.71973 4Z"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol id="icon-delivery" viewBox="0 0 36 30">
+        <path
+          d="M17.999 0C19.1071 -6.21875e-05 20.0626 -0.000255403 20.8271 0.102539C21.6462 0.212713 22.4315 0.460936 23.0684 1.09766C23.7054 1.73471 23.9543 2.52048 24.0645 3.33984C24.0987 3.59455 24.1215 3.87046 24.1367 4.16602L26.8066 4.16602C27.4519 4.16598 28.0226 4.1664 28.501 4.21289C29.0195 4.2633 29.524 4.37498 30.0156 4.65332C30.5073 4.9317 30.8628 5.30684 31.1729 5.72559C31.4588 6.11177 31.7521 6.60109 32.084 7.1543L34.9434 11.9189C34.9634 11.9523 34.9832 11.9857 35.0029 12.0186C35.2986 12.5102 35.56 12.9458 35.6973 13.4414C35.8345 13.937 35.8346 14.4448 35.834 15.0186V19.6367C35.834 20.3695 35.8341 21.0017 35.7871 21.5205C35.7374 22.0691 35.6267 22.613 35.3311 23.125C35.002 23.6948 34.5288 24.168 33.959 24.4971C33.447 24.7927 32.9031 24.9034 32.3545 24.9531C32.103 24.9759 31.8248 24.9871 31.5215 24.9932C30.9594 27.3851 28.8135 29.166 26.25 29.166C23.689 29.1659 21.544 27.3886 20.9795 25H14.8545C14.29 27.3886 12.145 29.1659 9.58398 29.166C7.02043 29.166 4.87355 27.3852 4.31152 24.9932C4.00856 24.9871 3.73072 24.9759 3.47949 24.9531C2.93085 24.9034 2.38702 24.7927 1.875 24.4971C1.30519 24.168 0.831987 23.6948 0.50293 23.125C0.207314 22.613 0.0965998 22.0691 0.046875 21.5205C-0.000120971 21.0017 -2.76116e-05 20.3696 0 19.6367L0 6.16699C-6.21765e-05 5.05905 -0.000243047 4.10433 0.102539 3.33984C0.212706 2.52046 0.461564 1.73472 1.09863 1.09766C1.73568 0.460699 2.52149 0.212695 3.34082 0.102539C4.10534 -0.00022641 5.05999 -6.21803e-05 6.16797 0L17.999 0ZM9.58398 20.833C7.97315 20.833 6.66699 22.1392 6.66699 23.75C6.66717 25.3607 7.97326 26.666 9.58398 26.666C11.1946 26.6658 12.4998 25.3606 12.5 23.75C12.5 22.1393 11.1947 20.8332 9.58398 20.833ZM26.25 20.833C24.6393 20.8332 23.334 22.1393 23.334 23.75C23.3342 25.3606 24.6394 26.6658 26.25 26.666C27.8607 26.666 29.1668 25.3607 29.167 23.75C29.167 22.1392 27.8608 20.833 26.25 20.833ZM6.25 2.5C5.03642 2.5 4.2519 2.50237 3.67383 2.58008C3.13165 2.65297 2.96137 2.77106 2.86621 2.86621C2.77113 2.96141 2.65387 3.13149 2.58105 3.67285C2.50333 4.25098 2.5 5.03615 2.5 6.25L2.5 19.583C2.5 20.3847 2.50156 20.9025 2.53711 21.2949C2.57112 21.6702 2.62865 21.8069 2.66797 21.875C2.77761 22.0648 2.93523 22.2224 3.125 22.332C3.19311 22.3714 3.32984 22.4289 3.70508 22.4629C3.87922 22.4787 4.07805 22.487 4.31543 22.4922C4.88258 20.1072 7.02548 18.333 9.58398 18.333C12.1452 18.3332 14.2903 20.1111 14.8545 22.5H20.9795C21.1264 21.8781 21.38 21.2978 21.7207 20.7793C21.6859 20.6644 21.667 20.5423 21.667 20.416L21.667 6.25C21.667 5.03615 21.6646 4.25098 21.5869 3.67285C21.5141 3.1311 21.3959 2.96139 21.3008 2.86621C21.2056 2.77106 21.0353 2.65297 20.4932 2.58008C19.9151 2.50241 19.1305 2.5 17.917 2.5L6.25 2.5ZM24.167 18.748C24.8082 18.4806 25.5119 18.3331 26.25 18.333C28.8084 18.333 30.9503 20.1074 31.5176 22.4922C31.7554 22.487 31.9545 22.4787 32.1289 22.4629C32.5041 22.4289 32.6409 22.3714 32.709 22.332C32.8988 22.2224 33.0564 22.0648 33.166 21.875C33.2053 21.8069 33.2629 21.6702 33.2969 21.2949C33.3324 20.9025 33.334 20.3847 33.334 19.583V15.1348C33.334 14.3802 33.323 14.2346 33.2881 14.1084C33.2531 13.9823 33.1869 13.8519 32.7988 13.2051L29.9687 8.4873C29.6007 7.87396 29.3691 7.48987 29.1641 7.21289C28.9751 6.95767 28.8656 6.87424 28.7842 6.82813C28.7027 6.78203 28.5747 6.73188 28.2588 6.70117C27.9158 6.66785 27.468 6.66602 26.7529 6.66602L24.167 6.66602L24.167 18.748ZM12.4805 5.47461C12.9084 4.93312 13.6947 4.84073 14.2363 5.26855L16.7139 7.22559C16.7346 7.24199 16.7547 7.25909 16.7754 7.27539C17.381 7.75366 17.9324 8.18823 18.3213 8.59082C18.7332 9.01729 19.1669 9.60903 19.167 10.416C19.167 11.2232 18.7333 11.8157 18.3213 12.2422C17.9324 12.6447 17.381 13.0794 16.7754 13.5576C16.7548 13.5739 16.7346 13.591 16.7139 13.6074L14.2363 15.5645C13.6946 15.9923 12.9084 15.8992 12.4805 15.3574C12.0528 14.8157 12.145 14.0304 12.6865 13.6025L15.1367 11.666L6.25 11.666C5.55979 11.6658 5 11.1063 5 10.416C5.0002 9.72594 5.55992 9.16619 6.25 9.16602L15.1367 9.16602L12.6865 7.23047C12.1448 6.80256 12.0526 6.01635 12.4805 5.47461Z"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
+    <div class="page-wrapper">
+      <!-- Navigation -->
+      <nav
+        class="sticky top-0 left-0 right-0 z-50 border-b border-white/10"
+        style="
+          background: rgba(11, 13, 16, 0.25);
+          backdrop-filter: blur(10px);
+        "
+      >
+        <div class="px-6 py-4" data-animate="fade-down" data-duration="400">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./">
+              <img src="/golynk-website/assets/Logo-Cabx5owX.svg" alt="Logo" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div
+              class="hidden lg:flex items-center space-x-8 text-text-on-dark"
+            >
+              <a
+                href="./shipper.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.shippers"
+              >
+                Shippers
+              </a>
+              <a
+                href="./carrier.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.carriers"
+              >
+                Carriers
+              </a>
+              <a
+                href="./#technology"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.glTech"
+              >
+                GL Tech
+              </a>
+              <a
+                href="./#environment"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.environment"
+              >
+                Environment
+              </a>
+              <a
+                href="./about.html"
+                class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
+                data-i18n="common.navigation.about"
+              >
+                About
+              </a>
+            </div>
+
+            <!-- CTA Buttons & Language Selector (Desktop) -->
+            <div class="hidden lg:flex flex-row items-center gap-2">
+              <a
+                href="./get-started.html"
+                class="px-5 py-2.5 primary-btn"
+                data-i18n="common.cta.startNow"
+              >
+                Start Now
+              </a>
+
+              <!-- Language Selector -->
+              <select
+                class="language-selector px-3 py-2 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  DE
+                </option>
+              </select>
+            </div>
+
+            <!-- Mobile: Language Selector + Menu Button -->
+            <div class="lg:hidden flex items-center gap-3">
+              <!-- Language Selector (Mobile) -->
+              <select
+                class="language-selector px-2 py-1.5 text-xs font-medium text-white bg-white/10 border border-white/20 rounded-md cursor-pointer hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              >
+                <option
+                  value="en"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  EN
+                </option>
+                <option
+                  value="de"
+                  class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
+                >
+                  DE
+                </option>
+              </select>
+
+              <!-- Mobile Menu Button -->
+              <button class="p-2">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Main Content -->
+      <main
+        class="m-2 sm:m-4 md:m-6 lg:m-8 xl:m-10 relative rounded-lg overflow-x-hidden legal-document"
+      >
+        <!-- Header -->
+        <header class="legal-header">
+          <div class="legal-header-content">
+            <h1 data-i18n="terms.title">Commercial Terms of Service</h1>
+            <p class="last-updated">
+              <span data-i18n="terms.lastUpdated">Last updated:</span> February 27, 2026
+            </p>
+            <p class="intro" data-i18n="terms.intro">
+              These Commercial Terms of Service ("Terms") govern access to and use of the GoLynk
+              platform and corridor-based orchestration services. By accessing or using the
+              platform, you agree to be bound by these Terms.
+            </p>
+          </div>
+        </header>
+
+        <!-- Two-Column Layout -->
+        <div class="legal-container">
+          <!-- Sticky Sidebar Navigation -->
+          <aside class="legal-sidebar">
+            <nav class="sidebar-nav" id="sidebarNav">
+              <h3 data-i18n="terms.sidebar.title">On This Page</h3>
+              <ul>
+                <li><a href="#definitions" data-i18n="terms.sidebar.links.definitions">Definitions</a></li>
+                <li><a href="#service" data-i18n="terms.sidebar.links.service">Nature of Service</a></li>
+                <li><a href="#accounts" data-i18n="terms.sidebar.links.accounts">Accounts</a></li>
+                <li><a href="#pilot" data-i18n="terms.sidebar.links.pilot">Pilot Services</a></li>
+                <li><a href="#pricing" data-i18n="terms.sidebar.links.pricing">Pricing</a></li>
+                <li><a href="#carrier-obligations" data-i18n="terms.sidebar.links.carrierObligations">Carrier Obligations</a></li>
+                <li><a href="#shipper-obligations" data-i18n="terms.sidebar.links.shipperObligations">Shipper Obligations</a></li>
+                <li><a href="#availability" data-i18n="terms.sidebar.links.availability">Availability</a></li>
+                <li><a href="#ip" data-i18n="terms.sidebar.links.ip">Intellectual Property</a></li>
+                <li><a href="#data" data-i18n="terms.sidebar.links.data">Data and Confidentiality</a></li>
+                <li><a href="#liability" data-i18n="terms.sidebar.links.liability">Limitation of Liability</a></li>
+                <li><a href="#indemnification" data-i18n="terms.sidebar.links.indemnification">Indemnification</a></li>
+                <li><a href="#termination" data-i18n="terms.sidebar.links.termination">Termination</a></li>
+                <li><a href="#governing-law" data-i18n="terms.sidebar.links.governingLaw">Governing Law</a></li>
+                <li><a href="#changes" data-i18n="terms.sidebar.links.changes">Changes</a></li>
+                <li><a href="#contact" data-i18n="terms.sidebar.links.contact">Contact</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <!-- Main Content Column -->
+          <div class="legal-content">
+            <!-- Section 1: Definitions -->
+            <section id="definitions" class="terms-section">
+              <h2 data-i18n="terms.sections.definitions.title">1. Definitions</h2>
+              
+              <div class="definition">
+                <dt data-i18n="terms.sections.definitions.platform.term">Platform</dt>
+                <dd data-i18n="terms.sections.definitions.platform.def">The GoLynk orchestration software and related interfaces, including web and API access points, used to coordinate and match shipment demand to available transport capacity.</dd>
+              </div>
+
+              <div class="definition">
+                <dt data-i18n="terms.sections.definitions.shipper.term">Shipper</dt>
+                <dd data-i18n="terms.sections.definitions.shipper.def">An entity submitting shipment or logistics demand to the Platform, including e-commerce operators, retailers, B2B logistics users, and individuals.</dd>
+              </div>
+
+              <div class="definition">
+                <dt data-i18n="terms.sections.definitions.carrier.term">Carrier</dt>
+                <dd data-i18n="terms.sections.definitions.carrier.def">An independent transport operator providing available route capacity, including trucking companies, logistics operators, van services, and alternative transport providers.</dd>
+              </div>
+
+              <div class="definition">
+                <dt data-i18n="terms.sections.definitions.partner.term">Capacity Partner</dt>
+                <dd data-i18n="terms.sections.definitions.partner.def">A fleet operator, microhub operator, logistics facility, or infrastructure participant contributing capacity, storage, or coordination services to the Platform.</dd>
+              </div>
+
+              <div class="definition">
+                <dt data-i18n="terms.sections.definitions.corridor.term">Corridor</dt>
+                <dd data-i18n="terms.sections.definitions.corridor.def">A structured, algorithmically validated lane or route segment connecting two or more geographic points, configured for coordinated deployment of shipments across participating Carriers.</dd>
+              </div>
+
+              <div class="definition">
+                <dt data-i18n="terms.sections.definitions.pilot.term">Pilot Services</dt>
+                <dd data-i18n="terms.sections.definitions.pilot.def">Limited-scope deployment of orchestration services within defined geographic areas or specific Corridors prior to full commercial rollout.</dd>
+              </div>
+            </section>
+
+            <!-- Section 2: Nature of the Service -->
+            <section id="service" class="terms-section">
+              <h2 data-i18n="terms.sections.service.title">2. Nature of the Service</h2>
+
+              <p data-i18n="terms.sections.service.orchestration">GoLynk provides a coordination and orchestration layer that matches shipment demand to existing routes based on algorithmic scoring, corridor density, SLA weighting, deviation thresholds, and other operational variables.</p>
+
+              <h3 data-i18n="terms.sections.service.notResponsible.title">Not a Carrier</h3>
+              <p data-i18n="terms.sections.service.notResponsible.text">GoLynk is not itself a carrier and does not assume responsibility for physical transport unless explicitly agreed in writing as part of a separate service agreement. Transport execution is performed by independent Carriers or Capacity Partners, who remain solely responsible for safe, lawful, and compliant delivery.</p>
+
+              <h3 data-i18n="terms.sections.service.noPossession.title">No Assumption of Possession</h3>
+              <p data-i18n="terms.sections.service.noPossession.text">GoLynk does not take physical possession of goods unless separately contracted. The Platform facilitates matching; it does not assume custody, insurance, or liability for goods in transit.</p>
+
+              <h3 data-i18n="terms.sections.service.coordination.title">Coordination Role</h3>
+              <p data-i18n="terms.sections.service.coordination.text">The Platform coordinates deployment logistics between Shippers and Carriers. No agency, partnership, or employment relationship exists between GoLynk and Participants unless expressly agreed in writing.</p>
+            </section>
+
+            <!-- Section 3: Account Registration and Access -->
+            <section id="accounts" class="terms-section">
+              <h2 data-i18n="terms.sections.accounts.title">3. Account Registration and Access</h2>
+
+              <h3 data-i18n="terms.sections.accounts.requirements.title">Eligibility</h3>
+              <p data-i18n="terms.sections.accounts.requirements.text">To access the Platform, you must be a legal entity (business, operator, or partnership) or an individual authorized to represent a business. You certify that you are of legal age and capacity to enter into binding agreements.</p>
+
+              <h3 data-i18n="terms.sections.accounts.accuracy.title">Information Accuracy</h3>
+              <p data-i18n="terms.sections.accounts.accuracy.text">Participants must provide accurate, complete, and up-to-date information during registration. You are responsible for maintaining the accuracy of your account details, including regulatory certifications, insurance coverage, and operational permits.</p>
+
+              <h3 data-i18n="terms.sections.accounts.security.title">Security Responsibility</h3>
+              <p data-i18n="terms.sections.accounts.security.text">You are responsible for maintaining the confidentiality of your account credentials and for all activities conducted under your account. Notify GoLynk immediately of unauthorized access or security breaches.</p>
+
+              <h3 data-i18n="terms.sections.accounts.compliance.title">Compliance</h3>
+              <p data-i18n="terms.sections.accounts.compliance.text">All use of the Platform must comply with applicable laws, regulations, and these Terms. GoLynk may suspend or terminate access for:</p>
+              <ul>
+                <li data-i18n="terms.sections.accounts.compliance.items[0]">Misrepresentation or fraud</li>
+                <li data-i18n="terms.sections.accounts.compliance.items[1]">Regulatory violations</li>
+                <li data-i18n="terms.sections.accounts.compliance.items[2]">Corridor abuse or manipulation</li>
+                <li data-i18n="terms.sections.accounts.compliance.items[3]">Operational risk or instability</li>
+                <li data-i18n="terms.sections.accounts.compliance.items[4]">Breach of these Terms</li>
+              </ul>
+            </section>
+
+            <!-- Section 4: Pilot Services -->
+            <section id="pilot" class="terms-section">
+              <h2 data-i18n="terms.sections.pilot.title">4. Pilot Services</h2>
+
+              <p data-i18n="terms.sections.pilot.intro">The Platform may be offered under Pilot Services in defined geographic areas or Corridors. Participation in Pilot Services is subject to the following terms:</p>
+
+              <ul>
+                <li data-i18n="terms.sections.pilot.characteristics[0]">Services may be limited in geography, duration, or lane configuration</li>
+                <li data-i18n="terms.sections.pilot.characteristics[1]">Pricing logic may evolve as density and operational variables change</li>
+                <li data-i18n="terms.sections.pilot.characteristics[2]">Corridors may be reconfigured, expanded, or discontinued</li>
+                <li data-i18n="terms.sections.pilot.characteristics[3]">Participation does not guarantee long-term deployment or service continuity</li>
+              </ul>
+
+              <p data-i18n="terms.sections.pilot.modification">GoLynk may modify, suspend, or terminate Pilot Services with reasonable notice. Participants accept this operational flexibility as part of early-stage deployment.</p>
+            </section>
+
+            <!-- Section 5: Pricing and Payment -->
+            <section id="pricing" class="terms-section">
+              <h2 data-i18n="terms.sections.pricing.title">5. Pricing and Payment</h2>
+
+              <p data-i18n="terms.sections.pricing.intro">Pricing is determined based on the nature of your participation and the applicable commercial arrangement. The Platform may employ multiple pricing models:</p>
+
+              <ul>
+                <li data-i18n="terms.sections.pricing.models[0]">Per-shipment coordination fees</li>
+                <li data-i18n="terms.sections.pricing.models[1]">Per-corridor orchestration models</li>
+                <li data-i18n="terms.sections.pricing.models[2]">Lane-based commercial agreements</li>
+                <li data-i18n="terms.sections.pricing.models[3]">Revenue-sharing mechanisms</li>
+              </ul>
+
+              <h3 data-i18n="terms.sections.pricing.documentation.title">Pricing Documentation</h3>
+              <p data-i18n="terms.sections.pricing.documentation.text">All applicable pricing is defined in onboarding documentation, commercial service agreements, or corridor-specific terms provided at the time of enrollment. Disputes regarding pricing shall be resolved in accordance with the terms provided.</p>
+
+              <h3 data-i18n="terms.sections.pricing.adjustment.title">Pricing Adjustments</h3>
+              <p data-i18n="terms.sections.pricing.adjustment.text">GoLynk reserves the right to adjust pricing for new Corridors, services, or marketplace conditions. Price changes affecting existing arrangements will be communicated with reasonable advance notice where legally required.</p>
+
+              <h3 data-i18n="terms.sections.pricing.payment.title">Payment Terms</h3>
+              <p data-i18n="terms.sections.pricing.payment.text">Payment terms, invoice schedules, and payment methods are specified in your commercial agreement with GoLynk. Failure to pay invoices may result in account suspension.</p>
+            </section>
+
+            <!-- Section 6: Carrier and Capacity Partner Obligations -->
+            <section id="carrier-obligations" class="terms-section">
+              <h2 data-i18n="terms.sections.carrierObligations.title">6. Carrier and Capacity Partner Obligations</h2>
+
+              <p data-i18n="terms.sections.carrierObligations.intro">Carriers and Capacity Partners are independently responsible for all aspects of transport and capacity provision:</p>
+
+              <h3 data-i18n="terms.sections.carrierObligations.compliance.title">Regulatory Compliance</h3>
+              <ul>
+                <li data-i18n="terms.sections.carrierObligations.compliance.items[0]">Valid operating licenses and permits</li>
+                <li data-i18n="terms.sections.carrierObligations.compliance.items[1]">Compliance with transport regulations (KVG, StVO, STVO, or equivalent)</li>
+                <li data-i18n="terms.sections.carrierObligations.compliance.items[2]">ADR certifications and hazardous goods handling where applicable</li>
+              </ul>
+
+              <h3 data-i18n="terms.sections.carrierObligations.insurance.title">Insurance</h3>
+              <p data-i18n="terms.sections.carrierObligations.insurance.text">Carriers must maintain appropriate liability and cargo insurance coverage. GoLynk does not verify insurance validity; Carriers are solely responsible for maintaining adequate coverage.</p>
+
+              <h3 data-i18n="terms.sections.carrierObligations.execution.title">Safe Execution</h3>
+              <p data-i18n="terms.sections.carrierObligations.execution.text">All transport must be executed safely, legally, and in accordance with applicable labor, employment, and environmental regulations. GoLynk does not supervise execution unless separately specified.</p>
+
+              <h3 data-i18n="terms.sections.carrierObligations.independence.title">Independent Status</h3>
+              <p data-i18n="terms.sections.carrierObligations.independence.text">Carriers and Capacity Partners are independent contractors. No employment relationship, agency, or partnership relationship exists with GoLynk.</p>
+            </section>
+
+            <!-- Section 7: Shipper Obligations -->
+            <section id="shipper-obligations" class="terms-section">
+              <h2 data-i18n="terms.sections.shipperObligations.title">7. Shipper Obligations</h2>
+
+              <p data-i18n="terms.sections.shipperObligations.intro">Shippers must fulfill all obligations related to shipment declaration and compliance:</p>
+
+              <h3 data-i18n="terms.sections.shipperObligations.accuracy.title">Shipment Information</h3>
+              <p data-i18n="terms.sections.shipperObligations.accuracy.text">You are responsible for providing accurate, complete shipment information, including weight, dimensions, declared value, and contents. False declarations may result in rejection or suspension.</p>
+
+              <h3 data-i18n="terms.sections.shipperObligations.legality.title">Lawful Goods</h3>
+              <p data-i18n="terms.sections.shipperObligations.legality.text">You certify that all goods are legal, non-hazardous (unless properly declared and handled), and comply with applicable import/export regulations. Prohibited goods will be rejected.</p>
+
+              <h3 data-i18n="terms.sections.shipperObligations.disclosure.title">Hazard Disclosure</h3>
+              <p data-i18n="terms.sections.shipperObligations.disclosure.text">Any hazardous, temperature-controlled, fragile, or special-handling requirements must be fully disclosed. Failure to disclose creates liability for the Shipper.</p>
+
+              <h3 data-i18n="terms.sections.shipperObligations.responsibility.title">Goods Responsibility</h3>
+              <p data-i18n="terms.sections.shipperObligations.responsibility.text">You remain responsible for goods until signed acceptance by the recipient. Shipment rejection due to inaccurate information is your responsibility.</p>
+            </section>
+
+            <!-- Section 8: Service Availability -->
+            <section id="availability" class="terms-section">
+              <h2 data-i18n="terms.sections.availability.title">8. Service Availability</h2>
+
+              <p data-i18n="terms.sections.availability.intro">GoLynk strives to maintain reliable platform access and operational continuity, but makes no guarantee of uninterrupted service.</p>
+
+              <h3 data-i18n="terms.sections.availability.noWarranty.title">No Uptime Guarantee</h3>
+              <p data-i18n="terms.sections.availability.noWarranty.text">Planned maintenance, system updates, and unforeseen technical issues may cause temporary unavailability. SLA commitments, if offered, are specified in separate agreements.</p>
+
+              <h3 data-i18n="terms.sections.availability.corridor.title">Corridor Availability</h3>
+              <p data-i18n="terms.sections.availability.corridor.text">Corridor availability depends on participant density, capacity utilization, market conditions, and external factors. GoLynk may modify Corridor configuration or suspend Corridors due to operational constraints.</p>
+
+              <h3 data-i18n="terms.sections.availability.external.title">External Factors</h3>
+              <p data-i18n="terms.sections.availability.external.text">Service disruptions due to force majeure, regulatory action, or third-party dependency failure are outside GoLynk's control. GoLynk is not liable for such events.</p>
+            </section>
+
+            <!-- Section 9: Intellectual Property -->
+            <section id="ip" class="terms-section">
+              <h2 data-i18n="terms.sections.ip.title">9. Intellectual Property</h2>
+
+              <p data-i18n="terms.sections.ip.intro">All intellectual property rights in the Platform and its components are exclusive property of GoLynk or its licensors:</p>
+
+              <ul>
+                <li data-i18n="terms.sections.ip.items[0]">Orchestration algorithms</li>
+                <li data-i18n="terms.sections.ip.items[1]">Matching logic and scoring systems</li>
+                <li data-i18n="terms.sections.ip.items[2]">Corridor density models</li>
+                <li data-i18n="terms.sections.ip.items[3]">Software interfaces and APIs</li>
+                <li data-i18n="terms.sections.ip.items[4]">Data analysis and reporting systems</li>
+                <li data-i18n="terms.sections.ip.items[5]">Corridor configuration systems</li>
+              </ul>
+
+              <h3 data-i18n="terms.sections.ip.restrictions.title">License Grant</h3>
+              <p data-i18n="terms.sections.ip.restrictions.text">You are granted a limited, non-exclusive, non-transferable license to access and use the Platform solely for the purpose of submitting or fulfilling shipment demand, subject to these Terms.</p>
+
+              <h3 data-i18n="terms.sections.ip.prohibited.title">Prohibited Activities</h3>
+              <p data-i18n="terms.sections.ip.prohibited.text">You may not:</p>
+              <ul>
+                <li data-i18n="terms.sections.ip.prohibited.items[0]">Reverse engineer or decompile the Platform</li>
+                <li data-i18n="terms.sections.ip.prohibited.items[1]">Extract or copy algorithmic logic</li>
+                <li data-i18n="terms.sections.ip.prohibited.items[2]">Create derivative or competing systems</li>
+                <li data-i18n="terms.sections.ip.prohibited.items[3]">Sublicense or transfer access rights</li>
+              </ul>
+            </section>
+
+            <!-- Section 10: Data and Confidentiality -->
+            <section id="data" class="terms-section">
+              <h2 data-i18n="terms.sections.data.title">10. Data and Confidentiality</h2>
+
+              <h3 data-i18n="terms.sections.data.privacy.title">Privacy and Data Processing</h3>
+              <p data-i18n="terms.sections.data.privacy.text">Personal data and operational information is processed in accordance with the Privacy Policy. By using the Platform, you consent to the data practices described in the Privacy Policy.</p>
+
+              <h3 data-i18n="terms.sections.data.operational.title">Operational Confidentiality</h3>
+              <p data-i18n="terms.sections.data.operational.text">Corridor-level information, including capacity availability, pricing, and algorithmic configuration, is proprietary and confidential. Participants agree not to disclose, reverse-engineer, or use this information to create competing services.</p>
+
+              <h3 data-i18n="terms.sections.data.aggregation.title">Aggregated Data</h3>
+              <p data-i18n="terms.sections.data.aggregation.text">GoLynk may use aggregated, anonymized operational data for system improvement, corridor optimization, and performance analysis. This data cannot identify individual participants.</p>
+
+              <h3 data-i18n="terms.sections.data.retention.title">Data Retention</h3>
+              <p data-i18n="terms.sections.data.retention.text">Operational logs and transaction records are retained in accordance with legal requirements and Platform operational needs. You may request data deletion in accordance with applicable privacy law.</p>
+            </section>
+
+            <!-- Section 11: Limitation of Liability -->
+            <section id="liability" class="terms-section">
+              <h2 data-i18n="terms.sections.liability.title">11. Limitation of Liability</h2>
+
+              <h3 data-i18n="terms.sections.liability.unlimited.title">Unlimited Liability</h3>
+              <p data-i18n="terms.sections.liability.unlimited.text">GoLynk's liability is unlimited for:</p>
+              <ul>
+                <li data-i18n="terms.sections.liability.unlimited.items[0]">Intent and willful misconduct</li>
+                <li data-i18n="terms.sections.liability.unlimited.items[1]">Gross negligence</li>
+                <li data-i18n="terms.sections.liability.unlimited.items[2]">Personal injury or death</li>
+                <li data-i18n="terms.sections.liability.unlimited.items[3]">Mandatory statutory liability</li>
+              </ul>
+
+              <h3 data-i18n="terms.sections.liability.limited.title">Limited Liability</h3>
+              <p data-i18n="terms.sections.liability.limited.text">For slight negligence, liability is limited to foreseeable, typical damages arising directly from the breach. This limitation applies only where legally permissible under German law.</p>
+
+              <h3 data-i18n="terms.sections.liability.excluded.title">Excluded Damages</h3>
+              <p data-i18n="terms.sections.liability.excluded.text">To the extent permitted, GoLynk is not liable for:</p>
+              <ul>
+                <li data-i18n="terms.sections.liability.excluded.items[0]">Indirect damages or losses</li>
+                <li data-i18n="terms.sections.liability.excluded.items[1]">Lost profits or revenue</li>
+                <li data-i18n="terms.sections.liability.excluded.items[2]">Consequential or punitive damages</li>
+                <li data-i18n="terms.sections.liability.excluded.items[3]">Business interruption</li>
+              </ul>
+
+              <h3 data-i18n="terms.sections.liability.caps.title">Liability Caps</h3>
+              <p data-i18n="terms.sections.liability.caps.text">Where permissible, liability for breach of these Terms is capped at the fees paid by you in the twelve months preceding the claim. This cap does not apply to unlimited liability items listed above.</p>
+            </section>
+
+            <!-- Section 12: Indemnification -->
+            <section id="indemnification" class="terms-section">
+              <h2 data-i18n="terms.sections.indemnification.title">12. Indemnification</h2>
+
+              <p data-i18n="terms.sections.indemnification.intro">Participants agree to indemnify, defend, and hold harmless GoLynk from claims, damages, and costs arising from:</p>
+
+              <ul>
+                <li data-i18n="terms.sections.indemnification.items[0]">Regulatory violations by Participant</li>
+                <li data-i18n="terms.sections.indemnification.items[1]">False or inaccurate declarations</li>
+                <li data-i18n="terms.sections.indemnification.items[2]">Inadequate insurance coverage</li>
+                <li data-i18n="terms.sections.indemnification.items[3]">Breach of these Terms</li>
+                <li data-i18n="terms.sections.indemnification.items[4]">Negligent or unlawful conduct during service use</li>
+                <li data-i18n="terms.sections.indemnification.items[5]">Third-party claims related to Participant's goods or services</li>
+              </ul>
+
+              <p data-i18n="terms.sections.indemnification.procedure">GoLynk will notify Participant of any indemnifiable claim and cooperate in the defense. GoLynk is not liable for settlements made without Participant's written consent.</p>
+            </section>
+
+            <!-- Section 13: Termination -->
+            <section id="termination" class="terms-section">
+              <h2 data-i18n="terms.sections.termination.title">13. Termination</h2>
+
+              <h3 data-i18n="terms.sections.termination.by.title">Termination by Participant</h3>
+              <p data-i18n="terms.sections.termination.by.text">You may terminate your participation at any time by providing written notice to GoLynk. Termination is effective at the end of the current billing period or immediately, depending on the terms of your commercial agreement.</p>
+
+              <h3 data-i18n="terms.sections.termination.byGoLynk.title">Termination by GoLynk</h3>
+              <p data-i18n="terms.sections.termination.byGoLynk.text">GoLynk may suspend or terminate access for:</p>
+              <ul>
+                <li data-i18n="terms.sections.termination.grounds[0]">Material breach of these Terms</li>
+                <li data-i18n="terms.sections.termination.grounds[1]">Non-payment of invoices</li>
+                <li data-i18n="terms.sections.termination.grounds[2]">Regulatory violations</li>
+                <li data-i18n="terms.sections.termination.grounds[3]">Operational risk or safety concern</li>
+                <li data-i18n="terms.sections.termination.grounds[4]">Fraud or misrepresentation</li>
+              </ul>
+
+              <h3 data-i18n="terms.sections.termination.survival.title">Survival</h3>
+              <p data-i18n="terms.sections.termination.survival.text">The following survive termination: Intellectual Property, Limitation of Liability, Indemnification, Governing Law, and Confidentiality obligations.</p>
+            </section>
+
+            <!-- Section 14: Governing Law and Jurisdiction -->
+            <section id="governing-law" class="terms-section">
+              <h2 data-i18n="terms.sections.governingLaw.title">14. Governing Law and Jurisdiction</h2>
+
+              <p data-i18n="terms.sections.governingLaw.intro">These Terms and all matters relating to the Platform are governed exclusively by the laws of the Federal Republic of Germany, without reference to conflict of laws principles.</p>
+
+              <h3 data-i18n="terms.sections.governingLaw.jurisdiction.title">Jurisdiction</h3>
+              <p data-i18n="terms.sections.governingLaw.jurisdiction.text">All claims and disputes shall be subject to the exclusive jurisdiction of the courts of Aachen, Germany, where legally permissible. You consent to this jurisdiction and venue.</p>
+
+              <h3 data-i18n="terms.sections.governingLaw.arbitration.title">Language</h3>
+              <p data-i18n="terms.sections.governingLaw.arbitration.text">These Terms are valid in English and German. In case of discrepancy, the German version prevails.</p>
+            </section>
+
+            <!-- Section 15: Changes to These Terms -->
+            <section id="changes" class="terms-section">
+              <h2 data-i18n="terms.sections.changes.title">15. Changes to These Terms</h2>
+
+              <p data-i18n="terms.sections.changes.intro">GoLynk may update these Terms as the Platform evolves, services expand, or legal requirements change.</p>
+
+              <p data-i18n="terms.sections.changes.notice">Material changes will be communicated to Participants with reasonable advance notice where legally required. Continued use of the Platform after notice constitutes acceptance of revised Terms.</p>
+
+              <p data-i18n="terms.sections.changes.effective">The "Last updated" date at the beginning of this document reflects the most recent version. You are responsible for reviewing updates.</p>
+            </section>
+
+            <!-- Section 16: Contact -->
+            <section id="contact" class="terms-section">
+              <h2 data-i18n="terms.sections.contact.title">16. Contact</h2>
+
+              <p data-i18n="terms.sections.contact.intro">For questions, claims, or inquiries regarding these Terms:</p>
+
+              <address class="contact-info">
+                <p>
+                  <span data-i18n="terms.sections.contact.name">Ibrahim Ismail</span><br />
+                  <span data-i18n="terms.sections.contact.address">Kastanienweg 4</span><br />
+                  <span data-i18n="terms.sections.contact.city">52074 Aachen</span><br />
+                  <span data-i18n="terms.sections.contact.country">Germany</span>
+                </p>
+                <p>
+                  <a href="mailto:contact@golynk.com" data-i18n="terms.sections.contact.email">contact@golynk.com</a>
+                </p>
+              </address>
+
+              <div class="footer-links">
+                <p>
+                  <a href="/privacy.html" data-i18n="terms.sections.contact.links.privacy">Privacy Policy</a>
+                  <span class="separator">·</span>
+                  <a href="/cookies.html" data-i18n="terms.sections.contact.links.cookies">Cookie Policy</a>
+                  <span class="separator">·</span>
+                  <a href="/imprint.html" data-i18n="terms.sections.contact.links.imprint">Imprint / Legal Notice</a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="pt-8 overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12">
+        <div class="space-y-12">
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-5"
+          >
+            <!-- CTA Buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center"
+              data-animate="fade-up"
+              data-duration="800"
+            >
+              <a
+                href="./shipper.html#early-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-ship"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.startShipping"
+                  >Start Shipping</span
+                >
+              </a>
+              <a
+                href="./carrier.html#carrier-access"
+                class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              >
+                <svg class="size-6 me-2">
+                  <use href="#icon-delivery"></use>
+                </svg>
+                <span
+                  class="body-semibold text-text-on-dark"
+                  data-i18n="common.footer.cta.deliverWithUs"
+                  >Deliver with us</span
+                >
+              </a>
+            </div>
+            <!-- Newsletter Column -->
+            <div class="flex flex-col items-center lg:items-start gap-3">
+              <h3
+                class="body-semibold text-text-primary"
+                data-i18n="common.footer.newsletter.title"
+              >
+                Stay up to date
+              </h3>
+              <form class="flex gap-2" id="footer-newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
+                  class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
+                  data-i18n="common.footer.newsletter.button"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Main Footer Content -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="200"
+          >
+            <!-- Company Column -->
+            <div class="space-y-4">
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.company.title">Company</h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./about.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.about"
+                >
+                  About GoLynk
+                </a>
+                <a
+                  href="./index.html#how-it-works"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.howItWorks"
+                >
+                  How It Works
+                </a>
+                <a
+                  href="./index.html#industries"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.industries"
+                >
+                  Industries We Serve
+                </a>
+                <a
+                  href="./index.html#environment"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.sustainability"
+                >
+                  Sustainability & CO₂ Reporting
+                </a>
+                <a
+                  href="./careers.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.careers"
+                >
+                  Careers
+                </a>
+                <a
+                  href="./get-started.html#contact"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.company.links.contact"
+                >
+                  Contact
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Shippers Column -->
+            <div class="space-y-4">
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.shippers.title">For Shippers</h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./shipper.html#early-access"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="./pricing.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.pricing"
+                >
+                  Pricing
+                </a>
+                <a
+                  href="./api-docs.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.shippers.links.api"
+                >
+                  Integration & API Docs
+                </a>
+              </nav>
+            </div>
+
+            <!-- For Carriers Column -->
+            <div class="space-y-4">
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.carriers.title">For Carriers</h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./carrier.html#individual-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
+                >
+                  Join as Individual Mover
+                </a>
+                <a
+                  href="./carrier.html#fleet-form"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
+                >
+                  Fleet Operators
+                </a>
+                <a
+                  href="./carrier.html#operator-dashboard"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
+                >
+                  Operator Dashboard
+                </a>
+              </nav>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="space-y-4">
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.resources.title">Resources</h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./faq.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.faq"
+                >
+                  FAQ
+                </a>
+                <a
+                  href="./investor.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.resources.links.investors"
+                >
+                  Investor Relations
+                </a>
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="space-y-4">
+              <h3 class="body-semibold text-text-primary" data-i18n="common.footer.sections.legal.title">Legal</h3>
+              <nav class="flex flex-col space-y-3">
+                <a
+                  href="./privacy.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.privacy"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="./terms.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.terms"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="./cookies.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.cookies"
+                >
+                  Cookie Policy
+                </a>
+                <a
+                  href="./imprint.html"
+                  class="text-text-secondary text-small hover:text-primary transition-colors"
+                  data-i18n="common.footer.sections.legal.links.imprint"
+                >
+                  Imprint
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="border-t border-border-default pt-8 px-4 sm:px-6 md:px-8 lg:px-12"
+            data-animate="fade-up"
+            data-duration="800"
+            data-delay="400"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
+              <!-- Logo and Tagline -->
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="./">
+                  <img src="/golynk-website/assets/Logo-Cabx5owX.svg" alt="GoLynk" class="h-8" />
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.tagline"
+                >
+                  Orchestrating existing journeys into faster, greener
+                  logistics.
+                </p>
+              </div>
+
+              <!-- Social Links and Copyright -->
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-x"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="size-5">
+                    <use href="#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <p
+                  class="text-text-secondary text-small"
+                  data-i18n="common.footer.copyright"
+                >
+                  © GoLynk 2026. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

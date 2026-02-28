@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/go/assets/Logo-Cabx5owX.svg" />
+    <link rel="icon" type="image/svg+xml" href="/golynk-website/assets/Logo-Cabx5owX.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoLynk - Smart Delivery Network</title>
     <!-- SVG Icon Sprite (Inline) -->
@@ -229,8 +229,8 @@
     <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script type="module" crossorigin src="/go/assets/main-sGJQQKLX.js"></script>
-    <link rel="stylesheet" crossorigin href="/go/assets/main-DpLf-xw4.css">
+    <script type="module" crossorigin src="/golynk-website/assets/main-BNmtawfm.js"></script>
+    <link rel="stylesheet" crossorigin href="/golynk-website/assets/main-Dqf_vGYg.css">
   </head>
   <body>
     <main
@@ -251,7 +251,7 @@
             <div class="flex items-center justify-between">
               <!-- Logo -->
               <a href="./">
-                <img src="/go/assets/Logo-Cabx5owX.svg" alt="Logo" />
+                <img src="/golynk-website/assets/Logo-Cabx5owX.svg" alt="Logo" />
               </a>
 
               <!-- Desktop Navigation -->
@@ -271,13 +271,6 @@
                   data-i18n="common.navigation.carriers"
                 >
                   Carriers
-                </a>
-                <a
-                  href="#partners"
-                  class="text-xs font-semibold text-white/90 hover:text-white hover:underline transition-all"
-                  data-i18n="common.navigation.partners"
-                >
-                  Partners
                 </a>
                 <a
                   href="#technology"
@@ -304,12 +297,13 @@
 
               <!-- CTA Buttons & Language Selector (Desktop) -->
               <div class="hidden lg:flex flex-row items-center gap-2">
-                <button
+                <a
+                  href="./get-started.html"
                   class="px-5 py-2.5 primary-btn"
                   data-i18n="common.cta.startNow"
                 >
                   Start Now
-                </button>
+                </a>
 
                 <!-- Language Selector -->
                 <select
@@ -326,18 +320,6 @@
                     class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
                   >
                     DE
-                  </option>
-                  <option
-                    value="fr"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    FR
-                  </option>
-                  <option
-                    value="nl"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    NL
                   </option>
                 </select>
               </div>
@@ -359,18 +341,6 @@
                     class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
                   >
                     DE
-                  </option>
-                  <option
-                    value="fr"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    FR
-                  </option>
-                  <option
-                    value="nl"
-                    class="peer-checked:bg-primary-dark text-text-on-dark bg-primary"
-                  >
-                    NL
                   </option>
                 </select>
 
@@ -432,13 +402,6 @@
                 Carriers
               </a>
               <a
-                href="#partners"
-                class="mobile-nav-link"
-                data-i18n="common.navigation.partners"
-              >
-                Partners
-              </a>
-              <a
                 href="#technology"
                 class="mobile-nav-link"
                 data-i18n="common.navigation.glTech"
@@ -463,12 +426,13 @@
 
             <!-- Mobile CTA Buttons -->
             <div class="mobile-cta-buttons">
-              <button
-                class="w-full px-5 py-2.5 primary-btn"
+              <a
+                href="./get-started.html"
+                class="w-full px-5 py-2.5 primary-btn block text-center"
                 data-i18n="common.cta.startNow"
               >
                 Start Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -501,7 +465,7 @@
               data-delay="400"
             >
               <a
-                href="./shipper.html"
+                href="./shipper.html#early-access"
                 class="px-7 py-4 secondary-btn inline-flex items-center justify-center w-fit"
                 data-animate="fade-up"
                 data-duration="800"
@@ -511,12 +475,12 @@
                   <use href="#icon-ship"></use>
                 </svg>
                 <span data-i18n="home.hero.cta.shipWithGoLynk">
-                  Start a Pilot
+                  Ship with GoLynk
                 </span>
               </a>
 
               <a
-                href="./carrier.html"
+                href="./carrier.html#carrier-access"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
               >
                 <svg class="size-6 me-1">
@@ -527,11 +491,17 @@
                 </span>
               </a>
             </div>
-            <p class="text-text-on-dark/70 text-sm mt-6">
+            <p
+              class="text-text-on-dark/70 text-sm mt-6"
+              data-i18n="home.hero.subtitle1"
+            >
               For shippers: lower cost & predictable routing.<br />
               For carriers: monetize spare capacity.
             </p>
-            <p class="text-text-on-dark/70 text-sm mt-2">
+            <p
+              class="text-text-on-dark/70 text-sm mt-2"
+              data-i18n="home.hero.subtitle2"
+            >
               Built for businesses, fleets, individuals, and cities.
             </p>
           </div>
@@ -541,7 +511,7 @@
           class="absolute inset-0 size-full -z-1 after:absolute after:inset-0 after:size-full after:bg-overlay/70 rounded-lg overflow-hidden"
         >
           <img
-            src="/go/assets/hero-header-section-BZXC9iij.webp"
+            src="/golynk-website/assets/hero-header-section-BZXC9iij.webp"
             alt=""
             class="h-full w-full object-cover"
             fetchpriority="high"
@@ -596,22 +566,32 @@
       <section class="problem-section" id="problem">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto space-y-12">
           <header class="problem-header text-center">
-            <p class="text-primary text-lg font-semibold mb-4">
+            <p
+              class="text-primary text-lg font-semibold mb-4"
+              data-i18n="home.problem.label"
+            >
               The Hidden Cost of Movement
             </p>
             <h2
               class="h1 text-text-primary mb-6"
               data-animate="fade-up"
               data-duration="600"
+              data-i18n="home.problem.heading"
             >
               Billions of kilometers move every day. Efficiency does not.
             </h2>
-            <p class="text-text-secondary text-h3 max-w-3xl mx-auto">
+            <p
+              class="text-text-secondary text-h3 max-w-3xl mx-auto"
+              data-i18n="home.problem.description"
+            >
               Vehicles return empty. Cars travel with unused space. Ships sail
               below capacity. Routes overlap inefficiently. Emissions rise
               without purpose.
             </p>
-            <p class="text-text-secondary text-h3 max-w-3xl mx-auto mt-4">
+            <p
+              class="text-text-secondary text-h3 max-w-3xl mx-auto mt-4"
+              data-i18n="home.problem.description2"
+            >
               Unused movement is wasted money. And wasted carbon.
             </p>
           </header>
@@ -628,10 +608,16 @@
                   <use href="#icon-trolley-outline"></use>
                 </svg>
               </div>
-              <h3 class="problem-title text-text-primary">
+              <h3
+                class="problem-title text-text-primary"
+                data-i18n="home.problem.cards.underusedCapacity.title"
+              >
                 Underused Capacity
               </h3>
-              <p class="problem-text text-text-secondary">
+              <p
+                class="problem-text text-text-secondary"
+                data-i18n="home.problem.cards.underusedCapacity.text"
+              >
                 Two vehicles take the same corridor — both half empty.
               </p>
               <div class="problem-accent"></div>
@@ -648,8 +634,16 @@
                   <use href="#icon-trend-outline"></use>
                 </svg>
               </div>
-              <h3 class="problem-title text-text-primary">Fragmented Routes</h3>
-              <p class="problem-text text-text-secondary">
+              <h3
+                class="problem-title text-text-primary"
+                data-i18n="home.problem.cards.fragmentedRoutes.title"
+              >
+                Fragmented Routes
+              </h3>
+              <p
+                class="problem-text text-text-secondary"
+                data-i18n="home.problem.cards.fragmentedRoutes.text"
+              >
                 Shipments move as single trips instead of shared, coordinated
                 paths.
               </p>
@@ -667,10 +661,16 @@
                   <use href="#icon-leaf-outline"></use>
                 </svg>
               </div>
-              <h3 class="problem-title text-text-primary">
+              <h3
+                class="problem-title text-text-primary"
+                data-i18n="home.problem.cards.invisibleEmissions.title"
+              >
                 Invisible Emissions
               </h3>
-              <p class="problem-text text-text-secondary">
+              <p
+                class="problem-text text-text-secondary"
+                data-i18n="home.problem.cards.invisibleEmissions.text"
+              >
                 Emissions rise when overlap isn't captured and detours become
                 normal.
               </p>
@@ -683,7 +683,10 @@
       <!-- Solution Band Section -->
       <section class="solution-band" id="solution">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto">
-          <h2 class="h2 text-primary text-center mb-12">
+          <h2
+            class="h2 text-primary text-center mb-12"
+            data-i18n="home.solution.heading"
+          >
             Coordination at Infrastructure Scale
           </h2>
           <div class="solution-content">
@@ -692,25 +695,34 @@
               data-animate="fade-up"
               data-duration="600"
             >
-              <h2 class="text-text-primary">
+              <h2
+                class="text-text-primary"
+                data-i18n="home.solution.subheading"
+              >
                 Logistics Isn't Broken. Coordination Is.
               </h2>
-              <p class="text-text-secondary mt-6">
+              <p
+                class="text-text-secondary mt-6"
+                data-i18n="home.solution.text1"
+              >
                 GoLynk does not add more vehicles to the road. It connects the
                 ones already moving.
               </p>
               <div class="text-text-secondary space-y-2 mt-4">
-                <p>
+                <p data-i18n="home.solution.text2">
                   Existing routes become structured capacity. Fleets integrate
                   spare space and backhaul. Microhubs enable verified handoffs
                   at natural intersections. Businesses connect through dashboard
                   or API.
                 </p>
-                <p>
+                <p data-i18n="home.solution.text3">
                   Movement becomes coordinated. Efficiency becomes structural.
                 </p>
               </div>
-              <p class="text-text-secondary mt-6">
+              <p
+                class="text-text-secondary mt-6"
+                data-i18n="home.solution.text4"
+              >
                 Instead of adding vehicles, we make existing movement behave
                 like one synchronized system.
               </p>
@@ -730,19 +742,31 @@
                       <svg class="w-6 h-6">
                         <use href="#icon-trolley-outline"></use>
                       </svg>
-                      <span class="stack-label">Carriers</span>
+                      <span
+                        class="stack-label"
+                        data-i18n="home.solution.stack.carriers"
+                        >Carriers</span
+                      >
                     </div>
                     <div class="stack-icon">
                       <svg class="w-6 h-6">
                         <use href="#icon-delivery"></use>
                       </svg>
-                      <span class="stack-label">Shippers</span>
+                      <span
+                        class="stack-label"
+                        data-i18n="home.solution.stack.shippers"
+                        >Shippers</span
+                      >
                     </div>
                     <div class="stack-icon">
                       <svg class="w-6 h-6">
                         <use href="#icon-hub"></use>
                       </svg>
-                      <span class="stack-label">Hubs</span>
+                      <span
+                        class="stack-label"
+                        data-i18n="home.solution.stack.hubs"
+                        >Hubs</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -753,8 +777,18 @@
                 <!-- Middle: GoLynk Engine -->
                 <div class="stack-band stack-band-center">
                   <div class="engine-card">
-                    <h3 class="engine-title">GoLynk Engine</h3>
-                    <p class="engine-subtitle">Real-time coordination</p>
+                    <h3
+                      class="engine-title"
+                      data-i18n="home.solution.stack.engine"
+                    >
+                      GoLynk Engine
+                    </h3>
+                    <p
+                      class="engine-subtitle"
+                      data-i18n="home.solution.stack.engineSubtitle"
+                    >
+                      Real-time coordination
+                    </p>
                   </div>
                 </div>
 
@@ -768,19 +802,31 @@
                       <svg class="w-6 h-6">
                         <use href="#icon-maps-location"></use>
                       </svg>
-                      <span class="stack-label">Tracking</span>
+                      <span
+                        class="stack-label"
+                        data-i18n="home.solution.stack.tracking"
+                        >Tracking</span
+                      >
                     </div>
                     <div class="stack-icon">
                       <svg class="w-6 h-6">
                         <use href="#icon-leaf-outline"></use>
                       </svg>
-                      <span class="stack-label">Carbon</span>
+                      <span
+                        class="stack-label"
+                        data-i18n="home.solution.stack.carbon"
+                        >Carbon</span
+                      >
                     </div>
                     <div class="stack-icon">
                       <svg class="w-6 h-6">
                         <use href="#icon-money-saving-jar"></use>
                       </svg>
-                      <span class="stack-label">Savings</span>
+                      <span
+                        class="stack-label"
+                        data-i18n="home.solution.stack.savings"
+                        >Savings</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -799,14 +845,18 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <p class="text-primary text-lg font-semibold mb-0">
+            <p
+              class="text-primary text-lg font-semibold mb-0"
+              data-i18n="home.fullStack.label"
+            >
               The Full Stack
             </p>
-            <h2 class="h1 text-text-primary">
+            <h2 class="h1 text-text-primary" data-i18n="home.fullStack.heading">
               One Network Across Every Distance.
             </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="home.fullStack.description"
             >
               GoLynk starts with last-mile and mid-mile coordination—then
               expands across larger flows as the network grows.
@@ -823,22 +873,50 @@
             <!-- Step 1: Collection -->
             <div class="stepper-step">
               <div class="stepper-circle">1</div>
-              <h3 class="stepper-title">Collection</h3>
-              <p class="stepper-text">Pickup from stores and warehouses.</p>
+              <h3
+                class="stepper-title"
+                data-i18n="home.fullStack.steps.collection.title"
+              >
+                Collection
+              </h3>
+              <p
+                class="stepper-text"
+                data-i18n="home.fullStack.steps.collection.text"
+              >
+                Pickup from stores and warehouses.
+              </p>
             </div>
 
             <!-- Step 2: Last Mile -->
             <div class="stepper-step">
               <div class="stepper-circle">2</div>
-              <h3 class="stepper-title">Last Mile</h3>
-              <p class="stepper-text">Fast urban delivery for B2C and C2C.</p>
+              <h3
+                class="stepper-title"
+                data-i18n="home.fullStack.steps.lastMile.title"
+              >
+                Last Mile
+              </h3>
+              <p
+                class="stepper-text"
+                data-i18n="home.fullStack.steps.lastMile.text"
+              >
+                Fast urban delivery for B2C and C2C.
+              </p>
             </div>
 
             <!-- Step 3: Mid-Mile -->
             <div class="stepper-step">
               <div class="stepper-circle">3</div>
-              <h3 class="stepper-title">Mid-Mile</h3>
-              <p class="stepper-text">
+              <h3
+                class="stepper-title"
+                data-i18n="home.fullStack.steps.midMile.title"
+              >
+                Mid-Mile
+              </h3>
+              <p
+                class="stepper-text"
+                data-i18n="home.fullStack.steps.midMile.text"
+              >
                 Transfers between districts via microhubs.
               </p>
             </div>
@@ -846,15 +924,33 @@
             <!-- Step 4: Freight & Bulk -->
             <div class="stepper-step">
               <div class="stepper-circle">4</div>
-              <h3 class="stepper-title">Freight & Bulk</h3>
-              <p class="stepper-text">Larger loads and recurring B2B routes.</p>
+              <h3
+                class="stepper-title"
+                data-i18n="home.fullStack.steps.freightBulk.title"
+              >
+                Freight & Bulk
+              </h3>
+              <p
+                class="stepper-text"
+                data-i18n="home.fullStack.steps.freightBulk.text"
+              >
+                Larger loads and recurring B2B routes.
+              </p>
             </div>
 
             <!-- Step 5: Long-Haul -->
             <div class="stepper-step">
               <div class="stepper-circle">5</div>
-              <h3 class="stepper-title">Long-Haul</h3>
-              <p class="stepper-text">
+              <h3
+                class="stepper-title"
+                data-i18n="home.fullStack.steps.longHaul.title"
+              >
+                Long-Haul
+              </h3>
+              <p
+                class="stepper-text"
+                data-i18n="home.fullStack.steps.longHaul.text"
+              >
                 Added gradually as corridor density grows.
               </p>
             </div>
@@ -862,7 +958,10 @@
 
           <!-- Closing Line -->
           <div class="text-center">
-            <p class="text-text-secondary text-h3">
+            <p
+              class="text-text-secondary text-h3"
+              data-i18n="home.fullStack.closing"
+            >
               Same orchestration layer. More modes over time.
             </p>
           </div>
@@ -870,7 +969,7 @@
       </section>
 
       <!-- How It Works: Smart Delivery Section -->
-      <section class="my-section">
+      <section id="how-it-works" class="my-section">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto space-y-12">
           <!-- Section Header -->
           <div
@@ -878,14 +977,21 @@
             data-animate="fade-up"
             data-duration="800"
           >
-            <p class="text-primary text-lg font-semibold mb-0">
+            <p
+              class="text-primary text-lg font-semibold mb-0"
+              data-i18n="home.howItWorks.label"
+            >
               How the Network Operates
             </p>
-            <h2 class="h1 text-text-primary">
+            <h2
+              class="h1 text-text-primary"
+              data-i18n="home.howItWorks.heading"
+            >
               A Shipment Becomes a Coordinated Journey.
             </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="home.howItWorks.description"
             >
               Every delivery is structured, composed, and verified across
               existing movement — not isolated vehicles.
@@ -902,8 +1008,13 @@
             <!-- Step 1 -->
             <div class="network-step-card">
               <div class="step-circle">1</div>
-              <h3 class="step-title">Capacity Is Published</h3>
-              <p class="step-description">
+              <h3 class="step-title" data-i18n="home.howItWorks.steps.0.title">
+                Capacity Is Published
+              </h3>
+              <p
+                class="step-description"
+                data-i18n="home.howItWorks.steps.0.text"
+              >
                 Walkers, drivers, fleets, and microhubs publish available
                 capacity across routes they are already operating.
               </p>
@@ -912,8 +1023,13 @@
             <!-- Step 2 -->
             <div class="network-step-card">
               <div class="step-circle">2</div>
-              <h3 class="step-title">The Route Is Chained</h3>
-              <p class="step-description">
+              <h3 class="step-title" data-i18n="home.howItWorks.steps.1.title">
+                The Route Is Chained
+              </h3>
+              <p
+                class="step-description"
+                data-i18n="home.howItWorks.steps.1.text"
+              >
                 Shipments are structured into single or multi-step paths. The
                 system aligns them with overlapping routes while minimizing
                 detours and delays.
@@ -923,8 +1039,13 @@
             <!-- Step 3 -->
             <div class="network-step-card">
               <div class="step-circle">3</div>
-              <h3 class="step-title">Handoffs Are Verified</h3>
-              <p class="step-description">
+              <h3 class="step-title" data-i18n="home.howItWorks.steps.2.title">
+                Handoffs Are Verified
+              </h3>
+              <p
+                class="step-description"
+                data-i18n="home.howItWorks.steps.2.text"
+              >
                 Every transfer is tracked, verified, and documented — from
                 origin to final recipient.
               </p>
@@ -933,7 +1054,10 @@
 
           <!-- Closing Line -->
           <div class="text-center mt-16">
-            <p class="text-text-secondary text-h3 font-medium">
+            <p
+              class="text-text-secondary text-h3 font-medium"
+              data-i18n="home.howItWorks.closing"
+            >
               Simple on the surface. Structured beneath.
             </p>
           </div>
@@ -943,7 +1067,8 @@
 
       <!-- For Everyone Section -->
       <section
-        id="for-everyone"
+        id="industries"
+        data-industries-alias="for-everyone"
         class="my-section bg-bg-tertiary -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 xl:-mx-10 p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10"
       >
         <!-- Section Header -->
@@ -952,24 +1077,38 @@
           data-animate="fade-up"
           data-duration="800"
         >
-          <p class="text-primary text-lg font-semibold mb-0">For Everyone</p>
-          <h2 class="h1 text-text-primary">
+          <p
+            class="text-primary text-lg font-semibold mb-0"
+            data-i18n="home.forEveryone.label"
+          >
+            For Everyone
+          </p>
+          <h2 class="h1 text-text-primary" data-i18n="home.forEveryone.heading">
             Built for Every Role in the Network
           </h2>
-          <p class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto">
+          <p
+            class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+            data-i18n="home.forEveryone.description"
+          >
             A single orchestration layer across last mile, mid mile, and the
             microhubs in between.
           </p>
           <div
             class="text-text-secondary/70 text-sm max-9/10 md:max-w-4/5 mx-auto mt-4 space-y-2"
           >
-            <div class="font-semibold text-text-secondary">
+            <div
+              class="font-semibold text-text-secondary"
+              data-i18n="home.forEveryone.whoPowersLabel"
+            >
               Who powers the network:
             </div>
-            <p>Individuals • Fleets • Microhubs • Cities &amp; Enterprises</p>
+            <p data-i18n="home.forEveryone.whoPowersList">
+              Individuals • Fleets • Microhubs • Cities &amp; Enterprises
+            </p>
           </div>
           <p
             class="text-text-secondary/60 text-xs max-9/10 md:max-w-4/5 mx-auto mt-3"
+            data-i18n="home.forEveryone.verified"
           >
             Verified. Insured. Tracked end-to-end.
           </p>
@@ -985,6 +1124,7 @@
                 data-tab="shippers"
                 role="tab"
                 aria-selected="true"
+                data-i18n="home.forEveryone.tabs.shippers"
               >
                 Shippers
               </button>
@@ -993,6 +1133,7 @@
                 data-tab="carriers"
                 role="tab"
                 aria-selected="false"
+                data-i18n="home.forEveryone.tabs.carriers"
               >
                 Carriers
               </button>
@@ -1001,6 +1142,7 @@
                 data-tab="microhubs"
                 role="tab"
                 aria-selected="false"
+                data-i18n="home.forEveryone.tabs.microhubs"
               >
                 Microhubs
               </button>
@@ -1009,6 +1151,7 @@
                 data-tab="enterprises"
                 role="tab"
                 aria-selected="false"
+                data-i18n="home.forEveryone.tabs.enterprises"
               >
                 Cities &amp; Enterprises
               </button>
@@ -1024,49 +1167,69 @@
               >
                 <div class="for-everyone-panel-grid">
                   <div class="for-everyone-text">
-                    <h3 class="text-2xl font-semibold text-text-primary mb-3">
+                    <h3
+                      class="text-2xl font-semibold text-text-primary mb-3"
+                      data-i18n="home.forEveryone.shippers.heading"
+                    >
                       For E-Commerce, Retail &amp; B2B Networks
                     </h3>
-                    <p class="text-text-secondary text-base mb-5">
+                    <p
+                      class="text-text-secondary text-base mb-5"
+                      data-i18n="home.forEveryone.shippers.description"
+                    >
                       Lower delivery cost through shared capacity. Scale without
                       adding infrastructure.
                     </p>
                     <ul class="space-y-2 mb-5 text-sm text-text-secondary">
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Multi-step routing</span>
+                        <span data-i18n="home.forEveryone.shippers.features.0"
+                          >Multi-step routing</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Dashboard or API integration</span>
+                        <span data-i18n="home.forEveryone.shippers.features.1"
+                          >Dashboard or API integration</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Proof of delivery &amp; real-time tracking</span>
+                        <span data-i18n="home.forEveryone.shippers.features.2"
+                          >Proof of delivery &amp; real-time tracking</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Carbon reporting</span>
+                        <span data-i18n="home.forEveryone.shippers.features.3"
+                          >Carbon reporting</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Audit-ready records</span>
+                        <span data-i18n="home.forEveryone.shippers.features.4"
+                          >Audit-ready records</span
+                        >
                       </li>
                     </ul>
-                    <p class="text-xs text-text-secondary/70 mb-5">
+                    <p
+                      class="text-xs text-text-secondary/70 mb-5"
+                      data-i18n="home.forEveryone.shippers.trustLayer"
+                    >
                       <span class="font-semibold">Trust layer:</span> KYC •
                       Insurance • POD • Audit trail
                     </p>
                     <a
-                      href="/shipper.html"
+                      href="./get-started.html#shipper"
                       class="px-6 py-3 primary-btn inline-flex items-center justify-center text-sm"
+                      data-i18n="home.forEveryone.shippers.cta"
                     >
-                      Start a Pilot
+                      Ship with GoLynk
                     </a>
                   </div>
                   <div class="for-everyone-image">
                     <img
-                      src="/go/assets/stakeholder-shipper.png-CEOkL75F.png"
+                      src="/golynk-website/assets/stakeholder-shipper.png-CEOkL75F.png"
                       alt="Shippers"
                       class="w-full h-auto rounded-lg"
                     />
@@ -1082,49 +1245,69 @@
               >
                 <div class="for-everyone-panel-grid">
                   <div class="for-everyone-text">
-                    <h3 class="text-2xl font-semibold text-text-primary mb-3">
+                    <h3
+                      class="text-2xl font-semibold text-text-primary mb-3"
+                      data-i18n="home.forEveryone.carriers.heading"
+                    >
                       For Walkers, Drivers &amp; Fleet Operators
                     </h3>
-                    <p class="text-text-secondary text-base mb-5">
+                    <p
+                      class="text-text-secondary text-base mb-5"
+                      data-i18n="home.forEveryone.carriers.description"
+                    >
                       Integrate existing routes into a structured network and
                       monetize spare capacity.
                     </p>
                     <ul class="space-y-2 mb-5 text-sm text-text-secondary">
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Monetize spare capacity</span>
+                        <span data-i18n="home.forEveryone.carriers.features.0"
+                          >Monetize spare capacity</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Fill return trips automatically</span>
+                        <span data-i18n="home.forEveryone.carriers.features.1"
+                          >Fill return trips automatically</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Adaptive pricing</span>
+                        <span data-i18n="home.forEveryone.carriers.features.2"
+                          >Adaptive pricing</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Transparent payouts</span>
+                        <span data-i18n="home.forEveryone.carriers.features.3"
+                          >Transparent payouts</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Carbon incentives</span>
+                        <span data-i18n="home.forEveryone.carriers.features.4"
+                          >Carbon incentives</span
+                        >
                       </li>
                     </ul>
-                    <p class="text-xs text-text-secondary/70 mb-5">
+                    <p
+                      class="text-xs text-text-secondary/70 mb-5"
+                      data-i18n="home.forEveryone.carriers.trustLayer"
+                    >
                       <span class="font-semibold">Trust layer:</span> Verified
                       participation • Insurance pathways • Secure handoffs
                     </p>
                     <a
-                      href="./carrier.html"
+                      href="./get-started.html#role-carrier"
                       class="px-6 py-3 primary-btn inline-flex items-center justify-center text-sm"
+                      data-i18n="home.forEveryone.carriers.cta"
                     >
                       Join as Carrier
                     </a>
                   </div>
                   <div class="for-everyone-image">
                     <img
-                      src="/go/assets/stakeholder-carrier.png-DZZEp2yp.png"
+                      src="/golynk-website/assets/stakeholder-carrier.png-DZZEp2yp.png"
                       alt="Carriers"
                       class="w-full h-auto rounded-lg"
                     />
@@ -1140,45 +1323,63 @@
               >
                 <div class="for-everyone-panel-grid">
                   <div class="for-everyone-text">
-                    <h3 class="text-2xl font-semibold text-text-primary mb-3">
+                    <h3
+                      class="text-2xl font-semibold text-text-primary mb-3"
+                      data-i18n="home.forEveryone.microhubs.heading"
+                    >
                       For Cafés, Shops &amp; Lockers
                     </h3>
-                    <p class="text-text-secondary text-base mb-5">
+                    <p
+                      class="text-text-secondary text-base mb-5"
+                      data-i18n="home.forEveryone.microhubs.description"
+                    >
                       Enable handoffs and consolidation at natural route
                       intersections.
                     </p>
                     <ul class="space-y-2 mb-5 text-sm text-text-secondary">
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Structured drop-off and pickup</span>
+                        <span data-i18n="home.forEveryone.microhubs.features.0"
+                          >Structured drop-off and pickup</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Reduced duplicate trips</span>
+                        <span data-i18n="home.forEveryone.microhubs.features.1"
+                          >Reduced duplicate trips</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Fewer failed deliveries</span>
+                        <span data-i18n="home.forEveryone.microhubs.features.2"
+                          >Fewer failed deliveries</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Minimal operational overhead</span>
+                        <span data-i18n="home.forEveryone.microhubs.features.3"
+                          >Minimal operational overhead</span
+                        >
                       </li>
                     </ul>
-                    <p class="text-xs text-text-secondary/70 mb-5">
+                    <p
+                      class="text-xs text-text-secondary/70 mb-5"
+                      data-i18n="home.forEveryone.microhubs.trustLayer"
+                    >
                       <span class="font-semibold">Trust layer:</span> Scan-based
                       handoffs • Insurance coverage • Audit logs
                     </p>
                     <a
-                      href="#contact"
+                      href="./get-started.html#role-microhub"
                       class="px-6 py-3 primary-btn inline-flex items-center justify-center text-sm"
+                      data-i18n="home.forEveryone.microhubs.cta"
                     >
                       Host a Microhub
                     </a>
                   </div>
                   <div class="for-everyone-image">
                     <img
-                      src="/go/assets/stakeholder-microhub.png-BLfIj73h.png"
+                      src="/golynk-website/assets/stakeholder-microhub.png-BLfIj73h.png"
                       alt="Microhubs"
                       class="w-full h-auto rounded-lg"
                     />
@@ -1194,45 +1395,67 @@
               >
                 <div class="for-everyone-panel-grid">
                   <div class="for-everyone-text">
-                    <h3 class="text-2xl font-semibold text-text-primary mb-3">
+                    <h3
+                      class="text-2xl font-semibold text-text-primary mb-3"
+                      data-i18n="home.forEveryone.enterprises.heading"
+                    >
                       For Urban Planners &amp; Institutional Networks
                     </h3>
-                    <p class="text-text-secondary text-base mb-5">
+                    <p
+                      class="text-text-secondary text-base mb-5"
+                      data-i18n="home.forEveryone.enterprises.description"
+                    >
                       Improve logistics flow without increasing vehicles while
                       maintaining compliance.
                     </p>
                     <ul class="space-y-2 mb-5 text-sm text-text-secondary">
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Full-stack visibility</span>
+                        <span
+                          data-i18n="home.forEveryone.enterprises.features.0"
+                          >Full-stack visibility</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Compliance-ready carbon reporting</span>
+                        <span
+                          data-i18n="home.forEveryone.enterprises.features.1"
+                          >Compliance-ready carbon reporting</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Secure document logistics</span>
+                        <span
+                          data-i18n="home.forEveryone.enterprises.features.2"
+                          >Secure document logistics</span
+                        >
                       </li>
                       <li class="flex items-start gap-2">
                         <span class="text-primary font-bold">•</span>
-                        <span>Planning dashboards &amp; API access</span>
+                        <span
+                          data-i18n="home.forEveryone.enterprises.features.3"
+                          >Planning dashboards &amp; API access</span
+                        >
                       </li>
                     </ul>
-                    <p class="text-xs text-text-secondary/70 mb-5">
+                    <p
+                      class="text-xs text-text-secondary/70 mb-5"
+                      data-i18n="home.forEveryone.enterprises.trustLayer"
+                    >
                       <span class="font-semibold">Trust layer:</span>
                       Chain-of-custody • SLA-backed operations
                     </p>
                     <a
-                      href="#contact"
+                      href="./get-started.html#role-institutional"
                       class="px-6 py-3 primary-btn inline-flex items-center justify-center text-sm"
+                      data-i18n="home.forEveryone.enterprises.cta"
                     >
                       Partner with GoLynk
                     </a>
                   </div>
                   <div class="for-everyone-image">
                     <img
-                      src="/go/assets/stakeholder-enterprise.png-DdHDjXwv.png"
+                      src="/golynk-website/assets/stakeholder-enterprise.png-DdHDjXwv.png"
                       alt="Enterprises"
                       class="w-full h-auto rounded-lg"
                     />
@@ -1289,7 +1512,10 @@
       <!-- Enterprise & Integration Section -->
       <section class="solution-band">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto">
-          <h2 class="h2 text-primary text-center mb-12">
+          <h2
+            class="h2 text-primary text-center mb-12"
+            data-i18n="home.enterprise.heading"
+          >
             Programmable Logistics
           </h2>
           <div
@@ -1299,30 +1525,75 @@
           >
             <!-- Left: Text Content -->
             <div class="solution-text">
-              <h2 class="text-text-primary">
+              <h2
+                class="text-text-primary"
+                data-i18n="home.enterprise.subheading"
+              >
                 Connect Once. Access a Growing Network.
               </h2>
-              <p class="text-text-secondary mt-6">
+              <p
+                class="text-text-secondary mt-6"
+                data-i18n="home.enterprise.text1"
+              >
                 Businesses integrate with GoLynk through a real-time dashboard
                 or direct API.
               </p>
-              <p class="text-text-secondary mt-4">
+              <p
+                class="text-text-secondary mt-4"
+                data-i18n="home.enterprise.text2"
+              >
                 Shipments can be created, tracked, consolidated, and analyzed
                 within a single operational layer.
               </p>
-              <p class="text-text-secondary mt-4">
+              <p
+                class="text-text-secondary mt-4"
+                data-i18n="home.enterprise.text3"
+              >
                 Whether moving individual parcels, recurring retail flows, B2B
                 shipments, or institutional documents — the system adapts.
               </p>
               <ul class="text-text-secondary space-y-2 mt-6 ml-4">
-                <li>• Real-time shipment visibility</li>
-                <li>• Multi-step journey tracking</li>
-                <li>• Consolidation and collection tools</li>
-                <li>• Dynamic pricing options</li>
-                <li>• Carbon reporting</li>
-                <li>• Audit-ready records</li>
+                <li>
+                  •
+                  <span data-i18n="home.enterprise.features.0"
+                    >Real-time shipment visibility</span
+                  >
+                </li>
+                <li>
+                  •
+                  <span data-i18n="home.enterprise.features.1"
+                    >Multi-step journey tracking</span
+                  >
+                </li>
+                <li>
+                  •
+                  <span data-i18n="home.enterprise.features.2"
+                    >Consolidation and collection tools</span
+                  >
+                </li>
+                <li>
+                  •
+                  <span data-i18n="home.enterprise.features.3"
+                    >Dynamic pricing options</span
+                  >
+                </li>
+                <li>
+                  •
+                  <span data-i18n="home.enterprise.features.4"
+                    >Carbon reporting</span
+                  >
+                </li>
+                <li>
+                  •
+                  <span data-i18n="home.enterprise.features.5"
+                    >Audit-ready records</span
+                  >
+                </li>
               </ul>
-              <p class="text-text-secondary mt-6 font-medium">
+              <p
+                class="text-text-secondary mt-6 font-medium"
+                data-i18n="home.enterprise.closing"
+              >
                 One integration. Expanding reach.
               </p>
             </div>
@@ -1332,13 +1603,19 @@
               <!-- Top Bar -->
               <div class="orchestration-top-bar">
                 <div class="top-bar-left">
-                  <span class="shipment-label">Shipment</span>
+                  <span
+                    class="shipment-label"
+                    data-i18n="home.enterprise.orchestration.shipmentLabel"
+                    >Shipment</span
+                  >
                   <span class="shipment-id">#A48291</span>
                 </div>
                 <div class="top-bar-right">
                   <span class="live-indicator">
                     <span class="live-dot"></span>
-                    Orchestrating
+                    <span data-i18n="home.enterprise.orchestration.live"
+                      >Orchestrating</span
+                    >
                   </span>
                 </div>
               </div>
@@ -1346,17 +1623,45 @@
               <!-- Summary Chips Row -->
               <div class="summary-chips-row">
                 <div class="summary-chip">
-                  <span class="chip-name">Service</span>
-                  <span class="chip-value-small">Standard</span>
+                  <span
+                    class="chip-name"
+                    data-i18n="home.enterprise.orchestration.chips.serviceLabel"
+                    >Service</span
+                  >
+                  <span
+                    class="chip-value-small"
+                    data-i18n="home.enterprise.orchestration.chips.serviceValue"
+                    >Standard</span
+                  >
                 </div>
                 <div class="summary-chip">
-                  <span class="chip-name">SLA</span>
-                  <span class="chip-value-small">On Track</span>
-                  <span class="chip-sublabel">Estimated arrival: 16:40</span>
+                  <span
+                    class="chip-name"
+                    data-i18n="home.enterprise.orchestration.chips.slaLabel"
+                    >SLA</span
+                  >
+                  <span
+                    class="chip-value-small"
+                    data-i18n="home.enterprise.orchestration.chips.slaValue"
+                    >On Track</span
+                  >
+                  <span
+                    class="chip-sublabel"
+                    data-i18n="home.enterprise.orchestration.chips.slaSub"
+                    >Estimated arrival: 16:40</span
+                  >
                 </div>
                 <div class="summary-chip">
-                  <span class="chip-name">Routing</span>
-                  <span class="chip-value-small">Multi-hop</span>
+                  <span
+                    class="chip-name"
+                    data-i18n="home.enterprise.orchestration.chips.routingLabel"
+                    >Routing</span
+                  >
+                  <span
+                    class="chip-value-small"
+                    data-i18n="home.enterprise.orchestration.chips.routingValue"
+                    >Multi-hop</span
+                  >
                 </div>
               </div>
 
@@ -1369,55 +1674,125 @@
                 <div class="timeline-step">
                   <div class="step-node"></div>
                   <div class="step-info">
-                    <div class="step-main">Origin</div>
-                    <div class="step-desc">Warehouse</div>
+                    <div
+                      class="step-main"
+                      data-i18n="home.enterprise.orchestration.timeline.0.main"
+                    >
+                      Origin
+                    </div>
+                    <div
+                      class="step-desc"
+                      data-i18n="home.enterprise.orchestration.timeline.0.desc"
+                    >
+                      Warehouse
+                    </div>
                   </div>
                   <div class="step-badge">
-                    <span class="badge-text">Ready</span>
+                    <span
+                      class="badge-text"
+                      data-i18n="home.enterprise.orchestration.timeline.0.badge"
+                      >Ready</span
+                    >
                   </div>
                 </div>
 
                 <div class="timeline-step">
                   <div class="step-node"></div>
                   <div class="step-info">
-                    <div class="step-main">Bike Carrier</div>
-                    <div class="step-desc">First leg</div>
+                    <div
+                      class="step-main"
+                      data-i18n="home.enterprise.orchestration.timeline.1.main"
+                    >
+                      Bike Carrier
+                    </div>
+                    <div
+                      class="step-desc"
+                      data-i18n="home.enterprise.orchestration.timeline.1.desc"
+                    >
+                      First leg
+                    </div>
                   </div>
                   <div class="step-badge">
-                    <span class="badge-text">Matched</span>
+                    <span
+                      class="badge-text"
+                      data-i18n="home.enterprise.orchestration.timeline.1.badge"
+                      >Matched</span
+                    >
                   </div>
                 </div>
 
                 <div class="timeline-step">
                   <div class="step-node"></div>
                   <div class="step-info">
-                    <div class="step-main">Microhub</div>
-                    <div class="step-desc">Transfer point</div>
+                    <div
+                      class="step-main"
+                      data-i18n="home.enterprise.orchestration.timeline.2.main"
+                    >
+                      Microhub
+                    </div>
+                    <div
+                      class="step-desc"
+                      data-i18n="home.enterprise.orchestration.timeline.2.desc"
+                    >
+                      Transfer point
+                    </div>
                   </div>
                   <div class="step-badge">
-                    <span class="badge-text">Verified</span>
+                    <span
+                      class="badge-text"
+                      data-i18n="home.enterprise.orchestration.timeline.2.badge"
+                      >Verified</span
+                    >
                   </div>
                 </div>
 
                 <div class="timeline-step active">
                   <div class="step-node"></div>
                   <div class="step-info">
-                    <div class="step-main">Van Carrier</div>
-                    <div class="step-desc">Active leg</div>
+                    <div
+                      class="step-main"
+                      data-i18n="home.enterprise.orchestration.timeline.3.main"
+                    >
+                      Van Carrier
+                    </div>
+                    <div
+                      class="step-desc"
+                      data-i18n="home.enterprise.orchestration.timeline.3.desc"
+                    >
+                      Active leg
+                    </div>
                   </div>
                   <div class="step-badge active">
-                    <span class="badge-text">In Transit</span>
+                    <span
+                      class="badge-text"
+                      data-i18n="home.enterprise.orchestration.timeline.3.badge"
+                      >In Transit</span
+                    >
                   </div>
                 </div>
 
                 <div class="timeline-step">
                   <div class="step-node"></div>
                   <div class="step-info">
-                    <div class="step-main">Destination</div>
-                    <div class="step-desc">Scheduled</div>
+                    <div
+                      class="step-main"
+                      data-i18n="home.enterprise.orchestration.timeline.4.main"
+                    >
+                      Destination
+                    </div>
+                    <div
+                      class="step-desc"
+                      data-i18n="home.enterprise.orchestration.timeline.4.desc"
+                    >
+                      Scheduled
+                    </div>
                   </div>
                   <div class="step-badge">
-                    <span class="badge-text">Pending</span>
+                    <span
+                      class="badge-text"
+                      data-i18n="home.enterprise.orchestration.timeline.4.badge"
+                      >Pending</span
+                    >
                   </div>
                 </div>
               </div>
@@ -1426,11 +1801,17 @@
               <div class="event-log">
                 <div class="event-item">
                   <span class="event-dot">•</span>
-                  <span class="event-text">Microhub handoff verified</span>
+                  <span
+                    class="event-text"
+                    data-i18n="home.enterprise.orchestration.events.0"
+                    >Microhub handoff verified</span
+                  >
                 </div>
                 <div class="event-item">
                   <span class="event-dot">•</span>
-                  <span class="event-text"
+                  <span
+                    class="event-text"
+                    data-i18n="home.enterprise.orchestration.events.1"
                     >Next leg locked — Van carrier assigned</span
                   >
                 </div>
@@ -1439,24 +1820,53 @@
               <!-- Footer Indicators -->
               <div class="orchestration-footer">
                 <div class="indicator-chip">
-                  <span class="chip-label">Carbon Impact</span>
-                  <span class="chip-value">−18% CO₂</span>
-                  <span class="chip-subtext"
+                  <span
+                    class="chip-label"
+                    data-i18n="home.enterprise.orchestration.footer.carbonLabel"
+                    >Carbon Impact</span
+                  >
+                  <span
+                    class="chip-value"
+                    data-i18n="home.enterprise.orchestration.footer.carbonValue"
+                    >−18% CO₂</span
+                  >
+                  <span
+                    class="chip-subtext"
+                    data-i18n="home.enterprise.orchestration.footer.carbonSub"
                     >Compared to single-trip delivery</span
                   >
                 </div>
                 <div class="indicator-chip">
-                  <span class="chip-label">Chain of Custody</span>
-                  <span class="chip-value">Active</span>
+                  <span
+                    class="chip-label"
+                    data-i18n="home.enterprise.orchestration.footer.custodyLabel"
+                    >Chain of Custody</span
+                  >
+                  <span
+                    class="chip-value"
+                    data-i18n="home.enterprise.orchestration.footer.custodyValue"
+                    >Active</span
+                  >
                 </div>
                 <div class="indicator-chip">
-                  <span class="chip-label">POD</span>
-                  <span class="chip-value">Required</span>
+                  <span
+                    class="chip-label"
+                    data-i18n="home.enterprise.orchestration.footer.podLabel"
+                    >POD</span
+                  >
+                  <span
+                    class="chip-value"
+                    data-i18n="home.enterprise.orchestration.footer.podValue"
+                    >Required</span
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <p class="text-text-secondary text-sm mt-8 text-center">
+          <p
+            class="text-text-secondary text-sm mt-8 text-center"
+            data-i18n="home.enterprise.pilotReport"
+          >
             Pilot reports include: cost delta, detour reduction, on-time rate,
             and CO₂ avoided — per corridor.
           </p>
@@ -1734,11 +2144,21 @@
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto">
           <!-- Header -->
           <div class="access-carousel-header">
-            <span class="access-carousel-label">Access the Network</span>
-            <h3 class="access-carousel-title">
+            <span
+              class="access-carousel-label"
+              data-i18n="home.accessNetwork.label"
+              >Access the Network</span
+            >
+            <h3
+              class="access-carousel-title"
+              data-i18n="home.accessNetwork.heading"
+            >
               Three interfaces. One orchestration layer.
             </h3>
-            <p class="access-carousel-subtitle">
+            <p
+              class="access-carousel-subtitle"
+              data-i18n="home.accessNetwork.description"
+            >
               Choose how you plug in. The engine remains the same.
             </p>
             <p class="access-carousel-support"></p>
@@ -1775,16 +2195,39 @@
                           />
                         </svg>
                       </div>
-                      <h3 class="access-card-title">Mobile App</h3>
-                      <p class="access-card-oneline">
+                      <h3
+                        class="access-card-title"
+                        data-i18n="home.accessNetwork.slides.mobileApp.title"
+                      >
+                        Mobile App
+                      </h3>
+                      <p
+                        class="access-card-oneline"
+                        data-i18n="home.accessNetwork.slides.mobileApp.oneline"
+                      >
                         For individuals who move, ship, or host locally.
                       </p>
                       <ul class="access-card-bullets">
-                        <li>Publish your route</li>
-                        <li>Accept matched deliveries</li>
-                        <li>Verified handoffs</li>
+                        <li
+                          data-i18n="home.accessNetwork.slides.mobileApp.bullets.0"
+                        >
+                          Publish your route
+                        </li>
+                        <li
+                          data-i18n="home.accessNetwork.slides.mobileApp.bullets.1"
+                        >
+                          Accept matched deliveries
+                        </li>
+                        <li
+                          data-i18n="home.accessNetwork.slides.mobileApp.bullets.2"
+                        >
+                          Verified handoffs
+                        </li>
                       </ul>
-                      <a href="./carrier.html" class="access-card-cta"
+                      <a
+                        href="./carrier.html"
+                        class="access-card-cta"
+                        data-i18n="home.accessNetwork.slides.mobileApp.cta"
                         >Join as Carrier</a
                       >
                     </div>
@@ -1830,17 +2273,40 @@
                           />
                         </svg>
                       </div>
-                      <h3 class="access-card-title">Operations Dashboard</h3>
-                      <p class="access-card-oneline">
+                      <h3
+                        class="access-card-title"
+                        data-i18n="home.accessNetwork.slides.dashboard.title"
+                      >
+                        Operations Dashboard
+                      </h3>
+                      <p
+                        class="access-card-oneline"
+                        data-i18n="home.accessNetwork.slides.dashboard.oneline"
+                      >
                         For teams managing shipments across corridors.
                       </p>
                       <ul class="access-card-bullets">
-                        <li>Multi-hop visibility</li>
-                        <li>Exception handling</li>
-                        <li>Carbon reporting</li>
+                        <li
+                          data-i18n="home.accessNetwork.slides.dashboard.bullets.0"
+                        >
+                          Multi-hop visibility
+                        </li>
+                        <li
+                          data-i18n="home.accessNetwork.slides.dashboard.bullets.1"
+                        >
+                          Exception handling
+                        </li>
+                        <li
+                          data-i18n="home.accessNetwork.slides.dashboard.bullets.2"
+                        >
+                          Carbon reporting
+                        </li>
                       </ul>
-                      <a href="./shipper.html" class="access-card-cta"
-                        >Start a Pilot</a
+                      <a
+                        href="./shipper.html#early-access"
+                        class="access-card-cta"
+                        data-i18n="home.accessNetwork.slides.dashboard.cta"
+                        >Ship with GoLynk</a
                       >
                     </div>
                   </div>
@@ -1864,16 +2330,35 @@
                           <path d="M18 6l-6 6" stroke-width="1.2" />
                         </svg>
                       </div>
-                      <h3 class="access-card-title">API Integration</h3>
-                      <p class="access-card-oneline">
+                      <h3
+                        class="access-card-title"
+                        data-i18n="home.accessNetwork.slides.api.title"
+                      >
+                        API Integration
+                      </h3>
+                      <p
+                        class="access-card-oneline"
+                        data-i18n="home.accessNetwork.slides.api.oneline"
+                      >
                         For platforms embedding GoLynk natively.
                       </p>
                       <ul class="access-card-bullets">
-                        <li>Create shipments</li>
-                        <li>Subscribe to events</li>
-                        <li>Pull compliance data</li>
+                        <li data-i18n="home.accessNetwork.slides.api.bullets.0">
+                          Create shipments
+                        </li>
+                        <li data-i18n="home.accessNetwork.slides.api.bullets.1">
+                          Subscribe to events
+                        </li>
+                        <li data-i18n="home.accessNetwork.slides.api.bullets.2">
+                          Pull compliance data
+                        </li>
                       </ul>
-                      <a href="#" class="access-card-cta">View API Docs</a>
+                      <a
+                        href="#"
+                        class="access-card-cta"
+                        data-i18n="home.accessNetwork.slides.api.cta"
+                        >View API Docs</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -1926,7 +2411,7 @@
             <!-- RIGHT: Image -->
             <div class="access-carousel-image">
               <img
-                src="/go/assets/api_dash.jpg-CjCTMTfx.png"
+                src="/golynk-website/assets/api_dash.jpg-CjCTMTfx.png"
                 alt="GoLynk API and Dashboard interfaces showing coordinated logistics orchestration"
               />
             </div>
@@ -1996,18 +2481,25 @@
           data-animate="fade-up"
           data-duration="800"
         >
-          <p class="text-primary text-lg font-semibold mb-0">
+          <p
+            class="text-primary text-lg font-semibold mb-0"
+            data-i18n="home.technology.label"
+          >
             GoLynk Technology
           </p>
-          <h2 class="h1 text-text-primary">
+          <h2 class="h1 text-text-primary" data-i18n="home.technology.heading">
             Intelligence Built Into Movement.
           </h2>
-          <p class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto">
+          <p
+            class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+            data-i18n="home.technology.description"
+          >
             Real-time matching. Multi-hop routing. Fair pricing. Carbon
             tracking.
           </p>
           <p
             class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto mt-4 font-medium"
+            data-i18n="home.technology.description2"
           >
             Detour-aware multi-hop chaining under time windows — with verified
             handoffs at every step.
@@ -2029,18 +2521,29 @@
                     <use href="#icon-ai-brain"></use>
                   </svg>
                 </div>
-                <h3 class="tech-card-title">Matching</h3>
-                <p class="tech-card-outcome">
+                <h3
+                  class="tech-card-title"
+                  data-i18n="home.technology.cards.matching.title"
+                >
+                  Matching
+                </h3>
+                <p
+                  class="tech-card-outcome"
+                  data-i18n="home.technology.cards.matching.outcome"
+                >
                   Instantly fit each shipment to available capacity with minimal
                   detour.
                 </p>
-                <p class="tech-card-micro">
+                <p
+                  class="tech-card-micro"
+                  data-i18n="home.technology.cards.matching.micro"
+                >
                   Considers timing, cost, reliability & sustainability.
                 </p>
               </div>
               <div class="tech-card-image">
                 <img
-                  src="/go/assets/Orchestration%20Graph-BlFl2RBv.png"
+                  src="/golynk-website/assets/Orchestration%20Graph-BlFl2RBv.png"
                   alt="Matching Technology"
                 />
               </div>
@@ -2054,18 +2557,29 @@
                     <use href="#icon-road-wayside"></use>
                   </svg>
                 </div>
-                <h3 class="tech-card-title">Routing</h3>
-                <p class="tech-card-outcome">
+                <h3
+                  class="tech-card-title"
+                  data-i18n="home.technology.cards.routing.title"
+                >
+                  Routing
+                </h3>
+                <p
+                  class="tech-card-outcome"
+                  data-i18n="home.technology.cards.routing.outcome"
+                >
                   Chain multi-hop journeys through microhubs as efficient
                   handoff points.
                 </p>
-                <p class="tech-card-micro">
+                <p
+                  class="tech-card-micro"
+                  data-i18n="home.technology.cards.routing.micro"
+                >
                   Seamless flow across carriers and modes—no empty backhauls.
                 </p>
               </div>
               <div class="tech-card-image">
                 <img
-                  src="/go/assets/matching%20engine-BiAZx9F0.png"
+                  src="/golynk-website/assets/matching%20engine-BiAZx9F0.png"
                   alt="Routing Technology"
                 />
               </div>
@@ -2079,17 +2593,28 @@
                     <use href="#icon-discount"></use>
                   </svg>
                 </div>
-                <h3 class="tech-card-title">Pricing</h3>
-                <p class="tech-card-outcome">
+                <h3
+                  class="tech-card-title"
+                  data-i18n="home.technology.cards.pricing.title"
+                >
+                  Pricing
+                </h3>
+                <p
+                  class="tech-card-outcome"
+                  data-i18n="home.technology.cards.pricing.outcome"
+                >
                   Fair prices emerge from real supply-demand dynamics.
                 </p>
-                <p class="tech-card-micro">
+                <p
+                  class="tech-card-micro"
+                  data-i18n="home.technology.cards.pricing.micro"
+                >
                   Distance, urgency, capacity & service level—all transparent.
                 </p>
               </div>
               <div class="tech-card-image">
                 <img
-                  src="/go/assets/api-BaiQxdzp.png"
+                  src="/golynk-website/assets/api-BaiQxdzp.png"
                   alt="Pricing Technology"
                 />
               </div>
@@ -2103,17 +2628,28 @@
                     <use href="#icon-chimney"></use>
                   </svg>
                 </div>
-                <h3 class="tech-card-title">Impact</h3>
-                <p class="tech-card-outcome">
+                <h3
+                  class="tech-card-title"
+                  data-i18n="home.technology.cards.impact.title"
+                >
+                  Impact
+                </h3>
+                <p
+                  class="tech-card-outcome"
+                  data-i18n="home.technology.cards.impact.outcome"
+                >
                   Measure carbon saved per shipment through shared capacity.
                 </p>
-                <p class="tech-card-micro">
+                <p
+                  class="tech-card-micro"
+                  data-i18n="home.technology.cards.impact.micro"
+                >
                   Audit-ready data feeds directly into ESG reporting.
                 </p>
               </div>
               <div class="tech-card-image">
                 <img
-                  src="/go/assets/data-DagEd0_Q.png"
+                  src="/golynk-website/assets/data-DagEd0_Q.png"
                   alt="Impact Technology"
                 />
               </div>
@@ -2131,7 +2667,9 @@
             <summary
               class="px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors flex items-center justify-between font-semibold text-text-primary group-open:bg-primary-bg"
             >
-              <span>Under the Hood →</span>
+              <span data-i18n="home.technology.underTheHood.label"
+                >Under the Hood →</span
+              >
               <svg class="size-5 transition-transform group-open:rotate-180">
                 <use href="#icon-chevron-down"></use>
               </svg>
@@ -2139,14 +2677,17 @@
             <div
               class="px-6 py-4 bg-white border-t border-gray-200 text-text-secondary body space-y-3"
             >
-              <p class="text-sm">
+              <p class="text-sm" data-i18n="home.technology.underTheHood.text">
                 Real-time data intake (GPS, shipment specs, availability).
                 Multi-agent reinforcement learning balances supply & demand.
                 Constraint satisfaction handles weight, temp, windows, modes
                 instantly. Economic equilibrium emerges from pricing signals.
                 Every decision is logged and explainable.
               </p>
-              <p class="text-xs text-text-secondary/70 italic">
+              <p
+                class="text-xs text-text-secondary/70 italic"
+                data-i18n="home.technology.underTheHood.result"
+              >
                 Result: Scale from parcels to institutional supply chains
                 without adding vehicles.
               </p>
@@ -2165,34 +2706,54 @@
           >
             <!-- Left: Text Content -->
             <div class="solution-text">
-              <p class="text-primary text-lg font-semibold mb-4">
+              <p
+                class="text-primary text-lg font-semibold mb-4"
+                data-i18n="home.economics.label"
+              >
                 Adaptive Economics
               </p>
-              <h2 class="text-text-primary">
+              <h2 class="text-text-primary" data-i18n="home.economics.heading">
                 Pricing That Reflects Real Movement
               </h2>
-              <p class="text-text-secondary mt-6">
+              <p
+                class="text-text-secondary mt-6"
+                data-i18n="home.economics.text1"
+              >
                 Delivery pricing adapts to urgency, distance, route overlap, and
                 available capacity.
               </p>
               <div class="text-text-secondary space-y-4 mt-6">
-                <p class="font-semibold">As density grows:</p>
+                <p
+                  class="font-semibold"
+                  data-i18n="home.economics.densityLabel"
+                >
+                  As density grows:
+                </p>
                 <ul class="space-y-2 ml-4">
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>More overlap → fewer detours</span>
+                    <span data-i18n="home.economics.list.0"
+                      >More overlap → fewer detours</span
+                    >
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Fewer detours → lower cost + lower emissions</span>
+                    <span data-i18n="home.economics.list.1"
+                      >Fewer detours → lower cost + lower emissions</span
+                    >
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Lower cost → higher adoption + reliability</span>
+                    <span data-i18n="home.economics.list.2"
+                      >Lower cost → higher adoption + reliability</span
+                    >
                   </li>
                 </ul>
               </div>
-              <p class="text-text-secondary mt-4">
+              <p
+                class="text-text-secondary mt-4"
+                data-i18n="home.economics.closing"
+              >
                 Infrastructure improves with use.
               </p>
             </div>
@@ -2200,7 +2761,7 @@
             <!-- Right: Efficiency Loop Diagram -->
             <div>
               <img
-                src="/go/assets/adapt.jpg-B1qT9g8Q.jpg"
+                src="/golynk-website/assets/adapt.jpg-B1qT9g8Q.jpg"
                 alt="Self-reinforcing logistics efficiency loop"
                 class="w-full"
                 data-animate="fade-up"
@@ -2216,10 +2777,18 @@
       <section class="my-section">
         <div class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto">
           <div class="text-center space-y-4 mb-12">
-            <p class="text-primary text-lg font-semibold">Built on Trust</p>
-            <h2 class="h1 text-text-primary">Trust, Built In.</h2>
+            <p
+              class="text-primary text-lg font-semibold"
+              data-i18n="home.trust.label"
+            >
+              Built on Trust
+            </p>
+            <h2 class="h1 text-text-primary" data-i18n="home.trust.heading">
+              Trust, Built In.
+            </h2>
             <p
               class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+              data-i18n="home.trust.description"
             >
               Verified carriers. Insured shipments. Proof at every handoff.
             </p>
@@ -2241,8 +2810,16 @@
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <h3 class="trust-card-title">KYC &amp; Verification</h3>
-              <p class="trust-card-description">
+              <h3
+                class="trust-card-title"
+                data-i18n="home.trust.cards.kyc.title"
+              >
+                KYC &amp; Verification
+              </h3>
+              <p
+                class="trust-card-description"
+                data-i18n="home.trust.cards.kyc.description"
+              >
                 Every participant verified before network access.
               </p>
             </div>
@@ -2262,8 +2839,16 @@
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
               </div>
-              <h3 class="trust-card-title">Insurance Coverage</h3>
-              <p class="trust-card-description">
+              <h3
+                class="trust-card-title"
+                data-i18n="home.trust.cards.insurance.title"
+              >
+                Insurance Coverage
+              </h3>
+              <p
+                class="trust-card-description"
+                data-i18n="home.trust.cards.insurance.description"
+              >
                 Shipments protected by value-based policies.
               </p>
             </div>
@@ -2286,8 +2871,16 @@
                   ></path>
                 </svg>
               </div>
-              <h3 class="trust-card-title">Proof of Delivery</h3>
-              <p class="trust-card-description">
+              <h3
+                class="trust-card-title"
+                data-i18n="home.trust.cards.pod.title"
+              >
+                Proof of Delivery
+              </h3>
+              <p
+                class="trust-card-description"
+                data-i18n="home.trust.cards.pod.description"
+              >
                 Photo or signature at every handoff point.
               </p>
             </div>
@@ -2312,8 +2905,16 @@
                   <line x1="12" y1="17" x2="8" y2="17"></line>
                 </svg>
               </div>
-              <h3 class="trust-card-title">Audit Trail</h3>
-              <p class="trust-card-description">
+              <h3
+                class="trust-card-title"
+                data-i18n="home.trust.cards.audit.title"
+              >
+                Audit Trail
+              </h3>
+              <p
+                class="trust-card-description"
+                data-i18n="home.trust.cards.audit.description"
+              >
                 Full chain-of-custody logged and auditable.
               </p>
             </div>
@@ -2335,8 +2936,16 @@
                   ></path>
                 </svg>
               </div>
-              <h3 class="trust-card-title">24/7 Support</h3>
-              <p class="trust-card-description">
+              <h3
+                class="trust-card-title"
+                data-i18n="home.trust.cards.support.title"
+              >
+                24/7 Support
+              </h3>
+              <p
+                class="trust-card-description"
+                data-i18n="home.trust.cards.support.description"
+              >
                 Rapid escalation and SLA-backed claims.
               </p>
             </div>
@@ -2357,8 +2966,16 @@
                   <circle cx="12" cy="12" r="10"></circle>
                 </svg>
               </div>
-              <h3 class="trust-card-title">Compliance Ready</h3>
-              <p class="trust-card-description">
+              <h3
+                class="trust-card-title"
+                data-i18n="home.trust.cards.compliance.title"
+              >
+                Compliance Ready
+              </h3>
+              <p
+                class="trust-card-description"
+                data-i18n="home.trust.cards.compliance.description"
+              >
                 Built for regulatory and ESG requirements.
               </p>
             </div>
@@ -2367,7 +2984,10 @@
           <div
             class="text-center mt-12 px-6 py-8 bg-gradient-to-r from-primary-bg to-transparent rounded-lg"
           >
-            <p class="text-text-secondary font-medium">
+            <p
+              class="text-text-secondary font-medium"
+              data-i18n="home.trust.closing"
+            >
               Every shipment moves through verified networks with complete
               visibility.
             </p>
@@ -2381,7 +3001,7 @@
           <!-- Background Image -->
           <div class="absolute inset-0 size-full -z-1">
             <img
-              src="/go/assets/environmental-commitment-H8_N92Al.webp"
+              src="/golynk-website/assets/environmental-commitment-H8_N92Al.webp"
               alt="Environment"
               class="h-full w-full object-cover"
             />
@@ -2399,16 +3019,28 @@
                 data-animate="fade-up"
                 data-duration="600"
               >
-                <p class="text-text-on-dark/80 text-lg font-semibold mb-0">
+                <p
+                  class="text-text-on-dark/80 text-lg font-semibold mb-0"
+                  data-i18n="home.environment.label"
+                >
                   Environment
                 </p>
-                <h2 class="h1 text-text-on-dark">
+                <h2
+                  class="h1 text-text-on-dark"
+                  data-i18n="home.environment.heading"
+                >
                   Efficiency Reduces Emissions
                 </h2>
-                <p class="text-text-on-dark/70 text-h3">
+                <p
+                  class="text-text-on-dark/70 text-h3"
+                  data-i18n="home.environment.description"
+                >
                   Avoided by coordination — not offset by credit purchases.
                 </p>
-                <p class="text-text-on-dark/70 text-h3">
+                <p
+                  class="text-text-on-dark/70 text-h3"
+                  data-i18n="home.environment.description2"
+                >
                   Because GoLynk coordinates journeys already happening, fewer
                   additional trips are required.
                 </p>
@@ -2418,11 +3050,11 @@
               <div
                 class="text-center max-w-2xl mx-auto text-text-on-dark/80 text-sm leading-relaxed"
               >
-                <p>
+                <p data-i18n="home.environment.paragraph1">
                   Empty kilometers decline. Route density improves. Emissions
                   decrease through coordination.
                 </p>
-                <p class="mt-2">
+                <p class="mt-2" data-i18n="home.environment.paragraph2">
                   Carbon savings can be measured and reported over time.
                 </p>
               </div>
@@ -2438,15 +3070,22 @@
                 <div
                   class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm space-y-3"
                 >
-                  <h3 class="h3-sm text-text-on-dark font-semibold">
+                  <h3
+                    class="h3-sm text-text-on-dark font-semibold"
+                    data-i18n="home.environment.cards.assetLight.title"
+                  >
                     Asset-Light by Design
                   </h3>
-                  <p class="text-text-on-dark/85 body text-sm leading-relaxed">
+                  <p
+                    class="text-text-on-dark/85 body text-sm leading-relaxed"
+                    data-i18n="home.environment.cards.assetLight.description"
+                  >
                     We coordinate spare capacity instead of adding new vehicles.
                     Less duplication. More utilization.
                   </p>
                   <p
                     class="text-text-on-dark/60 text-xs font-medium pt-2 border-t border-white/5"
+                    data-i18n="home.environment.cards.assetLight.footnote"
                   >
                     Built on existing routes
                   </p>
@@ -2456,18 +3095,28 @@
                 <div
                   class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm space-y-3"
                 >
-                  <h3 class="h3-sm text-text-on-dark font-semibold">
+                  <h3
+                    class="h3-sm text-text-on-dark font-semibold"
+                    data-i18n="home.environment.cards.traceable.title"
+                  >
                     Traceable End-to-End
                   </h3>
-                  <p class="text-text-on-dark/85 body text-sm leading-relaxed">
+                  <p
+                    class="text-text-on-dark/85 body text-sm leading-relaxed"
+                    data-i18n="home.environment.cards.traceable.description"
+                  >
                     Every handoff is tracked with proof of delivery and audit
                     trails.
                   </p>
-                  <p class="text-text-on-dark/85 body text-sm leading-relaxed">
+                  <p
+                    class="text-text-on-dark/85 body text-sm leading-relaxed"
+                    data-i18n="home.environment.cards.traceable.description2"
+                  >
                     Visibility across every segment.
                   </p>
                   <p
                     class="text-text-on-dark/60 text-xs font-medium pt-2 border-t border-white/5"
+                    data-i18n="home.environment.cards.traceable.footnote"
                   >
                     Chain-of-custody ready
                   </p>
@@ -2477,15 +3126,22 @@
                 <div
                   class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm space-y-3"
                 >
-                  <h3 class="h3-sm text-text-on-dark font-semibold">
+                  <h3
+                    class="h3-sm text-text-on-dark font-semibold"
+                    data-i18n="home.environment.cards.carbon.title"
+                  >
                     Measurable Carbon Impact
                   </h3>
-                  <p class="text-text-on-dark/85 body text-sm leading-relaxed">
+                  <p
+                    class="text-text-on-dark/85 body text-sm leading-relaxed"
+                    data-i18n="home.environment.cards.carbon.description"
+                  >
                     Impact can be calculated per shipment, route, or
                     corridor—built for ESG reporting.
                   </p>
                   <p
                     class="text-text-on-dark/60 text-xs font-medium pt-2 border-t border-white/5"
+                    data-i18n="home.environment.cards.carbon.footnote"
                   >
                     Measured, not assumed
                   </p>
@@ -2495,14 +3151,21 @@
                 <div
                   class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm space-y-3"
                 >
-                  <h3 class="h3-sm text-text-on-dark font-semibold">
+                  <h3
+                    class="h3-sm text-text-on-dark font-semibold"
+                    data-i18n="home.environment.cards.density.title"
+                  >
                     Density Improves Outcomes
                   </h3>
-                  <p class="text-text-on-dark/85 body text-sm leading-relaxed">
+                  <p
+                    class="text-text-on-dark/85 body text-sm leading-relaxed"
+                    data-i18n="home.environment.cards.density.description"
+                  >
                     More overlap reduces detours and avoids extra trips.
                   </p>
                   <p
                     class="text-text-on-dark/60 text-xs font-medium pt-2 border-t border-white/5"
+                    data-i18n="home.environment.cards.density.footnote"
                   >
                     Better as it grows
                   </p>
@@ -2510,7 +3173,10 @@
               </div>
 
               <!-- Closing Statement -->
-              <div class="text-center text-text-on-dark/80 font-medium text-sm">
+              <div
+                class="text-center text-text-on-dark/80 font-medium text-sm"
+                data-i18n="home.environment.closing"
+              >
                 Better coordination. Lower footprint.
               </div>
             </div>
@@ -2530,15 +3196,24 @@
             <!-- LEFT: Text Content -->
             <div class="space-y-8">
               <div>
-                <p class="text-primary text-lg font-semibold mb-4">
+                <p
+                  class="text-primary text-lg font-semibold mb-4"
+                  data-i18n="home.corridors.label"
+                >
                   Pilot Corridors
                 </p>
-                <h2 class="text-text-primary text-h1">
+                <h2
+                  class="text-text-primary text-h1"
+                  data-i18n="home.corridors.title"
+                >
                   Where We're Building Density First
                 </h2>
               </div>
 
-              <p class="text-text-secondary text-h3 leading-relaxed">
+              <p
+                class="text-text-secondary text-h3 leading-relaxed"
+                data-i18n="home.corridors.description"
+              >
                 We don't launch everywhere. We build density where routes repeat
                 — then extend the corridor.
               </p>
@@ -2548,10 +3223,14 @@
                 <div class="space-y-2">
                   <h3
                     class="text-sm font-bold text-text-primary uppercase tracking-wide"
+                    data-i18n="home.corridors.urban.title"
                   >
                     Urban Launch Zones
                   </h3>
-                  <p class="text-text-secondary text-sm leading-relaxed">
+                  <p
+                    class="text-text-secondary text-sm leading-relaxed"
+                    data-i18n="home.corridors.urban.text"
+                  >
                     One city area. High repeat volume. Fast verified handoffs.
                   </p>
                 </div>
@@ -2560,10 +3239,14 @@
                 <div class="space-y-2">
                   <h3
                     class="text-sm font-bold text-text-primary uppercase tracking-wide"
+                    data-i18n="home.corridors.cityToCity.title"
                   >
                     City-to-City Corridors
                   </h3>
-                  <p class="text-text-secondary text-sm leading-relaxed">
+                  <p
+                    class="text-text-secondary text-sm leading-relaxed"
+                    data-i18n="home.corridors.cityToCity.text"
+                  >
                     Repeatable intercity routes that connect dense zones through
                     hubs.
                   </p>
@@ -2573,22 +3256,30 @@
                 <div class="space-y-2">
                   <h3
                     class="text-sm font-bold text-text-primary uppercase tracking-wide"
+                    data-i18n="home.corridors.fleet.title"
                   >
                     Fleet Plug-ins
                   </h3>
-                  <p class="text-text-secondary text-sm leading-relaxed">
+                  <p
+                    class="text-text-secondary text-sm leading-relaxed"
+                    data-i18n="home.corridors.fleet.text"
+                  >
                     Backhaul and spare capacity added to strengthen reliability.
                   </p>
                 </div>
               </div>
 
               <div class="pt-4">
-                <p class="text-text-secondary text-sm mb-6">
+                <p
+                  class="text-text-secondary text-sm mb-6"
+                  data-i18n="home.corridors.corridorCta"
+                >
                   Want your corridor next?
                 </p>
                 <a
-                  href="#contact"
+                  href="./corridor.html"
                   class="px-7 py-3 primary-btn inline-flex items-center justify-center"
+                  data-i18n="home.corridors.cta"
                 >
                   Propose a Pilot Corridor
                 </a>
@@ -2598,7 +3289,7 @@
             <!-- RIGHT: Strategic Map Visualization -->
             <div class="corridor-map-container">
               <img
-                src="/go/assets/links-DIQaBEBU.png"
+                src="/golynk-website/assets/links-DIQaBEBU.png"
                 alt="GoLynk pilot corridors network map showing urban launch zones, mid-mile links, and capacity partners"
                 class="corridor-map-image"
               />
@@ -2616,8 +3307,15 @@
             data-animate="fade-up"
             data-duration="600"
           >
-            <h2 class="h1 text-text-primary">Real Routes. Real Impact.</h2>
-            <p class="text-text-secondary text-h3">Stories from the network.</p>
+            <h2 class="h1 text-text-primary" data-i18n="home.stories.heading">
+              Real Routes. Real Impact.
+            </h2>
+            <p
+              class="text-text-secondary text-h3"
+              data-i18n="home.stories.description"
+            >
+              Stories from the network.
+            </p>
           </div>
 
           <!-- Stories Grid -->
@@ -2637,16 +3335,27 @@
             >
               <div class="rounded-lg overflow-hidden h-48 mb-4">
                 <img
-                  src="/go/assets/story-florist.png-CvQlk18Z.png"
+                  src="/golynk-website/assets/story-florist.png-CvQlk18Z.png"
                   alt="The Florist"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="text-primary body-semibold">The Florist</p>
-              <h3 class="h3 text-text-primary font-semibold">
+              <p
+                class="text-primary body-semibold"
+                data-i18n="home.stories.florist.label"
+              >
+                The Florist
+              </p>
+              <h3
+                class="h3 text-text-primary font-semibold"
+                data-i18n="home.stories.florist.heading"
+              >
                 From Wilting Margins to Fresh Profits
               </h3>
-              <p class="text-text-secondary body">
+              <p
+                class="text-text-secondary body"
+                data-i18n="home.stories.florist.text"
+              >
                 Same‑day deliveries via nearby bike carriers cut damage and
                 delays, boosting customer happiness and turning premium bouquets
                 into a greener, higher‑margin service.
@@ -2662,16 +3371,27 @@
             >
               <div class="rounded-lg overflow-hidden h-48 mb-4">
                 <img
-                  src="/go/assets/story-carrier.png-36W_NqCV.png"
+                  src="/golynk-website/assets/story-carrier.png-36W_NqCV.png"
                   alt="The Regional Carrier"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="text-primary body-semibold">The Regional Carrier</p>
-              <h3 class="h3 text-text-primary font-semibold">
+              <p
+                class="text-primary body-semibold"
+                data-i18n="home.stories.carrier.label"
+              >
+                The Regional Carrier
+              </p>
+              <h3
+                class="h3 text-text-primary font-semibold"
+                data-i18n="home.stories.carrier.heading"
+              >
                 Turning Empty Miles Into Revenue
               </h3>
-              <p class="text-text-secondary body">
+              <p
+                class="text-text-secondary body"
+                data-i18n="home.stories.carrier.text"
+              >
                 Empty return trips became paid capacity once backhauls were
                 plugged into GoLynk, adding new revenue without new routes or
                 extra miles.
@@ -2687,16 +3407,27 @@
             >
               <div class="rounded-lg overflow-hidden h-48 mb-4">
                 <img
-                  src="/go/assets/story-cafe.png-CVsQCAIw.png"
+                  src="/golynk-website/assets/story-cafe.png-CVsQCAIw.png"
                   alt="The Café Microhub"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="text-primary body-semibold">The Café Microhub</p>
-              <h3 class="h3 text-text-primary font-semibold">
+              <p
+                class="text-primary body-semibold"
+                data-i18n="home.stories.cafe.label"
+              >
+                The Café Microhub
+              </p>
+              <h3
+                class="h3 text-text-primary font-semibold"
+                data-i18n="home.stories.cafe.heading"
+              >
                 A Corner Space, A New Revenue Stream
               </h3>
-              <p class="text-text-secondary body">
+              <p
+                class="text-text-secondary body"
+                data-i18n="home.stories.cafe.text"
+              >
                 An unused café corner became a GoLynk microhub, generating
                 steady side income, more foot traffic, and local visibility—with
                 almost no operational effort.
@@ -2711,7 +3442,13 @@
             data-duration="800"
             data-delay="600"
           >
-            <a href="#" class="btn btn-primary"> Read More Stories </a>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-i18n="home.stories.readMore"
+            >
+              Read More Stories
+            </a>
           </div>
         </div>
       </section>
@@ -2722,11 +3459,12 @@
           <div class="text-center space-y-8">
             <!-- Header -->
             <div class="space-y-4" data-animate="fade-up" data-duration="800">
-              <h2 class="h1 text-text-primary">
+              <h2 class="h1 text-text-primary" data-i18n="home.roadmap.heading">
                 From Last Mile to the Full Logistics Stack
               </h2>
               <p
                 class="text-text-secondary text-h3 max-9/10 md:max-w-4/5 mx-auto"
+                data-i18n="home.roadmap.description"
               >
                 Starting with last mile and mid mile via microhubs — expanding
                 over time to long-haul capacity across the logistics ecosystem.
@@ -2747,15 +3485,24 @@
                 >
                   1
                 </div>
-                <h3 class="h3 text-text-primary font-semibold">Now</h3>
+                <h3
+                  class="h3 text-text-primary font-semibold"
+                  data-i18n="home.roadmap.now.title"
+                >
+                  Now
+                </h3>
                 <ul class="text-text-secondary body space-y-2">
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Last mile &amp; crowdshipping</span>
+                    <span data-i18n="home.roadmap.now.item0"
+                      >Last mile &amp; crowdshipping</span
+                    >
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Fleet backhaul matching</span>
+                    <span data-i18n="home.roadmap.now.item1"
+                      >Fleet backhaul matching</span
+                    >
                   </li>
                 </ul>
               </div>
@@ -2767,15 +3514,24 @@
                 >
                   2
                 </div>
-                <h3 class="h3 text-text-primary font-semibold">Next</h3>
+                <h3
+                  class="h3 text-text-primary font-semibold"
+                  data-i18n="home.roadmap.next.title"
+                >
+                  Next
+                </h3>
                 <ul class="text-text-secondary body space-y-2">
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Microhub density</span>
+                    <span data-i18n="home.roadmap.next.item0"
+                      >Microhub density</span
+                    >
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Multimodal mid-mile</span>
+                    <span data-i18n="home.roadmap.next.item1"
+                      >Multimodal mid-mile</span
+                    >
                   </li>
                 </ul>
               </div>
@@ -2787,15 +3543,24 @@
                 >
                   3
                 </div>
-                <h3 class="h3 text-text-primary font-semibold">Later</h3>
+                <h3
+                  class="h3 text-text-primary font-semibold"
+                  data-i18n="home.roadmap.later.title"
+                >
+                  Later
+                </h3>
                 <ul class="text-text-secondary body space-y-2">
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Long-haul capacity</span>
+                    <span data-i18n="home.roadmap.later.item0"
+                      >Long-haul capacity</span
+                    >
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-primary font-bold">•</span>
-                    <span>Enterprise API depth</span>
+                    <span data-i18n="home.roadmap.later.item1"
+                      >Enterprise API depth</span
+                    >
                   </li>
                 </ul>
               </div>
@@ -2810,10 +3575,13 @@
           class="max-w-9/10 md:max-w-4/5 xl:max-w-5xl mx-auto text-center space-y-8"
         >
           <div class="space-y-4">
-            <h2 class="h1 text-text-primary">
+            <h2 class="h1 text-text-primary" data-i18n="home.finalCta.heading">
               Build the Next Layer of Logistics.
             </h2>
-            <p class="text-text-secondary text-h3 max-w-2xl mx-auto">
+            <p
+              class="text-text-secondary text-h3 max-w-2xl mx-auto"
+              data-i18n="home.finalCta.description"
+            >
               The world already moves. Let's make it work smarter.
             </p>
           </div>
@@ -2822,15 +3590,17 @@
             class="flex flex-col sm:flex-row gap-3 mx-auto items-center justify-center"
           >
             <a
-              href="./shipper.html"
+              href="./shipper.html#early-access"
               class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
+              data-i18n="home.finalCta.startPilot"
             >
-              Start a Pilot
+              Ship with GoLynk
             </a>
 
             <a
-              href="./carrier.html"
+              href="./carrier.html#carrier-access"
               class="px-7 py-4 secondary-btn inline-flex items-center justify-center w-fit"
+              data-i18n="home.finalCta.joinCarrier"
             >
               Join as Carrier
             </a>
@@ -3148,7 +3918,8 @@
               data-animate="fade-up"
               data-duration="800"
             >
-              <button
+              <a
+                href="./shipper.html#early-access"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
               >
                 <svg class="size-6 me-2">
@@ -3156,11 +3927,12 @@
                 </svg>
                 <span
                   class="body-semibold text-text-on-dark"
-                  data-i18n="footer.cta.startShipping"
+                  data-i18n="common.footer.cta.startShipping"
                   >Start Shipping</span
                 >
-              </button>
-              <button
+              </a>
+              <a
+                href="./carrier.html#carrier-access"
                 class="px-7 py-4 primary-btn inline-flex items-center justify-center w-fit"
               >
                 <svg class="size-6 me-2">
@@ -3168,16 +3940,16 @@
                 </svg>
                 <span
                   class="body-semibold text-text-on-dark"
-                  data-i18n="footer.cta.deliverWithUs"
+                  data-i18n="common.footer.cta.deliverWithUs"
                   >Deliver with us</span
                 >
-              </button>
+              </a>
             </div>
             <!-- Newsletter Column -->
             <div class="flex flex-col items-center lg:items-start gap-3">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.newsletter.title"
+                data-i18n="common.footer.newsletter.title"
               >
                 Stay up to date
               </h3>
@@ -3186,14 +3958,14 @@
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  data-i18n-placeholder="footer.newsletter.placeholder"
+                  data-i18n-placeholder="common.footer.newsletter.placeholder"
                   class="flex-1 px-4 py-2.5 rounded-md border border-border-default bg-white text-small text-text-primary placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   required
                 />
                 <button
                   type="submit"
                   class="px-6 py-2.5 primary-btn inline-flex items-center justify-center w-fit gap-2"
-                  data-i18n="footer.newsletter.button"
+                  data-i18n="common.footer.newsletter.button"
                 >
                   Subscribe
                 </button>
@@ -3207,51 +3979,57 @@
             data-duration="800"
             data-delay="200"
           >
-            <!-- GoLynk Column -->
+            <!-- Company Column -->
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.golynk.title"
+                data-i18n="common.footer.sections.company.title"
               >
-                GoLynk
+                Company
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#about"
+                  href="./about.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.about"
-                  >About GoLynk</a
+                  data-i18n="common.footer.sections.company.links.about"
                 >
+                  About GoLynk
+                </a>
                 <a
-                  href="#how-it-works"
+                  href="./index.html#how-it-works"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.howItWorks"
-                  >How It Works</a
+                  data-i18n="common.footer.sections.company.links.howItWorks"
                 >
+                  How It Works
+                </a>
                 <a
-                  href="#industries"
+                  href="./index.html#industries"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.industries"
-                  >Industries We Serve</a
+                  data-i18n="common.footer.sections.company.links.industries"
                 >
+                  Industries We Serve
+                </a>
                 <a
-                  href="#sustainability"
+                  href="./index.html#environment"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.sustainability"
-                  >Sustainability<br />& CO₂ Reporting</a
+                  data-i18n="common.footer.sections.company.links.sustainability"
                 >
+                  Sustainability & CO₂ Reporting
+                </a>
                 <a
-                  href="#careers"
+                  href="./careers.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.careers"
-                  >Careers</a
+                  data-i18n="common.footer.sections.company.links.careers"
                 >
+                  Careers
+                </a>
                 <a
-                  href="#contacts"
+                  href="./get-started.html#contact"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.golynk.links.contacts"
-                  >Contacts</a
+                  data-i18n="common.footer.sections.company.links.contact"
                 >
+                  Contact
+                </a>
               </nav>
             </div>
 
@@ -3259,29 +4037,32 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.shippers.title"
+                data-i18n="common.footer.sections.shippers.title"
               >
                 For Shippers
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#b2b"
+                  href="./shipper.html#early-access"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.b2b"
-                  >B2B Shippers</a
+                  data-i18n="common.footer.sections.shippers.links.getStarted"
                 >
+                  Get Started
+                </a>
                 <a
-                  href="#ecommerce"
+                  href="./pricing.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.ecommerce"
-                  >E-Commerce & Retail</a
+                  data-i18n="common.footer.sections.shippers.links.pricing"
                 >
+                  Pricing
+                </a>
                 <a
-                  href="#fresh"
+                  href="./api-docs.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.shippers.links.fresh"
-                  >Fresh & Healthcare</a
+                  data-i18n="common.footer.sections.shippers.links.api"
                 >
+                  Integration & API Docs
+                </a>
               </nav>
             </div>
 
@@ -3289,35 +4070,32 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.carriers.title"
+                data-i18n="common.footer.sections.carriers.title"
               >
                 For Carriers
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#logistics-operators"
+                  href="./carrier.html#individual-form"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.logistics"
-                  >Logistics Operators<br />& 3PLs</a
+                  data-i18n="common.footer.sections.carriers.links.joinIndividual"
                 >
+                  Join as Individual Mover
+                </a>
                 <a
-                  href="#capacity-partner"
+                  href="./carrier.html#fleet-form"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.capacity"
-                  >Join as Capacity Partner</a
+                  data-i18n="common.footer.sections.carriers.links.fleetOperators"
                 >
+                  Fleet Operators
+                </a>
                 <a
-                  href="#operator-dashboard"
+                  href="./carrier.html#operator-dashboard"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.dashboard"
-                  >Operator Dashboard</a
+                  data-i18n="common.footer.sections.carriers.links.dashboard"
                 >
-                <a
-                  href="#api-docs"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.carriers.links.api"
-                  >Integration & API Docs</a
-                >
+                  Operator Dashboard
+                </a>
               </nav>
             </div>
 
@@ -3325,35 +4103,25 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.resources.title"
+                data-i18n="common.footer.sections.resources.title"
               >
                 Resources
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#blog"
+                  href="./faq.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.blog"
-                  >Blog & Insights</a
+                  data-i18n="common.footer.sections.resources.links.faq"
                 >
+                  FAQ
+                </a>
                 <a
-                  href="#case-studies"
+                  href="./investor.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.caseStudies"
-                  >Case Studies</a
+                  data-i18n="common.footer.sections.resources.links.investors"
                 >
-                <a
-                  href="faq.html"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.faq"
-                  >FAQ</a
-                >
-                <a
-                  href="#investors"
-                  class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.resources.links.investors"
-                  >Investor Relations</a
-                >
+                  Investor Relations
+                </a>
               </nav>
             </div>
 
@@ -3361,35 +4129,39 @@
             <div class="space-y-4">
               <h3
                 class="body-semibold text-text-primary"
-                data-i18n="footer.sections.legal.title"
+                data-i18n="common.footer.sections.legal.title"
               >
                 Legal
               </h3>
               <nav class="flex flex-col space-y-3">
                 <a
-                  href="#privacy"
+                  href="./privacy.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.privacy"
-                  >Privacy Policy</a
+                  data-i18n="common.footer.sections.legal.links.privacy"
                 >
+                  Privacy Policy
+                </a>
                 <a
-                  href="#terms"
+                  href="./terms.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.terms"
-                  >Terms of Service</a
+                  data-i18n="common.footer.sections.legal.links.terms"
                 >
+                  Terms of Service
+                </a>
                 <a
-                  href="#cookie"
+                  href="./cookies.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.cookie"
-                  >Cookie Policy</a
+                  data-i18n="common.footer.sections.legal.links.cookies"
                 >
+                  Cookie Policy
+                </a>
                 <a
-                  href="#imprint"
+                  href="./imprint.html"
                   class="text-text-secondary text-small hover:text-primary transition-colors"
-                  data-i18n="footer.sections.legal.links.imprint"
-                  >Imprint / Legal Notice</a
+                  data-i18n="common.footer.sections.legal.links.imprint"
                 >
+                  Imprint
+                </a>
               </nav>
             </div>
           </div>
@@ -3407,11 +4179,11 @@
               <!-- Logo and Tagline -->
               <div class="flex flex-col sm:flex-row items-center gap-4">
                 <a href="./">
-                  <img src="/go/assets/Logo-Cabx5owX.svg" alt="GoLynk" class="h-8" />
+                  <img src="/golynk-website/assets/Logo-Cabx5owX.svg" alt="GoLynk" class="h-8" />
                 </a>
                 <p
                   class="text-text-secondary text-small"
-                  data-i18n="footer.tagline"
+                  data-i18n="common.footer.tagline"
                 >
                   Orchestrating existing journeys into faster, greener
                   logistics.
@@ -3430,9 +4202,11 @@
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/golynk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BP7YMvJ2vTLOMn4fzxonJjA%3D%3D"
                   class="text-text-secondary hover:text-primary transition-colors"
                   aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg class="size-5">
                     <use href="#icon-linkedin"></use>
@@ -3440,7 +4214,7 @@
                 </a>
                 <p
                   class="text-text-secondary text-small"
-                  data-i18n="footer.copyright"
+                  data-i18n="common.footer.copyright"
                 >
                   © GoLynk 2026. All rights reserved.
                 </p>
