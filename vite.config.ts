@@ -66,6 +66,8 @@ export default defineConfig({
         imprint: path.resolve(__dirname, "imprint.html"),
         investor: path.resolve(__dirname, "investor.html"),
         careers: path.resolve(__dirname, "careers.html"),
+        corridor: path.resolve(__dirname, "corridor.html"),
+        capital: path.resolve(__dirname, "capital.html"),
         careersJobs: path.resolve(__dirname, "careers/jobs.html"),
         careersApply: path.resolve(__dirname, "careers/apply.html"),
       },
