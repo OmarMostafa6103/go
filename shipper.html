@@ -3246,10 +3246,7 @@
             </div>
 
             <!-- Early Access Form -->
-            <form
-              id="early-access-form"
-              class="space-y-5"
-            >
+            <form id="early-access-form" class="space-y-5">
               <input type="hidden" name="role" value="shipper" />
               <input type="hidden" name="source" value="shipper-page" />
               <input type="hidden" name="hp" style="display: none" />
@@ -3984,7 +3981,9 @@
 
         const form = document.getElementById("early-access-form");
         const successState = document.getElementById("early-access-success");
-        const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+        const submitBtn = form
+          ? form.querySelector('button[type="submit"]')
+          : null;
 
         if (form && successState) {
           form.addEventListener("submit", async function (e) {
@@ -3992,7 +3991,7 @@
 
             // Validate required fields
             const inputs = form.querySelectorAll(
-              "input[required], select[required], textarea[required]"
+              "input[required], select[required], textarea[required]",
             );
             let isValid = true;
             inputs.forEach((input) => {
@@ -4035,7 +4034,10 @@
               // Show success state
               form.classList.add("hidden");
               successState.classList.remove("hidden");
-              successState.scrollIntoView({ behavior: "smooth", block: "center" });
+              successState.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
             } catch (error) {
               console.error("[SHIPPER FORM] Submission error:", error);
               if (submitBtn) {
