@@ -1568,6 +1568,10 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // Same Apps Script endpoint as get-started page
+        const CORRIDOR_WEBAPP_URL =
+          "https://script.google.com/macros/s/AKfycbx4DcGu_z-fVAEmTLzUEWj6v8oahhoV1SNskeVwgIlHRTjmDzR4E591_0oHZtQsnrbA/exec";
+
         const form = document.getElementById("corridor-form");
         const formSuccess = document.getElementById("form-success");
 
@@ -1662,62 +1666,8 @@
           return isValid;
         }
 
-        // Build email body from form data
-        function buildEmailBody() {
-          const formData = new FormData(form);
-          const lines = [];
-
-          lines.push("=== CORRIDOR ACTIVATION PROPOSAL ===\n");
-
-          lines.push("CORRIDOR DEFINITION");
-          lines.push(`Origin City: ${formData.get("origin_city")}`);
-          lines.push(`Destination City: ${formData.get("destination_city")}`);
-          lines.push(`Corridor Type: ${formData.get("corridor_type")}`);
-          if (formData.get("service_radius")) {
-            lines.push(`Service Radius: ${formData.get("service_radius")}`);
-          }
-          lines.push(`Weekly Volume: ${formData.get("weekly_volume")}`);
-
-          const shipmentTypes = formData.getAll("shipment_types");
-          if (shipmentTypes.length > 0) {
-            lines.push(`Shipment Types: ${shipmentTypes.join(", ")}`);
-          }
-
-          lines.push("\nYOUR ROLE");
-          lines.push(`Role: ${formData.get("role")}`);
-
-          lines.push("\nOPERATIONAL CONSTRAINTS");
-          if (formData.get("pickup_windows")) {
-            lines.push(`Pickup Windows: ${formData.get("pickup_windows")}`);
-          }
-          if (formData.get("delivery_windows")) {
-            lines.push(`Delivery Windows: ${formData.get("delivery_windows")}`);
-          }
-          lines.push(
-            `Zero-Detour Preference: ${formData.get("zero_detour") ? "Yes" : "No"}`,
-          );
-
-          lines.push("\nCONTACT INFORMATION");
-          lines.push(`Company: ${formData.get("company_name")}`);
-          lines.push(`Name: ${formData.get("full_name")}`);
-          lines.push(`Email: ${formData.get("email")}`);
-          if (formData.get("phone")) {
-            lines.push(`Phone: ${formData.get("phone")}`);
-          }
-          if (formData.get("website")) {
-            lines.push(`Website: ${formData.get("website")}`);
-          }
-
-          if (formData.get("notes")) {
-            lines.push("\nADDITIONAL NOTES");
-            lines.push(formData.get("notes"));
-          }
-
-          return lines.join("\n");
-        }
-
         // Form submission
-        form.addEventListener("submit", function (e) {
+        form.addEventListener("submit", async function (e) {
           e.preventDefault();
 
           if (!validateForm()) {
@@ -1733,21 +1683,46 @@
             return;
           }
 
-          // Build mailto link
-          const emailBody = buildEmailBody();
-          const subject = encodeURIComponent("Corridor Activation Proposal");
-          const body = encodeURIComponent(emailBody);
-          const mailtoLink = `mailto:partnerships@golynk.com?subject=${subject}&body=${body}`;
+          const submitBtn = form.querySelector('button[type="submit"]');
+          let originalText = "Submit for Evaluation";
+          if (submitBtn) {
+            originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Submitting...";
+          }
 
-          // Open mailto
-          window.location.href = mailtoLink;
+          try {
+            // Collect all form data (including multi-value shipment_types checkboxes)
+            const fd = new FormData(form);
+            const body = new URLSearchParams();
 
-          // Show success message after a short delay
-          setTimeout(() => {
+            // Copy all fields - URLSearchParams handles multi-value fields correctly
+            fd.forEach((value, key) => {
+              body.append(key, value);
+            });
+
+            // Add metadata
+            body.set("_page", "corridor");
+            body.set("_submitted_at", new Date().toISOString());
+            body.set("_user_agent", navigator.userAgent);
+
+            // Submit to same Apps Script as get-started page
+            await fetch(CORRIDOR_WEBAPP_URL, {
+              method: "POST",
+              mode: "no-cors",
+              body: body,
+            });
+
+            // Show success state
             form.classList.add("hidden");
             formSuccess.classList.remove("hidden");
             formSuccess.scrollIntoView({ behavior: "smooth", block: "start" });
-          }, 500);
+          } catch (error) {
+            // Show success anyway (no-cors returns opaque response, errors are network-level only)
+            form.classList.add("hidden");
+            formSuccess.classList.remove("hidden");
+            formSuccess.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         });
       });
     </script>
